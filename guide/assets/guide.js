@@ -30,7 +30,7 @@ function render() {
     ready:['We’ve met the Pi.','Its SSH identity is recorded. The helper is ready to connect and set up listening.'],
     running:['A little wiring behind the scenes.','The helper is working on the Pi. Progress below comes from the setup job.'],
     cancelling:['Stopping this attempt.','The helper is ending its connection. Saved state and existing history are kept.'],
-    completed:['The software checks passed.','Now check the painting and watch for real listening reports. The hardware still needs its own test.'],
+    completed:['The software checks passed.','Now check the painting and confirm that real listening reports arrive. The hardware still needs its own test.'],
     failed:['A hiccup. Finchley has notes.','The failed checkpoint is saved. Your AI can inspect it and continue from the evidence.'],
     needs_input:['One thing needs a closer look.','The helper has saved what it found and the next action it needs.'],
     interrupted:['Picking up the thread.','The server restarted during setup. Your AI should diagnose the saved checkpoint before resuming.'],
