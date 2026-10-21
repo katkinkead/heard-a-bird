@@ -32,3 +32,7 @@ These are explicit acceptance steps in the guide. A checkmark in the guide is a 
 ## 0.1.1 guide appearance update
 
 The guide’s original illustrations, paper notes and bird navigation were checked in the running local application at desktop and narrow mobile widths. No horizontal overflow, broken images or browser console errors were observed. Step navigation and checkmark updates work, and the technical instructions and application behaviour are unchanged. The three equipment illustrations are embedded SVG symbols so the standalone HTML does not rely on cross-file SVG references. JavaScript syntax and package preflight pass. This appearance-only update does not add new hardware or provider verification.
+
+## 0.1.2 guide flow and BirdNET readiness
+
+Browser checks confirmed that Next marks only its current step finished, advances, and persists after reload; bird navigation changes the view without adding completion. The old checkbox is absent. Reset returned the preview to zero finished steps. Desktop and mobile layouts have no horizontal overflow. BirdNET readiness was reviewed against the pinned release’s source and manufacturer documentation, with primary links in `pi-setup.md`. Shell syntax, the unsupported-Mac installer guard, the 11 Pi tests and package preflight pass. The new arm64-userspace and capture-device checks still need execution on real supported Pi hardware; they do not certify audio quality. Private remote viewing is documented, not installed or verified.

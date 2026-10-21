@@ -31,7 +31,7 @@ Read [the Pi instructions](pi-setup.md) for the supported OS checks, what the in
 
 A successful rehearsal proves local playback, not the microphone. Check the Pi heartbeat, audio capture and recognition health separately. Wait for a real detection and confirm its species and time appear in the history and the matching approved painting plays.
 
-Briefly disconnect and reconnect the network, then restart the services and repeat the check. Confirm queued detections and reports arrive without duplicate counts. These are hardware acceptance checks to perform on your installation; the guide’s checkmarks do not run them automatically.
+Briefly disconnect and reconnect the network, then restart the services and repeat the check. Confirm queued detections and reports arrive without duplicate counts. These are hardware acceptance checks to perform on your installation; the guide’s saved progress does not run them automatically.
 
 ## Day to day
 

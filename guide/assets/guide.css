@@ -64,3 +64,26 @@
  .perch span{max-width:76px}
  .perch-nav:after{content:"";height:30px;border-bottom:2px solid #8b9a8770;border-radius:0 0 50% 50%;position:absolute;top:88px;left:4%;right:4%;z-index:-1;transform:rotate(.5deg)}
 }
+
+/* Finchley’s handover: one clear action per step. */
+.finchley-introduction{font:17px/1.55 Georgia,serif;max-width:490px;color:var(--ink);margin:21px 0 12px;padding-left:15px;border-left:2px solid var(--gold)}
+.finchley-introduction strong{font-weight:400;color:var(--teal);font-style:italic}
+.viewing-note{font-size:11px;line-height:1.65;color:var(--muted);max-width:470px;margin:0}.viewing-note a{text-underline-offset:3px}
+.hero-art .director-note{font-size:23px}.director-note small{font-size:14px}
+.system-strip{align-items:start}.system-strip .connection{margin-top:70px;align-self:start}
+.crew-aside{max-width:245px;line-height:1.35}.crew-member:first-of-type .crew-aside{font-size:16px}
+.perch-nav{grid-template-columns:repeat(9,1fr)}
+.step-controls{align-items:center}.continue-step{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:10px 20px;max-width:78%}
+.continue-step p{font:italic 17px/1.4 Georgia,serif;color:var(--teal);max-width:340px;margin:0;text-align:right}
+.continue-step .primary{min-height:44px;max-width:100%}
+.step-content{scroll-margin-top:24px}.parts-list strong{color:var(--ink)}
+.guide-complete{margin-top:25px;border:1px dashed var(--teal);padding:24px;border-radius:5px 12px 6px 10px;background:#dce5d566}
+.guide-complete p{font-size:14px;line-height:1.75}
+@media(max-width:900px){.finchley-introduction{font-size:16px}.hero-art .director-note{font-size:20px}.continue-step p{max-width:250px}.crew-member:first-of-type .crew-aside{font-size:14px}}
+@media(max-width:640px){
+ .finchley-introduction{font-size:17px;margin-top:18px}.viewing-note{font-size:11px}.hero-art .director-note{font-size:21px}
+ .system-strip .connection{margin:-3px 0 -3px 26px;align-self:start}.crew-member:first-of-type .crew-aside{font-size:15px}.system-strip>.crew-member{padding-block:8px}
+ .perch-nav{grid-template-columns:repeat(3,1fr);row-gap:12px;background:linear-gradient(transparent 28px,#8b9a8755 28px,#8b9a8755 30px,transparent 30px);background-size:92% 88px;background-repeat:repeat-y;background-position:center top}
+ .perch-nav:before,.perch-nav:after{display:none}.perch span{max-width:90px}
+ .step-controls{align-items:flex-end;gap:15px}.continue-step{flex:1;max-width:100%;display:block}.continue-step p{text-align:right;font-size:15px;max-width:none;margin-bottom:12px}.continue-step .primary{width:100%;padding-inline:12px}.step-controls .secondary{min-height:44px}
+}

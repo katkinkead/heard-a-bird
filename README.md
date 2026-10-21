@@ -31,13 +31,13 @@ python3 scripts/check-install.py
 python3 -m songsketch.server
 ```
 
-Visit `/setup`, `/dashboard` and `/`. The server listens on port8765 on the local network; administrator actions accept localhost connections only. For remote administration use an SSH tunnel. Do not forward the port to the public internet. See [architecture and access](docs/architecture.md).
+Visit `/setup`, `/dashboard` and `/`. The server listens on port8765 on the local network; administrator actions accept localhost connections only. For remote administration use an SSH tunnel. Do not forward the port to the public internet. See [architecture and access](docs/architecture.md). For private viewing away from home, follow [remote viewing](docs/remote-viewing.md); the MVP is local-network-only until that separate connection is configured.
 
 ## What is built
 
 | Part | Implementation | Verification boundary |
 |---|---|---|
-| Setup guide | Illustrated local HTML, eight steps, actual project links, checkmarks and live-server link | Desktop/mobile browser checks; real hardware steps remain human checks |
+| Setup guide | Illustrated local HTML, nine steps including BirdNET readiness, project links and a single Next action that saves progress | Desktop/mobile browser checks; real hardware steps remain human checks |
 | Mac launch | Double-click launcher, Python check, sleep inhibitor; optional per-user background service | Local server tested; installing a persistent service on a friend’s Mac still needs commissioning |
 | Pi relay | Stored-history catch-up, stable event IDs, durable outbox, heartbeat, protected offline reports | Mock BirdNET + real localhost receiver tests; actual Pi/microphone not attached |
 | Server | SQLite history, confidence filter, retry deduplication, playback queue, weighted idle repertoire, SSE | Automated tests and browser test bird |

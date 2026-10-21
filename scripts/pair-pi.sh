@@ -19,7 +19,7 @@ echo 'For a first SSH connection, compare the host-key fingerprint with the Pi b
 read -r -p 'Pi SSH address (e.g. garden@raspberrypi.local): ' PI_TARGET
 [[ "$PI_TARGET" =~ ^[a-zA-Z0-9_][a-zA-Z0-9_.-]*@[a-zA-Z0-9][a-zA-Z0-9_.-]*$ ]] || { echo 'Enter username@hostname or username@IPv4-address; no spaces or options.' >&2; exit 2; }
 echo 'Checking the Pi connection. SSH may ask for its password or host-key confirmation.'
-ssh -o StrictHostKeyChecking=ask -o ConnectTimeout=10 "$PI_TARGET" 'uname -m; cat /etc/os-release; test -d /dev/snd && echo "Audio device present" || echo "Connect the USB microphone"'
+ssh -o StrictHostKeyChecking=ask -o ConnectTimeout=10 "$PI_TARGET" 'uname -m; cat /etc/os-release; test -d /dev/snd && echo "ALSA device present; this does not yet prove microphone capture" || echo "Connect the USB microphone"'
 if [[ "$CHECK_ONLY" == 1 ]]; then
   echo 'Connection checked. No files or settings changed on the Pi.'; exit 0
 fi

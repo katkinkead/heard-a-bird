@@ -22,17 +22,34 @@ done
 source /etc/os-release
 [[ ${ID:-} == debian || ${ID:-} == raspbian ]] || { echo 'Supported: Raspberry Pi OS based on Debian Bookworm or Trixie.' >&2; exit 2; }
 [[ ${VERSION_ID:-} == 12 || ${VERSION_ID:-} == 13 ]] || { echo 'Supported OS versions: Debian/Raspberry Pi OS 12 or 13, 64-bit.' >&2; exit 2; }
+command -v dpkg >/dev/null && [[ $(dpkg --print-architecture) == arm64 ]] || { echo '64-bit arm64 userspace is required; a 64-bit kernel with a 32-bit OS is not supported.' >&2; exit 2; }
 [[ -r /proc/device-tree/model ]] && grep -q 'Raspberry Pi' /proc/device-tree/model || { echo 'This installer is for Raspberry Pi hardware.' >&2; exit 2; }
 command -v systemctl >/dev/null || { echo 'systemd is required.' >&2; exit 2; }
+has_capture_device() {
+  local device
+  for device in /dev/snd/pcm*C*c; do
+    [[ -c "$device" ]] && return 0
+  done
+  return 1
+}
 if [[ "$CHECK_ONLY" == 1 ]]; then
-  echo 'Platform check passed. Would install Python 3, Docker if needed, pinned BirdNET-Go 20261014 and Songsketch relay.'
+  if [[ "$SKIP_BIRDNET" == 1 ]]; then
+    echo 'Platform check passed. Would install the Songsketch relay while retaining the existing BirdNET installation.'
+  else
+    echo 'Platform check passed. Would install Python 3, Docker if needed, pinned BirdNET-Go 20261014 and Songsketch relay once capture is available.'
+  fi
   echo 'Existing databases, microphone settings and credentials are preserved. No changes made.'
-  [[ -d /dev/snd ]] || echo 'Microphone audio device not visible yet; connect it before installation.'
+  if has_capture_device; then
+    echo 'ALSA capture device present. Actual input signal, microphone power and BirdNET analysis still require testing.'
+  else
+    echo 'No ALSA capture device found. Connect the USB microphone/audio interface before fresh BirdNET installation; HDMI playback does not count.'
+    [[ "$SKIP_BIRDNET" == 0 ]] || echo 'Existing BirdNET route selected; verify its audio source separately.'
+  fi
   exit 0
 fi
 [[ $(id -u) == 0 ]] || { echo 'Run this installer with sudo.' >&2; exit 2; }
-if [[ "$SKIP_BIRDNET" == 0 && ! -d /dev/snd ]]; then
-  echo 'No ALSA sound device found. Connect the USB microphone and retry; no device has been erased.' >&2; exit 2
+if [[ "$SKIP_BIRDNET" == 0 ]] && ! has_capture_device; then
+  echo 'No ALSA capture device found. Connect the USB microphone/audio interface and retry; HDMI playback alone is not sufficient. No device has been erased.' >&2; exit 2
 fi
 if ! command -v python3 >/dev/null || { [[ "$SKIP_BIRDNET" == 0 ]] && ! command -v docker >/dev/null; }; then
   apt-get update
