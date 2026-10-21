@@ -12,6 +12,8 @@ flowchart LR
   Server --> Desk[Operator dashboard]
   Desk -->|Explicit request only| AI[Optional AI drafts]
   Server -->|First missing portrait| Mail[Configured SMTP contact]
+  Assistant[Local terminal-capable assistant] --> Setup[Guarded localhost setup helper]
+  Setup -->|Pinned SSH identity and fixed installer| BirdNET
 ```
 
 The Pi does recognition locally. Audio stays in BirdNET; Songsketch transfers species, confidence, time, station health and redacted reports. The relay catches up from retained database history after an outage. A stable station/event identity prevents retries inflating history.
@@ -27,3 +29,13 @@ Secrets are owner-readable local files, not an encrypted vault. They are exclude
 `GET /events` uses SSE, with periodic state updates and reconnect support. Animation frames are computed locally from retained authored marks and embedded references, not requested from an AI service. Current playback state survives server restart; the display uses its elapsed timestamp when reconnecting.
 
 Automatic care consists of bounded retries, health checks, process supervision, diagnostic grouping, rotating logs, retention and verified SQLite snapshots. An AI explanation never executes shell commands. A server without power cannot send its own warning; the still-powered Pi buffers reports until it returns.
+
+## Setup and recovery are a separate control path
+
+The external local assistant obtains the existing application and uses `scripts/ai-bootstrap.py` to create or reuse a managed app copy, start the supervised server and open the guide through a short-lived, single-use session ticket. The durable administrator credential stays in private configuration. Bootstrap does not install an OS startup service, flash a card or contact the Pi. A normal cloud chat without local tools cannot perform these operations. See [the AI handoff](ai-setup.md).
+
+The HTML guide presents the same state available through `scripts/setup-assistant.py` and the authenticated localhost setup API. `CommissioningManager` accepts fixed probe, trust, install, retry, diagnose and cancel actions; it is not a generic shell endpoint. A new or changed SSH identity requires explicit confirmation. Existing keys/agents or a short-lived local password handle authentication. The bundled Pi helper runs through the approved sudo path, applies only its supported owned configuration and verifies capture, advancing inference, readable history and server delivery. Existing authentication and unmanaged/complex configurations require review instead of being weakened or replaced.
+
+The server saves bounded setup evidence under `commissioning/state.json`. Its `/api/admin/setup-context` combines that state with redacted diagnostics and recovery instructions for a local assistant. A diagnostic operation finishing does not mean the installation passed: `job.commissioned` and `last_successful_install` distinguish successful software commissioning from a completed diagnostic snapshot. Current station health is a separate observation. Interrupted work requires inspection before an explicit retry; cancelling the local SSH connection is not a promise that a remote operation rolled back.
+
+The local assistant may perform bounded, evidence-based repairs using its authorised terminal tools. This is distinct from Songsketch's optional paid AI diagnosis, which returns advice and cannot execute arbitrary repairs. Both retain the same human boundaries: credentials, host trust, destructive storage actions and physical commissioning. No success in this control path establishes audio quality, a genuine bird or unattended reboot/outdoor reliability without those checks on the actual equipment. See [Pi setup](pi-setup.md) and [verification](verification.md).

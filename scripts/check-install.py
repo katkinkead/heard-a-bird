@@ -14,7 +14,7 @@ catalogue = json.loads((ROOT/"artwork/catalogue.json").read_text())
 for bird in catalogue["birds"]:
     for key in ("image_url","animation_url"):
         if not (ROOT/bird[key].lstrip("/")).is_file(): errors.append("Missing "+bird[key])
-for file in ("guide/index.html","static/display.html","static/dashboard.html","pi/relay.py"):
+for file in ("guide/index.html","static/display.html","static/dashboard.html","pi/relay.py","scripts/ai-bootstrap.py","scripts/setup-assistant.py","scripts/commission-pi.py","songsketch/commissioning.py","songsketch/setup_client.py","docs/ai-setup.md"):
     if not (ROOT/file).is_file(): errors.append("Missing "+file)
 db = sqlite3.connect(":memory:")
 db.execute("CREATE TABLE test (id INTEGER)"); db.close()

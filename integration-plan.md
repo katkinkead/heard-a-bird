@@ -1,7 +1,7 @@
 # Songsketch local server and artwork integration
 
 > Implementation update, 21 October 2026: the local MVP is now built in this repository. This file preserves the design requirements; see [README](README.md), [feature map](docs/features.md) and [verification record](docs/verification.md) for the implemented scope and remaining hardware/provider checks. Earlier future-tense notes below are historical planning, not current build status.
-Updated 21 October 2026. Target: the friend's MacBook for the initial MVP, with migration to a mini PC later. This is the integration plan; the connected application is not built yet in the shared workspace.
+**Historical planning text follows.** Target: the friend's MacBook for the initial MVP, with migration to a mini PC later. This is the integration plan; the connected application is not built yet in the shared workspace.
 
 Start with the [project handover](README.md) for the repository map, current feature status, MVP and production distinction, and proposed short setup experience. Keep one application with host-specific setup profiles.
 
@@ -39,7 +39,7 @@ The MacBook installation needs a launcher, startup supervision, network access f
 
 ## Setup guide integration
 
-Replace prompts that generate a fresh server during installation with instructions to install a tested release. Keep the guide's approachable setup flow and phone checks. Make SD-card flashing conditional on the [supplied operating system and setup route](README.md#pi-operating-system-check), instead of assuming every CanaKit card is blank.
+Replace prompts that generate a fresh server during installation with instructions to install a tested release. Keep the guide's approachable setup flow and phone checks. Make SD-card flashing conditional on the [supplied operating system and setup route](docs/pi-setup.md), instead of assuming every CanaKit card is blank.
 
 The guide should be a short companion to executable setup. Aim for a Mac setup wizard that connects to the prepared Pi, installs the matching Pi package and runs checks, rather than asking the friend to copy and paste commands or build prompts repeatedly. The Pi runs software from the release; it does not interpret GitHub prose by itself. Physical assembly, initial network access and private credentials remain explicit human steps. This wizard still needs implementation.
 

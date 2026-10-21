@@ -37,6 +37,6 @@ def main():
     subprocess.run(["launchctl","bootout",domain,str(plist)],check=False,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
     subprocess.run(["launchctl","bootstrap",domain,str(plist)],check=True)
     print("Songsketch is installed for this Mac account and starts after login. Leave the lid open and power connected.")
-    print("Setup: http://localhost:8765/setup\nPrivate setup code: "+cfg.secrets["admin_token"])
+    print("Ask your local assistant to open the private guide with scripts/setup-assistant.py open. Setup: http://localhost:8765/setup")
 
 if __name__ == "__main__": main()

@@ -1,1 +1,1 @@
-window.SONGSKETCH_PROJECT = {"name": "Songsketch", "version": "0.1.2-mvp", "repository_url": "https://github.com/katkinkead/songsketch", "release_url": "https://github.com/katkinkead/songsketch/releases", "private": true};
+window.SONGSKETCH_PROJECT = {"name": "Songsketch", "version": "0.2.0-mvp", "repository_url": "https://github.com/katkinkead/songsketch", "release_url": "https://github.com/katkinkead/songsketch/releases/tag/v0.2.0-mvp", "private": true};

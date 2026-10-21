@@ -1,8 +1,8 @@
 # Verification record — 21 October 2026
 
-This is a locally verified MVP, not a commissioned garden installation. The source, guide and approved artwork travel together in the v0.1.0-mvp package.
+This is a locally verified MVP, not a commissioned garden installation. The source, guide and five approved animations travel together in the v0.2.0-mvp package. Earlier verification is retained below as historical evidence.
 
-## Passed locally and in continuous integration
+## Original 0.1.0 verification (historical)
 
 - **78 automated tests** on macOS with Python3.9.6, also passing from a freshly extracted release folder. The same78 tests and preflight/shell checks pass independently on GitHub’s macOS and Ubuntu runners with Python3.11 ([verified run](https://github.com/katkinkead/songsketch/actions/runs/39594296811)). Tests cover actual loopback HTTP between the Pi relay and Songsketch, event and report persistence, lost acknowledgements, pagination/catch-up, confidence/time validation, monthly timezone boundaries, queue/cooldown separation, session logout, origin/credential separation, redaction, concurrency, backup contents and authenticated migration export.
 - The Pi tests use a simulated BirdNET API matching the pinned20261014 source contract; they do not record audio or run a real BirdNET model.
@@ -27,7 +27,7 @@ Browser testing of the key-removal control stopped at its confirmation. No real 
 5. Optional API account access, model availability and visual quality of actual paid drafts. An animation proposal is not a completed newly authored animation.
 6. The selected mini PC, restored migration bundle, startup after power loss, sustained use and outdoor enclosure/power/environment.
 
-These are explicit acceptance steps in the guide. A checkmark in the guide is a saved human reminder, not a hardware result. A successful setup simulation is excluded from real bird counts.
+The current guide reports actual helper evidence; it has no human checkmarks that imply hardware success. A successful setup simulation is excluded from real bird counts.
 
 ## 0.1.1 guide appearance update
 
@@ -36,3 +36,15 @@ The guide’s original illustrations, paper notes and bird navigation were check
 ## 0.1.2 guide flow and BirdNET readiness
 
 Browser checks confirmed that Next marks only its current step finished, advances, and persists after reload; bird navigation changes the view without adding completion. The old checkbox is absent. Reset returned the preview to zero finished steps. Desktop and mobile layouts have no horizontal overflow. BirdNET readiness was reviewed against the pinned release’s source and manufacturer documentation, with primary links in `pi-setup.md`. Shell syntax, the unsupported-Mac installer guard, the 11 Pi tests and package preflight pass. The new arm64-userspace and capture-device checks still need execution on real supported Pi hardware; they do not certify audio quality. Private remote viewing is documented, not installed or verified.
+
+## 0.2.0 AI-led setup and recovery
+
+**137 automated tests pass locally on macOS/Python 3.9.6.** The combined suite includes 27 guarded-SSH tests, 22 Pi commissioning contract tests and 10 setup integration tests, alongside the 78 existing application tests. SSH is mocked except for the real local FIFO/process-lifecycle checks; the Pi API uses fixtures and loopback HTTP. No physical Pi was commissioned.
+
+A real disposable bootstrap test copies the release to its managed app location, starts the supervised server, verifies the private setup API, reuses the healthy server on a second call, checks copied launchers/docs/artwork, and stops its owned server cleanly. Existing files, occupied foreign ports and mismatched credentials are preserved. No persistent host service was installed.
+
+Security/repair tests cover single-use expiring browser tickets, local-origin/session boundaries, SSH fingerprint pinning, argument validation, password redaction without corrupting protocol states, non-finite JSON rejection, private secret transfer, bounded cancellation and retries, active remote-operation locks, and exact container/image/endpoint ownership before Pi changes. Successful installation evidence remains separate from a completed diagnostic operation.
+
+Browser verification used a disposable loopback server and a test-only opening ticket. The ticket was consumed and removed from the URL; the guide enabled its controls, queued a labelled test Robin, rejected malformed input before SSH, preserved a changed address on re-probe, and showed recovery after a reserved `.invalid` test hostname failed. The diagnostic packet downloaded successfully. Aftercare and healthy-listening indicators remained hidden without equipment evidence. Desktop and narrow mobile layout checks, JavaScript syntax, shell syntax and package preflight pass. This does not verify real microphone quality, real species recognition, network/reboot recovery, optional email/paid AI, remote viewing or the final unattended host.
+
+The local assistant is instructed to diagnose, make bounded safe repairs, verify and resume. This is a reusable operating procedure plus guarded software interfaces, not a promise that arbitrary hardware or third-party failures can heal themselves without physical access or permission.

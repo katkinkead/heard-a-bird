@@ -90,7 +90,9 @@ if sys.argv[1]:
     server=m.validate_url(new['server_url']);station=new.get('station_id','garden');token=new['token']
     if not re.fullmatch(r'[A-Za-z0-9_.-]{1,80}',station): raise SystemExit('Invalid station ID.')
     if len(token)<24 or any(c in token for c in '\r\n'): raise SystemExit('Invalid station token.')
-    config.update(server_url=server,station_id=station)
+    from zoneinfo import ZoneInfo
+    zone=new.get('timezone',config.get('timezone','Europe/London'));ZoneInfo(zone)
+    config.update(server_url=server,station_id=station,timezone=zone)
     target=base/'station.token';target.write_text(token+'\n');target.chmod(0o600)
 config.setdefault('source_instance_id',str(uuid.uuid4()))
 config.setdefault('birdnet_url','http://127.0.0.1:8080')
@@ -107,6 +109,7 @@ u=pwd.getpwnam('songsketch-pi')
 for target in (p,base/'station.token'):os.chown(target,u.pw_uid,u.pw_gid)
 PY
 if [[ "$SKIP_BIRDNET" == 0 ]]; then
+  BIRD_TIMEZONE=$(python3 -c "import json;print(json.load(open('/etc/songsketch-pi/config.json'))['timezone'])")
   systemctl enable --now docker
   if docker container inspect songsketch-birdnet >/dev/null 2>&1; then
     managed=$(docker inspect --format '{{index .Config.Labels "org.songsketch.managed"}}' songsketch-birdnet)
@@ -136,7 +139,7 @@ if [[ "$SKIP_BIRDNET" == 0 ]]; then
     docker run -d --name songsketch-birdnet --restart unless-stopped \
       --label org.songsketch.managed=true --label org.songsketch.birdnet-release=20261014 \
       --publish 127.0.0.1:8080:8080 --device /dev/snd:/dev/snd \
-      --env TZ=Europe/London --env BIRDNET_LOCALE=en-uk \
+      --env "TZ=$BIRD_TIMEZONE" --env BIRDNET_LOCALE=en-uk \
       --env "BIRDNET_UID=$BIRD_UID" --env "BIRDNET_GID=$BIRD_GID" \
       --volume /var/lib/songsketch-birdnet/config:/config \
       --volume /var/lib/songsketch-birdnet/data:/data \

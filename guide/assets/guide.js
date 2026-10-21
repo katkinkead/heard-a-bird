@@ -1,87 +1,101 @@
-(() => {
-  'use strict';
-  const steps = [
-    {short:'Parts', title:'Your Fieldguide of Parts', lead:'Sir Gold Finchley’s inventory for the MacBook MVP. Gather these indoors before preparing the Pi.', body:`<ul class="parts-list"><li><strong>The garden computer.</strong> Raspberry Pi 5, case and active cooling, a suitable Pi 5 USB-C power supply, and a microSD card. Use mains power for the indoor test.</li><li><strong>An actual ear.</strong> The Clippy EM272 microphone, its windshield, and a Linux-compatible USB audio interface with the correct microphone input and power for your particular Clippy version. A headphone-only dongle is not a microphone input. <a href="../docs/pi-setup.md#birdnet-readiness-checklist">Check the microphone match</a>.</li><li><strong>Room to remember.</strong> The card must hold the OS, BirdNET container, database and any saved audio. BirdNET refuses to start if its data location has less than 1,024 MB free; leave more room for growth and set an audio retention limit.</li><li><strong>The indoor team.</strong> Your Mac, its power supply, and a phone, tablet or computer with a web browser to display the paintings.</li><li><strong>A network everyone can join.</strong> Pi and Mac on the same home network, with internet during installation. Avoid an isolated guest network. Check the Wi-Fi reaches the intended microphone position.</li><li><strong>First-boot bits.</strong> A microSD reader if you need to flash the card; a monitor, suitable micro-HDMI cable and keyboard if you’re using first-boot setup at the Pi. Headless setup through Imager is also covered.</li></ul><p class="tip">Start on a dry indoor surface. Enclosure, cable entry and outdoor power come after the listening-to-painting test.</p>`, note:'A distinguished bird. An undistinguished pile of cables.', small:'The Mac runs Songsketch. The Pi runs BirdNET-Go and the relay. The helper installs the software; you supply the parts and the correct microphone connection.'},
-    {short:'Prepare Pi', title:'Check the card before you flash.', lead:'Your CanaKit may already have Raspberry Pi OS on its microSD. A supplied card is not proof that BirdNET or Songsketch is installed.', body:`<ol><li><strong>If it boots:</strong> finish first-boot setup with a monitor and keyboard, connect it to your network, and enable SSH. Keep your chosen username and hostname handy.</li><li><strong>If it is blank, unsupported, or you need a headless setup:</strong> use Raspberry Pi Imager to prepare a supported 64-bit Raspberry Pi OS. Imaging replaces the card’s contents.</li><li>In Imager, set your own account, network, country, timezone and SSH access. Use Europe/London for Dorset, and let the Pi synchronise its date and time over the network. The Pi helper checks that this is actual Raspberry Pi hardware running supported 64-bit Bookworm or Trixie.</li></ol><div class="inline-actions"><a class="secondary" href="https://www.raspberrypi.com/software/" target="_blank" rel="noopener">Raspberry Pi Imager ↗</a><a href="../docs/pi-setup.md">Pi setup notes</a></div>`, note:'A fresh start is optional.', small:'Keep a working supported installation. Do not erase it just because the guide includes a flashing route.'},
-    {short:'Start Mac', title:'Give the garden a place to land.', lead:'Keep this whole Songsketch folder together. Its artwork, scripts and application are neighbours for a reason.', body:`<ol><li>Open the project folder in Finder and launch <strong>Start Songsketch.command</strong>. Read the startup window; it checks what is available and starts the local application.</li><li>If macOS asks you to review the file, use the operating system’s Open action for this downloaded project. Do not disable security settings globally.</li><li>Open the running setup page. Keep the startup window available: it tells you where to find your operator access token.</li></ol><div class="inline-actions"><a class="primary" href="http://localhost:8765/setup">Open Songsketch setup ↗</a><a class="secondary" href="http://localhost:8765/dashboard">Open dashboard ↗</a></div><p class="tip">No AI account or paid API key is needed for the existing paintings, bird history or routine recovery.</p>`, note:'The Mac is the indoor server.', small:'For this MVP, closing its lid or letting it sleep can interrupt the garden connection. Keep it awake while testing.'},
-    {short:'Connect', title:'Introduce the Pi to the Mac.', lead:'Both devices should be on the same local network. The helper installs the relay and startup service, and connects them to this server.', body:`<ol><li>Keep the Mac server running. In Finder, open the project folder and double-click <strong>Pair Garden Pi.command</strong>.</li><li>Follow its prompts for the Pi address, SSH account and server connection. The helper securely copies the pairing configuration from this server; you do not need to copy a token by hand.</li><li>Read the changes before continuing. Supply credentials only in the local setup flow; do not paste them into shared notes.</li><li>At the end, choose to open the setup tunnel. Keep that Terminal open. The next step walks through BirdNET-Go at <a href="http://localhost:18080" target="_blank" rel="noopener">localhost:18080</a> on this Mac.</li></ol><div class="inline-actions"><a href="../scripts/pair-pi.sh">View pairing helper</a><a href="../docs/pi-setup.md">Detailed Pi instructions</a></div><p class="tip">The server address used by the Pi must be your Mac’s network address. <code>localhost</code> on the Pi means the Pi itself.</p>`, note:'A connection is not an ear.', small:'A healthy heartbeat proves that the relay can report. The microphone and recognition checks must also succeed before the dashboard says listening is available.'},
-    {short:'Test bird', title:'Invite a rehearsal bird.', lead:'Let’s check the software before relying on the weather, the microphone or the birds.', body:`<ol><li>Unlock the dashboard with the operator token shown by startup.</li><li>Choose <strong>Send a test bird</strong>. Open the painting page alongside the dashboard.</li><li>Watch the approved 75-second painting arrive. The event is labelled as a test and is excluded from real bird counts and missing-artwork emails.</li></ol><div class="inline-actions"><a class="primary" href="http://localhost:8765/dashboard#overview">Send a test from the dashboard ↗</a><a class="secondary" href="http://localhost:8765/">Open painting page ↗</a></div>`, note:'Rehearsals don’t enter the guest book.', small:'A successful test bird verifies local playback. It does not certify the real microphone, BirdNET recognition or garden network.'},
-    {short:'Hear one', title:'Now listen for the real thing.', lead:'Check actual capture, recognition and delivery. A silent garden is not an equipment fault.', body:`<ol><li>Check the dashboard: Pi connected, audio evidence and recognition evidence should be shown separately.</li><li>Wait for a bird near the microphone. Confirm the species and time arrive in the history, then check the correct artwork plays.</li><li>Briefly interrupt the connection and restore it. Queued events and diagnostic reports should reconcile without inflating counts.</li><li>Restart the services, then test again. Record actual hardware results before leaving the system unattended.</li></ol><p class="tip">A BirdNET detection may be a call. The display must not promise a bird is still singing long after the detection.</p>`, note:'Evidence, not crossed fingers.', small:'If something fails, the dashboard keeps the relevant fault and recovery history together. It is more useful than a single green light.'},
-    {short:'Personalise', title:'A garden name. A person to tell.', lead:'Optional settings belong in the dashboard, where the server can store them privately.', body:`<ul><li><strong>Garden name and timezone.</strong> Bird history should read in the garden’s local time.</li><li><strong>Email for missing artwork.</strong> Configure the recipient and mail server. Repeated sightings do not need repeated emails. Operational issues stay in the dashboard, with optional AI diagnosis.</li><li><strong>Optional AI tools.</strong> A configured key enables deliberately started diagnosis, artwork and style jobs. Results stay reviewable; core playback works without it.</li></ul><div class="inline-actions"><a class="primary" href="http://localhost:8765/dashboard#settings">Open settings ↗</a></div><p class="tip">AI jobs can incur provider charges. Check the inputs and limits in the confirmation before starting one.</p>`, note:'Some visitors haven’t had their portrait yet.', small:'Missing artwork is a to-do, not a breakdown. Songsketch logs the new species and keeps the approved paintings available.'},
-    {short:'Let it run', title:'A little less looking after.', lead:'The connected system sends diagnostic reports to the server automatically and handles defined routine recovery.', body:`<ul><li><strong>Keep the Mac awake</strong> for the MVP. Leave the painting page open on the screen you want to use.</li><li><strong>Offline reports wait.</strong> Pending reports stay on the Pi and upload when the server returns; a local download remains available as a fallback.</li><li><strong>Check a backup and recovery.</strong> Use Maintenance to request a database backup and inspect unresolved faults.</li><li><strong>Watch from elsewhere.</strong> On the home network, use the Mac’s network address with port 8765. For access away from home, follow <a href="../docs/remote-viewing.md">private remote viewing</a> on the server and viewing device. Keep the Mac awake and connected; remote viewing is not enabled by installing Songsketch.</li><li><strong>Before permanent garden use:</strong> verify enclosure, power, networking and the dedicated host’s restart behaviour on the actual hardware.</li></ul><div class="inline-actions"><a class="primary" href="http://localhost:8765/">Let the painting begin ↗</a><a class="secondary" href="http://localhost:8765/dashboard#maintenance">Check maintenance ↗</a></div>`, note:'The paintings can stay. The laptop can eventually go.', small:'The mini PC profile uses the same core application and data. Moving hosts is a deployment step, not a second Songsketch to build.'}
-  ];
-  steps.splice(4, 0, {
-    short:'BirdNET', title:'Give BirdNET its ears.',
-    lead:'Pairing installs the software. This is where you tell it what to listen to, where the garden is, and how to keep its records.',
-    body:`<ol><li><strong>Open BirdNET-Go through the pairing tunnel.</strong> On the Mac, visit <a href="http://localhost:18080" target="_blank" rel="noopener">localhost:18080</a>. Keep the pairing Terminal open. These are BirdNET’s settings; the Songsketch dashboard is a separate page.</li><li><strong>Select the actual USB microphone.</strong> Choose its capture device in the audio setup, enable it, and check that sound reaches the meter or audio view. Adjust gain so ordinary garden sounds register without the loudest sounds clipping. Verify the right input and power, not just that a USB device appears.</li><li><strong>Set the garden’s actual location and time.</strong> Enter its latitude/longitude in BirdNET, choose English (UK) labels, use Europe/London, and check the Pi’s date/time. Location and season help BirdNET select plausible species. Do not use a random Dorset town as the garden’s coordinates.</li><li><strong>Keep the bundled BirdNET model enabled.</strong> This release ships the standard BirdNET v2.4 model with its runtime. You do not need a paid API key or a separate Python model installation. BirdWeather, MQTT and weather integrations are optional. Use the wizard’s <strong>Balanced (0.7)</strong> detection setting to start; Songsketch qualifies records at 0.7 by default too. BirdNET’s dynamic thresholds may retain weaker results; those do not qualify for Songsketch counts or painting at the default threshold.</li><li><strong>Include the birds you want to hear.</strong> Keep quiet hours off if you want overnight listening. Review species exclusions and the owl daylight filter. The pinned release can suppress owl detections during daylight; turn off that suppression if you want daytime owls included too.</li><li><strong>Keep detections in the database.</strong> Songsketch reads stored BirdNET history, including after an outage. Ensure database recording is enabled, choose a sensible audio-clip retention limit, and leave free space on the card. Audio clips are optional; stored detection records are essential.</li><li><strong>Check capture, analysis and the relay.</strong> Finish/save setup and confirm that audio is arriving and the model is analysing it. The relay must be able to read detection history and both health endpoints. The fresh bundled setup keeps BirdNET on Pi loopback and is reached through SSH. An existing BirdNET installation with authentication needs an operator-reviewed access plan: the relay cannot refresh expired BirdNET access tokens. Read the readiness notes before relying on it unattended. A green web server alone does not prove the relay can read its API.</li></ol><div class="inline-actions"><a class="primary" href="http://localhost:18080" target="_blank" rel="noopener">Open BirdNET setup ↗</a><a href="../docs/pi-setup.md#birdnet-readiness-checklist">BirdNET readiness & troubleshooting ↗</a></div><p class="tip">The next rehearsal bird tests the painting software. A real bird test follows it, so you can tell a painting problem from a microphone problem.</p>`,
-    note:'Installed ≠ listening.',
-    small:'Sir Gold Finchley cannot sing into an unplugged microphone. Check actual audio, model analysis and stored detections separately.'
-  });
-  const readyPrompts = [
-    'Got everything on the list?',
-    'Pi booted, on the network, and SSH enabled?',
-    'Songsketch running on the Mac?',
-    'Pi paired and the BirdNET setup tunnel open?',
-    'Microphone, location, model and recording checked?',
-    'Rehearsal painting played all the way through?',
-    'Real detection and reconnect checks passed?',
-    'Optional settings finished—or happy to skip them?',
-    'Backup and running checks done?'
-  ];
-  const storageKey = 'songsketch-guide-v2';
-  let saved = {};
-  try {
-    const current = localStorage.getItem(storageKey);
-    if (current !== null) saved = JSON.parse(current);
-    else {
-      const old = JSON.parse(localStorage.getItem('songsketch-guide-v1') || '{}');
-      const shift = i => i >= 4 ? i + 1 : i;
-      saved = { active: Number.isInteger(old.active) ? shift(old.active) : 0,
-        checked: Array.isArray(old.checked) ? old.checked.filter(i => Number.isInteger(i) && i >= 0 && i < 8).map(shift) : [] };
-    }
-  } catch (_) {}
-  if (!saved || typeof saved !== 'object') saved = {};
-  let active = Number.isInteger(saved.active) ? Math.max(0, Math.min(steps.length - 1, saved.active)) : 0;
-  const checked = new Set(Array.isArray(saved.checked) ? saved.checked.filter(x => Number.isInteger(x) && x >= 0 && x < steps.length) : []);
-  // A shared flock, with enough different postures to look like birds on a wire.
-  const birds = [
-    `<svg viewBox="0 0 42 42" aria-hidden="true"><path d="M9 26c-7-2-6-8-4-11 1 5 4 7 8 6-1-9 5-16 12-14 6 1 8 7 7 11l7 3-8 2c-2 7-8 10-15 7l-2 7h-2l1-8-4 7H7l5-9z"/><circle cx="26" cy="13" r="1.6" fill="#f5f1e6"/><path d="M16 20q5 6 10 2" fill="none" stroke="#f5f1e6" stroke-width="1"/></svg>`,
-    `<svg viewBox="0 0 42 42" aria-hidden="true"><path d="M12 27 3 24l10-4C10 6 22 1 29 8c5 5 3 9 1 12 9 10-4 16-14 11l-1 6h-2l1-7zM30 12l9 4-9 3"/><circle cx="26" cy="12" r="1.6" fill="#f5f1e6"/><path d="M20 23q6 6 9 1M21 32l3 5" fill="none" stroke="#f5f1e6" stroke-width="1"/></svg>`,
-    `<svg viewBox="0 0 42 42" aria-hidden="true"><path d="M11 26 3 12l13 8C15 8 24 4 30 10c3 3 3 7 2 10l7 3-9 2c-4 7-11 9-17 5l-1 7h-2l1-8z"/><circle cx="27" cy="14" r="1.6" fill="#f5f1e6"/><path d="M16 24q5 3 10-1M19 31l2 6" fill="none" stroke="#f5f1e6" stroke-width="1"/></svg>`
-  ];
-  const $ = id => document.getElementById(id);
-  function persist() { try { localStorage.setItem(storageKey,JSON.stringify({active,checked:[...checked]})); } catch (_) {} }
-  function render() {
-    $('step-nav').innerHTML = steps.map((s,i) => `<button class="perch ${checked.has(i)?'checked':''}" data-step="${i}" ${i===active?'aria-current="step"':''} aria-label="Step ${i+1}: ${s.short}${checked.has(i)?', finished':''}">${birds[i%birds.length]}<span>${s.short}</span></button>`).join('');
-    const s = steps[active];
-    $('step-content').innerHTML = `<p class="eyebrow">Step ${String(active+1).padStart(2,'0')} / ${String(steps.length).padStart(2,'0')}</p><h3>${s.title}</h3><p>${s.lead}</p>${s.body}`;
-    $('field-note').innerHTML = `<p>${s.note}</p><small>${s.small}</small>`;
-    $('previous').disabled = active === 0;
-    $('next').disabled = checked.size === steps.length && active === steps.length - 1;
-    $('ready-prompt').textContent = readyPrompts[active];
-    $('next').textContent = active === steps.length - 1
-      ? (checked.size === steps.length ? 'Field guide finished ✓' : steps.some((_,i)=>i !== active && !checked.has(i)) ? 'Next unfinished step →' : 'Finish field guide ✓')
-      : `Next: ${steps[active+1].short} →`;
-    $('progress-summary').textContent = `${checked.size} of ${steps.length} steps finished`;
-    $('guide-complete').hidden = checked.size !== steps.length;
-    document.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => { active=Number(b.dataset.step);persist();render(); }));
-  }
-  $('begin').addEventListener('click',()=> $('setup').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
-  $('previous').addEventListener('click',()=>{active=Math.max(0,active-1);persist();render();});
-  $('next').addEventListener('click',()=>{
-    checked.add(active);
-    if (active < steps.length - 1) active += 1;
-    else if (checked.size < steps.length) active = steps.findIndex((_,i)=>!checked.has(i));
-    persist();render();
-    $('step-content').scrollIntoView({behavior:'auto',block:'start'});
-  });
-  $('reset-progress').addEventListener('click',()=>{if(confirm('Reset the saved guide progress in this browser? This does not change the server or Pi.')){checked.clear();active=0;persist();render();}});
-  const project = window.SONGSKETCH_PROJECT || {};
-  for (const [id,key] of [['repository-link','repository_url'],['release-link','release_url']]) { try { const u = new URL(project[key]); if(u.protocol==='https:'){ $(id).href=u.href;$(id).hidden=false;} } catch (_) {} }
-  async function checkServer(){
-    if(location.protocol==='file:') return;
-    try { const r=await fetch('/health',{signal:AbortSignal.timeout(4000)});if(!r.ok)throw Error();const body=await r.json();if(body.ok!==true)throw Error();$('server-dot').className='status-dot good';$('server-label').textContent='The Mac server is responding';$('server-message').textContent='Open the dashboard to check the Pi, microphone and recognition separately.'; }
-    catch(_){$('server-dot').className='status-dot unknown';$('server-label').textContent='Server status unavailable';$('server-message').textContent='Check the startup window, then reopen this page.';}
-  }
-  render();checkServer();if(location.protocol!=='file:')setInterval(checkServer,15000);
-})();
+/* The guide presents observed setup state. It never marks hardware complete by navigation. */
+const $ = id => document.getElementById(id);
+const project = window.SONGSKETCH_PROJECT || {};
+const repo = project.repository_url || 'https://github.com/katkinkead/songsketch';
+const baseBrief = `Help me set up Songsketch from ${repo} or the release I have provided. Work on this computer using your local terminal and file tools. Read AGENTS.md, README.md and docs/ai-setup.md before doing anything. Inspect the existing installation first; Saber Lily has already built the server, Pi relay, dashboard, guide, artwork and animations. Do not rebuild them.
+Own the software work: obtain the project using my existing GitHub access, run scripts/ai-bootstrap.py, open its guide, collect missing settings once, and use scripts/setup-assistant.py to connect and commission the Pi. Read --help for exact options. Use headless setup. If Pi OS or SSH is missing, help configure Imager and request approval for the exact card before erasing it. Keep passwords and tokens out of chat, prompts, logs and Git; use the local guide or a secure terminal.
+Explain what is happening while you work. For a failure, read the saved checkpoint and diagnostic packet, identify the cause, try a narrowly scoped safe repair, verify it, then resume. Stop after two repair cycles without new evidence. Preserve existing installs, history, artwork, authentication and networking. Ask me only for missing credentials, SSH identity confirmation, necessary permissions or physical actions. Do not invent success: verify capture, inference, delivery and playback separately. Synthetic birds do not prove real hearing. No paid AI key is required for normal playback or the bundled BirdNET-Go model.`;
+let setup = null, admin = null, unlocked = false, populatedId = null, busy = false;
+const activeStates = new Set(['probing','running','cancelling']);
+const terminalStates = new Set(['failed','needs_input','interrupted','cancelled']);
+async function api(path, data) {
+  const response = await fetch(path,{cache:'no-store',credentials:'same-origin',headers: data===undefined?{}:{'Content-Type':'application/json'},method:data===undefined?'GET':'POST',body:data===undefined?undefined:JSON.stringify(data)});
+  const result = await response.json();
+  if (!response.ok) {const error=new Error(result.error || 'The helper could not finish that request.');error.status=response.status;throw error;}
+  return result;
+}
+function message(value) {$('action-message').textContent=value;}
+function evidence(id, good, detail) {const item=$(id);item.classList.toggle('verified',good);if(detail)item.querySelector('span').textContent=detail;}
+function render() {
+  const job=setup?.job; const state=job?.state; const running=activeStates.has(state);
+  $('pi-fields').disabled=!unlocked || running || busy;
+  $('legacy-unlock').hidden=unlocked;
+  $('helper-explanation').textContent=unlocked?'The local helper is connected. Your AI can operate these same controls.':'Your AI starts the local helper first, then reopens this guide with a private session.';
+  $('helper-state').textContent=unlocked?'Helper connected':'AI handoff ready';
+  $('helper-state').classList.toggle('connected',unlocked);
+  evidence('evidence-helper',unlocked,unlocked?'Local session connected; the helper can perform guarded setup actions.':'Waiting for a current connection to the local helper.');
+  const descriptions={
+    probing:['Knocking on the Pi’s door.','Checking the address and its SSH identity. No installation has started.'],
+    awaiting_trust:['A quick introduction.','The Pi’s identity needs confirmation before the helper can connect.'],
+    ready:['We’ve met the Pi.','Its SSH identity is recorded. The helper is ready to connect and set up listening.'],
+    running:['A little wiring behind the scenes.','The helper is working on the Pi. Progress below comes from the setup job.'],
+    cancelling:['Stopping this attempt.','The helper is ending its connection. Saved state and existing history are kept.'],
+    completed:['The software checks passed.','Now check the painting and watch for real listening reports. The hardware still needs its own test.'],
+    failed:['A hiccup. Finchley has notes.','The failed checkpoint is saved. Your AI can inspect it and continue from the evidence.'],
+    needs_input:['One thing needs a closer look.','The helper has saved what it found and the next action it needs.'],
+    interrupted:['Picking up the thread.','The server restarted during setup. Your AI should diagnose the saved checkpoint before resuming.'],
+    cancelled:['Parked, with notes intact.','Your AI can inspect the checkpoint before deciding how to continue.']
+  };
+  let description=descriptions[state] || (unlocked?['The Mac is ready.','Your AI can now connect to the Pi. It handles the setup; this page shows its progress.']:['Your AI takes it from here.','Give your local assistant the brief above. It will start the helper and reopen this guide, ready to connect.']);
+  if(!unlocked) description=['Your AI takes it from here.','The helper is not connected to this guide. Give your local assistant the brief above to start or reconnect it. Saved notes below are historical, not current health.'];
+  else if(state==='completed' && job?.operation==='diagnose') description=['The Pi check is back.','The diagnostic report is saved below. This check does not install software or prove the garden is hearing.'];
+  $('live-heading').textContent=description[0];$('live-description').textContent=description[1];
+  const amount=Math.max(0,Math.min(100,Number(job?.progress)||0));
+  $('setup-fill').style.width=amount+'%';document.querySelector('.setup-meter').setAttribute('aria-valuenow',amount);
+  evidence('evidence-pi',unlocked && Boolean(job?.trusted),state==='awaiting_trust'?'Waiting for you to confirm this Pi’s identity.':job?.trusted?'This Pi’s SSH identity has been explicitly trusted.':'Checks the address and the Pi’s SSH identity.');
+  evidence('evidence-install',unlocked && Boolean(job?.commissioned),job?.commissioned?'The remote installer completed its checks.':running && job?.operation?job?.remote_progress?.message || 'The helper is checking the connection before working on BirdNET.':'Waiting for the installer’s verification.');
+  const station=admin?.station; const healthy=unlocked && station?.connected && station?.listening==='available';
+  evidence('evidence-hearing',healthy,healthy?'Recent Pi heartbeat reports healthy capture and recognition.':station?.ever_connected && !station?.connected?'No recent Pi report. The AI can check the connection.':'Waiting for real capture and recognition health from the Pi.');
+  $('aftercare').hidden=!(job?.commissioned && healthy);
+  $('test-panel').hidden=!unlocked;
+  $('human-request').hidden=!job?.human_action;$('human-request').textContent=job?.human_action || '';
+  $('trust-card').hidden=state!=='awaiting_trust';$('fingerprint').textContent=job?.challenge?.fingerprint || '';
+  const actions=job?.next_actions||[];
+  for(const [id,action] of [['install-pi','install'],['retry-pi','retry'],['diagnose-pi','diagnose'],['cancel-job','cancel']]) {$(id).hidden=!unlocked || !actions.includes(action);$(id).disabled=busy;}
+  $('trust-pi').disabled=busy;
+  $('repair-card').hidden=!terminalStates.has(state);
+  $('auth-fields').hidden=!unlocked || !actions.some(x=>['install','retry','diagnose'].includes(x));
+  const sources=job?.result?.capture_sources||[];
+  $('capture-label').hidden=!sources.length;
+  const select=$('capture-device');const signature=JSON.stringify(sources);
+  if(select.dataset.signature!==signature){select.replaceChildren(new Option('Choose the microphone',''));for(const source of sources)select.add(new Option(source.name||source.label||source.id,source.id));select.dataset.signature=signature;}
+  $('job-log').textContent=job?JSON.stringify({state:job.state,stage:job.stage,progress:job.progress,logs:job.logs,error:job.error,result:job.result},null,2):'No setup job has run yet.';
+  if(job?.inputs && job.id!==populatedId){for(const [key,value] of Object.entries(job.inputs)){const field=$('pi-form').elements.namedItem(key);if(field)field.value=value;}populatedId=job.id;}
+}
+async function refresh(){
+  if(location.protocol==='file:'){render();return;}
+  try {const [state,status]=await Promise.all([api('/api/admin/setup'),api('/api/admin/status')]);setup=state;admin=status;unlocked=true;render();}
+  catch(error){unlocked=false;render();if(error.status!==401 && error.status!==403){$('helper-state').textContent='Helper not connected';}}
+}
+async function action(name,fields={}){
+  if(busy)return;busy=true;render();message('');
+  const password=$('ssh-password').value;$('ssh-password').value='';
+  const data={...(name!=='probe' && setup?.job?{job_id:setup.job.id}:{}),...fields};
+  if(['install','retry','diagnose'].includes(name)){if(password)data.password=password;if(name!=='diagnose' && $('capture-device').value)data.capture_device=$('capture-device').value;}
+  try {await api('/api/admin/setup/'+name,data);await refresh();}
+  catch(error){message(error.message+' Your AI can read the saved diagnostics.');}
+  finally{delete data.password;busy=false;render();}
+}
+async function copyText(text,button){
+  try{await navigator.clipboard.writeText(text);const original=button.textContent;button.textContent='Copied — ready for your AI';setTimeout(()=>button.textContent=original,4000);}
+  catch{const blob=new Blob([text],{type:'text/plain'});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='songsketch-ai-brief.txt';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),2000);$('copy-feedback').textContent='Saved a text brief to give your local AI.';}
+}
+$('begin').onclick=()=>$('setup').scrollIntoView({behavior:'smooth'});
+$('copy-handoff').onclick=()=>copyText(baseBrief,$('copy-handoff'));
+$('copy-recovery').onclick=()=>copyText(baseBrief+'\n\nResume recovery now. Run the installed scripts/setup-assistant.py diagnose to read the current local diagnostic packet. The last observed setup state was '+(setup?.job?.state||'unknown')+', checkpoint '+(setup?.job?.stage||'unknown')+'. Re-read live state; this brief may be older than the job. Do not ask me to troubleshoot routine software faults.',$('copy-recovery'));
+$('pi-form').addEventListener('submit',async event=>{event.preventDefault();const form=$('pi-form');const fields=Object.fromEntries(new FormData(form));fields.latitude=Number(fields.latitude);fields.longitude=Number(fields.longitude);await action('probe',fields);});
+$('pi-form').addEventListener('invalid',()=>{$('network-details').open=true;},true);
+$('trust-pi').onclick=()=>action('trust',{challenge_id:setup.job.challenge.challenge_id,fingerprint:setup.job.challenge.fingerprint,confirmed:true});
+$('install-pi').onclick=()=>action('install');$('retry-pi').onclick=()=>action('retry');$('diagnose-pi').onclick=()=>action('diagnose');$('cancel-job').onclick=()=>action('cancel');
+$('unlock-form').onsubmit=async event=>{event.preventDefault();const token=$('setup-token').value;$('setup-token').value='';try{await api('/api/session',{token});await refresh();}catch(error){message(error.message);}};
+$('download-diagnostics').onclick=async()=>{try{const packet=await api('/api/admin/setup-context');const url=URL.createObjectURL(new Blob([JSON.stringify(packet,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='songsketch-setup-diagnostics.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);}catch(error){message(error.message);}};
+$('test-painting').onclick=async()=>{try{await api('/api/admin/test-detection',{scientific_name:'Erithacus rubecula'});$('test-result').textContent='A test robin is ready on the painting page. It will not count as a real bird detection.';}catch(error){$('test-result').textContent=error.message;}};
+for(const [id,url] of [['repository-link',repo],['release-link',project.release_url]]){if(url){$(id).href=url;$(id).hidden=false;}}
+async function consumeOpeningTicket(){
+  const fragment=new URLSearchParams(location.hash.slice(1));const ticket=fragment.get('ticket');
+  if(ticket){history.replaceState(null,'',location.pathname+location.search);try{await api('/api/setup/session',{ticket});}catch(error){message(error.message);}}
+  await refresh();
+}
+window.addEventListener('hashchange',()=>{if(new URLSearchParams(location.hash.slice(1)).has('ticket'))consumeOpeningTicket();});
+consumeOpeningTicket();
+setInterval(refresh,3500);

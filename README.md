@@ -2,9 +2,9 @@
 
 **A listening garden. A slowly painted bird.**
 
-The garden Pi recognises birds with BirdNET-Go. A small indoor server keeps their history and serves approved, locally stored paintings to a browser. Your MacBook is the first server; a dedicated Linux mini PC can take over later using the same application and data.
+The garden Pi recognises birds with BirdNET-Go. A small indoor server keeps their history and serves approved, locally stored paintings to a browser. A MacBook provides the MVP; a dedicated Linux computer runs the same application for the permanent installation.
 
-**Start with [the illustrated setup field guide](guide/index.html).** Keep the whole downloaded folder together and double-click **Start Songsketch.command** on the Mac. The guide opens at [localhost:8765/setup](http://localhost:8765/setup). Python 3.9 or newer is the only server runtime dependency; the launcher checks for it. No npm install, Docker or API key is needed on the Mac.
+**Start by giving [the setup handoff](docs/ai-setup.md#copy-this-to-your-local-assistant) to a local terminal-capable assistant.** It handles the release, folders, server and supported Pi setup; the [illustrated guide](guide/index.html) is the human control panel for progress, permissions and physical tests. An ordinary cloud chat or an HTML file alone cannot execute this setup. Python 3.9 or newer is the server runtime dependency. Routine playback needs no npm install, Docker on the Mac or AI API key.
 
 [Private GitHub project](https://github.com/katkinkead/songsketch) · [Friend’s short instructions](docs/friend-start-here.md) · [Verification record](docs/verification.md) · [AI orientation](AGENTS.md)
 
@@ -16,13 +16,13 @@ The [art table](http://localhost:8765/dashboard#atelier) links to the [portable 
 
 ## Open the garden
 
-1. Extract the release folder somewhere you will keep it. On macOS, double-click **Start Songsketch.command**. If macOS asks how to open a downloaded script, open it with Terminal after reviewing its source. The startup window displays your private setup code.
-2. Follow the guide and unlock the dashboard using that code. Send a test bird and open the painting page. Tests are labelled and excluded from real counts and emails.
-3. Prepare the Pi’s OS, account, Wi-Fi and SSH. Reuse a suitable preloaded 64-bit OS; do not erase a working card just because it came with the kit. Open **Pair Garden Pi.command**, enter the Pi address and follow its prompts. It transfers the Pi credentials over SSH and installs the bundled relay and pinned BirdNET-Go version.
-4. Select the actual microphone and Dorset location in BirdNET-Go’s first-run setup. Verify audio, recognition, a real detection, and reconnect recovery. The guide explains what each check proves.
-5. Add an email contact and SMTP settings if you want missing-portrait notices. AI settings are optional. Leave the Mac plugged in with its lid open during the MVP.
+1. Give a local assistant the [portable handoff prompt](docs/ai-setup.md#copy-this-to-your-local-assistant). It should discover an existing installation first, preserve its data and use this release's actual helpers. You do not need to manage project folders or copy a sequence of terminal commands.
+2. Connect the garden hardware and provide the missing site/Pi details. Use a local private prompt for credentials, confirm the actual SSH host identity, and approve any operating-system action that needs you. A usable supported Pi OS is preserved; a blank or inaccessible card may need an explicitly approved first-boot/Imager step.
+3. Follow the control panel as the assistant installs, verifies and diagnoses. A labelled test bird verifies the display; real capture, inference, a real detection and recovery are separate checks. The assistant should report the exact remaining human action, not declare untested equipment complete.
 
-The downloaded application works without GitHub access. The repository and release are private: the owner can provide the ZIP directly or grant the friend repository access. No personal GitHub token is installed on the Pi.
+The Mac MVP must remain awake, powered and connected. For a permanent installation, the assistant handles supported [Linux service setup and migration](docs/production.md); hardware commissioning remains physical. Missing-art email and paid AI drafts are optional after the core garden works. BirdNET-Go with BirdNET v2.4 does not need an OpenAI/API key.
+
+The repository and release are private. Existing authorised GitHub access or the owner's supplied ZIP is sufficient; running that ZIP does not need a GitHub account. No personal GitHub token belongs on the Pi. If a local assistant is unavailable, the existing **Start Songsketch.command** and **Pair Garden Pi.command** launchers remain a manual fallback; [Pi setup](docs/pi-setup.md) documents their limits.
 
 ### Developer start
 
@@ -37,7 +37,8 @@ Visit `/setup`, `/dashboard` and `/`. The server listens on port8765 on the loca
 
 | Part | Implementation | Verification boundary |
 |---|---|---|
-| Setup guide | Illustrated local HTML, nine steps including BirdNET readiness, project links and a single Next action that saves progress | Desktop/mobile browser checks; real hardware steps remain human checks |
+| Setup guide | Illustrated local control panel, project links and hardware checks alongside the assistant workflow | Only verified helper evidence is marked; diagnostic completion is separate from installation |
+| AI-led setup | Managed local bootstrap, guarded setup CLI/API, explicit SSH trust, Pi commissioning and diagnostic context | Requires an authorised local assistant; real Pi, sudo, microphone and network acceptance remain |
 | Mac launch | Double-click launcher, Python check, sleep inhibitor; optional per-user background service | Local server tested; installing a persistent service on a friend’s Mac still needs commissioning |
 | Pi relay | Stored-history catch-up, stable event IDs, durable outbox, heartbeat, protected offline reports | Mock BirdNET + real localhost receiver tests; actual Pi/microphone not attached |
 | Server | SQLite history, confidence filter, retry deduplication, playback queue, weighted idle repertoire, SSE | Automated tests and browser test bird |
@@ -66,11 +67,13 @@ See [verification.md](docs/verification.md) for exact checks and limits. “Impl
 
 Runtime data stays **outside Git**: `~/Library/Application Support/Songsketch` on macOS, `~/.local/share/Songsketch` for a manual Linux run, or `/var/lib/songsketch-server` for the dedicated Linux service. `SONGSKETCH_DATA_DIR` overrides it. This contains the SQLite database, protected configuration, secret file, rotating logs, seven backup snapshots and optional drafts. Secrets are never included in support reports or migration exports.
 
+The AI bootstrap keeps a managed application copy in `app/` under that private directory and records its setup state there. It preserves an existing copy rather than silently upgrading it. Bootstrap starts the current session's supervised server; persistent login/boot services are separate deployment steps. The assistant uses [the documented helper interface](docs/ai-setup.md#interfaces-for-the-assistant) and opens the local guide without putting the durable setup credential into chat.
+
 Counts mean qualifying BirdNET detection records, not individual birds. Each station/event pair is counted once. All new records are stored even when display cooldown suppresses another painting. Monthly boundaries use the garden’s timezone, Europe/London by default. Current retention is two years for detection records, seven days for test events and 30 days/up to5000 uploaded reports. BirdNET’s later false-positive edits/deletions do not currently retract imported history.
 
 ## MVP and dedicated-host profiles
 
-The **MacBook MVP** runs while its owner is logged in and the Mac is awake. `Install Mac Background Service.command` optionally installs a launchd service; stop the foreground run first. It does not make a closed or powered-off Mac reachable.
+The **MacBook MVP** runs while its owner is logged in and the Mac is awake. `Install Mac Background Service.command` optionally installs a launchd service; have the assistant stop the existing session’s supervisor first. It does not make a closed or powered-off Mac reachable.
 
 The **dedicated Linux profile** uses `scripts/install-server-linux.sh`. It is separate from `scripts/install-linux-service.sh`, which installs the **Pi relay** service. Follow [production.md](docs/production.md) for migration, SSH administration, backup restoration, restart and power checks. Windows mini PCs are not supported by this release.
 
@@ -78,7 +81,7 @@ The exact CanaKit listing in the shopping list is ASIN **B0CVQRCMLY**, the4GB Es
 
 ## Working on Songsketch with AI
 
-Read [AGENTS.md](AGENTS.md), this README and the actual implementation before building. [CLAUDE.md](CLAUDE.md) points to the same project instructions. The feature map in [docs/features.md](docs/features.md) helps an assistant distinguish work already implemented from an idea or a hardware check. The requested “Saber Lily already considered it :)” acknowledgement is used only when a specific source supports it.
+For installation or recovery, start with [the AI setup handoff](docs/ai-setup.md). Read [AGENTS.md](AGENTS.md), this README and the actual implementation before changing anything. [CLAUDE.md](CLAUDE.md) points to the same project instructions. The feature map in [docs/features.md](docs/features.md) helps an assistant distinguish work already implemented from an idea or a hardware check. The requested “Saber Lily already considered it :)” acknowledgement is used only when a specific source supports it.
 
 Earlier design decisions are retained in [integration-plan.md](integration-plan.md), [dashboard-requirements.md](dashboard-requirements.md) and [maintenance-requirements.md](maintenance-requirements.md). The running code and verification record establish current status. The original published Claude artifact has not been modified; its reviewed setup flow has been rebuilt here alongside the software.
 

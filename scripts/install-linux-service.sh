@@ -39,5 +39,10 @@ WantedBy=multi-user.target
 SERVICE
 systemctl daemon-reload
 systemctl enable songsketch-pi.service
-systemctl restart songsketch-pi.service
-echo 'Songsketch Pi service installed. Check: sudo systemctl status songsketch-pi'
+if [[ ${SONGSKETCH_DEFER_RELAY_START:-0} == 1 ]]; then
+  systemctl stop songsketch-pi.service
+  echo 'Songsketch Pi service installed; commissioning will start it after BirdNET settings and live analysis are verified.'
+else
+  systemctl restart songsketch-pi.service
+  echo 'Songsketch Pi service installed. Check: sudo systemctl status songsketch-pi'
+fi
