@@ -2,9 +2,9 @@
 
 This is a locally verified MVP, not a commissioned garden installation. The source, guide and approved artwork travel together in the v0.1.0-mvp package.
 
-## Passed locally
+## Passed locally and in continuous integration
 
-- **78 automated tests** on macOS with Python3.9.6 at this checkpoint. Tests cover actual loopback HTTP between the Pi relay and Songsketch, event and report persistence, lost acknowledgements, pagination/catch-up, confidence/time validation, monthly timezone boundaries, queue/cooldown separation, session logout, origin/credential separation, redaction, concurrency, backup contents and authenticated migration export.
+- **78 automated tests** on macOS with Python3.9.6, also passing from a freshly extracted release folder. The same78 tests and preflight/shell checks pass independently on GitHub’s macOS and Ubuntu runners with Python3.11 ([verified run](https://github.com/katkinkead/songsketch/actions/runs/39594296811)). Tests cover actual loopback HTTP between the Pi relay and Songsketch, event and report persistence, lost acknowledgements, pagination/catch-up, confidence/time validation, monthly timezone boundaries, queue/cooldown separation, session logout, origin/credential separation, redaction, concurrency, backup contents and authenticated migration export.
 - The Pi tests use a simulated BirdNET API matching the pinned20261014 source contract; they do not record audio or run a real BirdNET model.
 - Email tests use a fake SMTP server/client. They verify one missing-art notice per species, retry after pre-send failures, and an explicit review state when delivery is uncertain.
 - AI tests use mocked OpenAI responses. They verify that credentials and explicit paid-request confirmation are required, daily job limits apply, provider errors do not auto-retry, interrupted jobs remain reviewable, and original approved birds/style are protected.
