@@ -1,0 +1,119 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Barn owl",
+    "scientific_name": "Tyto alba",
+    "sex_age_plumage": "Adult male of the pale British form; predominantly clean white underparts, very sparse or no breast spotting. This is a chosen typical male depiction, not a claim that every spotless bird can be sexed from appearance alone.",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/barn-owl",
+      "https://www.barnowltrust.org.uk/barn-owl-facts/",
+      "https://www.barnowltrust.org.uk/barn-owl-facts/barn-owl-adaptations/",
+      "https://www.bto.org/sites/default/files/shared_documents/publications/research-reports/2002/rr294.pdf"
+    ],
+    "diagnostic_features": [
+      "Distinct white heart-shaped facial disc edged subtly buff, small dark brown-black eyes and pale hooked bill.",
+      "Slender pale bird, golden-buff back and wings with cool grey mottling and delicate dark marks; clean white underside.",
+      "Long wings and relatively short tail; restrained head size and natural forward-facing eye placement.",
+      "Relatively long legs, long toes and sharp curved talons, rather than stubby songbird feet."
+    ],
+    "birdnet_label": "Tyto alba_Barn Owl"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Slender body angled right, heart-shaped face nearly frontal, long legs visible",
+    "facing": "near-front/right",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "Adult pale British Barn Owl, slender upright body angled right with its heart-shaped face turned nearly forward. Poised on a short economical ground/perch ink stroke, long feathered legs and gripping toes coherently visible. Gentle asymmetry in posture, no theatrical bow.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "white",
+      "golden buff",
+      "silver grey",
+      "subtle dark speckles"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Dusty-blue slanted curved pigment band",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Dusty-blue slanted curved pigment band",
+    "elements": [
+      "Dusty-blue slanted curved pigment band"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Luminous white face/chest, dark eyes, pale bill and golden-buff/silver-grey patterned wing"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Barn owl (Tyto alba), Adult male of the pale British form; predominantly clean white underparts, very sparse or no breast spotting. This is a chosen typical male depiction, not a claim that every spotless bird can be sexed from appearance alone..\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Distinct white heart-shaped facial disc edged subtly buff, small dark brown-black eyes and pale hooked bill.\n- Slender pale bird, golden-buff back and wings with cool grey mottling and delicate dark marks; clean white underside.\n- Long wings and relatively short tail; restrained head size and natural forward-facing eye placement.\n- Relatively long legs, long toes and sharp curved talons, rather than stubby songbird feet.\nAvoid identity confusion: No ear tufts, yellow irises, circular Tawny face, massive hooked raptor bill or brown all-over breast.; Avoid a cartoon heart outline; the facial disc is formed by fine directional feathers.; Do not exaggerate gold markings into decorative body patches unrelated to feathers.\nARTISTIC POSE: Adult pale British Barn Owl, slender upright body angled right with its heart-shaped face turned nearly forward. Poised on a short economical ground/perch ink stroke, long feathered legs and gripping toes coherently visible. Gentle asymmetry in posture, no theatrical bow.\nSPECIFIC DRAWING EMPHASIS: Distinct heart-shaped white facial disc, dark eyes, small pale hooked bill, golden-buff and silver-grey upperparts with fine dark speckles and pale underside. The precision lives in buff wing feather groups and facial edge drawing; don't darken its white chest to mimic other owls.\nBACKGROUND DIRECTION: A spare dusty-blue slanted crescent wash set behind the golden back; keep plenty of luminous unpainted paper around the white face and chest. No moon or stars.\nPLUMAGE PALETTE: white, golden buff, silver grey, subtle dark speckles. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Barn owl\".",
+    "generated_asset": "37-barn-owl-v1.png",
+    "asset_sha256": "4cb95a2c482e987be3b2d2b4e2f7d32df4643b0df0908f2203d6e3ccd0a1c1cd",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-b916720f-fafa-47d3-b11b-0911e49235d9.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Luminous white face/chest, dark eyes, pale bill and golden-buff/silver-grey patterned wing",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Slender body angled right, heart-shaped face nearly frontal, long legs visible",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 8,
+    "collection_position": 37,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "owls"
+  }
+}

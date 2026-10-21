@@ -1,0 +1,73 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Starling",
+    "scientific_name": "Sturnus vulgaris",
+    "sex_age_plumage": "Adult in fresh autumn/winter plumage; sex unspecified",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/starling",
+      "https://www.allaboutbirds.org/guide/European_Starling/id"
+    ]
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Forward-leaning standing profile with one foot forward",
+    "facing": "left",
+    "artistic_intention": "Brisk, intent and self-possessed",
+    "support": "Minimal sweeping ink ground/perch strokes"
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "ink black",
+      "petrol green",
+      "purple",
+      "warm buff feather tips"
+    ],
+    "background": [
+      "coral/terracotta"
+    ],
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Asymmetric broken diagonal coral plane",
+    "relationship_to_bird": "Simple abstract support; exposed paper remains visible"
+  },
+  "finish": {
+    "detail_treatment": "Natural feather-tip speckles with layered iridescent pigment and finely drawn wing shafts",
+    "optional_motifs": [],
+    "contour_gesture": "Economical extended ink contours"
+  },
+  "annotations": {
+    "name_treatment": "Understated handwritten species name below bird",
+    "state_treatment": "No sensor status; corner reserved"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/birdsong-painting-system/assets/style/robin-source.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/birdsong-painting-system/assets/style/goldfinch-source.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/birdsong-painting-system/assets/style/existing-birds.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE original finished bird illustration for the Birdsong-to-Art collection, landscape 4:3. This is a standalone bird portrait, not a collage or animation.\nARTISTIC REFERENCES: The supplied Robin, Goldfinch and four-bird collection show the exact family of material, line and refinement. Use them as artistic references, never as anatomical templates. Their combinations of poses, colours, backgrounds and motifs are examples, not limits. Draw only the species requested below.\nSHARED ARTISTIC LANGUAGE: The final painting must visibly belong beside those references: confident graphic silhouette, rich printed pigment and luminous translucent watercolour passages, cold-pressed warm ivory paper, broken dry-brush edges, economical sweeping ink contours, precise coloured-pencil feather shafts and layered feather strokes. Sophisticated and expressive, quietly eccentric, highly crafted. Preserve plenty of exposed paper. Concentrate detail intentionally and leave some passages calmer, but do not simplify away the final richness. Match the Goldfinch's level of detail. Ornament is optional; do not automatically copy a leaf-shaped wing badge. Line and material supply character without clothing, novelty props or joke text. Avoid photorealistic rendering, generic cute mascot art, flat vector fills, uniform soft blur, glossy digital shading, heavy parchment grunge, an all-over decorative pattern or landscape scenery.\nKeep the illustration's anatomy identifiable and coherent: two legs, plausible bird feet, real wing/tail relationships, accurate bill and diagnostic plumage. A slightly expressive stance, gaze or contour is welcome; no huge cartoon eyes or human eyebrows.\nComposition and background can be invented for this bird. Keep abstract marks economical, subordinate to the subject and painted in the same material language. No detailed garden, architecture, decorative frame, habitat scene or flock.\nLETTERING: One understated, elegant informal handwritten species name below the bird, matching the reference spirit. The exact name is specified below. No other text, watermark, signature or UI. Do not copy \"Singing now\" from the references; leave the lower-right corner quiet for a future truthful annotation.\nSUBJECT: Adult Common Starling, Sturnus vulgaris, in fresh autumn/winter plumage. Compact yet sleek body, pointed head, a slender sharply pointed DARK brown-black bill, short tail (not the long tail of a Blackbird), pointed folded wings, pinkish/reddish-brown legs and small dark eyes. Dark brown-black plumage with rich GREEN and PURPLE iridescence. Numerous naturally distributed pale cream/white feather-tip spots, small wedge- or teardrop-shaped marks, plus warm buff feather edges. The dark winter bill and fresh speckled plumage must be consistent. No bright yellow summer bill, no white cheek patch, no thick sparrow beak.\nARTISTIC INTENTION: Brisk, intent and full of contained energy. Explore a forward-leaning, poised walking/strutting profile facing LEFT, feet grounded with one set slightly forward. Let the head and bill lead the gesture, the body compact and tail appropriately short. A little expressive swagger through balance and line, not a human costume or exaggerated grin.\nCOLOUR AND FINISH: Ink-dark plumage with selective petrol-green, emerald and aubergine-violet pigment that feels iridescent without metallic digital gloss. Cream stipples are actual feather-tip marks, following the feather anatomy, not literal stars or glitter. Fine warm ochre/cream feather edging and precise coloured-pencil shafts bring richness to the folded wing. Let the natural speckling supply the unexpected detail; no leaf badge is necessary. Eye and bill crisp and modest. The dark body should retain luminous layers and detailed texture, not become a flat black shape.\nBACKGROUND DIRECTION: Explore a spare asymmetric warm coral/terracotta abstract passage, perhaps a slanted broken band or irregular cropped plane behind the bird's diagonal. Shape and number are free; keep the relationship dynamic and economical. Leave generous paper, avoid a full turquoise disk or copying the existing broad ochre rectangle. A few spare ground/perch ink gestures are sufficient.\nExact text: \"Starling\".",
+    "generated_asset": "02-starling-v1.png",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "User: \"these all look great! do the next 10.\"",
+    "created_date": "2026-10-21",
+    "asset_sha256": "f62f30bd87dda4e372663636a1e971e37362b086c3baf927442c16b63f7d22c6",
+    "carried_forward_from": "32-starling-concept.png",
+    "prior_user_review": "pending"
+  },
+  "review": {
+    "species_identity": "Visually reviewed: short tail, dark pointed winter bill, cream speckling and green/purple sheen present",
+    "material_and_detail": "Visually inspected against original reference images; detailed pigment/pencil finish and understated lettering retained",
+    "collection_variety": "Left-facing stride and coral diagonal geometry",
+    "approval": "Final artwork approved 2026-10-21; animation not requested."
+  },
+  "batch": {
+    "number": 1,
+    "position": 2,
+    "review": "approved",
+    "treatment": "Carried forward"
+  }
+}

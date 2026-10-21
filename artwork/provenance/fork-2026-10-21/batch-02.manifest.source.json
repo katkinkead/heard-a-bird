@@ -1,0 +1,71 @@
+{
+  "batch": 2,
+  "total_batches": 7,
+  "review_group": [
+    2,
+    3
+  ],
+  "status": "approved",
+  "approval_rule": "Accepted by the user; final art only. Animation has not been authorised for these assets.",
+  "artwork": [
+    {
+      "position": 6,
+      "species": "Magpie",
+      "slug": "magpie",
+      "batch": 2,
+      "file": "06-magpie-v1.png",
+      "record": "magpie-record.json",
+      "sha256": "3a2ebb660324036ae9cba252ec4121493fb3ff8131dc8ca713e27bd47b15c044",
+      "status": "approved"
+    },
+    {
+      "position": 7,
+      "species": "Chaffinch",
+      "slug": "chaffinch",
+      "batch": 2,
+      "file": "07-chaffinch-v1.png",
+      "record": "chaffinch-record.json",
+      "sha256": "b3d29d3b4c757626eee7445910285a14562fdcdcc55ce1d6e53c8b9a68e022e6",
+      "status": "approved"
+    },
+    {
+      "position": 8,
+      "species": "Dunnock",
+      "slug": "dunnock",
+      "batch": 2,
+      "file": "08-dunnock-v1.png",
+      "record": "dunnock-record.json",
+      "sha256": "86ada5e05891bb814b55fd6eb9e190af1311a1fb41147ac7f084cba5e64dd236",
+      "status": "approved"
+    },
+    {
+      "position": 9,
+      "species": "Coal tit",
+      "slug": "coal-tit",
+      "batch": 2,
+      "file": "09-coal-tit-v1.png",
+      "record": "coal-tit-record.json",
+      "sha256": "a96c3538f97553ea9c2a115e241d153ee3d0f375aeaa6fe98719f9dfa494902f",
+      "status": "approved"
+    },
+    {
+      "position": 10,
+      "species": "Jackdaw",
+      "slug": "jackdaw",
+      "batch": 2,
+      "file": "10-jackdaw-v1.png",
+      "record": "jackdaw-record.json",
+      "sha256": "9e7845bf71a7a11c6e4520d923b0923343b25075e044d732aab85082b81298f7",
+      "status": "approved"
+    }
+  ],
+  "review_page": "../batches-02-03/index.html",
+  "prompts": "../batches-02-03/generation-prompts.txt",
+  "style_guide": "../../final-art-style-guide.html",
+  "created_date": "2026-10-21",
+  "approval": {
+    "date": "2026-10-21",
+    "evidence": "User: \"ok now make the next 10\"",
+    "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+  }
+}

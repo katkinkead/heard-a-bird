@@ -1,0 +1,68 @@
+{
+  "batch": 6,
+  "total_batches": 8,
+  "kind": "original35",
+  "review_group": [
+    6,
+    7,
+    8
+  ],
+  "status": "awaiting_user_approval",
+  "approval_rule": "User authorised final ten and five owls together; present for review before animation.",
+  "artwork": [
+    {
+      "position": 26,
+      "species": "Jay",
+      "slug": "jay",
+      "batch": 6,
+      "file": "26-jay-v1.png",
+      "record": "jay-record.json",
+      "sha256": "26ab5953f1a21d42c30c43171f08f414fb830818a08446c38d2ec4e71ee52b76",
+      "status": "awaiting_user_approval"
+    },
+    {
+      "position": 27,
+      "species": "Redwing",
+      "slug": "redwing",
+      "batch": 6,
+      "file": "27-redwing-v1.png",
+      "record": "redwing-record.json",
+      "sha256": "27a333456354c685fa35287f1bca92ae0a39d25fc168876b4f3f52ffa65168f0",
+      "status": "awaiting_user_approval"
+    },
+    {
+      "position": 28,
+      "species": "Bullfinch",
+      "slug": "bullfinch",
+      "batch": 6,
+      "file": "28-bullfinch-v1.png",
+      "record": "bullfinch-record.json",
+      "sha256": "4278b055ca4e348a371ddf674e3e3841ec282a9f8c606665684ade031228c2a9",
+      "status": "awaiting_user_approval"
+    },
+    {
+      "position": 29,
+      "species": "Sparrowhawk",
+      "slug": "sparrowhawk",
+      "batch": 6,
+      "file": "29-sparrowhawk-v1.png",
+      "record": "sparrowhawk-record.json",
+      "sha256": "aa49f534ba231e7e0ff2e8f443ea9f566422faa03663972b56b80820ae3469c0",
+      "status": "awaiting_user_approval"
+    },
+    {
+      "position": 30,
+      "species": "Fieldfare",
+      "slug": "fieldfare",
+      "batch": 6,
+      "file": "30-fieldfare-v1.png",
+      "record": "fieldfare-record.json",
+      "sha256": "492ad534cf7870c249470b3d1590e1eecf5ca671d80be7db752b86938b585e19",
+      "status": "awaiting_user_approval"
+    }
+  ],
+  "review_page": "../batches-06-07-and-owls/index.html#batch-06",
+  "prompts": "../batches-06-07-and-owls/generation-prompts.txt",
+  "style_guide": "../../final-art-style-guide.html",
+  "created_date": "2026-10-21"
+}

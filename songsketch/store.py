@@ -65,8 +65,57 @@ CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY,kind TEXT,scientific_name T
 PRAGMA user_version=1;
 """
 
+def validate_hardware(value):
+    """Accept only bounded measurements with internally consistent status.
+
+    Absence means an older relay/unknown hardware. These observations do not
+    prove supply suitability or establish a hardware commissioning pass.
+    """
+    if value is None:
+        return None
+    fields = {"observed_at", "power_status", "thermal_status", "temperature_c", "temperature_source",
+              "throttled_hex", "current_flags", "historical_flags", "sample_errors", "thermal_warning_c"}
+    if not isinstance(value, dict) or set(value) != fields:
+        raise ValueError("Invalid hardware measurement fields")
+    observed = iso(timestamp(value["observed_at"]))
+    allowed_flags = ("under_voltage", "frequency_capped", "throttled", "soft_temperature_limit")
+    flags = {}
+    for key in ("current_flags", "historical_flags"):
+        supplied = value[key]
+        if not isinstance(supplied, list) or len(supplied) > 4 or any(not isinstance(flag, str) or flag not in allowed_flags for flag in supplied) or len(set(supplied)) != len(supplied):
+            raise ValueError("Invalid hardware flags")
+        flags[key] = supplied[:]
+    mask = value["throttled_hex"]
+    if mask is not None and (not isinstance(mask, str) or not re.fullmatch(r"0x[0-9a-fA-F]{1,8}", mask)):
+        raise ValueError("Invalid hardware throttle mask")
+    bits = int(mask, 16) if mask is not None else None
+    for key, offset in (("current_flags", 0), ("historical_flags", 16)):
+        expected = [flag for n, flag in enumerate(allowed_flags) if bits is not None and bits & (1 << (n + offset))]
+        if flags[key] != expected:
+            raise ValueError("Hardware flags do not match the measurement")
+    temperature, source = value["temperature_c"], value["temperature_source"]
+    if temperature is not None and (isinstance(temperature, bool) or not isinstance(temperature, (int, float)) or not math.isfinite(temperature) or not -40 <= temperature <= 150):
+        raise ValueError("Invalid hardware temperature")
+    if source not in ("vcgencmd", "sysfs", "unavailable") or (temperature is None) != (source == "unavailable"):
+        raise ValueError("Invalid temperature source")
+    errors = value["sample_errors"]
+    allowed_errors = {kind + "_" + error for kind in ("throttled", "temperature") for error in ("unavailable", "timeout", "invalid")}
+    if not isinstance(errors, list) or len(errors) > 2 or any(not isinstance(error, str) or error not in allowed_errors for error in errors) or len(set(errors)) != len(errors):
+        raise ValueError("Invalid hardware sampling evidence")
+    if isinstance(value["thermal_warning_c"], bool) or value["thermal_warning_c"] != 75:
+        raise ValueError("Invalid provisional temperature warning")
+    power_status = "unknown" if bits is None else "warning" if bits & 0b111 else "healthy"
+    thermal_status = "warning" if (bits is not None and bits & 0b1000) or temperature is not None and temperature >= 75 else "healthy" if temperature is not None and bits is not None else "unknown"
+    if value["power_status"] != power_status or value["thermal_status"] != thermal_status:
+        raise ValueError("Hardware status does not match the measurements")
+    return {"observed_at": observed, "power_status": power_status, "thermal_status": thermal_status,
+            "temperature_c": temperature, "temperature_source": source,
+            "throttled_hex": hex(bits) if bits is not None else None, **flags,
+            "sample_errors": errors[:], "thermal_warning_c": 75}
+
+
 class Store:
-    def __init__(self, config, catalogue_path):
+    def __init__(self, config, catalogue_path, reference_registry=None):
         self.config = config
         self.path = config.directory / "songsketch.sqlite3"
         self.lock = threading.RLock()
@@ -78,6 +127,10 @@ class Store:
         self.conn.execute("PRAGMA busy_timeout=30000")
         self.conn.executescript(SCHEMA)
         self.catalogue_path = Path(catalogue_path)
+        packaged = Path(__file__).resolve().parents[1] / "artwork/catalogue.json"
+        self.reference_registry_path = (None if reference_registry is False else
+            Path(reference_registry) if reference_registry is not None else
+            packaged.with_name("registry.json") if self.catalogue_path.resolve() == packaged.resolve() else None)
         self.birds = []
         self.reload_catalogue()
         with self.tx() as db:
@@ -114,13 +167,69 @@ class Store:
             if b.get("approved", b.get("artwork_approved", False)):
                 for name in [b.get("scientific_name", ""), b.get("common_name", "")] + b.get("aliases", []):
                     self.by_name[name.casefold()] = b
+        # The reference library proves final-art availability, not playback
+        # readiness. Never promote its animation flags into the player catalogue.
+        self.reference_birds, self.references_by_name = self.load_reference_art()
         with self.tx() as db:
-            for b in self.by_name.values():
-                db.execute("UPDATE missing_art SET resolved=1 WHERE scientific_name=?", (b["scientific_name"],))
-                db.execute("UPDATE email_outbox SET status='resolved' WHERE species=? AND status IN ('pending','failed')", (b["scientific_name"],))
+            for b in list(self.by_name.values()) + self.reference_birds:
+                for name in {b["scientific_name"], *b.get("aliases", [])}:
+                    db.execute("UPDATE missing_art SET resolved=1 WHERE scientific_name=? COLLATE NOCASE", (name,))
+                    db.execute("UPDATE email_outbox SET status='resolved' WHERE species=? COLLATE NOCASE AND status IN ('pending','failed')", (name,))
+
+    def load_reference_art(self):
+        path = self.reference_registry_path
+        if path is None or not path.exists():
+            return [], {}
+        if path.is_symlink() or path.stat().st_size > 1_000_000:
+            raise ValueError("Invalid final-art reference registry")
+        registry = json.loads(path.read_text())
+        entries = registry.get("birds") if isinstance(registry, dict) else None
+        if not isinstance(registry, dict) or registry.get("schema_version") != 1 or not isinstance(entries, list) or len(entries) > 500:
+            raise ValueError("Invalid final-art reference registry")
+        birds, by_name = [], {}
+        root = path.parent.resolve()
+        for item in entries:
+            if not isinstance(item, dict) or item.get("final_art_accepted") is not True:
+                continue
+            if item.get("final_art_status") not in ("approved", "accepted_for_animation"):
+                raise ValueError("Final-art acceptance status is inconsistent")
+            ident = short_text(item.get("id"), "reference id", 80)
+            scientific = short_text(item.get("scientific_name"), "reference species", 120)
+            common = short_text(item.get("common_name"), "reference name", 120)
+            aliases = item.get("aliases", [])
+            if not isinstance(aliases, list) or len(aliases) > 30:
+                raise ValueError("Invalid final-art aliases")
+            aliases = [short_text(name, "reference alias", 120) for name in aliases]
+            relative = Path(short_text(item.get("reference_path"), "reference path", 300))
+            if relative.is_absolute() or ".." in relative.parts or relative.suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp"):
+                raise ValueError("Invalid final-art image path")
+            image = root / relative
+            if not image.is_file() or image.is_symlink() or any(parent.is_symlink() for parent in image.parents if parent != root) or root not in image.resolve().parents or image.stat().st_size > 20_000_000:
+                raise ValueError("Final-art reference image is missing or unsafe")
+            expected = item.get("reference_sha256")
+            if not isinstance(expected, str) or not re.fullmatch(r"[0-9a-f]{64}", expected):
+                raise ValueError("Final-art reference hash is missing")
+            digest = hashlib.sha256()
+            with image.open("rb") as source:
+                for block in iter(lambda: source.read(1024 * 1024), b""):
+                    digest.update(block)
+            if digest.hexdigest() != expected:
+                raise ValueError("Final-art reference image does not match its approved snapshot")
+            bird = {"id": ident, "scientific_name": scientific, "common_name": common, "aliases": aliases,
+                    "approved": True, "artwork_approved": True, "final_art_available": True,
+                    "final_art_status": item["final_art_status"], "animation_ready": False,
+                    "reference_only": True, "image_url": "/artwork/" + relative.as_posix()}
+            birds.append(bird)
+            for name in [scientific, common, *aliases]:
+                key = name.casefold()
+                if key in by_name and by_name[key]["scientific_name"] != scientific:
+                    raise ValueError("Final-art reference alias is ambiguous")
+                by_name[key] = bird
+        return birds, by_name
 
     def bird(self, name):
-        return self.by_name.get(str(name).casefold())
+        key = str(name).casefold()
+        return self.by_name.get(key) or self.references_by_name.get(key)
 
     def meta(self, key, default=None):
         rows = self.query("SELECT value FROM meta WHERE key=?", (key,))
@@ -174,7 +283,7 @@ class Store:
                 if test or (not cooling and not queued):
                     db.execute("INSERT INTO queue(event_id,scientific_name,data,created_at) VALUES (?,?,?,?)", (event, scientific, json.dumps(data), now))
                     db.execute("DELETE FROM queue WHERE id NOT IN (SELECT id FROM queue ORDER BY id DESC LIMIT 20)")
-        if test:
+        if test and bird and bird.get("animation_ready"):
             # The setup button previews immediately; a real song never interrupts a painting.
             self.set_meta("test_override", event)
             self.set_meta("current", None)
@@ -188,6 +297,7 @@ class Store:
             if data.get(key, "unknown") not in ("healthy", "failed", "unknown"):
                 raise ValueError("Invalid " + key)
         safe = redact(data, self.config.secrets.values())
+        safe["hardware"] = validate_hardware(data.get("hardware"))
         with self.tx() as db:
             db.execute("INSERT OR REPLACE INTO stations VALUES (?,?,?)", (station, iso(), json.dumps(safe)))
             db.execute("UPDATE issues SET resolved=1 WHERE id='pi-disconnected'")
@@ -196,7 +306,7 @@ class Store:
     def station_status(self):
         rows = self.query("SELECT * FROM stations WHERE station_id=?", (self.config.values["station_id"],))
         if not rows:
-            return {"station_id":self.config.values["station_id"],"connected":False,"ever_connected":False,"listening":"unknown","last_heartbeat":None,"audio_status":"unknown","inference_status":"unknown"}
+            return {"station_id":self.config.values["station_id"],"connected":False,"ever_connected":False,"listening":"unknown","last_heartbeat":None,"audio_status":"unknown","inference_status":"unknown","hardware":None}
         row = rows[0]
         data = json.loads(row["data"])
         connected = (utcnow() - timestamp(row["received_at"])).total_seconds() <= self.config.values["heartbeat_timeout_seconds"]
@@ -205,7 +315,11 @@ class Store:
         if connected:
             if audio == inference == "healthy": listening = "available"
             elif "failed" in (audio, inference): listening = "unavailable"
-        return {"station_id":row["station_id"],"connected":connected,"ever_connected":True,"listening":listening,"last_heartbeat":row["received_at"],"audio_status":audio,"inference_status":inference}
+        try:
+            hardware = validate_hardware(data.get("hardware"))
+        except (TypeError, ValueError, OverflowError):
+            hardware = None  # Older/unvalidated stored metadata is not live proof.
+        return {"station_id":row["station_id"],"connected":connected,"ever_connected":True,"listening":listening,"last_heartbeat":row["received_at"],"audio_status":audio,"inference_status":inference,"hardware":hardware}
 
     def report(self, data):
         rid = short_text(data.get("report_id"), "report_id", 200)
@@ -215,6 +329,8 @@ class Store:
         if severity not in ("info", "warning", "error"):
             raise ValueError("Invalid severity")
         clean = redact(data, self.config.secrets.values())
+        if isinstance(data.get("details"), dict) and "hardware" in data["details"]:
+            clean["details"]["hardware"] = validate_hardware(data["details"]["hardware"])
         message = redact(message, self.config.secrets.values())
         component = data.get("details", {}).get("component") if isinstance(data.get("details", {}),dict) else None
         fingerprint = hashlib.sha256((station + ":" + str(component or (severity + message))).encode()).hexdigest()[:24]
@@ -236,7 +352,8 @@ class Store:
         rows = self.query("SELECT scientific_name,MAX(common_name) common_name,COUNT(*) count,MIN(observed_at) first_heard,MAX(observed_at) last_heard,MAX(confidence) confidence FROM detections WHERE test=0 AND qualifies=1 AND observed_at>=? AND observed_at<=? GROUP BY scientific_name ORDER BY count DESC,last_heard DESC", (since,until))
         for row in rows:
             b = self.bird(row["scientific_name"])
-            row.update(has_artwork=bool(b),has_animation=bool(b and b.get("animation_ready")))
+            row.update(has_artwork=bool(b), final_art_available=bool(b), has_animation=bool(b and b.get("animation_ready")),
+                       animation_ready=bool(b and b.get("animation_ready")))
             mail = self.query("SELECT status FROM email_outbox WHERE species=?", (row["scientific_name"],))
             row["email_status"] = mail[0]["status"] if mail else None
         return rows

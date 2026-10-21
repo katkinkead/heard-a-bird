@@ -1,0 +1,96 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "House sparrow",
+    "scientific_name": "Passer domesticus",
+    "sex_age_plumage": "Adult male, clear adult male markings; not tied to the current calendar season",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/house-sparrow",
+      "https://www.nhm.ac.uk/discover/house-sparrow-passer-domesticus.html"
+    ],
+    "diagnostic_features": [
+      "Grey crown with chestnut sides",
+      "Pale grey cheeks without isolated black cheek spot",
+      "Black throat and bib",
+      "Chestnut upperparts with dark streaks",
+      "Pale grey-buff underside",
+      "Short chunky conical bill"
+    ]
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Compact standing three-quarter side portrait, facing right; closed bill and slight head turn",
+    "artistic_intention": "Alert and self-possessed, with character in stance and gaze",
+    "support": "Spare sweeping ink ground/perch strokes"
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "chestnut",
+      "russet",
+      "warm grey",
+      "cream"
+    ],
+    "structural_dark": "deep ink-brown and petrol",
+    "background": [
+      "mineral blue",
+      "pale sage"
+    ],
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Two broken abstract pigment passages with asymmetric placement",
+    "elements": [
+      "Broad arcing mineral-blue passage behind head and body",
+      "Pale sage oblique wash behind lower right body/tail"
+    ]
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "eye",
+      "bill",
+      "layered folded wing"
+    ],
+    "quiet_areas": [
+      "pale lower body"
+    ],
+    "detail_treatment": "Directional feather scratches, fine feather shafts and layered cream-edged wing drawing; no leaf badge",
+    "graphic_structure": "Clearer cream/buff body passages and chestnut covert groups, selective dark separations and pale edges; anatomy and backdrop retained."
+  },
+  "deliberate_stylisations": [
+    "Expressive eye and compact silhouette",
+    "Long lyrical contour extensions",
+    "Saturated warm chestnut pigment"
+  ],
+  "annotations": {
+    "name_treatment": "Understated handwritten species name below bird",
+    "state_treatment": "No sensor status; corner reserved"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/31-house-sparrow-concept.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: style-transfer. EDIT reference image 1, the existing adult male House Sparrow. Image 2 is the original four-bird style collection. Image 3 is the preferred Woodpigeon refinement showing clearer graphic organisation.\nProduce ONE finished landscape 4:3 image. This is a narrow graphic refinement of the House Sparrow, preserving its current pose, size, anatomy, facing right, mineral-blue and sage background shapes, paper, ink support, and exact handwritten name \"House sparrow\".\nCHANGE ONLY THE DRAWING TREATMENT: Group the cream cheek, grey/buff belly and chestnut shoulder into slightly clearer, deliberately shaped pigment areas. Keep selected fine coloured-pencil feather detail within those areas, but let some body passages be calmer. Give the overlapping coverts and shoulder feather groups a clearer rhythm, with selective dark separations and tapered pale edges. Keep the existing wing's excellent long fine shaft drawing. Preserve detailed craftsmanship without evenly scratching every surface to the same intensity. Let a few varied dark contours and feather tips feel more drawn and intentional; no universal heavy outlines, extra glossy shading or gold ornament sprinkled over everything.\nIDENTITY INVARIANTS: adult male House Sparrow (Passer domesticus), grey crown, chestnut sides of the head and nape, pale cheek without a black cheek spot, black throat/bib, stout short conical bill, chestnut back with dark streaking, buff-grey underside, natural brown-pink legs. Do not change it into a Tree Sparrow. Do not enlarge the eye, chest, bill, head, feet or tail.\nKeep the existing ivory paper, translucent underpainting, rich print-like pigment, dry-grain texture and sharp fine linework. More deliberate graphic shapes with species fidelity, not a simplified cartoon.\nOnly text \"House sparrow\". No status, scenery, accessory, fact, extra text or watermark.",
+    "generated_asset": "01-house-sparrow-v2.png",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v2",
+    "user_review": "User: \"these all look great! do the next 10.\"",
+    "created_date": "2026-10-21",
+    "asset_sha256": "e582b0ed896d6a943f4f2391584f715b0bb76fa1d89d55eae73dbd0ca385a9a1",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-642d0b9a-9dce-419e-93c3-4ad1bfb70c82.png"
+  },
+  "review": {
+    "species_identity": "Reviewed against RSPB/NHM identification notes; grey crown, pale cheek without isolated spot, bib, stout bill retained",
+    "material_and_detail": "Fine drawing retained; feather groups read more clearly with calmer body texture.",
+    "collection_variety": "Fresh two-part abstract backdrop and compact pose; no repeated leaf ornament",
+    "approval": "Final artwork approved 2026-10-21; animation not requested."
+  },
+  "batch": {
+    "number": 1,
+    "position": 1,
+    "review": "approved",
+    "treatment": "Refined drawing"
+  }
+}

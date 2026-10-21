@@ -1,0 +1,68 @@
+{
+  "batch": 8,
+  "total_batches": 8,
+  "kind": "owls",
+  "review_group": [
+    6,
+    7,
+    8
+  ],
+  "status": "awaiting_user_approval",
+  "approval_rule": "User authorised final ten and five owls together; present for review before animation.",
+  "artwork": [
+    {
+      "position": 36,
+      "species": "Tawny owl",
+      "slug": "tawny-owl",
+      "batch": 8,
+      "file": "36-tawny-owl-v1.png",
+      "record": "tawny-owl-record.json",
+      "sha256": "ea336a640353b476b71cc945801929dca779240ec86740efd21ab4c642a03715",
+      "status": "awaiting_user_approval"
+    },
+    {
+      "position": 37,
+      "species": "Barn owl",
+      "slug": "barn-owl",
+      "batch": 8,
+      "file": "37-barn-owl-v1.png",
+      "record": "barn-owl-record.json",
+      "sha256": "4cb95a2c482e987be3b2d2b4e2f7d32df4643b0df0908f2203d6e3ccd0a1c1cd",
+      "status": "awaiting_user_approval"
+    },
+    {
+      "position": 38,
+      "species": "Little owl",
+      "slug": "little-owl",
+      "batch": 8,
+      "file": "38-little-owl-v1.png",
+      "record": "little-owl-record.json",
+      "sha256": "2d76a43366b85b413cd33621c52a901db2be850d3aafbb947fb6594488849ec7",
+      "status": "awaiting_user_approval"
+    },
+    {
+      "position": 39,
+      "species": "Short-eared owl",
+      "slug": "short-eared-owl",
+      "batch": 8,
+      "file": "39-short-eared-owl-v1.png",
+      "record": "short-eared-owl-record.json",
+      "sha256": "a8dd9a667631e65a44528fc0d53ddd5dbc3082232492e42fa1c990b13b26fb92",
+      "status": "awaiting_user_approval"
+    },
+    {
+      "position": 40,
+      "species": "Long-eared owl",
+      "slug": "long-eared-owl",
+      "batch": 8,
+      "file": "40-long-eared-owl-v1.png",
+      "record": "long-eared-owl-record.json",
+      "sha256": "762582eaa85b818d3e7ba5c5813a2dc3d7f1809f00faf33dfafca9e06697c7a4",
+      "status": "awaiting_user_approval"
+    }
+  ],
+  "review_page": "../batches-06-07-and-owls/index.html#owls",
+  "prompts": "../batches-06-07-and-owls/generation-prompts.txt",
+  "style_guide": "../../final-art-style-guide.html",
+  "created_date": "2026-10-21"
+}

@@ -1,0 +1,119 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Fieldfare",
+    "scientific_name": "Turdus pilaris",
+    "sex_age_plumage": "Adult Fieldfare, sex unspecified, winter plumage",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/fieldfare",
+      "https://www.wildlifetrusts.org/wildlife-explorer/birds/thrushes-chats-flycatchers-starling-dipper-and-wren/fieldfare",
+      "https://ebird.org/species/fieldf",
+      "https://sdos.org/birds/fieldfare/"
+    ],
+    "diagnostic_features": [
+      "Large upright thrush with blue-grey head/nape and rump, chestnut-brown back, dark wings and blackish tail.",
+      "Warm ochre/peach-buff breast with dark pointed spots/streaks; paler belly and spotted flanks.",
+      "Slim pointed yellow bill with a darker tip, dark iris and dark brown legs; subtle darker lores/cheek marks, without Redwing's broad white eyebrow."
+    ],
+    "birdnet_label": "Turdus pilaris_Fieldfare"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Upright left-facing thrush with head lifted and tail extending right",
+    "facing": "left",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "A broad-chested adult thrush facing left, head upright with a slight sideways tilt, one foot advanced on economical ground strokes. Full tail lowered to right, enough exposed paper around the whole bird.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "blue-grey",
+      "chestnut brown",
+      "ochre buff",
+      "cream",
+      "yellow bill"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Dusty rose polygon and mineral-blue pigment field",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Dusty rose polygon and mineral-blue pigment field",
+    "elements": [
+      "Dusty rose polygon and mineral-blue pigment field"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Grey head/rump, chestnut back, ochre spotted chest and yellow dark-tipped bill"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Fieldfare (Turdus pilaris), Adult Fieldfare, sex unspecified, winter plumage.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Large upright thrush with blue-grey head/nape and rump, chestnut-brown back, dark wings and blackish tail.\n- Warm ochre/peach-buff breast with dark pointed spots/streaks; paler belly and spotted flanks.\n- Slim pointed yellow bill with a darker tip, dark iris and dark brown legs; subtle darker lores/cheek marks, without Redwing's broad white eyebrow.\nAvoid identity confusion: Plain all-brown Song Thrush head; Redwing's bold white eyebrow and rusty flank patch; Bright red breast; Round equal decorative dots replacing organic spotting; Stubby finch bill\nARTISTIC POSE: A broad-chested adult thrush facing left, head upright with a slight sideways tilt, one foot advanced on economical ground strokes. Full tail lowered to right, enough exposed paper around the whole bird.\nSPECIFIC DRAWING EMPHASIS: Blue-grey head and rump contrast with chestnut back, yellow bill with darker tip, buff-ochre breast with dark spots and pale belly. Group spotting into anatomical direction and vary mark size; crisp eye and muted grey head, no Redwing eyebrow.\nBACKGROUND DIRECTION: A pale dusty-rose irregular polygon and a faint separate mineral-blue wash edge; spare abstract forms rather than habitat.\nPLUMAGE PALETTE: blue-grey, chestnut brown, ochre buff, cream, yellow bill. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Fieldfare\".",
+    "generated_asset": "30-fieldfare-v1.png",
+    "asset_sha256": "492ad534cf7870c249470b3d1590e1eecf5ca671d80be7db752b86938b585e19",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-f755b2b2-4e07-49bc-b28d-18831fe2bf99.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Grey head/rump, chestnut back, ochre spotted chest and yellow dark-tipped bill",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Upright left-facing thrush with head lifted and tail extending right",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 6,
+    "collection_position": 30,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "original35"
+  }
+}

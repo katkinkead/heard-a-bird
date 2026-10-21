@@ -1,0 +1,117 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Redwing",
+    "scientific_name": "Turdus iliacus",
+    "sex_age_plumage": "Adult Redwing, sex unspecified, typical winter visitor",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/redwing",
+      "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/animals/birds/redwing/",
+      "https://ebird.org/species/redwin"
+    ],
+    "diagnostic_features": [
+      "Small thrush with warm/dark brown upperparts and a conspicuous creamy-white eyebrow extending behind the dark eye.",
+      "Cream underside with dark brown streaking; orange-rust flank patch below the folded wing, and matching rusty underwing if exposed.",
+      "Slender pointed bill with yellowish base and dark distal portion; dark eyes, muted fleshy-brown legs; brown tail."
+    ],
+    "birdnet_label": "Turdus iliacus_Redwing"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Right-facing forward ground stance with lowered tail",
+    "facing": "right",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "A compact thrush facing right in a light forward ground step, head inclined slightly as if attending to something nearby. Show one full flank and wing; keep the tail modest and lowered.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "brown",
+      "cream",
+      "rusty red flank",
+      "dark brown streaks"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Unequal olive blocks with diagonal paper gap",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Unequal olive blocks with diagonal paper gap",
+    "elements": [
+      "Unequal olive blocks with diagonal paper gap"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Cream eyebrow and malar stripe, rusty flank, brown wing planes and directional breast streaks"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Redwing (Turdus iliacus), Adult Redwing, sex unspecified, typical winter visitor.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Small thrush with warm/dark brown upperparts and a conspicuous creamy-white eyebrow extending behind the dark eye.\n- Cream underside with dark brown streaking; orange-rust flank patch below the folded wing, and matching rusty underwing if exposed.\n- Slender pointed bill with yellowish base and dark distal portion; dark eyes, muted fleshy-brown legs; brown tail.\nAvoid identity confusion: Red wing-coverts or fully red upperwing: the namesake red is mainly flank/underwing; A plain Song Thrush face without bold eyebrow; Blue-grey head and rump of Fieldfare; Round decorative polka dots replacing directional breast streaking\nARTISTIC POSE: A compact thrush facing right in a light forward ground step, head inclined slightly as if attending to something nearby. Show one full flank and wing; keep the tail modest and lowered.\nSPECIFIC DRAWING EMPHASIS: Bold pale eyebrow and malar stripe, brown upperparts, streaked pale breast and true rusty-red flank patch. Let fine warm brown feather drawing and the red flank carry the colour; no all-red breast or blue-grey head.\nBACKGROUND DIRECTION: Two broad unequal pale olive pigment planes with a diagonal white gap, quiet and spacious behind the warm flank.\nPLUMAGE PALETTE: brown, cream, rusty red flank, dark brown streaks. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Redwing\".",
+    "generated_asset": "27-redwing-v1.png",
+    "asset_sha256": "27a333456354c685fa35287f1bca92ae0a39d25fc168876b4f3f52ffa65168f0",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-d7555155-a5bb-41a4-8a17-36f319ce7bcf.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Cream eyebrow and malar stripe, rusty flank, brown wing planes and directional breast streaks",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Right-facing forward ground stance with lowered tail",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 6,
+    "collection_position": 27,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "original35"
+  }
+}

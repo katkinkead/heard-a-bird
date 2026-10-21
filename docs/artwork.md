@@ -1,6 +1,21 @@
-# The bundled paintings
+# The artwork library and completed paintings
 
 Songsketch includes the existing Robin, Goldfinch, Blue tit, Blackbird and Wren paintings. Each runs for 75 seconds using the already developed sketch, water, pigment and fine-line choreography. The application uses these local assets; showing a bird never requires an image-generation call or an AI key.
+
+
+## Canonical reference library
+
+[Open the artwork library](../artwork/index.html). It contains **45 finished references** in `artwork/references/final-art/`, separate from the **five completed animations** in `artwork/animations/`. `artwork/registry.json` records every species, selected source/hash, approval basis and animation status. `artwork/catalogue.json` remains the five-bird production playback catalogue. Finished art is not automatically ready to animate or schedule.
+
+The source is the **Design bird painting concepts** thread (`01a1540f-e061-7172-92cc-a50dd9c423ff`). The snapshot preserves the original five, the approved selected versions of batches 1–5, and the final fifteen accepted for animation by the later request “now we need to generate the animations for all the birds.” The earlier final-fifteen manifests still say `awaiting_user_approval`; that exact state and later acceptance interpretation are retained. They are not described as explicit portrait-by-portrait approvals. Superseded Carrion Crow and House Sparrow variants were not imported as selected final art.
+
+The original five reference PNGs are existing finished animation captures. Their high-resolution style anchors remain alongside them in `painting-system/assets/style/`. The forty new PNGs are unchanged selected originals, including all five owls. Source manifests and species records are retained under `artwork/provenance/fork-2026-10-21/`; historical development paths there are provenance, not runtime dependencies.
+
+The latest verified **[final art style guide](../artwork/style-guide.html)** includes the Woodpigeon v2 refinement. Its full [art-direction reference](../artwork/painting-system/references/final-art-system.md) and **[animation guide](../artwork/animation-guide.md)** are bundled locally. `artwork/import-snapshot.json` records their source hashes and the style guide’s relative-path relocation. The guide copies already matched the fork at import, so no approved renderer or benchmark was rewritten. Historical statements inside that frozen authoring package describe its earlier scope; this document and the registry identify the current connected package.
+
+[Status graphics](../artwork/ui/index.html) preserve the circular perspective ripple, “Singing now” example and disconnected pie as exact original image copies. The reusable SVG symbols are copied verbatim from the existing display. No status artwork was regenerated.
+
+The fork was actively preparing the remaining forty animations for portrait/shared-branch reuse when this snapshot was taken. Those files were not copied or declared complete. `artwork/pending-animations/` is a separate review staging area; the [sync helper contract](../artwork/pending-animations/README.md) requires a whole completed manifest, every dependency’s exact hash and real validation/acceptance evidence. It cannot promote assets into the live catalogue. The reference PNGs add about 116 MiB including the original five captures; the largest selected portrait is under 4 MiB.
 
 ## What is included
 
@@ -11,7 +26,7 @@ Songsketch includes the existing Robin, Goldfinch, Blue tit, Blackbird and Wren 
 - `artwork/painting-system/` preserves the style system, original image references, approved Robin benchmark and underlying authoring resources.
 - [The visual style guide](../artwork/style-guide.html) uses bundled relative references. The original reference images may include historical example state labels; they are reference material, not live evidence.
 
-No illustration was regenerated for this package. The five existing paintings are included with the user's authorisation. Additional artwork concepts are not silently added to the live catalogue.
+No illustration was regenerated for this package. The five existing paintings are included with the user's authorisation. The additional finished references are documented separately and are not silently added to the live catalogue.
 
 ## Serving and control
 

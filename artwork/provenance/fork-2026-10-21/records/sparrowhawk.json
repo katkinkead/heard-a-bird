@@ -1,0 +1,118 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Sparrowhawk",
+    "scientific_name": "Accipiter nisus",
+    "sex_age_plumage": "Adult male Eurasian Sparrowhawk",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/sparrowhawk",
+      "https://web-cdn.rspb.org.uk/birds-and-wildlife/identifying-birds/whats-that-bird-of-prey",
+      "https://members.rspb.org.uk/eye-colour/"
+    ],
+    "diagnostic_features": [
+      "Small slender woodland hawk; blue-grey/slate upperparts and orange-rufous horizontal barring across pale chest and belly.",
+      "Long, narrow barred tail; short rounded folded wings rather than long pointed falcon wings. Relatively small rounded head.",
+      "Yellow-orange to orange iris around dark pupil; small hooked dark bill with yellow cere; long thin yellow legs and toes, dark curved talons."
+    ],
+    "birdnet_label": "Accipiter nisus_Eurasian Sparrowhawk"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Right-facing perched male with long barred tail descending left",
+    "facing": "right",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "Adult male, slender alert side profile facing right, head turned slightly outward and long barred tail descending left. Grip a spare diagonal ink branch; upright but relaxed, no exaggerated angry brow or attacking pose.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "slate blue-grey",
+      "rufous orange",
+      "cream",
+      "yellow legs",
+      "dark tail bars"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Broken terracotta angled band",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Broken terracotta angled band",
+    "elements": [
+      "Broken terracotta angled band"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Slate wing planes, horizontal rufous underside bars, orange iris and long yellow legs"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Sparrowhawk (Accipiter nisus), Adult male Eurasian Sparrowhawk.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Small slender woodland hawk; blue-grey/slate upperparts and orange-rufous horizontal barring across pale chest and belly.\n- Long, narrow barred tail; short rounded folded wings rather than long pointed falcon wings. Relatively small rounded head.\n- Yellow-orange to orange iris around dark pupil; small hooked dark bill with yellow cere; long thin yellow legs and toes, dark curved talons.\nAvoid identity confusion: Brown-backed juvenile or female paired with male label; Vertical tear streaks instead of adult horizontal breast bars; Heavy Goshawk build and exaggerated white eyebrow; Falcon moustache or long pointed wings; Massive eagle beak or legs; Very short tail\nARTISTIC POSE: Adult male, slender alert side profile facing right, head turned slightly outward and long barred tail descending left. Grip a spare diagonal ink branch; upright but relaxed, no exaggerated angry brow or attacking pose.\nSPECIFIC DRAWING EMPHASIS: Slate blue-grey upperparts, fine orange-rufous horizontal bars across pale underside, yellow-orange iris, short hooked bill with yellow cere and long thin yellow legs. Clear long tail bars and precise layered wing planes; sharp craft without villain-like facial caricature.\nBACKGROUND DIRECTION: A broad pale terracotta angled band offset behind the slate back, broken at one edge; simple geometry leaves a clean light space around the face.\nPLUMAGE PALETTE: slate blue-grey, rufous orange, cream, yellow legs, dark tail bars. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Sparrowhawk\".",
+    "generated_asset": "29-sparrowhawk-v1.png",
+    "asset_sha256": "aa49f534ba231e7e0ff2e8f443ea9f566422faa03663972b56b80820ae3469c0",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-470cf8bd-5a5a-4958-8259-5ef42ed6ad52.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Slate wing planes, horizontal rufous underside bars, orange iris and long yellow legs",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Right-facing perched male with long barred tail descending left",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 6,
+    "collection_position": 29,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "original35"
+  }
+}

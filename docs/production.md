@@ -1,6 +1,36 @@
 # Moving into a permanent home
 
-The supported dedicated-host profile is Linux with systemd and Python3.9+ (Ubuntu/Debian-style). The exact mini PC has not been selected. A Windows installation is outside this release. Use the same code and artwork; do not start a second application fork.
+The supported dedicated-host profile is Linux with systemd and Python3.9+ (Ubuntu/Debian-style). The project board names a **Beelink EQ14** for the indoor server; the actual unit, Linux installation and power-recovery behavior still need verification. A Windows installation is outside this release. Use the same code and artwork; do not start a second application fork.
+
+## The garden Pi's production power profile
+
+The project board's intended chain is **Ubiquiti U-PoE+ → outdoor Ethernet/surge protection → Waveshare POE-SPLITTER-25W-TYPE-C → Raspberry Pi 5 USB-C power**, with the splitter's Ethernet output supplying data. It also names **ETH-SP-G2** surge protection. This is a recorded design, not a tested installation.
+
+The [Waveshare specification](https://www.waveshare.com/product/modules/others/power-relays/poe-splitter-25w-type-c.htm) gives 37–57V PoE input, IEEE802.3af/at support and **5V5A maximum** output. The [U-PoE+ specification](https://techspecs.ui.com/unifi/accessories/u-poe-plus) lists the 30W adapter with 48V/0.65A output. These component ratings do not establish the power available at the Pi after cable and conversion losses.
+
+**Two design details remain to verify on the actual chain:** the splitter's USB-PD negotiation behavior and the ETH-SP-G2's suitability for this PoE+ load. The retrieved Waveshare manufacturer specification does not state PD behavior. The [ETH-SP-G2 datasheet](https://dl.ui.com/datasheets/ETH-SP/ETH-SP-G2_DS.pdf) explicitly lists 802.3af; the [current product page](https://store.ui.com/us/en/products/ethernet-surge-protector) lists generic PoE support. Neither is an explicit PoE+ current rating. Keep the board's “PoE+ TBC” open until confirmed by the supplier/manufacturer or a qualified installer. Follow the [manufacturer's grounding instructions](https://dl.ui.com/qsg/ETH-SP-G2/ETH-SP-G2_EN.html); the software cannot verify grounding or weather protection.
+
+For a Pi5 without a recognised 5V5A PD supply, Raspberry Pi documents a 600mA combined USB allowance. `usb_max_current_enable=1` raises it to1.6A. This changes a limit, not the power supply's capacity. It is unnecessary for a working low-power microphone setup whose combined USB requirement fits600mA. The design note about using this override is therefore a **conditional production setting**, not an MVP default. See [Raspberry Pi's USB power white paper](https://pip-assets.raspberrypi.com/categories/685-app-notes-guides-whitepapers/documents/RP-009856-WP-1-USB%20Power%20delivery%20on%20Raspberry%20Pi%205.pdf).
+
+The local assistant can inspect the Pi without changing anything:
+
+```sh
+python3 scripts/pi-production-power.py --plan --profile waveshare-25w-pi5
+python3 scripts/pi-production-power.py --diagnose
+```
+
+Once the exact chain's capacity has been verified, add the actual maximum USB load and total Pi/fan/USB/accessory budget, including startup margin. The values below are placeholders to replace, **not default measurements**:
+
+```sh
+sudo python3 scripts/pi-production-power.py --apply --profile waveshare-25w-pi5 \
+  --supply-verified --usb-budget-ma USB_MILLIAMPS --total-budget-ma TOTAL_MILLIAMPS
+```
+
+Use `--usb-boot` only if USB boot is required and the storage device is included in that budget. The helper requires Pi5 evidence, readable active power state, no reported current/past throttle or boot USB over-current flags, and a budget within the1.6A USB/5A total ceilings. `--supply-verified` records an operator assertion, not a measurement performed by Songsketch. Do not set it while the chain's compatibility or capacity is unresolved.
+
+Apply creates a timestamped `config.txt.songsketch-power-….bak`, then atomically adds a small Pi5-only managed block to `/boot/firmware/config.txt`. It is idempotent and leaves all unrelated settings intact. Existing USB-power settings, altered managed blocks and included config files require manual review instead of an overwrite. No EEPROM changes, automatic reboot, database reset or blind restart are performed. [Raspberry Pi boot configuration documentation](https://www.raspberrypi.com/documentation/computers/config_txt.html) explains the file and reboot behavior.
+
+After an intentional reboot, verify the active allowance, absence of new power/throttle flags, stable USB capture and advancing inference under sustained real BirdNET load in the finished enclosure. A successful setting write is not a completed power test. If rollback is required, compare the recorded backup with today's file and restore only the managed change; do not overwrite later unrelated edits. See [BirdNET/Pi reliability notes](birdnet-pi-reliability.md) for the full fault checklist.
 
 ## Move the history
 

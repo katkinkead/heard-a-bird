@@ -1,0 +1,71 @@
+{
+  "batch": 3,
+  "total_batches": 7,
+  "review_group": [
+    2,
+    3
+  ],
+  "status": "approved",
+  "approval_rule": "Accepted by the user; final art only. Animation has not been authorised for these assets.",
+  "artwork": [
+    {
+      "position": 11,
+      "species": "Carrion crow",
+      "slug": "carrion-crow",
+      "batch": 3,
+      "file": "11-carrion-crow-v2.png",
+      "record": "carrion-crow-record.json",
+      "sha256": "17c4a1c5e7fd1ec5a34add3dd40761f0570c79cb57765811ffb3a8f9b9613a92",
+      "status": "approved"
+    },
+    {
+      "position": 12,
+      "species": "Feral pigeon",
+      "slug": "feral-pigeon",
+      "batch": 3,
+      "file": "12-feral-pigeon-v1.png",
+      "record": "feral-pigeon-record.json",
+      "sha256": "c6e31be3cb02c2a8df4e02d73a27a664d946c9b3e56ed59434a9fb4e9bf38f49",
+      "status": "approved"
+    },
+    {
+      "position": 13,
+      "species": "Collared dove",
+      "slug": "collared-dove",
+      "batch": 3,
+      "file": "13-collared-dove-v1.png",
+      "record": "collared-dove-record.json",
+      "sha256": "f34afe7dbd8026893a3f4da5be3294e9de01e20a5507cc7d45476083cb172d70",
+      "status": "approved"
+    },
+    {
+      "position": 14,
+      "species": "Greenfinch",
+      "slug": "greenfinch",
+      "batch": 3,
+      "file": "14-greenfinch-v1.png",
+      "record": "greenfinch-record.json",
+      "sha256": "231873ce79304dde15fae6dd78fb8979837ab2e4cf7f6f342c486ab7916bd28e",
+      "status": "approved"
+    },
+    {
+      "position": 15,
+      "species": "Rook",
+      "slug": "rook",
+      "batch": 3,
+      "file": "15-rook-v1.png",
+      "record": "rook-record.json",
+      "sha256": "d2e4574189669c08983d08664bc04ff744351716bf40a9cc6408521a2d8f3d4a",
+      "status": "approved"
+    }
+  ],
+  "review_page": "../batches-02-03/index.html",
+  "prompts": "../batches-02-03/generation-prompts.txt",
+  "style_guide": "../../final-art-style-guide.html",
+  "created_date": "2026-10-21",
+  "approval": {
+    "date": "2026-10-21",
+    "evidence": "User: \"ok now make the next 10\"",
+    "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+  }
+}

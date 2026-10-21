@@ -1,6 +1,6 @@
 # Verification record — 21 October 2026
 
-This is a locally verified MVP, not a commissioned garden installation. The source, guide and five approved animations travel together in the v0.2.0-mvp package. Earlier verification is retained below as historical evidence.
+This is a locally verified MVP, not a commissioned garden installation. The source, guide, 45 finished-art references and five approved animations travel together in the v0.3.0-mvp package. Earlier verification is retained below as historical evidence.
 
 ## Original 0.1.0 verification (historical)
 
@@ -22,8 +22,8 @@ Browser testing of the key-removal control stopped at its confirmation. No real 
 
 1. CanaKit card/OS, actual USB microphone and gain, BirdNET model setup and Dorset coordinates.
 2. Real Pi service installation, real detections, Wi-Fi range, outage replay and Pi reboot.
-3. The friend’s Mac permissions, background-service login/restart behaviour, lid/sleep behaviour and display browser.
-4. A real SMTP delivery using the friend’s chosen account and notification recipient.
+3. The installation Mac’s permissions, background-service login/restart behaviour, lid/sleep behaviour and display browser.
+4. A real SMTP delivery using the configured mail account and notification recipient.
 5. Optional API account access, model availability and visual quality of actual paid drafts. An animation proposal is not a completed newly authored animation.
 6. The selected mini PC, restored migration bundle, startup after power loss, sustained use and outdoor enclosure/power/environment.
 
@@ -48,3 +48,15 @@ Security/repair tests cover single-use expiring browser tickets, local-origin/se
 Browser verification used a disposable loopback server and a test-only opening ticket. The ticket was consumed and removed from the URL; the guide enabled its controls, queued a labelled test Robin, rejected malformed input before SSH, preserved a changed address on re-probe, and showed recovery after a reserved `.invalid` test hostname failed. The diagnostic packet downloaded successfully. Aftercare and healthy-listening indicators remained hidden without equipment evidence. Desktop and narrow mobile layout checks, JavaScript syntax, shell syntax and package preflight pass. This does not verify real microphone quality, real species recognition, network/reboot recovery, optional email/paid AI, remote viewing or the final unattended host.
 
 The local assistant is instructed to diagnose, make bounded safe repairs, verify and resume. This is a reusable operating procedure plus guarded software interfaces, not a promise that arbitrary hardware or third-party failures can heal themselves without physical access or permission.
+
+## 0.3.0 repository handover, art library and health
+
+**195 application tests and eight animation-import tests pass locally.** The suite includes guarded GitHub/assistant launch, custom data-directory propagation, executable-preserving ZIP generation using the actual guide JavaScript, setup API authentication/locking, reference-art availability and notification reconciliation, and power/thermal telemetry. Provider, SSH and hardware interactions use fixtures or mocks; local HTTP/process tests use isolated temporary directories.
+
+The installer preflight verifies 45 references, five completed animations and 50 unique asset hashes, plus required guide/launcher entrypoints and registry/catalogue consistency. Its failure cases include tampered/missing assets, malformed metadata and path traversal. The 131-file import snapshot retains source hashes; unfinished files from the active art thread were not copied into playback. JavaScript, generated launcher and shell syntax checks pass.
+
+The running guide was checked at desktop size: Step 0 shopping links and kit cards, ordered navigation, editable saved details and clearing, the private one-use opening ticket, and eight live component checks. The server/database alone appeared checked; absent microphone, inference, hardware and display evidence stayed unverified. The reference gallery loaded all 45 species. A requested 390px viewport remained at1180px in this preview, so this revision's narrow-screen rendering is not newly verified.
+
+The production power helper has fixture tests for diagnostics, safeguards, idempotent changes and configuration preservation. No power setting, EEPROM, physical Pi or reboot was changed. Manufacturer evidence and the remaining PoE/USB-C compatibility checks are recorded in production.md and birdnet-pi-reliability.md.
+
+No live email or paid model request was sent. Email requires configured SMTP, not just a recipient. A known final portrait without a completed animation is tracked separately and does not trigger a missing-art email. Tests do not certify physical recognition quality, long-term reliability, real email delivery, remote access or the eventual production power chain.

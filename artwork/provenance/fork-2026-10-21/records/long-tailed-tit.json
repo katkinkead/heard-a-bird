@@ -1,0 +1,112 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Long-tailed tit",
+    "scientific_name": "Aegithalos caudatus",
+    "sex_age_plumage": "Adult British striped-headed form; sex unspecified",
+    "identity_references": [
+      "https://www.wildlifetrusts.org/wildlife-explorer/birds/tits-crests-and-warblers/long-tailed-tit",
+      "https://www.allaboutbirds.org/guide/Long-tailed_Tit/id",
+      "https://www.rspb.org.uk/birds-and-wildlife/long-tailed-tit"
+    ],
+    "diagnostic_features": [
+      "Tiny compact body",
+      "Minute short black bill",
+      "White crown/cheek with broad dark stripe above eye toward nape",
+      "Black back bordered blush pink",
+      "Pale pink-white underside",
+      "Very long dark-centred white-edged graduated tail"
+    ]
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Sideways compact body with small head turn and diagonal full tail",
+    "facing": "right",
+    "support": "Fine rising ink twig",
+    "artistic_intention": "Delicate balance and watchfulness",
+    "expression_choices": [
+      "Small head turn",
+      "Long tail against compact body"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "cream-white",
+      "blush pink",
+      "black/charcoal"
+    ],
+    "structural_dark": "charcoal ink",
+    "optional_accent": "pale feather edging",
+    "background": "sage green",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Simple broken-edged sage block",
+    "elements": [
+      "Sage geometric wash"
+    ],
+    "relationship_to_bird": "Balances diagonal tail and pale pink body",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "eye and minute bill",
+      "striped head",
+      "long tail shafts"
+    ],
+    "quiet_areas": [
+      "pale belly and face"
+    ],
+    "contour_gesture": "Sweeping narrow lines along full tail",
+    "detail_treatment": "Fine pale wing drawing over black masses and soft pink/ivory body",
+    "optional_motifs": [],
+    "graphic_structure": "Strong black/white tail and head pattern balanced by luminous pale body"
+  },
+  "deliberate_stylisations": [
+    "Blush pigment enrichment",
+    "Lyrical fine tail contours",
+    "Controlled pale feather edge patterns"
+  ],
+  "annotations": {
+    "name_treatment": "Understated handwritten species name below bird",
+    "state_treatment": "No sensor status; corner reserved"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept.\nCreate ONE finished landscape 4:3 portrait for the Birdsong-to-Art collection. Final artwork for review, not a storyboard or a collage. These supplied pictures are artistic references only; do not borrow their species anatomy.\nSTYLE: sophisticated expressive ornithological illustration, slightly stylised through deliberate shape and line. Warm ivory cold-pressed paper, translucent watercolour underpainting, rich printed/gouache-like pigment with broken dry-grain edges, expressive dark ink contours, sharp directional coloured-pencil drawing. Organise plumage into clear pigment masses and rhythmic feather groups. Selected dark separations and pale feather edges articulate form; precise close-up work sits inside readable larger shapes. Retain the rich finish of the originals. Balance crisp face/selected feather passages with quieter areas, paper reserves and soft transitions. No blanket microtexture, equally heavy outline around everything, glossy digital shading, flat vector finish or giant cute eyes.\nCHARACTER: the subject's genuine anatomy, a considered posture, long economical contours and fine feather rhythm create the charm. A small imaginative flourish in mark-making is welcome; avoid costumes, props, human expressions, leaf badges repeated from the originals and forced gags.\nCOMPOSITION: one dominant bird with its full silhouette comfortably inside the landscape canvas, subtle paper grain, generous quiet space and species-led colour. Background is simple abstract pigment geometry only, compatible with the bird's materials and palette. No scenery, foliage, nest, buildings, ornate frame or full habitat. A spare ink support is enough.\nTEXT: only the exact species name specified below, understated dark handwritten lettering below the bird, as in the collection. No facts, jokes, subtitles, signature or watermark. Keep the lower-right corner quiet and empty: no activity or connectivity icon, no fabricated counts.\nREFERENCE ROLES: image 1 is the PRIMARY original four-bird family style; image 2 supplies long expressive contours and rich print texture; image 3 supplies fine detail and restrained expression; image 4 calibrates clear graphic feather organisation. Do not copy any of their anatomy or background shapes.\nSUBJECT: adult British Long-tailed Tit (Aegithalos caudatus, the striped-headed British form). Tiny compact rounded body with a minute short BLACK BILL; dark eye kept modest and true to the face. White crown/forehead and white cheeks, with a broad dark eyebrow stripe from above the eye toward the nape, characteristic British head pattern. Black upper back edged by soft blush-pink shoulder/scapular areas; soft white/pale pinkish underside; folded black and white wings with delicate pale edges. Very LONG, narrow graduated tail visibly longer than its little body, dark centre and clean white outer tail feathers. Preserve the full tail with generous paper around its tip. Natural small dark feet.\nAvoid the all-white-headed northern form, a juvenile black face mask, a finch-like bill, oversized eyes or a plush toy body. Its real tiny body and exceptionally long tail already supply distinctive character.\nARTISTIC INTENTION: delicately balanced and watchful. A sideways body facing right with a small inquisitive head turn; the slender full tail makes a graceful diagonal toward lower-left and a spare slanting ink twig gives it believable purchase. Let sweeping dark tail lines contrast with the small precise cream/pink feather passages. Keep the pale body luminous and supported by paper reserves rather than adding dark ornamental plumage. Selected fine feather edges can feel lyrical without an ornamental wing badge.\nBACKGROUND DIRECTION: a quiet sage-green geometric wash with an open edge, positioned to balance the long diagonal tail and pink/ivory body. Explore its outline and placement; keep exposed paper dominant and avoid repeating the other birds' circular disks or large arches. No plants, landscape or decorative sprigs.\nTEXT verbatim: \"Long-tailed tit\".",
+    "generated_asset": "05-long-tailed-tit-v1.png",
+    "asset_sha256": "f10677b07e64dcf338948846c8d90eb8cc0cebec0339bd772b686e9ec3a7e136",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "User: \"these all look great! do the next 10.\"",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-9b6fff38-59e3-4673-a001-0539a9678fe0.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Independent visual check against verified RSPB, Wildlife Trusts and Cornell identifiers passed; no significant identity correction needed",
+    "character_restraint": "Species-led anatomy with modest drawn stylisation",
+    "material_and_detail": "Clear pigment groups, selective fine pencil, print grain and expressive contours",
+    "collection_variety": "Distinct species pose and palette with simple abstract background",
+    "display_size": "not reviewed",
+    "graphic_clarity_at_display_size": "Reviewed at full image and collection scale",
+    "approval": "Final artwork approved 2026-10-21; animation not requested."
+  },
+  "creative_review": {
+    "collection_kinship": "not reviewed",
+    "individuality": "not reviewed",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 1,
+    "position": 5,
+    "review": "approved",
+    "treatment": "New portrait"
+  }
+}

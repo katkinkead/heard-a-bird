@@ -1,0 +1,118 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Jay",
+    "scientific_name": "Garrulus glandarius",
+    "sex_age_plumage": "Adult Eurasian Jay, British form; sex unspecified",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/jay",
+      "https://www.wildlifetrusts.org/wildlife-explorer/birds/crows-and-shrikes/jay",
+      "https://ebird.org/species/eurjay1/TR-35",
+      "https://www.blascozumeta.com/specie_files/15390_Garrulus_glandarius_E.pdf"
+    ],
+    "diagnostic_features": [
+      "Pinky-buff body, pale throat, bold black moustachial stripe below cheek; pale streaked crown can lift slightly.",
+      "Compact bright blue shoulder/wing panel finely barred in black; adjacent black-and-white wing areas; black tail and white rump when visible.",
+      "Stout dark bill, relatively long tail, pale blue-grey iris around a dark pupil, muted pink-brown feet. Keep the blue concentrated in the diagnostic wing patch."
+    ],
+    "birdnet_label": "Garrulus glandarius_Eurasian Jay"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Left-facing upright bird, raised streaked crown and long dark tail descending right",
+    "facing": "left",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "Three-quarter side view facing left, body poised with head turned a little toward the viewer, crown lightly raised and tail angled down to the right. Let a confident tilt and the black moustache give character without a human expression. Spare ink perch.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "pinkish brown",
+      "cream",
+      "blue and black wing bars",
+      "black and white"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Broken coral diagonal pigment planes",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Broken coral diagonal pigment planes",
+    "elements": [
+      "Broken coral diagonal pigment planes"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Pinky-brown masses, blue-black barred wing panel, white wing/rump accents and dark moustache"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Jay (Garrulus glandarius), Adult Eurasian Jay, British form; sex unspecified.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Pinky-buff body, pale throat, bold black moustachial stripe below cheek; pale streaked crown can lift slightly.\n- Compact bright blue shoulder/wing panel finely barred in black; adjacent black-and-white wing areas; black tail and white rump when visible.\n- Stout dark bill, relatively long tail, pale blue-grey iris around a dark pupil, muted pink-brown feet. Keep the blue concentrated in the diagnostic wing patch.\nAvoid identity confusion: North American Blue Jay's mostly blue body or tall blue crest; All-blue wing without black barring; Black face mask replacing the moustache; Gold-coloured eyes or bright red legs\nARTISTIC POSE: Three-quarter side view facing left, body poised with head turned a little toward the viewer, crown lightly raised and tail angled down to the right. Let a confident tilt and the black moustache give character without a human expression. Spare ink perch.\nSPECIFIC DRAWING EMPHASIS: Pinkish-brown body, black moustache, streaked pale crown and vivid blue-and-black barred wing panel as an intricate crisp focal passage; dark flight feathers with white panel and a small white rump glimpse if naturally visible.\nBACKGROUND DIRECTION: A pale muted coral diagonal block interrupted by a small exposed-paper notch; loose geometry, enough paper to let the blue wing panel sing.\nPLUMAGE PALETTE: pinkish brown, cream, blue and black wing bars, black and white. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Jay\".",
+    "generated_asset": "26-jay-v1.png",
+    "asset_sha256": "26ab5953f1a21d42c30c43171f08f414fb830818a08446c38d2ec4e71ee52b76",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-bfc1db9d-a402-41fd-84fb-b1de4bdcb7ae.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Pinky-brown masses, blue-black barred wing panel, white wing/rump accents and dark moustache",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Left-facing upright bird, raised streaked crown and long dark tail descending right",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 6,
+    "collection_position": 26,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "original35"
+  }
+}

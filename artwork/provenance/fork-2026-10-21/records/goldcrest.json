@@ -1,0 +1,120 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Goldcrest",
+    "scientific_name": "Regulus regulus",
+    "sex_age_plumage": "Adult male Goldcrest",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/goldcrest",
+      "https://www.rspb.org.uk/birds-and-wildlife/firecrest",
+      "https://www.bto.org/learn/about-birds/birdfacts/goldcrest"
+    ],
+    "diagnostic_features": [
+      "Very tiny compact rounded bird, fine needle-like bill and a relatively prominent natural dark eye with a pale ring.",
+      "Olive-grey-green upperparts, pale buff-grey belly, dark flight feathers and white wing bars.",
+      "Yellow crown stripe with an orange centre in the male, bounded by black; otherwise a plain face."
+    ],
+    "birdnet_label": "Regulus regulus_Goldcrest"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Left-facing compact bird, dipped head showing crown, fine arched twig support",
+    "facing": "left",
+    "support": "Spare ink perch or ground strokes appropriate to species",
+    "artistic_intention": "A compact tiny-proportioned adult male, body facing left and head dipped slightly toward the viewer so the yellow-orange crown stripe is visible. Rest lightly on a fine gently arched ink twig with short tail behind; alert but never an oversized mascot face.",
+    "expression_choices": [
+      "Species-led silhouette and posture",
+      "Expressive contours within restrained anatomy"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "olive green",
+      "pale buff-grey",
+      "yellow-orange crown",
+      "black crown borders",
+      "white wing bars"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal and petrol",
+    "optional_accent": "Selective pale feather edges and pigment variation",
+    "background": "Open coral ring fragment",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Open coral ring fragment",
+    "elements": [
+      "Open coral ring fragment"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint to the pose; bird dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Paper reserves",
+      "Body passages between directional marks"
+    ],
+    "contour_gesture": "Economical tapered and broken ink contours",
+    "detail_treatment": "Translucent underpainting, rich printed pigment, fine directional pencil and selected feather edges",
+    "optional_motifs": [],
+    "graphic_structure": "Orange-centred yellow crown with black borders, plain pale face, olive back and two pale wingbars"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Rich printed colour and rhythmic feather groups",
+    "Selected pale edges and long free contour strokes; artistic marks are not literal anatomy"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten species name below bird",
+    "state_treatment": "No sensor state, count or icon; corner quiet"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Goldcrest (Regulus regulus), Adult male Goldcrest.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Very tiny compact rounded bird, fine needle-like bill and a relatively prominent natural dark eye with a pale ring.\n- Olive-grey-green upperparts, pale buff-grey belly, dark flight feathers and white wing bars.\n- Yellow crown stripe with an orange centre in the male, bounded by black; otherwise a plain face.\nAvoid identity confusion: No strong white eyebrow or black stripe through the eye: those would imply Firecrest.; No bronze neck collar or tall fantasy crest; the crown stripe follows the head.; The eye can seem large for this tiny bird but must not become a cartoon eye.\nARTISTIC POSE: A compact tiny-proportioned adult male, body facing left and head dipped slightly toward the viewer so the yellow-orange crown stripe is visible. Rest lightly on a fine gently arched ink twig with short tail behind; alert but never an oversized mascot face.\nSPECIFIC DRAWING EMPHASIS: Gold-orange central crown bordered by black, plain pale face around a natural dark eye, olive-green back, pale underside and two pale wing bars. Preserve the lack of Firecrest's white eyebrow/black eye-stripe. Intricate tiny feather groups on the wing, quiet face and chest.\nBACKGROUND DIRECTION: An incomplete coral ring fragment offset to one side, with broad untouched paper beside the bird; soft broken print edge, no full scenic nest or foliage.\nPLUMAGE PALETTE: olive green, pale buff-grey, yellow-orange crown, black crown borders, white wing bars. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Goldcrest\".",
+    "generated_asset": "24-goldcrest-v1.png",
+    "asset_sha256": "8293f58a8e7281e5a06ff7c388e8a43316c3c4ca6f664c0b59b08273c978505e",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": {
+      "date": "2026-10-21",
+      "evidence": "User: \"now make all the rest and the owls\"",
+      "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+    },
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-e786ee9a-a5a9-4556-a4eb-08ca5a722dbc.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image inspected against authoritative species references; no material identity or major anatomy correction required",
+    "character_restraint": "Species-led stylisation retains diagnostic anatomy",
+    "material_and_detail": "Inspected: paper, rich pigment masses, selective crisp feather detail and expressive contours",
+    "collection_variety": "Distinct species silhouettes, poses and restrained abstract backdrops",
+    "display_size": "Reviewed in gallery and at source resolution",
+    "graphic_clarity_at_display_size": "Orange-centred yellow crown with black borders, plain pale face, olive back and two pale wingbars",
+    "approval": "Accepted by user continuation on 21 October 2026; no animation approval implied."
+  },
+  "creative_review": {
+    "collection_kinship": "Shared paper/pigment/pencil treatment, legible feather grouping and understated naming",
+    "individuality": "Left-facing compact bird, dipped head showing crown, fine arched twig support",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 5,
+    "collection_position": 24,
+    "review_group": [
+      4,
+      5
+    ],
+    "review": "approved"
+  }
+}

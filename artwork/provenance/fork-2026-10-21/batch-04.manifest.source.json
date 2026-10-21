@@ -1,0 +1,71 @@
+{
+  "batch": 4,
+  "total_batches": 7,
+  "review_group": [
+    4,
+    5
+  ],
+  "status": "approved",
+  "approval_rule": "Accepted by user continuation; final art only.",
+  "artwork": [
+    {
+      "position": 16,
+      "species": "Nuthatch",
+      "slug": "nuthatch",
+      "batch": 4,
+      "file": "16-nuthatch-v1.png",
+      "record": "nuthatch-record.json",
+      "sha256": "e002ed4b3f067bcc627b31da7d0981b70a9ac72eba831d1ee092cc4f55dbb221",
+      "status": "approved"
+    },
+    {
+      "position": 17,
+      "species": "Herring gull",
+      "slug": "herring-gull",
+      "batch": 4,
+      "file": "17-herring-gull-v1.png",
+      "record": "herring-gull-record.json",
+      "sha256": "34bc9d5c256e483e2b41d1c449cd92eeeffb9ef27be18cc19e4a50d124824c40",
+      "status": "approved"
+    },
+    {
+      "position": 18,
+      "species": "Common gull",
+      "slug": "common-gull",
+      "batch": 4,
+      "file": "18-common-gull-v1.png",
+      "record": "common-gull-record.json",
+      "sha256": "9566fc23d658e963f4b267498983ad4d4fb254ae158dd17f99b26044a52c0212",
+      "status": "approved"
+    },
+    {
+      "position": 19,
+      "species": "Siskin",
+      "slug": "siskin",
+      "batch": 4,
+      "file": "19-siskin-v1.png",
+      "record": "siskin-record.json",
+      "sha256": "483fdd68ecf03fe0cc4fe8719e323e87b506ec83158a88f5f4b20975e77edd33",
+      "status": "approved"
+    },
+    {
+      "position": 20,
+      "species": "Great spotted woodpecker",
+      "slug": "great-spotted-woodpecker",
+      "batch": 4,
+      "file": "20-great-spotted-woodpecker-v1.png",
+      "record": "great-spotted-woodpecker-record.json",
+      "sha256": "23fc997057f339c7a49b1f6bd694aa561e448ff88d47769ff95b5da86f2d6304",
+      "status": "approved"
+    }
+  ],
+  "review_page": "../batches-04-05/index.html",
+  "prompts": "../batches-04-05/generation-prompts.txt",
+  "style_guide": "../../final-art-style-guide.html",
+  "created_date": "2026-10-21",
+  "approval": {
+    "date": "2026-10-21",
+    "evidence": "User: \"now make all the rest and the owls\"",
+    "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+  }
+}

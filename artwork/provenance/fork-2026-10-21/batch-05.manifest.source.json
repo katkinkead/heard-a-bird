@@ -1,0 +1,71 @@
+{
+  "batch": 5,
+  "total_batches": 7,
+  "review_group": [
+    4,
+    5
+  ],
+  "status": "approved",
+  "approval_rule": "Accepted by user continuation; final art only.",
+  "artwork": [
+    {
+      "position": 21,
+      "species": "Blackcap",
+      "slug": "blackcap",
+      "batch": 5,
+      "file": "21-blackcap-v1.png",
+      "record": "blackcap-record.json",
+      "sha256": "a224f545205a76f36b2abc0771d5e77aeb78714b8ee116e95bed5d2306d9da10",
+      "status": "approved"
+    },
+    {
+      "position": 22,
+      "species": "Song thrush",
+      "slug": "song-thrush",
+      "batch": 5,
+      "file": "22-song-thrush-v1.png",
+      "record": "song-thrush-record.json",
+      "sha256": "2d7f2102bd22e57242153efcca87af95e4daac9f65ca6d90994f013ad4a8cc39",
+      "status": "approved"
+    },
+    {
+      "position": 23,
+      "species": "Pheasant",
+      "slug": "pheasant",
+      "batch": 5,
+      "file": "23-pheasant-v1.png",
+      "record": "pheasant-record.json",
+      "sha256": "2b240873696743266c4f44dce6bb290b7cf1a867b61fe8726379c6eddd143757",
+      "status": "approved"
+    },
+    {
+      "position": 24,
+      "species": "Goldcrest",
+      "slug": "goldcrest",
+      "batch": 5,
+      "file": "24-goldcrest-v1.png",
+      "record": "goldcrest-record.json",
+      "sha256": "8293f58a8e7281e5a06ff7c388e8a43316c3c4ca6f664c0b59b08273c978505e",
+      "status": "approved"
+    },
+    {
+      "position": 25,
+      "species": "Pied wagtail",
+      "slug": "pied-wagtail",
+      "batch": 5,
+      "file": "25-pied-wagtail-v1.png",
+      "record": "pied-wagtail-record.json",
+      "sha256": "9cf017308d189f6d77d2997f82adf0c0a71b964cb71ca6e9ac28bb601d9fed80",
+      "status": "approved"
+    }
+  ],
+  "review_page": "../batches-04-05/index.html",
+  "prompts": "../batches-04-05/generation-prompts.txt",
+  "style_guide": "../../final-art-style-guide.html",
+  "created_date": "2026-10-21",
+  "approval": {
+    "date": "2026-10-21",
+    "evidence": "User: \"now make all the rest and the owls\"",
+    "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+  }
+}

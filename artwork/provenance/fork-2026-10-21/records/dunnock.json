@@ -1,0 +1,120 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Dunnock",
+    "scientific_name": "Prunella modularis",
+    "sex_age_plumage": "Adult, sex unspecified",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/dunnock",
+      "https://www.bto.org/learn/about-birds/birdfacts/dunnock"
+    ],
+    "diagnostic_features": [
+      "Slate-grey face and chest",
+      "Brown crown",
+      "Brown upperparts with pronounced dark streaks",
+      "Slender pointed bill rather than the thick conical bill of a sparrow",
+      "Pinkish legs",
+      "A restrained grey/brown colour palette"
+    ],
+    "birdnet_label": "Prunella modularis_Dunnock"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Left-facing low elongated body with slim pointed bill",
+    "facing": "left",
+    "support": "Spare ink perch or ground strokes",
+    "artistic_intention": "Low forward-leaning stance facing left, delicate slim bill, a subtle head turn; ground stroke, with the tail extended behind rather than cocked upright.",
+    "expression_choices": [
+      "Species-led silhouette and gaze",
+      "Expressive contours with clear feather groups"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "slate grey",
+      "brown",
+      "umber",
+      "cream"
+    ],
+    "structural_dark": "Species-compatible ink/charcoal/petrol",
+    "optional_accent": "Selective pale or warm feather edging",
+    "background": "Low ochre rectangle broken by an unpainted diagonal",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Low ochre rectangle broken by an unpainted diagonal",
+    "elements": [
+      "Low ochre rectangle broken by an unpainted diagonal"
+    ],
+    "relationship_to_bird": "Economical abstract counterpoint, bird remains dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Face and bill",
+      "Diagnostic plumage",
+      "Selected wing/tail edges"
+    ],
+    "quiet_areas": [
+      "Body passages between directional marks"
+    ],
+    "contour_gesture": "A few long economical tapered/broken ink lines",
+    "detail_treatment": "Translucent underpainting, rich printed pigment, selective coloured-pencil and feather edging",
+    "optional_motifs": [],
+    "graphic_structure": "Quiet slate face/chest against rhythmic brown back streaking and finely edged wing groups"
+  },
+  "deliberate_stylisations": [
+    "Controlled expressive silhouette",
+    "Printed pigment colour and fine rhythmic feather drawing",
+    "Long free contours; these are artistic marks, not literal feather anatomy"
+  ],
+  "annotations": {
+    "name_treatment": "Understated handwritten species name beneath bird",
+    "state_treatment": "No live state or encounter data; corner quiet"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Dunnock (Prunella modularis), Adult, sex unspecified.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Slate-grey face and chest\n- Brown crown\n- Brown upperparts with pronounced dark streaks\n- Slender pointed bill rather than the thick conical bill of a sparrow\n- Pinkish legs\n- A restrained grey/brown colour palette\nAvoid identity confusion: House Sparrow black bib, thick beak or strong chestnut head mask; Wren-like permanently upright tail; Bright invented breast colour.\nARTISTIC POSE: Low forward-leaning stance facing left, delicate slim bill, a subtle head turn; ground stroke, with the tail extended behind rather than cocked upright.\nSPECIFIC DRAWING EMPHASIS: The thin bill and slate-grey face are crucial. Make the natural streaks into deliberate elegant drawing rhythms, with quieter grey face and chest; no coloured chest badge or sparrow bib.\nBACKGROUND DIRECTION: A low muted ochre horizontal shape with an unpainted diagonal interruption; simple and lighter than the grey/brown bird.\nPLUMAGE PALETTE: slate grey, brown, umber, cream. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Dunnock\".",
+    "generated_asset": "08-dunnock-v1.png",
+    "asset_sha256": "86ada5e05891bb814b55fd6eb9e190af1311a1fb41147ac7f084cba5e64dd236",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": {
+      "date": "2026-10-21",
+      "evidence": "User: \"ok now make the next 10\"",
+      "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+    },
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-11d4b2d8-6303-496e-8f62-c250a924dcc5.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Reviewed against verified species identifiers; no significant identity/anatomy blocker in selected version",
+    "character_restraint": "Graphic stylisation retains diagnostic features",
+    "material_and_detail": "Inspected: clear pigment masses, rich selective detail and expressive linework",
+    "collection_variety": "Distinct species anatomy, plumage and simple abstract backdrop",
+    "display_size": "Reviewed alongside the collection",
+    "graphic_clarity_at_display_size": "Quiet slate face/chest against rhythmic brown back streaking and finely edged wing groups",
+    "approval": "Accepted by user continuation on 21 October 2026; no animation approval implied."
+  },
+  "creative_review": {
+    "collection_kinship": "Matches shared paper, pigment, graphic feather grouping and naming",
+    "individuality": "Left-facing low elongated body with slim pointed bill",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 2,
+    "collection_position": 8,
+    "review_group": [
+      2,
+      3
+    ],
+    "review": "approved"
+  }
+}

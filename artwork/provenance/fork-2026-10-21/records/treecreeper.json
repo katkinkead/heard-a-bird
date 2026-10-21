@@ -1,0 +1,119 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Treecreeper",
+    "scientific_name": "Certhia familiaris",
+    "sex_age_plumage": "Adult Eurasian Treecreeper, sex unspecified, British form",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/treecreeper",
+      "https://www.bto.org/sites/default/files/shared_documents/gbw/associated_files/bird-table-74-treecreeper-species-focus.pdf",
+      "https://www.rspb.org.uk/birds-and-wildlife/short-toed-treecreeper/"
+    ],
+    "diagnostic_features": [
+      "Tiny compact mouse-like bird, complex brown/cream/black mottled upperparts contrasting with mainly white underparts.",
+      "Long slender downward-curving bill; pale eyebrow above a dark eye.",
+      "Narrow stiff tapering tail used as a brace; fine long toes and curved claws, muted pink-brown feet.",
+      "Clings facing upwards or along a sparse near-vertical support, with tail braced; not head-first downward like a Nuthatch.",
+      "Keep pale wing marks embedded in the cryptic patterned feather groups."
+    ],
+    "birdnet_label": "Certhia familiaris_Eurasian Treecreeper"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Right-facing upward climbing bird on spare oblique ink support; tail contact abstracted",
+    "facing": "right",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "A small adult climbing upward facing right on a single spare oblique ink support, body close to the line and stiff long pointed tail bracing behind. Fine downcurved bill clearly visible, no detailed trunk or foliage.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "brown",
+      "umber",
+      "cream",
+      "white underside"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Turquoise vertical pigment form and pale ochre block",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Turquoise vertical pigment form and pale ochre block",
+    "elements": [
+      "Turquoise vertical pigment form and pale ochre block"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Cryptic brown/cream feather groups, pale underside, eyebrow, fine downcurved bill and long stiff tail"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Treecreeper (Certhia familiaris), Adult Eurasian Treecreeper, sex unspecified, British form.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Tiny compact mouse-like bird, complex brown/cream/black mottled upperparts contrasting with mainly white underparts.\n- Long slender downward-curving bill; pale eyebrow above a dark eye.\n- Narrow stiff tapering tail used as a brace; fine long toes and curved claws, muted pink-brown feet.\n- Clings facing upwards or along a sparse near-vertical support, with tail braced; not head-first downward like a Nuthatch.\n- Keep pale wing marks embedded in the cryptic patterned feather groups.\nAvoid identity confusion: No thick straight finch bill, upright cocked Wren tail, blue-grey Nuthatch back or black Nuthatch eye mask.; No excessively long curlew bill; species is small with a fine proportionate curved bill.; Do not claim the illustration alone decisively separates all Short-toed Treecreeper variants.\nARTISTIC POSE: A small adult climbing upward facing right on a single spare oblique ink support, body close to the line and stiff long pointed tail bracing behind. Fine downcurved bill clearly visible, no detailed trunk or foliage.\nSPECIFIC DRAWING EMPHASIS: Brown mottled/streaked back and crown with pale flecks, white underside, pale eyebrow, fine curved bill and supporting pointed tail. Natural feather flecks become a rich rhythmic pencil passage, while belly remains quiet paper white.\nBACKGROUND DIRECTION: A narrow pale turquoise vertical brush shape and a small interrupted cream-ochre plane; simple asymmetry leaves the finely patterned back visible.\nPLUMAGE PALETTE: brown, umber, cream, white underside. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Treecreeper\".",
+    "generated_asset": "34-treecreeper-v1.png",
+    "asset_sha256": "dbf73dec1ea074e33cb3190aa7e4d4c1b38d4f600e638ea3f0d721f1f8c0e871",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-eecac811-ea34-471a-9176-6ca2af0ac243.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Cryptic brown/cream feather groups, pale underside, eyebrow, fine downcurved bill and long stiff tail",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Right-facing upward climbing bird on spare oblique ink support; tail contact abstracted",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 7,
+    "collection_position": 34,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "original35"
+  }
+}

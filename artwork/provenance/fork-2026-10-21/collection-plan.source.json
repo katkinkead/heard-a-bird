@@ -1,0 +1,372 @@
+{
+  "title": "35 Dorset birds and five owls \u2014 final artwork",
+  "batch_size": 5,
+  "total_species": 40,
+  "approval_policy": "User authorised all remaining ten portraits and the five owls together. Present all fifteen for review. No animation authorised in this stage.",
+  "current_batch": 6,
+  "batches": [
+    {
+      "batch": 1,
+      "status": "approved",
+      "species": [
+        {
+          "name": "House sparrow",
+          "scientific_name": "Passer domesticus",
+          "birdnet_label": "Passer domesticus_House Sparrow",
+          "status": "approved"
+        },
+        {
+          "name": "Starling",
+          "scientific_name": "Sturnus vulgaris",
+          "birdnet_label": "Sturnus vulgaris_Common Starling",
+          "status": "approved"
+        },
+        {
+          "name": "Woodpigeon",
+          "scientific_name": "Columba palumbus",
+          "birdnet_label": "Columba palumbus_Common Woodpigeon",
+          "status": "approved"
+        },
+        {
+          "name": "Great tit",
+          "scientific_name": "Parus major",
+          "birdnet_label": "Parus major_Great Tit",
+          "status": "approved"
+        },
+        {
+          "name": "Long-tailed tit",
+          "scientific_name": "Aegithalos caudatus",
+          "birdnet_label": "Aegithalos caudatus_Long-tailed Tit",
+          "status": "approved"
+        }
+      ],
+      "approval": {
+        "date": "2026-10-21",
+        "evidence": "User: \"these all look great! do the next 10.\""
+      }
+    },
+    {
+      "batch": 2,
+      "status": "approved",
+      "species": [
+        {
+          "name": "Magpie",
+          "scientific_name": "Pica pica",
+          "birdnet_label": "Pica pica_Common Magpie",
+          "status": "approved",
+          "asset": "batch-02/06-magpie-v1.png"
+        },
+        {
+          "name": "Chaffinch",
+          "scientific_name": "Fringilla coelebs",
+          "birdnet_label": "Fringilla coelebs_Common Chaffinch",
+          "status": "approved",
+          "asset": "batch-02/07-chaffinch-v1.png"
+        },
+        {
+          "name": "Dunnock",
+          "scientific_name": "Prunella modularis",
+          "birdnet_label": "Prunella modularis_Dunnock",
+          "status": "approved",
+          "asset": "batch-02/08-dunnock-v1.png"
+        },
+        {
+          "name": "Coal tit",
+          "scientific_name": "Periparus ater",
+          "birdnet_label": "Periparus ater_Coal Tit",
+          "status": "approved",
+          "asset": "batch-02/09-coal-tit-v1.png"
+        },
+        {
+          "name": "Jackdaw",
+          "scientific_name": "Corvus monedula",
+          "birdnet_label": "Corvus monedula_Eurasian Jackdaw",
+          "status": "approved",
+          "asset": "batch-02/10-jackdaw-v1.png"
+        }
+      ],
+      "review_page": "batches-02-03/index.html",
+      "approval": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      }
+    },
+    {
+      "batch": 3,
+      "status": "approved",
+      "species": [
+        {
+          "name": "Carrion crow",
+          "scientific_name": "Corvus corone",
+          "birdnet_label": "Corvus corone_Carrion Crow",
+          "status": "approved",
+          "asset": "batch-03/11-carrion-crow-v2.png"
+        },
+        {
+          "name": "Feral pigeon",
+          "scientific_name": "Columba livia",
+          "birdnet_label": "Columba livia_Rock Dove",
+          "status": "approved",
+          "asset": "batch-03/12-feral-pigeon-v1.png"
+        },
+        {
+          "name": "Collared dove",
+          "scientific_name": "Streptopelia decaocto",
+          "birdnet_label": "Streptopelia decaocto_Collared Dove",
+          "status": "approved",
+          "asset": "batch-03/13-collared-dove-v1.png"
+        },
+        {
+          "name": "Greenfinch",
+          "scientific_name": "Chloris chloris",
+          "birdnet_label": "Chloris chloris_European Greenfinch",
+          "status": "approved",
+          "asset": "batch-03/14-greenfinch-v1.png"
+        },
+        {
+          "name": "Rook",
+          "scientific_name": "Corvus frugilegus",
+          "birdnet_label": "Corvus frugilegus_Rook",
+          "status": "approved",
+          "asset": "batch-03/15-rook-v1.png"
+        }
+      ],
+      "review_page": "batches-02-03/index.html",
+      "approval": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      }
+    },
+    {
+      "batch": 4,
+      "status": "approved",
+      "species": [
+        {
+          "name": "Nuthatch",
+          "scientific_name": "Sitta europaea",
+          "birdnet_label": "Sitta europaea_Eurasian Nuthatch",
+          "status": "approved",
+          "asset": "batch-04/16-nuthatch-v1.png"
+        },
+        {
+          "name": "Herring gull",
+          "scientific_name": "Larus argentatus",
+          "birdnet_label": "Larus argentatus_Herring Gull",
+          "status": "approved",
+          "asset": "batch-04/17-herring-gull-v1.png"
+        },
+        {
+          "name": "Common gull",
+          "scientific_name": "Larus canus",
+          "birdnet_label": "Larus canus_Common Gull",
+          "status": "approved",
+          "asset": "batch-04/18-common-gull-v1.png"
+        },
+        {
+          "name": "Siskin",
+          "scientific_name": "Spinus spinus",
+          "birdnet_label": "Spinus spinus_Eurasian Siskin",
+          "status": "approved",
+          "asset": "batch-04/19-siskin-v1.png"
+        },
+        {
+          "name": "Great spotted woodpecker",
+          "scientific_name": "Dendrocopos major",
+          "birdnet_label": "Dendrocopos major_Great Spotted Woodpecker",
+          "status": "approved",
+          "asset": "batch-04/20-great-spotted-woodpecker-v1.png"
+        }
+      ],
+      "review_page": "batches-04-05/index.html",
+      "approval": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      }
+    },
+    {
+      "batch": 5,
+      "status": "approved",
+      "species": [
+        {
+          "name": "Blackcap",
+          "scientific_name": "Sylvia atricapilla",
+          "birdnet_label": "Sylvia atricapilla_Eurasian Blackcap",
+          "status": "approved",
+          "asset": "batch-05/21-blackcap-v1.png"
+        },
+        {
+          "name": "Song thrush",
+          "scientific_name": "Turdus philomelos",
+          "birdnet_label": "Turdus philomelos_Song Thrush",
+          "status": "approved",
+          "asset": "batch-05/22-song-thrush-v1.png"
+        },
+        {
+          "name": "Pheasant",
+          "scientific_name": "Phasianus colchicus",
+          "birdnet_label": "Phasianus colchicus_Common Pheasant",
+          "status": "approved",
+          "asset": "batch-05/23-pheasant-v1.png"
+        },
+        {
+          "name": "Goldcrest",
+          "scientific_name": "Regulus regulus",
+          "birdnet_label": "Regulus regulus_Goldcrest",
+          "status": "approved",
+          "asset": "batch-05/24-goldcrest-v1.png"
+        },
+        {
+          "name": "Pied wagtail",
+          "scientific_name": "Motacilla alba",
+          "birdnet_label": "Motacilla alba_Pied Wagtail/White Wagtail",
+          "status": "approved",
+          "asset": "batch-05/25-pied-wagtail-v1.png"
+        }
+      ],
+      "review_page": "batches-04-05/index.html",
+      "approval": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      }
+    },
+    {
+      "batch": 6,
+      "status": "awaiting_user_approval",
+      "species": [
+        {
+          "name": "Jay",
+          "scientific_name": "Garrulus glandarius",
+          "birdnet_label": "Garrulus glandarius_Eurasian Jay",
+          "status": "awaiting_user_approval",
+          "asset": "batch-06/26-jay-v1.png"
+        },
+        {
+          "name": "Redwing",
+          "scientific_name": "Turdus iliacus",
+          "birdnet_label": "Turdus iliacus_Redwing",
+          "status": "awaiting_user_approval",
+          "asset": "batch-06/27-redwing-v1.png"
+        },
+        {
+          "name": "Bullfinch",
+          "scientific_name": "Pyrrhula pyrrhula",
+          "birdnet_label": "Pyrrhula pyrrhula_Eurasian Bullfinch",
+          "status": "awaiting_user_approval",
+          "asset": "batch-06/28-bullfinch-v1.png"
+        },
+        {
+          "name": "Sparrowhawk",
+          "scientific_name": "Accipiter nisus",
+          "birdnet_label": "Accipiter nisus_Eurasian Sparrowhawk",
+          "status": "awaiting_user_approval",
+          "asset": "batch-06/29-sparrowhawk-v1.png"
+        },
+        {
+          "name": "Fieldfare",
+          "scientific_name": "Turdus pilaris",
+          "birdnet_label": "Turdus pilaris_Fieldfare",
+          "status": "awaiting_user_approval",
+          "asset": "batch-06/30-fieldfare-v1.png"
+        }
+      ],
+      "review_page": "batches-06-07-and-owls/index.html"
+    },
+    {
+      "batch": 7,
+      "status": "awaiting_user_approval",
+      "species": [
+        {
+          "name": "Buzzard",
+          "scientific_name": "Buteo buteo",
+          "birdnet_label": "Buteo buteo_Common Buzzard",
+          "status": "awaiting_user_approval",
+          "asset": "batch-07/31-buzzard-v1.png"
+        },
+        {
+          "name": "Mallard",
+          "scientific_name": "Anas platyrhynchos",
+          "birdnet_label": "Anas platyrhynchos_Mallard",
+          "status": "awaiting_user_approval",
+          "asset": "batch-07/32-mallard-v1.png"
+        },
+        {
+          "name": "Black-headed gull",
+          "scientific_name": "Chroicocephalus ridibundus",
+          "birdnet_label": "Chroicocephalus ridibundus_Black-headed Gull",
+          "status": "awaiting_user_approval",
+          "asset": "batch-07/33-black-headed-gull-v1.png"
+        },
+        {
+          "name": "Treecreeper",
+          "scientific_name": "Certhia familiaris",
+          "birdnet_label": "Certhia familiaris_Eurasian Treecreeper",
+          "status": "awaiting_user_approval",
+          "asset": "batch-07/34-treecreeper-v1.png"
+        },
+        {
+          "name": "Green woodpecker",
+          "scientific_name": "Picus viridis",
+          "birdnet_label": "Picus viridis_Eurasian Green Woodpecker",
+          "status": "awaiting_user_approval",
+          "asset": "batch-07/35-green-woodpecker-v1.png"
+        }
+      ],
+      "review_page": "batches-06-07-and-owls/index.html"
+    },
+    {
+      "batch": 8,
+      "kind": "owls",
+      "status": "awaiting_user_approval",
+      "species": [
+        {
+          "name": "Tawny owl",
+          "scientific_name": "Strix aluco",
+          "birdnet_label": "Strix aluco_Tawny Owl",
+          "status": "awaiting_user_approval",
+          "asset": "batch-08/36-tawny-owl-v1.png"
+        },
+        {
+          "name": "Barn owl",
+          "scientific_name": "Tyto alba",
+          "birdnet_label": "Tyto alba_Barn Owl",
+          "status": "awaiting_user_approval",
+          "asset": "batch-08/37-barn-owl-v1.png"
+        },
+        {
+          "name": "Little owl",
+          "scientific_name": "Athene noctua",
+          "birdnet_label": "Athene noctua_Little Owl",
+          "status": "awaiting_user_approval",
+          "asset": "batch-08/38-little-owl-v1.png"
+        },
+        {
+          "name": "Short-eared owl",
+          "scientific_name": "Asio flammeus",
+          "birdnet_label": "Asio flammeus_Short-eared Owl",
+          "status": "awaiting_user_approval",
+          "asset": "batch-08/39-short-eared-owl-v1.png"
+        },
+        {
+          "name": "Long-eared owl",
+          "scientific_name": "Asio otus",
+          "birdnet_label": "Asio otus_Long-eared Owl",
+          "status": "awaiting_user_approval",
+          "asset": "batch-08/40-long-eared-owl-v1.png"
+        }
+      ],
+      "review_page": "batches-06-07-and-owls/index.html"
+    }
+  ],
+  "current_review_group": [
+    6,
+    7,
+    8
+  ],
+  "original_collection_species": 35,
+  "additional_owl_species": 5,
+  "creation_status": "All 35 original portraits and five owls created; final15 pending user review"
+}

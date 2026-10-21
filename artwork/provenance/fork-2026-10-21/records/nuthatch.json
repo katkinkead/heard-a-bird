@@ -1,0 +1,118 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Nuthatch",
+    "scientific_name": "Sitta europaea",
+    "sex_age_plumage": "Adult British Eurasian Nuthatch, sex unspecified",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/nuthatch"
+    ],
+    "diagnostic_features": [
+      "Compact plump body, short tail and short strong legs; long straight pointed bill.",
+      "Slate blue-grey crown and back; strong black stripe from bill through eye toward nape.",
+      "Pale throat and warm buff underside, becoming chestnut along the flanks and undertail."
+    ],
+    "birdnet_label": "Sitta europaea_Eurasian Nuthatch"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Low descending left-facing diagonal with short tail and claws on oblique ink branch",
+    "facing": "left",
+    "support": "Spare ink perch or ground strokes appropriate to species",
+    "artistic_intention": "A compact horizontal-to-diagonal body facing left, gripping a spare oblique ink branch with head dipped slightly below the body as if about to descend. Show the full blue-grey back and short tail, with the wedge-like pointed bill leading the gesture.",
+    "expression_choices": [
+      "Species-led silhouette and posture",
+      "Expressive contours within restrained anatomy"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "slate blue-grey",
+      "warm buff",
+      "rusty flank",
+      "black mask",
+      "cream cheek"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal and petrol",
+    "optional_accent": "Selective pale feather edges and pigment variation",
+    "background": "Large terracotta slanted quadrilateral",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Large terracotta slanted quadrilateral",
+    "elements": [
+      "Large terracotta slanted quadrilateral"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint to the pose; bird dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Paper reserves",
+      "Body passages between directional marks"
+    ],
+    "contour_gesture": "Economical tapered and broken ink contours",
+    "detail_treatment": "Translucent underpainting, rich printed pigment, fine directional pencil and selected feather edges",
+    "optional_motifs": [],
+    "graphic_structure": "Slate-blue back and precise folded wing contrast with cream cheek, black eye-stripe and buff-rust underside"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Rich printed colour and rhythmic feather groups",
+    "Selected pale edges and long free contour strokes; artistic marks are not literal anatomy"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten species name below bird",
+    "state_treatment": "No sensor state, count or icon; corner quiet"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Nuthatch (Sitta europaea), Adult British Eurasian Nuthatch, sex unspecified.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Compact plump body, short tail and short strong legs; long straight pointed bill.\n- Slate blue-grey crown and back; strong black stripe from bill through eye toward nape.\n- Pale throat and warm buff underside, becoming chestnut along the flanks and undertail.\nAvoid identity confusion: Do not turn the black eye-stripe into an all-black head or broad cheek bib.; Avoid a long treecreeper-like tail, curved fine bill or brown mottled back.; Keep the black mask distinct from the slate crown and pale cheek.\nARTISTIC POSE: A compact horizontal-to-diagonal body facing left, gripping a spare oblique ink branch with head dipped slightly below the body as if about to descend. Show the full blue-grey back and short tail, with the wedge-like pointed bill leading the gesture.\nSPECIFIC DRAWING EMPHASIS: The clean dark eye-stripe, slate-blue upperparts and warm buff underside are the main shapes. Rich precise wing feather grouping and a few longer contour strokes; quieter cheek and breast.\nBACKGROUND DIRECTION: A spare slanted pale terracotta lozenge or broad angular wash, its slope countering the descending head. Plenty of unpainted paper; no tree scene.\nPLUMAGE PALETTE: slate blue-grey, warm buff, rusty flank, black mask, cream cheek. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Nuthatch\".",
+    "generated_asset": "16-nuthatch-v1.png",
+    "asset_sha256": "e002ed4b3f067bcc627b31da7d0981b70a9ac72eba831d1ee092cc4f55dbb221",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": {
+      "date": "2026-10-21",
+      "evidence": "User: \"now make all the rest and the owls\"",
+      "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+    },
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-c7c1eab3-6909-4937-99f6-8d1d81b70b12.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image inspected against authoritative species references; no material identity or major anatomy correction required",
+    "character_restraint": "Species-led stylisation retains diagnostic anatomy",
+    "material_and_detail": "Inspected: paper, rich pigment masses, selective crisp feather detail and expressive contours",
+    "collection_variety": "Distinct species silhouettes, poses and restrained abstract backdrops",
+    "display_size": "Reviewed in gallery and at source resolution",
+    "graphic_clarity_at_display_size": "Slate-blue back and precise folded wing contrast with cream cheek, black eye-stripe and buff-rust underside",
+    "approval": "Accepted by user continuation on 21 October 2026; no animation approval implied."
+  },
+  "creative_review": {
+    "collection_kinship": "Shared paper/pigment/pencil treatment, legible feather grouping and understated naming",
+    "individuality": "Low descending left-facing diagonal with short tail and claws on oblique ink branch",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 4,
+    "collection_position": 16,
+    "review_group": [
+      4,
+      5
+    ],
+    "review": "approved"
+  }
+}

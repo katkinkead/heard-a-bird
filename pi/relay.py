@@ -19,6 +19,7 @@ import re
 import shutil
 import signal
 import sqlite3
+import subprocess
 import threading
 import time
 import urllib.error
@@ -31,6 +32,10 @@ VERSION = "0.1.0"
 BIRDNET_RELEASE = "20261014"
 UTC = dt.timezone.utc
 LOG = logging.getLogger("songsketch.pi")
+# An early operational warning, not a firmware safety limit or shutdown rule.
+# Real enclosure, cooling and supply tests remain part of commissioning.
+THERMAL_WARNING_C = 75
+HARDWARE_FLAGS = ("under_voltage", "frequency_capped", "throttled", "soft_temperature_limit")
 
 
 def iso_now():
@@ -101,6 +106,92 @@ def error_code(exc):
     return type(exc).__name__
 
 
+def read_vcgencmd(command):
+    """Only two fixed read-only firmware queries; never shell/configured input.
+
+    Official bit contract: raspberrypi.com/documentation/computers/os.html#get_throttled
+    Each command has a one-second timeout; failures are availability evidence,
+    never inferred electrical or thermal faults. No raw output is reported.
+    """
+    if command not in ("get_throttled", "measure_temp"):
+        raise ValueError("Unsupported hardware query")
+    binary = next((path for path in ("/usr/bin/vcgencmd", "/opt/vc/bin/vcgencmd")
+                   if os.path.isfile(path) and os.access(path, os.X_OK)), None)
+    if not binary:
+        return None, "unavailable"
+    try:
+        result = subprocess.run([binary, command], stdin=subprocess.DEVNULL,
+                                stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                                timeout=1, check=False, text=True)
+    except subprocess.TimeoutExpired:
+        return None, "timeout"
+    except (OSError, UnicodeError):
+        return None, "unavailable"
+    if result.returncode:
+        return None, "unavailable"
+    if not isinstance(result.stdout, str) or len(result.stdout) > 128:
+        return None, "invalid"
+    return result.stdout.strip(), None
+
+
+def read_sysfs_temperature():
+    """Read the Pi SoC sensor in millidegrees, labelled separately from firmware.
+
+    The device marker prevents a host/CI computer's unrelated thermal zone from
+    being presented as a garden Pi measurement when the relay is tested locally.
+    """
+    try:
+        with open("/proc/device-tree/model", "r") as source:
+            if "Raspberry Pi" not in source.read(128):
+                return None
+        with open("/sys/class/thermal/thermal_zone0/temp", "r") as source:
+            raw = source.read(64).strip()
+        if not re.fullmatch(r"-?[0-9]{1,6}", raw):
+            return None
+        value = int(raw) / 1000
+        return round(value, 1) if -40 <= value <= 150 else None
+    except (OSError, UnicodeError):
+        return None
+
+
+def sample_hardware(command_reader=None, temperature_reader=None, now=None):
+    """Bounded hardware observations; historical sticky bits are not live alarms."""
+    command_reader = command_reader or read_vcgencmd
+    temperature_reader = temperature_reader or read_sysfs_temperature
+    result = {"observed_at": iso_now() if now is None else dt.datetime.fromtimestamp(now, UTC).isoformat(),
+              "power_status": "unknown", "thermal_status": "unknown",
+              "temperature_c": None, "temperature_source": "unavailable",
+              "throttled_hex": None, "current_flags": [], "historical_flags": [],
+              "sample_errors": [], "thermal_warning_c": THERMAL_WARNING_C}
+    raw, error = command_reader("get_throttled")
+    matched = re.fullmatch(r"throttled=(0x[0-9a-fA-F]{1,8})", raw or "")
+    if not error and matched:
+        bits = int(matched.group(1), 16)
+        result["throttled_hex"] = hex(bits)
+        result["current_flags"] = [name for n, name in enumerate(HARDWARE_FLAGS) if bits & (1 << n)]
+        result["historical_flags"] = [name for n, name in enumerate(HARDWARE_FLAGS) if bits & (1 << (n + 16))]
+        result["power_status"] = "warning" if bits & 0b111 else "healthy"
+    else:
+        result["sample_errors"].append("throttled_" + (error or "invalid"))
+    raw, error = command_reader("measure_temp")
+    matched = re.fullmatch(r"temp=(-?[0-9]{1,3}(?:\.[0-9]{1,3})?)'C", raw or "")
+    if not error and matched and -40 <= float(matched.group(1)) <= 150:
+        result["temperature_c"] = round(float(matched.group(1)), 1)
+        result["temperature_source"] = "vcgencmd"
+    else:
+        result["sample_errors"].append("temperature_" + (error or "invalid"))
+        fallback = temperature_reader()
+        if isinstance(fallback, (int, float)) and not isinstance(fallback, bool) and math.isfinite(fallback) and -40 <= fallback <= 150:
+            result["temperature_c"] = round(fallback, 1)
+            result["temperature_source"] = "sysfs"
+    temperature = result["temperature_c"]
+    if "soft_temperature_limit" in result["current_flags"] or temperature is not None and temperature >= THERMAL_WARNING_C:
+        result["thermal_status"] = "warning"
+    elif temperature is not None and result["throttled_hex"] is not None:
+        result["thermal_status"] = "healthy"
+    return result
+
+
 class Store:
     def __init__(self, directory):
         self.directory = Path(directory)
@@ -146,7 +237,7 @@ class Store:
                                 (payload["event_id"], json.dumps(payload), time.time()))
             return bool(cur.rowcount)
 
-    def fault(self, station, component, active, message, detail=None, now=None):
+    def fault(self, station, component, active, message, detail=None, now=None, hardware=None):
         now = time.time() if now is None else now
         stamp = dt.datetime.fromtimestamp(now, UTC).isoformat()
         with self.lock, self.db:
@@ -168,6 +259,10 @@ class Store:
                        "details": {"component": component, "state": "fault" if active else "recovered",
                                    "first_seen": first, "last_seen": stamp, "occurrences": count,
                                    "code": detail or "", "relay_version": VERSION}}
+            if component in ("power", "thermal") and hardware is not None:
+                # Internally sampled and allowlisted fields only; the receiver
+                # independently validates these bounded measurements.
+                payload["details"]["hardware"] = hardware
             encoded = json.dumps(payload)
             self.db.execute("INSERT INTO reports VALUES(?,?,?)", (payload["report_id"], encoded, now))
             self.db.execute("INSERT INTO outbox(kind,event_key,payload,created_at) VALUES('reports',?,?,?)",
@@ -284,6 +379,7 @@ class Relay:
         self.started = time.monotonic()
         self.stop = threading.Event()
         self.audio_status = self.inference_status = "unknown"
+        self.hardware = None
         self.last_poll = self.last_delivery = self.last_health = None
         self.birdnet_version = None
         self.token = read_secret(config["token_file"])
@@ -292,8 +388,32 @@ class Relay:
     def birdnet(self, route):
         return self.transport(self.config["birdnet_url"] + route, self.birdnet_token, timeout=8)
 
-    def report_fault(self, component, active, message, detail=""):
-        self.store.fault(self.config["station_id"], component, active, message, detail)
+    def report_fault(self, component, active, message, detail="", hardware=None):
+        self.store.fault(self.config["station_id"], component, active, message, detail, hardware=hardware)
+
+    def check_hardware(self):
+        self.hardware = sample_hardware()
+        status = self.hardware["power_status"]
+        if status == "warning":
+            undervoltage = "under_voltage" in self.hardware["current_flags"]
+            self.report_fault("power", True,
+                              "Pi reports current under-voltage; check its supply and cable" if undervoltage else
+                              "Pi reports current frequency capping or throttling; the cause needs review",
+                              "current_under_voltage" if undervoltage else "current_performance_limited", hardware=self.hardware)
+        elif status == "healthy":
+            self.report_fault("power", False, "Pi current power and performance flags cleared; historical flags may remain",
+                              "current_flags_clear", hardware=self.hardware)
+        status = self.hardware["thermal_status"]
+        if status == "warning":
+            limit = "soft_temperature_limit" in self.hardware["current_flags"]
+            self.report_fault("thermal", True,
+                              "Pi firmware reports a current soft temperature limit" if limit else
+                              "Pi temperature reached the provisional 75°C warning threshold; review enclosure cooling",
+                              "current_soft_temperature_limit" if limit else "temperature_warning", hardware=self.hardware)
+        elif status == "healthy":
+            self.report_fault("thermal", False, "Pi temperature is below the provisional warning threshold; no current soft limit was observed",
+                              "temperature_below_warning", hardware=self.hardware)
+        # Unknown samples never fabricate a fault or resolve an existing one.
 
     def poll(self, today=None):
         today = today or dt.datetime.now(ZoneInfo(self.config["timezone"])).date()
@@ -346,6 +466,7 @@ class Relay:
                 self.report_fault("server_delivery", False, "Server delivery recovered")
 
     def heartbeat(self):
+        self.check_hardware()
         audio = inference = None
         for route, kind in (("/api/v2/health/audio", "audio"), ("/api/v2/system/inference", "inference")):
             try:
@@ -363,7 +484,7 @@ class Relay:
                 self.report_fault(kind, False, kind.capitalize() + " pipeline recovered")
         body = {"station_id": self.config["station_id"], "audio_status": self.audio_status,
                 "inference_status": self.inference_status, "uptime_seconds": round(time.monotonic() - self.started),
-                "version": VERSION}
+                "version": VERSION, "hardware": self.hardware}
         # Heartbeats are current state; do not queue/replay stale healthy heartbeats.
         self.transport(self.config["server_url"] + "/api/ingest/heartbeat", self.token, body, timeout=8)
 
@@ -371,6 +492,7 @@ class Relay:
         return {"relay_version": VERSION, "station_id": self.config["station_id"],
                 "birdnet_expected_version": BIRDNET_RELEASE, "birdnet_reported_version": self.birdnet_version,
                 "audio_status": self.audio_status, "inference_status": self.inference_status,
+                "hardware": self.hardware,
                 "last_poll": self.last_poll, "last_delivery": self.last_delivery, "last_health": self.last_health,
                 "history_day": self.store.get("history_day"), "queue": self.store.snapshot(),
                 "disk_free_bytes": shutil.disk_usage(self.config["data_dir"]).free}

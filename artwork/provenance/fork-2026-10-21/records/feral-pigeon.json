@@ -1,0 +1,122 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Feral pigeon",
+    "scientific_name": "Columba livia",
+    "sex_age_plumage": "Familiar adult blue-bar feral morph; do not label it a genetically pure wild Rock Dove.",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/rock-dove-feral-pigeon",
+      "https://www.bto.org/learn/about-birds/birdfacts/rock-dove",
+      "https://www.bto.org/sites/default/files/shared_documents/gbw/associated_files/bird-table-64-pigeon-identification.pdf",
+      "https://www.allaboutbirds.org/guide/Rock_Pigeon/id"
+    ],
+    "diagnostic_features": [
+      "Stocky blue-grey pigeon with a small head and short pink-red legs.",
+      "Darker slate head and neck, lighter grey back and folded wing, restrained green and wine-purple neck iridescence.",
+      "Two bold black transverse bars across the visible pale-grey wing; retain them as readable identity marks amid decorative feather work.",
+      "Red to orange-red iris surrounding a small black pupil, not the pale yellow Woodpigeon eye or all-dark Stock Dove eye.",
+      "Short relatively slender dark-grey bill with a pale cere at its base; no yellow-tipped Woodpigeon bill.",
+      "Broad, moderately short tail with a dark terminal band; tail reads rounded when spread. White rump belongs to the chosen rock-dove-like form but need not be exposed in side view."
+    ],
+    "birdnet_label": "Columba livia_Rock Dove"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Right-facing stocky adult blue-bar pigeon",
+    "facing": "right",
+    "support": "Spare ink perch or ground strokes",
+    "artistic_intention": "Right-facing side/three-quarter pigeon, small head held neatly over a stocky body, a subtle stepping stance on spare ground ink; folded wing shown clearly.",
+    "expression_choices": [
+      "Species-led silhouette and gaze",
+      "Expressive contours with clear feather groups"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "slate grey",
+      "light grey",
+      "black",
+      "green-purple neck sheen"
+    ],
+    "structural_dark": "Species-compatible ink/charcoal/petrol",
+    "optional_accent": "Selective pale or warm feather edging",
+    "background": "Terracotta rounded pigment form",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Terracotta rounded pigment form",
+    "elements": [
+      "Terracotta rounded pigment form"
+    ],
+    "relationship_to_bird": "Economical abstract counterpoint, bird remains dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Face and bill",
+      "Diagnostic plumage",
+      "Selected wing/tail edges"
+    ],
+    "quiet_areas": [
+      "Body passages between directional marks"
+    ],
+    "contour_gesture": "A few long economical tapered/broken ink lines",
+    "detail_treatment": "Translucent underpainting, rich printed pigment, selective coloured-pencil and feather edging",
+    "optional_motifs": [],
+    "graphic_structure": "Two black wingbars across pale grey wing, dark neck sheen and orange-red iris"
+  },
+  "deliberate_stylisations": [
+    "Controlled expressive silhouette",
+    "Printed pigment colour and fine rhythmic feather drawing",
+    "Long free contours; these are artistic marks, not literal feather anatomy"
+  ],
+  "annotations": {
+    "name_treatment": "Understated handwritten species name beneath bird",
+    "state_treatment": "No live state or encounter data; corner quiet"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Feral pigeon (Columba livia), Familiar adult blue-bar feral morph; do not label it a genetically pure wild Rock Dove..\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Stocky blue-grey pigeon with a small head and short pink-red legs.\n- Darker slate head and neck, lighter grey back and folded wing, restrained green and wine-purple neck iridescence.\n- Two bold black transverse bars across the visible pale-grey wing; retain them as readable identity marks amid decorative feather work.\n- Red to orange-red iris surrounding a small black pupil, not the pale yellow Woodpigeon eye or all-dark Stock Dove eye.\n- Short relatively slender dark-grey bill with a pale cere at its base; no yellow-tipped Woodpigeon bill.\n- Broad, moderately short tail with a dark terminal band; tail reads rounded when spread. White rump belongs to the chosen rock-dove-like form but need not be exposed in side view.\nAvoid identity confusion: No Woodpigeon white neck patch or white wing band.; No Collared Dove black nape half-collar or long pale-tipped tail.; No Stock Dove all-dark eye and short incomplete narrow bars.; Do not make the neck iridescence look like a flat neon green bib..\nARTISTIC POSE: Right-facing side/three-quarter pigeon, small head held neatly over a stocky body, a subtle stepping stance on spare ground ink; folded wing shown clearly.\nSPECIFIC DRAWING EMPHASIS: This is the familiar adult blue-bar Feral Pigeon morph. Make TWO complete BLACK wing bars readable across the light-grey folded wing, not one stripe or short feather dashes. No white side-neck patch. A modest orange-red iris, dark bill and pale cere. Neck sheen stays restrained green/purple within the dark neck.\nBACKGROUND DIRECTION: A simple muted terracotta cropped disk or off-centre rounded pigment block, distinct from the existing Woodpigeon's open ochre arc.\nPLUMAGE PALETTE: slate grey, light grey, black, green-purple neck sheen. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Feral pigeon\".",
+    "generated_asset": "12-feral-pigeon-v1.png",
+    "asset_sha256": "c6e31be3cb02c2a8df4e02d73a27a664d946c9b3e56ed59434a9fb4e9bf38f49",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": {
+      "date": "2026-10-21",
+      "evidence": "User: \"ok now make the next 10\"",
+      "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+    },
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-a93f08bf-ff2a-4cb0-890b-0519a434a3fb.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Reviewed against verified species identifiers; no significant identity/anatomy blocker in selected version",
+    "character_restraint": "Graphic stylisation retains diagnostic features",
+    "material_and_detail": "Inspected: clear pigment masses, rich selective detail and expressive linework",
+    "collection_variety": "Distinct species anatomy, plumage and simple abstract backdrop",
+    "display_size": "Reviewed alongside the collection",
+    "graphic_clarity_at_display_size": "Two black wingbars across pale grey wing, dark neck sheen and orange-red iris",
+    "approval": "Accepted by user continuation on 21 October 2026; no animation approval implied."
+  },
+  "creative_review": {
+    "collection_kinship": "Matches shared paper, pigment, graphic feather grouping and naming",
+    "individuality": "Right-facing stocky adult blue-bar pigeon",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 3,
+    "collection_position": 12,
+    "review_group": [
+      2,
+      3
+    ],
+    "review": "approved"
+  }
+}

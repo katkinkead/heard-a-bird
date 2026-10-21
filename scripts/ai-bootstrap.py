@@ -19,6 +19,7 @@ from songsketch import __version__
 from songsketch.config import Config, data_directory, private_json
 from songsketch.setup_client import SetupClient
 from songsketch.supervisor import health_check, port_is_open
+from songsketch.github_launcher import LaunchError, read_details
 
 CONTENTS = ("songsketch","scripts","pi","static","guide","docs","artwork","README.md","AGENTS.md","CLAUDE.md","LICENSE","Start Songsketch.command","Pair Garden Pi.command","Install Mac Background Service.command","integration-plan.md","dashboard-requirements.md","maintenance-requirements.md","RELEASE_NOTES.md")
 
@@ -52,6 +53,19 @@ def managed_copy(source, destination):
     return "installed"
 
 
+def apply_saved_setup_preferences(client, directory):
+    """Import only the requested recipient; never echo private setup values."""
+    source = Path(directory) / "setup-details.json"
+    if not source.exists(): return {}
+    details = read_details(source)
+    recipient = details.get("notification_email")
+    if not recipient: return {}
+    acknowledged = client.request("/api/admin/settings", {"notification_email": recipient})
+    if not isinstance(acknowledged, dict) or acknowledged.get("ok") is not True:
+        raise RuntimeError("The server did not confirm the saved notification preference.")
+    return {"notification_recipient_saved": True, "email_delivery_verified": False}
+
+
 def bootstrap(directory, port, no_open=False, dry_run=False):
     directory = Path(directory).expanduser().resolve()
     destination = directory/"app"
@@ -64,6 +78,7 @@ def bootstrap(directory, port, no_open=False, dry_run=False):
             raise RuntimeError("The port is in use by a service that did not pass Songsketch's health check. No process was stopped; inspect the existing service.")
         context = client.request("/api/admin/setup-context") # verifies existing credentials + new helper capability
         result = {"ok":True,"reused_running_server":True,"version":context.get("version"),"guide":client.base+"/guide/index.html"}
+        result.update(apply_saved_setup_preferences(client, directory))
         if not no_open: result.update(client.open_guide())
         return result
     install = managed_copy(ROOT,destination)
@@ -86,6 +101,7 @@ def bootstrap(directory, port, no_open=False, dry_run=False):
         if sys.platform == "darwin":
             subprocess.Popen(["/usr/bin/caffeinate","-i","-w",str(child.pid)],stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,start_new_session=True)
         result = {"ok":True,"installation":install,"version":context.get("version"),"application":str(destination),"private_data":str(directory),"guide":client.base+"/guide/index.html","supervisor_pid":child.pid,"persistent_service":False}
+        result.update(apply_saved_setup_preferences(client, directory))
         if not no_open: result.update(client.open_guide())
         return result
     except Exception:
@@ -109,7 +125,7 @@ def main(argv=None):
         result = bootstrap(args.data_dir or data_directory(),args.port,args.no_open,args.dry_run)
         print(json.dumps(result,indent=2))
         return 0
-    except (OSError,RuntimeError,ValueError) as exc:
+    except (OSError,RuntimeError,ValueError,LaunchError) as exc:
         print(json.dumps({"ok":False,"error":str(exc),"next":"Read docs/ai-setup.md. Inspect the current installation and its private logs; preserve history and existing credentials."}))
         return 1
 

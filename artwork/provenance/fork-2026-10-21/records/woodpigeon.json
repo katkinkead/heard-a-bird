@@ -1,0 +1,76 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Woodpigeon",
+    "scientific_name": "Columba palumbus",
+    "sex_age_plumage": "Adult; sex unspecified",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/woodpigeon",
+      "https://www.bto.org/sites/default/files/shared_documents/gbw/associated_files/bird-table-64-pigeon-identification.pdf"
+    ]
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Broad upright three-quarter standing portrait with slight head turn",
+    "facing": "right",
+    "artistic_intention": "Unhurried dignity, gently quizzical",
+    "support": "Minimal sweeping ink ground/perch strokes"
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "blue-grey",
+      "dusty rose",
+      "smoky lilac",
+      "cream"
+    ],
+    "background": [
+      "warm ochre"
+    ],
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Broad incomplete ochre curve",
+    "relationship_to_bird": "Simple abstract support; exposed paper remains visible"
+  },
+  "finish": {
+    "detail_treatment": "Stronger scalloped wing drawing, selective cream/gold feather edging, clearer petrol shadows and directional breast strokes.",
+    "optional_motifs": [],
+    "contour_gesture": "Economical extended ink contours",
+    "graphic_structure": "Rhythmic overlapping coverts and long dark flight-feather shapes carry the detail; contrast clarifies overlaps without a universal heavy outline."
+  },
+  "annotations": {
+    "name_treatment": "Understated handwritten species name below bird",
+    "state_treatment": "No sensor status; corner reserved"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/33-woodpigeon-concept.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png"
+    ],
+    "prompt": "Use case: style-transfer. Revise the existing Woodpigeon illustration in reference image 1. Produce ONE finished landscape 4:3 image.\n\nREFERENCE ROLES:\nImage 1 is the EDIT TARGET: the current Woodpigeon. Preserve this species and overall composition.\nImage 2, the original four-bird collection, is the PRIMARY STYLE REFERENCE.\nImage 3, the original Robin, is a supporting reference for printed colour, controlled stylisation, lively contour and fine patterned drawing.\nDo not add another bird, create a comparison sheet, or copy the Robin's anatomy.\n\nUSER'S CORRECTION: The current Woodpigeon feels a little too naturalistic compared with the original batch. Bring its graphic illustration language visibly closer to those originals, while making only modest changes to anatomy. This should be a measured stylistic refinement with recognisable Woodpigeon identity.\n\nCHANGE THE BIRD'S VISUAL TREATMENT:\n- Group the plumage into clearer, more intentionally shaped pigment masses. Keep the slate-grey body and dusty pink breast, with richer inky petrol/navy shadows and a little more luminous teal in the existing iridescent neck. Let some passages be flatter and calmer; reduce the uniformly tiny stippling and meticulous feather-by-feather tonal modelling.\n- Retain excellent close-up craftsmanship. Concentrate sharper fine coloured-pencil and ink detail in selected passages. On part of the folded wing create an elegant rhythmic arrangement of scalloped feather arcs, clean quill lines and delicate cream/petrol engraving. This can be subtly ornamental like the originals, integrated into real feather groups. Do not paste a literal leaf badge onto the bird and do not obscure the white wing marking. Use selective pattern, not uniform decoration across the body.\n- Make the silhouette feel slightly more authored: a more flowing rounded breast-to-belly curve, a gently inquisitive small head angle, elegantly tapered feather ends, and a few confident long ink contours. Preserve its broad pigeon body and small head. Let character come through contour, balance and small choices in gaze. Keep the pale iris around a small dark pupil, not a huge toy eye. No human eyebrows, smile or costume.\n- Keep the paper tooth and watercolour softness underneath the richer opaque printed pigment. The image should feel drawn and designed like the original collection, with a clear hierarchy of detail. It must not turn into flat vector art or lose its detailed finish.\n\nPRESERVE:\nAdult Woodpigeon (Columba palumbus): blue-grey upperparts, soft rose/pink breast, pale lower belly, clear WHITE lateral neck patch (not a full collar), subtle green/purple neck iridescence, white folded-wing marking, darker flight feathers and tail end, small pale-yellow iris with dark pupil, pigeon bill with pale cere/pink base and warm horn tip, rose-red feet, coherent bird anatomy.\nPreserve the facing-right three-quarter composition, minimal ink support, open ochre background gesture, warm ivory paper, placement and exact understated handwritten name \"Woodpigeon\". The background is already successful; the change should be apparent in the bird.\nKeep no sensor state or other text, no scenery, no facts, no props, no watermark.\nAim for the original batch's sophisticated, slightly eccentric print-and-pigment character with species fidelity.\n\n",
+    "generated_asset": "03-woodpigeon-v2.png",
+    "tool_model_if_known": "Built-in image_gen, edit mode; model not reported",
+    "revision": "v2",
+    "user_review": "User: \"these all look great! do the next 10.\"",
+    "created_date": "2026-10-21",
+    "asset_sha256": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f",
+    "carried_forward_from": "34-woodpigeon-stylised-v2.png",
+    "prior_user_review": "2026-10-21: User preferred v2 and requested its nuances be incorporated into the style guide for consistent future art."
+  },
+  "review": {
+    "species_identity": "Visually reviewed: white lateral neck patch, pale yellow iris, pink breast, grey folded wings and rose feet present",
+    "material_and_detail": "Visually inspected: subtle increase in graphic feather pattern, colour separation and ink definition; original composition and species identifiers retained.",
+    "collection_variety": "Substantial rounded body and open ochre geometry",
+    "approval": "Final artwork approved 2026-10-21; animation not requested.",
+    "graphic_clarity_at_display_size": "Clearer coverts, long flight-feather planes and selective dark/pale separations; fine detail retained."
+  },
+  "revision_intent": "Bring the bird slightly closer to the original batch through graphic pigment masses, deliberate feather rhythm and expressive contours; retain species identifiers and overall composition.",
+  "batch": {
+    "number": 1,
+    "position": 3,
+    "review": "approved",
+    "treatment": "Preferred v2"
+  }
+}

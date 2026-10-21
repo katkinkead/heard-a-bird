@@ -1,0 +1,120 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Buzzard",
+    "scientific_name": "Buteo buteo",
+    "sex_age_plumage": "Adult Common Buzzard, sex unspecified, typical medium-brown colour form",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/buzzard",
+      "https://www.wildlifetrusts.org/wildlife-explorer/birds/birds-prey/buzzard",
+      "https://www.bto.org/learn/about-birds/birdfacts/buzzard",
+      "https://linnuriik.ee/en/haeska-observation-tower/common-buzzard/"
+    ],
+    "diagnostic_features": [
+      "Compact, broad-bodied raptor with a short neck, broad folded wings and comparatively short rounded tail.",
+      "Brown head and upperparts; darker upper-breast shield above a paler breast band, with brown markings on paler lower underparts. This is one typical form of a variable species.",
+      "Short strongly hooked dark bill with yellow cere/base; yellow bare lower legs and toes, dark claws.",
+      "Dark adult iris, small natural eye highlight; not a bright yellow Honey-buzzard eye.",
+      "Brown tail with fine dark bands and stronger dark terminal band."
+    ],
+    "birdnet_label": "Buteo buteo_Common Buzzard"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Broad grounded body with head turned to the right, tail extending right",
+    "facing": "right head turn",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "Adult medium-brown Common Buzzard in a grounded three-quarter stance facing left, substantial body but a calmly turned head and broad folded wings. Tail relatively short, feet on a spare slightly rising ground line; no prey, no objects.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "warm brown",
+      "umber",
+      "cream",
+      "yellow cere and feet"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Pale sage open curved field and ochre counterstroke",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Pale sage open curved field and ochre counterstroke",
+    "elements": [
+      "Pale sage open curved field and ochre counterstroke"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Warm brown wing groups with pale edges, pale breast band, dark iris and yellow cere/feet"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Buzzard (Buteo buteo), Adult Common Buzzard, sex unspecified, typical medium-brown colour form.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Compact, broad-bodied raptor with a short neck, broad folded wings and comparatively short rounded tail.\n- Brown head and upperparts; darker upper-breast shield above a paler breast band, with brown markings on paler lower underparts. This is one typical form of a variable species.\n- Short strongly hooked dark bill with yellow cere/base; yellow bare lower legs and toes, dark claws.\n- Dark adult iris, small natural eye highlight; not a bright yellow Honey-buzzard eye.\n- Brown tail with fine dark bands and stronger dark terminal band.\nAvoid identity confusion: No forked red-kite tail, long slender harrier tail or eagle-sized beak.; Avoid Honey-buzzard's small pigeon-like head and long slim neck.; No feathering down to toes as on Rough-legged Buzzard; do not treat one brown pattern as universal for the species.\nARTISTIC POSE: Adult medium-brown Common Buzzard in a grounded three-quarter stance facing left, substantial body but a calmly turned head and broad folded wings. Tail relatively short, feet on a spare slightly rising ground line; no prey, no objects.\nSPECIFIC DRAWING EMPHASIS: Broad-winged compact raptor proportions, mottled medium brown with pale breast band and darker belly patches, small hooked bill/yellow cere, yellow feet and dark claws. The overlapping wing coverts form purposeful dark-brown planes with selected cream edges and rich pencil detail.\nBACKGROUND DIRECTION: An offset open pale sage oval brush fragment with a small ochre counterstroke, understated and spacious; no landscape or tree.\nPLUMAGE PALETTE: warm brown, umber, cream, yellow cere and feet. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Buzzard\".",
+    "generated_asset": "31-buzzard-v1.png",
+    "asset_sha256": "98f2e8bd702d005368d32d61f9b544fafd0740fdb1b6cf227be1a2cd6c75e1a6",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-d5c5b396-4295-48b2-94de-fc4759f8ebe5.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Warm brown wing groups with pale edges, pale breast band, dark iris and yellow cere/feet",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Broad grounded body with head turned to the right, tail extending right",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 7,
+    "collection_position": 31,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "original35"
+  }
+}

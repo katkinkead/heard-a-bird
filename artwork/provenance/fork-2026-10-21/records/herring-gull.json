@@ -1,0 +1,123 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Herring gull",
+    "scientific_name": "Larus argentatus",
+    "sex_age_plumage": "Adult European Herring Gull in breeding plumage, sex unspecified; familiar pink-legged British form",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/herring-gull",
+      "https://members.rspb.org.uk/how-to-identify-adult-gulls/",
+      "https://www.wildlifetrusts.org/wildlife-explorer/birds/seabirds/herring-gull"
+    ],
+    "diagnostic_features": [
+      "Large, substantial gull with a strong head and heavy yellow bill, slightly curved at its tip.",
+      "Small red mark near tip of lower bill; preserve distinctly yellow main bill.",
+      "Pale iris surrounding a dark pupil, not an entirely dark eye.",
+      "Clean white head, neck and underparts in chosen breeding plumage.",
+      "Light silvery-grey mantle and folded upperwing, black primary tips with white spots or mirrors.",
+      "Pink legs and webbed feet; ground-standing gull anatomy rather than gripping songbird toes."
+    ],
+    "birdnet_label": "Larus argentatus_Herring Gull"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Substantial right-facing grounded stance, both pink webbed feet visible",
+    "facing": "right",
+    "support": "Spare ink perch or ground strokes appropriate to species",
+    "artistic_intention": "A substantial grounded gull facing right, head lifted with a gentle backward glance, long folded wings and both webbed feet readable on a minimal dry-ink ground stroke. Dignified angular silhouette, with ample room around the bill and tail.",
+    "expression_choices": [
+      "Species-led silhouette and posture",
+      "Expressive contours within restrained anatomy"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "paper white",
+      "silver grey",
+      "charcoal primary tips",
+      "yellow bill",
+      "pink feet"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal and petrol",
+    "optional_accent": "Selective pale feather edges and pigment variation",
+    "background": "Open sweeping mineral-blue pigment band",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Open sweeping mineral-blue pigment band",
+    "elements": [
+      "Open sweeping mineral-blue pigment band"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint to the pose; bird dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Paper reserves",
+      "Body passages between directional marks"
+    ],
+    "contour_gesture": "Economical tapered and broken ink contours",
+    "detail_treatment": "Translucent underpainting, rich printed pigment, fine directional pencil and selected feather edges",
+    "optional_motifs": [],
+    "graphic_structure": "Pale iris and heavy yellow red-spotted bill; paper-white body and grouped silvery wing planes with black/white tips"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Rich printed colour and rhythmic feather groups",
+    "Selected pale edges and long free contour strokes; artistic marks are not literal anatomy"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten species name below bird",
+    "state_treatment": "No sensor state, count or icon; corner quiet"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Herring gull (Larus argentatus), Adult European Herring Gull in breeding plumage, sex unspecified; familiar pink-legged British form.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Large, substantial gull with a strong head and heavy yellow bill, slightly curved at its tip.\n- Small red mark near tip of lower bill; preserve distinctly yellow main bill.\n- Pale iris surrounding a dark pupil, not an entirely dark eye.\n- Clean white head, neck and underparts in chosen breeding plumage.\n- Light silvery-grey mantle and folded upperwing, black primary tips with white spots or mirrors.\n- Pink legs and webbed feet; ground-standing gull anatomy rather than gripping songbird toes.\nAvoid identity confusion: Do not make the back dark slate or black: that suggests Lesser or Great Black-backed Gull.; Do not use yellow legs: that suggests Yellow-legged or Lesser Black-backed Gull.; Do not replace pale iris with a large all-black mascot eye or slim the bill to Common Gull proportions.; No juvenile brown mottling or winter head streaks in this deliberate adult breeding depiction.; No black head hood, red entire bill, or black legs.\nARTISTIC POSE: A substantial grounded gull facing right, head lifted with a gentle backward glance, long folded wings and both webbed feet readable on a minimal dry-ink ground stroke. Dignified angular silhouette, with ample room around the bill and tail.\nSPECIFIC DRAWING EMPHASIS: Paper-white head and body, silvery-grey sculpted wing planes with restrained cool shading, crisp black primary tips and white mirrors. Pale iris, substantial yellow bill with a small red lower-bill spot and pink webbed feet. Fine pencil rewards close inspection without filling white feathers with ornament.\nBACKGROUND DIRECTION: One open broad mineral-blue curved pigment band, cropped by its own incomplete brush edge rather than a full disk; keep it simple behind the white bird and leave much exposed paper.\nPLUMAGE PALETTE: paper white, silver grey, charcoal primary tips, yellow bill, pink feet. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Herring gull\".",
+    "generated_asset": "17-herring-gull-v1.png",
+    "asset_sha256": "34bc9d5c256e483e2b41d1c449cd92eeeffb9ef27be18cc19e4a50d124824c40",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": {
+      "date": "2026-10-21",
+      "evidence": "User: \"now make all the rest and the owls\"",
+      "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+    },
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-e1e472c9-3e58-4366-8290-049ca48d7e91.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image inspected against authoritative species references; no material identity or major anatomy correction required",
+    "character_restraint": "Species-led stylisation retains diagnostic anatomy",
+    "material_and_detail": "Inspected: paper, rich pigment masses, selective crisp feather detail and expressive contours",
+    "collection_variety": "Distinct species silhouettes, poses and restrained abstract backdrops",
+    "display_size": "Reviewed in gallery and at source resolution",
+    "graphic_clarity_at_display_size": "Pale iris and heavy yellow red-spotted bill; paper-white body and grouped silvery wing planes with black/white tips",
+    "approval": "Accepted by user continuation on 21 October 2026; no animation approval implied."
+  },
+  "creative_review": {
+    "collection_kinship": "Shared paper/pigment/pencil treatment, legible feather grouping and understated naming",
+    "individuality": "Substantial right-facing grounded stance, both pink webbed feet visible",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 4,
+    "collection_position": 17,
+    "review_group": [
+      4,
+      5
+    ],
+    "review": "approved"
+  }
+}

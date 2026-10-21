@@ -1,0 +1,65 @@
+{
+  "batch": 1,
+  "total_batches": 7,
+  "scope": "35 ranked Dorset garden species in saved crossover; original five artwork species excluded from this list",
+  "status": "approved",
+  "advance_rule": "Approval received; user authorised batches 2 and 3 together.",
+  "artwork": [
+    {
+      "position": 1,
+      "species": "House sparrow",
+      "slug": "house-sparrow",
+      "file": "01-house-sparrow-v2.png",
+      "record": "house-sparrow-record.json",
+      "treatment": "Refined drawing",
+      "sha256": "e582b0ed896d6a943f4f2391584f715b0bb76fa1d89d55eae73dbd0ca385a9a1",
+      "status": "approved"
+    },
+    {
+      "position": 2,
+      "species": "Starling",
+      "slug": "starling",
+      "file": "02-starling-v1.png",
+      "record": "starling-record.json",
+      "treatment": "Carried forward",
+      "sha256": "f62f30bd87dda4e372663636a1e971e37362b086c3baf927442c16b63f7d22c6",
+      "status": "approved"
+    },
+    {
+      "position": 3,
+      "species": "Woodpigeon",
+      "slug": "woodpigeon",
+      "file": "03-woodpigeon-v2.png",
+      "record": "woodpigeon-record.json",
+      "treatment": "Preferred v2",
+      "sha256": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f",
+      "status": "approved"
+    },
+    {
+      "position": 4,
+      "species": "Great tit",
+      "slug": "great-tit",
+      "file": "04-great-tit-v1.png",
+      "record": "great-tit-record.json",
+      "treatment": "New portrait",
+      "sha256": "16a17656ec9a3dcdb930053cf8638e2be4ef9051eba801a2364dcf24f778a6eb",
+      "status": "approved"
+    },
+    {
+      "position": 5,
+      "species": "Long-tailed tit",
+      "slug": "long-tailed-tit",
+      "file": "05-long-tailed-tit-v1.png",
+      "record": "long-tailed-tit-record.json",
+      "treatment": "New portrait",
+      "sha256": "f10677b07e64dcf338948846c8d90eb8cc0cebec0339bd772b686e9ec3a7e136",
+      "status": "approved"
+    }
+  ],
+  "style_guide": "../../final-art-style-guide.html",
+  "created_date": "2026-10-21",
+  "approval": {
+    "date": "2026-10-21",
+    "evidence": "User: \"these all look great! do the next 10.\""
+  }
+}

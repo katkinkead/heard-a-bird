@@ -1,0 +1,121 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Long-eared owl",
+    "scientific_name": "Asio otus",
+    "sex_age_plumage": "Adult Eurasian bird, sex unspecified; upright alert posture with long feather tufts raised, warm buff-brown plumage.",
+    "identity_references": [
+      "https://www.bto.org/learn/about-birds/owls/long-eared-owl",
+      "https://www.rspb.org.uk/birds-and-wildlife/long-eared-owl",
+      "https://www.wildlifetrusts.org/wildlife/how-identify/how-identify-owls",
+      "https://www.owlpages.com/owls/species.php?s=3550"
+    ],
+    "diagnostic_features": [
+      "Slim upright body with two prominent narrow feather tufts, distinct from fleshy ears.",
+      "Orange to yellow-orange irises, ochre-buff facial disc edged dark; small whitish brow feathers descend toward the bill.",
+      "Dark feathering is strongest toward inner eye edges, not a complete sooty eye-ring like Short-eared Owl.",
+      "Mottled brown upperparts, pale buff underside with dark shaft streaks and fine cross-bars extending over the belly; narrow tail bars.",
+      "Pale buff feathering continues over lower legs and toes; dark grey-black curved talons."
+    ],
+    "birdnet_label": "Asio otus_Long-eared Owl"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Slim upright body angled left, face nearly frontal and narrow feather tufts raised",
+    "facing": "near-front/left",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "Adult in a slim tall perch stance, body angled left, head almost forward with upright paired feather ear tufts. Keep proportions naturally narrow and elongated, with full wing/tail/toes visible. Alert stillness, no giant face or costume.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "buff orange",
+      "brown",
+      "cream",
+      "black-brown",
+      "orange iris"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Tall apricot quadrilateral and detached dusty-rose block",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Tall apricot quadrilateral and detached dusty-rose block",
+    "elements": [
+      "Tall apricot quadrilateral and detached dusty-rose block"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Orange irises, buff facial disc, long tufts and dark shaft streaks/cross-bars continuing through the belly"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Long-eared owl (Asio otus), Adult Eurasian bird, sex unspecified; upright alert posture with long feather tufts raised, warm buff-brown plumage..\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Slim upright body with two prominent narrow feather tufts, distinct from fleshy ears.\n- Orange to yellow-orange irises, ochre-buff facial disc edged dark; small whitish brow feathers descend toward the bill.\n- Dark feathering is strongest toward inner eye edges, not a complete sooty eye-ring like Short-eared Owl.\n- Mottled brown upperparts, pale buff underside with dark shaft streaks and fine cross-bars extending over the belly; narrow tail bars.\n- Pale buff feathering continues over lower legs and toes; dark grey-black curved talons.\nAvoid identity confusion: No broad Eagle Owl build, huge horns, exaggerated angry expression or pure yellow Short-eared eyes.; Do not leave the lower belly broadly blank as in Short-eared Owl.; Raised tufts should stay narrow, natural feather structures and must fit comfortably inside frame.\nARTISTIC POSE: Adult in a slim tall perch stance, body angled left, head almost forward with upright paired feather ear tufts. Keep proportions naturally narrow and elongated, with full wing/tail/toes visible. Alert stillness, no giant face or costume.\nSPECIFIC DRAWING EMPHASIS: Long slender ear tufts, orange irises, buff-orange facial disc with dark outlines and pale central facial marks, intricate streaked buff-brown body. Contrast longer upright silhouette against Short-eared Owl. Selective crisp pencil and clear feather masses, without huge eyes or human brows.\nBACKGROUND DIRECTION: A sparse soft apricot tall quadrilateral and detached muted rose dash, slightly asymmetrical; no moon, night sky, scenery or ornate frame.\nPLUMAGE PALETTE: buff orange, brown, cream, black-brown, orange iris. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Long-eared owl\".",
+    "generated_asset": "40-long-eared-owl-v1.png",
+    "asset_sha256": "762582eaa85b818d3e7ba5c5813a2dc3d7f1809f00faf33dfafca9e06697c7a4",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-eef9e90f-82d6-47e2-8a78-4db78291977c.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Orange irises, buff facial disc, long tufts and dark shaft streaks/cross-bars continuing through the belly",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Slim upright body angled left, face nearly frontal and narrow feather tufts raised",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 8,
+    "collection_position": 40,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "owls"
+  }
+}

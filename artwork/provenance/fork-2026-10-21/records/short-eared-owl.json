@@ -1,0 +1,120 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Short-eared owl",
+    "scientific_name": "Asio flammeus",
+    "sex_age_plumage": "Adult, sex unspecified; pale sandy-buff plumage, tiny ear tufts held nearly flat.",
+    "identity_references": [
+      "https://www.bto.org/learn/about-birds/owls/short-eared-owl",
+      "https://www.rspb.org.uk/birds-and-wildlife/short-eared-owl",
+      "https://www.wildlifetrusts.org/wildlife/how-identify/how-identify-owls",
+      "https://www.owlpages.com/owls/species.php?s=3590"
+    ],
+    "diagnostic_features": [
+      "Medium slender owl with relatively long folded wings, rounded-looking head and normally inconspicuous short feather tufts.",
+      "Bright yellow irises fully framed by sooty dark eye patches; pale cream-buff facial disc with a darker rim; small dark hooked bill.",
+      "Sandy-brown upperparts strongly marked dark; streaked upper breast giving way to a much paler, less marked belly.",
+      "Pale buff-cream feathered lower legs and toes, dark-tipped claws. Tail shows broad dark bars if exposed."
+    ],
+    "birdnet_label": "Asio flammeus_Short-eared Owl"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Body angled right, tilted frontal face, low support and tiny flattened tufts",
+    "facing": "near-front/right",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "Adult perched low on an economical ground stroke, body three-quarter facing right and face almost frontal. Slight relaxed head tilt; very small ear tufts mostly flattened, not long horns. Show folded long wings and naturally feathered legs.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "pale buff",
+      "warm brown",
+      "cream",
+      "dark eye patches",
+      "yellow eyes"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Seafoam oval fragment with a grey-blue angled accent",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Seafoam oval fragment with a grey-blue angled accent",
+    "elements": [
+      "Seafoam oval fragment with a grey-blue angled accent"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Yellow eyes in dark patches, pale facial disc, strongly streaked upper chest and quieter pale lower belly"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Short-eared owl (Asio flammeus), Adult, sex unspecified; pale sandy-buff plumage, tiny ear tufts held nearly flat..\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Medium slender owl with relatively long folded wings, rounded-looking head and normally inconspicuous short feather tufts.\n- Bright yellow irises fully framed by sooty dark eye patches; pale cream-buff facial disc with a darker rim; small dark hooked bill.\n- Sandy-brown upperparts strongly marked dark; streaked upper breast giving way to a much paler, less marked belly.\n- Pale buff-cream feathered lower legs and toes, dark-tipped claws. Tail shows broad dark bars if exposed.\nAvoid identity confusion: No prominent Long-eared horns, deep orange irises or uniformly dense dark streaking right across the belly.; Do not replace the real dark eye patches with arbitrary comic spectacles.; A ground or low support is more characteristic here than a decorative woodland scene.\nARTISTIC POSE: Adult perched low on an economical ground stroke, body three-quarter facing right and face almost frontal. Slight relaxed head tilt; very small ear tufts mostly flattened, not long horns. Show folded long wings and naturally feathered legs.\nSPECIFIC DRAWING EMPHASIS: Yellow eyes surrounded by conspicuous dark eye patches in a pale round facial disc; pale buff body with strong dark vertical breast streaks, quieter paler belly and mottled upperparts. Tiny tufts nearly hidden. Detailed feather groups and clear dark facial marks differentiate it from Long-eared Owl.\nBACKGROUND DIRECTION: An incomplete muted seafoam horizontal ellipse with one narrow grey-blue angular fragment; subordinate abstract colour, no marsh or sunset.\nPLUMAGE PALETTE: pale buff, warm brown, cream, dark eye patches, yellow eyes. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Short-eared owl\".",
+    "generated_asset": "39-short-eared-owl-v1.png",
+    "asset_sha256": "a8dd9a667631e65a44528fc0d53ddd5dbc3082232492e42fa1c990b13b26fb92",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-d82641f2-348c-4fa8-ab91-17254ad9dd84.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Yellow eyes in dark patches, pale facial disc, strongly streaked upper chest and quieter pale lower belly",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Body angled right, tilted frontal face, low support and tiny flattened tufts",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 8,
+    "collection_position": 39,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "owls"
+  }
+}

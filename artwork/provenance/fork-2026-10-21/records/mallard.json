@@ -1,0 +1,123 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Mallard",
+    "scientific_name": "Anas platyrhynchos",
+    "sex_age_plumage": "Adult breeding-plumaged male Mallard, typical wild form",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+      "https://www.wildlifetrusts.org/wildlife-explorer/birds/waterfowl/mallard",
+      "https://www.allaboutbirds.org/guide/Mallard/id/",
+      "https://www.ducks.org/hunting/waterfowl-id/mallard"
+    ],
+    "diagnostic_features": [
+      "Hefty long-bodied dabbling duck with rounded head and broad flattened yellow bill with dark nail.",
+      "Deep iridescent green head, narrow white neck ring, rich chestnut-purple breast and fine grey body.",
+      "Black rear and curled black upper-tail feathers; tail includes clean white edges.",
+      "Blue-violet wing speculum with white borders, when visible in chosen pose.",
+      "Dark eye; orange legs and webbed feet if standing."
+    ],
+    "birdnet_label": "Anas platyrhynchos_Mallard"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Right-facing floating drake on spare horizontal water strokes",
+    "facing": "right",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "Adult breeding drake floating facing right, elegant horizontal body, head slightly turned toward viewer. Whole bill and curled tail feathers in frame; feet naturally hidden by water. Indicate water with only two spare horizontal pigment/ink strokes, no pond scene.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "green head",
+      "yellow bill",
+      "white ring",
+      "chestnut",
+      "silver grey",
+      "black rear",
+      "blue speculum"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Apricot pigment field and offset grey-blue block",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Apricot pigment field and offset grey-blue block",
+    "elements": [
+      "Apricot pigment field and offset grey-blue block"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Green head, white collar, chestnut breast, finely drawn grey flank, violet speculum and curled black tail"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Mallard (Anas platyrhynchos), Adult breeding-plumaged male Mallard, typical wild form.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Hefty long-bodied dabbling duck with rounded head and broad flattened yellow bill with dark nail.\n- Deep iridescent green head, narrow white neck ring, rich chestnut-purple breast and fine grey body.\n- Black rear and curled black upper-tail feathers; tail includes clean white edges.\n- Blue-violet wing speculum with white borders, when visible in chosen pose.\n- Dark eye; orange legs and webbed feet if standing.\nAvoid identity confusion: No female mottled head or eclipse plumage mixed into breeding male.; No oversized Shoveler spoon bill, upright domestic-duck posture or improbable songbird perch.; Do not omit the narrow white collar or add a broad pale cheek patch.\nARTISTIC POSE: Adult breeding drake floating facing right, elegant horizontal body, head slightly turned toward viewer. Whole bill and curled tail feathers in frame; feet naturally hidden by water. Indicate water with only two spare horizontal pigment/ink strokes, no pond scene.\nSPECIFIC DRAWING EMPHASIS: Green iridescent head, yellow bill, thin white neck ring, chestnut breast, pale grey vermiculated flank, black rear and curled central tail feathers, blue speculum bordered in white if visible on folded wing. Fine directional pencil on flank balances rich dark head and precise wing groups.\nBACKGROUND DIRECTION: A muted apricot horizontal lozenge and a tiny offset soft grey-blue block, simple geometric warmth behind the green head and cool grey flank.\nPLUMAGE PALETTE: green head, yellow bill, white ring, chestnut, silver grey, black rear, blue speculum. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Mallard\".",
+    "generated_asset": "32-mallard-v1.png",
+    "asset_sha256": "40a8922d9c7114e6991f7f8c79998152e1212cda0764da45936257ec05c1cb38",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-3606f5b4-9cca-416e-af6b-facabe505387.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Green head, white collar, chestnut breast, finely drawn grey flank, violet speculum and curled black tail",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Right-facing floating drake on spare horizontal water strokes",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 7,
+    "collection_position": 32,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "original35"
+  }
+}

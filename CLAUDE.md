@@ -1,7 +1,7 @@
-# Songsketch orientation for a local assistant
+# Songsketch: shared project instructions
 
-Read [AGENTS.md](AGENTS.md), then [README.md](README.md). For installation or recovery, follow [docs/ai-setup.md](docs/ai-setup.md) and inspect the executable helpers before using them. These are shared instructions for any assistant with authorised local terminal access, including Claude Code; there is no separate Claude implementation.
+@AGENTS.md
 
-This repository contains the working application, installers and approved artwork. Its presence does not prove that this computer, the garden Pi or the eventual display has been commissioned. Check [docs/verification.md](docs/verification.md), actual setup status and the connected equipment.
+For installation or recovery, read [docs/ai-setup.md](docs/ai-setup.md) and [README.md](README.md) from this checkout before acting. The launcher supplies a short pointer; the current repository contains the procedure. There is no separate Claude implementation or copied setup prompt to keep in sync.
 
-Operate the existing system. Do not rebuild it, replace the paintings or ask the human to perform routine file, terminal and installation work that your available tools can handle. Ask for the specific physical action, credential, host-identity confirmation or operating-system permission only when it is actually needed. Ordinary cloud chat without local tools cannot run this workflow.
+Operate the existing application and installers. Preserve approved artwork, animation sequences, history and working configuration. Finding software in this repository is not proof that the connected Pi or microphone has passed physical commissioning; check actual evidence and [docs/verification.md](docs/verification.md).

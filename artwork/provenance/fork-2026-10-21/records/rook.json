@@ -1,0 +1,119 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "approved_final_art",
+  "species": {
+    "common_name": "Rook",
+    "scientific_name": "Corvus frugilegus",
+    "sex_age_plumage": "Adult, sex unspecified; juvenile deliberately not selected",
+    "identity_references": [
+      "https://www.rspb.org.uk/birds-and-wildlife/rook",
+      "https://www.bto.org/learn/about-birds/birdfacts/rook"
+    ],
+    "diagnostic_features": [
+      "Black plumage with purple sheen",
+      "Clear grey-white bare skin around base of bill",
+      "Longer thinner pointed bill than Carrion Crow",
+      "Peaked or cone-shaped crown",
+      "Loose feathering around upper legs"
+    ],
+    "birdnet_label": "Corvus frugilegus_Rook"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Left-facing lean upright adult with peaked crown and loose thigh feathers",
+    "facing": "left",
+    "support": "Spare ink perch or ground strokes",
+    "artistic_intention": "Tall lean left-facing adult Rook, subtly angular peaked crown and slightly forward-reaching neck; loose thigh feather tips above sturdy legs on sparse ground ink.",
+    "expression_choices": [
+      "Species-led silhouette and gaze",
+      "Expressive contours with clear feather groups"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "black",
+      "ink violet",
+      "graphite",
+      "grey-white face skin"
+    ],
+    "structural_dark": "Species-compatible ink/charcoal/petrol",
+    "optional_accent": "Selective pale or warm feather edging",
+    "background": "Mauve-grey open angular plane",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Mauve-grey open angular plane",
+    "elements": [
+      "Mauve-grey open angular plane"
+    ],
+    "relationship_to_bird": "Economical abstract counterpoint, bird remains dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Face and bill",
+      "Diagnostic plumage",
+      "Selected wing/tail edges"
+    ],
+    "quiet_areas": [
+      "Body passages between directional marks"
+    ],
+    "contour_gesture": "A few long economical tapered/broken ink lines",
+    "detail_treatment": "Translucent underpainting, rich printed pigment, selective coloured-pencil and feather edging",
+    "optional_motifs": [],
+    "graphic_structure": "Bare pale bill-base skin, long pointed bill and black/violet feather groups"
+  },
+  "deliberate_stylisations": [
+    "Controlled expressive silhouette",
+    "Printed pigment colour and fine rhythmic feather drawing",
+    "Long free contours; these are artistic marks, not literal feather anatomy"
+  ],
+  "annotations": {
+    "name_treatment": "Understated handwritten species name beneath bird",
+    "state_treatment": "No live state or encounter data; corner quiet"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Rook (Corvus frugilegus), Adult, sex unspecified; juvenile deliberately not selected.\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Black plumage with purple sheen\n- Clear grey-white bare skin around base of bill\n- Longer thinner pointed bill than Carrion Crow\n- Peaked or cone-shaped crown\n- Loose feathering around upper legs\nAvoid identity confusion: Black feathered bill base of juvenile Rook or Carrion Crow; Jackdaw's silvery nape and pale eye; Overstating face patch into an entire white head; Making the long pointed bill a curved raptor hook.\nARTISTIC POSE: Tall lean left-facing adult Rook, subtly angular peaked crown and slightly forward-reaching neck; loose thigh feather tips above sturdy legs on sparse ground ink.\nSPECIFIC DRAWING EMPHASIS: Adult face is the essential distinction: visible grey-white BARE SKIN around the base of its long tapering pointed bill. This is skin, not fluffy white cheek feathers. Dark small iris; black plumage with restrained plum-purple ink sheen, peaked crown and loose upper-leg feathers. Keep body dark, no Jackdaw grey nape or pale iris; do not turn the bill into a hooked raptor beak. Fine slate pencil gives wing structure without covering every surface.\nBACKGROUND DIRECTION: A soft mauve-grey open wedge or narrow oblique plane behind the upper body, with substantial exposed paper.\nPLUMAGE PALETTE: black, ink violet, graphite, grey-white face skin. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Rook\".",
+    "generated_asset": "15-rook-v1.png",
+    "asset_sha256": "d2e4574189669c08983d08664bc04ff744351716bf40a9cc6408521a2d8f3d4a",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": {
+      "date": "2026-10-21",
+      "evidence": "User: \"ok now make the next 10\"",
+      "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+    },
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-3bc67156-659f-473a-ba20-6de15903474c.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Reviewed against verified species identifiers; no significant identity/anatomy blocker in selected version",
+    "character_restraint": "Graphic stylisation retains diagnostic features",
+    "material_and_detail": "Inspected: clear pigment masses, rich selective detail and expressive linework",
+    "collection_variety": "Distinct species anatomy, plumage and simple abstract backdrop",
+    "display_size": "Reviewed alongside the collection",
+    "graphic_clarity_at_display_size": "Bare pale bill-base skin, long pointed bill and black/violet feather groups",
+    "approval": "Accepted by user continuation on 21 October 2026; no animation approval implied."
+  },
+  "creative_review": {
+    "collection_kinship": "Matches shared paper, pigment, graphic feather grouping and naming",
+    "individuality": "Left-facing lean upright adult with peaked crown and loose thigh feathers",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 3,
+    "collection_position": 15,
+    "review_group": [
+      2,
+      3
+    ],
+    "review": "approved"
+  }
+}

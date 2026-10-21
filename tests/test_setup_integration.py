@@ -79,6 +79,33 @@ class SetupHTTPTests(fixtures.AppTest):
             if value:self.assertNotIn(value,text)
         self.assertIn('two repair cycles',text)
 
+    def test_component_health_and_private_details_survive_reopening(self):
+        details={'hostname':'test-pi.local','username':'garden','garden_location':'Dorset'}
+        self.assertEqual(self.request('POST','/api/admin/setup-details',{'details':details})[0],401)
+        self.assertEqual(self.request('POST','/api/admin/setup-details',{'details':{'password':'never-save'}},token=self.admin)[0],400)
+        self.assertEqual(self.request('POST','/api/admin/setup-details',{'details':details},token=self.admin)[0],200)
+        status,_,packet=self.request('GET','/api/admin/setup-context',token=self.admin)
+        self.assertEqual(status,200)
+        self.assertEqual(packet['details'],details)
+        self.assertEqual({c['id'] for c in packet['health']['components']},{'server','garden_pi','power','thermal','microphone','birdnet','delivery','display'})
+        self.assertEqual(next(c for c in packet['health']['components'] if c['id']=='display')['status'],'unverified')
+        self.assertEqual((self.app.config.directory/'setup-details.json').stat().st_mode & 0o777,0o600)
+
+    def test_ai_launch_is_explicit_authenticated_allowlisted_and_rate_limited(self):
+        path='/api/admin/launch-assistant'
+        details={'hostname':'test-pi.local','username':'garden'}
+        data={'details':details,'assistant':'codex'}
+        with patch('songsketch.server.github_launcher.open_terminal',return_value={'ok':True,'launched':True,'installation_verified':False}) as launch:
+            self.assertEqual(self.request('POST',path,data)[0],401)
+            self.assertEqual(self.request('POST',path,data,token=self.admin,headers={'Origin':'https://untrusted.example'})[0],401)
+            self.assertEqual(self.request('POST',path,{**data,'command':'arbitrary'},token=self.admin)[0],400)
+            self.assertEqual(self.request('POST',path,{**data,'assistant':'unlisted'},token=self.admin)[0],400)
+            launch.assert_not_called()
+            code,_,result=self.request('POST',path,data,token=self.admin)
+            self.assertEqual(code,200);self.assertFalse(result['installation_verified'])
+            launch.assert_called_once_with(details,'codex',self.app.config.directory.resolve())
+            self.assertEqual(self.request('POST',path,data,token=self.admin)[0],429)
+
     def test_client_handoff_keeps_ticket_out_of_returned_output(self):
         client=SetupClient(self.app.config,self.port)
         with patch('songsketch.setup_client.webbrowser.open',return_value=True) as opened:

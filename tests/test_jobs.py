@@ -21,7 +21,9 @@ PNG = base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4
 class JobTest(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
-        self.app = App(self.temp.name,background=False)
+        fixture_catalogue = Path(self.temp.name) / "fixture-catalogue.json"
+        fixture_catalogue.write_bytes((ROOT / "artwork/catalogue.json").read_bytes())
+        self.app = App(self.temp.name,catalogue=fixture_catalogue,background=False)
         self.calls = []
         self.app.jobs.requester = self.provider
 
@@ -139,7 +141,9 @@ class OptionalAITests(JobTest):
         with self.app.store.tx() as db:
             db.execute("INSERT INTO jobs VALUES (?,?,?,?,?,?,?,?,?)",("a"*32,"style","","running","Working",now,now,"{}",None))
         self.app.close()
-        self.app = App(self.temp.name,background=False)
+        fixture_catalogue = Path(self.temp.name) / "fixture-catalogue.json"
+        fixture_catalogue.write_bytes((ROOT / "artwork/catalogue.json").read_bytes())
+        self.app = App(self.temp.name,catalogue=fixture_catalogue,background=False)
         self.app.jobs.requester = self.provider
         job = self.app.jobs.list()[0]
         self.assertEqual(job["status"],"failed")

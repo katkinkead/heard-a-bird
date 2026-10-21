@@ -1,0 +1,119 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "awaiting_batch_approval",
+  "species": {
+    "common_name": "Tawny owl",
+    "scientific_name": "Strix aluco",
+    "sex_age_plumage": "Adult, sex unspecified; warm chestnut-brown form typical in Britain. Sexes share plumage; do not invent a visible sex marker.",
+    "identity_references": [
+      "https://www.bto.org/learn/about-birds/owls/tawny-owl",
+      "https://www.rspb.org.uk/birds-and-wildlife/tawny-owl",
+      "https://www.wildlifetrusts.org/wildlife/how-identify/how-identify-owls",
+      "https://www.owlpages.com/owls/species.php?s=1580"
+    ],
+    "diagnostic_features": [
+      "Compact broad body, rounded head without ear tufts, relatively short tail.",
+      "Dark brown-black irises, plain buff-brown rounded facial disc with a narrow darker border and central dark wedge; pale horn-coloured hooked bill.",
+      "Chestnut upperparts with bark-like darker streaks and lighter mottling; pale buff underparts with irregular dark feather markings.",
+      "Feathered pale lower legs, brown flecking, dark curved claws; preserve functional feet gripping a support."
+    ],
+    "birdnet_label": "Strix aluco_Tawny Owl"
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "Body angled right with rounded head turned toward viewer and subtle tilt",
+    "facing": "near-front/right",
+    "support": "Spare species-appropriate ink support; water strokes for floating Mallard",
+    "artistic_intention": "Adult warm-brown morph sitting on an economical ink perch, body angled a little left while head looks almost forward with a subtle natural tilt. Rounded head without tufts; folded wings and full toes/tail framed generously.",
+    "expression_choices": [
+      "Natural posture with restrained expressive contour",
+      "Graphic feather grouping and selective precision"
+    ],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [
+      "warm brown",
+      "russet",
+      "cream",
+      "dark umber"
+    ],
+    "structural_dark": "Species-compatible ink, charcoal or dark brown",
+    "optional_accent": "Selective pale edges and pigment variation",
+    "background": "Broad open mineral-teal curved field",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "Broad open mineral-teal curved field",
+    "elements": [
+      "Broad open mineral-teal curved field"
+    ],
+    "relationship_to_bird": "Simple geometric counterpoint; exposed paper and bird remain dominant",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [
+      "Eye and bill",
+      "Diagnostic plumage",
+      "Selected feather groups"
+    ],
+    "quiet_areas": [
+      "Exposed paper",
+      "Less patterned body/face passages appropriate to species"
+    ],
+    "contour_gesture": "Long tapered or broken ink lines contrast with short pencil detail",
+    "detail_treatment": "Watercolour underpainting, rich print-like pigment, dry grain and selective fine pencil",
+    "optional_motifs": [],
+    "graphic_structure": "Dark eyes, rounded untufted head, warm-brown facial disc and detailed chestnut feather groups"
+  },
+  "deliberate_stylisations": [
+    "Restrained expressive contours and posture",
+    "Readable pigment masses and rhythmic feather groups",
+    "Selected pale edges and extended contour marks; artistic treatment is distinct from anatomical identification"
+  ],
+  "annotations": {
+    "name_treatment": "Exact handwritten common name below bird",
+    "state_treatment": "No sensor state, count or icon"
+  },
+  "provenance": {
+    "artistic_reference_files": [
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/16-the-birds-youve-heard.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/26-robin-singing-now.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/29-goldfinch-ochre-geometry.png",
+      "/Users/katharine/Documents/Codex/2026-10-19/here/outputs/birdsong-art/34-woodpigeon-stylised-v2.png"
+    ],
+    "prompt": "Use case: stylized-concept. Create ONE finished landscape 4:3 bird portrait for the Birdsong-to-Art collection, filling the image as beautifully as these approved references. Never a grid, contact sheet or storyboard.\nREFERENCE ROLES: image 1 is the primary original family style; image 2 supplies expressive contours and printed colour; image 3 supplies sophisticated close-up feather detail; image 4 calibrates clearer graphic feather groups and selective edge contrast. Use these for ARTISTIC LANGUAGE ONLY. Draw the new species' own anatomy and identifying marks.\nMEDIUM AND FINISH: warm ivory cold-pressed paper, translucent watercolour underpainting, rich print/gouache-like pigment, broken dry-print grain, economical expressive ink contours, sharp directional coloured-pencil drawing. The bird must read as designed shapes as well as fine texture: clear pigment masses, rhythmic overlapping feather groups, selective dark separations and pale feather edges. Precise detailing lives within larger readable shapes; quiet body passages contrast with intricate focal work. Keep the finish rich and detailed like the originals. No uniform microtexture, photographic airbrushed shading, blanket heavy outline, flat vector simplification or glossy mascot eyes.\nCHARACTER: modest expressive stylisation through posture, contour, balance and drawing rhythm while preserving species anatomy. A little surprise in the authored drawing is welcome. No human eyebrows, grin, props, costume, joke, fact caption or repeated literal leaf badge. Do not copy the reference birds' body proportions, yellow beaks, pink legs or eye colours.\nCOMPOSITION: single dominant whole bird, comfortably inside the landscape frame including full bill, toes and tail. Species-led plumage colours, exposed paper, spare ink support. Simple abstract background shapes only; their precise outline, crop and placement can be invented within the direction below. Material texture compatible with the bird, subordinate to it; no detailed habitat, foliage, building, scenic landscape or ornate frame.\nLETTERING: only the exact name supplied below, understated legible dark handwritten lettering beneath the bird. Lower-right corner empty: no sensor state, icon, number or invented encounter data. No signature/watermark or extra text.\nSUBJECT: Tawny owl (Strix aluco), Adult, sex unspecified; warm chestnut-brown form typical in Britain. Sexes share plumage; do not invent a visible sex marker..\nVERIFIED IDENTIFIERS TO PRESERVE:\n- Compact broad body, rounded head without ear tufts, relatively short tail.\n- Dark brown-black irises, plain buff-brown rounded facial disc with a narrow darker border and central dark wedge; pale horn-coloured hooked bill.\n- Chestnut upperparts with bark-like darker streaks and lighter mottling; pale buff underparts with irregular dark feather markings.\n- Feathered pale lower legs, brown flecking, dark curved claws; preserve functional feet gripping a support.\nAvoid identity confusion: No yellow or orange irises, no tufted horns, no Barn Owl heart-shaped white face.; Do not turn the dark eyes into oversized glossy mascot eyes or attach human eyebrows.; Keep facial pattern quieter than the body; avoid generic uniform leopard spots.\nARTISTIC POSE: Adult warm-brown morph sitting on an economical ink perch, body angled a little left while head looks almost forward with a subtle natural tilt. Rounded head without tufts; folded wings and full toes/tail framed generously.\nSPECIFIC DRAWING EMPHASIS: Round facial disc and dark eyes, fine concentric facial pencil marks, mottled warm brown plumage with darker streaks and pale shoulder marks. Keep eyes natural in proportion, no invented eyebrows or ears. Face relatively quiet; rich deliberate feather groups across folded wing and breast.\nBACKGROUND DIRECTION: A broad broken pale mineral-teal arch fragment offset behind one shoulder, mostly open ivory paper. No moon, stars, woodland or night scene.\nPLUMAGE PALETTE: warm brown, russet, cream, dark umber. Keep the biology legible; colour accents are in mark-making, not replacements for identifying markings.\nTEXT VERBATIM: \"Tawny owl\".",
+    "generated_asset": "36-tawny-owl-v1.png",
+    "asset_sha256": "ea336a640353b476b71cc945801929dca779240ec86740efd21ab4c642a03715",
+    "tool_model_if_known": "Built-in image_gen; model not reported",
+    "revision": "v1",
+    "user_review": "Pending review of final ten and five owls",
+    "generated_source": "/Users/katharine/.codex/generated_images/01a1540f-e061-7172-92cc-a50dd9c423ff/exec-18d104d5-1dec-41c9-8c62-f90c5a199870.png",
+    "created_date": "2026-10-21"
+  },
+  "review": {
+    "species_identity": "Actual image visually checked against sourced identifiers; no material identity or major anatomy correction needed",
+    "character_restraint": "Species-led stylisation preserves diagnostic features",
+    "material_and_detail": "Inspected rich pigment, purposeful feather groups and fine directional detail",
+    "collection_variety": "Distinct species-led postures, colour relationships and restrained geometry",
+    "display_size": "Reviewed in source images and gallery",
+    "graphic_clarity_at_display_size": "Dark eyes, rounded untufted head, warm-brown facial disc and detailed chestnut feather groups",
+    "approval": "Awaiting user approval; internal visual review is separate"
+  },
+  "creative_review": {
+    "collection_kinship": "Shared ivory paper, pigment/pencil material, graphic feather grouping and understated naming",
+    "individuality": "Body angled right with rounded head turned toward viewer and subtle tilt",
+    "unexpected_choices_if_any": []
+  },
+  "batch": {
+    "number": 8,
+    "collection_position": 36,
+    "review_group": [
+      6,
+      7,
+      8
+    ],
+    "review": "pending",
+    "kind": "owls"
+  }
+}

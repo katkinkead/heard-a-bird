@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
-  const state = {status:null,catalogue:[],birds:[],detections:[],jobs:[],view:'overview',settingsLoaded:false,pendingJob:null,authenticated:false,busy:false};
+  const state = {status:null,catalogue:[],birds:[],birdsPeriod:null,birdRequest:0,birdsLoading:false,detections:[],jobs:[],view:'overview',settingsLoaded:false,pendingJob:null,authenticated:false,busy:false};
   const localHost = ['localhost','127.0.0.1','::1','[::1]'].includes(location.hostname);
   const escape = v => String(v ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const num = v => Number.isFinite(Number(v)) ? Number(v).toLocaleString() : '—';
@@ -22,12 +22,27 @@
   function unlock(){state.authenticated=true;$('lock-dashboard').hidden=false;$('unlock').hidden=true;$('application').hidden=false;}
   function setView(){const requested=location.hash.slice(1)||'overview';state.view=['overview','birds','atelier','maintenance','settings'].includes(requested)?requested:'overview';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`view-${state.view}`);document.querySelectorAll('[data-view]').forEach(a=>{if(a.dataset.view===state.view)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});if(state.authenticated)refreshView();}
   function badge(text,kind=''){return `<span class="soft-pill ${kind}">${escape(text)}</span>`;}
+  function hardwareFacts(station){
+    const h=station.hardware||{},age=(Date.now()-Date.parse(h.observed_at))/1000;
+    const current=station.connected&&Number.isFinite(age)&&age>=-30&&age<=(state.status?.settings?.heartbeat_timeout_seconds||150);
+    if(!current)return {power:'Not currently verified',temperature:'No current reading',powerTone:'warn',thermalTone:'warn',powerNote:'A fresh Pi firmware sample is needed; old flags are not a current fault.',thermalNote:h.observed_at?`Last hardware sample ${date(h.observed_at)}.`:'No measured temperature has arrived.'};
+    const labels={under_voltage:'under-voltage',frequency_capped:'frequency capped',throttled:'throttling',soft_temperature_limit:'soft temperature limit'};
+    const flags=Array.isArray(h.current_flags)?h.current_flags.filter(f=>labels[f]):[];
+    const history=Array.isArray(h.historical_flags)?h.historical_flags.filter(f=>labels[f]):[];
+    const measured=typeof h.temperature_c==='number'&&Number.isFinite(h.temperature_c);
+    return {power:h.power_status==='warning'?flags.filter(f=>f!=='soft_temperature_limit').map(f=>labels[f]).join(', '):h.power_status==='healthy'?'No current power/performance flags':'Flags unavailable',
+      temperature:measured?`${h.temperature_c.toFixed(1)}°C${h.thermal_status==='warning'?' · warning':h.thermal_status==='unknown'?' · partial check':''}`:h.thermal_status==='warning'?'Soft limit active':'No temperature reading',
+      powerTone:h.power_status==='healthy'?'good':'warn',thermalTone:h.thermal_status==='healthy'?'good':'warn',
+      powerNote:h.throttled_hex==null?'Firmware flags are unavailable; past power or performance warnings cannot be assessed.':history.length?`Earlier firmware flags: ${history.map(f=>labels[f]).join(', ')}. These are historical, not current warnings.`:'No historical flags were recorded in this sample. This is not a supply qualification test.',
+      thermalNote:`${measured?(h.temperature_source==='sysfs'?'Kernel sensor fallback. ':'Firmware temperature. '):''}75°C is a provisional warning, not an automatic shutdown threshold.${flags.includes('soft_temperature_limit')?' Firmware soft limit is active.':''}`};
+  }
   function renderHealth(){
     const station=state.status.station||{}, listening=station.listening||'unknown';
     const summary=station.connected?(listening==='available'?'Listening is available':listening==='unavailable'?'Listening needs attention':'Pi connected. Ears unconfirmed.'):'Waiting for the garden Pi';
     $('listening-summary').textContent=summary;
     $('listening-description').textContent=!station.connected?'No recent Pi heartbeat. Listening health is unknown.':listening==='available'?'Audio capture and recognition are reporting healthy. The garden is allowed to be quiet.':listening==='unavailable'?'The Pi is reporting, but one of the listening checks needs attention.':'A heartbeat arrived; microphone and recognition health still need evidence.';
-    const rows=[['Pi connection',station.connected?'Connected':'No recent heartbeat',station.connected?'good':'warn'],['Microphone',nice(station.audio_status),station.audio_status==='healthy'?'good':'warn'],['Recognition',nice(station.inference_status),station.inference_status==='healthy'?'good':'warn']];
+    const hardware=hardwareFacts(station);
+    const rows=[['Pi connection',station.connected?'Connected':'No recent heartbeat',station.connected?'good':'warn'],['Microphone',station.connected?nice(station.audio_status):'Unknown',station.connected&&station.audio_status==='healthy'?'good':'warn'],['Recognition',station.connected?nice(station.inference_status):'Unknown',station.connected&&station.inference_status==='healthy'?'good':'warn'],['Pi temperature',hardware.temperature,hardware.thermalTone]];
     $('health-rows').innerHTML=rows.map(([label,value,tone])=>`<div class="health-row"><span>${label}</span><strong class="state-${tone}">${escape(value)}</strong></div>`).join('');
   }
   function renderOverview(){
@@ -38,9 +53,9 @@
     $('current-bird').textContent=c.common_name||art?.common_name||'A painting is waiting.';
     $('painting-mode').textContent=c.test?'Test bird':c.mode==='live'?'Recent detection':c.mode?nice(c.mode):'Approved collection';
     $('current-caption').textContent=c.test?'A rehearsal event; excluded from real bird history.':c.observed_at?`Detected ${date(c.observed_at)} · the preview shows the finished artwork.`:'The painting page handles the live stroke progression.';
-    const issues=(s.issues||[]).filter(i=>!i.resolved),missing=(s.missing_art||[]).filter(i=>!i.has_artwork);
-    $('attention-title').textContent=issues.length?`${issues.length} ${issues.length===1?'issue needs':'issues need'} a look.`:missing.length?`${missing.length} ${missing.length===1?'visitor needs':'visitors need'} a portrait.`:'The desk is clear.';
-    $('attention-description').textContent=issues.length?(issues[0].message||'Open maintenance for details and recovery history.'):missing.length?'Their detections are saved. The approved collection can keep playing.':'New operational issues and missing artwork will appear here.';
+    const issues=(s.issues||[]).filter(i=>!i.resolved),missing=(s.missing_art||[]).filter(i=>!i.has_artwork),pending=s.needs_animation||[];
+    $('attention-title').textContent=issues.length?`${issues.length} ${issues.length===1?'issue needs':'issues need'} a look.`:missing.length?`${missing.length} ${missing.length===1?'visitor needs':'visitors need'} a portrait.`:pending.length?`${pending.length} ${pending.length===1?'portrait needs':'portraits need'} an animation.`:'The desk is clear.';
+    $('attention-description').textContent=issues.length?(issues[0].message||'Open maintenance for details and recovery history.'):missing.length?'Their detections are saved. The approved collection can keep playing.':pending.length?'The final art is already available. These recorded birds need their painting sequences; no missing-portrait notice is sent.':'New operational issues and artwork needs will appear here.';
     $('attention-link').href=issues.length?'#maintenance':'#atelier';$('attention-link').textContent=issues.length?'View maintenance ↗':'Visit the art table ↗';
   }
   function populateSelectors(){
@@ -50,10 +65,29 @@
     const all=new Map(state.catalogue.map(b=>[b.scientific_name,b]));for(const b of state.status?.missing_art||[])all.set(b.scientific_name,b);
     const old=$('job-species').value;$('job-species').innerHTML='<option value="">No species selected</option>'+[...all.values()].sort((a,b)=>a.common_name.localeCompare(b.common_name)).map(b=>`<option value="${escape(b.scientific_name)}">${escape(b.common_name)}</option>`).join('');if(all.has(old))$('job-species').value=old;
   }
-  function renderBirds(){
+  function filteredBirds(){
     const search=$('bird-search').value.toLowerCase(),missing=$('missing-only').checked;
-    const birds=state.birds.filter(b=>(!missing||!b.has_artwork)&&`${b.common_name} ${b.scientific_name}`.toLowerCase().includes(search));
-    $('birds-body').innerHTML=birds.map(b=>`<tr><td><strong>${escape(b.common_name)}</strong><small>${escape(b.scientific_name)}</small></td><td>${num(b.count)}</td><td>${escape(date(b.last_heard))}</td><td>${b.has_animation?badge('Painting ready'):b.has_artwork?badge('Portrait approved · animation pending','warm'):badge('Needs artwork','warm')}</td></tr>`).join('');$('birds-empty').hidden=birds.length>0;
+    return state.birds.filter(b=>(!missing||!b.has_artwork)&&`${b.common_name} ${b.scientific_name}`.toLowerCase().includes(search));
+  }
+  function renderDiversity(){
+    const birds=state.birds.filter(b=>Number.isFinite(Number(b.count))&&Number(b.count)>0).slice().sort((a,b)=>Number(b.count)-Number(a.count)||String(a.common_name).localeCompare(String(b.common_name)));
+    const total=birds.reduce((sum,b)=>sum+Number(b.count),0),top=birds[0];
+    const percent=count=>new Intl.NumberFormat('en-GB',{style:'percent',maximumFractionDigits:1}).format(count/total);
+    $('diversity-period').textContent=state.birdsPeriod==='all'?'All retained history':'This calendar month';
+    $('diversity-species').textContent=num(birds.length);$('diversity-detections').textContent=num(total);
+    $('diversity-top').textContent=top?percent(Number(top.count)):'—';
+    $('diversity-top-label').textContent=top?`of detections were ${top.common_name}`:'share from the most recorded species';
+    const visible=birds.slice(0,8),remainder=total-visible.reduce((sum,b)=>sum+Number(b.count),0);
+    const rows=visible.map(b=>({name:b.common_name,count:Number(b.count)}));
+    if(remainder)rows.push({name:`${birds.length-visible.length} other species`,count:remainder});
+    $('diversity-distribution').innerHTML=rows.length?`<ol aria-label="Share of qualifying detections by species">${rows.map(b=>`<li><div><span>${escape(b.name)}</span><span>${num(b.count)} <small>· ${escape(percent(b.count))}</small></span></div><div class="chorus-track" aria-hidden="true"><i style="width:${Math.min(100,100*b.count/total).toFixed(3)}%"></i></div></li>`).join('')}</ol>`:'<p class="chorus-empty">The first real detections will build this picture. Test birds don’t enter the guest book.</p>';
+    $('diversity-caption').textContent=`${state.birdsPeriod==='all'?'All retained history':'This calendar month in '+(state.status?.settings?.timezone||'Europe/London')}. Each species is counted once in the variety total. Search and artwork filters affect only the table below.`;
+  }
+  function renderBirds(){
+    const birds=filteredBirds();
+    renderDiversity();
+    $('export-birds').disabled=state.birdsLoading||state.birdsPeriod!==$('period-select').value||!birds.length;
+    $('birds-body').innerHTML=birds.map(b=>`<tr><td><strong>${escape(b.common_name)}</strong><small>${escape(b.scientific_name)}</small></td><td>${num(b.count)}</td><td>${escape(date(b.first_heard))}</td><td>${escape(date(b.last_heard))}</td><td>${b.has_animation?badge('Painting ready'):b.has_artwork?badge('Final art ready · needs animation','warm'):badge('Needs artwork','warm')}</td></tr>`).join('');$('birds-empty').hidden=birds.length>0;
     const realEvents=state.detections.filter(d=>!d.test);
     $('recent-detections').innerHTML=realEvents.length?realEvents.slice(0,20).map(d=>`<div class="arrival"><strong>${escape(d.common_name||d.species_common||d.scientific_name)}</strong><span>${escape(date(d.detected_at||d.observed_at||d.received_at))}</span><span>${Number.isFinite(Number(d.confidence??d.confidence_score))?`${Math.round(Number(d.confidence??d.confidence_score)*100)}% confidence`:'Confidence unavailable'}${d.station_id?` · ${escape(d.station_id)}`:''}</span></div>`).join(''):'<p class="muted small">No real detections have arrived yet.</p>';
   }
@@ -61,7 +95,11 @@
   function renderAtelier(){
     $('art-gallery').innerHTML=state.catalogue.filter(b=>b.approved!==false).map(b=>`<a class="art-tile" href="${escape(safeUrl(b.image_url)||'#')}" target="_blank" rel="noopener">${safeUrl(b.image_url)?`<img src="${escape(b.image_url)}" alt="${escape(b.common_name)} approved artwork" loading="lazy">`:''}<div><strong>${escape(b.common_name)}</strong><small>${b.animation_ready?'Approved · 75-second painting':'Approved still · animation pending'}</small></div></a>`).join('');
     const missing=(state.status.missing_art||[]).filter(b=>!b.has_artwork);
+    const settings=state.status.settings||{};
+    $('missing-email-summary').textContent=settings.email_configured?`Missing-art notices are addressed to ${settings.notification_email}. One notice is queued for each newly recorded species without an approved portrait; delivery status appears below.`:'Email is not configured. Missing-art notices stay queued here until a recipient and mail service are saved. No artwork is generated automatically.';
     $('missing-art-list').innerHTML=missing.length?missing.map(b=>`<div class="missing-item"><div><strong>${escape(b.common_name)}</strong><p>${num(b.count)} detections · last ${escape(date(b.last_heard))}<br>Email: ${escape(nice(b.email_status||'not configured'))}</p></div><button class="secondary" data-draft="${escape(b.scientific_name)}">Start a draft ↗</button></div>`).join(''):'<p class="small muted">No unpainted visitors are waiting. New species appear here after a qualifying real detection.</p>';
+    const pending=state.status.needs_animation||[];
+    $('needs-animation-list').innerHTML=pending.length?pending.map(b=>`<div class="missing-item"><div><strong>${escape(b.common_name)}</strong><p>${num(b.count)} detections · last ${escape(date(b.last_heard))}<br>Final art accepted · needs animation. No missing-portrait email.</p></div></div>`).join(''):'<p class="small muted">Recorded species with accepted final art but no ready animation will appear here. The current collection keeps playing.</p>';
     $('job-start').disabled=!state.status.settings?.ai_configured;
     if(!state.status.settings?.ai_configured)message('job-message','Add optional AI credentials in Garden settings to enable these jobs.');else if($('job-message').textContent.includes('Add optional'))message('job-message','');
     renderJobs();jobKindNote();
@@ -70,7 +108,7 @@
     $('jobs-list').innerHTML=state.jobs.length?state.jobs.map(j=>`<article class="job-item"><div class="job-item-head"><div><h3>${escape(nice(j.kind))}${j.scientific_name?` · ${escape(state.catalogue.find(b=>b.scientific_name===j.scientific_name)?.common_name||j.scientific_name)}`:''}</h3><p>${escape(j.message||'The server will record progress here.')}</p><p>${escape(date(j.created_at))}</p></div>${badge(nice(j.status),j.status==='failed'?'alert':j.status==='review'?'warm':'')}</div><div class="job-item-actions">${safeUrl(j.result_url)?`<a class="text-link" href="${escape(safeUrl(j.result_url))}" target="_blank" rel="noopener">Open the result ↗</a>`:''}${safeUrl(j.result?.preview_url)?`<a class="text-link" href="${escape(safeUrl(j.result.preview_url))}" target="_blank" rel="noopener">Preview existing animation ↗</a>`:''}${j.status==='review'&&j.kind==='artwork'&&!state.catalogue.some(b=>b.scientific_name===j.scientific_name)?`<button class="secondary" data-approve="${escape(j.id)}">Review approval →</button>`:''}</div></article>`).join(''):'<div class="empty-state"><span aria-hidden="true">✳</span><h2>A clean sheet.</h2><p>No AI jobs have been started. The approved paintings work beautifully without one.</p></div>';
   }
   function renderMaintenance(){
-    const station=state.status.station||{};const facts=[['Pi connection',station.connected?'Connected':'No recent heartbeat',station.station_id||'Station not yet identified'],['Listening',nice(station.listening),`Audio: ${nice(station.audio_status)} · recognition: ${nice(station.inference_status)}`],['Last heartbeat',station.last_heartbeat?date(station.last_heartbeat):'Not received','A heartbeat alone does not verify the microphone.']];
+    const station=state.status.station||{},hardware=hardwareFacts(station);const facts=[['Pi connection',station.connected?'Connected':'No recent heartbeat',station.station_id||'Station not yet identified'],['Listening',station.connected?nice(station.listening):'Unknown',station.connected?`Audio: ${nice(station.audio_status)} · recognition: ${nice(station.inference_status)}`:'Audio and recognition evidence is not current.'],['Last heartbeat',station.last_heartbeat?date(station.last_heartbeat):'Not received','A heartbeat alone does not verify the microphone.'],['Power & performance',hardware.power,hardware.powerNote],['Pi temperature',hardware.temperature,hardware.thermalNote]];
     $('maintenance-facts').innerHTML=facts.map(([label,value,note])=>`<div class="fact"><span>${escape(label)}</span><strong>${escape(value)}</strong><small>${escape(note)}</small></div>`).join('');
     const issues=state.status.issues||[];$('issue-count').textContent=`${issues.filter(i=>!i.resolved).length} unresolved`;
     $('issues-list').innerHTML=issues.length?issues.map(i=>`<article class="issue-item"><div class="issue-item-head"><div><h3>${escape(i.message||'Operational issue')}</h3><p>First ${escape(date(i.first_seen))} · latest ${escape(date(i.last_seen))} · ${num(i.occurrences??1)} ${(i.occurrences??1)===1?'occurrence':'occurrences'}</p></div>${badge(i.resolved?'Recovered':nice(i.severity||'Needs attention'),i.resolved?'':'warm')}</div>${!i.resolved?`<button class="text-link" data-diagnose="${escape(i.id)}" ${!state.status.settings?.ai_configured?'disabled':''}>Ask AI to explain this issue ↗</button>`:''}</article>`).join(''):'<div class="empty-state"><span aria-hidden="true">↺</span><h2>No recorded issues.</h2><p>Automatic diagnostic reports and recovery outcomes will collect here.</p></div>';
@@ -86,7 +124,14 @@
   function settingsStatus(){const s=state.status.settings||{};$('email-state').textContent=s.email_configured?'Email configured':'Email not configured';$('ai-state').textContent=s.ai_configured?'AI credentials configured':'AI not configured';$('remote-settings-note').hidden=localHost;$('remove-ai-key').disabled=!localHost;if(!localHost)document.querySelectorAll('[data-secrets] input').forEach(input=>input.disabled=true);}
   async function refreshView(){
     try {
-      if(state.view==='birds'){const [birds,events]=await Promise.all([api(`/api/admin/birds?period=${encodeURIComponent($('period-select').value)}`),api('/api/admin/detections')]);state.birds=birds.birds||[];state.detections=events.detections||[];renderBirds();}
+      if(state.view==='birds'){
+        const period=$('period-select').value,request=++state.birdRequest;
+        state.birdsLoading=true;$('export-birds').disabled=true;$('diversity-card').setAttribute('aria-busy','true');
+        try{const [birds,events]=await Promise.all([api(`/api/admin/birds?period=${encodeURIComponent(period)}`),api('/api/admin/detections')]);
+          if(request!==state.birdRequest)return;
+          state.birds=birds.birds||[];state.birdsPeriod=period;state.detections=events.detections||[];state.birdsLoading=false;renderBirds();
+        }finally{if(request===state.birdRequest){state.birdsLoading=false;$('diversity-card').setAttribute('aria-busy','false');}}
+      }
       else if(state.view==='atelier'){const jobs=await api('/api/admin/jobs');state.jobs=jobs.jobs||[];renderAtelier();}
       else if(state.view==='maintenance')renderMaintenance();
       else if(state.view==='settings'){loadSettings();settingsStatus();}
@@ -110,6 +155,15 @@
   $('refresh-button').addEventListener('click',refresh);window.addEventListener('hashchange',setView);
   $('test-form').addEventListener('submit',async e=>{e.preventDefault();const button=e.submitter;button.disabled=true;try{await post('/api/admin/test-detection',{scientific_name:$('test-species').value});message('test-message','Test sent. Open the painting page to watch it arrive.');await refresh();}catch(error){message('test-message',error.message,true);}finally{button.disabled=false;}});
   $('period-select').addEventListener('change',refreshView);$('bird-search').addEventListener('input',renderBirds);$('missing-only').addEventListener('change',renderBirds);$('job-kind').addEventListener('change',jobKindNote);
+  $('export-birds').addEventListener('click',()=>{
+    if(state.birdsLoading||state.birdsPeriod!==$('period-select').value)return;
+    const birds=filteredBirds();if(!birds.length)return;
+    const cell=value=>{let s=String(value??'');if(/^[\s]*[=+\-@]/.test(s)||/^[\t\r\n]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"';};
+    const rows=[['Common name','Scientific name','Qualifying detections','First in period (UTC)','Last heard (UTC)','Approved artwork','Animation ready','Period','Garden timezone'],...birds.map(b=>[b.common_name,b.scientific_name,b.count,b.first_heard,b.last_heard,b.has_artwork?'yes':'no',b.has_animation?'yes':'no',state.birdsPeriod,state.status?.settings?.timezone||'Europe/London'])];
+    const url=URL.createObjectURL(new Blob(['\uFEFF'+rows.map(row=>row.map(cell).join(',')).join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}));
+    const link=document.createElement('a');link.href=url;link.download=`songsketch-birds-${state.birdsPeriod}-${new Date().toISOString().slice(0,10)}.csv`;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    message('bird-export-message',`Downloaded ${num(birds.length)} species from this list. Counts represent qualifying detection events.`);
+  });
   function confirmJob(request){
     if(!state.status?.settings?.ai_configured){banner('Configure optional AI credentials in Garden settings first.',true);return;}
     if(['artwork','animation'].includes(request.kind)&&!request.scientific_name){message('job-message','Choose a bird for this request.',true);return;}

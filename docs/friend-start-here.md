@@ -2,13 +2,17 @@
 
 Songsketch has three everyday parts: the garden Pi hears birds, an indoor computer remembers them, and a browser paints the portraits. A local AI assistant can handle the software setup while the visual guide shows what is happening.
 
-## Give the assistant the job
+## Open the setup guide
 
-Open an assistant that can use a terminal and files **on the computer being set up**. Give it the [setup handoff prompt](ai-setup.md#copy-this-to-your-local-assistant). It will read the existing project, obtain the release, organise its folders, start the server and work through the Pi connection and checks. You should not have to copy a chain of terminal commands or recreate this project with AI.
+The [illustrated guide](../guide/index.html) starts with what you need, then Pi preparation, garden details, connection to a local assistant and live installation stages. Keep an existing usable Pi OS; prepare a new card for headless access only when needed.
 
-The [GitHub repository](https://github.com/katkinkead/songsketch) is private. Use your existing authorised access, or ask the owner for the release ZIP and point the assistant to it. A supplied ZIP works without a GitHub account. Never paste an access token into chat.
+In Step 0, use the [MVP Amazon list](https://www.amazon.co.uk/hz/wishlist/ls/2631A1V48YH7R) for the CanaKit, USB sound card and windshield options. Its four items include two alternative windshields: choose one compatible fit. Order the [Clippy EM272 microphone separately from Micbooster](https://micbooster.com/product/clippy-em272-microphone/). Check the kit’s card, cooler, case and power supply, and have a card reader available.
 
-Ordinary cloud chat cannot reach your computer or Pi by itself. If the assistant has no local tools, use the same prompt in a terminal-capable assistant. The HTML page alone cannot start SSH or install software before the local helper is running.
+At **Connect your AI**, use the guide’s **Connect my AI & install** button. Unzip `Install Songsketch.zip`, then open the launcher inside once; the ZIP preserves the executable file needed by macOS. It obtains the private [GitHub project](https://github.com/katkinkead/songsketch) using existing authorised access and opens an installed Codex or Claude Code in the repository. Complete its normal sign-in or operating-system prompt when asked. Missing prerequisites are explained rather than silently installed.
+
+The assistant reads [the current repository procedure](ai-setup.md) and handles routine computer work. There is no long setup prompt to copy. If the project is already open in a local assistant, ask it to follow that file. An owner-supplied release ZIP can also be used without a GitHub account; never paste an access token into chat.
+
+A standalone HTML page or ordinary cloud conversation cannot start a local assistant or SSH into the Pi. That one local launch is the bridge; after the helper starts, the guide shows its actual progress and errors.
 
 ## Your part is the garden and the permissions
 
@@ -22,7 +26,7 @@ Once the assistant opens the control panel, follow only the human actions it ide
 
 The MacBook MVP works while the Mac is awake, powered and connected. A dedicated Linux computer can run the same application later; the assistant handles the supported service installation and migration. Power, weatherproofing, microphone placement, network coverage and a real reboot/reconnect test still need attention on site. See [production setup](production.md).
 
-BirdNET-Go with BirdNET v2.4 and the five approved paintings need **no AI API key**. Missing-portrait email and paid AI draft tools are optional and can be added after the garden works. New art needs review; an animation proposal is not a completed new painting sequence.
+BirdNET-Go with BirdNET v2.4 and the five approved paintings need **no AI API key**. The local setup assistant uses your existing Codex or Claude account. Optional dashboard AI diagnosis and artwork tools need separately configured API credentials. Missing-portrait email needs local SMTP settings; saving an alert recipient alone does not send or verify a message. These options can wait until the garden works. New art needs review; an animation proposal is not a completed new painting sequence.
 
 ## If something stops
 

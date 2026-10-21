@@ -1,0 +1,954 @@
+{
+  "schema_version": 1,
+  "snapshot_at": "2026-10-21T15:49:29.645341+00:00",
+  "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+  "source_thread_title": "Design bird painting concepts",
+  "source_state": "Active: new animations were still being authored; no unfinished runtime files copied.",
+  "files": [
+    {
+      "origin": "fork",
+      "source_path": "final-art/collection-plan.json",
+      "path": "provenance/fork-2026-10-21/collection-plan.source.json",
+      "sha256": "c211ec0b5a206f28225b032aa36a2bc9c78c7d7bf5d5d13d92e2e92a58b4fff4",
+      "bytes": 12578
+    },
+    {
+      "origin": "package",
+      "source_path": "artwork/thumbnails/robin.png",
+      "path": "references/final-art/robin.png",
+      "sha256": "c3fb9a21f8218bf2fbfa043c3f17d02beaab1c6ede69a8d2006c44e5127c5896",
+      "bytes": 1060863
+    },
+    {
+      "origin": "package",
+      "source_path": "artwork/thumbnails/goldfinch.png",
+      "path": "references/final-art/goldfinch.png",
+      "sha256": "fe3864cba344c4da83836dc00e4ba91bb2923b03981274c99ee89b36fdef41e4",
+      "bytes": 926226
+    },
+    {
+      "origin": "package",
+      "source_path": "artwork/thumbnails/blue-tit.png",
+      "path": "references/final-art/blue-tit.png",
+      "sha256": "e777a3bae2389501785ae48b7e6c14a5111b305185fe68dcb91d260a45c9c649",
+      "bytes": 1031797
+    },
+    {
+      "origin": "package",
+      "source_path": "artwork/thumbnails/blackbird.png",
+      "path": "references/final-art/blackbird.png",
+      "sha256": "8fbbdfaa1ddff3a4f13dc9022e15e892e7adf883af4a47d355cc3e2a44d8b991",
+      "bytes": 1129997
+    },
+    {
+      "origin": "package",
+      "source_path": "artwork/thumbnails/wren.png",
+      "path": "references/final-art/wren.png",
+      "sha256": "37f867b139aae15c4f9db2ce18d693bf8d370086c9664fd055a761b47ff6bbf6",
+      "bytes": 1042753
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/manifest.json",
+      "path": "provenance/fork-2026-10-21/batch-01.manifest.source.json",
+      "sha256": "0fee90735578ee778d5f1ae209f1c0a356af5f067549f9d72279502ec94e1574",
+      "bytes": 2103
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/01-house-sparrow-v2.png",
+      "path": "references/final-art/house-sparrow.png",
+      "sha256": "e582b0ed896d6a943f4f2391584f715b0bb76fa1d89d55eae73dbd0ca385a9a1",
+      "bytes": 2698066
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/house-sparrow-record.json",
+      "path": "provenance/fork-2026-10-21/records/house-sparrow.json",
+      "sha256": "772e75b06d1a301a88c848c7b6fb65f717d9d24ed3517ca94265ec75d7cba570",
+      "bytes": 5685
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/02-starling-v1.png",
+      "path": "references/final-art/starling.png",
+      "sha256": "f62f30bd87dda4e372663636a1e971e37362b086c3baf927442c16b63f7d22c6",
+      "bytes": 2744368
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/starling-record.json",
+      "path": "provenance/fork-2026-10-21/records/starling.json",
+      "sha256": "02069df6424cfaff6b58137ac825c0c7ba84dddbb1e66dea0b6e3b9aca024e2c",
+      "bytes": 7184
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/03-woodpigeon-v2.png",
+      "path": "references/final-art/woodpigeon.png",
+      "sha256": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f",
+      "bytes": 2571983
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/woodpigeon-record.json",
+      "path": "provenance/fork-2026-10-21/records/woodpigeon.json",
+      "sha256": "f64c67d0fafaf3860b9af4c91afb80d6e2ee78b20108db0e822cd9c63cae7f1a",
+      "bytes": 6937
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/04-great-tit-v1.png",
+      "path": "references/final-art/great-tit.png",
+      "sha256": "16a17656ec9a3dcdb930053cf8638e2be4ef9051eba801a2364dcf24f778a6eb",
+      "bytes": 3024445
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/great-tit-record.json",
+      "path": "provenance/fork-2026-10-21/records/great-tit.json",
+      "sha256": "c053288eafca9b168b2e6b52ec0563cfc18ea8fc6d80998f35d13aab36c7ec77",
+      "bytes": 8164
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/05-long-tailed-tit-v1.png",
+      "path": "references/final-art/long-tailed-tit.png",
+      "sha256": "f10677b07e64dcf338948846c8d90eb8cc0cebec0339bd772b686e9ec3a7e136",
+      "bytes": 3019808
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-01/long-tailed-tit-record.json",
+      "path": "provenance/fork-2026-10-21/records/long-tailed-tit.json",
+      "sha256": "c04903c3bab320a39fe29d102b0f26d65526fdbea4797154a10160cd67d6a590",
+      "bytes": 8471
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/manifest.json",
+      "path": "provenance/fork-2026-10-21/batch-02.manifest.source.json",
+      "sha256": "d19c47c6b3068dbf20ee8ec2e063d9addf6801b45b9c010a542ba4508cf2db9a",
+      "bytes": 2088
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/06-magpie-v1.png",
+      "path": "references/final-art/magpie.png",
+      "sha256": "3a2ebb660324036ae9cba252ec4121493fb3ff8131dc8ca713e27bd47b15c044",
+      "bytes": 2750048
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/magpie-record.json",
+      "path": "provenance/fork-2026-10-21/records/magpie.json",
+      "sha256": "d28a6c0080581db80aeefa1488cf006733a5a4c93576af06d2838e4dec58a099",
+      "bytes": 8435
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/07-chaffinch-v1.png",
+      "path": "references/final-art/chaffinch.png",
+      "sha256": "b3d29d3b4c757626eee7445910285a14562fdcdcc55ce1d6e53c8b9a68e022e6",
+      "bytes": 3070342
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/chaffinch-record.json",
+      "path": "provenance/fork-2026-10-21/records/chaffinch.json",
+      "sha256": "5b3a5ec133dd6b91ab0647e29f275e99b4b9b47d3554505c6263c198aa56ef3e",
+      "bytes": 8855
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/08-dunnock-v1.png",
+      "path": "references/final-art/dunnock.png",
+      "sha256": "86ada5e05891bb814b55fd6eb9e190af1311a1fb41147ac7f084cba5e64dd236",
+      "bytes": 2770643
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/dunnock-record.json",
+      "path": "provenance/fork-2026-10-21/records/dunnock.json",
+      "sha256": "c348bb01577caf046d3fda8a92f0e354d63cda6ad0626717825bc304dfc72289",
+      "bytes": 8581
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/09-coal-tit-v1.png",
+      "path": "references/final-art/coal-tit.png",
+      "sha256": "a96c3538f97553ea9c2a115e241d153ee3d0f375aeaa6fe98719f9dfa494902f",
+      "bytes": 2830754
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/coal-tit-record.json",
+      "path": "provenance/fork-2026-10-21/records/coal-tit.json",
+      "sha256": "fb266e225f492318cddd001424723c73dc6eafa3fed16009da790f00cc2440d9",
+      "bytes": 8865
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/10-jackdaw-v1.png",
+      "path": "references/final-art/jackdaw.png",
+      "sha256": "9e7845bf71a7a11c6e4520d923b0923343b25075e044d732aab85082b81298f7",
+      "bytes": 3296929
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-02/jackdaw-record.json",
+      "path": "provenance/fork-2026-10-21/records/jackdaw.json",
+      "sha256": "33fdbb301ff3e5206acfe9ceff3a31306febd9116c6f6455a277be448c9e28bd",
+      "bytes": 8242
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/manifest.json",
+      "path": "provenance/fork-2026-10-21/batch-03.manifest.source.json",
+      "sha256": "e8dd8e1e89f6d56de342b4b42a60ef155ae40b82a94b927e344490e6b71c1fcb",
+      "bytes": 2148
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/11-carrion-crow-v2.png",
+      "path": "references/final-art/carrion-crow.png",
+      "sha256": "17c4a1c5e7fd1ec5a34add3dd40761f0570c79cb57765811ffb3a8f9b9613a92",
+      "bytes": 2669310
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/carrion-crow-record.json",
+      "path": "provenance/fork-2026-10-21/records/carrion-crow.json",
+      "sha256": "4b46d2e3cbbb3b1ee3a70e181f2091b7e9b0a65429f4615f1aafafb95037ed7e",
+      "bytes": 10861
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/12-feral-pigeon-v1.png",
+      "path": "references/final-art/feral-pigeon.png",
+      "sha256": "c6e31be3cb02c2a8df4e02d73a27a664d946c9b3e56ed59434a9fb4e9bf38f49",
+      "bytes": 2904901
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/feral-pigeon-record.json",
+      "path": "provenance/fork-2026-10-21/records/feral-pigeon.json",
+      "sha256": "0be9988dced658df4b106cad1ed9fb8a74159c748d38001eb6963089fd7a01ee",
+      "bytes": 10147
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/13-collared-dove-v1.png",
+      "path": "references/final-art/collared-dove.png",
+      "sha256": "f34afe7dbd8026893a3f4da5be3294e9de01e20a5507cc7d45476083cb172d70",
+      "bytes": 2841488
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/collared-dove-record.json",
+      "path": "provenance/fork-2026-10-21/records/collared-dove.json",
+      "sha256": "f7655003057af2860c09fa12ea2955bc076b74ec384fdc6319e285b4bf2ca15e",
+      "bytes": 10264
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/14-greenfinch-v1.png",
+      "path": "references/final-art/greenfinch.png",
+      "sha256": "231873ce79304dde15fae6dd78fb8979837ab2e4cf7f6f342c486ab7916bd28e",
+      "bytes": 3023496
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/greenfinch-record.json",
+      "path": "provenance/fork-2026-10-21/records/greenfinch.json",
+      "sha256": "350fd72044b400df0499ee3ee84e4ce5bc722d209f72994140de1e12765d0c49",
+      "bytes": 8886
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/15-rook-v1.png",
+      "path": "references/final-art/rook.png",
+      "sha256": "d2e4574189669c08983d08664bc04ff744351716bf40a9cc6408521a2d8f3d4a",
+      "bytes": 3053897
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-03/rook-record.json",
+      "path": "provenance/fork-2026-10-21/records/rook.json",
+      "sha256": "e631f2ed2086536eabab6893dc9ff4735a3c3367de030f007c42230cddf81520",
+      "bytes": 8902
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/manifest.json",
+      "path": "provenance/fork-2026-10-21/batch-04.manifest.source.json",
+      "sha256": "a99917961b9885745d2390a37d55fc7339ec02d86509d39570924c84a92df426",
+      "bytes": 2210
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/16-nuthatch-v1.png",
+      "path": "references/final-art/nuthatch.png",
+      "sha256": "e002ed4b3f067bcc627b31da7d0981b70a9ac72eba831d1ee092cc4f55dbb221",
+      "bytes": 2792355
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/nuthatch-record.json",
+      "path": "provenance/fork-2026-10-21/records/nuthatch.json",
+      "sha256": "12b5cef1726e74133b098f3a63a4822c86cb16671c4b52402b266708ed2d2d1b",
+      "bytes": 9294
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/17-herring-gull-v1.png",
+      "path": "references/final-art/herring-gull.png",
+      "sha256": "34bc9d5c256e483e2b41d1c449cd92eeeffb9ef27be18cc19e4a50d124824c40",
+      "bytes": 2859998
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/herring-gull-record.json",
+      "path": "provenance/fork-2026-10-21/records/herring-gull.json",
+      "sha256": "6d4645aa74a82c5de55773d53e384964b571283480e1ae288f025be789b0bf8a",
+      "bytes": 10418
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/18-common-gull-v1.png",
+      "path": "references/final-art/common-gull.png",
+      "sha256": "9566fc23d658e963f4b267498983ad4d4fb254ae158dd17f99b26044a52c0212",
+      "bytes": 2729614
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/common-gull-record.json",
+      "path": "provenance/fork-2026-10-21/records/common-gull.json",
+      "sha256": "796624ab89b0bb39649d43289d4396e62d7d15ac4869336cb87f5149396c74b9",
+      "bytes": 9989
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/19-siskin-v1.png",
+      "path": "references/final-art/siskin.png",
+      "sha256": "483fdd68ecf03fe0cc4fe8719e323e87b506ec83158a88f5f4b20975e77edd33",
+      "bytes": 2934478
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/siskin-record.json",
+      "path": "provenance/fork-2026-10-21/records/siskin.json",
+      "sha256": "ce397abbc780193b4d479f904b78cb38e5f0c801cd192c85edbe91b5729a4dfa",
+      "bytes": 8990
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/20-great-spotted-woodpecker-v1.png",
+      "path": "references/final-art/great-spotted-woodpecker.png",
+      "sha256": "23fc997057f339c7a49b1f6bd694aa561e448ff88d47769ff95b5da86f2d6304",
+      "bytes": 2875014
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-04/great-spotted-woodpecker-record.json",
+      "path": "provenance/fork-2026-10-21/records/great-spotted-woodpecker.json",
+      "sha256": "2948ce328a25c32d07a7c43566fc34f18c7592ba1780b809b5e0b59d1d66920b",
+      "bytes": 9733
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/manifest.json",
+      "path": "provenance/fork-2026-10-21/batch-05.manifest.source.json",
+      "sha256": "6724d453c6923e2e28497eeaf9fc4ffffccd79db34181ad4da0c1d57c9e8a8f1",
+      "bytes": 2158
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/21-blackcap-v1.png",
+      "path": "references/final-art/blackcap.png",
+      "sha256": "a224f545205a76f36b2abc0771d5e77aeb78714b8ee116e95bed5d2306d9da10",
+      "bytes": 2762912
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/blackcap-record.json",
+      "path": "provenance/fork-2026-10-21/records/blackcap.json",
+      "sha256": "bb089c91c8729694057fc3fea7c03f4b01b88baed5e62109ea5f290b774aafd6",
+      "bytes": 9146
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/22-song-thrush-v1.png",
+      "path": "references/final-art/song-thrush.png",
+      "sha256": "2d7f2102bd22e57242153efcca87af95e4daac9f65ca6d90994f013ad4a8cc39",
+      "bytes": 2806783
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/song-thrush-record.json",
+      "path": "provenance/fork-2026-10-21/records/song-thrush.json",
+      "sha256": "fb5a905288d08dee56065acabad30a0986532fce71ba0a0dea2ca41e74d802f6",
+      "bytes": 9792
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/23-pheasant-v1.png",
+      "path": "references/final-art/pheasant.png",
+      "sha256": "2b240873696743266c4f44dce6bb290b7cf1a867b61fe8726379c6eddd143757",
+      "bytes": 2875686
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/pheasant-record.json",
+      "path": "provenance/fork-2026-10-21/records/pheasant.json",
+      "sha256": "df87f6fb4d1b15a7ff524ef5a381f8615259809518371bff5de7e7d1f9e169e5",
+      "bytes": 10149
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/24-goldcrest-v1.png",
+      "path": "references/final-art/goldcrest.png",
+      "sha256": "8293f58a8e7281e5a06ff7c388e8a43316c3c4ca6f664c0b59b08273c978505e",
+      "bytes": 2935939
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/goldcrest-record.json",
+      "path": "provenance/fork-2026-10-21/records/goldcrest.json",
+      "sha256": "f39767239d7184d85f69c901a12a0e02b5012d1087fd361a7de3296a7afcdbab",
+      "bytes": 9569
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/25-pied-wagtail-v1.png",
+      "path": "references/final-art/pied-wagtail.png",
+      "sha256": "9cf017308d189f6d77d2997f82adf0c0a71b964cb71ca6e9ac28bb601d9fed80",
+      "bytes": 2827204
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-05/pied-wagtail-record.json",
+      "path": "provenance/fork-2026-10-21/records/pied-wagtail.json",
+      "sha256": "19daf3c3e0d1be9656245c4335cdc328ab62593b77ac8c8ee1a06ffd42392b74",
+      "bytes": 9932
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/manifest.json",
+      "path": "provenance/fork-2026-10-21/batch-06.manifest.source.json",
+      "sha256": "5e73a5ca15309f43902c394b8aaae2947185e8312783571be9c39897bb0d437d",
+      "bytes": 2031
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/26-jay-v1.png",
+      "path": "references/final-art/jay.png",
+      "sha256": "26ab5953f1a21d42c30c43171f08f414fb830818a08446c38d2ec4e71ee52b76",
+      "bytes": 2839113
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/jay-record.json",
+      "path": "provenance/fork-2026-10-21/records/jay.json",
+      "sha256": "ce3a34d129d2293d0439a606e3450ceae54aa783be1b0dbf776b7cabd54d3d89",
+      "bytes": 9626
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/27-redwing-v1.png",
+      "path": "references/final-art/redwing.png",
+      "sha256": "27a333456354c685fa35287f1bca92ae0a39d25fc168876b4f3f52ffa65168f0",
+      "bytes": 2932920
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/redwing-record.json",
+      "path": "provenance/fork-2026-10-21/records/redwing.json",
+      "sha256": "37ed77cb9c4448bfa806d08259c8693c06bb3bba3a01e859381aad772dc0b80c",
+      "bytes": 9262
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/28-bullfinch-v1.png",
+      "path": "references/final-art/bullfinch.png",
+      "sha256": "4278b055ca4e348a371ddf674e3e3841ec282a9f8c606665684ade031228c2a9",
+      "bytes": 2831863
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/bullfinch-record.json",
+      "path": "provenance/fork-2026-10-21/records/bullfinch.json",
+      "sha256": "f7a5d2fa725213aa985d3aee2e7b2564e2464a122d7a026f7085c1736372cad1",
+      "bytes": 9356
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/29-sparrowhawk-v1.png",
+      "path": "references/final-art/sparrowhawk.png",
+      "sha256": "aa49f534ba231e7e0ff2e8f443ea9f566422faa03663972b56b80820ae3469c0",
+      "bytes": 3266653
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/sparrowhawk-record.json",
+      "path": "provenance/fork-2026-10-21/records/sparrowhawk.json",
+      "sha256": "74343f5f8f368d225919e53e856435128ccfbdc6ef9c3984e05c1f7af8d50678",
+      "bytes": 9498
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/30-fieldfare-v1.png",
+      "path": "references/final-art/fieldfare.png",
+      "sha256": "492ad534cf7870c249470b3d1590e1eecf5ca671d80be7db752b86938b585e19",
+      "bytes": 3151003
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-06/fieldfare-record.json",
+      "path": "provenance/fork-2026-10-21/records/fieldfare.json",
+      "sha256": "f3690916a23d614610c3f50342a1d0ea9e4f5e64581ba2a32b1dd38f61115e6c",
+      "bytes": 9373
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/manifest.json",
+      "path": "provenance/fork-2026-10-21/batch-07.manifest.source.json",
+      "sha256": "b8deb109964cbc2c00646babfe2acd71f2e7c97e168d74be58243c8f5b260d8a",
+      "bytes": 2107
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/31-buzzard-v1.png",
+      "path": "references/final-art/buzzard.png",
+      "sha256": "98f2e8bd702d005368d32d61f9b544fafd0740fdb1b6cf227be1a2cd6c75e1a6",
+      "bytes": 2851426
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/buzzard-record.json",
+      "path": "provenance/fork-2026-10-21/records/buzzard.json",
+      "sha256": "e7ac01db00033d4929ea7d6cb84c48b4acd5e55656058b715a059e37425f393a",
+      "bytes": 10003
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/32-mallard-v1.png",
+      "path": "references/final-art/mallard.png",
+      "sha256": "40a8922d9c7114e6991f7f8c79998152e1212cda0764da45936257ec05c1cb38",
+      "bytes": 2961796
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/mallard-record.json",
+      "path": "provenance/fork-2026-10-21/records/mallard.json",
+      "sha256": "b4546ab8dac11d6c55d1157e4e4c6ec9ea52fd1d27e20d3075c3f06fd6f109f3",
+      "bytes": 9867
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/33-black-headed-gull-v1.png",
+      "path": "references/final-art/black-headed-gull.png",
+      "sha256": "b313c7f44a83da45710a207dbccf58785c331edf6ed78380ca186569d572ccf1",
+      "bytes": 2923051
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/black-headed-gull-record.json",
+      "path": "provenance/fork-2026-10-21/records/black-headed-gull.json",
+      "sha256": "23354bd52d561ca088109b092c0439f5abdb98b89e2b9713bb10db13e3835cd0",
+      "bytes": 9624
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/34-treecreeper-v1.png",
+      "path": "references/final-art/treecreeper.png",
+      "sha256": "dbf73dec1ea074e33cb3190aa7e4d4c1b38d4f600e638ea3f0d721f1f8c0e871",
+      "bytes": 2986476
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/treecreeper-record.json",
+      "path": "provenance/fork-2026-10-21/records/treecreeper.json",
+      "sha256": "0709a63f16e0446822634b7a16069058c8b8cc1cebb7e8dcf95653963d226fd7",
+      "bytes": 9900
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/35-green-woodpecker-v1.png",
+      "path": "references/final-art/green-woodpecker.png",
+      "sha256": "83d9a0e432b43fb3ecaf89c0e124f8e151477c101683230427747522495532aa",
+      "bytes": 2959753
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-07/green-woodpecker-record.json",
+      "path": "provenance/fork-2026-10-21/records/green-woodpecker.json",
+      "sha256": "4592fabc876f461c9d9333615e17b35e3c3806cd361f9fd704c09e7e4f1c664d",
+      "bytes": 9999
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/manifest.json",
+      "path": "provenance/fork-2026-10-21/batch-08.manifest.source.json",
+      "sha256": "6865ebceba3c6a191998b59c3c3c6ba73bf603fb3146327d38d63e5489d42aa7",
+      "bytes": 2089
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/36-tawny-owl-v1.png",
+      "path": "references/final-art/tawny-owl.png",
+      "sha256": "ea336a640353b476b71cc945801929dca779240ec86740efd21ab4c642a03715",
+      "bytes": 3044349
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/tawny-owl-record.json",
+      "path": "provenance/fork-2026-10-21/records/tawny-owl.json",
+      "sha256": "4e7064366336fb6706b630e01b1f3f03f24a5f53adb2e95d6efc52687c9a706e",
+      "bytes": 9873
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/37-barn-owl-v1.png",
+      "path": "references/final-art/barn-owl.png",
+      "sha256": "4cb95a2c482e987be3b2d2b4e2f7d32df4643b0df0908f2203d6e3ccd0a1c1cd",
+      "bytes": 2941906
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/barn-owl-record.json",
+      "path": "provenance/fork-2026-10-21/records/barn-owl.json",
+      "sha256": "425c9b6ccfe48953d553df3eeb1bb40bff34e68236b31d85ea8d9737a1f809d6",
+      "bytes": 10202
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/38-little-owl-v1.png",
+      "path": "references/final-art/little-owl.png",
+      "sha256": "2d76a43366b85b413cd33621c52a901db2be850d3aafbb947fb6594488849ec7",
+      "bytes": 2983228
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/little-owl-record.json",
+      "path": "provenance/fork-2026-10-21/records/little-owl.json",
+      "sha256": "aa2dd9a0646596259ffcb260cb327a4229e0d08dee8dd46aa003d3c69c4eea85",
+      "bytes": 9702
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/39-short-eared-owl-v1.png",
+      "path": "references/final-art/short-eared-owl.png",
+      "sha256": "a8dd9a667631e65a44528fc0d53ddd5dbc3082232492e42fa1c990b13b26fb92",
+      "bytes": 3068889
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/short-eared-owl-record.json",
+      "path": "provenance/fork-2026-10-21/records/short-eared-owl.json",
+      "sha256": "52531f2f4beaed9114a27e760bd0cd733e4c21a8ffbf83d704e09ab3dd0fb05d",
+      "bytes": 10059
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/40-long-eared-owl-v1.png",
+      "path": "references/final-art/long-eared-owl.png",
+      "sha256": "762582eaa85b818d3e7ba5c5813a2dc3d7f1809f00faf33dfafca9e06697c7a4",
+      "bytes": 2711518
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art/batch-08/long-eared-owl-record.json",
+      "path": "provenance/fork-2026-10-21/records/long-eared-owl.json",
+      "sha256": "747b43f062169ca4759de79bc9057f9665e3b21d8d2be9d8267201a878808c7e",
+      "bytes": 10230
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/SKILL.md",
+      "path": "painting-system/SKILL.md",
+      "sha256": "d5c48074b8c54ad99a2fc714cb6c37e29f85cc3c98dcd3f5f045e2a6c29e8d62",
+      "bytes": 5704
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/agents/openai.yaml",
+      "path": "painting-system/agents/openai.yaml",
+      "sha256": "82ebd3e52ced5545e9689a3dcd3b9a5c802e825020b64e600c936095c0eb7be1",
+      "bytes": 265
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/benchmarks/robin-10s.png",
+      "path": "painting-system/assets/benchmarks/robin-10s.png",
+      "sha256": "328cd0ff44d789dc25e3535b27a32c26d25f3c5881d2c64dc9fc8da5ccf2c9c0",
+      "bytes": 918974
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/benchmarks/robin-40s.png",
+      "path": "painting-system/assets/benchmarks/robin-40s.png",
+      "sha256": "f3b48e328913b45f80e7a3f374c965610ebae25ec940310a6f8ff34952b695a0",
+      "bytes": 1045395
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/benchmarks/robin-65s.png",
+      "path": "painting-system/assets/benchmarks/robin-65s.png",
+      "sha256": "42703c4af4cc6dde457fa72b7447231e88c7afec9c67b692bff0e59d358c9fa6",
+      "bytes": 939959
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/benchmarks/robin-75s.png",
+      "path": "painting-system/assets/benchmarks/robin-75s.png",
+      "sha256": "b325719c6712ffbf3f0583eccc7f1f3ee8a95e6db90789b89b811ccec227fb26",
+      "bytes": 1064356
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/benchmarks/robin-approved-75s.html",
+      "path": "painting-system/assets/benchmarks/robin-approved-75s.html",
+      "sha256": "41b6945b2d18aa7c1c92facec333b5a206b6cddaa5084d3dacd7e6fc8ba6fdca",
+      "bytes": 360740
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/collection-inline.webp",
+      "path": "painting-system/assets/runtime/collection-inline.webp",
+      "sha256": "29a7d6e70b0b6031059db2ec6a544475a05d630174ec92f2dacd76546ee09f3b",
+      "bytes": 382440
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/finish-builder.js",
+      "path": "painting-system/assets/runtime/finish-builder.js",
+      "sha256": "a7e3533fd99967ec1bcc0ac74721035a8e042be5317cd5616a32fdea15a25725",
+      "bytes": 13009
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/live-marks.js",
+      "path": "painting-system/assets/runtime/live-marks.js",
+      "sha256": "ad87facf34f08b116dbd972b287b4bb4f0c3377d2a71e77a7c3afb8fe454ce5f",
+      "bytes": 490
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/mark-renderer.js",
+      "path": "painting-system/assets/runtime/mark-renderer.js",
+      "sha256": "e25322271cec4f96453d8862735e58e7f71d161629cb9aea3b4acf924816f336",
+      "bytes": 7398
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/opening-builder.js",
+      "path": "painting-system/assets/runtime/opening-builder.js",
+      "sha256": "80354d44d42585f039ae2a7a0f33403618f94c66fcdf84e7efead7bc100e0e38",
+      "bytes": 15665
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/retime-robin.js",
+      "path": "painting-system/assets/runtime/retime-robin.js",
+      "sha256": "418016325d74e1a8ef9024d96f9cd06ce264b20d103b6333252172352b87a7e0",
+      "bytes": 8110
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/robin-inline.webp",
+      "path": "painting-system/assets/runtime/robin-inline.webp",
+      "sha256": "1342ef682b3f978ed6e0ac3bc25d0450ef6b3f5cdfd46f6f192144590797c4cb",
+      "bytes": 226320
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/species-config.json",
+      "path": "painting-system/assets/runtime/species-config.json",
+      "sha256": "fc2f507feee57d93ec993442a92fb23cac8d7bf858b03539dde892c1f50a0608",
+      "bytes": 39087
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/runtime/study-template.html",
+      "path": "painting-system/assets/runtime/study-template.html",
+      "sha256": "c407fbf26d28b026a29ff1693d00fc0095fd61f7ca6e345a2d9a7c473a12c12a",
+      "bytes": 10665
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/style/existing-birds.png",
+      "path": "painting-system/assets/style/existing-birds.png",
+      "sha256": "7b0dab684c9c7932fdc78b1007f22b81e7e51d36c66ab0e817b503969d79962e",
+      "bytes": 3302382
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/style/goldfinch-source.png",
+      "path": "painting-system/assets/style/goldfinch-source.png",
+      "sha256": "485dafdde7b88a3e29c067d235b4bca65b606d19de6be612827dd003bb977533",
+      "bytes": 2273158
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/style/refinements/woodpigeon-v1.png",
+      "path": "painting-system/assets/style/refinements/woodpigeon-v1.png",
+      "sha256": "31dac9566eca16ebc3be8f8a35d23bfd4f5192cb03281d9348567c284d2d6a2e",
+      "bytes": 2514185
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/style/refinements/woodpigeon-v2.png",
+      "path": "painting-system/assets/style/refinements/woodpigeon-v2.png",
+      "sha256": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f",
+      "bytes": 2571983
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/assets/style/robin-source.png",
+      "path": "painting-system/assets/style/robin-source.png",
+      "sha256": "609a65b4a4941dfb65588db0bd417e6624646a688e2051113aeb32216997210e",
+      "bytes": 2497760
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/manifest.json",
+      "path": "painting-system/manifest.json",
+      "sha256": "3766a407870d21e784efbed29af46e3d5943d8cd56abe3435413d7c07e844022",
+      "bytes": 3782
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/final-art-record.json",
+      "path": "painting-system/references/final-art-record.json",
+      "sha256": "6f61b6b49370376bf48d2a7014dadfab1a9cf2336c79581ce3f8ce1eed6daca9",
+      "bytes": 1794
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/final-art-system.md",
+      "path": "painting-system/references/final-art-system.md",
+      "sha256": "102228410161b8385769f93d71b46e62e9d2574f612461b357f3546c5c42638d",
+      "bytes": 21763
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/implementation.md",
+      "path": "painting-system/references/implementation.md",
+      "sha256": "14ed3a65fea3417f636c44609a4e6147a96f21f113e789684f458f498abf9f9d",
+      "bytes": 7893
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/painting-materials-research.txt",
+      "path": "painting-system/references/painting-materials-research.txt",
+      "sha256": "2a4446ca42e7ccb059c74c43762d74245431a8fa1debb52e8476609f02ad10bb",
+      "bytes": 4221
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/prompt-recipes.md",
+      "path": "painting-system/references/prompt-recipes.md",
+      "sha256": "9259e223a164b7815ade8730aba00174184cc8f7a62034c65fd5ebe6064a8530",
+      "bytes": 4770
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/provenance.md",
+      "path": "painting-system/references/provenance.md",
+      "sha256": "9b01256429635495d78ecc96932f299924ac35ee0bb32857322777008d09ec65",
+      "bytes": 4814
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/species-record.md",
+      "path": "painting-system/references/species-record.md",
+      "sha256": "2c8b227fae1cbdb5ed63b0453677c5682fd69e23b5da67c59fe0565bb8f97c70",
+      "bytes": 3578
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/system-guide.md",
+      "path": "painting-system/references/system-guide.md",
+      "sha256": "00dc02e736882181ecba8934ecbc3296f24099300ef21332aa4e42dde0eb0497",
+      "bytes": 10628
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/references/validation-and-scaling.md",
+      "path": "painting-system/references/validation-and-scaling.md",
+      "sha256": "65a40dd488a599c7719bb3377d6e409f2de0634d957e6e7dd36487c53479ef45",
+      "bytes": 4903
+    },
+    {
+      "origin": "fork",
+      "source_path": "birdsong-painting-system/scripts/rebuild-robin.py",
+      "path": "painting-system/scripts/rebuild-robin.py",
+      "sha256": "6178389cf771ac09066adf415b381f36513173856c24a0bff19d645011e83e2f",
+      "bytes": 3063
+    },
+    {
+      "origin": "fork",
+      "source_path": "final-art-style-guide.html",
+      "source_sha256": "5333377d7d5db6061bd976cb45be404c20106d1ad8424656ce84d4609b648de3",
+      "path": "style-guide.html",
+      "sha256": "82666cb5fde16992b64addadee145ab8bd9eb91083a1fc3d95e3d355af40c514",
+      "bytes": 17818,
+      "transform": "Replace birdsong-painting-system/ with painting-system/ for portable relative references."
+    },
+    {
+      "origin": "fork",
+      "source_path": "21-circular-ripples-and-unplugged-pie.png",
+      "path": "ui/references/21-circular-ripples-and-unplugged-pie.png",
+      "sha256": "fd8203c831752dfd34a21ffede33693d0a0432e31403b796c59dd7be66dae7dc",
+      "bytes": 1832857
+    },
+    {
+      "origin": "fork",
+      "source_path": "22-separated-bird-and-listening-states.png",
+      "path": "ui/references/22-separated-bird-and-listening-states.png",
+      "sha256": "51f6d1679671270b55397d63c717ceb9b6b084335a91655269dcf9f1fadd7ea4",
+      "bytes": 1778346
+    },
+    {
+      "origin": "fork",
+      "source_path": "26-robin-singing-now.png",
+      "path": "ui/references/26-robin-singing-now.png",
+      "sha256": "609a65b4a4941dfb65588db0bd417e6624646a688e2051113aeb32216997210e",
+      "bytes": 2497760
+    },
+    {
+      "origin": "fork",
+      "source_path": "27-robin-pi-disconnected.png",
+      "path": "ui/references/27-robin-pi-disconnected.png",
+      "sha256": "d4b1a7fbcc873d7837feb519dea2dbdaf10e89ee92794774e33232847d3cabe5",
+      "bytes": 2525546
+    }
+  ],
+  "counts": {
+    "reference_species": 45,
+    "explicit_prior_approval": 30,
+    "accepted_for_animation_later_request": 15,
+    "completed_playback_species": 5
+  },
+  "animations": {
+    "copied_from_active_work": false,
+    "live_catalogue_unchanged": true,
+    "pending_directory": "pending-animations",
+    "handoff_schema": "songsketch-animation-handoff-v1"
+  },
+  "status_symbols": {
+    "source": "static/display.html",
+    "path": "ui/status-marks.svg",
+    "symbol_ids": [
+      "mark-ripple",
+      "mark-leaf",
+      "mark-memory",
+      "mark-pie",
+      "mark-microphone",
+      "mark-offline"
+    ],
+    "comparison": "Each symbol is copied verbatim; original raster design examples retained separately.",
+    "sha256": "eb093faaa055a847015ecef0fc9b447b1119b50f1649ea1af5f04321d7613460"
+  }
+}
