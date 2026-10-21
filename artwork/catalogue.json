@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "duration_seconds": 75,
+  "style_guide_url": "/artwork/style-guide.html",
+  "birds": [
+    {
+      "id": "robin",
+      "common_name": "Robin",
+      "scientific_name": "Erithacus rubecula",
+      "aliases": [
+        "Robin",
+        "Erithacus rubecula",
+        "European Robin"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/robin.png",
+      "animation_url": "/artwork/animations/robin.html",
+      "animation_sha256": "4b58530dd25b7f5554bff4a91276ae86e03b38a513b81aa9a388e7f288344d4c",
+      "source_file": "source/garden-birds-approved-75s.html",
+      "source_sha256": "4f1f04b294e81adb236a1eef3ecc4875d2b0137b37b2ce046182d2ea394415ed"
+    },
+    {
+      "id": "goldfinch",
+      "common_name": "Goldfinch",
+      "scientific_name": "Carduelis carduelis",
+      "aliases": [
+        "Goldfinch",
+        "Carduelis carduelis",
+        "European Goldfinch"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/goldfinch.png",
+      "animation_url": "/artwork/animations/goldfinch.html",
+      "animation_sha256": "9388f778290fbb5c5da644aa73d0f4fe275b789581813f9f01fd2d46c434d259",
+      "source_file": "source/goldfinch-approved-75s.html",
+      "source_sha256": "2b35e8b557e1736b852de2d1cbb51970aa4875b84891594879d7be576c447c8b"
+    },
+    {
+      "id": "blue-tit",
+      "common_name": "Blue tit",
+      "scientific_name": "Cyanistes caeruleus",
+      "aliases": [
+        "Blue tit",
+        "Cyanistes caeruleus",
+        "Eurasian Blue Tit",
+        "Parus caeruleus"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/blue-tit.png",
+      "animation_url": "/artwork/animations/blue-tit.html",
+      "animation_sha256": "40364f888f8666179ee787947835a03f4e98155a3374b22ff6159dd55a52d200",
+      "source_file": "source/garden-birds-approved-75s.html",
+      "source_sha256": "4f1f04b294e81adb236a1eef3ecc4875d2b0137b37b2ce046182d2ea394415ed"
+    },
+    {
+      "id": "blackbird",
+      "common_name": "Blackbird",
+      "scientific_name": "Turdus merula",
+      "aliases": [
+        "Blackbird",
+        "Turdus merula",
+        "Common Blackbird",
+        "Eurasian Blackbird"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/blackbird.png",
+      "animation_url": "/artwork/animations/blackbird.html",
+      "animation_sha256": "dbf51cb534321c761fd902d37800ccbcdf8d98c5ec9c32eaeba0348bd2db32d7",
+      "source_file": "source/garden-birds-approved-75s.html",
+      "source_sha256": "4f1f04b294e81adb236a1eef3ecc4875d2b0137b37b2ce046182d2ea394415ed"
+    },
+    {
+      "id": "wren",
+      "common_name": "Wren",
+      "scientific_name": "Troglodytes troglodytes",
+      "aliases": [
+        "Wren",
+        "Troglodytes troglodytes",
+        "Eurasian Wren"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/wren.png",
+      "animation_url": "/artwork/animations/wren.html",
+      "animation_sha256": "e7ca8880b40360d166552ecaafedb377ea858e03fe441d8430a4bb72f9545c2a",
+      "source_file": "source/garden-birds-approved-75s.html",
+      "source_sha256": "4f1f04b294e81adb236a1eef3ecc4875d2b0137b37b2ce046182d2ea394415ed"
+    }
+  ]
+}

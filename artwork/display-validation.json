@@ -1,0 +1,35 @@
+{
+  "errors": [],
+  "monthly": "Heard here 4 times this month",
+  "iframeBounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1199.984375,
+    "height": 900
+  },
+  "disconnected": "Pi disconnected",
+  "listeningUnavailable": "Listening unavailable",
+  "test": "Test painting",
+  "progress": "3",
+  "offline": "Display offline",
+  "keptFrame": 1,
+  "responsive": [
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "frames": 1
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "frames": 1
+    },
+    {
+      "width": 1200,
+      "scrollWidth": 1200,
+      "frames": 1
+    }
+  ],
+  "environment": "Local headless Chrome on development Mac; not Pi or end-device verification",
+  "server_events": "Simulated API/SSE responses; separately verify real server integration"
+}

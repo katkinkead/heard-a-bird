@@ -1,0 +1,4 @@
+interface:
+  display_name: "Birdsong Painting System"
+  short_description: "Consistent bird art and the approved 75-second painting"
+  default_prompt: "Use $birdsong-painting-system to reproduce the approved painting progression for an existing bird illustration."

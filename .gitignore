@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.venv/
+/runtime/
+/data/
+*.sqlite*
+*.log*
+secrets.json
+config.local.json
+/dist/
+/work/
+.coverage

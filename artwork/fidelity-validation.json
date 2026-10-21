@@ -1,0 +1,36 @@
+{
+  "environment": "Local headless Chrome; compared with retained prior canvas captures. Different captures may rasterise slightly differently.",
+  "excluded_status_region": "All rows at y >= 665; former illustrative corner mark removed intentionally.",
+  "birds": [
+    {
+      "id": "robin",
+      "mean_rgb_difference_0_to_255": 0.0011223057644110274,
+      "exact_pixel_identity": false,
+      "within_one_level_mean_difference": true
+    },
+    {
+      "id": "goldfinch",
+      "mean_rgb_difference_0_to_255": 0.001631077694235589,
+      "exact_pixel_identity": false,
+      "within_one_level_mean_difference": true
+    },
+    {
+      "id": "blue-tit",
+      "mean_rgb_difference_0_to_255": 0.0014857142857142857,
+      "exact_pixel_identity": false,
+      "within_one_level_mean_difference": true
+    },
+    {
+      "id": "blackbird",
+      "mean_rgb_difference_0_to_255": 0.0012245614035087718,
+      "exact_pixel_identity": false,
+      "within_one_level_mean_difference": true
+    },
+    {
+      "id": "wren",
+      "mean_rgb_difference_0_to_255": 0.0012696741854636591,
+      "exact_pixel_identity": false,
+      "within_one_level_mean_difference": true
+    }
+  ]
+}

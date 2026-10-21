@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f0e5"><title>Songsketch · Teach a Pi to hear the garden</title>
+  <link rel="stylesheet" href="assets/guide.css">
+</head>
+<body>
+  <header class="masthead"><a class="wordmark" href="#">songsketch<span class="wordmark-dot">●</span></a><span class="edition">A little field guide · MacBook MVP</span><a class="quiet-link" href="../README.md">Project notes ↗</a></header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">A garden, a small computer, a little wonder.</p><h1 id="page-title">Teach a Pi to<br><em>hear the garden.</em></h1><p class="intro-copy">The Pi listens outside. Your Mac remembers inside.<br> A bird arrives on paper, one thoughtful stroke at a time.</p><div class="intro-actions"><button class="primary" id="begin">Let’s set up <span aria-hidden="true">↗</span></button><a class="text-link" href="http://localhost:8765/dashboard">Already started? Open the dashboard</a></div></div>
+      <figure class="hero-art"><span class="art-halo" aria-hidden="true"></span><img src="../artwork/thumbnails/goldfinch.png" alt="Our approved goldfinch painting: red face, golden wings and delicate ink details on cream paper"><figcaption>Listening becomes a painting.</figcaption></figure>
+    </section>
+    <section class="system-strip" aria-label="How Songsketch connects"><div><span class="number">01</span><strong>The garden Pi</strong><small>Microphone → BirdNET → saved events</small></div><span class="connection" aria-hidden="true">······→</span><div><span class="number">02</span><strong>Your Mac</strong><small>Bird history · artwork · maintenance</small></div><span class="connection" aria-hidden="true">······→</span><div><span class="number">03</span><strong>The painting page</strong><small>A browser. A bird. Seventy-five seconds.</small></div></section>
+    <section class="setup" id="setup" aria-labelledby="setup-heading">
+      <div class="section-heading"><div><p class="eyebrow">One perch at a time</p><h2 id="setup-heading">Your setup journey</h2></div><p id="progress-summary" aria-live="polite">0 of 8 steps checked</p></div>
+      <nav class="perch-nav" id="step-nav" aria-label="Setup steps"></nav>
+      <div class="step-layout"><article id="step-content" class="step-content" aria-live="polite"></article><aside class="field-note"><p class="eyebrow">A note from the garden</p><div id="field-note"></div><div class="server-peek"><span class="status-dot unknown" id="server-dot"></span><div><strong id="server-label">Your Mac server</strong><p id="server-message">Open Start Songsketch.command to bring it to life.</p></div></div><a href="http://localhost:8765/setup" class="text-link">Open the running setup page ↗</a></aside></div>
+      <div class="step-controls"><button class="secondary" id="previous">← Previous</button><label class="done-label"><input type="checkbox" id="step-done"><span>I’ve completed this step</span></label><button class="primary" id="next">Next step →</button></div>
+      <p class="saving-note">Your checkmarks stay in this browser. They are reminders, not automatic proof that the hardware works.</p>
+    </section>
+    <section class="aftercare"><div><p class="eyebrow">Once everyone has found their perch</p><h2>The garden can be quiet.<br><em>The system should still be healthy.</em></h2><p>Songsketch keeps bird activity separate from microphone, Pi and server health. Reports travel to the server automatically; offline reports wait safely and can be downloaded. Routine recovery doesn’t need an AI key.</p></div><div class="aftercare-links"><a href="http://localhost:8765/dashboard"><span>Check on the garden</span><small>Health, history & helpful next steps ↗</small></a><a href="../artwork/style-guide.html"><span>Meet the visual language</span><small>The painting style & approved references ↗</small></a><a href="../docs/friend-start-here.md"><span>Keep a written copy</span><small>The short setup and recovery notes ↗</small></a></div></section>
+    <section class="profiles"><p><strong>Today · MacBook MVP</strong><br>Keep the Mac awake. Verify your real Pi, microphone and detections before leaving it unattended.</p><p><strong>Later · Dedicated mini PC</strong><br>The same app and data, with a Linux deployment profile. Outdoor power, enclosure and sustained-operation checks are separate commissioning work. <a href="../docs/production.md">Read the migration guide ↗</a></p></section>
+  </main>
+  <footer><span>Made for a garden that has things to say.</span><div><a id="repository-link" hidden rel="noopener" target="_blank">Project on GitHub ↗</a><a id="release-link" hidden rel="noopener" target="_blank">Download release ↗</a><button class="text-link" id="reset-progress">Reset my checkmarks</button></div></footer>
+  <script src="project.js"></script><script src="assets/guide.js"></script>
+</body>
+</html>

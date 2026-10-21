@@ -1,0 +1,162 @@
+<div id="robin-drawing-75">
+  <style>
+    #robin-drawing-75 .gd-art { width: 100%; aspect-ratio: 4 / 3; }
+    #robin-drawing-75 canvas { display: block; width: 100%; height: auto; }
+    #robin-drawing-75 .gd-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 12px; }
+    #robin-drawing-75 .gd-timeline { flex: 1; min-width: 160px; }
+    #robin-drawing-75 .gd-label { display: flex; justify-content: space-between; gap: 12px; }
+    #robin-drawing-75 .gd-feel { width: min(100%, 230px); margin-top: 10px; }
+    #robin-drawing-75 .gd-phase { margin-top: 8px; min-height: 1.4em; }
+  </style>
+  <div class="gd-art">
+    <canvas id="r75-canvas" width="1000" height="750" role="img" aria-label="A bird develops from searching pencil lines through wet watercolour, pressure-sensitive brush strokes and fine coloured-pencil detail."></canvas>
+  </div>
+  <div class="gd-controls">
+    <button id="r75-play" class="btn btn-primary" type="button">Paint from the beginning</button>
+    <div class="gd-timeline">
+      <label class="gd-label text-small" for="r75-time"><span>Sketch → colour → feather detail</span><span id="r75-clock" class="tabular-nums">75 / 75 s</span></label>
+      <input id="r75-time" class="form-range" type="range" min="0" max="75" step="0.1" value="75" aria-label="Drawing timeline">
+    </div>
+  </div>
+  <div class="gd-feel">
+    <label class="gd-label text-small" for="r75-fluid"><span>Brush feel</span><span id="r75-fluid-label">Fluid</span></label>
+    <input id="r75-fluid" class="form-range" type="range" min="0" max="100" step="1" value="78" aria-label="Brush feel, from dry at zero to fluid at one hundred">
+  </div>
+  <div id="r75-phase" class="gd-phase text-small" aria-live="polite">Rest.</div>
+  <script>
+  (() => {
+    const root=document.getElementById('robin-drawing-75');
+    const canvas=root.querySelector('#r75-canvas'),ctx=canvas.getContext('2d');
+    const play=root.querySelector('#r75-play'),timeline=root.querySelector('#r75-time');
+    const fluidControl=root.querySelector('#r75-fluid'),fluidLabel=root.querySelector('#r75-fluid-label');
+    const clock=root.querySelector('#r75-clock'),phase=root.querySelector('#r75-phase');
+    const W=1000,H=750,D=75;
+    const makeCanvas=()=>{const c=document.createElement('canvas');c.width=W;c.height=H;return c;};
+    const paper=makeCanvas(),painting=makeCanvas(),reference=makeCanvas(),grain=makeCanvas(),sketch=makeCanvas();
+    const paperCtx=paper.getContext('2d'),paintCtx=painting.getContext('2d'),refCtx=reference.getContext('2d',{willReadFrequently:true}),sketchCtx=sketch.getContext('2d');
+    const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+    let seeded=91371;
+    const random=()=>{seeded=(1664525*seeded+1013904223)>>>0;return seeded/4294967296;};
+    paperCtx.fillStyle='#f3eee5';paperCtx.fillRect(0,0,W,H);
+    for(let i=0;i<65000;i++){
+      const x=random()*W,y=random()*H,r=.25+random()*1.3;
+      paperCtx.fillStyle=`rgba(${random()>.5?'255,253,247':'110,96,73'},${.018+random()*.06})`;
+      paperCtx.beginPath();paperCtx.ellipse(x,y,r,r*.48,random()*Math.PI,0,Math.PI*2);paperCtx.fill();
+    }
+    const grainCtx=grain.getContext('2d');
+    for(let i=0;i<105000;i++){
+      const x=random()*W,y=random()*H,r=.2+random()*.8;
+      grainCtx.fillStyle=`rgba(${random()>.22?'250,242,222':'57,54,43'},${.025+random()*.11})`;
+      grainCtx.fillRect(x,y,r,r*.6);
+    }
+    /* __CONFIGS__ */
+    /* __OPENING_BUILDER__ */
+    /* __FINISH_BUILDER__ */
+    /* __MARK_RENDERER__ */
+    /* __RETIME_ROBIN__ */
+
+    let species='robin',lastPhase='',loadToken=0,sketchTime=-1,sortedByStart=[],graphiteStrokes=[];
+    let strokes=[],loaded=false,time=75,playing=false,fluidity=.78,frameId=0,lastNow=0,firstPlay=true;
+    let previousTime=-1,lastComplete=-1;
+    const phases=[[0,'Sketch · light, searching lines.'],[6,'Structure · settling the shape.'],[9,'Water · selected areas receive a faint sheen.'],[16,'Wet pigment · colour travels after the brush lifts.'],[28,'Colour · the breast and shoulders take shape.'],[42,'Form · the head and back develop.'],[53,'Feathers · the wing and tail gather colour.'],[64,'Layers · the belly and flight feathers resolve.'],[69,'Pattern · the wing, feet and perch.'],[72.3,'Finishing · final feather details and lettering.'],[74.99,'Rest.']];
+    const images={};
+    function redraw(t,reset=false){
+      if(!loaded)return;
+      time=clamp(t,0,D);
+      if(reset||time<previousTime){paintCtx.clearRect(0,0,W,H);lastComplete=-1;}
+      for(let i=lastComplete+1;i<sortedByStart.length;i++){
+        const s=sortedByStart[i];if(s.end>time)break;
+        drawMark(paintCtx,s,1);lastComplete=i;
+      }
+      ctx.clearRect(0,0,W,H);ctx.drawImage(paper,0,0);
+      if(reset||sketchTime<20||time<20){
+        sketchCtx.clearRect(0,0,W,H);
+        for(const s of graphiteStrokes)if(s.start<time)drawMark(sketchCtx,s,clamp((time-s.start)/s.duration));
+        sketchTime=time;
+      }
+      ctx.save();ctx.globalAlpha=1-.96*clamp((time-28)/27);ctx.drawImage(sketch,0,0);ctx.restore();
+      ctx.drawImage(painting,0,0);
+      for(let i=lastComplete+1;i<sortedByStart.length;i++){
+        const s=sortedByStart[i];if(s.start>time)break;
+        drawMark(ctx,s,clamp((time-s.start)/s.duration));
+      }
+      ctx.save();ctx.globalAlpha=1-.65*clamp((time-30)/25);ctx.drawImage(grain,0,0);ctx.restore();
+      previousTime=time;update();
+    }
+    function update(){
+      timeline.value=String(time);clock.textContent=`${Math.floor(time)} / 75 s`;
+      let label=phases[0][1];for(const row of phases)if(time>=row[0])label=row[1];
+      if(loaded&&lastPhase!==label){phase.textContent=label;lastPhase=label;}
+      fluidControl.value=String(Math.round(fluidity*100));fluidLabel.textContent=fluidity<.33?'Dry':fluidity<.67?'Balanced':'Fluid';
+      play.textContent=playing?'Pause':firstPlay?'Paint from the beginning':time>=D?'Paint again':'Continue';
+      play.disabled=!loaded;timeline.disabled=!loaded;fluidControl.disabled=!loaded;
+    }
+    function pause(){playing=false;cancelAnimationFrame(frameId);update();}
+    function save(){window.openai?.setWidgetState?.({modelContent:{study:'Robin · 75-second pacing',bird:species,durationSeconds:75,brushFeel:fluidity},privateContent:{version:'robin-75-v1',bird:species,position:time,fluidity}})?.catch(()=>{});}
+    function tick(now){
+      if(!playing)return;
+      const dt=Math.max(0,(now-lastNow)/1000);lastNow=now;redraw(Math.min(D,time+dt));
+      if(time>=D){pause();save();return;}frameId=requestAnimationFrame(tick);
+    }
+    play.addEventListener('click',()=>{
+      if(!loaded)return;
+      if(playing){pause();save();return;}
+      if(firstPlay||time>=D)redraw(0,true);
+      firstPlay=false;playing=true;lastNow=performance.now();update();save();frameId=requestAnimationFrame(tick);
+    });
+    timeline.addEventListener('input',()=>{const next=Number(timeline.value);pause();firstPlay=false;redraw(next);});timeline.addEventListener('change',save);
+    fluidControl.addEventListener('input',()=>{fluidity=Number(fluidControl.value)/100;redraw(time,true);});fluidControl.addEventListener('change',save);
+    document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing){pause();save();}});
+
+    /* __LIVE_MARKS__ */
+    async function selectBird(id,position=75){
+      if(!configs[id])return;
+      pause();loaded=false;update();const token=++loadToken;species=id;
+      phase.textContent='Loading drawing study…';lastPhase='';
+      await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+      const config=configs[id],img=images[config.source];
+      if(!img?.complete||!img.naturalWidth)return;
+      refCtx.clearRect(0,0,W,H);refCtx.fillStyle='#f3eee5';refCtx.fillRect(0,0,W,H);
+      const crop=config.sourceCrop,dest=config.destRect;
+      refCtx.drawImage(img,...crop,...dest);
+      const pixels=refCtx.getImageData(0,0,W,H).data;
+      const opening=buildSpeciesOpening({pixels,width:W,height:H,config});
+      const finish=buildSpeciesFinish({pixels,width:W,height:H,config});
+      if(token!==loadToken)return;
+      strokes=[...opening,...finish,...liveMarks.map(s=>({...s,points:s.points.map(p=>[...p])}))];
+      retimeRobin(strokes,config);
+      for(const s of strokes)resample(s);
+      graphiteStrokes=strokes.filter(s=>s.kind==='graphite');
+      sortedByStart=strokes.filter(s=>s.kind!=='graphite').sort((a,b)=>a.start-b.start||a.end-b.end);
+      sketchTime=-1;previousTime=-1;lastComplete=-1;firstPlay=true;loaded=true;
+      canvas.setAttribute('aria-label',`${config.name} painted over seventy-five seconds: pencil sketch, water and pigment, then finely drawn feathers. The corner status is an artwork example.`);
+      redraw(position,true);
+    }
+    window.addEventListener('openai:set_globals',async event=>{
+      const state=event.detail?.globals?.widgetState?.privateContent;
+      if(state?.version!=='robin-75-v1'||playing)return;
+      if(Number.isFinite(state.fluidity))fluidity=clamp(state.fluidity);
+      const position=Number.isFinite(state.position)?clamp(state.position,0,D):75;
+      if(configs[state.bird]&&state.bird!==species)await selectBird(state.bird,position);else if(loaded)redraw(position,true);
+    });
+    root.drawingStudy={
+      renderAt(t){pause();firstPlay=false;redraw(t,true);},
+      async selectBird(id){await selectBird(id,75);},
+      setFluidity(f){fluidity=clamp(f);redraw(time,true);},
+      getState(){return{species,time,playing,loaded,fluidity,strokeCount:strokes.length,completed:strokes.filter(s=>s.end<=time).length};},
+      schedule(){return strokes.map(s=>({kind:s.kind,pass:s.pass,region:s.region,phrase:s.robinPacingPhrase,start:s.start,end:s.end}));},
+      integrity(){return{finishedImageReveals:false,wetPigmentPatches:strokes.filter(s=>s.kind==='bloom').length,referenceMarks:strokes.filter(s=>s.finishStyle==='reference').length,graphiteMarks:graphiteStrokes.length};}
+    };
+    ctx.drawImage(paper,0,0);update();
+    const sources=/* __SOURCES__ */;
+    Promise.all(Object.entries(sources).map(([id,src])=>new Promise((resolve,reject)=>{
+      const img=new Image();images[id]=img;img.onload=resolve;img.onerror=reject;img.src=src;
+    }))).then(async()=>{
+      const state=window.openai?.widgetState?.privateContent;
+      const valid=state?.version==='robin-75-v1';
+      if(valid&&Number.isFinite(state.fluidity))fluidity=clamp(state.fluidity);
+      await selectBird(valid&&configs[state.bird]?state.bird:'robin',valid&&Number.isFinite(state.position)?state.position:75);
+    }).catch(()=>{phase.textContent='The artwork reference could not load.';});
+  })();
+  </script>
+</div>

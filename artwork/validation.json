@@ -1,0 +1,134 @@
+{
+  "errors": [],
+  "birds": [
+    {
+      "id": "robin",
+      "state": {
+        "species": "robin",
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 112204,
+        "completed": 112204
+      },
+      "annotations": {
+        "bakedLiveMarks": 0
+      },
+      "invalidTimes": 0,
+      "width": 1000,
+      "completedPlayback": {
+        "species": "robin",
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 112204,
+        "completed": 112204
+      }
+    },
+    {
+      "id": "goldfinch",
+      "state": {
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 68438,
+        "completed": 68438
+      },
+      "annotations": {
+        "bakedLiveMarks": 0
+      },
+      "invalidTimes": 0,
+      "width": 1000,
+      "completedPlayback": {
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 68438,
+        "completed": 68438
+      }
+    },
+    {
+      "id": "blue-tit",
+      "state": {
+        "species": "blue-tit",
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 116403,
+        "completed": 116403
+      },
+      "annotations": {
+        "bakedLiveMarks": 0
+      },
+      "invalidTimes": 0,
+      "width": 1000,
+      "completedPlayback": {
+        "species": "blue-tit",
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 116403,
+        "completed": 116403
+      }
+    },
+    {
+      "id": "blackbird",
+      "state": {
+        "species": "blackbird",
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 141072,
+        "completed": 141072
+      },
+      "annotations": {
+        "bakedLiveMarks": 0
+      },
+      "invalidTimes": 0,
+      "width": 1000,
+      "completedPlayback": {
+        "species": "blackbird",
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 141072,
+        "completed": 141072
+      }
+    },
+    {
+      "id": "wren",
+      "state": {
+        "species": "wren",
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 126691,
+        "completed": 126691
+      },
+      "annotations": {
+        "bakedLiveMarks": 0
+      },
+      "invalidTimes": 0,
+      "width": 1000,
+      "completedPlayback": {
+        "species": "wren",
+        "time": 75,
+        "playing": false,
+        "loaded": true,
+        "fluidity": 0.78,
+        "strokeCount": 126691,
+        "completed": 126691
+      }
+    }
+  ],
+  "environment": "Local headless Chrome on development Mac; not Pi or end-device verification"
+}

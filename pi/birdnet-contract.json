@@ -1,0 +1,50 @@
+{
+  "birdnet_release": "20261014",
+  "model_id": "BirdNET_V2.4",
+  "reviewed_on": "2026-10-21",
+  "review_type": "Source contract inspection; no real Pi execution verified",
+  "image_tag": "ghcr.io/tphakala/birdnet-go:20261014",
+  "image_digest": "Resolved and recorded by installer on first pull; reused for subsequent installs",
+  "source_files": [
+    {
+      "path": "internal/api/v2/detections/detections.go",
+      "url": "https://github.com/tphakala/birdnet-go/blob/20261014/internal/api/v2/detections/detections.go",
+      "sha256": "1d99991679b70472a70a36eb04610ba1b767e0d7204444f718d9bbbc7d4c9938"
+    },
+    {
+      "path": "internal/api/v2/audio/audio_health.go",
+      "url": "https://github.com/tphakala/birdnet-go/blob/20261014/internal/api/v2/audio/audio_health.go",
+      "sha256": "d7f5bb917854c707044951521d7ed6408a5e0e91e0255e735b96b641cc416623"
+    },
+    {
+      "path": "internal/audiocore/liveness.go",
+      "url": "https://github.com/tphakala/birdnet-go/blob/20261014/internal/audiocore/liveness.go",
+      "sha256": "aab518a98d42ef9ccc8b10f39072fa8e99922f5e9796943f63a6b3e47369c1b4"
+    },
+    {
+      "path": "internal/api/v2/system/inference_status.go",
+      "url": "https://github.com/tphakala/birdnet-go/blob/20261014/internal/api/v2/system/inference_status.go",
+      "sha256": "e56c788edaa5045974a018dbf6ac49890e253928c9018dbbd5694479029d0307"
+    },
+    {
+      "path": ".github/workflows/docker-build-push.yml",
+      "url": "https://github.com/tphakala/birdnet-go/blob/20261014/.github/workflows/docker-build-push.yml",
+      "sha256": "aa8034a6826cc06cb9d4688bd4a7f75aa9957918534922660fe3fcd368450265"
+    },
+    {
+      "path": "Docker/docker-compose.yml",
+      "url": "https://github.com/tphakala/birdnet-go/blob/20261014/Docker/docker-compose.yml",
+      "sha256": "b39f66ed0d2f10c9543a9b8a534f6f393b16ece5ffd8f87922e0a1cef510d63e"
+    }
+  ],
+  "detection_endpoint": "/api/v2/detections",
+  "detection_query": [
+    "start_date",
+    "end_date",
+    "sortBy=date_asc",
+    "numResults",
+    "offset"
+  ],
+  "audio_health_endpoint": "/api/v2/health/audio",
+  "inference_health_endpoint": "/api/v2/system/inference"
+}

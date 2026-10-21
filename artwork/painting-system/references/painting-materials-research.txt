@@ -1,0 +1,43 @@
+Painting materials: references and decisions for Birdsong-to-Art
+Research date: 20 October 2026
+
+OBSERVATIONS FROM SOURCES
+
+Brush contact and liquid load
+A pointed brush can make a fine line or a broader contact as more of its belly meets the paper. Rosemary & Co describes the liquid capacity and flow of sable when pressed. The quantity of liquid in a brush and the concentration of pigment are separate variables: a wider, wetter stroke is not necessarily a darker stroke.
+https://blog.rosemaryandco.com/faq/
+https://danielsmith.com/tutorials/watercolor-for-beginners/
+
+Wet paper and dry paper
+Canson distinguishes wet-on-wet, where colour disperses through a wet surface, from wet-on-dry, which retains clearer contours. Its guide also describes glazing over an already dry wash to deepen colour. This suggests distinct phases and localized wet areas rather than the same edge behaviour everywhere.
+https://en.canson.com/expert-advice/basic-concepts-painting-watercolors
+
+Moving pigment and drying deposits
+Curtis and colleagues distinguish flow patterns, drying-edge deposits, granulation, backruns and glazing. Figure 1 contains scanned real watercolour examples; Figure 2 contains their simulations. Their model separates mobile pigment from deposited pigment, and their paper explicitly calls the simulation empirically based rather than a strict physical simulation.
+https://grail.cs.washington.edu/wp-content/uploads/2015/08/curtis-1997-cgw.pdf
+
+The experimental study by González-Gutiérrez and colleagues examines how paper wetness and pigment concentration affect evolving stains. Its time sequences show that initial spread and later internal pattern development do not follow one uniform timescale. Its specific droplet results should not be treated as universal timings for a brush wash.
+https://arxiv.org/html/1909.09098
+
+Granulation is selective
+Daniel Smith explains that some pigments settle differently as water disperses them, while non-granulating colours produce smoother passages. Texture should therefore depend on the material and painted area, rather than being an identical speckle layer over every colour.
+https://danielsmith.com/tutorials/watercolor-for-beginners/
+
+Dry coloured-pencil finishing
+Graham Brace's Derwent tips explicitly distinguish intense dry-pencil marks on wet washes from finer detail on completely dry areas. Sharp, fine finishing belongs after the wash has dried. Carol Leather describes sharp tips for feathers and light initial pressure to retain the paper tooth for later layers.
+https://www.derwentart.com/a/187104
+https://www.pencil-topics.co.uk/coloured-pencil-strokes.html
+
+DESIGN INTERPRETATION FOR THIS STUDY
+
+Keep the accepted graphite opening. Suggest clean water with a faint, temporary sheen across selected chest, shoulder and wing areas. Let concentrated pigment enter those areas and continue travelling after the contact has ended. Allow the spread to slow before localized granulation and edge deposits become stronger.
+
+Use the pressure of a loaded brush to change its contact width and pace, with a fuller deposit at the press and a taper on lift. Vary paint load separately. Preserve open paper and lighter wash passages.
+
+Give the final third substantial drawing time: beak facets, fine facial feathers, shoulder hatching, layered wing feathers, engraved leaf motifs, tail shafts and leg highlights. Keep the strongest contrast around the eye, added near the end.
+
+Preview timing: sketch 0–12 seconds; water 12–18; pigment travel 18–30; glazes 30–42; settling around 42–44; dry pencil 44–70; finishing accents 70–78. These are compressed artistic timings, not a claim about real drying rates.
+
+IMPLEMENTATION LIMITS
+
+The wet passages use authored wetness fields, directional arrival, changing concentration and settling. They are controllable visual approximations, not a calibrated fluid solver. The brush marks and pencil lines are drawn explicitly. The source illustration supplies local colour references; its finished pixels are not uncovered to fake the drawing process. The image-generation API does not supply the artist's original brush sequence. This is an art-direction preview; no Pi or server integration is connected.

@@ -1,0 +1,100 @@
+{
+  "system": "birdsong-painting-system",
+  "version": "robin-approved-75s-v1",
+  "recorded_date": "2026-10-20",
+  "approval": "User explicitly approved the 75-second Robin; broader cross-species system awaits trial.",
+  "duration_seconds": 75,
+  "canvas": [
+    1000,
+    750
+  ],
+  "fluidity": 0.78,
+  "expected_mark_count": 112380,
+  "baseline": "assets/benchmarks/robin-approved-75s.html",
+  "assets": {
+    "assets/benchmarks/robin-10s.png": {
+      "bytes": 918974,
+      "sha256": "328cd0ff44d789dc25e3535b27a32c26d25f3c5881d2c64dc9fc8da5ccf2c9c0"
+    },
+    "assets/benchmarks/robin-40s.png": {
+      "bytes": 1045395,
+      "sha256": "f3b48e328913b45f80e7a3f374c965610ebae25ec940310a6f8ff34952b695a0"
+    },
+    "assets/benchmarks/robin-65s.png": {
+      "bytes": 939959,
+      "sha256": "42703c4af4cc6dde457fa72b7447231e88c7afec9c67b692bff0e59d358c9fa6"
+    },
+    "assets/benchmarks/robin-75s.png": {
+      "bytes": 1064356,
+      "sha256": "b325719c6712ffbf3f0583eccc7f1f3ee8a95e6db90789b89b811ccec227fb26"
+    },
+    "assets/benchmarks/robin-approved-75s.html": {
+      "bytes": 360740,
+      "sha256": "41b6945b2d18aa7c1c92facec333b5a206b6cddaa5084d3dacd7e6fc8ba6fdca"
+    },
+    "assets/runtime/collection-inline.webp": {
+      "bytes": 382440,
+      "sha256": "29a7d6e70b0b6031059db2ec6a544475a05d630174ec92f2dacd76546ee09f3b"
+    },
+    "assets/runtime/finish-builder.js": {
+      "bytes": 13009,
+      "sha256": "a7e3533fd99967ec1bcc0ac74721035a8e042be5317cd5616a32fdea15a25725"
+    },
+    "assets/runtime/live-marks.js": {
+      "bytes": 490,
+      "sha256": "ad87facf34f08b116dbd972b287b4bb4f0c3377d2a71e77a7c3afb8fe454ce5f"
+    },
+    "assets/runtime/mark-renderer.js": {
+      "bytes": 7398,
+      "sha256": "e25322271cec4f96453d8862735e58e7f71d161629cb9aea3b4acf924816f336"
+    },
+    "assets/runtime/opening-builder.js": {
+      "bytes": 15665,
+      "sha256": "80354d44d42585f039ae2a7a0f33403618f94c66fcdf84e7efead7bc100e0e38"
+    },
+    "assets/runtime/retime-robin.js": {
+      "bytes": 8110,
+      "sha256": "418016325d74e1a8ef9024d96f9cd06ce264b20d103b6333252172352b87a7e0"
+    },
+    "assets/runtime/robin-inline.webp": {
+      "bytes": 226320,
+      "sha256": "1342ef682b3f978ed6e0ac3bc25d0450ef6b3f5cdfd46f6f192144590797c4cb"
+    },
+    "assets/runtime/species-config.json": {
+      "bytes": 39087,
+      "sha256": "fc2f507feee57d93ec993442a92fb23cac8d7bf858b03539dde892c1f50a0608"
+    },
+    "assets/runtime/study-template.html": {
+      "bytes": 10665,
+      "sha256": "c407fbf26d28b026a29ff1693d00fc0095fd61f7ca6e345a2d9a7c473a12c12a"
+    },
+    "assets/style/existing-birds.png": {
+      "bytes": 3302382,
+      "sha256": "7b0dab684c9c7932fdc78b1007f22b81e7e51d36c66ab0e817b503969d79962e"
+    },
+    "assets/style/goldfinch-source.png": {
+      "bytes": 2273158,
+      "sha256": "485dafdde7b88a3e29c067d235b4bca65b606d19de6be612827dd003bb977533"
+    },
+    "assets/style/robin-source.png": {
+      "bytes": 2497760,
+      "sha256": "609a65b4a4941dfb65588db0bd417e6624646a688e2051113aeb32216997210e"
+    }
+  },
+  "style_refinements": {
+    "recorded_date": "2026-10-21",
+    "review": "User preferred Woodpigeon v2 and requested its drawing refinements be captured for future concepts; no animation approval implied.",
+    "assets": {
+      "assets/style/refinements/woodpigeon-v1.png": {
+        "bytes": 2514185,
+        "sha256": "31dac9566eca16ebc3be8f8a35d23bfd4f5192cb03281d9348567c284d2d6a2e",
+        "role": "earlier comparison only; not a generation target"
+      },
+      "assets/style/refinements/woodpigeon-v2.png": {
+        "bytes": 2571983,
+        "sha256": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f",
+        "role": "user-endorsed rendering calibration alongside original references"
+      }
+    }
+  }
+}

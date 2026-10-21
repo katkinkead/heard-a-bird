@@ -1,0 +1,68 @@
+{
+  "record_type": "birdsong_final_art",
+  "status": "proposed",
+  "species": {
+    "common_name": "",
+    "scientific_name": "",
+    "sex_age_plumage": "not determined",
+    "identity_references": [],
+    "diagnostic_features": []
+  },
+  "composition": {
+    "aspect_ratio": "4:3",
+    "pose": "",
+    "facing": "",
+    "support": "",
+    "artistic_intention": "",
+    "expression_choices": [],
+    "open_for_exploration": []
+  },
+  "palette_roles": {
+    "main_plumage": [],
+    "structural_dark": "",
+    "optional_accent": "",
+    "background": "",
+    "paper": "warm ivory"
+  },
+  "background": {
+    "approach": "open: none, one form or several simple abstract elements",
+    "elements": [],
+    "relationship_to_bird": "",
+    "open_for_exploration": []
+  },
+  "finish": {
+    "crisp_focal_areas": [],
+    "quiet_areas": [],
+    "contour_gesture": "",
+    "detail_treatment": "",
+    "optional_motifs": [],
+    "graphic_structure": ""
+  },
+  "deliberate_stylisations": [],
+  "annotations": {
+    "name_treatment": "understated handwriting",
+    "state_treatment": "reserved area or clearly labelled illustrative state; never fabricated sensor evidence"
+  },
+  "provenance": {
+    "artistic_reference_files": [],
+    "prompt": "",
+    "generated_asset": "",
+    "asset_sha256": "",
+    "tool_model_if_known": "",
+    "revision": "",
+    "user_review": "pending"
+  },
+  "review": {
+    "species_identity": "not reviewed",
+    "character_restraint": "not reviewed",
+    "material_and_detail": "not reviewed",
+    "collection_variety": "not reviewed",
+    "display_size": "not reviewed",
+    "graphic_clarity_at_display_size": "not reviewed"
+  },
+  "creative_review": {
+    "collection_kinship": "not reviewed",
+    "individuality": "not reviewed",
+    "unexpected_choices_if_any": []
+  }
+}
