@@ -148,7 +148,8 @@ class DurableStoreTests(AppTest):
 class HTTPServerTests(AppTest):
     def setUp(self):
         super().setUp()
-        self.server = Server(("127.0.0.1",0),self.app)
+        with patch("socket.getfqdn", side_effect=AssertionError("Local HTTP startup must not wait for reverse DNS")):
+            self.server = Server(("127.0.0.1",0),self.app)
         self.port = self.server.server_address[1]
         self.thread = threading.Thread(target=self.server.serve_forever,kwargs={"poll_interval":0.05},daemon=True)
         self.thread.start()

@@ -12,6 +12,7 @@ from pathlib import Path
 import secrets
 import signal
 import socket
+import socketserver
 import threading
 import time
 from urllib.parse import urlparse, unquote, parse_qs
@@ -63,6 +64,12 @@ class Server(ThreadingHTTPServer):
     def __init__(self, address, app):
         self.app = app
         super().__init__(address, Handler)
+
+    def server_bind(self):
+        # HTTPServer's default reverse DNS lookup can stall macOS startup on
+        # networks without working reverse DNS. No route needs that name.
+        socketserver.TCPServer.server_bind(self)
+        self.server_name, self.server_port = self.server_address[:2]
 
 class Handler(BaseHTTPRequestHandler):
     server_version = "Songsketch/0.1"

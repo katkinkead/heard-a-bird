@@ -502,7 +502,14 @@ def main():
             relay.report_fault("birdnet_version", True, "BirdNET version differs from the tested source contract")
     except Exception:
         pass
-    server = http.server.ThreadingHTTPServer((config["listen_host"], config["listen_port"]), make_handler(relay))
+    # Avoid HTTPServer's reverse-DNS lookup: local diagnostics must start even
+    # when the garden network's DNS is unavailable.
+    class LocalServer(http.server.ThreadingHTTPServer):
+        def server_bind(self):
+            import socketserver
+            socketserver.TCPServer.server_bind(self)
+            self.server_name, self.server_port = self.server_address[:2]
+    server = LocalServer((config["listen_host"], config["listen_port"]), make_handler(relay))
     server.daemon_threads = True
     threads = [threading.Thread(target=relay.collector_loop), threading.Thread(target=relay.delivery_loop),
                threading.Thread(target=server.serve_forever)]
