@@ -1,15 +1,11 @@
-# Songsketch 0.1.0 — the garden rehearsal
+# Songsketch 0.1.1 — a little bird business
 
-This first installable MVP joins the illustrated setup guide, Mac server, Pi relay, dashboard and five approved75-second bird paintings in one portable project.
+The setup field guide now has a little more mischief: an illustrated Pi → Mac → painting team, a goldfinch creative director, a wonky bird-business badge, handwritten asides, taped notes and a varied flock on the setup wire. On phones, the navigation uses two roomy rows of birds.
 
-Extract the ZIP and open **Start Songsketch.command** on the Mac. It checks Python, starts the supervised local application and opens the guide. Use **Pair Garden Pi.command** for the physical Pi once its OS/network/SSH are ready. The supplied CanaKit card can be reused if it has a supported64-bit OS; imaging is conditional.
+The setup instructions, server, dashboard, Pi relay and five approved 75-second animations are unchanged. The illustrations are embedded in the HTML so they also travel with the standalone guide; no remote font or image service is needed.
 
-Included: persistent bird history, replay-safe Pi delivery, species-to-art catalogue, weighted idle paintings, truthful small status marks, missing-art email outbox, diagnostics, bounded recovery, backups, migration export and Linux host profile. AI tools remain optional and operator-triggered. Existing playback needs no AI key.
+Extract the ZIP and open **Start Songsketch.command** on the Mac. The guide links to the private repository and release downloads.
 
-Art, style and diagnostic AI jobs produce reviewable drafts. The animation action prepares an authoring/registration proposal; a new species still requires choreography and visual validation before becoming a live animation. The five bundled birds are ready to play.
+**Checked for this update:** desktop and narrow-screen rendering, no horizontal overflow or missing images, setup navigation, checkmark updates, project links, no browser console errors, JavaScript syntax and package preflight. The underlying MVP retains its 78-test Mac/Linux verification from 0.1.0; no hardware or provider commissioning is newly claimed.
 
-**Verification:**78 automated tests pass locally, from an extracted package, and in Mac/Linux CI. Browser checks cover the guide, dashboard and painting display; real-process tests cover crash recovery and saved history. See `docs/verification.md`.
-
-**Commissioning remains:** actual Pi installation, microphone/BirdNET recognition, network and reboot tests, real SMTP delivery, optional paid model access, and the eventual mini PC/outdoor hardware. No email account or AI credential is included. No persistent service was installed on Katharine’s computer during development.
-
-The repository/release are private. Share the ZIP directly with the friend, or grant repository access separately. Runtime data and credentials are not part of this release.
+Actual Pi/microphone setup, real SMTP delivery and optional paid AI access still need the installer’s equipment and credentials. New-species animation proposals still require authoring and visual approval. Share this private release through repository access or send the ZIP directly.

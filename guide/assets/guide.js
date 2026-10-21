@@ -13,11 +13,16 @@
   let saved = {}; try { saved = JSON.parse(localStorage.getItem('songsketch-guide-v1') || '{}'); } catch (_) {}
   let active = Math.max(0, Math.min(7, Number(saved.active) || 0));
   const checked = new Set(Array.isArray(saved.checked) ? saved.checked.filter(x => Number.isInteger(x) && x >= 0 && x < 8) : []);
-  const bird = `<svg viewBox="0 0 42 42" aria-hidden="true"><path d="M9 26c-7-2-6-8-4-11 1 5 4 7 8 6-1-9 5-16 12-14 6 1 8 7 7 11l7 3-8 2c-2 7-8 10-15 7l-2 7h-2l1-8-4 7H7l5-9z"/><circle cx="26" cy="13" r="1.2" fill="#f5f1e6"/></svg>`;
+  // A shared flock, with enough different postures to look like birds on a wire.
+  const birds = [
+    `<svg viewBox="0 0 42 42" aria-hidden="true"><path d="M9 26c-7-2-6-8-4-11 1 5 4 7 8 6-1-9 5-16 12-14 6 1 8 7 7 11l7 3-8 2c-2 7-8 10-15 7l-2 7h-2l1-8-4 7H7l5-9z"/><circle cx="26" cy="13" r="1.6" fill="#f5f1e6"/><path d="M16 20q5 6 10 2" fill="none" stroke="#f5f1e6" stroke-width="1"/></svg>`,
+    `<svg viewBox="0 0 42 42" aria-hidden="true"><path d="M12 27 3 24l10-4C10 6 22 1 29 8c5 5 3 9 1 12 9 10-4 16-14 11l-1 6h-2l1-7zM30 12l9 4-9 3"/><circle cx="26" cy="12" r="1.6" fill="#f5f1e6"/><path d="M20 23q6 6 9 1M21 32l3 5" fill="none" stroke="#f5f1e6" stroke-width="1"/></svg>`,
+    `<svg viewBox="0 0 42 42" aria-hidden="true"><path d="M11 26 3 12l13 8C15 8 24 4 30 10c3 3 3 7 2 10l7 3-9 2c-4 7-11 9-17 5l-1 7h-2l1-8z"/><circle cx="27" cy="14" r="1.6" fill="#f5f1e6"/><path d="M16 24q5 3 10-1M19 31l2 6" fill="none" stroke="#f5f1e6" stroke-width="1"/></svg>`
+  ];
   const $ = id => document.getElementById(id);
   function persist() { try { localStorage.setItem('songsketch-guide-v1',JSON.stringify({active,checked:[...checked]})); } catch (_) {} }
   function render() {
-    $('step-nav').innerHTML = steps.map((s,i) => `<button class="perch ${checked.has(i)?'checked':''}" data-step="${i}" ${i===active?'aria-current="step"':''} aria-label="Step ${i+1}: ${s.short}${checked.has(i)?', checked':''}">${bird}<span>${s.short}</span></button>`).join('');
+    $('step-nav').innerHTML = steps.map((s,i) => `<button class="perch ${checked.has(i)?'checked':''}" data-step="${i}" ${i===active?'aria-current="step"':''} aria-label="Step ${i+1}: ${s.short}${checked.has(i)?', checked':''}">${birds[i%birds.length]}<span>${s.short}</span></button>`).join('');
     const s = steps[active];
     $('step-content').innerHTML = `<p class="eyebrow">Step ${String(active+1).padStart(2,'0')} / 08</p><h3>${s.title}</h3><p>${s.lead}</p>${s.body}`;
     $('field-note').innerHTML = `<p>${s.note}</p><small>${s.small}</small>`;

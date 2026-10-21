@@ -6,24 +6,128 @@
   <link rel="stylesheet" href="assets/guide.css">
 </head>
 <body>
-  <header class="masthead"><a class="wordmark" href="#">songsketch<span class="wordmark-dot">●</span></a><span class="edition">A little field guide · MacBook MVP</span><a class="quiet-link" href="../README.md">Project notes ↗</a></header>
+  <!-- Embedded for the standalone file guide as well as the served page. -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="crew-symbols" aria-hidden="true" width="0" height="0">
+  <!-- Original Songsketch field-guide drawings. Each symbol has a transparent
+       200 × 140 canvas; labels and accessible names belong to the host page. -->
+  <symbol id="garden-pi" viewBox="0 0 200 140">
+    <g stroke="#263e48" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <!-- The microphone leans towards its very interested neighbour. -->
+      <path d="M42 101C37 97 32 90 33 82L35 54" fill="none"/>
+      <path d="M28 27C28 16 47 14 50 25L51 50C51 61 31 64 30 52Z" fill="#d7aa58"/>
+      <path d="M32 24C34 20 42 19 46 22M32 30L47 28M32 36L47 34M33 42L48 40M34 48L48 46" stroke-width="1" fill="none"/>
+      <path d="M25 45L26 54C28 68 54 64 56 53L55 42M41 66L43 91" fill="none"/>
+      <path d="M40 90L50 89L51 101L38 103Z" fill="#eee5d2"/>
+      <!-- A little computer, with imperfect edges and a visible circuit. -->
+      <path d="M39 96L103 87L124 104L59 116Z" fill="#94b3a7"/>
+      <path d="M59 116L124 104L123 114L59 126L38 107L39 96L59 116Z" fill="#3e7878"/>
+      <path d="M59 116L59 126M42 101L55 112" fill="none"/>
+      <path d="M68 97L89 94L101 103L79 107Z" fill="#263e48"/>
+      <path d="M69 101L62 102L58 98M88 95L93 91M94 100L109 97M79 108L79 113M69 106L66 110" stroke="#f5efdf" stroke-width="1" fill="none"/>
+      <path d="M98 112L109 110L109 117L98 119Z" fill="#f5efdf"/>
+      <path d="M113 109L120 108L120 115L113 116Z" fill="#d7aa58"/>
+      <path d="M48 109L51 111M45 106L46 107M82 121L92 119" stroke="#b7d0c1" stroke-width="1"/>
+      <circle cx="58" cy="97" r="2.5" fill="#d9836c" stroke-width="1.2"/>
+      <!-- An original, inquisitive garden visitor; no costume required. -->
+      <path d="M144 78C139 69 141 58 151 55C164 50 175 60 172 72C181 84 174 103 160 106C150 108 138 99 139 91L129 99L132 83Z" fill="#d7aa58"/>
+      <path d="M169 76C167 87 159 91 148 88C146 99 157 105 165 101" fill="#f5efdf" stroke="none"/>
+      <path d="M144 79C147 74 159 76 165 82C160 91 147 94 144 79Z" fill="#3e7878"/>
+      <path d="M148 80L158 85M148 84L153 87" stroke="#a8c3b5" stroke-width="1.1"/>
+      <path d="M143 65L134 70L144 72" fill="#d9836c"/>
+      <circle cx="151" cy="65" r="2.5" fill="#263e48" stroke="none"/>
+      <circle cx="150.5" cy="64" r=".65" fill="#f5efdf" stroke="none"/>
+      <path d="M155 106L152 116L146 118M152 116L156 118M165 105L167 113L174 113M167 113L163 116M155 55L156 50M159 54L162 50" fill="none"/>
+      <path d="M132 54L128 50M136 48L135 43" stroke="#d9836c" stroke-width="1.4" fill="none"/>
+      <path d="M142 123L157 122M165 121L178 120" stroke="#d7aa58" stroke-width="1.2" fill="none"/>
+    </g>
+  </symbol>
+  <symbol id="indoor-mac" viewBox="0 0 200 140">
+    <g stroke="#263e48" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <!-- An open laptop: the cable has acquired a slightly tail-like curl. -->
+      <path d="M38 36C61 34 103 36 131 33L136 96L44 100Z" fill="#eee5d2"/>
+      <path d="M45 43L125 41L129 88L50 93Z" fill="#9db9af"/>
+      <path d="M51 47L88 46M119 47L120 55" stroke="#c6d3bf" stroke-width="1.5" fill="none"/>
+      <path d="M44 100L136 96L159 113C120 121 66 122 28 115Z" fill="#f5efdf"/>
+      <path d="M28 115L30 120C74 126 122 124 159 117L159 113" fill="#d7aa58"/>
+      <path d="M53 101L127 98L139 107L42 112Z" fill="#e3d8c0" stroke-width="1.1"/>
+      <path d="M57 103L125 101M51 107L132 104M62 102L67 108M74 101L79 108M87 101L93 108M101 100L108 107M114 100L121 106" stroke-width=".7" fill="none"/>
+      <path d="M77 112L102 111L109 116L72 117Z" fill="#f5efdf" stroke-width="1"/>
+      <circle cx="86" cy="39" r="1" fill="#263e48" stroke="none"/>
+      <path d="M153 112C168 111 183 111 184 99C185 90 178 88 174 94C172 98 177 103 183 102" stroke="#d9836c" stroke-width="3.2" fill="none"/>
+      <path d="M154 110L158 112M177 91L180 90" stroke-width="1" fill="none"/>
+      <!-- A few small stored marks on the screen, rather than interface text. -->
+      <path d="M62 59L69 58L70 70L63 71Z" fill="#f5efdf" stroke="none"/>
+      <path d="M76 55L83 55L85 70L78 70Z" fill="#3e7878" stroke="none"/>
+      <path d="M91 59L98 58L99 69L92 70Z" fill="#d7aa58" stroke="none"/>
+      <path d="M107 52L114 52L116 68L109 69Z" fill="#d9836c" stroke="none"/>
+      <path d="M61 80C73 77 79 82 87 78C96 74 101 80 118 76" stroke="#f5efdf" stroke-width="1.3" fill="none"/>
+      <!-- The resident is calmly supervising from the lid. -->
+      <path d="M101 25C94 23 91 14 96 8C101 2 111 5 114 11C119 11 124 17 124 23L139 19L132 28C121 35 106 34 101 25Z" fill="#3e7878"/>
+      <path d="M97 19C100 28 110 30 116 27C110 22 109 16 108 12" fill="#f5efdf" stroke="none"/>
+      <path d="M114 17C121 16 126 22 122 26C116 27 111 23 114 17Z" fill="#d7aa58" stroke-width="1.1"/>
+      <path d="M95 13L87 16L96 18" fill="#d9836c" stroke-width="1.2"/>
+      <circle cx="101" cy="12" r="1.7" fill="#263e48" stroke="none"/>
+      <path d="M109 31L108 36L104 37M119 31L120 35L124 35" fill="none"/>
+      <path d="M119 20L121 22M97 8L95 5" stroke-width=".9" fill="none"/>
+      <path d="M40 129L64 130M72 130L81 130" stroke="#d7aa58" stroke-width="1.1" fill="none"/>
+    </g>
+  </symbol>
+  <symbol id="painting-page" viewBox="0 0 200 140">
+    <g stroke="#263e48" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <!-- A slightly wonky frame and a sheet that refuses to lie quite flat. -->
+      <path d="M47 15L152 21L147 124L42 119Z" fill="#d7aa58"/>
+      <path d="M53 22L145 27L140 117L49 112Z" fill="#f5efdf"/>
+      <path d="M47 15L53 22M152 21L145 27M147 124L140 117M42 119L49 112" stroke-width="1" fill="none"/>
+      <path d="M48 32L45 83M44 96L44 109M150 34L146 89M59 120L85 121" stroke="#b78339" stroke-width="1.1" fill="none"/>
+      <path d="M58 30L138 34L134 109L56 106Z" fill="#f5efdf" stroke="#b8ad91" stroke-width=".7"/>
+      <!-- A single broad colour shape and a new, informal ink-and-paint bird. -->
+      <path d="M78 44C91 37 110 40 117 52C124 65 117 79 104 83C90 86 76 79 72 66C70 58 73 48 78 44Z" fill="#b7c8b1" stroke="none"/>
+      <path d="M73 54C70 46 76 41 82 44C87 45 89 51 88 56C102 53 114 66 112 77L127 81L114 87C98 94 80 83 78 70Z" fill="#d9836c"/>
+      <path d="M82 61C85 74 94 84 107 84C103 74 93 63 82 61Z" fill="#f5efdf" stroke="none"/>
+      <path d="M92 60C103 60 111 70 106 77C97 77 90 71 92 60Z" fill="#3e7878" stroke-width="1.2"/>
+      <path d="M96 64L103 72M95 68L98 72M99 63L106 69" stroke="#d7aa58" stroke-width=".9" fill="none"/>
+      <path d="M75 50L67 53L76 56" fill="#d7aa58" stroke-width="1.2"/>
+      <circle cx="80" cy="50" r="1.8" fill="#263e48" stroke="none"/>
+      <path d="M91 86L90 95L85 96M100 88L103 96L107 97M66 98C85 94 108 97 124 100" fill="none" stroke-width="1.3"/>
+      <path d="M81 44L82 40M88 72L90 76M90 79L93 82M112 82L119 83" fill="none" stroke-width=".8"/>
+      <!-- The paper curl catches a tiny coral edge. -->
+      <path d="M121 33C126 37 127 44 126 49C132 45 137 46 141 48C139 42 139 37 138 34Z" fill="#eee5d2" stroke-width="1.1"/>
+      <path d="M126 49C131 45 136 45 141 48L136 51Z" fill="#d9836c" stroke-width=".8"/>
+      <path d="M59 33L59 44M61 34L61 38M124 104L130 104" stroke="#dfd5bb" stroke-width=".8" fill="none"/>
+      <!-- A well-used brush, set down with its paint still on the tip. -->
+      <path d="M159 119L171 67L175 68L164 120Z" fill="#d9836c" stroke-width="1.3"/>
+      <path d="M171 67L173 58L177 59L175 68Z" fill="#eee5d2" stroke-width="1.1"/>
+      <path d="M173 58C171 51 178 47 178 40C183 48 182 54 177 59Z" fill="#3e7878" stroke-width="1.3"/>
+      <path d="M176 53L178 47" stroke="#a4bfaf" stroke-width=".8" fill="none"/>
+      <path d="M159 126C165 124 170 126 176 124" stroke="#d7aa58" stroke-width="1.1" fill="none"/>
+    </g>
+  </symbol>
+</svg>
+  <header class="masthead"><a class="wordmark" href="#">songsketch<span class="wordmark-dot">●</span></a><span class="edition">A little field guide · MacBook MVP</span><span class="margin-scribble masthead-scribble">human assembly required</span><a class="quiet-link" href="../README.md">Project notes ↗</a></header>
   <main>
     <section class="intro" aria-labelledby="page-title">
       <div><p class="eyebrow">A garden, a small computer, a little wonder.</p><h1 id="page-title">Teach a Pi to<br><em>hear the garden.</em></h1><p class="intro-copy">The Pi listens outside. Your Mac remembers inside.<br> A bird arrives on paper, one thoughtful stroke at a time.</p><div class="intro-actions"><button class="primary" id="begin">Let’s set up <span aria-hidden="true">↗</span></button><a class="text-link" href="http://localhost:8765/dashboard">Already started? Open the dashboard</a></div></div>
-      <figure class="hero-art"><span class="art-halo" aria-hidden="true"></span><img src="../artwork/thumbnails/goldfinch.png" alt="Our approved goldfinch painting: red face, golden wings and delicate ink details on cream paper"><figcaption>Listening becomes a painting.</figcaption></figure>
+      <figure class="hero-art"><span class="art-halo" aria-hidden="true"></span><span class="bird-business" aria-hidden="true"><svg viewBox="0 0 120 120"><path d="M60 3 71 12 85 8 91 21 106 23 107 38 118 48 111 61 116 75 103 83 100 99 84 100 73 114 60 108 46 116 36 103 20 101 18 85 5 76 10 62 2 49 14 39 14 24 29 21 35 8 49 12Z"/></svg><span>serious about<br><b>bird<br>business</b></span></span><img src="../artwork/thumbnails/goldfinch.png" alt="Our approved goldfinch painting: red face, golden wings and delicate ink details on cream paper"><figcaption class="director-note"><svg viewBox="0 0 100 76" aria-hidden="true"><path d="M91 69C25 85 3 46 49 16M33 17l17-4-4 18"/></svg><span>creative director<br><small>(doesn’t do cables)</small></span></figcaption></figure>
     </section>
-    <section class="system-strip" aria-label="How Songsketch connects"><div><span class="number">01</span><strong>The garden Pi</strong><small>Microphone → BirdNET → saved events</small></div><span class="connection" aria-hidden="true">······→</span><div><span class="number">02</span><strong>Your Mac</strong><small>Bird history · artwork · maintenance</small></div><span class="connection" aria-hidden="true">······→</span><div><span class="number">03</span><strong>The painting page</strong><small>A browser. A bird. Seventy-five seconds.</small></div></section>
+    <section class="system-strip" aria-label="How Songsketch connects">
+      <p class="crew-intro margin-scribble">The very small team.</p>
+      <div class="crew-member"><svg class="crew-drawing" viewBox="0 0 200 140" aria-hidden="true"><use href="#garden-pi"/></svg><span class="number">01</span><strong>The garden Pi</strong><small>Microphone → BirdNET → saved events</small><span class="crew-aside margin-scribble">all ears.</span></div>
+      <svg class="connection" viewBox="0 0 100 60" aria-hidden="true"><path d="M6 37C23 9 62 56 48 26S68 12 91 28M78 14l14 14-21 5"/></svg>
+      <div class="crew-member"><svg class="crew-drawing" viewBox="0 0 200 140" aria-hidden="true"><use href="#indoor-mac"/></svg><span class="number">02</span><strong>Your Mac</strong><small>Bird history · artwork · maintenance</small><span class="crew-aside margin-scribble">keeps the receipts.</span></div>
+      <svg class="connection" viewBox="0 0 100 60" aria-hidden="true"><path d="M5 31C33 56 58 4 91 28M75 17l18 11-18 13"/></svg>
+      <div class="crew-member"><svg class="crew-drawing" viewBox="0 0 200 140" aria-hidden="true"><use href="#painting-page"/></svg><span class="number">03</span><strong>The painting page</strong><small>A browser. A bird. Seventy-five seconds.</small><span class="crew-aside margin-scribble">makes an entrance.</span></div>
+    </section>
     <section class="setup" id="setup" aria-labelledby="setup-heading">
       <div class="section-heading"><div><p class="eyebrow">One perch at a time</p><h2 id="setup-heading">Your setup journey</h2></div><p id="progress-summary" aria-live="polite">0 of 8 steps checked</p></div>
       <nav class="perch-nav" id="step-nav" aria-label="Setup steps"></nav>
-      <div class="step-layout"><article id="step-content" class="step-content" aria-live="polite"></article><aside class="field-note"><p class="eyebrow">A note from the garden</p><div id="field-note"></div><div class="server-peek"><span class="status-dot unknown" id="server-dot"></span><div><strong id="server-label">Your Mac server</strong><p id="server-message">Open Start Songsketch.command to bring it to life.</p></div></div><a href="http://localhost:8765/setup" class="text-link">Open the running setup page ↗</a></aside></div>
+      <div class="step-layout"><article id="step-content" class="step-content" aria-live="polite"></article><aside class="field-note"><span class="note-tape" aria-hidden="true"></span><svg class="note-bird" viewBox="0 0 100 90" aria-hidden="true"><path d="M20 65C6 60 11 45 6 37L30 47C28 25 47 12 62 23 73 29 76 42 70 55 62 73 35 76 20 65Z" fill="#e4be67"/><path d="m71 34 19 7-17 5M30 45c6 7 15 8 21 3M35 71l-3 11m2-3-9 2m29-11 3 12m-1-4 9 2"/><circle cx="62" cy="34" r="2.4" fill="#172d35"/><path d="m44 19-3-11m9 11 4-10"/></svg><p class="eyebrow">Psst. A note from the garden.</p><div id="field-note"></div><div class="server-peek"><span class="status-dot unknown" id="server-dot"></span><div><strong id="server-label">Your Mac server</strong><p id="server-message">Open Start Songsketch.command to bring it to life.</p></div></div><a href="http://localhost:8765/setup" class="text-link">Open the running setup page ↗</a></aside></div>
       <div class="step-controls"><button class="secondary" id="previous">← Previous</button><label class="done-label"><input type="checkbox" id="step-done"><span>I’ve completed this step</span></label><button class="primary" id="next">Next step →</button></div>
       <p class="saving-note">Your checkmarks stay in this browser. They are reminders, not automatic proof that the hardware works.</p>
     </section>
     <section class="aftercare"><div><p class="eyebrow">Once everyone has found their perch</p><h2>The garden can be quiet.<br><em>The system should still be healthy.</em></h2><p>Songsketch keeps bird activity separate from microphone, Pi and server health. Reports travel to the server automatically; offline reports wait safely and can be downloaded. Routine recovery doesn’t need an AI key.</p></div><div class="aftercare-links"><a href="http://localhost:8765/dashboard"><span>Check on the garden</span><small>Health, history & helpful next steps ↗</small></a><a href="../artwork/style-guide.html"><span>Meet the visual language</span><small>The painting style & approved references ↗</small></a><a href="../docs/friend-start-here.md"><span>Keep a written copy</span><small>The short setup and recovery notes ↗</small></a></div></section>
     <section class="profiles"><p><strong>Today · MacBook MVP</strong><br>Keep the Mac awake. Verify your real Pi, microphone and detections before leaving it unattended.</p><p><strong>Later · Dedicated mini PC</strong><br>The same app and data, with a Linux deployment profile. Outdoor power, enclosure and sustained-operation checks are separate commissioning work. <a href="../docs/production.md">Read the migration guide ↗</a></p></section>
   </main>
-  <footer><span>Made for a garden that has things to say.</span><div><a id="repository-link" hidden rel="noopener" target="_blank">Project on GitHub ↗</a><a id="release-link" hidden rel="noopener" target="_blank">Download release ↗</a><button class="text-link" id="reset-progress">Reset my checkmarks</button></div></footer>
+  <footer><span>Made for a garden that has things to say.<small class="footer-scribble margin-scribble">The birds have declined to comment.</small></span><div><a id="repository-link" hidden rel="noopener" target="_blank">Project on GitHub ↗</a><a id="release-link" hidden rel="noopener" target="_blank">Download release ↗</a><button class="text-link" id="reset-progress">Reset my checkmarks</button></div></footer>
   <script src="project.js"></script><script src="assets/guide.js"></script>
 </body>
 </html>

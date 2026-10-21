@@ -28,3 +28,7 @@ Browser testing of the key-removal control stopped at its confirmation. No real 
 6. The selected mini PC, restored migration bundle, startup after power loss, sustained use and outdoor enclosure/power/environment.
 
 These are explicit acceptance steps in the guide. A checkmark in the guide is a saved human reminder, not a hardware result. A successful setup simulation is excluded from real bird counts.
+
+## 0.1.1 guide appearance update
+
+The guide’s original illustrations, paper notes and bird navigation were checked in the running local application at desktop and narrow mobile widths. No horizontal overflow, broken images or browser console errors were observed. Step navigation and checkmark updates work, and the technical instructions and application behaviour are unchanged. The three equipment illustrations are embedded SVG symbols so the standalone HTML does not rely on cross-file SVG references. JavaScript syntax and package preflight pass. This appearance-only update does not add new hardware or provider verification.
