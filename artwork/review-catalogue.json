@@ -1,0 +1,1180 @@
+{
+  "version": 1,
+  "purpose": "isolated_simulator_and_visual_review_only",
+  "production_catalogue": "catalogue.json",
+  "duration_seconds": 75,
+  "style_guide_url": "/artwork/style-guide.html",
+  "snapshot_id": "df025c63026d3281",
+  "warning": "New animations await fidelity review. approved:false remains false; never load this catalogue for normal garden playback.",
+  "birds": [
+    {
+      "id": "robin",
+      "common_name": "Robin",
+      "scientific_name": "Erithacus rubecula",
+      "aliases": [
+        "Robin",
+        "Erithacus rubecula",
+        "European Robin"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/robin.png",
+      "animation_url": "/artwork/animations/robin.html",
+      "animation_sha256": "4b58530dd25b7f5554bff4a91276ae86e03b38a513b81aa9a388e7f288344d4c",
+      "source_file": "source/garden-birds-approved-75s.html",
+      "source_sha256": "4f1f04b294e81adb236a1eef3ecc4875d2b0137b37b2ce046182d2ea394415ed"
+    },
+    {
+      "id": "goldfinch",
+      "common_name": "Goldfinch",
+      "scientific_name": "Carduelis carduelis",
+      "aliases": [
+        "Goldfinch",
+        "Carduelis carduelis",
+        "European Goldfinch"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/goldfinch.png",
+      "animation_url": "/artwork/animations/goldfinch.html",
+      "animation_sha256": "9388f778290fbb5c5da644aa73d0f4fe275b789581813f9f01fd2d46c434d259",
+      "source_file": "source/goldfinch-approved-75s.html",
+      "source_sha256": "2b35e8b557e1736b852de2d1cbb51970aa4875b84891594879d7be576c447c8b"
+    },
+    {
+      "id": "blue-tit",
+      "common_name": "Blue tit",
+      "scientific_name": "Cyanistes caeruleus",
+      "aliases": [
+        "Blue tit",
+        "Cyanistes caeruleus",
+        "Eurasian Blue Tit",
+        "Parus caeruleus"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/blue-tit.png",
+      "animation_url": "/artwork/animations/blue-tit.html",
+      "animation_sha256": "40364f888f8666179ee787947835a03f4e98155a3374b22ff6159dd55a52d200",
+      "source_file": "source/garden-birds-approved-75s.html",
+      "source_sha256": "4f1f04b294e81adb236a1eef3ecc4875d2b0137b37b2ce046182d2ea394415ed"
+    },
+    {
+      "id": "blackbird",
+      "common_name": "Blackbird",
+      "scientific_name": "Turdus merula",
+      "aliases": [
+        "Blackbird",
+        "Turdus merula",
+        "Common Blackbird",
+        "Eurasian Blackbird"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/blackbird.png",
+      "animation_url": "/artwork/animations/blackbird.html",
+      "animation_sha256": "dbf51cb534321c761fd902d37800ccbcdf8d98c5ec9c32eaeba0348bd2db32d7",
+      "source_file": "source/garden-birds-approved-75s.html",
+      "source_sha256": "4f1f04b294e81adb236a1eef3ecc4875d2b0137b37b2ce046182d2ea394415ed"
+    },
+    {
+      "id": "wren",
+      "common_name": "Wren",
+      "scientific_name": "Troglodytes troglodytes",
+      "aliases": [
+        "Wren",
+        "Troglodytes troglodytes",
+        "Eurasian Wren"
+      ],
+      "approved": true,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "approval_basis": "User authorised reuse of the five existing 75-second paintings for the MVP.",
+      "duration_seconds": 75,
+      "image_url": "/artwork/thumbnails/wren.png",
+      "animation_url": "/artwork/animations/wren.html",
+      "animation_sha256": "e7ca8880b40360d166552ecaafedb377ea858e03fe441d8430a4bb72f9545c2a",
+      "source_file": "source/garden-birds-approved-75s.html",
+      "source_sha256": "4f1f04b294e81adb236a1eef3ecc4875d2b0137b37b2ce046182d2ea394415ed"
+    },
+    {
+      "id": "house-sparrow",
+      "common_name": "House sparrow",
+      "scientific_name": "Passer domesticus",
+      "aliases": [
+        "House sparrow",
+        "Passer domesticus",
+        "Passer domesticus_House Sparrow"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"these all look great! do the next 10.\""
+      },
+      "image_url": "/artwork/animations/thumbnails/house-sparrow.webp",
+      "reference_url": "/artwork/references/final-art/house-sparrow.png",
+      "animation_url": "/artwork/animations/house-sparrow.html",
+      "animation_sha256": "2e1d342d5a164db4c6a429101cb886fd01fc46ea1fc66d49afc051a584e765e7",
+      "source_sha256": "e582b0ed896d6a943f4f2391584f715b0bb76fa1d89d55eae73dbd0ca385a9a1"
+    },
+    {
+      "id": "starling",
+      "common_name": "Starling",
+      "scientific_name": "Sturnus vulgaris",
+      "aliases": [
+        "Starling",
+        "Sturnus vulgaris",
+        "Sturnus vulgaris_Common Starling"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"these all look great! do the next 10.\""
+      },
+      "image_url": "/artwork/animations/thumbnails/starling.webp",
+      "reference_url": "/artwork/references/final-art/starling.png",
+      "animation_url": "/artwork/animations/starling.html",
+      "animation_sha256": "e43831eb25a7969e616cb932e18842611263ffe4b5bd0ef167f6dc3c805bc602",
+      "source_sha256": "f62f30bd87dda4e372663636a1e971e37362b086c3baf927442c16b63f7d22c6"
+    },
+    {
+      "id": "woodpigeon",
+      "common_name": "Woodpigeon",
+      "scientific_name": "Columba palumbus",
+      "aliases": [
+        "Woodpigeon",
+        "Columba palumbus",
+        "Columba palumbus_Common Woodpigeon"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"these all look great! do the next 10.\""
+      },
+      "image_url": "/artwork/animations/thumbnails/woodpigeon.webp",
+      "reference_url": "/artwork/references/final-art/woodpigeon.png",
+      "animation_url": "/artwork/animations/woodpigeon.html",
+      "animation_sha256": "4da678cdf5bbadc8e95b9ed74013c554e6e10bb374a6dc188d786e4c85463cfe",
+      "source_sha256": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f"
+    },
+    {
+      "id": "great-tit",
+      "common_name": "Great tit",
+      "scientific_name": "Parus major",
+      "aliases": [
+        "Great tit",
+        "Parus major",
+        "Parus major_Great Tit"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"these all look great! do the next 10.\""
+      },
+      "image_url": "/artwork/animations/thumbnails/great-tit.webp",
+      "reference_url": "/artwork/references/final-art/great-tit.png",
+      "animation_url": "/artwork/animations/great-tit.html",
+      "animation_sha256": "e235812ca3ae12fcf36bc58771a5c0237e3a17b57e45a4808ffa837b79e4d178",
+      "source_sha256": "16a17656ec9a3dcdb930053cf8638e2be4ef9051eba801a2364dcf24f778a6eb"
+    },
+    {
+      "id": "long-tailed-tit",
+      "common_name": "Long-tailed tit",
+      "scientific_name": "Aegithalos caudatus",
+      "aliases": [
+        "Long-tailed tit",
+        "Aegithalos caudatus",
+        "Aegithalos caudatus_Long-tailed Tit"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"these all look great! do the next 10.\""
+      },
+      "image_url": "/artwork/animations/thumbnails/long-tailed-tit.webp",
+      "reference_url": "/artwork/references/final-art/long-tailed-tit.png",
+      "animation_url": "/artwork/animations/long-tailed-tit.html",
+      "animation_sha256": "e4ccbe51e28a6303bb140d2b86f3aa1e4c157985f8b67c63d7dd81c81b32f3c3",
+      "source_sha256": "f10677b07e64dcf338948846c8d90eb8cc0cebec0339bd772b686e9ec3a7e136"
+    },
+    {
+      "id": "magpie",
+      "common_name": "Magpie",
+      "scientific_name": "Pica pica",
+      "aliases": [
+        "Magpie",
+        "Pica pica",
+        "Pica pica_Common Magpie"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/magpie.webp",
+      "reference_url": "/artwork/references/final-art/magpie.png",
+      "animation_url": "/artwork/animations/magpie.html",
+      "animation_sha256": "53dd8e362d3311e0f2a3ada21f0d4c962c0e58919fb9ebaf2f51804d8b6fcaa1",
+      "source_sha256": "3a2ebb660324036ae9cba252ec4121493fb3ff8131dc8ca713e27bd47b15c044"
+    },
+    {
+      "id": "chaffinch",
+      "common_name": "Chaffinch",
+      "scientific_name": "Fringilla coelebs",
+      "aliases": [
+        "Chaffinch",
+        "Fringilla coelebs",
+        "Fringilla coelebs_Common Chaffinch"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/chaffinch.webp",
+      "reference_url": "/artwork/references/final-art/chaffinch.png",
+      "animation_url": "/artwork/animations/chaffinch.html",
+      "animation_sha256": "5b3408a7efcc329fbb3965b36ebb2f3676cfc131e32265a91ff8e0b8eba4a2a3",
+      "source_sha256": "b3d29d3b4c757626eee7445910285a14562fdcdcc55ce1d6e53c8b9a68e022e6"
+    },
+    {
+      "id": "dunnock",
+      "common_name": "Dunnock",
+      "scientific_name": "Prunella modularis",
+      "aliases": [
+        "Dunnock",
+        "Prunella modularis",
+        "Prunella modularis_Dunnock"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/dunnock.webp",
+      "reference_url": "/artwork/references/final-art/dunnock.png",
+      "animation_url": "/artwork/animations/dunnock.html",
+      "animation_sha256": "ce443f9a1fa50194b8beaae7d5919ae86a63498af2d676adbe619787c5ed776d",
+      "source_sha256": "86ada5e05891bb814b55fd6eb9e190af1311a1fb41147ac7f084cba5e64dd236"
+    },
+    {
+      "id": "coal-tit",
+      "common_name": "Coal tit",
+      "scientific_name": "Periparus ater",
+      "aliases": [
+        "Coal tit",
+        "Periparus ater",
+        "Periparus ater_Coal Tit"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/coal-tit.webp",
+      "reference_url": "/artwork/references/final-art/coal-tit.png",
+      "animation_url": "/artwork/animations/coal-tit.html",
+      "animation_sha256": "7f1bdacd96f3914b6876c5bce7719740ab1332ecd77156b89bbffd558bc69e3f",
+      "source_sha256": "a96c3538f97553ea9c2a115e241d153ee3d0f375aeaa6fe98719f9dfa494902f"
+    },
+    {
+      "id": "jackdaw",
+      "common_name": "Jackdaw",
+      "scientific_name": "Corvus monedula",
+      "aliases": [
+        "Jackdaw",
+        "Corvus monedula",
+        "Corvus monedula_Eurasian Jackdaw",
+        "Coloeus monedula",
+        "Eurasian Jackdaw"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/jackdaw.webp",
+      "reference_url": "/artwork/references/final-art/jackdaw.png",
+      "animation_url": "/artwork/animations/jackdaw.html",
+      "animation_sha256": "410f33476594e418722ae4de857bca2c224d3e6b5dd1e3628262861091d5569e",
+      "source_sha256": "9e7845bf71a7a11c6e4520d923b0923343b25075e044d732aab85082b81298f7"
+    },
+    {
+      "id": "carrion-crow",
+      "common_name": "Carrion crow",
+      "scientific_name": "Corvus corone",
+      "aliases": [
+        "Carrion crow",
+        "Corvus corone",
+        "Corvus corone_Carrion Crow"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/carrion-crow.webp",
+      "reference_url": "/artwork/references/final-art/carrion-crow.png",
+      "animation_url": "/artwork/animations/carrion-crow.html",
+      "animation_sha256": "a93c90fb0aa4dd164eeb85a88d5d947fad8ff8cedbc2527f1c82c96f2f3257c3",
+      "source_sha256": "17c4a1c5e7fd1ec5a34add3dd40761f0570c79cb57765811ffb3a8f9b9613a92"
+    },
+    {
+      "id": "feral-pigeon",
+      "common_name": "Feral pigeon",
+      "scientific_name": "Columba livia",
+      "aliases": [
+        "Feral pigeon",
+        "Columba livia",
+        "Columba livia_Rock Dove"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/feral-pigeon.webp",
+      "reference_url": "/artwork/references/final-art/feral-pigeon.png",
+      "animation_url": "/artwork/animations/feral-pigeon.html",
+      "animation_sha256": "c3a53ca8dca3c300200dc0199d4d102923756d34e5a372992ef33976566cf8e8",
+      "source_sha256": "c6e31be3cb02c2a8df4e02d73a27a664d946c9b3e56ed59434a9fb4e9bf38f49"
+    },
+    {
+      "id": "collared-dove",
+      "common_name": "Collared dove",
+      "scientific_name": "Streptopelia decaocto",
+      "aliases": [
+        "Collared dove",
+        "Streptopelia decaocto",
+        "Streptopelia decaocto_Collared Dove"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/collared-dove.webp",
+      "reference_url": "/artwork/references/final-art/collared-dove.png",
+      "animation_url": "/artwork/animations/collared-dove.html",
+      "animation_sha256": "ba734a21e559aa14f8b411b6fc4f7847a11291a5ec74b59a0e2c1a7655be35ad",
+      "source_sha256": "f34afe7dbd8026893a3f4da5be3294e9de01e20a5507cc7d45476083cb172d70"
+    },
+    {
+      "id": "greenfinch",
+      "common_name": "Greenfinch",
+      "scientific_name": "Chloris chloris",
+      "aliases": [
+        "Greenfinch",
+        "Chloris chloris",
+        "Chloris chloris_European Greenfinch"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/greenfinch.webp",
+      "reference_url": "/artwork/references/final-art/greenfinch.png",
+      "animation_url": "/artwork/animations/greenfinch.html",
+      "animation_sha256": "503f0e3b3fe1ae77fc2753a1952caa96f6949bd805018be9fa400e687c23f30c",
+      "source_sha256": "231873ce79304dde15fae6dd78fb8979837ab2e4cf7f6f342c486ab7916bd28e"
+    },
+    {
+      "id": "rook",
+      "common_name": "Rook",
+      "scientific_name": "Corvus frugilegus",
+      "aliases": [
+        "Rook",
+        "Corvus frugilegus",
+        "Corvus frugilegus_Rook"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"ok now make the next 10\"",
+        "interpretation": "Accepted the preceding review group and authorised continuation to batches 4 and 5."
+      },
+      "image_url": "/artwork/animations/thumbnails/rook.webp",
+      "reference_url": "/artwork/references/final-art/rook.png",
+      "animation_url": "/artwork/animations/rook.html",
+      "animation_sha256": "18ae2bc6db030f24be97895af7a965a37665b6c10231f871442618d9deb441db",
+      "source_sha256": "d2e4574189669c08983d08664bc04ff744351716bf40a9cc6408521a2d8f3d4a"
+    },
+    {
+      "id": "nuthatch",
+      "common_name": "Nuthatch",
+      "scientific_name": "Sitta europaea",
+      "aliases": [
+        "Nuthatch",
+        "Sitta europaea",
+        "Sitta europaea_Eurasian Nuthatch"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/nuthatch.webp",
+      "reference_url": "/artwork/references/final-art/nuthatch.png",
+      "animation_url": "/artwork/animations/nuthatch.html",
+      "animation_sha256": "9ed6221752f88808516ce3a9fbfcee71e43de289f6b3fed51efc235324aea6e0",
+      "source_sha256": "e002ed4b3f067bcc627b31da7d0981b70a9ac72eba831d1ee092cc4f55dbb221"
+    },
+    {
+      "id": "herring-gull",
+      "common_name": "Herring gull",
+      "scientific_name": "Larus argentatus",
+      "aliases": [
+        "Herring gull",
+        "Larus argentatus",
+        "Larus argentatus_Herring Gull"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/herring-gull.webp",
+      "reference_url": "/artwork/references/final-art/herring-gull.png",
+      "animation_url": "/artwork/animations/herring-gull.html",
+      "animation_sha256": "ab6797fe6d3e9330393616b5d6aa6d43e1c1a788289fbb6fdc58c26a402a48cd",
+      "source_sha256": "34bc9d5c256e483e2b41d1c449cd92eeeffb9ef27be18cc19e4a50d124824c40"
+    },
+    {
+      "id": "common-gull",
+      "common_name": "Common gull",
+      "scientific_name": "Larus canus",
+      "aliases": [
+        "Common gull",
+        "Larus canus",
+        "Larus canus_Common Gull"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/common-gull.webp",
+      "reference_url": "/artwork/references/final-art/common-gull.png",
+      "animation_url": "/artwork/animations/common-gull.html",
+      "animation_sha256": "031b4cdf0177b034f40965be729b7cfac017748dbdb7d57d30e14b7c9df67a5a",
+      "source_sha256": "9566fc23d658e963f4b267498983ad4d4fb254ae158dd17f99b26044a52c0212"
+    },
+    {
+      "id": "siskin",
+      "common_name": "Siskin",
+      "scientific_name": "Spinus spinus",
+      "aliases": [
+        "Siskin",
+        "Spinus spinus",
+        "Spinus spinus_Eurasian Siskin"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/siskin.webp",
+      "reference_url": "/artwork/references/final-art/siskin.png",
+      "animation_url": "/artwork/animations/siskin.html",
+      "animation_sha256": "2f6ca65cb63da73540f7aba007cd57ebbce7a532e595915f35f19c9fced19e0d",
+      "source_sha256": "483fdd68ecf03fe0cc4fe8719e323e87b506ec83158a88f5f4b20975e77edd33"
+    },
+    {
+      "id": "great-spotted-woodpecker",
+      "common_name": "Great spotted woodpecker",
+      "scientific_name": "Dendrocopos major",
+      "aliases": [
+        "Great spotted woodpecker",
+        "Dendrocopos major",
+        "Dendrocopos major_Great Spotted Woodpecker"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/great-spotted-woodpecker.webp",
+      "reference_url": "/artwork/references/final-art/great-spotted-woodpecker.png",
+      "animation_url": "/artwork/animations/great-spotted-woodpecker.html",
+      "animation_sha256": "129892a255636bddba41966deb67224a676d4306d7c9f9cf254e114e1441a6dd",
+      "source_sha256": "23fc997057f339c7a49b1f6bd694aa561e448ff88d47769ff95b5da86f2d6304"
+    },
+    {
+      "id": "blackcap",
+      "common_name": "Blackcap",
+      "scientific_name": "Sylvia atricapilla",
+      "aliases": [
+        "Blackcap",
+        "Sylvia atricapilla",
+        "Sylvia atricapilla_Eurasian Blackcap"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/blackcap.webp",
+      "reference_url": "/artwork/references/final-art/blackcap.png",
+      "animation_url": "/artwork/animations/blackcap.html",
+      "animation_sha256": "b36e194d01b4607103d5cca9c60fa44c2874e8a7af0744b79dc1940c42e07c99",
+      "source_sha256": "a224f545205a76f36b2abc0771d5e77aeb78714b8ee116e95bed5d2306d9da10"
+    },
+    {
+      "id": "song-thrush",
+      "common_name": "Song thrush",
+      "scientific_name": "Turdus philomelos",
+      "aliases": [
+        "Song thrush",
+        "Turdus philomelos",
+        "Turdus philomelos_Song Thrush"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/song-thrush.webp",
+      "reference_url": "/artwork/references/final-art/song-thrush.png",
+      "animation_url": "/artwork/animations/song-thrush.html",
+      "animation_sha256": "35d447d64a7392d2c6fff1b48141f83f138314bdfa330be075fb92bf8d3c2a22",
+      "source_sha256": "2d7f2102bd22e57242153efcca87af95e4daac9f65ca6d90994f013ad4a8cc39"
+    },
+    {
+      "id": "pheasant",
+      "common_name": "Pheasant",
+      "scientific_name": "Phasianus colchicus",
+      "aliases": [
+        "Pheasant",
+        "Phasianus colchicus",
+        "Phasianus colchicus_Common Pheasant"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/pheasant.webp",
+      "reference_url": "/artwork/references/final-art/pheasant.png",
+      "animation_url": "/artwork/animations/pheasant.html",
+      "animation_sha256": "df76dfae5d8ab7ac0db23b51c370333b04c9ee29e87b7fd8646cb5137b9e5ad6",
+      "source_sha256": "2b240873696743266c4f44dce6bb290b7cf1a867b61fe8726379c6eddd143757"
+    },
+    {
+      "id": "goldcrest",
+      "common_name": "Goldcrest",
+      "scientific_name": "Regulus regulus",
+      "aliases": [
+        "Goldcrest",
+        "Regulus regulus",
+        "Regulus regulus_Goldcrest"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/goldcrest.webp",
+      "reference_url": "/artwork/references/final-art/goldcrest.png",
+      "animation_url": "/artwork/animations/goldcrest.html",
+      "animation_sha256": "5abaf9b97bcb69a3c53c8b8547a06141e9dd0a93627a2523e7f2ab5e6f97160b",
+      "source_sha256": "8293f58a8e7281e5a06ff7c388e8a43316c3c4ca6f664c0b59b08273c978505e"
+    },
+    {
+      "id": "pied-wagtail",
+      "common_name": "Pied wagtail",
+      "scientific_name": "Motacilla alba",
+      "aliases": [
+        "Pied wagtail",
+        "Motacilla alba",
+        "Motacilla alba_Pied Wagtail/White Wagtail"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "evidence": "User: \"now make all the rest and the owls\"",
+        "interpretation": "Accepted the preceding ten portraits and authorised the remaining ten of the 35, plus all five owls from the saved Dorset crossover list."
+      },
+      "image_url": "/artwork/animations/thumbnails/pied-wagtail.webp",
+      "reference_url": "/artwork/references/final-art/pied-wagtail.png",
+      "animation_url": "/artwork/animations/pied-wagtail.html",
+      "animation_sha256": "9067ae029c7e1317991c51a1a9db01579da8f54a2a2bcfe8c9d69afc4b1010ef",
+      "source_sha256": "9cf017308d189f6d77d2997f82adf0c0a71b964cb71ca6e9ac28bb601d9fed80"
+    },
+    {
+      "id": "jay",
+      "common_name": "Jay",
+      "scientific_name": "Garrulus glandarius",
+      "aliases": [
+        "Jay",
+        "Garrulus glandarius",
+        "Garrulus glandarius_Eurasian Jay"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/jay.webp",
+      "reference_url": "/artwork/references/final-art/jay.png",
+      "animation_url": "/artwork/animations/jay.html",
+      "animation_sha256": "8db31a34443c7f632cbd90a4b3775d202adaf9e5ee1781f29ddb683c82f21451",
+      "source_sha256": "26ab5953f1a21d42c30c43171f08f414fb830818a08446c38d2ec4e71ee52b76"
+    },
+    {
+      "id": "redwing",
+      "common_name": "Redwing",
+      "scientific_name": "Turdus iliacus",
+      "aliases": [
+        "Redwing",
+        "Turdus iliacus",
+        "Turdus iliacus_Redwing"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/redwing.webp",
+      "reference_url": "/artwork/references/final-art/redwing.png",
+      "animation_url": "/artwork/animations/redwing.html",
+      "animation_sha256": "e82242487e87d5f40bb9903e7678057f90f55306c467189204a379ff4dcc5357",
+      "source_sha256": "27a333456354c685fa35287f1bca92ae0a39d25fc168876b4f3f52ffa65168f0"
+    },
+    {
+      "id": "bullfinch",
+      "common_name": "Bullfinch",
+      "scientific_name": "Pyrrhula pyrrhula",
+      "aliases": [
+        "Bullfinch",
+        "Pyrrhula pyrrhula",
+        "Pyrrhula pyrrhula_Eurasian Bullfinch"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/bullfinch.webp",
+      "reference_url": "/artwork/references/final-art/bullfinch.png",
+      "animation_url": "/artwork/animations/bullfinch.html",
+      "animation_sha256": "3392d2ae4bb5fb4054a45e7cdaeff39c5f665235db05a070c817882024ec02b4",
+      "source_sha256": "4278b055ca4e348a371ddf674e3e3841ec282a9f8c606665684ade031228c2a9"
+    },
+    {
+      "id": "sparrowhawk",
+      "common_name": "Sparrowhawk",
+      "scientific_name": "Accipiter nisus",
+      "aliases": [
+        "Sparrowhawk",
+        "Accipiter nisus",
+        "Accipiter nisus_Eurasian Sparrowhawk"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/sparrowhawk.webp",
+      "reference_url": "/artwork/references/final-art/sparrowhawk.png",
+      "animation_url": "/artwork/animations/sparrowhawk.html",
+      "animation_sha256": "f2b3661017d39637a6df4093c22cc491085669e3400b50b9549ded3e1731b698",
+      "source_sha256": "aa49f534ba231e7e0ff2e8f443ea9f566422faa03663972b56b80820ae3469c0"
+    },
+    {
+      "id": "fieldfare",
+      "common_name": "Fieldfare",
+      "scientific_name": "Turdus pilaris",
+      "aliases": [
+        "Fieldfare",
+        "Turdus pilaris",
+        "Turdus pilaris_Fieldfare"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/fieldfare.webp",
+      "reference_url": "/artwork/references/final-art/fieldfare.png",
+      "animation_url": "/artwork/animations/fieldfare.html",
+      "animation_sha256": "fb38d2bbc2f677b73d9be555f4819afe23f8764523248cf9bf0d7eabd33fa8d1",
+      "source_sha256": "492ad534cf7870c249470b3d1590e1eecf5ca671d80be7db752b86938b585e19"
+    },
+    {
+      "id": "buzzard",
+      "common_name": "Buzzard",
+      "scientific_name": "Buteo buteo",
+      "aliases": [
+        "Buzzard",
+        "Buteo buteo",
+        "Buteo buteo_Common Buzzard"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/buzzard.webp",
+      "reference_url": "/artwork/references/final-art/buzzard.png",
+      "animation_url": "/artwork/animations/buzzard.html",
+      "animation_sha256": "21e109ac47b280aea823e712b72e321c5e947f766be6262112f523eeec209a9f",
+      "source_sha256": "98f2e8bd702d005368d32d61f9b544fafd0740fdb1b6cf227be1a2cd6c75e1a6"
+    },
+    {
+      "id": "mallard",
+      "common_name": "Mallard",
+      "scientific_name": "Anas platyrhynchos",
+      "aliases": [
+        "Mallard",
+        "Anas platyrhynchos",
+        "Anas platyrhynchos_Mallard"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/mallard.webp",
+      "reference_url": "/artwork/references/final-art/mallard.png",
+      "animation_url": "/artwork/animations/mallard.html",
+      "animation_sha256": "cc06ee6f2bccba6e6dd7586b4a494879e3f693d1851ad058d3ec70f5e5d749f3",
+      "source_sha256": "40a8922d9c7114e6991f7f8c79998152e1212cda0764da45936257ec05c1cb38"
+    },
+    {
+      "id": "black-headed-gull",
+      "common_name": "Black-headed gull",
+      "scientific_name": "Chroicocephalus ridibundus",
+      "aliases": [
+        "Black-headed gull",
+        "Chroicocephalus ridibundus",
+        "Chroicocephalus ridibundus_Black-headed Gull"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/black-headed-gull.webp",
+      "reference_url": "/artwork/references/final-art/black-headed-gull.png",
+      "animation_url": "/artwork/animations/black-headed-gull.html",
+      "animation_sha256": "3b0f5d989d3236ac56c0c0295be8dc2623c8fad586d6c80e3248c3d858c0ff14",
+      "source_sha256": "b313c7f44a83da45710a207dbccf58785c331edf6ed78380ca186569d572ccf1"
+    },
+    {
+      "id": "treecreeper",
+      "common_name": "Treecreeper",
+      "scientific_name": "Certhia familiaris",
+      "aliases": [
+        "Treecreeper",
+        "Certhia familiaris",
+        "Certhia familiaris_Eurasian Treecreeper"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/treecreeper.webp",
+      "reference_url": "/artwork/references/final-art/treecreeper.png",
+      "animation_url": "/artwork/animations/treecreeper.html",
+      "animation_sha256": "f3b6b8f426f74430178e17cce1bd46a0e8cdbd310aa1bd733c63530c11c247e6",
+      "source_sha256": "dbf73dec1ea074e33cb3190aa7e4d4c1b38d4f600e638ea3f0d721f1f8c0e871"
+    },
+    {
+      "id": "green-woodpecker",
+      "common_name": "Green woodpecker",
+      "scientific_name": "Picus viridis",
+      "aliases": [
+        "Green woodpecker",
+        "Picus viridis",
+        "Picus viridis_Eurasian Green Woodpecker"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/green-woodpecker.webp",
+      "reference_url": "/artwork/references/final-art/green-woodpecker.png",
+      "animation_url": "/artwork/animations/green-woodpecker.html",
+      "animation_sha256": "e6c24acb68876ba54aeb26d5dcc2663371aebf64ff7246878a1bb3860b69adbe",
+      "source_sha256": "83d9a0e432b43fb3ecaf89c0e124f8e151477c101683230427747522495532aa"
+    },
+    {
+      "id": "tawny-owl",
+      "common_name": "Tawny owl",
+      "scientific_name": "Strix aluco",
+      "aliases": [
+        "Tawny owl",
+        "Strix aluco",
+        "Strix aluco_Tawny Owl"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/tawny-owl.webp",
+      "reference_url": "/artwork/references/final-art/tawny-owl.png",
+      "animation_url": "/artwork/animations/tawny-owl.html",
+      "animation_sha256": "d4c928c494e9b7b12e5b6691d8785dfdb33c5224413f0a85d48522c031f4a860",
+      "source_sha256": "ea336a640353b476b71cc945801929dca779240ec86740efd21ab4c642a03715"
+    },
+    {
+      "id": "barn-owl",
+      "common_name": "Barn owl",
+      "scientific_name": "Tyto alba",
+      "aliases": [
+        "Barn owl",
+        "Tyto alba",
+        "Tyto alba_Barn Owl"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/barn-owl.webp",
+      "reference_url": "/artwork/references/final-art/barn-owl.png",
+      "animation_url": "/artwork/animations/barn-owl.html",
+      "animation_sha256": "fb08ac46655f41422db1b26ecd1cde99488674fff75f83e0ef910a2fd1871ed4",
+      "source_sha256": "4cb95a2c482e987be3b2d2b4e2f7d32df4643b0df0908f2203d6e3ccd0a1c1cd"
+    },
+    {
+      "id": "little-owl",
+      "common_name": "Little owl",
+      "scientific_name": "Athene noctua",
+      "aliases": [
+        "Little owl",
+        "Athene noctua",
+        "Athene noctua_Little Owl"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/little-owl.webp",
+      "reference_url": "/artwork/references/final-art/little-owl.png",
+      "animation_url": "/artwork/animations/little-owl.html",
+      "animation_sha256": "2650220ad2524b526177c2c1b001d02915b13d2e12fcb6bb7b7f5a6a297efe34",
+      "source_sha256": "2d76a43366b85b413cd33621c52a901db2be850d3aafbb947fb6594488849ec7"
+    },
+    {
+      "id": "short-eared-owl",
+      "common_name": "Short-eared owl",
+      "scientific_name": "Asio flammeus",
+      "aliases": [
+        "Short-eared owl",
+        "Asio flammeus",
+        "Asio flammeus_Short-eared Owl"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/short-eared-owl.webp",
+      "reference_url": "/artwork/references/final-art/short-eared-owl.png",
+      "animation_url": "/artwork/animations/short-eared-owl.html",
+      "animation_sha256": "8e2f693b601d2e172c5be25df96d220dcf9d29a2d10005779553abafb4e00150",
+      "source_sha256": "a8dd9a667631e65a44528fc0d53ddd5dbc3082232492e42fa1c990b13b26fb92"
+    },
+    {
+      "id": "long-eared-owl",
+      "common_name": "Long-eared owl",
+      "scientific_name": "Asio otus",
+      "aliases": [
+        "Long-eared owl",
+        "Asio otus",
+        "Asio otus_Long-eared Owl"
+      ],
+      "approved": false,
+      "artwork_approved": true,
+      "animation_ready": true,
+      "production_eligible": false,
+      "review_status": "completed_awaiting_review",
+      "duration_seconds": 75,
+      "approval_basis": {
+        "date": "2026-10-21",
+        "source_thread_id": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+        "user_message_id": "01a15f0a-7838-7b80-a725-32665cae6787",
+        "user_text": "now we need to generate the animations for all the birds.",
+        "interpretation": "Accepted for animation by the later request to animate the collection. The earlier source manifest still says awaiting_user_approval; this is not an explicit portrait-by-portrait approval."
+      },
+      "image_url": "/artwork/animations/thumbnails/long-eared-owl.webp",
+      "reference_url": "/artwork/references/final-art/long-eared-owl.png",
+      "animation_url": "/artwork/animations/long-eared-owl.html",
+      "animation_sha256": "f368c01ccf3c23ac19257f98b7ebaf2e9b23c8ab26d1e128a01ae281342eaedc",
+      "source_sha256": "762582eaa85b818d3e7ba5c5813a2dc3d7f1809f00faf33dfafca9e06697c7a4"
+    }
+  ]
+}

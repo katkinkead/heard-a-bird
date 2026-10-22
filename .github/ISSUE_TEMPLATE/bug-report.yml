@@ -1,0 +1,58 @@
+name: Something went a little bird-shaped
+description: Capture what happened, what you expected, and the evidence needed to reproduce it.
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where did it happen?
+      options:
+        - Simulated garden
+        - MacBook MVP with real Pi
+        - Production installation
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Songsketch version or commit
+      description: The simulation report includes this.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Include the scenario, seed and run ID from the simulation report, or the actions taken on the real installation.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      description: Include the affected bird, animation time, error code or component when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Attach the exported simulation report or a redacted diagnostic report, plus a screenshot or recording for visual problems. Review files before attaching; never include passwords or API keys.
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Can you reproduce it?
+      options:
+        - Every time
+        - Sometimes
+        - Once so far
+  - type: textarea
+    id: impact
+    attributes:
+      label: What does it prevent you from doing?

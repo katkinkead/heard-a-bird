@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-22",
+  "snapshot_id": "df025c63026d3281",
+  "scope": "Manual local browser verification through the Songsketch HTTP server; not all-species approval or target-hardware certification.",
+  "method": "Visible painting controls and DOM diagnostics, inspected through the app browser tool.",
+  "birds": [
+    {
+      "id": "long-eared-owl",
+      "prepared_cache": false,
+      "preparation_seconds": 9.49,
+      "stroke_count": 184056,
+      "checkpoints_visually_rendered_seconds": [40, 75],
+      "final_completed_marks": 184056,
+      "final_frame": "Detailed owl rendered at 75 seconds.",
+      "seeking_limit": "Jumping directly to 75 seconds caused a noticeable main-thread pause before completion. This is not a real-time frame-rate measurement."
+    }
+  ],
+  "production_catalogue_changed": false,
+  "clock_limit": "The review gallery waits for preparation and starts at zero. The connected display keeps its existing server-elapsed clock: a cold review candidate in the isolated simulator can skip the initial portion while marks are prepared. Use the gallery for a full 75-second progression review.",
+  "unverified": ["Full real-time playback of all forty imported wrappers", "All final frames visually accepted", "Performance on the eventual display hardware", "Shared-branch composition"]
+}

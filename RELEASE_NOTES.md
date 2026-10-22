@@ -1,4 +1,16 @@
-# Songsketch 0.3.0 — the little team, all together
+# Songsketch 0.4.0 — the practice garden
+
+The guide now says **“a few bits. a lot of birds.”** Once the setup journey begins, the welcome panel stays dismissed, including after a reload. The parts checklist remains available during setup.
+
+Open **Open simulated garden.command** to rehearse without a Pi. Twelve scenarios exercise detections, message retries, missing artwork, lost connections, microphone/inference faults, power/heat warnings and recovery. Expected/actual checks, a local notification inbox and downloadable reports make problems reproducible. The simulator has separate history and credentials, cannot send email or call AI/SSH, and labels its display and dashboard as simulated.
+
+The fork's forty additional completed animations are packaged as a separate review collection alongside the five approved originals. **Review all 45 animations** provides checkpoints and accepted-art comparisons. The new forty retain their pending fidelity-review status; the connected garden still uses the original five. No active fork work was changed. Local preparation precedes full gallery playback; live replay still follows the server clock and may join partway through after a cold load.
+
+Bug reports distinguish automated behaviour checks from human visual review. Physical microphone quality, BirdNET recognition, actual mail delivery and hardware recovery remain installation checks. See `docs/verification.md` for the exact tests and browser evidence.
+
+**Verification:** 215 application tests, eight artwork-sync tests and six JavaScript report tests pass locally. Package preflight verifies 220 asset hashes. Desktop/mobile guide and simulator checks, the local notification inbox, report persistence and offline report download were exercised in the browser. The forty review animations are not declared visually approved by these checks.
+
+## Previous release: 0.3.0 — the little team, all together
 
 The guide now starts with the MVP shopping list, then moves through Pi preparation, Pi details, connecting a local AI, and live installation checks. The assistant fetches this private GitHub repository and operates its existing setup tools. On first use, the guide downloads an executable-preserving ZIP launcher; subsequent connections open the installed assistant in Terminal. Normal sign-in, SSH identity checks and permissions remain in place.
 

@@ -63,9 +63,27 @@ def verify_package(source=None):
             page = safe_path(ART, bird["animation_path"])
             if digest(page.read_bytes()) != bird["animation_sha256"]:
                 errors.append("Completed animation changed: " + bird["id"])
+    review_path = ART / "animation-review-snapshot.json"
+    review_count = 0
+    review_files_checked = 0
+    if review_path.is_file():
+        _, review = read_json(review_path)
+        review_count = review["new_review_count"]
+        review_files_checked = len(review["files"])
+        for row in review["files"]:
+            path = safe_path(ART, row["path"])
+            if not path.is_file() or digest(path.read_bytes()) != row["sha256"]:
+                errors.append("Review animation dependency missing or changed: " + row["path"])
+        if source is not None:
+            for row in review["source_files"]:
+                path = safe_path(source / "animations", row["path"])
+                if not path.is_file() or digest(path.read_bytes()) != row["sha256"]:
+                    errors.append("Review source changed since frozen snapshot: " + row["path"])
     return {"ok": not errors, "reference_species": len(registry["birds"]),
             "completed_animations": sum(b["animation_ready"] for b in registry["birds"]),
-            "files_checked": len(snapshot["files"]), "errors": errors,
+            "completed_review_animations": review_count,
+            "files_checked": len(snapshot["files"]) + review_files_checked,
+            "review_dependencies_checked": review_files_checked, "errors": errors,
             "live_catalogue_modified": False}
 
 

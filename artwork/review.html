@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Songsketch · Painting review</title>
+<link rel="stylesheet" href="review.css"></head><body><main>
+<header><div><a href="index.html">The bird library</a><h1>A painting, in its own time.</h1><p>Five approved animations and forty completed studies awaiting a closer look at their final clarity.</p></div><a href="style-guide.html">Visual language ↗</a></header>
+<p class="note">Review collection only. The connected garden keeps its five approved paintings. These controls do not create detections, change approval or start shared-branch composition.</p>
+<div class="toolbar"><label for="bird">Bird</label><select id="bird"></select><button id="previous">Previous</button><button id="next">Next</button><span id="status" role="status">Loading collection…</span></div>
+<section id="comparison" class="comparison"><figure><iframe id="painting" title="Bird painting animation" sandbox="allow-scripts allow-same-origin"></iframe><figcaption>Painting progression <span id="clock">0 / 75 s</span></figcaption></figure><figure id="reference-panel" hidden><img id="reference" alt="Accepted final-art reference"><figcaption>Accepted finished-art reference · <a id="reference-link">open full size</a></figcaption></figure></section>
+<div class="toolbar controls"><button id="play" disabled>Play</button><input id="time" type="range" min="0" max="75" value="0" step="0.1" aria-label="Painting time" disabled><button id="compare" disabled>Compare the finished painting</button></div>
+<nav id="checkpoints" aria-label="Painting checkpoints"><button data-time="0">0 s</button><button data-time="10">10 s</button><button data-time="20">20 s</button><button data-time="30">30 s</button><button data-time="40">40 s</button><button data-time="50">50 s</button><button data-time="60">60 s</button><button data-time="65">65 s</button><button data-time="70">70 s</button><button data-time="75">75 s</button></nav>
+<details><summary>Local preparation and completion</summary><output id="diagnostics">Choose a bird to inspect.</output></details>
+<p class="small">The painting builds authored marks locally, with no AI call. Its source artwork, anatomy and timing are fixed in the imported snapshot. Browser colour and antialiasing can vary; a completed mark count does not prove visual likeness.</p>
+</main><script src="review.js"></script></body></html>

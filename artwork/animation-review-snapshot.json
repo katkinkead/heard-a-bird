@@ -1,0 +1,1871 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "df025c63026d3281",
+  "source_thread": "01a1540f-e061-7172-92cc-a50dd9c423ff",
+  "source_completed_at": "2026-10-21T17:10:21.763445+00:00",
+  "imported_on": "2026-10-22",
+  "state": "completed_awaiting_fidelity_review",
+  "production_promoted": false,
+  "completed_source_count": 45,
+  "original_live_preserved": [
+    "blackbird",
+    "blue-tit",
+    "goldfinch",
+    "robin",
+    "wren"
+  ],
+  "new_review_count": 40,
+  "source_build_record": "provenance/animation-review/df025c63026d3281/build-record.source.json",
+  "review_context": {
+    "completed_message_id": "msg_0d99fc4e87d7286b016ad8f2218898819189f4f16fa2556e90",
+    "later_user_message_id": "01a16222-ca4a-7ba1-bfe2-77f26bb7cadf",
+    "later_feedback": "Final result of some birds is off from approved artwork; fragmentation and lack of clarity.",
+    "shared_branch": "Not imported. Separate composition work is active."
+  },
+  "adaptations": [
+    "Unmodified shared painting renderer and builders.",
+    "Duplicate embedded PNG bytes replaced by exact existing local PNG paths.",
+    "Absolute development sourceFile replaced by portable reference metadata.",
+    "Optional scoreFile omitted; same authored marks are compiled locally by the source renderer.",
+    "Same-origin player control wrapper added; no illustrative status marks added."
+  ],
+  "validation_limit": "Source evidence establishes cache/generated-renderer equivalence, not visual identity to the approved raster. Local wrapper browser evidence is separate.",
+  "profiles": [
+    {
+      "id": "robin",
+      "profile_sha256": "e27ed0de68a9f49882730c7ad3f8b61056abd14016a87a525e854c6595d1c5f3",
+      "source_sha256": "609a65b4a4941dfb65588db0bd417e6624646a688e2051113aeb32216997210e",
+      "score_key": "776b6f9f9308e3da45abe6054578cc392b65985adccb1a0cd3b3906909b51d8c",
+      "original_retained": true
+    },
+    {
+      "id": "blackbird",
+      "profile_sha256": "dd7d8c350020cd0342fcca9823d051e839ffa42e5dc74b06ba3ee4f4ad577264",
+      "source_sha256": "7b0dab684c9c7932fdc78b1007f22b81e7e51d36c66ab0e817b503969d79962e",
+      "score_key": "074b940eeaa76d0c3a347cc213dcd877365281e0c4e0942917e2ae5696727b1d",
+      "original_retained": true
+    },
+    {
+      "id": "blue-tit",
+      "profile_sha256": "db59f8bb21ab1a5c3e4f1e775c48164fb1a49ecbd7cfd176898cebef337b94fb",
+      "source_sha256": "7b0dab684c9c7932fdc78b1007f22b81e7e51d36c66ab0e817b503969d79962e",
+      "score_key": "0a0c783cfea2fade7e86dca3202bfd67ad27c1d950fdc814219cdc26a1fac6fc",
+      "original_retained": true
+    },
+    {
+      "id": "wren",
+      "profile_sha256": "8efeae5822bfe37359fb7344ce7ffe5fab68ffaafc1d2937dba365d4887d3acb",
+      "source_sha256": "7b0dab684c9c7932fdc78b1007f22b81e7e51d36c66ab0e817b503969d79962e",
+      "score_key": "999b7a370811b4ae0e29f70230ab06ca8deced959a759a4966c32cbc61698dad",
+      "original_retained": true
+    },
+    {
+      "id": "goldfinch",
+      "profile_sha256": "5c89af60032d4a6891ca435d4834b884160319d90a4adbdf8e2bb1c409294359",
+      "source_sha256": "485dafdde7b88a3e29c067d235b4bca65b606d19de6be612827dd003bb977533",
+      "score_key": "55a9eb51aed84543865bfb4af86126d4c3d307a86d9d9c65eec6d32c04b66497",
+      "original_retained": true
+    },
+    {
+      "id": "house-sparrow",
+      "profile_sha256": "9898ec7aa906a99362bb100e00e33a90a4f7996e3a72c2bbe619e6e928cd13d7",
+      "source_sha256": "e582b0ed896d6a943f4f2391584f715b0bb76fa1d89d55eae73dbd0ca385a9a1",
+      "score_key": "e2475481aa268e305adcf6410f06a08ab59574d5814beb77759af52259e6f05d",
+      "original_retained": false
+    },
+    {
+      "id": "starling",
+      "profile_sha256": "5e3d3728c6b3b0c304868ba3c589ad944dd062ed087d4e8966b35a1a052f18ea",
+      "source_sha256": "f62f30bd87dda4e372663636a1e971e37362b086c3baf927442c16b63f7d22c6",
+      "score_key": "87ce688827df8961b412357196a2997f7fc8174442ce1b873e84bc8b33d507be",
+      "original_retained": false
+    },
+    {
+      "id": "woodpigeon",
+      "profile_sha256": "d2364560df3d3d29ca977e48ad8ff12aa061d08c14e93fcfc8af2fc908689ea9",
+      "source_sha256": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f",
+      "score_key": "26a37d26522f6821ffe376f96f9f7026cfb7ac9da3b74745d7e07b4804f89947",
+      "original_retained": false
+    },
+    {
+      "id": "great-tit",
+      "profile_sha256": "0d38ba0f409292088dc7c0237014effe18b227a9c4f71dc9da289c4b444935bc",
+      "source_sha256": "16a17656ec9a3dcdb930053cf8638e2be4ef9051eba801a2364dcf24f778a6eb",
+      "score_key": "de554453eac4daa609bbe5220f89842f034e2724e9ca550c46bf79dde526afdc",
+      "original_retained": false
+    },
+    {
+      "id": "long-tailed-tit",
+      "profile_sha256": "1165ae684f7f825fff97537afa09ca7f21dfc542971f74c4668c45f2058ed58e",
+      "source_sha256": "f10677b07e64dcf338948846c8d90eb8cc0cebec0339bd772b686e9ec3a7e136",
+      "score_key": "1b87f1f03f5ec54d89f2733e38c850f8df708ccc06bd732e4449728b4b992dd8",
+      "original_retained": false
+    },
+    {
+      "id": "magpie",
+      "profile_sha256": "63742161fa30a298d55a3b4250e514e83388860ad187f8f571f52eb28719fd49",
+      "source_sha256": "3a2ebb660324036ae9cba252ec4121493fb3ff8131dc8ca713e27bd47b15c044",
+      "score_key": "117013d0b7dc4d9178a2daa1ede25a03885404130e59b740d37fa69be6c1f3cf",
+      "original_retained": false
+    },
+    {
+      "id": "chaffinch",
+      "profile_sha256": "5d9ccf94914efb7e61f9a7acb2fc0bfee121ce087e3b4bb7ef18f04a22b6881a",
+      "source_sha256": "b3d29d3b4c757626eee7445910285a14562fdcdcc55ce1d6e53c8b9a68e022e6",
+      "score_key": "14259f8d7acce637b0e6745187028769c87cd487bf6a330b31e63fd6f3a76acf",
+      "original_retained": false
+    },
+    {
+      "id": "dunnock",
+      "profile_sha256": "703ce4c84ea55fc5eefa162c7e7904e8863b3415a45895834f1a4d8c5dd9e14a",
+      "source_sha256": "86ada5e05891bb814b55fd6eb9e190af1311a1fb41147ac7f084cba5e64dd236",
+      "score_key": "a8ed02f2ecf4e198618e6725ed8e029aa91c580957d85532ce20eb08c118ce5e",
+      "original_retained": false
+    },
+    {
+      "id": "coal-tit",
+      "profile_sha256": "f84e9a14de42d1208d5575980e2717fd78dbde9d25f11e570e41902254770622",
+      "source_sha256": "a96c3538f97553ea9c2a115e241d153ee3d0f375aeaa6fe98719f9dfa494902f",
+      "score_key": "e591d0214bad9f619ccb19a6eab11380a6fc4b7e6159ec48dea2712702121ca6",
+      "original_retained": false
+    },
+    {
+      "id": "jackdaw",
+      "profile_sha256": "90e89cf646edeb6ad866d15225669e86e755756aa1e9adfda6e102716f4b37e0",
+      "source_sha256": "9e7845bf71a7a11c6e4520d923b0923343b25075e044d732aab85082b81298f7",
+      "score_key": "cc33bfecc83a0768ba8cbabfa3065ff01ef69eb6ca17e18b7dc7b3a6f27810e9",
+      "original_retained": false
+    },
+    {
+      "id": "carrion-crow",
+      "profile_sha256": "a3d5f8ceb31a2b5e1fc943610f818dee4ea7b2ebd6d863caf014d91f9d631fef",
+      "source_sha256": "17c4a1c5e7fd1ec5a34add3dd40761f0570c79cb57765811ffb3a8f9b9613a92",
+      "score_key": "62becba142d451540fd6e7bb032d184a9998c8dad8abd680729bde3c91b294ae",
+      "original_retained": false
+    },
+    {
+      "id": "feral-pigeon",
+      "profile_sha256": "098306164d159668a695c502650860984f0169270864a2d9cd4a83deb82cca18",
+      "source_sha256": "c6e31be3cb02c2a8df4e02d73a27a664d946c9b3e56ed59434a9fb4e9bf38f49",
+      "score_key": "07c5397b2242cb50587daa653c908a1f1cbe4578c6670529ee9329349cc4bf6c",
+      "original_retained": false
+    },
+    {
+      "id": "collared-dove",
+      "profile_sha256": "6c91389460e85d35fac7efda08066dbc771633a43cdc28076679d6dc820f00a2",
+      "source_sha256": "f34afe7dbd8026893a3f4da5be3294e9de01e20a5507cc7d45476083cb172d70",
+      "score_key": "57f506f92650512a8b891eb0d6b71b5413c32543277164533c7a402c58669e7f",
+      "original_retained": false
+    },
+    {
+      "id": "greenfinch",
+      "profile_sha256": "1fa7cd0da67231881667f6c68dc10ade9ff1e04511801b2f31d5e1ee9e1f0ce9",
+      "source_sha256": "231873ce79304dde15fae6dd78fb8979837ab2e4cf7f6f342c486ab7916bd28e",
+      "score_key": "50593fc233843a03aacac8d25c123b588b7978d268c18f6597f4a85d87b8b443",
+      "original_retained": false
+    },
+    {
+      "id": "rook",
+      "profile_sha256": "12850f5b257f7d6616fbda4f70a100505b98a828ab028c511489d84f1ef4629d",
+      "source_sha256": "d2e4574189669c08983d08664bc04ff744351716bf40a9cc6408521a2d8f3d4a",
+      "score_key": "65333aa8d49099a05f732049631912043c09c05a167661f6894678c6a3a30b7d",
+      "original_retained": false
+    },
+    {
+      "id": "nuthatch",
+      "profile_sha256": "5f23e78d9c9bd6c0c30d1264825fe1bbcca4b65d56bf27b147d7b4f641e6ecd8",
+      "source_sha256": "e002ed4b3f067bcc627b31da7d0981b70a9ac72eba831d1ee092cc4f55dbb221",
+      "score_key": "310b4105d92a046b23ea68624c1d64d62c3fb94a4d10c738d38ff5cb91d382a7",
+      "original_retained": false
+    },
+    {
+      "id": "herring-gull",
+      "profile_sha256": "b80c3db352a8ae008e90e1947ead0400f896eaf8c56e2b63aabc621b9aea5996",
+      "source_sha256": "34bc9d5c256e483e2b41d1c449cd92eeeffb9ef27be18cc19e4a50d124824c40",
+      "score_key": "8fde7df6f607dd00bee9f4772e6c4a6e16f2b342d996c93f78a73099d67c6a6a",
+      "original_retained": false
+    },
+    {
+      "id": "common-gull",
+      "profile_sha256": "c8400e8faa74b3a8c2a84a184ef90926462e5e2a72781d32e0f51d89204ffb55",
+      "source_sha256": "9566fc23d658e963f4b267498983ad4d4fb254ae158dd17f99b26044a52c0212",
+      "score_key": "21816f0c6e2ba85673b9d3cad0c7457889aad93692d28dbd17057133471a2350",
+      "original_retained": false
+    },
+    {
+      "id": "siskin",
+      "profile_sha256": "2de5cb4461fa32d8a9288e26e575be470c2a0b28936ecdefac9e80d728d78a74",
+      "source_sha256": "483fdd68ecf03fe0cc4fe8719e323e87b506ec83158a88f5f4b20975e77edd33",
+      "score_key": "ad5ab31114d36c61dc35f38177998cb9e4f968394668829382491441fa098010",
+      "original_retained": false
+    },
+    {
+      "id": "great-spotted-woodpecker",
+      "profile_sha256": "c36a9c16596ea007af2cbc38bf8f48efbfa305e6534c3c853f32ba2560fd6db3",
+      "source_sha256": "23fc997057f339c7a49b1f6bd694aa561e448ff88d47769ff95b5da86f2d6304",
+      "score_key": "fdbec65304baaba0f2446f357392615042d49bc09602a82bb40f06d203219797",
+      "original_retained": false
+    },
+    {
+      "id": "blackcap",
+      "profile_sha256": "a19e2a937f3efab4b64cfcfbb5cbcc3298a2b0bdf277c508e9662c97febc785c",
+      "source_sha256": "a224f545205a76f36b2abc0771d5e77aeb78714b8ee116e95bed5d2306d9da10",
+      "score_key": "b5b886bddead79782a0bf4245e57d34cfa409f6d02b04902cc0587d9fcaa1b29",
+      "original_retained": false
+    },
+    {
+      "id": "song-thrush",
+      "profile_sha256": "951405c2cc28b6b9e06222c45efd53882f5f8fb232a8a73381c6843a55fcc6ef",
+      "source_sha256": "2d7f2102bd22e57242153efcca87af95e4daac9f65ca6d90994f013ad4a8cc39",
+      "score_key": "f7d8f8463acd87fabf19b3437609b171fabde9831e4e07c2e2b4ff7fa977cdf2",
+      "original_retained": false
+    },
+    {
+      "id": "pheasant",
+      "profile_sha256": "a180f905efee7bdfac1e8d1c9544eb011a8bb4a2fa15d6107aaa0261223915f2",
+      "source_sha256": "2b240873696743266c4f44dce6bb290b7cf1a867b61fe8726379c6eddd143757",
+      "score_key": "180ecbd0c00f04cd37833db656b3ca67814567a65da089ae0dccd0668da853f9",
+      "original_retained": false
+    },
+    {
+      "id": "goldcrest",
+      "profile_sha256": "c3e795a7949caa07760b8148e20d5bb0d2507d306c0c1d768390dd52896f4f3f",
+      "source_sha256": "8293f58a8e7281e5a06ff7c388e8a43316c3c4ca6f664c0b59b08273c978505e",
+      "score_key": "08b6d0e2acb9eb7e3dd2179ef7786379f1bbfd25b88ef725e0091cfc344d89d6",
+      "original_retained": false
+    },
+    {
+      "id": "pied-wagtail",
+      "profile_sha256": "ba651215a306025728eb07070aeda55a23237f86ceced3c952d790cd48e843b5",
+      "source_sha256": "9cf017308d189f6d77d2997f82adf0c0a71b964cb71ca6e9ac28bb601d9fed80",
+      "score_key": "07d4398c5f37b1bf494311b702b73a534e01a68f849c5e65c05c62156f278e22",
+      "original_retained": false
+    },
+    {
+      "id": "jay",
+      "profile_sha256": "0256de948ddb966aeff1b9e7d2a1d4e2f594d778595527be92edb3d32dae9f07",
+      "source_sha256": "26ab5953f1a21d42c30c43171f08f414fb830818a08446c38d2ec4e71ee52b76",
+      "score_key": "1978e316f598e37f6f0658e3ccad611a5f816b11c584cfacac7a006e2b613f3e",
+      "original_retained": false
+    },
+    {
+      "id": "redwing",
+      "profile_sha256": "b6dd4324ffca08183929d0e3cbc58f39ae450e93467182f357c8ca308279a4dd",
+      "source_sha256": "27a333456354c685fa35287f1bca92ae0a39d25fc168876b4f3f52ffa65168f0",
+      "score_key": "21d43a07ae8eda4c698bed2f86a1a70a17323843ec83dc05dd39027899043656",
+      "original_retained": false
+    },
+    {
+      "id": "bullfinch",
+      "profile_sha256": "412be322ac69525e7726233ce2a60e303ae32483ed2fa460ee0658490f18cd7c",
+      "source_sha256": "4278b055ca4e348a371ddf674e3e3841ec282a9f8c606665684ade031228c2a9",
+      "score_key": "40493d07970b5e2bdd890dc6a5fcc9c4e7d0f708f916d073c273936d3d44de7c",
+      "original_retained": false
+    },
+    {
+      "id": "sparrowhawk",
+      "profile_sha256": "6f4d1ac899c43d2c4a49910e3fc8b5d7398bc559cac01d9f71e81a85b96ceacb",
+      "source_sha256": "aa49f534ba231e7e0ff2e8f443ea9f566422faa03663972b56b80820ae3469c0",
+      "score_key": "44491c1096d8da73f1af630ca533af04019b740e6ee91de7cbe4f9009ae640f9",
+      "original_retained": false
+    },
+    {
+      "id": "fieldfare",
+      "profile_sha256": "425e8053545b51e10ad806b9c28ab7782da7aa9589b9483a5257511446f0a307",
+      "source_sha256": "492ad534cf7870c249470b3d1590e1eecf5ca671d80be7db752b86938b585e19",
+      "score_key": "c5a29b11bb8c0af40d81ac4c5243f6bf6c88399862a52873e688fe02430c8bbf",
+      "original_retained": false
+    },
+    {
+      "id": "buzzard",
+      "profile_sha256": "00624cb52ca7e552196da0ff4666045d83ad163f4f06b1ffe36fd65d92c1b52d",
+      "source_sha256": "98f2e8bd702d005368d32d61f9b544fafd0740fdb1b6cf227be1a2cd6c75e1a6",
+      "score_key": "cea61c0b577b1ca07969a999c5b22fc19ff5d9a68cfd16fd8d9e90de2b90e82b",
+      "original_retained": false
+    },
+    {
+      "id": "mallard",
+      "profile_sha256": "eed1a09bc610cfe1a78cc094734f2cbab698ce5dbc75e6af79a02d82003c0ab0",
+      "source_sha256": "40a8922d9c7114e6991f7f8c79998152e1212cda0764da45936257ec05c1cb38",
+      "score_key": "70185c0ca2864bd7f046cb3d3b102dcf0fd955ffd32dd5eab7bfbfc2918869ab",
+      "original_retained": false
+    },
+    {
+      "id": "black-headed-gull",
+      "profile_sha256": "51672e0dadb9c8c00402fb2bec267c58d4854c767f5f86447ab33113a8b63eed",
+      "source_sha256": "b313c7f44a83da45710a207dbccf58785c331edf6ed78380ca186569d572ccf1",
+      "score_key": "194357385a19fbd0db48b713c463c19abfc39e8abd017a7c93d3cd080278fbea",
+      "original_retained": false
+    },
+    {
+      "id": "treecreeper",
+      "profile_sha256": "025a9de0344d8f94a59abcc15387e903b028561888515f4c6518f006fc3ae634",
+      "source_sha256": "dbf73dec1ea074e33cb3190aa7e4d4c1b38d4f600e638ea3f0d721f1f8c0e871",
+      "score_key": "c8136ea7fd6895c2364592ced5e99470e56aed11b2dbdb12ec56377a94763d11",
+      "original_retained": false
+    },
+    {
+      "id": "green-woodpecker",
+      "profile_sha256": "d84cbb1e1c1be95b77ddc396c86d5abbd0a7123e178b88744b98807314d9d97c",
+      "source_sha256": "83d9a0e432b43fb3ecaf89c0e124f8e151477c101683230427747522495532aa",
+      "score_key": "ed1c46a1a8113a5b4d56984653f10d570a07f09dbfbe63dc557d190e49df3456",
+      "original_retained": false
+    },
+    {
+      "id": "tawny-owl",
+      "profile_sha256": "7f18ab48536b948df75f5345827f9f95a207a0d3581741d50c7e2a87f6851271",
+      "source_sha256": "ea336a640353b476b71cc945801929dca779240ec86740efd21ab4c642a03715",
+      "score_key": "84ed66c58eac2d481576f71e16d8780b81c38850c0c56f7db6dbe7053dd1cdc8",
+      "original_retained": false
+    },
+    {
+      "id": "barn-owl",
+      "profile_sha256": "aaae8bad168a8d072f621c63ba33488aadca30f475d927f3b112bfd62b6eb1d1",
+      "source_sha256": "4cb95a2c482e987be3b2d2b4e2f7d32df4643b0df0908f2203d6e3ccd0a1c1cd",
+      "score_key": "1685ec26f18b0a03c2ce9ddf4e65dfb297ca6d740e4a8fa6627134437e832ede",
+      "original_retained": false
+    },
+    {
+      "id": "little-owl",
+      "profile_sha256": "a92606441f4b9d0b0dbdb547c5263f1441288ec70561f20656fe5fda9c39f360",
+      "source_sha256": "2d76a43366b85b413cd33621c52a901db2be850d3aafbb947fb6594488849ec7",
+      "score_key": "0dc770a2b4b27e7db6348978d6a3116c0bd666dd747e8d63951ba4023aa568e6",
+      "original_retained": false
+    },
+    {
+      "id": "short-eared-owl",
+      "profile_sha256": "de890c9bd97d7b6e983e7fc83d1331ef10547ea75708d28ceb38a120fe110f61",
+      "source_sha256": "a8dd9a667631e65a44528fc0d53ddd5dbc3082232492e42fa1c990b13b26fb92",
+      "score_key": "6d296d86ceb8ff43f78aeb6e36ed0ef32941bc77efc130ab5f7b7456535bf691",
+      "original_retained": false
+    },
+    {
+      "id": "long-eared-owl",
+      "profile_sha256": "7f7639006bf9df38e26332558a18dd3088d598513784eeab47001927d70bedc3",
+      "source_sha256": "762582eaa85b818d3e7ba5c5813a2dc3d7f1809f00faf33dfafca9e06697c7a4",
+      "score_key": "f8e238ea913f428100d982d89f19c251cc9a3dd813b1b18536279350f72c8e8a",
+      "original_retained": false
+    }
+  ],
+  "source_files": [
+    {
+      "path": "build-record.json",
+      "sha256": "df025c63026d3281681e417e6d8ba597878cb04d191addaf5127a7e6ed53b4f4",
+      "bytes": 47613
+    },
+    {
+      "path": "catalog.json",
+      "sha256": "a8aba3f8e3f5129bed5538c40c8150e0ff2a762dc9e16f82cd2c1cbe9773a1f6",
+      "bytes": 19371
+    },
+    {
+      "path": "runtime/approved-retimers.js",
+      "sha256": "8ac7809f5bd3a8e6267b309bb7a4d61aef2d58ffd5af6b288dc2ee526e0891e6",
+      "bytes": 42768
+    },
+    {
+      "path": "runtime/collection-retimer.js",
+      "sha256": "212385a2ac393603504cdcb0834f0e98b7409992779f74cc307b63f2a22db575",
+      "bytes": 8477
+    },
+    {
+      "path": "runtime/engine.js",
+      "sha256": "452805c95311936bf2e4a05fc7e04317f172e4139f3b80e2327dec4b7c6839a7",
+      "bytes": 18778
+    },
+    {
+      "path": "runtime/finish-builder.js",
+      "sha256": "e0a9fc0e1f5d8bc1118f1c1eef0ca89c7ee5b9db7fbe748bfa369eabe2a2bcad",
+      "bytes": 13336
+    },
+    {
+      "path": "runtime/goldfinch-builder.js",
+      "sha256": "8554771a3ffe05b8c0721fb0afbfd8629f51f714fd1235cd8b7b6eb74cf158b1",
+      "bytes": 49642
+    },
+    {
+      "path": "runtime/opening-builder.js",
+      "sha256": "ba5344bcd00b1fa1599b8f6a0abbb6b00835030ce24937a9e102a0321d702969",
+      "bytes": 15707
+    },
+    {
+      "path": "species/barn-owl.js",
+      "sha256": "bd40a3c62d0f8b7794c33eccf4b0fb15be5379e41d1ffbc1928a025d790facc4",
+      "bytes": 3943529
+    },
+    {
+      "path": "species/barn-owl.json",
+      "sha256": "aaae8bad168a8d072f621c63ba33488aadca30f475d927f3b112bfd62b6eb1d1",
+      "bytes": 56444
+    },
+    {
+      "path": "species/black-headed-gull.js",
+      "sha256": "f7f94501ea6f0ac31725d5d1dbdc1efb915ccde280c6bed7a3820c15a864e0f0",
+      "bytes": 3920542
+    },
+    {
+      "path": "species/black-headed-gull.json",
+      "sha256": "51672e0dadb9c8c00402fb2bec267c58d4854c767f5f86447ab33113a8b63eed",
+      "bytes": 63127
+    },
+    {
+      "path": "species/blackbird.json",
+      "sha256": "dd7d8c350020cd0342fcca9823d051e839ffa42e5dc74b06ba3ee4f4ad577264",
+      "bytes": 12294
+    },
+    {
+      "path": "species/blackcap.js",
+      "sha256": "f4f38e20ba30ddc1acbd8180948ce4c1424ff4897eca2c6a5353a8427c92ca73",
+      "bytes": 3702229
+    },
+    {
+      "path": "species/blackcap.json",
+      "sha256": "a19e2a937f3efab4b64cfcfbb5cbcc3298a2b0bdf277c508e9662c97febc785c",
+      "bytes": 52721
+    },
+    {
+      "path": "species/blue-tit.json",
+      "sha256": "db59f8bb21ab1a5c3e4f1e775c48164fb1a49ecbd7cfd176898cebef337b94fb",
+      "bytes": 12431
+    },
+    {
+      "path": "species/bullfinch.js",
+      "sha256": "72d3bec6f6b241e218844f10080eaf5bcb9ff99614b6e61a4861c987447a5558",
+      "bytes": 3796136
+    },
+    {
+      "path": "species/bullfinch.json",
+      "sha256": "412be322ac69525e7726233ce2a60e303ae32483ed2fa460ee0658490f18cd7c",
+      "bytes": 54927
+    },
+    {
+      "path": "species/buzzard.js",
+      "sha256": "709af051edf29b74148817aea0d22051ae1a4deb5358015b27d3ab9df691f3ab",
+      "bytes": 3823394
+    },
+    {
+      "path": "species/buzzard.json",
+      "sha256": "00624cb52ca7e552196da0ff4666045d83ad163f4f06b1ffe36fd65d92c1b52d",
+      "bytes": 58367
+    },
+    {
+      "path": "species/carrion-crow.js",
+      "sha256": "2100207ba42fb97652eb6ea3bbea268ff7f3923a691e88a7407c48843acdab6a",
+      "bytes": 3585558
+    },
+    {
+      "path": "species/carrion-crow.json",
+      "sha256": "a3d5f8ceb31a2b5e1fc943610f818dee4ea7b2ebd6d863caf014d91f9d631fef",
+      "bytes": 75997
+    },
+    {
+      "path": "species/chaffinch.js",
+      "sha256": "c6fdd55245e0c58a6ac911d49a0f67a6cf6e63eb300eccedcb6327ec4ee008ef",
+      "bytes": 4117764
+    },
+    {
+      "path": "species/chaffinch.json",
+      "sha256": "5d9ccf94914efb7e61f9a7acb2fc0bfee121ce087e3b4bb7ef18f04a22b6881a",
+      "bytes": 68691
+    },
+    {
+      "path": "species/coal-tit.js",
+      "sha256": "b86e3aa4f02e6ca9d0d0a4800feb69678bf8bd0efe550be7e77f9756620ca694",
+      "bytes": 3797238
+    },
+    {
+      "path": "species/coal-tit.json",
+      "sha256": "f84e9a14de42d1208d5575980e2717fd78dbde9d25f11e570e41902254770622",
+      "bytes": 65273
+    },
+    {
+      "path": "species/collared-dove.js",
+      "sha256": "6e9da0d882cbc6d5b844fe108cefef5564360c6c99d51f1698a6647f94243b83",
+      "bytes": 3812271
+    },
+    {
+      "path": "species/collared-dove.json",
+      "sha256": "6c91389460e85d35fac7efda08066dbc771633a43cdc28076679d6dc820f00a2",
+      "bytes": 67395
+    },
+    {
+      "path": "species/common-gull.js",
+      "sha256": "24492f1d3719e2610a80520df6786098d9375d7b84dad60ede4c6d031a0056ad",
+      "bytes": 3657789
+    },
+    {
+      "path": "species/common-gull.json",
+      "sha256": "c8400e8faa74b3a8c2a84a184ef90926462e5e2a72781d32e0f51d89204ffb55",
+      "bytes": 52363
+    },
+    {
+      "path": "species/dunnock.js",
+      "sha256": "6f4cb0bb3c6c16a5e6adc96aaff3ec3a2c85e9b9fe7069ec564a11af8de7fc55",
+      "bytes": 3717936
+    },
+    {
+      "path": "species/dunnock.json",
+      "sha256": "703ce4c84ea55fc5eefa162c7e7904e8863b3415a45895834f1a4d8c5dd9e14a",
+      "bytes": 67615
+    },
+    {
+      "path": "species/feral-pigeon.js",
+      "sha256": "f33471f05726cd2c0351e8ee1d29bf6e84e20eb9d539f12380d0c19ee0cd71e5",
+      "bytes": 3897916
+    },
+    {
+      "path": "species/feral-pigeon.json",
+      "sha256": "098306164d159668a695c502650860984f0169270864a2d9cd4a83deb82cca18",
+      "bytes": 70481
+    },
+    {
+      "path": "species/fieldfare.js",
+      "sha256": "f2e46775434deb4371c2c4d41ac84f3202607d562f9cd5720cf2b5b74b8b0819",
+      "bytes": 4223052
+    },
+    {
+      "path": "species/fieldfare.json",
+      "sha256": "425e8053545b51e10ad806b9c28ab7782da7aa9589b9483a5257511446f0a307",
+      "bytes": 59363
+    },
+    {
+      "path": "species/goldcrest.js",
+      "sha256": "c8ed61c83fa0784d181bea974d719bd7f2b0bbf63e01d7222d9d36562740114b",
+      "bytes": 3932437
+    },
+    {
+      "path": "species/goldcrest.json",
+      "sha256": "c3e795a7949caa07760b8148e20d5bb0d2507d306c0c1d768390dd52896f4f3f",
+      "bytes": 51209
+    },
+    {
+      "path": "species/goldfinch.json",
+      "sha256": "5c89af60032d4a6891ca435d4834b884160319d90a4adbdf8e2bb1c409294359",
+      "bytes": 4159
+    },
+    {
+      "path": "species/great-spotted-woodpecker.js",
+      "sha256": "5e2dce4ba63d52d4daf6904397504cadfc0ff5adf15b103b53bc2cf64fe36d8a",
+      "bytes": 3850607
+    },
+    {
+      "path": "species/great-spotted-woodpecker.json",
+      "sha256": "c36a9c16596ea007af2cbc38bf8f48efbfa305e6534c3c853f32ba2560fd6db3",
+      "bytes": 49467
+    },
+    {
+      "path": "species/great-tit.js",
+      "sha256": "d68ca38646ef0c328aaaa30e823a86d15a04b3f24637091290e2ec6ab987e297",
+      "bytes": 4054750
+    },
+    {
+      "path": "species/great-tit.json",
+      "sha256": "0d38ba0f409292088dc7c0237014effe18b227a9c4f71dc9da289c4b444935bc",
+      "bytes": 62743
+    },
+    {
+      "path": "species/green-woodpecker.js",
+      "sha256": "316ac23cca07cddc5a684a3dd924784d7cbc6e84e8bc3957863599c8bff12c02",
+      "bytes": 3968835
+    },
+    {
+      "path": "species/green-woodpecker.json",
+      "sha256": "d84cbb1e1c1be95b77ddc396c86d5abbd0a7123e178b88744b98807314d9d97c",
+      "bytes": 61428
+    },
+    {
+      "path": "species/greenfinch.js",
+      "sha256": "d2dded6e5aaec5f1049b4c2ebc03a366decad8e00a71b34593cf1096acda7519",
+      "bytes": 4054674
+    },
+    {
+      "path": "species/greenfinch.json",
+      "sha256": "1fa7cd0da67231881667f6c68dc10ade9ff1e04511801b2f31d5e1ee9e1f0ce9",
+      "bytes": 66915
+    },
+    {
+      "path": "species/herring-gull.js",
+      "sha256": "a941a74e9006e895b318753cd550a78951178c4d70c71a19adccbe50b78d5629",
+      "bytes": 3832797
+    },
+    {
+      "path": "species/herring-gull.json",
+      "sha256": "b80c3db352a8ae008e90e1947ead0400f896eaf8c56e2b63aabc621b9aea5996",
+      "bytes": 55816
+    },
+    {
+      "path": "species/house-sparrow.js",
+      "sha256": "ce85fa4e029c14a18d7a04d8e9f828934fe30d1281416ac7bdd0979f081b893c",
+      "bytes": 3619207
+    },
+    {
+      "path": "species/house-sparrow.json",
+      "sha256": "9898ec7aa906a99362bb100e00e33a90a4f7996e3a72c2bbe619e6e928cd13d7",
+      "bytes": 61350
+    },
+    {
+      "path": "species/jackdaw.js",
+      "sha256": "f6374c87138ecf9d78d50f53cf4e7063ef6b913bd8ce6be22a1e8910d2d2f300",
+      "bytes": 4422004
+    },
+    {
+      "path": "species/jackdaw.json",
+      "sha256": "90e89cf646edeb6ad866d15225669e86e755756aa1e9adfda6e102716f4b37e0",
+      "bytes": 74780
+    },
+    {
+      "path": "species/jay.js",
+      "sha256": "a45213530cf40698d87d47b19d2c592cf36a661881e79517e8c25fc15e72af8d",
+      "bytes": 3809121
+    },
+    {
+      "path": "species/jay.json",
+      "sha256": "0256de948ddb966aeff1b9e7d2a1d4e2f594d778595527be92edb3d32dae9f07",
+      "bytes": 65130
+    },
+    {
+      "path": "species/little-owl.js",
+      "sha256": "ff454e570208f3ec0277ff9113213375c860eb10c86b010c25e8d60ac3fbfc26",
+      "bytes": 3999371
+    },
+    {
+      "path": "species/little-owl.json",
+      "sha256": "a92606441f4b9d0b0dbdb547c5263f1441288ec70561f20656fe5fda9c39f360",
+      "bytes": 58958
+    },
+    {
+      "path": "species/long-eared-owl.js",
+      "sha256": "f60721f4075e7b250c24d7c5f6902a3ae38c638688ce8f0ac6d3a4fff02110c9",
+      "bytes": 3637582
+    },
+    {
+      "path": "species/long-eared-owl.json",
+      "sha256": "7f7639006bf9df38e26332558a18dd3088d598513784eeab47001927d70bedc3",
+      "bytes": 60153
+    },
+    {
+      "path": "species/long-tailed-tit.js",
+      "sha256": "000ea94432c18e298dac1f218a903c79bcba3b108abc411ddece7104daeda3fb",
+      "bytes": 4050329
+    },
+    {
+      "path": "species/long-tailed-tit.json",
+      "sha256": "1165ae684f7f825fff97537afa09ca7f21dfc542971f74c4668c45f2058ed58e",
+      "bytes": 68206
+    },
+    {
+      "path": "species/magpie.js",
+      "sha256": "761899825d05543e49f02532bcf371d3ff34201c048356eb15b5a3d61d44c941",
+      "bytes": 3693973
+    },
+    {
+      "path": "species/magpie.json",
+      "sha256": "63742161fa30a298d55a3b4250e514e83388860ad187f8f571f52eb28719fd49",
+      "bytes": 78334
+    },
+    {
+      "path": "species/mallard.js",
+      "sha256": "166d3c186526b4eb445fe25b0a4f0e3520d828bc7fc9d1269fd0171c7098695c",
+      "bytes": 3974777
+    },
+    {
+      "path": "species/mallard.json",
+      "sha256": "eed1a09bc610cfe1a78cc094734f2cbab698ce5dbc75e6af79a02d82003c0ab0",
+      "bytes": 70746
+    },
+    {
+      "path": "species/nuthatch.js",
+      "sha256": "bf6e762d9d016aec0b972c738f9582534e52f07016c82d8797ecf96d60ffab90",
+      "bytes": 3740748
+    },
+    {
+      "path": "species/nuthatch.json",
+      "sha256": "5f23e78d9c9bd6c0c30d1264825fe1bbcca4b65d56bf27b147d7b4f641e6ecd8",
+      "bytes": 49656
+    },
+    {
+      "path": "species/pheasant.js",
+      "sha256": "0b1ac635361aeaedd66b43c51a5969ed23fd121ac6fc0127bb0a84ffce9a9888",
+      "bytes": 3857393
+    },
+    {
+      "path": "species/pheasant.json",
+      "sha256": "a180f905efee7bdfac1e8d1c9544eb011a8bb4a2fa15d6107aaa0261223915f2",
+      "bytes": 67374
+    },
+    {
+      "path": "species/pied-wagtail.js",
+      "sha256": "8415d9a54e3994a99c0a5eb645071b12e35dc6c43d8e31a42ae180bb845e91c0",
+      "bytes": 3790417
+    },
+    {
+      "path": "species/pied-wagtail.json",
+      "sha256": "ba651215a306025728eb07070aeda55a23237f86ceced3c952d790cd48e843b5",
+      "bytes": 59983
+    },
+    {
+      "path": "species/redwing.js",
+      "sha256": "645c967918a3c64511835da997c53f760b601a1e6a41370236086d71de46258d",
+      "bytes": 3931191
+    },
+    {
+      "path": "species/redwing.json",
+      "sha256": "b6dd4324ffca08183929d0e3cbc58f39ae450e93467182f357c8ca308279a4dd",
+      "bytes": 55858
+    },
+    {
+      "path": "species/robin.json",
+      "sha256": "e27ed0de68a9f49882730c7ad3f8b61056abd14016a87a525e854c6595d1c5f3",
+      "bytes": 12164
+    },
+    {
+      "path": "species/rook.js",
+      "sha256": "2067c77f6dea593ae7517fbedb2cbf1791a83ac772b957a15aa6c151e36702ab",
+      "bytes": 4099447
+    },
+    {
+      "path": "species/rook.json",
+      "sha256": "12850f5b257f7d6616fbda4f70a100505b98a828ab028c511489d84f1ef4629d",
+      "bytes": 79718
+    },
+    {
+      "path": "species/short-eared-owl.js",
+      "sha256": "eb8681b414edc6b08161f2464ff519b8214ae294ada6a9b382f21e9b541ce92b",
+      "bytes": 4114421
+    },
+    {
+      "path": "species/short-eared-owl.json",
+      "sha256": "de890c9bd97d7b6e983e7fc83d1331ef10547ea75708d28ceb38a120fe110f61",
+      "bytes": 61412
+    },
+    {
+      "path": "species/siskin.js",
+      "sha256": "a1982f1243670531723257ed2a84bc9c6e7430d8b524e3d91a56087f5eeb72fa",
+      "bytes": 3930819
+    },
+    {
+      "path": "species/siskin.json",
+      "sha256": "2de5cb4461fa32d8a9288e26e575be470c2a0b28936ecdefac9e80d728d78a74",
+      "bytes": 52411
+    },
+    {
+      "path": "species/song-thrush.js",
+      "sha256": "19e3244b9bd749904912428ddf67316fb964df7df809fe6a4178143f9c0b7cf2",
+      "bytes": 3760366
+    },
+    {
+      "path": "species/song-thrush.json",
+      "sha256": "951405c2cc28b6b9e06222c45efd53882f5f8fb232a8a73381c6843a55fcc6ef",
+      "bytes": 52004
+    },
+    {
+      "path": "species/sparrowhawk.js",
+      "sha256": "6856b200fc9c6186f4b349e4287cbf15d2ac9340c81c3210d5399da9e0c46c36",
+      "bytes": 4379047
+    },
+    {
+      "path": "species/sparrowhawk.json",
+      "sha256": "6f4d1ac899c43d2c4a49910e3fc8b5d7398bc559cac01d9f71e81a85b96ceacb",
+      "bytes": 64750
+    },
+    {
+      "path": "species/starling.js",
+      "sha256": "262f656196451d299736735b4668f55aa6e33e4edaf5a8b73db0bd9102aab78a",
+      "bytes": 3681675
+    },
+    {
+      "path": "species/starling.json",
+      "sha256": "5e3d3728c6b3b0c304868ba3c589ad944dd062ed087d4e8966b35a1a052f18ea",
+      "bytes": 63644
+    },
+    {
+      "path": "species/tawny-owl.js",
+      "sha256": "1aba1b8e79b155b9686b11ac9844509240f9cec2ddc09c12570836facdf5a1a7",
+      "bytes": 4079965
+    },
+    {
+      "path": "species/tawny-owl.json",
+      "sha256": "7f18ab48536b948df75f5345827f9f95a207a0d3581741d50c7e2a87f6851271",
+      "bytes": 56108
+    },
+    {
+      "path": "species/treecreeper.js",
+      "sha256": "40e78a0a66e5e59afc70797ad8aad22d6d8e31d2b174dcef1bc6b14baafd85a3",
+      "bytes": 4002875
+    },
+    {
+      "path": "species/treecreeper.json",
+      "sha256": "025a9de0344d8f94a59abcc15387e903b028561888515f4c6518f006fc3ae634",
+      "bytes": 56373
+    },
+    {
+      "path": "species/woodpigeon.js",
+      "sha256": "0d2d354efe10c5e4375a6dd518d3d61718a8751dd70f8315f99ef40584a6b490",
+      "bytes": 3453297
+    },
+    {
+      "path": "species/woodpigeon.json",
+      "sha256": "d2364560df3d3d29ca977e48ad8ff12aa061d08c14e93fcfc8af2fc908689ea9",
+      "bytes": 68254
+    },
+    {
+      "path": "species/wren.json",
+      "sha256": "8efeae5822bfe37359fb7344ce7ffe5fab68ffaafc1d2937dba365d4887d3acb",
+      "bytes": 12310
+    },
+    {
+      "path": "thumbnails/barn-owl.webp",
+      "sha256": "bca2ffe1a67104cb27c1de0352c1dfbe809fe431300199b59cc35efb05210dfd",
+      "bytes": 13876
+    },
+    {
+      "path": "thumbnails/black-headed-gull.webp",
+      "sha256": "957c4c498575a2e2e2cf2602ee67b69d926a5a88ba91178aa46453cccc49a0b8",
+      "bytes": 12298
+    },
+    {
+      "path": "thumbnails/blackcap.webp",
+      "sha256": "9f758da09b7b9752b790e41060aacff7983082b38fff91ab27c726e2ecbb392a",
+      "bytes": 13218
+    },
+    {
+      "path": "thumbnails/bullfinch.webp",
+      "sha256": "4e2a35d98d5c58c7710d9f7d6bb8fe32b9a6f950a6026b62a34ee2c56e32d227",
+      "bytes": 15072
+    },
+    {
+      "path": "thumbnails/buzzard.webp",
+      "sha256": "f34801f17a39b1fed61f0aa5dd344cb5c3b7ad660045b5612d5971f819c06f80",
+      "bytes": 16094
+    },
+    {
+      "path": "thumbnails/carrion-crow.webp",
+      "sha256": "b1b48f41b67749e863b7548c1b5d8001d2d91530d0818388e372e1f34947ce3f",
+      "bytes": 15444
+    },
+    {
+      "path": "thumbnails/chaffinch.webp",
+      "sha256": "141f19a0dd8c5ba4d766d3bd917d2eaef15b7c3473b271f39c6c25c0e5d4fd85",
+      "bytes": 14284
+    },
+    {
+      "path": "thumbnails/coal-tit.webp",
+      "sha256": "d67a80997a48c2bdb6fa5831f8ab8c1267a8e2068100e79fe7bc68a505a80d00",
+      "bytes": 13142
+    },
+    {
+      "path": "thumbnails/collared-dove.webp",
+      "sha256": "e7fe953f0571e1b80416d8475c92022a530b615c03d4c3fc7dafd9a8a098add7",
+      "bytes": 11720
+    },
+    {
+      "path": "thumbnails/common-gull.webp",
+      "sha256": "0fb58c3c4ce0c5fb7119dc334ce4e46976f2d3afa50f31fa6991123cb8ce744f",
+      "bytes": 11984
+    },
+    {
+      "path": "thumbnails/dunnock.webp",
+      "sha256": "f790a344d9f083d2f39a9e16cbf7893c1cc0b850df90efe7f939f4b8a7b7c63e",
+      "bytes": 12766
+    },
+    {
+      "path": "thumbnails/feral-pigeon.webp",
+      "sha256": "aa2353d73fb4c3d9bd63971f92f2afc47cb20fd7c7bed19016ebedf5ab3e579b",
+      "bytes": 13308
+    },
+    {
+      "path": "thumbnails/fieldfare.webp",
+      "sha256": "56d52acb307ca87077d24d5485483323dd17fbd9ad600ba3af2ec680feac33f3",
+      "bytes": 15738
+    },
+    {
+      "path": "thumbnails/goldcrest.webp",
+      "sha256": "2bd54d1d8285a3484c9f54894513fe83b86d1cc94b20a7ddb75fbd706ebdd1f9",
+      "bytes": 12598
+    },
+    {
+      "path": "thumbnails/great-spotted-woodpecker.webp",
+      "sha256": "f305d0d2756a7b6a38de0fe0b64b2b3c7eece1f9d10b980b62a5a6c9707aef88",
+      "bytes": 12286
+    },
+    {
+      "path": "thumbnails/great-tit.webp",
+      "sha256": "5549fd1d4591afea9bd46ba0af111a55d8192f42c1a082b0d74dea766586fcfa",
+      "bytes": 12928
+    },
+    {
+      "path": "thumbnails/green-woodpecker.webp",
+      "sha256": "dae61c4930cb0c4ff62584189c68c2f6513371b1cfcb2f86070075068cbf9447",
+      "bytes": 14940
+    },
+    {
+      "path": "thumbnails/greenfinch.webp",
+      "sha256": "a7495bf8fd7e8537dd05dc1746881edec1cfe41741adeb40e6587341759ac08d",
+      "bytes": 14206
+    },
+    {
+      "path": "thumbnails/herring-gull.webp",
+      "sha256": "d33c84c6d2c841a8fb81b8e41be346d6aff3dcf3226cbdbd0f9175dd00cd3351",
+      "bytes": 13892
+    },
+    {
+      "path": "thumbnails/house-sparrow.webp",
+      "sha256": "f314a0f812d65b689c39480192fe287f499e1736b92a2e18c9caed06717a5913",
+      "bytes": 13898
+    },
+    {
+      "path": "thumbnails/jackdaw.webp",
+      "sha256": "e48aea7b1a0982010d83cc9413990d18589ca3975c2c58d45110eda9086c28a0",
+      "bytes": 14166
+    },
+    {
+      "path": "thumbnails/jay.webp",
+      "sha256": "776e51681c9b442e7e70efdd6493353e12c9604b6c424cfd7abb7f61a4cae6cf",
+      "bytes": 15566
+    },
+    {
+      "path": "thumbnails/little-owl.webp",
+      "sha256": "777967d31d93dc45f143d3f94499a0c56d65e8b48d23bbcd1020a08c7289abf9",
+      "bytes": 16790
+    },
+    {
+      "path": "thumbnails/long-eared-owl.webp",
+      "sha256": "3aef473e2d24fa6a24e4377e8a03ea768782233a384e7c63d5b4e58202dc6ff7",
+      "bytes": 13546
+    },
+    {
+      "path": "thumbnails/long-tailed-tit.webp",
+      "sha256": "0e56101b67be6ebbb6b3818658b707dea97044accd38708507dc6af75a0aec18",
+      "bytes": 13440
+    },
+    {
+      "path": "thumbnails/magpie.webp",
+      "sha256": "c55f6eaf6285c100c9a2ed626d01a71b92ed680a085bcc03987828a8d38b1398",
+      "bytes": 12602
+    },
+    {
+      "path": "thumbnails/mallard.webp",
+      "sha256": "1d3f8ec4710414420ae1d260b5bc1e463cb12d803573fcb034335e820e6ceb2f",
+      "bytes": 14600
+    },
+    {
+      "path": "thumbnails/nuthatch.webp",
+      "sha256": "581767e2aed0212d9e53a9f35d5e95c8704673bc7f61bf669d2c46484069e292",
+      "bytes": 13428
+    },
+    {
+      "path": "thumbnails/pheasant.webp",
+      "sha256": "ded6e7c7ec26a8054d03e5aecea3c25e9abf44cb08c1173f38616f3e7979c3c4",
+      "bytes": 17726
+    },
+    {
+      "path": "thumbnails/pied-wagtail.webp",
+      "sha256": "54a10ebecd2dbb1dd0a366f57d41ab0fb4d8e820bb099c0cfad157cda6416f25",
+      "bytes": 13668
+    },
+    {
+      "path": "thumbnails/redwing.webp",
+      "sha256": "dc57c4969f8fe8559ccc8e8c8229d9c5cdcdbd74f49638be439066350a5b6e54",
+      "bytes": 15846
+    },
+    {
+      "path": "thumbnails/rook.webp",
+      "sha256": "12e1a0f505761a71e0a9d162f33654cbde44d456662dc8323f2598f02d25c994",
+      "bytes": 14898
+    },
+    {
+      "path": "thumbnails/short-eared-owl.webp",
+      "sha256": "108650819e2ace4130c2caf3f0b64f27cb6d5d7f28d01cbe214fc9158442b5c0",
+      "bytes": 17130
+    },
+    {
+      "path": "thumbnails/siskin.webp",
+      "sha256": "e28ff5059d937cfa560087bfe7265598278291349172abcd263ef5f389cc6748",
+      "bytes": 18070
+    },
+    {
+      "path": "thumbnails/song-thrush.webp",
+      "sha256": "d1e32bb42df876e2f14668d24697eeec161471e9e489c6b42dff1907a2ef57cc",
+      "bytes": 17814
+    },
+    {
+      "path": "thumbnails/sparrowhawk.webp",
+      "sha256": "a99394c6a40c6527d7c05f798d899343b40a5e37e4c51ba24dec12efe6751993",
+      "bytes": 17458
+    },
+    {
+      "path": "thumbnails/starling.webp",
+      "sha256": "f65a50ef5e123cf8a8d8f34eec2ff8925e4527f41f65df7668bfd3c5696003be",
+      "bytes": 14994
+    },
+    {
+      "path": "thumbnails/tawny-owl.webp",
+      "sha256": "afb037b93e11be283ded4e98d12785ce06a979c69e69c86140eb4f9a270a9192",
+      "bytes": 15946
+    },
+    {
+      "path": "thumbnails/treecreeper.webp",
+      "sha256": "9b76ca1ed6c07f694e87496207232f90320dd21d302c769fe45227a5849658a1",
+      "bytes": 14434
+    },
+    {
+      "path": "thumbnails/woodpigeon.webp",
+      "sha256": "0e7eeff61131d3ebea6c886df771fba97578447b9feb24770ccde6a901ef7afb",
+      "bytes": 12490
+    }
+  ],
+  "files": [
+    {
+      "path": "animations/barn-owl.html",
+      "sha256": "fb08ac46655f41422db1b26ecd1cde99488674fff75f83e0ef910a2fd1871ed4",
+      "bytes": 1616
+    },
+    {
+      "path": "animations/black-headed-gull.html",
+      "sha256": "3b0f5d989d3236ac56c0c0295be8dc2623c8fad586d6c80e3248c3d858c0ff14",
+      "bytes": 1652
+    },
+    {
+      "path": "animations/blackcap.html",
+      "sha256": "b36e194d01b4607103d5cca9c60fa44c2874e8a7af0744b79dc1940c42e07c99",
+      "bytes": 1616
+    },
+    {
+      "path": "animations/bullfinch.html",
+      "sha256": "3392d2ae4bb5fb4054a45e7cdaeff39c5f665235db05a070c817882024ec02b4",
+      "bytes": 1620
+    },
+    {
+      "path": "animations/buzzard.html",
+      "sha256": "21e109ac47b280aea823e712b72e321c5e947f766be6262112f523eeec209a9f",
+      "bytes": 1612
+    },
+    {
+      "path": "animations/carrion-crow.html",
+      "sha256": "a93c90fb0aa4dd164eeb85a88d5d947fad8ff8cedbc2527f1c82c96f2f3257c3",
+      "bytes": 1632
+    },
+    {
+      "path": "animations/chaffinch.html",
+      "sha256": "5b3408a7efcc329fbb3965b36ebb2f3676cfc131e32265a91ff8e0b8eba4a2a3",
+      "bytes": 1620
+    },
+    {
+      "path": "animations/coal-tit.html",
+      "sha256": "7f1bdacd96f3914b6876c5bce7719740ab1332ecd77156b89bbffd558bc69e3f",
+      "bytes": 1616
+    },
+    {
+      "path": "animations/collared-dove.html",
+      "sha256": "ba734a21e559aa14f8b411b6fc4f7847a11291a5ec74b59a0e2c1a7655be35ad",
+      "bytes": 1636
+    },
+    {
+      "path": "animations/common-gull.html",
+      "sha256": "031b4cdf0177b034f40965be729b7cfac017748dbdb7d57d30e14b7c9df67a5a",
+      "bytes": 1628
+    },
+    {
+      "path": "animations/dunnock.html",
+      "sha256": "ce443f9a1fa50194b8beaae7d5919ae86a63498af2d676adbe619787c5ed776d",
+      "bytes": 1612
+    },
+    {
+      "path": "animations/feral-pigeon.html",
+      "sha256": "c3a53ca8dca3c300200dc0199d4d102923756d34e5a372992ef33976566cf8e8",
+      "bytes": 1632
+    },
+    {
+      "path": "animations/fieldfare.html",
+      "sha256": "fb38d2bbc2f677b73d9be555f4819afe23f8764523248cf9bf0d7eabd33fa8d1",
+      "bytes": 1620
+    },
+    {
+      "path": "animations/goldcrest.html",
+      "sha256": "5abaf9b97bcb69a3c53c8b8547a06141e9dd0a93627a2523e7f2ab5e6f97160b",
+      "bytes": 1620
+    },
+    {
+      "path": "animations/great-spotted-woodpecker.html",
+      "sha256": "129892a255636bddba41966deb67224a676d4306d7c9f9cf254e114e1441a6dd",
+      "bytes": 1680
+    },
+    {
+      "path": "animations/great-tit.html",
+      "sha256": "e235812ca3ae12fcf36bc58771a5c0237e3a17b57e45a4808ffa837b79e4d178",
+      "bytes": 1620
+    },
+    {
+      "path": "animations/green-woodpecker.html",
+      "sha256": "e6c24acb68876ba54aeb26d5dcc2663371aebf64ff7246878a1bb3860b69adbe",
+      "bytes": 1648
+    },
+    {
+      "path": "animations/greenfinch.html",
+      "sha256": "503f0e3b3fe1ae77fc2753a1952caa96f6949bd805018be9fa400e687c23f30c",
+      "bytes": 1624
+    },
+    {
+      "path": "animations/herring-gull.html",
+      "sha256": "ab6797fe6d3e9330393616b5d6aa6d43e1c1a788289fbb6fdc58c26a402a48cd",
+      "bytes": 1632
+    },
+    {
+      "path": "animations/house-sparrow.html",
+      "sha256": "2e1d342d5a164db4c6a429101cb886fd01fc46ea1fc66d49afc051a584e765e7",
+      "bytes": 1636
+    },
+    {
+      "path": "animations/jackdaw.html",
+      "sha256": "410f33476594e418722ae4de857bca2c224d3e6b5dd1e3628262861091d5569e",
+      "bytes": 1612
+    },
+    {
+      "path": "animations/jay.html",
+      "sha256": "8db31a34443c7f632cbd90a4b3775d202adaf9e5ee1781f29ddb683c82f21451",
+      "bytes": 1596
+    },
+    {
+      "path": "animations/little-owl.html",
+      "sha256": "2650220ad2524b526177c2c1b001d02915b13d2e12fcb6bb7b7f5a6a297efe34",
+      "bytes": 1624
+    },
+    {
+      "path": "animations/long-eared-owl.html",
+      "sha256": "f368c01ccf3c23ac19257f98b7ebaf2e9b23c8ab26d1e128a01ae281342eaedc",
+      "bytes": 1640
+    },
+    {
+      "path": "animations/long-tailed-tit.html",
+      "sha256": "e4ccbe51e28a6303bb140d2b86f3aa1e4c157985f8b67c63d7dd81c81b32f3c3",
+      "bytes": 1644
+    },
+    {
+      "path": "animations/magpie.html",
+      "sha256": "53dd8e362d3311e0f2a3ada21f0d4c962c0e58919fb9ebaf2f51804d8b6fcaa1",
+      "bytes": 1608
+    },
+    {
+      "path": "animations/mallard.html",
+      "sha256": "cc06ee6f2bccba6e6dd7586b4a494879e3f693d1851ad058d3ec70f5e5d749f3",
+      "bytes": 1612
+    },
+    {
+      "path": "animations/nuthatch.html",
+      "sha256": "9ed6221752f88808516ce3a9fbfcee71e43de289f6b3fed51efc235324aea6e0",
+      "bytes": 1616
+    },
+    {
+      "path": "animations/pheasant.html",
+      "sha256": "df76dfae5d8ab7ac0db23b51c370333b04c9ee29e87b7fd8646cb5137b9e5ad6",
+      "bytes": 1616
+    },
+    {
+      "path": "animations/pied-wagtail.html",
+      "sha256": "9067ae029c7e1317991c51a1a9db01579da8f54a2a2bcfe8c9d69afc4b1010ef",
+      "bytes": 1632
+    },
+    {
+      "path": "animations/redwing.html",
+      "sha256": "e82242487e87d5f40bb9903e7678057f90f55306c467189204a379ff4dcc5357",
+      "bytes": 1612
+    },
+    {
+      "path": "animations/review-runtime/approved-retimers.js",
+      "sha256": "8ac7809f5bd3a8e6267b309bb7a4d61aef2d58ffd5af6b288dc2ee526e0891e6",
+      "bytes": 42768
+    },
+    {
+      "path": "animations/review-runtime/collection-retimer.js",
+      "sha256": "212385a2ac393603504cdcb0834f0e98b7409992779f74cc307b63f2a22db575",
+      "bytes": 8477
+    },
+    {
+      "path": "animations/review-runtime/engine.js",
+      "sha256": "452805c95311936bf2e4a05fc7e04317f172e4139f3b80e2327dec4b7c6839a7",
+      "bytes": 18778
+    },
+    {
+      "path": "animations/review-runtime/finish-builder.js",
+      "sha256": "e0a9fc0e1f5d8bc1118f1c1eef0ca89c7ee5b9db7fbe748bfa369eabe2a2bcad",
+      "bytes": 13336
+    },
+    {
+      "path": "animations/review-runtime/goldfinch-builder.js",
+      "sha256": "8554771a3ffe05b8c0721fb0afbfd8629f51f714fd1235cd8b7b6eb74cf158b1",
+      "bytes": 49642
+    },
+    {
+      "path": "animations/review-runtime/opening-builder.js",
+      "sha256": "ba5344bcd00b1fa1599b8f6a0abbb6b00835030ce24937a9e102a0321d702969",
+      "bytes": 15707
+    },
+    {
+      "path": "animations/review-runtime/player.css",
+      "sha256": "3be11d738037197c675068e4a0f0cea903ebcf0b23e3181230a60a4c8d3489e0",
+      "bytes": 1042
+    },
+    {
+      "path": "animations/review-runtime/player.js",
+      "sha256": "27a5f68b91df136451d7ba1111aa17c85952878ee2fd5b3b02b48715f1ea95f8",
+      "bytes": 4864
+    },
+    {
+      "path": "animations/rook.html",
+      "sha256": "18ae2bc6db030f24be97895af7a965a37665b6c10231f871442618d9deb441db",
+      "bytes": 1600
+    },
+    {
+      "path": "animations/short-eared-owl.html",
+      "sha256": "8e2f693b601d2e172c5be25df96d220dcf9d29a2d10005779553abafb4e00150",
+      "bytes": 1644
+    },
+    {
+      "path": "animations/siskin.html",
+      "sha256": "2f6ca65cb63da73540f7aba007cd57ebbce7a532e595915f35f19c9fced19e0d",
+      "bytes": 1608
+    },
+    {
+      "path": "animations/song-thrush.html",
+      "sha256": "35d447d64a7392d2c6fff1b48141f83f138314bdfa330be075fb92bf8d3c2a22",
+      "bytes": 1628
+    },
+    {
+      "path": "animations/sparrowhawk.html",
+      "sha256": "f2b3661017d39637a6df4093c22cc491085669e3400b50b9549ded3e1731b698",
+      "bytes": 1628
+    },
+    {
+      "path": "animations/species/barn-owl.js",
+      "sha256": "33f11617ee89ec486967c6247e5e24035b743eb99547bf6fbb08bb2510120043",
+      "bytes": 20884
+    },
+    {
+      "path": "animations/species/barn-owl.json",
+      "sha256": "3c422e45e4b5542f2a39c4c41ff4f3ad73d5dc7b077853d0c6a5aa42f5813a7e",
+      "bytes": 56325
+    },
+    {
+      "path": "animations/species/black-headed-gull.js",
+      "sha256": "e97556378f658675df88a576f59a9f551f84ae8929f6d4b78e900dc7a8dcc784",
+      "bytes": 23037
+    },
+    {
+      "path": "animations/species/black-headed-gull.json",
+      "sha256": "d67191a8a139a8527d05da9e8f96c4161e1891018cb8450982c218aba30a3403",
+      "bytes": 62999
+    },
+    {
+      "path": "animations/species/blackcap.js",
+      "sha256": "561b39114caf11ad17aa3d348de597f609fa5d692ca2a5be78a0435061a214e3",
+      "bytes": 18248
+    },
+    {
+      "path": "animations/species/blackcap.json",
+      "sha256": "e2185ada5707d2a0aaf6f424fe8d413d3b9da053f952446495cd13cd7c0f6db9",
+      "bytes": 52606
+    },
+    {
+      "path": "animations/species/bullfinch.js",
+      "sha256": "117f97a3711292d130ae80c87247d18f831a5ee1d5ff10288bc01fab34c18496",
+      "bytes": 20215
+    },
+    {
+      "path": "animations/species/bullfinch.json",
+      "sha256": "aa3b3e9ded3fd9e6de1ebeb04daaa4f91dc42afa48573bf5c30d774a049206c9",
+      "bytes": 54807
+    },
+    {
+      "path": "animations/species/buzzard.js",
+      "sha256": "4e1b21670407c46f1c8e75e093110025fdc023c23e64eb2554e6afaf898a8beb",
+      "bytes": 21389
+    },
+    {
+      "path": "animations/species/buzzard.json",
+      "sha256": "d5ec845a9d8a8e8b10bec0e82e8ef662615ec6e753b11f8505ac6e3f74ba4e68",
+      "bytes": 58249
+    },
+    {
+      "path": "animations/species/carrion-crow.js",
+      "sha256": "957a60cbf02e5643bcad250ac4a8f7f3a2f2b70fdfe6dc60b6d145468a979cd7",
+      "bytes": 26385
+    },
+    {
+      "path": "animations/species/carrion-crow.json",
+      "sha256": "74f785c1f7f67410c039c540a7f740f2e5ef5be37d4add916ad5c4f8ff30840b",
+      "bytes": 75882
+    },
+    {
+      "path": "animations/species/chaffinch.js",
+      "sha256": "a4ed3b06b31c3e2591373413ac10fa9849b578ba9bc672ba73cc35c34430dca2",
+      "bytes": 23879
+    },
+    {
+      "path": "animations/species/chaffinch.json",
+      "sha256": "1c97bb57d01962cc69dd5842d847d8c5a91845622c7ad087752a51f45c2bdcdc",
+      "bytes": 68579
+    },
+    {
+      "path": "animations/species/coal-tit.js",
+      "sha256": "f7219fa8b670947b1b54dbcd6c35847e4d4a9610c5795a888e517c8329c5e536",
+      "bytes": 22805
+    },
+    {
+      "path": "animations/species/coal-tit.json",
+      "sha256": "e209754e402e335e769a681c0dcb2f81ff32c8c30b6a4288d489085e72a272e8",
+      "bytes": 65162
+    },
+    {
+      "path": "animations/species/collared-dove.js",
+      "sha256": "78f2cba2ca38637cf2613333e6b6ca3fbe7fbc1f25215a99afa5d80852dd3a98",
+      "bytes": 23526
+    },
+    {
+      "path": "animations/species/collared-dove.json",
+      "sha256": "41059800e1f61b8455463201dec34bace34f9a517428be031c9534f9a4897e31",
+      "bytes": 67279
+    },
+    {
+      "path": "animations/species/common-gull.js",
+      "sha256": "69ba5efe263e34e6658825e7ff3a9344fccc1a215d0322abe8918aa288cf28df",
+      "bytes": 18204
+    },
+    {
+      "path": "animations/species/common-gull.json",
+      "sha256": "d750af2f3e7eaf24baacddd8e9afdb41ca8d78790bbb039b4c9dbe8b931dcdae",
+      "bytes": 52245
+    },
+    {
+      "path": "animations/species/dunnock.js",
+      "sha256": "5f6757a0b5ad21e6862b2c5b7e71dbda87ccc67c3f7b64554c64d004a798a647",
+      "bytes": 23651
+    },
+    {
+      "path": "animations/species/dunnock.json",
+      "sha256": "ae585cf5c33d6ad2e3320c25564d23d9b85c117d914b53e738ba13fe13f6c943",
+      "bytes": 67505
+    },
+    {
+      "path": "animations/species/feral-pigeon.js",
+      "sha256": "f85e55c4eb182db5271c6909b54c6d9c2bcba931ed0aa73b04dd87a276b51eec",
+      "bytes": 24619
+    },
+    {
+      "path": "animations/species/feral-pigeon.json",
+      "sha256": "c37a1ee9b0b6b9c5c122bd0691477747ba90f2db1f33d9119498dbce7e137cf0",
+      "bytes": 70366
+    },
+    {
+      "path": "animations/species/fieldfare.js",
+      "sha256": "d286e41bcb0c88093e5b96d387fd2624bb983862e98e431cf1f4cc9a4ebac02b",
+      "bytes": 21611
+    },
+    {
+      "path": "animations/species/fieldfare.json",
+      "sha256": "2ba599ef9d799bf3fcd77f0732afec1cfd81f6b62ec84b0b51fa0b6181eb0c34",
+      "bytes": 59243
+    },
+    {
+      "path": "animations/species/goldcrest.js",
+      "sha256": "fb7d8404f08e4d1a15f864ece2595bee12ff953fc25779da1eba09270cd0718b",
+      "bytes": 17752
+    },
+    {
+      "path": "animations/species/goldcrest.json",
+      "sha256": "d8bcb4daf41e766a778482432a4d5023844460493167281357093a63eade92be",
+      "bytes": 51093
+    },
+    {
+      "path": "animations/species/great-spotted-woodpecker.js",
+      "sha256": "a8c6369cfd02f7d9377c0fb3dc0cec1eca767662c9ab0dd442f2d6685ffc7e3f",
+      "bytes": 17158
+    },
+    {
+      "path": "animations/species/great-spotted-woodpecker.json",
+      "sha256": "f7437f5ea40e68b864d879586918d08a6a40f0ba44a69d61b34b460b79167fb4",
+      "bytes": 49336
+    },
+    {
+      "path": "animations/species/great-tit.js",
+      "sha256": "712a08b32774bf843ca1a6f8f4f2af7bd89529c1ccc3729a27f95262bed46599",
+      "bytes": 22061
+    },
+    {
+      "path": "animations/species/great-tit.json",
+      "sha256": "96f043becb582ee761c07f39c127d4dbde54f76d6d3086b1f76c153e5286879e",
+      "bytes": 62631
+    },
+    {
+      "path": "animations/species/green-woodpecker.js",
+      "sha256": "06ca0a4bdfced420b6e25aea8b41973e6d6162f64e86ea90d9a308dcf151debc",
+      "bytes": 22394
+    },
+    {
+      "path": "animations/species/green-woodpecker.json",
+      "sha256": "5eb7dc83ae1f140da40f40342886643d1c0db5e4a3c177d283ed4c043fe11836",
+      "bytes": 61301
+    },
+    {
+      "path": "animations/species/greenfinch.js",
+      "sha256": "e868026fb76f5749fc540e76542346604c6b5b4dd6ba2787324754ee23871b36",
+      "bytes": 23253
+    },
+    {
+      "path": "animations/species/greenfinch.json",
+      "sha256": "2027fdbb7d774bdd43a9afa4daeca6f522623f37551b380855f1372764fa4670",
+      "bytes": 66802
+    },
+    {
+      "path": "animations/species/herring-gull.js",
+      "sha256": "ccb824bcd51ad19e755ad675274892dcfc94cf9a4f5d4e2a2cfbfe1d79e87b0d",
+      "bytes": 19368
+    },
+    {
+      "path": "animations/species/herring-gull.json",
+      "sha256": "6dbf861d2808781adbfeba7d7c107811e13f7b922de96c32efe5c7f624f1bd52",
+      "bytes": 55697
+    },
+    {
+      "path": "animations/species/house-sparrow.js",
+      "sha256": "28b6a60d9f327c18fb6bec68cada2783b4e09269749b86fbe6a4f284014da0f3",
+      "bytes": 21690
+    },
+    {
+      "path": "animations/species/house-sparrow.json",
+      "sha256": "9cad9be781b62f9639232f7312270eea4861957a47bf03385ec2489f9bfe4553",
+      "bytes": 61234
+    },
+    {
+      "path": "animations/species/jackdaw.js",
+      "sha256": "bc0b5cfcb3d19b1bb31f4f309f7ae66a0f8942d7bfb4dad14407a962efce47e8",
+      "bytes": 26003
+    },
+    {
+      "path": "animations/species/jackdaw.json",
+      "sha256": "7fa3737a85c91a86cc14605b5435571f12ec924ce463bf10b06ec44a66afb3b4",
+      "bytes": 74670
+    },
+    {
+      "path": "animations/species/jay.js",
+      "sha256": "253a0166042d15715aacbad09a1d2293a19e164d2a153ad476bc223e15370e41",
+      "bytes": 23536
+    },
+    {
+      "path": "animations/species/jay.json",
+      "sha256": "6cbed861446ea7db84d57a10e81d9ef7ab6fd780ba0f562776c2771758f2b958",
+      "bytes": 65016
+    },
+    {
+      "path": "animations/species/little-owl.js",
+      "sha256": "df4c73571d92784d808fac772023520d0f0a6f2192461a853fa64436bb6a13a1",
+      "bytes": 21630
+    },
+    {
+      "path": "animations/species/little-owl.json",
+      "sha256": "6dad001cf770f16ed4da57ee8cd51a100c322cd7268debd31f54cde912a014d0",
+      "bytes": 58837
+    },
+    {
+      "path": "animations/species/long-eared-owl.js",
+      "sha256": "3991f9d7e6cf3a1c9a174013cc090400380f19c61bc24fdfb6cd487293e81e8f",
+      "bytes": 22121
+    },
+    {
+      "path": "animations/species/long-eared-owl.json",
+      "sha256": "a3c18d5be912842782b86cd64ba4a866b9c95e5c198f19181e67df3f64643012",
+      "bytes": 60028
+    },
+    {
+      "path": "animations/species/long-tailed-tit.js",
+      "sha256": "c29d86c988eb1aac2ebf9709114615bfdb7a857add8b515c7f6490812d9f1f1e",
+      "bytes": 23824
+    },
+    {
+      "path": "animations/species/long-tailed-tit.json",
+      "sha256": "909ac3830764b175a6a435f493b26ee93d4191072a7c315088df4d610e30bda4",
+      "bytes": 68088
+    },
+    {
+      "path": "animations/species/magpie.js",
+      "sha256": "fcbdda9a31960a404d80038fe32e712fa8cb7da236ea54a7fc651eb28089a079",
+      "bytes": 27148
+    },
+    {
+      "path": "animations/species/magpie.json",
+      "sha256": "397b2a651798b8f4f10e8a793a4cbc687ca97b2af8d036a110e491ce61b4921a",
+      "bytes": 78225
+    },
+    {
+      "path": "animations/species/mallard.js",
+      "sha256": "950781fcd2dcbf25a2fce21b049a3414e17f6ec27b00d062a7779eac46a8fc14",
+      "bytes": 25612
+    },
+    {
+      "path": "animations/species/mallard.json",
+      "sha256": "93e521e180fa4d0246e070c3deb5f40238e4b8938f43ce1ed745a1ddb289eb0f",
+      "bytes": 70628
+    },
+    {
+      "path": "animations/species/nuthatch.js",
+      "sha256": "bb14d479c22fed5b22438b719496ebc766e9cb2ad89bb3330f9afd86488acc55",
+      "bytes": 17511
+    },
+    {
+      "path": "animations/species/nuthatch.json",
+      "sha256": "215fc9a45625733a0652e9d7c1f16734dbbb26dbafefadb4e078afade4668afc",
+      "bytes": 49541
+    },
+    {
+      "path": "animations/species/pheasant.js",
+      "sha256": "67263319c86d8ebe4db96da24d904c9bfd863fc7861cef562320496d6337dee1",
+      "bytes": 23048
+    },
+    {
+      "path": "animations/species/pheasant.json",
+      "sha256": "ebdfcc432559106d88384e5160b408dca42ef632db39f4d05c74653e10e1c65c",
+      "bytes": 67259
+    },
+    {
+      "path": "animations/species/pied-wagtail.js",
+      "sha256": "8bf973886a3b3d2540f92b271ef81981590f11947750e0928f8e13f3a7c7b7bb",
+      "bytes": 20712
+    },
+    {
+      "path": "animations/species/pied-wagtail.json",
+      "sha256": "08dd28179a849115dd61649690fdd9f59d5f2f2026c2ee4b65a0073fcc65ae4e",
+      "bytes": 59864
+    },
+    {
+      "path": "animations/species/redwing.js",
+      "sha256": "0ff5a97b26ef18f8ccbfa0e5ee9b6a2b515a60a723664a7f397f9e556f1d64b9",
+      "bytes": 20530
+    },
+    {
+      "path": "animations/species/redwing.json",
+      "sha256": "21cafd0859141af54f7680bbce769092f37c8ac54c08fb78127304b488fd1786",
+      "bytes": 55740
+    },
+    {
+      "path": "animations/species/rook.js",
+      "sha256": "e467d134759dffe4fea979f07e61279d39870bb8d13d2c9fb8cb72ecd3b56933",
+      "bytes": 27490
+    },
+    {
+      "path": "animations/species/rook.json",
+      "sha256": "b83ac2e33c524183dd8f0e535b2f25d234ebb5b05db31cfab7f39a638bfb5d1a",
+      "bytes": 79611
+    },
+    {
+      "path": "animations/species/short-eared-owl.js",
+      "sha256": "6e605c63d3a0bbea6bf353f2d84061145c26d89ac2a66cb46e49ddd825ccbee0",
+      "bytes": 22468
+    },
+    {
+      "path": "animations/species/short-eared-owl.json",
+      "sha256": "ddb92b5325f89969799fe8873a311a75d27f2c5260e24f42b59a5f7eb7ce7e1a",
+      "bytes": 61286
+    },
+    {
+      "path": "animations/species/siskin.js",
+      "sha256": "25f7b8eab6868b8907b134a4978b9ccabf70a557abade09279dd850701429162",
+      "bytes": 18082
+    },
+    {
+      "path": "animations/species/siskin.json",
+      "sha256": "c9067d39cf718d0b8f3e71214ae4b2ad783a0b697b90ddeaf3cf79e9ff22f136",
+      "bytes": 52298
+    },
+    {
+      "path": "animations/species/song-thrush.js",
+      "sha256": "f79eb221afd129da7fd31f3fed78a673aadc47a55520fc13bcf670a1d4ecdd23",
+      "bytes": 17889
+    },
+    {
+      "path": "animations/species/song-thrush.json",
+      "sha256": "ed68d5d773033f529ebc7cd10eddac1bf7bcd1d2407dba66ce50be10813f0299",
+      "bytes": 51886
+    },
+    {
+      "path": "animations/species/sparrowhawk.js",
+      "sha256": "6955cba9e1f7208d9f722549e83e3a5f8b408c995b91104fa393e33fd443b23f",
+      "bytes": 23406
+    },
+    {
+      "path": "animations/species/sparrowhawk.json",
+      "sha256": "47f2c6c2fc1ac12c8fd7798e2665b09c889ec0a0013998a5ea8cf218bd9d1b05",
+      "bytes": 64628
+    },
+    {
+      "path": "animations/species/starling.js",
+      "sha256": "03064c048c44fd5ab77b71043f4d31397c97b0387a7138e8750224a0d26f61dc",
+      "bytes": 22422
+    },
+    {
+      "path": "animations/species/starling.json",
+      "sha256": "a314f3a325d30cae0e5821ef7d67abc3cca7bfd454c2961ddcb6f6a86796626c",
+      "bytes": 63533
+    },
+    {
+      "path": "animations/species/tawny-owl.js",
+      "sha256": "bdc0c6f33181f71af11fa7446bd697880fff16055bcab4fdf97e1ec9828daa0b",
+      "bytes": 20732
+    },
+    {
+      "path": "animations/species/tawny-owl.json",
+      "sha256": "884b74098f95fcf1bc85e66a015d55732e64f8e2f267a6e00174e637460e5712",
+      "bytes": 55988
+    },
+    {
+      "path": "animations/species/treecreeper.js",
+      "sha256": "925a27ca1db3f655ae2b29098910d7510b1b5b09f288a95472ae0c65f727ceb5",
+      "bytes": 20806
+    },
+    {
+      "path": "animations/species/treecreeper.json",
+      "sha256": "2c98715b47c8c28073a71fb2ef5a8258fd9c365c2cd96e9cfce3ae2881c00076",
+      "bytes": 56251
+    },
+    {
+      "path": "animations/species/woodpigeon.js",
+      "sha256": "4cee2a49508316a81aabec30bf73d9afc89439e2d2ae552c9a1fe2a8975bf3de",
+      "bytes": 23892
+    },
+    {
+      "path": "animations/species/woodpigeon.json",
+      "sha256": "5de1621875bb0b7b6dce35e01b8411b2e6943c65eaa181bcf11be859a13937a6",
+      "bytes": 68141
+    },
+    {
+      "path": "animations/starling.html",
+      "sha256": "e43831eb25a7969e616cb932e18842611263ffe4b5bd0ef167f6dc3c805bc602",
+      "bytes": 1616
+    },
+    {
+      "path": "animations/tawny-owl.html",
+      "sha256": "d4c928c494e9b7b12e5b6691d8785dfdb33c5224413f0a85d48522c031f4a860",
+      "bytes": 1620
+    },
+    {
+      "path": "animations/thumbnails/barn-owl.webp",
+      "sha256": "bca2ffe1a67104cb27c1de0352c1dfbe809fe431300199b59cc35efb05210dfd",
+      "bytes": 13876
+    },
+    {
+      "path": "animations/thumbnails/black-headed-gull.webp",
+      "sha256": "957c4c498575a2e2e2cf2602ee67b69d926a5a88ba91178aa46453cccc49a0b8",
+      "bytes": 12298
+    },
+    {
+      "path": "animations/thumbnails/blackcap.webp",
+      "sha256": "9f758da09b7b9752b790e41060aacff7983082b38fff91ab27c726e2ecbb392a",
+      "bytes": 13218
+    },
+    {
+      "path": "animations/thumbnails/bullfinch.webp",
+      "sha256": "4e2a35d98d5c58c7710d9f7d6bb8fe32b9a6f950a6026b62a34ee2c56e32d227",
+      "bytes": 15072
+    },
+    {
+      "path": "animations/thumbnails/buzzard.webp",
+      "sha256": "f34801f17a39b1fed61f0aa5dd344cb5c3b7ad660045b5612d5971f819c06f80",
+      "bytes": 16094
+    },
+    {
+      "path": "animations/thumbnails/carrion-crow.webp",
+      "sha256": "b1b48f41b67749e863b7548c1b5d8001d2d91530d0818388e372e1f34947ce3f",
+      "bytes": 15444
+    },
+    {
+      "path": "animations/thumbnails/chaffinch.webp",
+      "sha256": "141f19a0dd8c5ba4d766d3bd917d2eaef15b7c3473b271f39c6c25c0e5d4fd85",
+      "bytes": 14284
+    },
+    {
+      "path": "animations/thumbnails/coal-tit.webp",
+      "sha256": "d67a80997a48c2bdb6fa5831f8ab8c1267a8e2068100e79fe7bc68a505a80d00",
+      "bytes": 13142
+    },
+    {
+      "path": "animations/thumbnails/collared-dove.webp",
+      "sha256": "e7fe953f0571e1b80416d8475c92022a530b615c03d4c3fc7dafd9a8a098add7",
+      "bytes": 11720
+    },
+    {
+      "path": "animations/thumbnails/common-gull.webp",
+      "sha256": "0fb58c3c4ce0c5fb7119dc334ce4e46976f2d3afa50f31fa6991123cb8ce744f",
+      "bytes": 11984
+    },
+    {
+      "path": "animations/thumbnails/dunnock.webp",
+      "sha256": "f790a344d9f083d2f39a9e16cbf7893c1cc0b850df90efe7f939f4b8a7b7c63e",
+      "bytes": 12766
+    },
+    {
+      "path": "animations/thumbnails/feral-pigeon.webp",
+      "sha256": "aa2353d73fb4c3d9bd63971f92f2afc47cb20fd7c7bed19016ebedf5ab3e579b",
+      "bytes": 13308
+    },
+    {
+      "path": "animations/thumbnails/fieldfare.webp",
+      "sha256": "56d52acb307ca87077d24d5485483323dd17fbd9ad600ba3af2ec680feac33f3",
+      "bytes": 15738
+    },
+    {
+      "path": "animations/thumbnails/goldcrest.webp",
+      "sha256": "2bd54d1d8285a3484c9f54894513fe83b86d1cc94b20a7ddb75fbd706ebdd1f9",
+      "bytes": 12598
+    },
+    {
+      "path": "animations/thumbnails/great-spotted-woodpecker.webp",
+      "sha256": "f305d0d2756a7b6a38de0fe0b64b2b3c7eece1f9d10b980b62a5a6c9707aef88",
+      "bytes": 12286
+    },
+    {
+      "path": "animations/thumbnails/great-tit.webp",
+      "sha256": "5549fd1d4591afea9bd46ba0af111a55d8192f42c1a082b0d74dea766586fcfa",
+      "bytes": 12928
+    },
+    {
+      "path": "animations/thumbnails/green-woodpecker.webp",
+      "sha256": "dae61c4930cb0c4ff62584189c68c2f6513371b1cfcb2f86070075068cbf9447",
+      "bytes": 14940
+    },
+    {
+      "path": "animations/thumbnails/greenfinch.webp",
+      "sha256": "a7495bf8fd7e8537dd05dc1746881edec1cfe41741adeb40e6587341759ac08d",
+      "bytes": 14206
+    },
+    {
+      "path": "animations/thumbnails/herring-gull.webp",
+      "sha256": "d33c84c6d2c841a8fb81b8e41be346d6aff3dcf3226cbdbd0f9175dd00cd3351",
+      "bytes": 13892
+    },
+    {
+      "path": "animations/thumbnails/house-sparrow.webp",
+      "sha256": "f314a0f812d65b689c39480192fe287f499e1736b92a2e18c9caed06717a5913",
+      "bytes": 13898
+    },
+    {
+      "path": "animations/thumbnails/jackdaw.webp",
+      "sha256": "e48aea7b1a0982010d83cc9413990d18589ca3975c2c58d45110eda9086c28a0",
+      "bytes": 14166
+    },
+    {
+      "path": "animations/thumbnails/jay.webp",
+      "sha256": "776e51681c9b442e7e70efdd6493353e12c9604b6c424cfd7abb7f61a4cae6cf",
+      "bytes": 15566
+    },
+    {
+      "path": "animations/thumbnails/little-owl.webp",
+      "sha256": "777967d31d93dc45f143d3f94499a0c56d65e8b48d23bbcd1020a08c7289abf9",
+      "bytes": 16790
+    },
+    {
+      "path": "animations/thumbnails/long-eared-owl.webp",
+      "sha256": "3aef473e2d24fa6a24e4377e8a03ea768782233a384e7c63d5b4e58202dc6ff7",
+      "bytes": 13546
+    },
+    {
+      "path": "animations/thumbnails/long-tailed-tit.webp",
+      "sha256": "0e56101b67be6ebbb6b3818658b707dea97044accd38708507dc6af75a0aec18",
+      "bytes": 13440
+    },
+    {
+      "path": "animations/thumbnails/magpie.webp",
+      "sha256": "c55f6eaf6285c100c9a2ed626d01a71b92ed680a085bcc03987828a8d38b1398",
+      "bytes": 12602
+    },
+    {
+      "path": "animations/thumbnails/mallard.webp",
+      "sha256": "1d3f8ec4710414420ae1d260b5bc1e463cb12d803573fcb034335e820e6ceb2f",
+      "bytes": 14600
+    },
+    {
+      "path": "animations/thumbnails/nuthatch.webp",
+      "sha256": "581767e2aed0212d9e53a9f35d5e95c8704673bc7f61bf669d2c46484069e292",
+      "bytes": 13428
+    },
+    {
+      "path": "animations/thumbnails/pheasant.webp",
+      "sha256": "ded6e7c7ec26a8054d03e5aecea3c25e9abf44cb08c1173f38616f3e7979c3c4",
+      "bytes": 17726
+    },
+    {
+      "path": "animations/thumbnails/pied-wagtail.webp",
+      "sha256": "54a10ebecd2dbb1dd0a366f57d41ab0fb4d8e820bb099c0cfad157cda6416f25",
+      "bytes": 13668
+    },
+    {
+      "path": "animations/thumbnails/redwing.webp",
+      "sha256": "dc57c4969f8fe8559ccc8e8c8229d9c5cdcdbd74f49638be439066350a5b6e54",
+      "bytes": 15846
+    },
+    {
+      "path": "animations/thumbnails/rook.webp",
+      "sha256": "12e1a0f505761a71e0a9d162f33654cbde44d456662dc8323f2598f02d25c994",
+      "bytes": 14898
+    },
+    {
+      "path": "animations/thumbnails/short-eared-owl.webp",
+      "sha256": "108650819e2ace4130c2caf3f0b64f27cb6d5d7f28d01cbe214fc9158442b5c0",
+      "bytes": 17130
+    },
+    {
+      "path": "animations/thumbnails/siskin.webp",
+      "sha256": "e28ff5059d937cfa560087bfe7265598278291349172abcd263ef5f389cc6748",
+      "bytes": 18070
+    },
+    {
+      "path": "animations/thumbnails/song-thrush.webp",
+      "sha256": "d1e32bb42df876e2f14668d24697eeec161471e9e489c6b42dff1907a2ef57cc",
+      "bytes": 17814
+    },
+    {
+      "path": "animations/thumbnails/sparrowhawk.webp",
+      "sha256": "a99394c6a40c6527d7c05f798d899343b40a5e37e4c51ba24dec12efe6751993",
+      "bytes": 17458
+    },
+    {
+      "path": "animations/thumbnails/starling.webp",
+      "sha256": "f65a50ef5e123cf8a8d8f34eec2ff8925e4527f41f65df7668bfd3c5696003be",
+      "bytes": 14994
+    },
+    {
+      "path": "animations/thumbnails/tawny-owl.webp",
+      "sha256": "afb037b93e11be283ded4e98d12785ce06a979c69e69c86140eb4f9a270a9192",
+      "bytes": 15946
+    },
+    {
+      "path": "animations/thumbnails/treecreeper.webp",
+      "sha256": "9b76ca1ed6c07f694e87496207232f90320dd21d302c769fe45227a5849658a1",
+      "bytes": 14434
+    },
+    {
+      "path": "animations/thumbnails/woodpigeon.webp",
+      "sha256": "0e7eeff61131d3ebea6c886df771fba97578447b9feb24770ccde6a901ef7afb",
+      "bytes": 12490
+    },
+    {
+      "path": "animations/treecreeper.html",
+      "sha256": "f3b6b8f426f74430178e17cce1bd46a0e8cdbd310aa1bd733c63530c11c247e6",
+      "bytes": 1628
+    },
+    {
+      "path": "animations/woodpigeon.html",
+      "sha256": "4da678cdf5bbadc8e95b9ed74013c554e6e10bb374a6dc188d786e4c85463cfe",
+      "bytes": 1624
+    },
+    {
+      "path": "provenance/animation-review/df025c63026d3281/build-record.source.json",
+      "sha256": "df025c63026d3281681e417e6d8ba597878cb04d191addaf5127a7e6ed53b4f4",
+      "bytes": 47613
+    },
+    {
+      "path": "provenance/animation-review/df025c63026d3281/catalog.source.json",
+      "sha256": "06aeb595f1541797806827010eb4fccfa7a36e1654ef5f89457c92830550a3e5",
+      "bytes": 19367
+    }
+  ],
+  "runtime_generated_marks": true,
+  "prepared_score_cache_included": false
+}

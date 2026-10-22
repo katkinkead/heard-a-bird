@@ -1,0 +1,1362 @@
+{
+  "createdAt": "2026-10-21T17:10:21.763445+00:00",
+  "title": "Birdsong painting collection",
+  "birds": [
+    {
+      "id": "robin",
+      "name": "Robin",
+      "durationSeconds": 75,
+      "sourceSha256": "609a65b4a4941dfb65588db0bd417e6624646a688e2051113aeb32216997210e",
+      "scoreKey": "776b6f9f9308e3da45abe6054578cc392b65985adccb1a0cd3b3906909b51d8c",
+      "strokeCount": 112380,
+      "finalPngSha256": "689d94bb96f3bb55695033010e76e1705927ddab247256c01497194e679eec9b",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "robin",
+        "byteIdentical": false,
+        "maxChannelDifference": 8,
+        "meanRgbChannelDifference": 2.488888888888889e-05,
+        "changedPixels": 15,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "blackbird",
+      "name": "Blackbird",
+      "durationSeconds": 75,
+      "sourceSha256": "7b0dab684c9c7932fdc78b1007f22b81e7e51d36c66ab0e817b503969d79962e",
+      "scoreKey": "074b940eeaa76d0c3a347cc213dcd877365281e0c4e0942917e2ae5696727b1d",
+      "strokeCount": 141248,
+      "finalPngSha256": "ac9f99622641ea243d8a3ab1d9c916611ededd5483691bc44018456f59fe1e48",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "blackbird",
+        "byteIdentical": false,
+        "maxChannelDifference": 6,
+        "meanRgbChannelDifference": 3.4222222222222224e-05,
+        "changedPixels": 28,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "blue-tit",
+      "name": "Blue tit",
+      "durationSeconds": 75,
+      "sourceSha256": "7b0dab684c9c7932fdc78b1007f22b81e7e51d36c66ab0e817b503969d79962e",
+      "scoreKey": "0a0c783cfea2fade7e86dca3202bfd67ad27c1d950fdc814219cdc26a1fac6fc",
+      "strokeCount": 116579,
+      "finalPngSha256": "572c19c4fc150798f7a4378e1c9f697943b790a962763ebb7c76115b00796d87",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "blue-tit",
+        "byteIdentical": false,
+        "maxChannelDifference": 17,
+        "meanRgbChannelDifference": 9.2e-05,
+        "changedPixels": 20,
+        "pixelsOver8": 2,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "wren",
+      "name": "Wren",
+      "durationSeconds": 75,
+      "sourceSha256": "7b0dab684c9c7932fdc78b1007f22b81e7e51d36c66ab0e817b503969d79962e",
+      "scoreKey": "999b7a370811b4ae0e29f70230ab06ca8deced959a759a4966c32cbc61698dad",
+      "strokeCount": 126867,
+      "finalPngSha256": "e2af20783134e0f6401e7c3bf1bafc55b856d117fe6fba2a12e30ccab98e4c08",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "wren",
+        "byteIdentical": false,
+        "maxChannelDifference": 5,
+        "meanRgbChannelDifference": 4.6222222222222224e-05,
+        "changedPixels": 27,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "goldfinch",
+      "name": "Goldfinch",
+      "durationSeconds": 75,
+      "sourceSha256": "485dafdde7b88a3e29c067d235b4bca65b606d19de6be612827dd003bb977533",
+      "scoreKey": "55a9eb51aed84543865bfb4af86126d4c3d307a86d9d9c65eec6d32c04b66497",
+      "strokeCount": 68747,
+      "finalPngSha256": "692e701b61acbacc599ecb1489067ca23f1293785b0ded6e2032bb0d9d0cc8e0",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "goldfinch",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "house-sparrow",
+      "name": "House sparrow",
+      "durationSeconds": 75,
+      "sourceSha256": "e582b0ed896d6a943f4f2391584f715b0bb76fa1d89d55eae73dbd0ca385a9a1",
+      "scoreKey": "e2475481aa268e305adcf6410f06a08ab59574d5814beb77759af52259e6f05d",
+      "strokeCount": 116946,
+      "finalPngSha256": "f34914771ebf5e462900300d9870725521e89b90983b0e99e1e9fa97ed52717e",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "house-sparrow",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "starling",
+      "name": "Starling",
+      "durationSeconds": 75,
+      "sourceSha256": "f62f30bd87dda4e372663636a1e971e37362b086c3baf927442c16b63f7d22c6",
+      "scoreKey": "87ce688827df8961b412357196a2997f7fc8174442ce1b873e84bc8b33d507be",
+      "strokeCount": 143825,
+      "finalPngSha256": "b0d2448f849924e9c291c649e467394bd2323b00c66e29c698f1ec418ad57980",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "starling",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "woodpigeon",
+      "name": "Woodpigeon",
+      "durationSeconds": 75,
+      "sourceSha256": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f",
+      "scoreKey": "26a37d26522f6821ffe376f96f9f7026cfb7ac9da3b74745d7e07b4804f89947",
+      "strokeCount": 133668,
+      "finalPngSha256": "3379871e34b28a3e757f95271f69f7fce8967040cc6fd3bafb5d16134fdea828",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "woodpigeon",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "great-tit",
+      "name": "Great tit",
+      "durationSeconds": 75,
+      "sourceSha256": "16a17656ec9a3dcdb930053cf8638e2be4ef9051eba801a2364dcf24f778a6eb",
+      "scoreKey": "de554453eac4daa609bbe5220f89842f034e2724e9ca550c46bf79dde526afdc",
+      "strokeCount": 125608,
+      "finalPngSha256": "80975321c87affc9d13d4254bef31b95f69b2bf18db98c413591d766d7e975c6",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "great-tit",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "long-tailed-tit",
+      "name": "Long-tailed tit",
+      "durationSeconds": 75,
+      "sourceSha256": "f10677b07e64dcf338948846c8d90eb8cc0cebec0339bd772b686e9ec3a7e136",
+      "scoreKey": "1b87f1f03f5ec54d89f2733e38c850f8df708ccc06bd732e4449728b4b992dd8",
+      "strokeCount": 126578,
+      "finalPngSha256": "658ee1e373af802e4d0b9d65b96edcfa1e466ad8becd4618527705ba1fda8407",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "long-tailed-tit",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "magpie",
+      "name": "Magpie",
+      "durationSeconds": 75,
+      "sourceSha256": "3a2ebb660324036ae9cba252ec4121493fb3ff8131dc8ca713e27bd47b15c044",
+      "scoreKey": "117013d0b7dc4d9178a2daa1ede25a03885404130e59b740d37fa69be6c1f3cf",
+      "strokeCount": 135970,
+      "finalPngSha256": "2838cca638bf248662c460eefdf56270fd88cc4e8f3b0771f987089ad606b90f",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "magpie",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "chaffinch",
+      "name": "Chaffinch",
+      "durationSeconds": 75,
+      "sourceSha256": "b3d29d3b4c757626eee7445910285a14562fdcdcc55ce1d6e53c8b9a68e022e6",
+      "scoreKey": "14259f8d7acce637b0e6745187028769c87cd487bf6a330b31e63fd6f3a76acf",
+      "strokeCount": 159583,
+      "finalPngSha256": "f2b95a863b1e78f01ba2dbea69757f7414b22f1bf456206819b2dd1d1a17d9db",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "chaffinch",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "dunnock",
+      "name": "Dunnock",
+      "durationSeconds": 75,
+      "sourceSha256": "86ada5e05891bb814b55fd6eb9e190af1311a1fb41147ac7f084cba5e64dd236",
+      "scoreKey": "a8ed02f2ecf4e198618e6725ed8e029aa91c580957d85532ce20eb08c118ce5e",
+      "strokeCount": 159058,
+      "finalPngSha256": "2815e931491b41cf15cb5ee74957070d62659ddd78de07fc42b43b440a880807",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "dunnock",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "coal-tit",
+      "name": "Coal tit",
+      "durationSeconds": 75,
+      "sourceSha256": "a96c3538f97553ea9c2a115e241d153ee3d0f375aeaa6fe98719f9dfa494902f",
+      "scoreKey": "e591d0214bad9f619ccb19a6eab11380a6fc4b7e6159ec48dea2712702121ca6",
+      "strokeCount": 145520,
+      "finalPngSha256": "ebb021153cbbf3c76d0f28b347ff52273910ffc3179013a3e5b497d384ea485c",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "coal-tit",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "jackdaw",
+      "name": "Jackdaw",
+      "durationSeconds": 75,
+      "sourceSha256": "9e7845bf71a7a11c6e4520d923b0923343b25075e044d732aab85082b81298f7",
+      "scoreKey": "cc33bfecc83a0768ba8cbabfa3065ff01ef69eb6ca17e18b7dc7b3a6f27810e9",
+      "strokeCount": 162223,
+      "finalPngSha256": "ef1bbc7b897c486d1252f921949dd06bf01656589f09669833727272153c05b1",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "jackdaw",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "carrion-crow",
+      "name": "Carrion crow",
+      "durationSeconds": 75,
+      "sourceSha256": "17c4a1c5e7fd1ec5a34add3dd40761f0570c79cb57765811ffb3a8f9b9613a92",
+      "scoreKey": "62becba142d451540fd6e7bb032d184a9998c8dad8abd680729bde3c91b294ae",
+      "strokeCount": 175635,
+      "finalPngSha256": "0f89005af62c37ee465c68ea2573a3be4a50ac292f4719377cb96ee0878a6477",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "carrion-crow",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "feral-pigeon",
+      "name": "Feral pigeon",
+      "durationSeconds": 75,
+      "sourceSha256": "c6e31be3cb02c2a8df4e02d73a27a664d946c9b3e56ed59434a9fb4e9bf38f49",
+      "scoreKey": "07c5397b2242cb50587daa653c908a1f1cbe4578c6670529ee9329349cc4bf6c",
+      "strokeCount": 173990,
+      "finalPngSha256": "13c9c3ff6476a13da8dfb6b535ddf47075b4d6eea11d1d6a7d522592d940d716",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "feral-pigeon",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "collared-dove",
+      "name": "Collared dove",
+      "durationSeconds": 75,
+      "sourceSha256": "f34afe7dbd8026893a3f4da5be3294e9de01e20a5507cc7d45476083cb172d70",
+      "scoreKey": "57f506f92650512a8b891eb0d6b71b5413c32543277164533c7a402c58669e7f",
+      "strokeCount": 138074,
+      "finalPngSha256": "9ffccd66e4769b4f8911c45b3f78794cca1f27e3f598e4e6de958de576b4230a",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "collared-dove",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "greenfinch",
+      "name": "Greenfinch",
+      "durationSeconds": 75,
+      "sourceSha256": "231873ce79304dde15fae6dd78fb8979837ab2e4cf7f6f342c486ab7916bd28e",
+      "scoreKey": "50593fc233843a03aacac8d25c123b588b7978d268c18f6597f4a85d87b8b443",
+      "strokeCount": 159105,
+      "finalPngSha256": "479275681202f800642ad4a8fc99bdee6aaf858cf2b9c96251a60f1ad457b35d",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "greenfinch",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "rook",
+      "name": "Rook",
+      "durationSeconds": 75,
+      "sourceSha256": "d2e4574189669c08983d08664bc04ff744351716bf40a9cc6408521a2d8f3d4a",
+      "scoreKey": "65333aa8d49099a05f732049631912043c09c05a167661f6894678c6a3a30b7d",
+      "strokeCount": 177401,
+      "finalPngSha256": "682138d178ca31c6824a3b5dcaa57d63801f301dedd0f8d73e918f31eba42b46",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "rook",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "nuthatch",
+      "name": "Nuthatch",
+      "durationSeconds": 75,
+      "sourceSha256": "e002ed4b3f067bcc627b31da7d0981b70a9ac72eba831d1ee092cc4f55dbb221",
+      "scoreKey": "310b4105d92a046b23ea68624c1d64d62c3fb94a4d10c738d38ff5cb91d382a7",
+      "strokeCount": 160015,
+      "finalPngSha256": "08a68b87a18b4dabcadfed2a25f9f28496bf544463bba7585826b1bfbe6e0577",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "nuthatch",
+        "byteIdentical": false,
+        "maxChannelDifference": 6,
+        "meanRgbChannelDifference": 4.4444444444444447e-05,
+        "changedPixels": 19,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "herring-gull",
+      "name": "Herring gull",
+      "durationSeconds": 75,
+      "sourceSha256": "34bc9d5c256e483e2b41d1c449cd92eeeffb9ef27be18cc19e4a50d124824c40",
+      "scoreKey": "8fde7df6f607dd00bee9f4772e6c4a6e16f2b342d996c93f78a73099d67c6a6a",
+      "strokeCount": 161828,
+      "finalPngSha256": "07da9b44ef59a59dbe7ef054a59215c11e61eb4c883a08ddab63eacb604b8133",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "herring-gull",
+        "byteIdentical": false,
+        "maxChannelDifference": 9,
+        "meanRgbChannelDifference": 7.422222222222223e-05,
+        "changedPixels": 33,
+        "pixelsOver8": 1,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "common-gull",
+      "name": "Common gull",
+      "durationSeconds": 75,
+      "sourceSha256": "9566fc23d658e963f4b267498983ad4d4fb254ae158dd17f99b26044a52c0212",
+      "scoreKey": "21816f0c6e2ba85673b9d3cad0c7457889aad93692d28dbd17057133471a2350",
+      "strokeCount": 165779,
+      "finalPngSha256": "6954099102b7236380acf7ef2e8a41747ae2c7ced927f98db01480c20dbfec72",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "common-gull",
+        "byteIdentical": false,
+        "maxChannelDifference": 12,
+        "meanRgbChannelDifference": 5.333333333333333e-05,
+        "changedPixels": 26,
+        "pixelsOver8": 2,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "siskin",
+      "name": "Siskin",
+      "durationSeconds": 75,
+      "sourceSha256": "483fdd68ecf03fe0cc4fe8719e323e87b506ec83158a88f5f4b20975e77edd33",
+      "scoreKey": "ad5ab31114d36c61dc35f38177998cb9e4f968394668829382491441fa098010",
+      "strokeCount": 163605,
+      "finalPngSha256": "506794e07e6c1498b5325cbc37a5ceeddc68c51f97ba6e1e3b038536b45807d0",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "siskin",
+        "byteIdentical": false,
+        "maxChannelDifference": 9,
+        "meanRgbChannelDifference": 4.355555555555556e-05,
+        "changedPixels": 20,
+        "pixelsOver8": 1,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "great-spotted-woodpecker",
+      "name": "Great spotted woodpecker",
+      "durationSeconds": 75,
+      "sourceSha256": "23fc997057f339c7a49b1f6bd694aa561e448ff88d47769ff95b5da86f2d6304",
+      "scoreKey": "fdbec65304baaba0f2446f357392615042d49bc09602a82bb40f06d203219797",
+      "strokeCount": 127792,
+      "finalPngSha256": "a91a167fd38a7116bc245b548f2ad88524895f3ff01390407c37ec01df180963",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "great-spotted-woodpecker",
+        "byteIdentical": false,
+        "maxChannelDifference": 9,
+        "meanRgbChannelDifference": 3.4222222222222224e-05,
+        "changedPixels": 16,
+        "pixelsOver8": 1,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "clinging",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "blackcap",
+      "name": "Blackcap",
+      "durationSeconds": 75,
+      "sourceSha256": "a224f545205a76f36b2abc0771d5e77aeb78714b8ee116e95bed5d2306d9da10",
+      "scoreKey": "b5b886bddead79782a0bf4245e57d34cfa409f6d02b04902cc0587d9fcaa1b29",
+      "strokeCount": 153953,
+      "finalPngSha256": "0f04117dea3bce2224e49075a3a017fa27dfabfacca8f496b1be655b3b891d4b",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "blackcap",
+        "byteIdentical": false,
+        "maxChannelDifference": 19,
+        "meanRgbChannelDifference": 8.088888888888889e-05,
+        "changedPixels": 33,
+        "pixelsOver8": 1,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "song-thrush",
+      "name": "Song thrush",
+      "durationSeconds": 75,
+      "sourceSha256": "2d7f2102bd22e57242153efcca87af95e4daac9f65ca6d90994f013ad4a8cc39",
+      "scoreKey": "f7d8f8463acd87fabf19b3437609b171fabde9831e4e07c2e2b4ff7fa977cdf2",
+      "strokeCount": 215774,
+      "finalPngSha256": "f8819deefa291b5716f48d05a38d2be0851e9d0ec7b50540d30a662c38baa748",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "song-thrush",
+        "byteIdentical": false,
+        "maxChannelDifference": 6,
+        "meanRgbChannelDifference": 6.222222222222222e-05,
+        "changedPixels": 29,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "pheasant",
+      "name": "Pheasant",
+      "durationSeconds": 75,
+      "sourceSha256": "2b240873696743266c4f44dce6bb290b7cf1a867b61fe8726379c6eddd143757",
+      "scoreKey": "180ecbd0c00f04cd37833db656b3ca67814567a65da089ae0dccd0668da853f9",
+      "strokeCount": 192698,
+      "finalPngSha256": "050b477a87e48c87a069c891071ffc1ed4b0b9f186b2cbe80a7d282dbd1475f8",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "pheasant",
+        "byteIdentical": false,
+        "maxChannelDifference": 9,
+        "meanRgbChannelDifference": 6.088888888888889e-05,
+        "changedPixels": 27,
+        "pixelsOver8": 2,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "goldcrest",
+      "name": "Goldcrest",
+      "durationSeconds": 75,
+      "sourceSha256": "8293f58a8e7281e5a06ff7c388e8a43316c3c4ca6f664c0b59b08273c978505e",
+      "scoreKey": "08b6d0e2acb9eb7e3dd2179ef7786379f1bbfd25b88ef725e0091cfc344d89d6",
+      "strokeCount": 151517,
+      "finalPngSha256": "b78649066e3210f65197f1ccd4ea035da3db6b3ab872946dab92e7bbbcbdf48b",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "goldcrest",
+        "byteIdentical": false,
+        "maxChannelDifference": 6,
+        "meanRgbChannelDifference": 2.8e-05,
+        "changedPixels": 20,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "pied-wagtail",
+      "name": "Pied wagtail",
+      "durationSeconds": 75,
+      "sourceSha256": "9cf017308d189f6d77d2997f82adf0c0a71b964cb71ca6e9ac28bb601d9fed80",
+      "scoreKey": "07d4398c5f37b1bf494311b702b73a534e01a68f849c5e65c05c62156f278e22",
+      "strokeCount": 153145,
+      "finalPngSha256": "032be18a126e84e26ce07e07c0831467723157c5f15b1cffa55f9db7b34980e0",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "pied-wagtail",
+        "byteIdentical": false,
+        "maxChannelDifference": 32,
+        "meanRgbChannelDifference": 0.001997333333333333,
+        "changedPixels": 1010,
+        "pixelsOver8": 14,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "walking",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "jay",
+      "name": "Jay",
+      "durationSeconds": 75,
+      "sourceSha256": "26ab5953f1a21d42c30c43171f08f414fb830818a08446c38d2ec4e71ee52b76",
+      "scoreKey": "1978e316f598e37f6f0658e3ccad611a5f816b11c584cfacac7a006e2b613f3e",
+      "strokeCount": 160989,
+      "finalPngSha256": "e8c4f87414b8da6eaa7585211a1baad2dac610efa063340f9acd915e9e2eb7be",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "jay",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "redwing",
+      "name": "Redwing",
+      "durationSeconds": 75,
+      "sourceSha256": "27a333456354c685fa35287f1bca92ae0a39d25fc168876b4f3f52ffa65168f0",
+      "scoreKey": "21d43a07ae8eda4c698bed2f86a1a70a17323843ec83dc05dd39027899043656",
+      "strokeCount": 164508,
+      "finalPngSha256": "fba1071dad14c857d495d3174adbcf2f462d0c67e916a3b835ad7d1d3153cea7",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "redwing",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "bullfinch",
+      "name": "Bullfinch",
+      "durationSeconds": 75,
+      "sourceSha256": "4278b055ca4e348a371ddf674e3e3841ec282a9f8c606665684ade031228c2a9",
+      "scoreKey": "40493d07970b5e2bdd890dc6a5fcc9c4e7d0f708f916d073c273936d3d44de7c",
+      "strokeCount": 140456,
+      "finalPngSha256": "ad8f0c8f1695be2e9c8fa3cca9d50a3144021a06e4ad6f0ec4efb725253851bb",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "bullfinch",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "sparrowhawk",
+      "name": "Sparrowhawk",
+      "durationSeconds": 75,
+      "sourceSha256": "aa49f534ba231e7e0ff2e8f443ea9f566422faa03663972b56b80820ae3469c0",
+      "scoreKey": "44491c1096d8da73f1af630ca533af04019b740e6ee91de7cbe4f9009ae640f9",
+      "strokeCount": 195526,
+      "finalPngSha256": "75dbfe60669c9b710be621f2c9100fd320f0a35160aa142765c9ee2ffb68a754",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "sparrowhawk",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "fieldfare",
+      "name": "Fieldfare",
+      "durationSeconds": 75,
+      "sourceSha256": "492ad534cf7870c249470b3d1590e1eecf5ca671d80be7db752b86938b585e19",
+      "scoreKey": "c5a29b11bb8c0af40d81ac4c5243f6bf6c88399862a52873e688fe02430c8bbf",
+      "strokeCount": 190887,
+      "finalPngSha256": "42bf2c3a85775bcee427f69150732393ba8839af74bcb8311831e237406acb85",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "fieldfare",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "buzzard",
+      "name": "Buzzard",
+      "durationSeconds": 75,
+      "sourceSha256": "98f2e8bd702d005368d32d61f9b544fafd0740fdb1b6cf227be1a2cd6c75e1a6",
+      "scoreKey": "cea61c0b577b1ca07969a999c5b22fc19ff5d9a68cfd16fd8d9e90de2b90e82b",
+      "strokeCount": 209594,
+      "finalPngSha256": "63362c8fc5c9fc5cae1ab9bff2eb18a872f7f7d7d716df359a274ee2873b6926",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "buzzard",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "mallard",
+      "name": "Mallard",
+      "durationSeconds": 75,
+      "sourceSha256": "40a8922d9c7114e6991f7f8c79998152e1212cda0764da45936257ec05c1cb38",
+      "scoreKey": "70185c0ca2864bd7f046cb3d3b102dcf0fd955ffd32dd5eab7bfbfc2918869ab",
+      "strokeCount": 166298,
+      "finalPngSha256": "d00deac1a3f20e1dc99540ed4772df1f73b0b49f74593d100b8e261bc36fc8a4",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "mallard",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "waterline",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "black-headed-gull",
+      "name": "Black-headed gull",
+      "durationSeconds": 75,
+      "sourceSha256": "b313c7f44a83da45710a207dbccf58785c331edf6ed78380ca186569d572ccf1",
+      "scoreKey": "194357385a19fbd0db48b713c463c19abfc39e8abd017a7c93d3cd080278fbea",
+      "strokeCount": 122415,
+      "finalPngSha256": "af65f9a5ca032a7a36ba04fd08a97a7310e082bfb8fefb26ea9d799f692289dd",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "black-headed-gull",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "standing",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "treecreeper",
+      "name": "Treecreeper",
+      "durationSeconds": 75,
+      "sourceSha256": "dbf73dec1ea074e33cb3190aa7e4d4c1b38d4f600e638ea3f0d721f1f8c0e871",
+      "scoreKey": "c8136ea7fd6895c2364592ced5e99470e56aed11b2dbdb12ec56377a94763d11",
+      "strokeCount": 159576,
+      "finalPngSha256": "8546ece56fde9f3ea59dc439058b1ded3ff1a42bf8ceed5be0f88fdb304a6387",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "treecreeper",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "clinging",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "green-woodpecker",
+      "name": "Green woodpecker",
+      "durationSeconds": 75,
+      "sourceSha256": "83d9a0e432b43fb3ecaf89c0e124f8e151477c101683230427747522495532aa",
+      "scoreKey": "ed1c46a1a8113a5b4d56984653f10d570a07f09dbfbe63dc557d190e49df3456",
+      "strokeCount": 175852,
+      "finalPngSha256": "6fc18f9b52a08ada3f6d58cd2fa0a6889ad3211ef944592f2eb0e99a11f5c11d",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "green-woodpecker",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "tawny-owl",
+      "name": "Tawny owl",
+      "durationSeconds": 75,
+      "sourceSha256": "ea336a640353b476b71cc945801929dca779240ec86740efd21ab4c642a03715",
+      "scoreKey": "84ed66c58eac2d481576f71e16d8780b81c38850c0c56f7db6dbe7053dd1cdc8",
+      "strokeCount": 207268,
+      "finalPngSha256": "03970c432743fb67f1d783e221e11ed55c91b961acbc2f6ea569dab653526fb6",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "tawny-owl",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "barn-owl",
+      "name": "Barn owl",
+      "durationSeconds": 75,
+      "sourceSha256": "4cb95a2c482e987be3b2d2b4e2f7d32df4643b0df0908f2203d6e3ccd0a1c1cd",
+      "scoreKey": "1685ec26f18b0a03c2ce9ddf4e65dfb297ca6d740e4a8fa6627134437e832ede",
+      "strokeCount": 182789,
+      "finalPngSha256": "a4939ed43d74e63aa5dc15f452df83a935ee0642d3ad822d3fd5bbdec25db4ca",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "barn-owl",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "little-owl",
+      "name": "Little owl",
+      "durationSeconds": 75,
+      "sourceSha256": "2d76a43366b85b413cd33621c52a901db2be850d3aafbb947fb6594488849ec7",
+      "scoreKey": "0dc770a2b4b27e7db6348978d6a3116c0bd666dd747e8d63951ba4023aa568e6",
+      "strokeCount": 224816,
+      "finalPngSha256": "545c2e06bdc7ee240aea0a0ffb93891f40fd7c0dfbc88ca19ebafefa60af387d",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "little-owl",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "short-eared-owl",
+      "name": "Short-eared owl",
+      "durationSeconds": 75,
+      "sourceSha256": "a8dd9a667631e65a44528fc0d53ddd5dbc3082232492e42fa1c990b13b26fb92",
+      "scoreKey": "6d296d86ceb8ff43f78aeb6e36ed0ef32941bc77efc130ab5f7b7456535bf691",
+      "strokeCount": 214970,
+      "finalPngSha256": "d64f647c532f24ceb5fa3005341abe019e032de3595d07b2a1378741c5513de9",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "short-eared-owl",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    },
+    {
+      "id": "long-eared-owl",
+      "name": "Long-eared owl",
+      "durationSeconds": 75,
+      "sourceSha256": "762582eaa85b818d3e7ba5c5813a2dc3d7f1809f00faf33dfafca9e06697c7a4",
+      "scoreKey": "f8e238ea913f428100d982d89f19c251cc9a3dd813b1b18536279350f72c8e8a",
+      "strokeCount": 184056,
+      "finalPngSha256": "ac0bfb6c532723b5ee517b9dfa41aea0017acb9bedb2129036edc1462971c539",
+      "preparedScoreVerified": true,
+      "finalMarksComplete": true,
+      "cachedFinalPixelComparison": {
+        "id": "long-eared-owl",
+        "byteIdentical": true,
+        "maxChannelDifference": 0,
+        "meanRgbChannelDifference": 0.0,
+        "changedPixels": 0,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      "placementMode": "perched",
+      "transparentSubjectAvailable": true
+    }
+  ],
+  "totalBirds": 45,
+  "originalStudies": 5,
+  "additionalBirds": 35,
+  "additionalOwls": 5,
+  "durationSeconds": 75,
+  "defaultFluidity": 0.78,
+  "presentations": [
+    "portrait",
+    "shared-branch placement preview"
+  ],
+  "runtime": "Local Canvas 2D; prepared mark scores; no remote dependencies or playback API calls",
+  "validation": {
+    "allPreparedScoresLoaded": true,
+    "allCachedFinalsVisuallyEquivalentToCompiledFinals": true,
+    "byteIdenticalFinalCount": 31,
+    "pixelEquivalenceCriteria": {
+      "meanRgbChannelAtMost": 0.01,
+      "maxChannelAtMost": 64,
+      "fractionPixelsOver8AtMost": 5e-05
+    },
+    "allFinalMarksComplete": true,
+    "externalHttpRequests": 0,
+    "pageErrors": [],
+    "mobileWidthsWithoutOverflow": [
+      320,
+      360,
+      768
+    ],
+    "galleryControls": {
+      "errors": [],
+      "checks": {
+        "initialCachedBird": {
+          "passed": true,
+          "state": {
+            "id": "siskin",
+            "time": 75,
+            "fluidity": 0.78,
+            "duration": 75,
+            "preparedScore": true,
+            "strokeCount": 163605,
+            "completed": 163605,
+            "loaded": true,
+            "playing": false,
+            "mode": "portrait",
+            "selected": "siskin"
+          }
+        },
+        "searchFiltering": {
+          "passed": true,
+          "visibleBirds": [
+            "herring-gull",
+            "common-gull",
+            "black-headed-gull"
+          ]
+        },
+        "searchClear": {
+          "passed": true,
+          "visibleCount": 45
+        },
+        "selectBird": {
+          "passed": true,
+          "state": {
+            "id": "herring-gull",
+            "time": 75,
+            "fluidity": 0.78,
+            "duration": 75,
+            "preparedScore": true,
+            "strokeCount": 161828,
+            "completed": 161828,
+            "loaded": true,
+            "playing": false,
+            "mode": "portrait",
+            "selected": "herring-gull"
+          }
+        },
+        "nextButton": {
+          "passed": true
+        },
+        "previousButton": {
+          "passed": true
+        },
+        "playPause": {
+          "passed": true,
+          "pausedAt": 1.3760000000953665,
+          "unchangedAt": 1.3760000000953665
+        },
+        "backwardScrub": {
+          "passed": true,
+          "forward": 45,
+          "backward": 20
+        },
+        "branchPreservesTime": {
+          "passed": true,
+          "state": {
+            "id": "herring-gull",
+            "time": 20,
+            "fluidity": 0.78,
+            "duration": 75,
+            "preparedScore": true,
+            "strokeCount": 161828,
+            "completed": 344,
+            "loaded": true,
+            "playing": false,
+            "mode": "branch",
+            "selected": "herring-gull"
+          }
+        },
+        "portraitPreservesTime": {
+          "passed": true,
+          "state": {
+            "id": "herring-gull",
+            "time": 20,
+            "fluidity": 0.78,
+            "duration": 75,
+            "preparedScore": true,
+            "strokeCount": 161828,
+            "completed": 344,
+            "loaded": true,
+            "playing": false,
+            "mode": "portrait",
+            "selected": "herring-gull"
+          }
+        },
+        "transparentDownload": {
+          "passed": true,
+          "filename": "herring-gull-20s-transparent.png",
+          "bytes": 179674,
+          "alpha": {
+            "clear": 676283,
+            "paint": 73717
+          }
+        }
+      }
+    },
+    "approvedOriginalComparison": [
+      {
+        "id": "robin",
+        "maxChannelDifference": 8,
+        "meanRgbChannelDifference": 2.488888888888889e-05,
+        "changedPixels": 15,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      {
+        "id": "blackbird",
+        "maxChannelDifference": 6,
+        "meanRgbChannelDifference": 3.4222222222222224e-05,
+        "changedPixels": 28,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      {
+        "id": "blue-tit",
+        "maxChannelDifference": 17,
+        "meanRgbChannelDifference": 9.2e-05,
+        "changedPixels": 20,
+        "pixelsOver8": 2,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      {
+        "id": "wren",
+        "maxChannelDifference": 5,
+        "meanRgbChannelDifference": 4.6222222222222224e-05,
+        "changedPixels": 27,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      },
+      {
+        "id": "goldfinch",
+        "maxChannelDifference": 1,
+        "meanRgbChannelDifference": 8.488888888888889e-05,
+        "changedPixels": 130,
+        "pixelsOver8": 0,
+        "pixelCount": 750000,
+        "equivalent": true
+      }
+    ],
+    "realTimePlayback": [
+      {
+        "id": "robin",
+        "mode": "portrait",
+        "errors": [],
+        "network": [],
+        "durationSeconds": 75.012,
+        "frames": 3992,
+        "framesPerTenSeconds": [
+          586,
+          597,
+          541,
+          415,
+          584,
+          587,
+          518,
+          163
+        ],
+        "frameIntervalMs": {
+          "median": 16.69999999999709,
+          "p95": 33.30000000000291,
+          "max": 366.6999999999971
+        },
+        "state": {
+          "id": "robin",
+          "time": 75,
+          "fluidity": 0.78,
+          "duration": 75,
+          "preparedScore": true,
+          "strokeCount": 112380,
+          "completed": 112380,
+          "loaded": true,
+          "playing": false,
+          "mode": "portrait",
+          "selected": "robin"
+        },
+        "identicalFinal": false,
+        "pixelDifference": {
+          "meanRgbChannel": 0.07619688888888888,
+          "maxChannel": 56,
+          "changedPixelFraction": 0.04178133333333333,
+          "over8PixelFraction": 0.002178666666666667
+        }
+      },
+      {
+        "id": "nuthatch",
+        "mode": "branch",
+        "errors": [],
+        "network": [],
+        "durationSeconds": 75.0005,
+        "frames": 3669,
+        "framesPerTenSeconds": [
+          556,
+          455,
+          251,
+          393,
+          565,
+          598,
+          557,
+          293
+        ],
+        "frameIntervalMs": {
+          "median": 16.69999999999709,
+          "p95": 33.400000000001455,
+          "max": 2466.5999999999985
+        },
+        "state": {
+          "id": "nuthatch",
+          "time": 75,
+          "fluidity": 0.78,
+          "duration": 75,
+          "preparedScore": true,
+          "strokeCount": 160015,
+          "completed": 160015,
+          "loaded": true,
+          "playing": false,
+          "mode": "branch",
+          "selected": "nuthatch"
+        },
+        "identicalFinal": false,
+        "pixelDifference": {
+          "meanRgbChannel": 0.09050888888888889,
+          "maxChannel": 57,
+          "changedPixelFraction": 0.05431333333333333,
+          "over8PixelFraction": 0.0016853333333333334
+        }
+      }
+    ],
+    "representativeCheckpointInspection": {
+      "birds": [
+        "house-sparrow",
+        "great-tit",
+        "herring-gull",
+        "nuthatch",
+        "barn-owl",
+        "mallard",
+        "robin",
+        "goldfinch"
+      ],
+      "seconds": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        65,
+        70,
+        75
+      ],
+      "note": "These checkpoints establish material evolution and continued late-stage development; the new species also received per-species final/transparent review."
+    },
+    "resolvedDuringValidation": [
+      "Mobile checkpoint controls overflowed at narrow widths; corrected and rechecked.",
+      "Timeline scrubbing read the value after a pause update; corrected to capture the value first and rechecked.",
+      "Original Goldfinch needed explicit leg/foot cutout registration for branch placement.",
+      "Source backdrop fringes required separate branch silhouette refinements."
+    ],
+    "rasterizationNote": "Continuous playback and single-step seeking can produce tiny Canvas compositing differences. The playback reports record measured pixel differences, not a claim of byte equality."
+  },
+  "limits": [
+    "Shared-branch mode is a placement preview; the growing-day layout and live Pi/BirdNET integration are not included.",
+    "Transparent edges are tuned for ivory paper; a few pale feather-edge flecks remain visible against dark inspection backgrounds.",
+    "Activity labels and encounters are examples, not live detections.",
+    "Water and pigment effects are designed simulations, not calibrated fluid physics.",
+    "Performance was measured in local desktop Chrome; target display hardware remains to be profiled.",
+    "The deliverable is interactive browser animation, not a set of exported video files."
+  ],
+  "runtimeFiles": {
+    "runtime/app.js": "d4d1e6f32dc0dd91bf5d4fcea73a8b81d74023faa6a722b1672eb301cc839569",
+    "runtime/approved-retimers.js": "8ac7809f5bd3a8e6267b309bb7a4d61aef2d58ffd5af6b288dc2ee526e0891e6",
+    "runtime/branch.js": "3cc91a8cec45833525e7996c249537bd2607a72adf2a1dd91652a8ac61d2fe1e",
+    "runtime/collection-retimer.js": "212385a2ac393603504cdcb0834f0e98b7409992779f74cc307b63f2a22db575",
+    "runtime/engine.js": "452805c95311936bf2e4a05fc7e04317f172e4139f3b80e2327dec4b7c6839a7",
+    "runtime/finish-builder.js": "e0a9fc0e1f5d8bc1118f1c1eef0ca89c7ee5b9db7fbe748bfa369eabe2a2bcad",
+    "runtime/goldfinch-builder.js": "8554771a3ffe05b8c0721fb0afbfd8629f51f714fd1235cd8b7b6eb74cf158b1",
+    "runtime/mark-renderer.js": "e25322271cec4f96453d8862735e58e7f71d161629cb9aea3b4acf924816f336",
+    "runtime/opening-builder.js": "ba5344bcd00b1fa1599b8f6a0abbb6b00835030ce24937a9e102a0321d702969"
+  }
+}

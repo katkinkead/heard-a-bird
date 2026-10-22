@@ -20,7 +20,7 @@ The assistant handles routine computer work. Its instructions live in [AGENTS.md
 
 ## What you get
 
-Robin, Goldfinch, Blue tit, Blackbird and Wren include their approved **75-second animations**, stored locally alongside a [45-bird finished-art reference library](artwork/index.html), the current style/animation guides and the retained status graphics. The other forty animations remain separate work in progress until their completion evidence is imported. The server provides detection history, a playback queue, an idle repertoire, a dashboard, backups and bounded recovery. Routine playback and maintenance need no AI API key. The local setup assistant uses your existing provider account. Optional dashboard AI diagnosis and artwork tools use separately configured API credentials; missing-art email needs SMTP settings. Saving a recipient alone does not send or verify email.
+Robin, Goldfinch, Blue tit, Blackbird and Wren include their approved **75-second animations**, stored locally alongside a [45-bird finished-art reference library](artwork/index.html), the current style/animation guides and the retained status graphics. All 45 sequences are built in the art workspace. A separate review collection retains the new forty while final-frame clarity corrections are being reviewed; the five trusted animations remain the live default. The server provides detection history, a playback queue, an idle repertoire, a dashboard, backups and bounded recovery. Routine playback and maintenance need no AI API key. The local setup assistant uses your existing provider account. Optional dashboard AI diagnosis and artwork tools use separately configured API credentials; missing-art email needs SMTP settings. Saving a recipient alone does not send or verify email.
 
 The Mac MVP must stay awake, powered and connected. A dedicated Linux host uses the same application with a different service profile. A Windows mini PC is not supported by this release. See [deployment and migration](docs/production.md).
 
@@ -36,6 +36,14 @@ Implemented software is not proof that the physical garden has been commissioned
 The local control panel is `/setup`, the operator dashboard is `/dashboard`, and the painting is `/`. The default server port is 8765. Administrator actions accept localhost connections only; use the documented SSH tunnel for remote administration. Do not expose this port directly to the internet.
 
 Application state stays outside Git: normally `~/Library/Application Support/Songsketch` on macOS, `~/.local/share/Songsketch` for manual Linux use, or `/var/lib/songsketch-server` for the dedicated service. The managed application is in `app/` within that directory; history and private configuration are preserved separately from releases.
+
+## Try a simulated garden
+
+Open **Open simulated garden.command** on a Mac, or run `python3 scripts/simulate.py` from this project. This starts an isolated local rehearsal, with its own history and no outgoing email, paid AI or Pi connections. Use its scenario buttons to test detections, retries, missing art, failures and recovery. Each run records expected versus actual results; add visual notes and export a report when something looks wrong.
+
+See [the QA walkthrough](docs/simulation.md). Open **Review all 45 animations** inside the practice garden for ten-second checkpoints and a side-by-side comparison with each accepted portrait. The gallery waits for local preparation before beginning the full sequence; the live display follows the server clock and may catch up after a cold load.
+
+Simulation tests the application; the final microphone, BirdNET recognition and physical network still need a real garden test. The repository includes a bug-report form for tracking reproducible findings.
 
 ## Development
 

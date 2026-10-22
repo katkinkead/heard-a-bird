@@ -11,6 +11,7 @@ import sqlite3
 import threading
 import uuid
 from zoneinfo import ZoneInfo
+from . import __version__
 
 def utcnow():
     return datetime.now(timezone.utc)
@@ -359,7 +360,7 @@ class Store:
         return rows
 
     def public_status(self):
-        return {"version":"0.1.0","station":self.station_status(),"current":self.meta("current"),"queue_count":self.query("SELECT COUNT(*) n FROM queue")[0]["n"],"server_time":iso(),"timezone":self.config.values["timezone"]}
+        return {"version":__version__,"station":self.station_status(),"current":self.meta("current"),"queue_count":self.query("SELECT COUNT(*) n FROM queue")[0]["n"],"server_time":iso(),"timezone":self.config.values["timezone"]}
 
     def tick(self):
         with self.lock:
@@ -409,7 +410,7 @@ class Store:
         if state.exists():
             try: supervisor = json.loads(state.read_text())
             except (OSError,ValueError): supervisor = {"state":"unknown"}
-        return redact({"version":"0.1.0","generated_at":iso(),"station":self.station_status(),"queue_count":self.public_status()["queue_count"],"supervisor":supervisor,"issues":self.query("SELECT * FROM issues ORDER BY last_seen DESC LIMIT 50"),"reports":[json.loads(r["data"]) for r in self.query("SELECT data FROM reports ORDER BY received_at DESC LIMIT 30")],"database_check":self.query("PRAGMA quick_check")[0],"note":"No audio, credentials or full detection history is included."}, self.config.secrets.values())
+        return redact({"version":__version__,"generated_at":iso(),"station":self.station_status(),"queue_count":self.public_status()["queue_count"],"supervisor":supervisor,"issues":self.query("SELECT * FROM issues ORDER BY last_seen DESC LIMIT 50"),"reports":[json.loads(r["data"]) for r in self.query("SELECT data FROM reports ORDER BY received_at DESC LIMIT 30")],"database_check":self.query("PRAGMA quick_check")[0],"note":"No audio, credentials or full detection history is included."}, self.config.secrets.values())
 
     def close(self):
         with self.lock:

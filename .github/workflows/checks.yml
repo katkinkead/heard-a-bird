@@ -17,6 +17,10 @@ jobs:
         run: python scripts/check-install.py
       - name: Exercise local contracts and recovery
         run: python -m unittest discover -s tests -v
+      - name: Check artwork import contracts
+        run: python -m unittest discover -s artwork/tools -p 'test_*.py' -v
+      - name: Check offline QA report privacy
+        run: node --test tests/test_qa_report.js
       - name: Check shell helpers
         shell: bash
         run: |

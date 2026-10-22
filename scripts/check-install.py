@@ -14,6 +14,8 @@ REQUIRED_FILES = (
     "README.md", "AGENTS.md", "CLAUDE.md", "guide/index.html", "guide/project.js",
     "guide/assets/guide.js", "guide/assets/installer-source.js",
     "static/display.html", "static/display.js", "static/dashboard.html", "pi/relay.py",
+    "static/qa.html", "static/qa.css", "static/qa.js", "static/qa-report.js",
+    "Open simulated garden.command", "scripts/simulate.py", "songsketch/simulation.py", "docs/simulation.md",
     "scripts/ai-bootstrap.py", "scripts/setup-assistant.py", "scripts/commission-pi.py",
     "scripts/github-install.py", "scripts/github-install.command", "scripts/github-install.zip",
     "songsketch/commissioning.py", "songsketch/setup_client.py", "songsketch/github_launcher.py",
@@ -22,6 +24,9 @@ REQUIRED_FILES = (
     "artwork/import-snapshot.json", "artwork/style-guide.html", "artwork/animation-guide.md",
     "artwork/ui/index.html", "artwork/ui/status-marks.svg",
     "artwork/pending-animations/README.md", "artwork/tools/sync-fork.py",
+    "artwork/review.html", "artwork/review.js", "artwork/review.css",
+    "artwork/review-catalogue.json", "artwork/animation-review-snapshot.json",
+    "artwork/tools/import-review-animations.py",
 )
 ID = re.compile(r"^[a-z0-9][a-z0-9-]{0,79}$")
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
@@ -182,6 +187,59 @@ def check_package(root=ROOT):
             if bird.get("animation_url") != expected_url or bird.get("animation_sha256") != ready.get("animation_sha256"):
                 errors.append("Animation path/hash differs between catalogue and registry: " + identity)
 
+    review = read_object("artwork/review-catalogue.json")
+    review_birds = entries(review, "review catalogue")
+    review_snapshot = read_object("artwork/animation-review-snapshot.json")
+    if review.get("purpose") != "isolated_simulator_and_visual_review_only":
+        errors.append("Review catalogue lacks isolated-review purpose")
+    if review_snapshot.get("production_promoted") is not False:
+        errors.append("Review snapshot must not claim production promotion")
+    if set(review_birds) != set(references):
+        errors.append("Review catalogue IDs differ from the reference library")
+    awaiting_review = 0
+    for identity, bird in review_birds.items():
+        label = "review catalogue " + identity
+        artwork_url(bird.get("image_url"), label + " image")
+        page = artwork_url(bird.get("animation_url"), label + " animation")
+        verify_hash(page, bird.get("animation_sha256"), label + " animation")
+        if identity in playable:
+            if bird != playable[identity]:
+                errors.append("Review catalogue changed an approved original: " + identity)
+            continue
+        awaiting_review += 1
+        if (bird.get("approved") is not False or bird.get("production_eligible") is not False
+                or bird.get("animation_ready") is not True or bird.get("review_status") != "completed_awaiting_review"):
+            errors.append("Review candidate has unsafe approval/readiness flags: " + identity)
+        entry = references.get(identity, {})
+        if (entry.get("animation_ready") is not False or entry.get("review_animation_ready") is not True
+                or entry.get("animation_status") != "completed_awaiting_review"
+                or bird.get("animation_url") != "/artwork/" + str(entry.get("review_animation_path", ""))
+                or bird.get("animation_sha256") != entry.get("review_animation_sha256")
+                or bird.get("scientific_name") != entry.get("scientific_name")):
+            errors.append("Review candidate differs from registry: " + identity)
+        artwork_url(bird.get("reference_url"), label + " reference")
+    if registry.get("completed_review_animation_count") != awaiting_review or review_snapshot.get("new_review_count") != awaiting_review:
+        errors.append("Review count does not match candidate entries")
+    files = review_snapshot.get("files", [])
+    if not isinstance(files, list) or not files:
+        errors.append("Review snapshot has no dependency manifest")
+    else:
+        seen = set()
+        for index, item in enumerate(files):
+            label = "review dependency %d" % index
+            if not isinstance(item, dict):
+                errors.append("Invalid review dependency record")
+                continue
+            path_value = item.get("path")
+            if isinstance(path_value, str) and path_value in seen:
+                errors.append("Duplicate review dependency")
+            if isinstance(path_value, str):
+                seen.add(path_value)
+            path = local_path(art, path_value, label)
+            verify_hash(path, item.get("sha256"), label)
+            if path is not None and (type(item.get("bytes")) is not int or path.stat().st_size != item["bytes"]):
+                errors.append("Review dependency byte size differs: " + label)
+
     try:
         db = sqlite3.connect(":memory:")
         try:
@@ -193,6 +251,7 @@ def check_package(root=ROOT):
     return {"ok": not errors, "python": sys.version.split()[0],
             "approved_birds": len(playable), "reference_birds": len(references),
             "completed_animations": len(completed), "asset_hashes_checked": len(checked_hashes),
+            "review_animations": awaiting_review,
             "errors": list(dict.fromkeys(errors)),
             "not_checked": ["real Pi", "microphone", "reboot recovery", "SMTP delivery", "paid AI access"]}
 

@@ -151,9 +151,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 1,
       "source_file": "final-art/batch-01/01-house-sparrow-v2.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/house-sparrow.html",
+      "review_animation_sha256": "2e1d342d5a164db4c6a429101cb886fd01fc46ea1fc66d49afc051a584e765e7",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "starling",
@@ -177,9 +182,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 1,
       "source_file": "final-art/batch-01/02-starling-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/starling.html",
+      "review_animation_sha256": "e43831eb25a7969e616cb932e18842611263ffe4b5bd0ef167f6dc3c805bc602",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "woodpigeon",
@@ -203,9 +213,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 1,
       "source_file": "final-art/batch-01/03-woodpigeon-v2.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/woodpigeon.html",
+      "review_animation_sha256": "4da678cdf5bbadc8e95b9ed74013c554e6e10bb374a6dc188d786e4c85463cfe",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "great-tit",
@@ -229,9 +244,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 1,
       "source_file": "final-art/batch-01/04-great-tit-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/great-tit.html",
+      "review_animation_sha256": "e235812ca3ae12fcf36bc58771a5c0237e3a17b57e45a4808ffa837b79e4d178",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "long-tailed-tit",
@@ -255,9 +275,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 1,
       "source_file": "final-art/batch-01/05-long-tailed-tit-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/long-tailed-tit.html",
+      "review_animation_sha256": "e4ccbe51e28a6303bb140d2b86f3aa1e4c157985f8b67c63d7dd81c81b32f3c3",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "magpie",
@@ -282,9 +307,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 2,
       "source_file": "final-art/batch-02/06-magpie-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/magpie.html",
+      "review_animation_sha256": "53dd8e362d3311e0f2a3ada21f0d4c962c0e58919fb9ebaf2f51804d8b6fcaa1",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "chaffinch",
@@ -309,9 +339,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 2,
       "source_file": "final-art/batch-02/07-chaffinch-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/chaffinch.html",
+      "review_animation_sha256": "5b3408a7efcc329fbb3965b36ebb2f3676cfc131e32265a91ff8e0b8eba4a2a3",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "dunnock",
@@ -336,9 +371,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 2,
       "source_file": "final-art/batch-02/08-dunnock-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/dunnock.html",
+      "review_animation_sha256": "ce443f9a1fa50194b8beaae7d5919ae86a63498af2d676adbe619787c5ed776d",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "coal-tit",
@@ -363,9 +403,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 2,
       "source_file": "final-art/batch-02/09-coal-tit-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/coal-tit.html",
+      "review_animation_sha256": "7f1bdacd96f3914b6876c5bce7719740ab1332ecd77156b89bbffd558bc69e3f",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "jackdaw",
@@ -392,9 +437,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 2,
       "source_file": "final-art/batch-02/10-jackdaw-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/jackdaw.html",
+      "review_animation_sha256": "410f33476594e418722ae4de857bca2c224d3e6b5dd1e3628262861091d5569e",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "carrion-crow",
@@ -419,9 +469,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 3,
       "source_file": "final-art/batch-03/11-carrion-crow-v2.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/carrion-crow.html",
+      "review_animation_sha256": "a93c90fb0aa4dd164eeb85a88d5d947fad8ff8cedbc2527f1c82c96f2f3257c3",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "feral-pigeon",
@@ -446,9 +501,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 3,
       "source_file": "final-art/batch-03/12-feral-pigeon-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/feral-pigeon.html",
+      "review_animation_sha256": "c3a53ca8dca3c300200dc0199d4d102923756d34e5a372992ef33976566cf8e8",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "collared-dove",
@@ -473,9 +533,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 3,
       "source_file": "final-art/batch-03/13-collared-dove-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/collared-dove.html",
+      "review_animation_sha256": "ba734a21e559aa14f8b411b6fc4f7847a11291a5ec74b59a0e2c1a7655be35ad",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "greenfinch",
@@ -500,9 +565,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 3,
       "source_file": "final-art/batch-03/14-greenfinch-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/greenfinch.html",
+      "review_animation_sha256": "503f0e3b3fe1ae77fc2753a1952caa96f6949bd805018be9fa400e687c23f30c",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "rook",
@@ -527,9 +597,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 3,
       "source_file": "final-art/batch-03/15-rook-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/rook.html",
+      "review_animation_sha256": "18ae2bc6db030f24be97895af7a965a37665b6c10231f871442618d9deb441db",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "nuthatch",
@@ -554,9 +629,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 4,
       "source_file": "final-art/batch-04/16-nuthatch-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/nuthatch.html",
+      "review_animation_sha256": "9ed6221752f88808516ce3a9fbfcee71e43de289f6b3fed51efc235324aea6e0",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "herring-gull",
@@ -581,9 +661,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 4,
       "source_file": "final-art/batch-04/17-herring-gull-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/herring-gull.html",
+      "review_animation_sha256": "ab6797fe6d3e9330393616b5d6aa6d43e1c1a788289fbb6fdc58c26a402a48cd",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "common-gull",
@@ -608,9 +693,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 4,
       "source_file": "final-art/batch-04/18-common-gull-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/common-gull.html",
+      "review_animation_sha256": "031b4cdf0177b034f40965be729b7cfac017748dbdb7d57d30e14b7c9df67a5a",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "siskin",
@@ -635,9 +725,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 4,
       "source_file": "final-art/batch-04/19-siskin-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/siskin.html",
+      "review_animation_sha256": "2f6ca65cb63da73540f7aba007cd57ebbce7a532e595915f35f19c9fced19e0d",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "great-spotted-woodpecker",
@@ -662,9 +757,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 4,
       "source_file": "final-art/batch-04/20-great-spotted-woodpecker-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/great-spotted-woodpecker.html",
+      "review_animation_sha256": "129892a255636bddba41966deb67224a676d4306d7c9f9cf254e114e1441a6dd",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "blackcap",
@@ -689,9 +789,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 5,
       "source_file": "final-art/batch-05/21-blackcap-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/blackcap.html",
+      "review_animation_sha256": "b36e194d01b4607103d5cca9c60fa44c2874e8a7af0744b79dc1940c42e07c99",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "song-thrush",
@@ -716,9 +821,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 5,
       "source_file": "final-art/batch-05/22-song-thrush-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/song-thrush.html",
+      "review_animation_sha256": "35d447d64a7392d2c6fff1b48141f83f138314bdfa330be075fb92bf8d3c2a22",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "pheasant",
@@ -743,9 +853,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 5,
       "source_file": "final-art/batch-05/23-pheasant-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/pheasant.html",
+      "review_animation_sha256": "df76dfae5d8ab7ac0db23b51c370333b04c9ee29e87b7fd8646cb5137b9e5ad6",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "goldcrest",
@@ -770,9 +885,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 5,
       "source_file": "final-art/batch-05/24-goldcrest-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/goldcrest.html",
+      "review_animation_sha256": "5abaf9b97bcb69a3c53c8b8547a06141e9dd0a93627a2523e7f2ab5e6f97160b",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "pied-wagtail",
@@ -797,9 +917,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 5,
       "source_file": "final-art/batch-05/25-pied-wagtail-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/pied-wagtail.html",
+      "review_animation_sha256": "9067ae029c7e1317991c51a1a9db01579da8f54a2a2bcfe8c9d69afc4b1010ef",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "jay",
@@ -826,9 +951,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 6,
       "source_file": "final-art/batch-06/26-jay-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/jay.html",
+      "review_animation_sha256": "8db31a34443c7f632cbd90a4b3775d202adaf9e5ee1781f29ddb683c82f21451",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "redwing",
@@ -855,9 +985,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 6,
       "source_file": "final-art/batch-06/27-redwing-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/redwing.html",
+      "review_animation_sha256": "e82242487e87d5f40bb9903e7678057f90f55306c467189204a379ff4dcc5357",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "bullfinch",
@@ -884,9 +1019,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 6,
       "source_file": "final-art/batch-06/28-bullfinch-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/bullfinch.html",
+      "review_animation_sha256": "3392d2ae4bb5fb4054a45e7cdaeff39c5f665235db05a070c817882024ec02b4",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "sparrowhawk",
@@ -913,9 +1053,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 6,
       "source_file": "final-art/batch-06/29-sparrowhawk-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/sparrowhawk.html",
+      "review_animation_sha256": "f2b3661017d39637a6df4093c22cc491085669e3400b50b9549ded3e1731b698",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "fieldfare",
@@ -942,9 +1087,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 6,
       "source_file": "final-art/batch-06/30-fieldfare-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/fieldfare.html",
+      "review_animation_sha256": "fb38d2bbc2f677b73d9be555f4819afe23f8764523248cf9bf0d7eabd33fa8d1",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "buzzard",
@@ -971,9 +1121,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 7,
       "source_file": "final-art/batch-07/31-buzzard-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/buzzard.html",
+      "review_animation_sha256": "21e109ac47b280aea823e712b72e321c5e947f766be6262112f523eeec209a9f",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "mallard",
@@ -1000,9 +1155,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 7,
       "source_file": "final-art/batch-07/32-mallard-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/mallard.html",
+      "review_animation_sha256": "cc06ee6f2bccba6e6dd7586b4a494879e3f693d1851ad058d3ec70f5e5d749f3",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "black-headed-gull",
@@ -1029,9 +1189,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 7,
       "source_file": "final-art/batch-07/33-black-headed-gull-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/black-headed-gull.html",
+      "review_animation_sha256": "3b0f5d989d3236ac56c0c0295be8dc2623c8fad586d6c80e3248c3d858c0ff14",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "treecreeper",
@@ -1058,9 +1223,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 7,
       "source_file": "final-art/batch-07/34-treecreeper-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/treecreeper.html",
+      "review_animation_sha256": "f3b6b8f426f74430178e17cce1bd46a0e8cdbd310aa1bd733c63530c11c247e6",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "green-woodpecker",
@@ -1087,9 +1257,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 7,
       "source_file": "final-art/batch-07/35-green-woodpecker-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/green-woodpecker.html",
+      "review_animation_sha256": "e6c24acb68876ba54aeb26d5dcc2663371aebf64ff7246878a1bb3860b69adbe",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "tawny-owl",
@@ -1116,9 +1291,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 8,
       "source_file": "final-art/batch-08/36-tawny-owl-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/tawny-owl.html",
+      "review_animation_sha256": "d4c928c494e9b7b12e5b6691d8785dfdb33c5224413f0a85d48522c031f4a860",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "barn-owl",
@@ -1145,9 +1325,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 8,
       "source_file": "final-art/batch-08/37-barn-owl-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/barn-owl.html",
+      "review_animation_sha256": "fb08ac46655f41422db1b26ecd1cde99488674fff75f83e0ef910a2fd1871ed4",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "little-owl",
@@ -1174,9 +1359,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 8,
       "source_file": "final-art/batch-08/38-little-owl-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/little-owl.html",
+      "review_animation_sha256": "2650220ad2524b526177c2c1b001d02915b13d2e12fcb6bb7b7f5a6a297efe34",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "short-eared-owl",
@@ -1203,9 +1393,14 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 8,
       "source_file": "final-art/batch-08/39-short-eared-owl-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/short-eared-owl.html",
+      "review_animation_sha256": "8e2f693b601d2e172c5be25df96d220dcf9d29a2d10005779553abafb4e00150",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     },
     {
       "id": "long-eared-owl",
@@ -1232,9 +1427,17 @@
       "reference_kind": "selected_final_art_original",
       "source_batch": 8,
       "source_file": "final-art/batch-08/40-long-eared-owl-v1.png",
-      "animation_status": "in_progress_in_source_thread",
+      "animation_status": "completed_awaiting_review",
       "animation_ready": false,
-      "animation_path": null
+      "animation_path": null,
+      "review_animation_ready": true,
+      "review_animation_path": "animations/long-eared-owl.html",
+      "review_animation_sha256": "f368c01ccf3c23ac19257f98b7ebaf2e9b23c8ab26d1e128a01ae281342eaedc",
+      "review_duration_seconds": 75,
+      "animation_review_note": "Completed source snapshot; later fork feedback requests improved final clarity. Not promoted to connected playback."
     }
-  ]
+  ],
+  "completed_review_animation_count": 40,
+  "completed_asset_count": 45,
+  "animation_review_snapshot": "animation-review-snapshot.json"
 }

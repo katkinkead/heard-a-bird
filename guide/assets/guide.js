@@ -6,11 +6,15 @@ const stages=['parts','prepare','details','install','progress'];
 let context=null, setup=null, unlocked=false, busy=false, currentStep='parts', populatedId=null, observedJob=null, refreshInFlight=false;
 const activeStates=new Set(['probing','running','cancelling']);
 const terminalStates=new Set(['failed','needs_input','interrupted','cancelled']);
+let journeyStarted=storedGet('songsketch-journey-started')===true;
+function enterJourney(){journeyStarted=true;storedSet('songsketch-journey-started',true);$('welcome').hidden=true;}
 function storedGet(key){try{return JSON.parse(localStorage.getItem(key));}catch{return null;}}
 function storedSet(key,value){try{localStorage.setItem(key,JSON.stringify(value));}catch{/* Browser storage may be disabled. Fields still work this visit. */}}
 function showStep(step,focus=true){
   if(!stages.includes(step))return;
   currentStep=step;
+  if(step!=='parts')enterJourney();
+  $('welcome').hidden=journeyStarted;
   document.querySelectorAll('[data-page]').forEach(page=>page.hidden=page.dataset.page!==step);
   document.querySelectorAll('[data-step]').forEach(button=>{if(button.dataset.step===step)button.setAttribute('aria-current','step');else button.removeAttribute('aria-current');});
   if(!location.hash.includes('ticket='))history.replaceState(null,'',location.pathname+location.search+'#'+step);
@@ -114,9 +118,9 @@ async function launchAssistant(){
     }
   }catch(error){$('launch-feedback').textContent=error.message;message(error.message);}finally{busy=false;render();}
 }
-for(const button of document.querySelectorAll('[data-step]'))button.onclick=()=>showStep(button.dataset.step);
-for(const button of document.querySelectorAll('[data-go]'))button.onclick=()=>showStep(button.dataset.go);
-$('begin').onclick=()=>showStep('parts');
+for(const button of document.querySelectorAll('[data-step]'))button.onclick=()=>{enterJourney();showStep(button.dataset.step);};
+for(const button of document.querySelectorAll('[data-go]'))button.onclick=()=>{enterJourney();showStep(button.dataset.go);};
+$('begin').onclick=()=>{enterJourney();showStep('parts');};
 $('pi-form').onsubmit=async event=>{event.preventDefault();const details=detailValues();storedSet('songsketch-setup-details',details);try{if(unlocked)await api('/api/admin/setup-details',{details});showStep('install');}catch(error){$('details-feedback').textContent=error.message;}};
 $('clear-details').onclick=async()=>{try{if(unlocked)await api('/api/admin/setup-details',{details:{}});storedSet('songsketch-setup-details',{});$('pi-form').reset();$('details-feedback').textContent='Saved setup details cleared. Existing Pi configuration is unchanged.';}catch(error){$('details-feedback').textContent=error.message;}};
 $('pi-form').addEventListener('invalid',()=>{$('network-details').open=true;},true);

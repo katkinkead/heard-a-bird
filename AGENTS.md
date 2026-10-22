@@ -1,6 +1,6 @@
 # Songsketch project instructions
 
-Help the installer set up and maintain Songsketch. Read README.md first, then the requirements relevant to the request and the actual implementation. These repository files are the authoritative project instructions; a launcher supplies only a short pointer to them, not a second copied procedure. This is the Songsketch application repository: server, Pi relay, dashboard, illustrated setup guide, 45 finished-art references and five packaged completed animations. Consult artwork/registry.json for final-art acceptance and pending animation status; only artwork/catalogue.json is the connected playback catalogue. Check docs/verification.md before claiming hardware or provider verification.
+Help the installer set up and maintain Songsketch. Read README.md first, then the requirements relevant to the request and the actual implementation. These repository files are the authoritative project instructions; a launcher supplies only a short pointer to them, not a second copied procedure. This is the Songsketch application repository: server, Pi relay, dashboard, illustrated setup guide, 45 finished-art references, five trusted live animations and a separate completed-animation review collection. Consult artwork/registry.json for final-art acceptance and pending animation status; only artwork/catalogue.json is the connected playback catalogue. Completed review candidates are not automatically visually approved; preserve the fork’s current fidelity-correction status. Check docs/verification.md before claiming hardware or provider verification.
 
 ## AI-led installation and recovery
 
@@ -33,6 +33,12 @@ Help the installer set up and maintain Songsketch. Read README.md first, then th
 - Keep the live display, setup flow and operator dashboard distinct. Routine playback and recovery work without AI credentials; optional AI jobs are operator-triggered and produce reviewable results.
 - Keep detection history independent of display cooldowns and delivery retries. Quiet bird activity is not an equipment failure. Use real health evidence for status labels.
 - Protect credentials and diagnostic data. Do not add keys, personal addresses, live databases or logs to the repository. Use documented runtime configuration.
+
+## Simulated QA
+
+- For a rehearsal, use `scripts/simulate.py` and `docs/simulation.md`. Keep simulation state separate from the real application. Never pair it with a Pi or configure real email/AI services.
+- Reproduce bugs with the same scenario and seed, retain the run report, and distinguish programmatic checks from manual visual review. Passing scenarios do not verify microphone capture, species recognition, real SMTP or physical power/network behaviour.
+- Do not promote the animation review collection into live playback merely because it completes at 75 seconds. Compare final-frame clarity with the approved source and respect current feedback in its provenance.
 
 ## Implementation and handover
 

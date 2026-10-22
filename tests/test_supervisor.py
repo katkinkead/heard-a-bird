@@ -271,7 +271,6 @@ class RealProcessSupervisorRecoveryTests(unittest.TestCase):
                 start_new_session=True,
             )
             owned_pids = set()
-            deadline = time.monotonic()+12
 
             def request(method,path,value=None,token=None):
                 conn = http.client.HTTPConnection("127.0.0.1",port,timeout=.4)
@@ -285,6 +284,9 @@ class RealProcessSupervisorRecoveryTests(unittest.TestCase):
                     conn.close()
 
             def wait_for_owned_healthy_child(previous=None):
+                # Startup and post-crash recovery are independent phases. A
+                # slow initial launch must not consume the recovery allowance.
+                deadline = time.monotonic()+30
                 while time.monotonic()<deadline:
                     self.assertIsNone(parent.poll(),"Supervisor exited before recovery")
                     try:
@@ -324,7 +326,7 @@ class RealProcessSupervisorRecoveryTests(unittest.TestCase):
                 note = json.loads(status_path.read_text())
                 self.assertEqual(note["restarts_this_run"],1)
                 parent.terminate()
-                self.assertEqual(parent.wait(timeout=max(.5,min(3,deadline-time.monotonic()))),0)
+                self.assertEqual(parent.wait(timeout=3),0)
                 for pid in (original_pid,replacement_pid):
                     with self.assertRaises(ProcessLookupError): os.kill(pid,0)
                 final = json.loads(status_path.read_text())

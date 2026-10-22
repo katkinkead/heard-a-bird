@@ -1,6 +1,6 @@
-# Verification record — 21 October 2026
+# Verification record — 22 October 2026
 
-This is a locally verified MVP, not a commissioned garden installation. The source, guide, 45 finished-art references and five approved animations travel together in the v0.3.0-mvp package. Earlier verification is retained below as historical evidence.
+This is a locally verified MVP, not a commissioned garden installation. The source, guide, 45 finished-art references, five approved animations and forty completed review candidates travel together in the v0.4.0-mvp package. Review candidates are not automatically approved for live playback. Earlier verification is retained below as historical evidence.
 
 ## Original 0.1.0 verification (historical)
 
@@ -60,3 +60,15 @@ The running guide was checked at desktop size: Step 0 shopping links and kit car
 The production power helper has fixture tests for diagnostics, safeguards, idempotent changes and configuration preservation. No power setting, EEPROM, physical Pi or reboot was changed. Manufacturer evidence and the remaining PoE/USB-C compatibility checks are recorded in production.md and birdnet-pi-reliability.md.
 
 No live email or paid model request was sent. Email requires configured SMTP, not just a recipient. A known final portrait without a completed animation is tracked separately and does not trigger a missing-art email. Tests do not certify physical recognition quality, long-term reliability, real email delivery, remote access or the eventual production power chain.
+
+## 0.4.0 practice garden and completed-animation review
+
+**215 application tests, eight artwork-sync tests and six JavaScript report tests pass locally.** The practice garden uses real loopback HTTP ingestion and the production store/playback logic with isolated synthetic data. Twelve scenarios cover detections, duplicate delivery, missing art, Pi loss/recovery, capture/inference failure, power/thermal reports and idle selection. SMTP is replaced with a local inbox; AI, SSH, installation and real-configuration writes are disabled. Tests cover authenticated access, separate cookies, protected runtime paths, report redaction/persistence, unique replay IDs and candidate eligibility held only in memory.
+
+The guide welcome was dismissed, followed forward/back through setup and reloaded: it remained hidden while the parts checklist stayed available. Desktop and 390px layouts had no horizontal overflow. The simulator's familiar-bird, local-notification and Pi-disconnect scenarios produced passing expected/actual evidence in the browser. Earlier reports survived a restart. The display retained a visible simulated label. Its 390px layout also had no horizontal overflow.
+
+After the simulator was stopped, the open page successfully downloaded an offline report containing three cached run records, a timestamp and visual notes. The downloaded JSON had `offline_snapshot: true` and excluded private configuration and diagnostics. Offline evidence is limited to the last successful response in that page session; unconfirmed later actions cannot be inferred from it. Six JavaScript tests verify this allowlist, redaction, bounded caching and the absence of a false visual pass.
+
+The review gallery includes all 45 sequences; the original five and live catalogue remain byte-for-byte unchanged. Preflight checks 45 references, five live animations, forty review animations and 220 asset hashes. Source provenance freezes the completed snapshot separately from the fork's active fidelity work. Browser inspection of Long-eared owl verified 40-second and 75-second rendering, all 184,056 marks completed, and the side-by-side accepted-art comparison. Cold local preparation took 9.49 seconds in this browser. Seeking directly to completion can briefly block the UI; live replay follows its server clock and can skip opening strokes after cold preparation. The standalone gallery waits before playback, preserving its full 75-second review. These checks do not certify artistic likeness, fluidity on the eventual hardware or approval of the forty candidates.
+
+An initial full test run exposed a path-normalisation error in a test fixture and a shared startup/recovery deadline in the real-process test. The fixture was corrected and each process phase now has its own bounded allowance; production recovery timing is unchanged. The final full application run passed all 215 tests. No physical Pi, external email or paid AI service was used.
