@@ -1,6 +1,6 @@
 # BirdNET and Pi reliability notes
 
-Checked against BirdNET-Go release **20261014** and the primary references below on 21 October 2026. These are failure modes worth checking, not measured failure rates. The installed hardware has not been tested. Start with `python3 scripts/commission-pi.py --diagnose` on the Pi; it is read-only. Use the [AI setup workflow](ai-setup.md) for its guarded SSH transport and bounded recovery.
+Checked against BirdNET-Go release **20261014**; UGREEN/Clippy research updated on 22 October 2026. These are failure modes worth checking, not measured failure rates. The installed hardware has not been tested. Start with `python3 scripts/commission-pi.py --diagnose` on the Pi; it is read-only. Use the [AI setup workflow](ai-setup.md) for its guarded SSH transport and bounded recovery.
 
 ## Checks that distinguish different failures
 
@@ -18,6 +18,41 @@ Checked against BirdNET-Go release **20261014** and the primary references below
 | New setup works until reboot | Services, stable capture source, clock synchronization, server address and real post-reboot detection | Verify an intentional reboot and a short server outage before leaving the garden unattended. A software unit test does not replace this acceptance check. |
 
 The relay supplies power/thermal telemetry when the Pi exposes it; missing readings mean **unknown**. Temperature alerts are operational thresholds rather than proof of a defective board. Hardware acceptance still requires the actual enclosure, weather, microphone and power chain.
+
+## UGREEN 30724 and Clippy: compatibility and noise
+
+The selected pairing is supported by a [published BirdNET-Go/Pi 5 build using US205 / article 30724 and a 3.5 mm Clippy](https://github.com/arnegiacomo/fugleramme/blob/main/docs/hardware.md). There is no evidence here of a general incompatibility; clean audio on this particular unit remains a physical acceptance check.
+
+### Buy and connect the exact variants
+
+- **UGREEN US205 / 30724:** two separate sockets; the **pink TRS socket is the mono microphone input**, green is headphone output. UGREEN explicitly excludes TS and TRRS microphones for this input. [Manufacturer specifications](https://fr.ugreen.com/products/ugreen-carte-son-externe-adaptateur-usb-audio-jack-3-5mm).
+- **Ordinary mono Clippy, 3.5 mm TRS:** its stereo-shaped plug carries the same mono signal on tip/ring and needs plug-in power. Do not substitute Smart Clippy/TRRS or XLR, or add a smartphone adapter to this pairing. [Micbooster's variants](https://micbooster.com/product/clippy-em272-microphone/).
+- **Bias remains an unverified specification:** the UGREEN manufacturer page does not state microphone bias voltage/current. USB bus power alone does not establish it. If routing and capture controls are correct but real sound is absent or unusually weak, verify the exact adapter revision with the supplier or a competent bench test before replacing software.
+- **If ordering new:** consider a complete mono TRS Clippy with the **EM272M capsule**, which adds RF suppression. Micbooster warns that some EM272Z1 users encounter interference near Wi-Fi radio transmitters. This suggests testing our Pi placement; it does not prove Pi Wi-Fi causes every buzz or that an existing Z1 needs replacing. Order the assembled Clippy, not a bare capsule. [Manufacturer RF information](https://micbooster.com/product/primo-em272-m/), [Clippy selection](https://micbooster.com/product/clippy-em272-microphone/).
+
+### What people actually reported
+
+| Evidence | Finding and limit |
+|---|---|
+| [BirdNET-Pi #591, March 2026](https://github.com/Nachtzuster/BirdNET-Pi/discussions/591) | Pi 4 + UGREEN + Clippy EM272Z1 had harsh interference. USB-over-Ethernet worsened it; battery power did not fix it. The reporter improved results by removing the extender, using a black USB 2 port and rerouting cables. These were combined changes, not proof of one cause. |
+| [BirdNET-Go #2541, March 2026](https://github.com/tphakala/birdnet-go/discussions/2541) | Users reported opposite Pi 4 versus Pi 5 noise comparisons. This supports checking individual installations, not declaring the Pi 5 unsuitable. Do not turn anecdotal soldered grounding modifications into our setup procedure. |
+| [BirdNET-Go #586, April 2025](https://github.com/tphakala/birdnet-go/issues/586) | A UGREEN appeared in Linux USB inventory but disappeared from BirdNET after an update. The issue was closed through an installer fix. Historical evidence for checking container capture access separately; not a known defect established in our pinned October 2026 release. |
+
+BirdNET-Pi reports inform the physical audio chain only. Do not copy that application's old scripts or audio configuration into BirdNET-Go.
+
+### Assistant-led physical audio acceptance
+
+The assistant operates the software; the installer connects hardware, makes a test sound and confirms playback. This procedure supplements commissioning; it is **not an implemented automatic noise-calibration feature**.
+
+On a fresh installation, BirdNET listens only on the Pi's loopback interface. The local assistant must arrange a temporary authenticated SSH forward from an available local loopback port (for example `127.0.0.1:18080`) to the Pi's `127.0.0.1:8080`, using the already-confirmed host identity and existing credential route, then open that local address. The main setup manager does not create this tunnel automatically. Do not rerun the fallback installer or expose BirdNET publicly just to listen.
+
+1. **Establish a simple baseline.** Use the intended PSU and direct Clippy → pink input → UGREEN → Pi connection, initially on a black USB 2 port. Keep the capsule/audio lead clear of the Pi, fan and power wiring. Use the adapter's existing lead first; try a short shielded USB extension if needed for separation. Avoid USB-over-Ethernet in the MVP baseline. These are testable starting choices, not guaranteed cures.
+2. **Verify the input, not playback controls.** Inspect the actual capture device, stable ID, 48 kHz configuration and available capture mute/gain controls. Do not impose 100% gain or assume all revisions expose the same mixer names. Preserve existing settings before adjusting. If direct ALSA diagnosis is needed, first account for BirdNET owning the device; a busy-device error alone does not mean hardware failure.
+3. **Listen before declaring success.** Use BirdNET's local live audio/spectrogram for quiet ambience and a short spoken phrase or rustle near the mic. Confirm a corresponding level change and intelligible sound, without persistent buzzing, clipping or flat silence. Software capture/inference health can advance while the analog microphone is silent or noisy. Any temporary test recording stays local and out of support reports; routine clip export stays off.
+4. **Compare under real conditions.** Repeat with normal network traffic and the fan running. If noisy, change one factor at a time: position/cable routing, USB port, then observed capture gain. Compare Ethernet only when a working wired management route is established; never disable the sole SSH network connection. Persistent USB resets call for the existing power diagnostics, not a blind power-limit override.
+5. **Verify recovery and record evidence.** With the installer present, test USB unplug/replug and a Pi reboot; recheck the actual source, audible input and advancing inference. Save adapter/mic variant, selected ID, settings, outcomes and unresolved symptoms in the private commissioning notes. Physical audio acceptance remains pending until someone has heard this equipment. A real garden bird and delivery to Songsketch are separate checks.
+
+The existing commissioner already discovers capture devices, prefers a stable ID and verifies configuration plus advancing inference. It does **not** measure microphone bias, calibrate hardware gain, certify interference-free audio or validate the enclosure. The ARM64/RTSP lab result cannot replace this test.
 
 ## Primary evidence behind the checks
 

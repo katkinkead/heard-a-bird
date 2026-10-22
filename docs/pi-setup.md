@@ -52,6 +52,8 @@ cat /proc/asound/cards
 
 The headless commissioner checks platform, at least 2 GB of free installation space and clock synchronization; it does not certify RAM headroom, cooling, plug-in power or audio quality. The lower-level installer alone does not perform all commissioning checks. `/dev/snd` can exist because of HDMI sound even when no microphone is connected. The actual capture input must appear in BirdNET's device list.
 
+For the selected UGREEN 30724 and Clippy, follow the [exact connector, interference and physical audio checks](birdnet-pi-reliability.md#ugreen-30724-and-clippy-compatibility-and-noise). The assistant runs software checks; the installer supplies a short test sound and confirms that playback is clean. Capture/inference health alone does not establish analog microphone quality.
+
 ### The configuration the helper applies
 
 The [bundled commissioner](../scripts/commission-pi.py) applies these settings only to its supported, owned BirdNET installation, backs up the existing configuration and reads settings back to verify them. With unmanaged or complex installations it reports what needs review instead of rewriting them. These are also the reference choices for the manual fallback.

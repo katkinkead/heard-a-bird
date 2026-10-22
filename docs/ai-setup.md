@@ -118,7 +118,7 @@ Use separate checkpoints with observable evidence. Do not collapse them into a s
 1. **Software ready:** correct package, supported runtime, healthy local server and all approved assets present.
 2. **Painting ready:** a labelled test detection reaches the display; it does not add to real bird counts or trigger missing-art emails.
 3. **Pi connected:** the intended SSH host is trusted, supported software is installed and a current station report reaches the server.
-4. **Hearing ready:** real capture and inference evidence advances for the selected microphone; merely finding a USB device is insufficient.
+4. **Hearing ready:** real capture and inference evidence advances for the selected microphone, and a local audio check confirms intelligible sound with an appropriate level and no persistent interference. Follow the [UGREEN/Clippy acceptance procedure](birdnet-pi-reliability.md#assistant-led-physical-audio-acceptance). The assistant handles software inspection and evidence-based adjustment; the installer makes a test sound and confirms playback. Until that happens, report software readiness and physical audio quality separately. The commissioner does not automatically calibrate gain or certify analog sound quality.
 5. **Garden verified:** a real detection appears in history with a plausible species/time and the appropriate painting or missing-art state.
 6. **Unattended checks:** reconnect/reboot recovery, retained data and the final display are checked on the chosen host. Outdoor power, weatherproofing and network coverage are physical commissioning tasks.
 
