@@ -1,4 +1,12 @@
-# Songsketch 0.4.0 — the practice garden
+# Songsketch 0.4.1 — a real owl, through the real API
+
+The pinned ARM64 BirdNET release recognised a recorded Tawny Owl and delivered ten stored detections through the production relay to an isolated Songsketch server. Settings survived restart; repeated polling did not double-count, and an empty test catalogue queued one unsent missing-art notice. See `docs/birdnet-live-validation.md` for reproducible checks and exact evidence.
+
+The real run exposed a Python 3.9 timestamp incompatibility that made healthy listening appear unknown. It is fixed. Commissioning now requires the exact tested release and rechecks settings after configuration/recovery restarts. Fresh managed installs now include the Practice Garden launcher.
+
+The two new developer QA scripts use disposable loopback services and do not add VM/audio-test chores to the setup guide. They make no paid AI requests and send no external mail. Physical microphone, power, Pi installation/reboot, remote access and configured mail delivery still need acceptance checks. Artwork and animations are unchanged.
+
+## Previous release: 0.4.0 — the practice garden
 
 The guide now says **“a few bits. a lot of birds.”** Once the setup journey begins, the welcome panel stays dismissed, including after a reload. The parts checklist remains available during setup.
 

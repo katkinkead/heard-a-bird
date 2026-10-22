@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "kind": "birdnet_api_lab",
+  "status": "passed",
+  "tested_at": "2026-10-22T07:17:47.114212+00:00",
+  "query_day": "2026-10-22",
+  "query_timezone": "Europe/London",
+  "expected_release": "20261014",
+  "lab_port": 18080,
+  "settings_requested": false,
+  "settings_mutated": false,
+  "restart_required": false,
+  "checks": {
+    "pinned_release": true,
+    "no_key_bootstrap": true,
+    "csrf_provided": true,
+    "settings_shape": true,
+    "birdnet_readback": true,
+    "models_readback": true,
+    "realtime_readback": true,
+    "output_readback": true,
+    "audio_readback": true,
+    "capture_devices_shape": true,
+    "audio_health_shape": true,
+    "inference_shape": true,
+    "stored_detections_shape": true
+  },
+  "errors": [],
+  "evidence_limits": {
+    "physical_pi_verified": false,
+    "microphone_verified": false,
+    "known_audio_recognition_verified": false,
+    "source_configuration_verified": false
+  },
+  "threshold_policy": {
+    "baseline": 0.7,
+    "dynamic_trigger": 0.9,
+    "dynamic_minimum": 0.2,
+    "dynamic_valid_hours": 24,
+    "dynamic_enabled": true
+  },
+  "capture_device_count": 0,
+  "audio_source_count": 1,
+  "birdnet_model_present": true,
+  "stored_detection_count": 4,
+  "returned_detection_count": 1,
+  "observed_pipeline": {
+    "audio": "healthy",
+    "inference": "healthy"
+  }
+}

@@ -49,7 +49,7 @@ Simulation tests the application; the final microphone, BirdNET recognition and 
 
 Read [AGENTS.md](AGENTS.md) before changing the application. [CLAUDE.md](CLAUDE.md) uses the same instructions. Operate or extend existing features before proposing replacements.
 
-The [release-validation plan](docs/release-validation.md) separates existing test coverage from the planned full server/SMTP/browser lab, real BirdNET audio recognition and virtual Linux installation tests. These are developer checks before handover, not extra steps in the illustrated setup journey.
+The [real BirdNET validation](docs/birdnet-live-validation.md) records successful ARM64 recognition, API settings and relay delivery checks. The [release-validation plan](docs/release-validation.md) separates that evidence from the remaining SMTP/browser, varied-audio and virtual Linux installation tests. These are developer checks before handover, not extra steps in the illustrated setup journey.
 
 ```sh
 python3 scripts/check-install.py
@@ -57,4 +57,4 @@ python3 -m songsketch.server
 python3 -m unittest discover -s tests -v
 ```
 
-Python 3.9 or newer is required. Routine playback needs no npm install or Docker on the Mac. Tests use local or mocked services, make no paid AI requests and send no external email. Guide, software and approved assets are versioned together.
+Python 3.9 or newer is required. Routine playback needs no npm install or Docker on the Mac. The normal test suite uses local or mocked services. Developer-only BirdNET lab scripts can check a real disposable recogniser; neither suite makes paid AI requests or sends external email. Guide, software and approved assets are versioned together.

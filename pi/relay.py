@@ -43,11 +43,20 @@ def iso_now():
 
 
 def parse_time(value):
-    value = str(value)
-    stamp = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
-    if stamp.tzinfo is None:
-        raise ValueError("timestamp needs an explicit timezone")
-    return stamp
+    # BirdNET's Go time.Time JSON uses RFC3339Nano: fractions can have any
+    # precision up to nine digits. Python 3.9 accepts only limited fractional
+    # precision, so normalize to microseconds without rounding into the future.
+    # Keep the grammar bounded and explicit rather than loosening date parsing.
+    if not isinstance(value, str):
+        raise ValueError("timestamp must be an RFC3339 string")
+    match = re.fullmatch(r"([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2})"
+                         r"(?:\.([0-9]{1,9}))?(Z|[+-](?:[01][0-9]|2[0-3]):[0-5][0-9])", value)
+    if not match:
+        raise ValueError("timestamp needs RFC3339 format and an explicit timezone")
+    moment, fraction, zone = match.groups()
+    if fraction:
+        moment += "." + fraction[:6].ljust(6, "0")
+    return dt.datetime.fromisoformat(moment + ("+00:00" if zone == "Z" else zone))
 
 
 def fresh(value, now, seconds=90):

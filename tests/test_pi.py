@@ -126,6 +126,45 @@ class PiTests(unittest.TestCase):
         inference["models"][0]["health"]["state"] = "failing"
         self.assertEqual(relay.interpret_health(audio, inference, self.config, now), ("failed", "failed"))
 
+    def test_real_birdnet_nanosecond_dispatch_is_healthy_on_supported_python(self):
+        # Captured from actual BirdNET-Go 20261014 /health/audio. Go trims
+        # trailing zeros, yielding eight digits here; Python 3.9 rejected it.
+        observed = "2026-10-22T08:14:37.17711672+01:00"
+        now = dt.datetime(2026, 10, 22, 7, 14, 40, tzinfo=relay.UTC).timestamp()
+        audio = {"sources": [{"source_id": "lab-stream", "state": "HEALTHY", "last_dispatch": observed}]}
+        inference = {"models": [{"id": "BirdNET_V2.4", "sources": [{"id": "Lab stream"}],
+                                 "health": {"state": "ok", "lastSuccessAtUnix": int(now - 1)}}]}
+        self.assertEqual(relay.interpret_health(audio, inference, self.config, now), ("healthy", "healthy"))
+        row = bird(3); row["timestamp"] = observed
+        self.assertEqual(relay.normalize_detection(row, self.config)["observed_at"],
+                         "2026-10-22T07:14:37.177116+00:00")
+
+    def test_rfc3339_fraction_precision_offsets_and_freshness(self):
+        for digits in ("", "1", "17", "177", "1771", "17711", "177116", "1771167", "17711672", "177116729"):
+            with self.subTest(digits=digits):
+                fraction = "." + digits if digits else ""
+                stamp = relay.parse_time("2026-10-22T08:14:37" + fraction + "+01:00")
+                self.assertEqual(stamp.microsecond, int(digits[:6].ljust(6, "0")))
+                self.assertEqual(stamp.utcoffset(), dt.timedelta(hours=1))
+        for value in ("2026-10-22T07:14:37.177116729Z", "2026-10-22T08:14:37.177116729+01:00",
+                      "2026-10-22T03:44:37.177116729-03:30"):
+            moment = dt.datetime(2026, 10, 22, 7, 14, 37, 177116, tzinfo=relay.UTC).timestamp()
+            self.assertEqual(relay.parse_time(value).timestamp(), moment)
+            self.assertTrue(relay.fresh(value, moment + 90))
+            self.assertFalse(relay.fresh(value, moment + 91))
+            self.assertTrue(relay.fresh(value, moment - 5))
+            self.assertFalse(relay.fresh(value, moment - 6))
+
+    def test_rfc3339_normalization_never_accepts_malformed_timestamps(self):
+        for value in (None, 123, "2026-10-22T08:14:37", "2026-10-22T08:14:37.1234567890Z",
+                      "2026-10-22T08:14:37.Z", "2026-10-22T08:14:37.12oopsZ",
+                      "2026-10-22T08:14:37.123456789+01:60", "2026-10-22T08:14:37.123456789+24:00",
+                      "2026-10-32T08:14:37.123456789Z", "2026-10-22T25:14:37.123456789Z"):
+            with self.subTest(value=value):
+                with self.assertRaises(ValueError): relay.parse_time(value)
+                if not isinstance(value, int):
+                    self.assertFalse(relay.fresh(value, time.time()))
+
     def test_diagnostics_and_faults_never_echo_credentials(self):
         r = relay.Relay(self.config)
         failure = urllib.error.HTTPError("http://secret@example.invalid", 401, "secret-password", {}, None)

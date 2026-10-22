@@ -1,0 +1,44 @@
+{
+  "tested_at": "2026-10-22",
+  "birdnet_release": "20261014",
+  "platform": "linux/arm64 in isolated Colima VM on Apple Silicon",
+  "container_digest": "ghcr.io/tphakala/birdnet-go@sha256:4dec04b29548de6c27d1559e8ad0e7e20e2727655ef8a712571e6929e329290a",
+  "source_commit": "9642f74f3b2717ca6a6b653239f7f03cf6faa66f",
+  "model": {
+    "id": "BirdNET_V2.4",
+    "backend": "ONNX",
+    "quantization": "INT8",
+    "species": 6522,
+    "sha256": "6a2323fe8f99c2af4bb325cf8f11b52748a86aa1f2c9e706c1ae7f907289521a",
+    "range_model_sha256": "b1810073d16c6c39df95a7419f9a11a02f98dbea562c96d4993c6af52b54b271"
+  },
+  "fixture": {
+    "source": "https://raw.githubusercontent.com/tphakala/birdnet-go/20261014/tawnyowl.wav",
+    "sha256": "b3f272d2f4cf5e71f48b4696a82d05eec5995c779ac53345d29b1d74de2c390a",
+    "seconds": 15,
+    "sample_rate": 48000,
+    "channels": 1,
+    "source_format": "pcm_s32le",
+    "stream_format": "pcm_s16be, 48000 Hz mono, RTSP TCP, looped at real time",
+    "redistributed": false,
+    "attribution_status": "General repository CC BY-NC-SA 4.0; recording-specific attribution not established; local testing only"
+  },
+  "stream_server": "bluenviron/mediamtx@sha256:601952da6a9bcc6e833675d86eb177a05403e29f95810d36dbcefceb45c7e3f4",
+  "test_location": {
+    "latitude": 50.72,
+    "longitude": -2.44,
+    "timezone": "Europe/London",
+    "note": "Synthetic Dorset lab coordinates, not private installation location"
+  },
+  "advancing_analysis_check": {
+    "production_method": "Commissioner.health",
+    "passed": true,
+    "checks": {
+      "audio": "healthy",
+      "inference": "healthy",
+      "inference_advancing": true
+    }
+  },
+  "physical_pi_verified": false,
+  "microphone_verified": false
+}

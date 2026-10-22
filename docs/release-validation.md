@@ -2,7 +2,7 @@
 
 This is developer-owned testing before handover. It is separate from the illustrated setup journey and the safe Practice Garden. Monty should receive a tested release, then complete only the unavoidable checks on his actual equipment. Do not add a VM, audio corpus, SMTP test server or this matrix to his installation prerequisites.
 
-**Status: researched plan and code audit, 22 October 2026.** The existing baseline is commit `5842c15`: 215 application tests, eight art-sync tests and six browser-report helper tests recorded in [verification.md](verification.md). The deeper lab below has not yet been built or run. Existing tests use real application code and local HTTP where noted, but all BirdNET detection/health responses are currently fixtures. No actual BirdNET model has heard audio in these tests. No test has yet exercised a real SMTP listener or an external inbox.
+**Status: partial real-runtime validation, 22 October 2026.** The first actual ARM64 BirdNET audio/API run now passes: settings PATCH/readback, saved settings after restart, advancing inference, Tawny Owl recognition, ten stored detections delivered by the production relay into an isolated real server, and replay deduplication. An empty test catalogue queued one unsent missing-art notice. See [the run, reproducible checks and evidence](birdnet-live-validation.md). This found and fixed a real RFC3339Nano/Python 3.9 health-parser incompatibility. The original audited baseline was commit `5842c15` with 229 checks; current verification is in [verification.md](verification.md). The broader lab matrix is still incomplete. No actual SMTP listener, external inbox, physical microphone or full Pi installation has been verified by this run.
 
 ## What must be proved
 
@@ -35,7 +35,7 @@ Three paths need separate evidence:
 | --- | --- | --- |
 | Fast checks, already present | Existing macOS/Ubuntu CI, package hashes, unit tests, real loopback relay/server integration and privacy tests | Real recognition, an actual SMTP exchange or physical commissioning |
 | Full application lab, to build | Real server, real relay, deterministic BirdNET API fixture, real local SMTP capture, browser and fault injection | Actual model accuracy or physical capture |
-| Real recogniser + virtual Linux station, to build | Same pinned ARM64 BirdNET-Go/model, recorded audio fed into its normal live pipeline, actual stored detections/API, relay and server; separate clean-VM installation/service tests | USB microphone quality, Pi firmware/power, SD-card behaviour, Wi-Fi range and enclosure conditions |
+| Real recogniser smoke test run; virtual installation to build | Same pinned ARM64 BirdNET-Go/model, recorded audio fed into its normal live pipeline, actual stored detections/API, relay and server; separate clean-VM installation/service tests | USB microphone quality, Pi firmware/power, SD-card behaviour, Wi-Fi range and enclosure conditions |
 | Physical acceptance | Actual kit, microphone, power and network; one real bird, reboot/reconnect, long-running display, final host and configured mail provider | No finite test guarantees all future failures; retain diagnostics and bounded recovery |
 
 The Practice Garden remains a quick demonstration with synthetic inputs and an inbox that bypasses SMTP. The full application lab must use the production sender so that a green inbox result means an SMTP conversation really happened.
@@ -86,11 +86,11 @@ This is a virtual Linux station with the Pi's software architecture, not a faith
 | E04 | Connection dies during submission → explicitly uncertain delivery, no automatic duplicate send | Mock coverage exists; add SMTP fault at DATA/ack boundary; do not promise exactly-once external email |
 | E05 | TLS/auth failure → clear error; correct controlled configuration succeeds | Add local certificate/auth fixture; do not disable certificate verification to pass |
 | E06 | Actual configured mail provider delivers to intended inbox | Final explicitly authorised commissioning message; local SMTP capture cannot prove provider delivery |
-| B01 | Clean known clip → real model output, stored detection, API row, relay payload, server history and correct painting can be traced | **Not run:** implement full audio-fed chain |
+| B01 | Clean known clip → real model output, stored detection, API row, relay payload, server history and correct painting can be traced | **Partial:** real owl audio → ten stored records → production relay → isolated real server passed; rendering and a broader clip corpus remain |
 | B02 | Silence/non-bird clips → processing remains healthy; measured detections/false positives recorded | Not run; keep microphone health separate from bird activity |
-| B03 | Noisy/mixed/quiet recordings, repeated and owl clips → measured recognition/confidence under recorded filters | Not run; expected labels and tolerances must be reviewed against actual model |
+| B03 | Noisy/mixed/quiet recordings, repeated and owl clips → measured recognition/confidence under recorded filters | **Partial:** repeated upstream Tawny Owl clip recognised with recorded settings; noisy/mixed/other-species corpus not run |
 | B04 | RTSP interruption, decoder error, model failure and recovery → correct health/report/retry behaviour | Not run against actual BirdNET; fixture responses currently cover contracts only |
-| B05 | Recorded response schema, pagination, model/source IDs and timestamps match our parser | Source review and fixtures exist; capture actual pinned-build responses and add contract fixtures from them |
+| B05 | Recorded response schema, pagination, model/source IDs and timestamps match our parser | **Partial:** actual API shapes, settings writes/readback, ten detection records and RFC3339Nano health verified; timestamp regression added. Large real-data pagination and optional multi-source mapping remain |
 | B06 | Wrong or expired BirdNET access credential → unknown/failed health reported; no false healthy state | Mock/error cases exist; controlled real-auth test needed for that deployment mode |
 | I01 | Clean virtual install → real SSH/software/service operations complete with saved evidence and no hand-written code | Guarded transport/commissioning mostly mocked; build explicit lab provisioner and keep Pi-only gates pending |
 | I02 | Rerun, partially failed install, occupied port and existing configuration → reuse/preserve or stop clearly; no competing processes | Existing bootstrap/commissioning fixtures plus local process tests; repeat in clean/restored VM |

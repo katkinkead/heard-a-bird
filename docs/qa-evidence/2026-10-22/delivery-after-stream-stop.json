@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "birdnet_delivery_lab",
+  "status": "passed",
+  "tested_at": "2026-10-22T07:22:05.717102+00:00",
+  "expected_release": "20261014",
+  "expected_species": "Strix aluco",
+  "lab_port": 18080,
+  "observation_date": "2026-10-22",
+  "station_timezone": "Europe/London",
+  "confidence_threshold": 0.7,
+  "checks": {
+    "pinned_no_key_api": true,
+    "expected_species_detected": true,
+    "upstream_snapshot_stable": true,
+    "exact_event_ids_and_values": true,
+    "repeat_poll_idempotent": true,
+    "qualifying_counts_match": true,
+    "relay_outbox_empty": true,
+    "missing_art_pending_without_send": true
+  },
+  "errors": [],
+  "current_pipeline": {
+    "audio": "healthy",
+    "inference": "unknown",
+    "server_listening": "unknown"
+  },
+  "evidence_limits": {
+    "audio_fixture_provenance_verified": false,
+    "physical_pi_verified": false,
+    "microphone_verified": false,
+    "external_email_verified": false,
+    "artwork_playback_verified": false
+  },
+  "isolation": {
+    "temporary_server_and_outbox": true,
+    "background_workers": false,
+    "external_email_sent": false,
+    "ai_called": false,
+    "catalogue": "empty isolated missing-art catalogue"
+  },
+  "upstream_stored_records": 10,
+  "normalized_records": 10,
+  "delivered_records": 10,
+  "qualifying_records": 10,
+  "missing_art_notifications_queued_locally": 1,
+  "species": [
+    {
+      "scientific_name": "Strix aluco",
+      "records": 10,
+      "qualifying_records": 10,
+      "confidence_min": 1.0,
+      "confidence_max": 1.0
+    }
+  ],
+  "health_reports_delivered": 0
+}

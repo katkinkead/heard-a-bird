@@ -219,6 +219,44 @@ class CommissionTests(unittest.TestCase):
         self.assertEqual(result["code"], "audio_pipeline_not_ready")
         self.assertEqual(self.system.restarts, 1)
 
+    def test_required_restart_verifies_settings_survive_before_starting_relay(self):
+        self.api.restart_required = True
+        calls_at_restart = []
+        self.system.on_restart = lambda: calls_at_restart.append(len(self.api.calls))
+        result = self.execute()
+        self.assertEqual(result["status"], "complete")
+        self.assertTrue(result["checks"]["settings_verified_after_restart"])
+        after_restart = self.api.calls[calls_at_restart[0]:]
+        self.assertEqual([path for path, method, _ in after_restart[:5]],
+                         ["/api/v2/settings/" + section for section in ("birdnet", "models", "realtime", "output", "audio")])
+        self.assertTrue(all(method == "GET" for _, method, _ in after_restart[:5]))
+        self.assertEqual(self.system.restarts, 1)
+        self.assertEqual(self.system.started, 1)
+
+    def test_restart_rollback_never_claims_ready_even_when_audio_is_healthy(self):
+        for required_restart in (True, False):
+            with self.subTest(required_restart=required_restart):
+                self.api = FakeBirdNET(); self.system = FakeSystem(); self.emitted = []
+                self.api.restart_required = required_restart
+                self.api.healthy = required_restart
+                def roll_back():
+                    self.api.settings = initial_settings()
+                    self.api.healthy = True
+                self.system.on_restart = roll_back
+                result = self.execute()
+                self.assertEqual((result["status"], result["code"]), ("failed", "settings_not_persistent"))
+                self.assertFalse(result["checks"]["settings_verified"])
+                self.assertFalse(result["checks"]["settings_verified_after_restart"])
+                self.assertEqual(result["checks"]["settings_requiring_review"], ["birdnet", "realtime", "audio"])
+                self.assertEqual(self.system.restarts, 1)
+                self.assertEqual(self.system.started, 0)
+                self.sender.assert_not_called()
+                self.assertFalse(any(path == "/api/v2/app/wizard/dismiss" for path, _, _ in self.api.calls))
+                output = json.dumps(self.emitted)
+                self.assertNotIn(provision()["token"], output)
+                self.assertNotIn(str(provision()["latitude"]), output)
+                self.assertNotIn("precious-existing-history.db", output)
+
     def test_configuration_rejection_stops_before_claiming_health(self):
         self.api.skip_fields = True
         result = self.execute()
@@ -324,6 +362,14 @@ class HTTPContractTests(unittest.TestCase):
             with mock.patch.object(api, "request", return_value=response):
                 with self.assertRaises(c.CommissionError) as error: api.bootstrap()
                 self.assertEqual(error.exception.code, code)
+
+    def test_bootstrap_requires_exact_tested_release_not_substring(self):
+        api = c.BirdNET()
+        for version in ("20261014-custom", "untested-20261014", "202610140", "v20261014", 20261014, None):
+            with self.subTest(version=version), mock.patch.object(api, "request", return_value={
+                    "version": version, "csrfToken": "local-csrf", "security": {"enabled": False}}):
+                with self.assertRaises(c.CommissionError) as error: api.bootstrap()
+                self.assertEqual(error.exception.code, "birdnet_version_mismatch")
 
 
 class OwnershipTests(unittest.TestCase):

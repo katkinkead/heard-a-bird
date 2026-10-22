@@ -21,7 +21,7 @@ from songsketch.setup_client import SetupClient
 from songsketch.supervisor import health_check, port_is_open
 from songsketch.github_launcher import LaunchError, read_details
 
-CONTENTS = ("songsketch","scripts","pi","static","guide","docs","artwork","README.md","AGENTS.md","CLAUDE.md","LICENSE","Start Songsketch.command","Pair Garden Pi.command","Install Mac Background Service.command","integration-plan.md","dashboard-requirements.md","maintenance-requirements.md","RELEASE_NOTES.md")
+CONTENTS = ("songsketch","scripts","pi","static","guide","docs","artwork","README.md","AGENTS.md","CLAUDE.md","LICENSE","Start Songsketch.command","Pair Garden Pi.command","Open simulated garden.command","Install Mac Background Service.command","integration-plan.md","dashboard-requirements.md","maintenance-requirements.md","RELEASE_NOTES.md")
 
 
 def managed_copy(source, destination):

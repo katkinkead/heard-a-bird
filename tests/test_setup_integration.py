@@ -151,7 +151,7 @@ class BootstrapPreservationTests(unittest.TestCase):
                 self.assertEqual(value["installation"],"installed")
                 self.assertFalse(value["persistent_service"])
                 app=Path(value["application"])
-                for name in ("Pair Garden Pi.command","integration-plan.md","scripts/commission-pi.py","artwork/catalogue.json"):
+                for name in ("Pair Garden Pi.command","Open simulated garden.command","integration-plan.md","scripts/commission-pi.py","artwork/catalogue.json"):
                     self.assertTrue((app/name).is_file(),name)
                 preflight=subprocess.run([sys.executable,str(app/"scripts/check-install.py")],capture_output=True,text=True,timeout=15)
                 self.assertEqual(preflight.returncode,0,preflight.stdout)

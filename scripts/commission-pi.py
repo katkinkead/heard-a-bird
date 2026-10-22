@@ -223,7 +223,7 @@ class BirdNET:
         result = self.request("/api/v2/app/config")
         if not isinstance(result, dict): raise CommissionError("app_contract_changed", "BirdNET startup response is unfamiliar.", ["check_pinned_release"], status="failed")
         self.csrf = result.get("csrfToken", "")
-        if RELEASE not in str(result.get("version", "")):
+        if result.get("version") != RELEASE:
             raise CommissionError("birdnet_version_mismatch", "This BirdNET version differs from tested release 20261014.", ["review_birdnet_version"], "Use the tested release or have its API compatibility reviewed.")
         if result.get("security", {}).get("enabled"):
             raise CommissionError("birdnet_access_required", "Existing BirdNET authentication is enabled and will remain unchanged.", ["review_birdnet_access"], "Provide an approved unattended access arrangement for BirdNET.")
@@ -437,7 +437,27 @@ class Commissioner:
             self.sleep(5)
         return False
 
-    def verify_health(self):
+    def verify_settings(self, plan, after_restart=False):
+        # An in-memory PATCH readback does not prove that the saved settings
+        # survive a restart. Invalidate earlier evidence before each check,
+        # and report section names only, never locations or device values.
+        self.result["checks"]["settings_verified"] = False
+        if after_restart:
+            self.result["checks"]["settings_verified_after_restart"] = False
+        mismatches = [section for section, patch in plan
+                      if not matches(self.api.request("/api/v2/settings/" + section), patch)]
+        if mismatches:
+            self.result["checks"]["settings_requiring_review"] = mismatches
+            if after_restart:
+                raise CommissionError("settings_not_persistent", "BirdNET settings changed after restart; commissioning stopped before starting the relay.",
+                                      ["run_diagnostics", "review_birdnet_settings_persistence"], status="failed")
+            raise CommissionError("settings_not_verified", "Saved BirdNET settings differ from the commissioning plan.",
+                                  ["run_diagnostics", "review_birdnet_settings"], status="failed")
+        self.result["checks"]["settings_verified"] = True
+        if after_restart:
+            self.result["checks"]["settings_verified_after_restart"] = True
+
+    def verify_health(self, plan):
         try:
             healthy = self.health()
         except CommissionError as exc:
@@ -445,6 +465,7 @@ class Commissioner:
             healthy = False
         if not healthy and self.restart_once():
             self.wait_api()
+            self.verify_settings(plan, after_restart=True)
             healthy = self.health()
         return healthy
 
@@ -500,15 +521,14 @@ class Commissioner:
                     if not isinstance(response, dict) or response.get("skippedFields"):
                         raise CommissionError("settings_rejected", "BirdNET did not accept every requested setting.", ["run_diagnostics", "review_birdnet_settings"], status="failed")
                     restart = restart or response.get("restart_required", False)
-                for section, patch in plan:
-                    if not matches(self.api.request("/api/v2/settings/" + section), patch):
-                        raise CommissionError("settings_not_verified", "Saved BirdNET settings differ from the commissioning plan.", ["run_diagnostics", "review_birdnet_settings"], status="failed")
+                self.verify_settings(plan)
                 if restart:
                     if not self.restart_once(): raise CommissionError("restart_required", "BirdNET requires a restart that could not be completed safely.", ["run_diagnostics"], status="failed")
                     self.wait_api()
+                    self.verify_settings(plan, after_restart=True)
             self.result["checks"]["settings_verified"] = True
             self.progress("verifying", "Checking live capture, advancing inference and stored-history access.")
-            healthy = self.verify_health()
+            healthy = self.verify_health(plan)
             if not healthy:
                 raise CommissionError("audio_pipeline_not_ready", "Capture or inference is not producing fresh successful windows.", ["run_diagnostics", "check_selected_capture", "check_microphone_power"],
                                       "Check the connected input and microphone power if audio health is failing; a quiet garden alone is not a fault.", status="failed")

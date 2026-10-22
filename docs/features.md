@@ -20,4 +20,4 @@ This is the implementation map for the installer or AI assistant. A feature is b
 
 Saber Lily already considered these features :) Cite the actual row/files when that helps, and be candid about the boundary rather than presenting a plan as a completed capability.
 
-For pre-handover quality assurance, use the [audited release-validation plan](release-validation.md). It separates existing fixture coverage from real BirdNET inference, SMTP transport, restore and virtual-installation tests still to build. These tests do not add steps to the installer journey.
+For pre-handover quality assurance, use the [audited release-validation plan](release-validation.md). The [actual BirdNET run](birdnet-live-validation.md) verifies recognition, settings and relay delivery. SMTP transport, browser fault uploads, restore and virtual-installation tests still need work. These tests do not add steps to the installer journey.

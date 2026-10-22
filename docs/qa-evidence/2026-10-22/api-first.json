@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "kind": "birdnet_api_lab",
+  "status": "passed",
+  "tested_at": "2026-10-22T07:11:56.454220+00:00",
+  "expected_release": "20261014",
+  "lab_port": 18080,
+  "settings_requested": true,
+  "settings_mutated": true,
+  "restart_required": false,
+  "checks": {
+    "pinned_release": true,
+    "no_key_bootstrap": true,
+    "csrf_provided": true,
+    "settings_shape": true,
+    "birdnet_patch_accepted": true,
+    "birdnet_readback": true,
+    "models_patch_accepted": true,
+    "models_readback": true,
+    "realtime_patch_accepted": true,
+    "realtime_readback": true,
+    "output_patch_accepted": true,
+    "output_readback": true,
+    "audio_patch_accepted": true,
+    "audio_readback": true,
+    "capture_devices_shape": true,
+    "audio_health_shape": true,
+    "inference_shape": true,
+    "stored_detections_shape": true
+  },
+  "errors": [],
+  "evidence_limits": {
+    "physical_pi_verified": false,
+    "microphone_verified": false,
+    "known_audio_recognition_verified": false,
+    "source_configuration_verified": false
+  },
+  "capture_device_count": 0,
+  "audio_source_count": 1,
+  "birdnet_model_present": true,
+  "stored_detection_count": 0,
+  "returned_detection_count": 0,
+  "observed_pipeline": {
+    "audio": "unknown",
+    "inference": "unknown"
+  }
+}
