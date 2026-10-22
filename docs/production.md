@@ -4,9 +4,15 @@ The supported dedicated-host profile is Linux with systemd and Python3.9+ (Ubunt
 
 ## The garden Pi's production power profile
 
+**The microphone power path stays the same in MVP and production:** Pi USB → UGREEN US205/30724 → Clippy's 3.5 mm microphone connection. The USB-powered adapter supplies the Clippy's required plug-in power; no separate microphone power supply is planned. This is the intended wiring, not a completed hardware test. See the [Clippy manufacturer's requirements](https://micbooster.com/product/clippy-em272-microphone/) and [a documented build using this exact pairing](https://github.com/arnegiacomo/fugleramme/blob/main/docs/hardware.md).
+
+For the indoor MVP, use the Pi 5 kit's suitable mains supply. [CanaKit's current starter kit](https://www.canakit.com/canakit-raspberry-pi-5-starter-kit-turbine-black.html?defpid=4913) includes a CanaKit or Raspberry Pi PD supply; [CanaKit's 45 W model](https://www.canakit.com/canakit-45w-usb-c-power-supply-with-pd-black.html) specifies the 5 V / 5 A mode. Confirm the supplied model and successful negotiation. A recognised 5 A supply needs no manual USB-current override.
+
 The project board's intended chain is **Ubiquiti U-PoE+ → outdoor Ethernet/surge protection → Waveshare POE-SPLITTER-25W-TYPE-C → Raspberry Pi 5 USB-C power**, with the splitter's Ethernet output supplying data. It also names **ETH-SP-G2** surge protection. This is a recorded design, not a tested installation.
 
 The [Waveshare specification](https://www.waveshare.com/product/modules/others/power-relays/poe-splitter-25w-type-c.htm) gives 37–57V PoE input, IEEE802.3af/at support and **5V5A maximum** output. The [U-PoE+ specification](https://techspecs.ui.com/unifi/accessories/u-poe-plus) lists the 30W adapter with 48V/0.65A output. These component ratings do not establish the power available at the Pi after cable and conversion losses.
+
+[TI's PoE design guide, Table 2-2](https://www.ti.com/lit/ug/tiduex8/tiduex8.pdf), distinguishes 30 W at an IEEE 802.3at injector from 25.5 W at the powered-device input, before splitter conversion losses. Waveshare's 25 W maximum therefore does not guarantee 25 W delivered at the Pi. The actual Pi, fan and audio load may need less; verify that load with the final cable run and enclosure.
 
 **Two design details remain to verify on the actual chain:** the splitter's USB-PD negotiation behavior and the ETH-SP-G2's suitability for this PoE+ load. The retrieved Waveshare manufacturer specification does not state PD behavior. The [ETH-SP-G2 datasheet](https://dl.ui.com/datasheets/ETH-SP/ETH-SP-G2_DS.pdf) explicitly lists 802.3af; the [current product page](https://store.ui.com/us/en/products/ethernet-surge-protector) lists generic PoE support. Neither is an explicit PoE+ current rating. Keep the board's “PoE+ TBC” open until confirmed by the supplier/manufacturer or a qualified installer. Follow the [manufacturer's grounding instructions](https://dl.ui.com/qsg/ETH-SP-G2/ETH-SP-G2_EN.html); the software cannot verify grounding or weather protection.
 
