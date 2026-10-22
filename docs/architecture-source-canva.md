@@ -1,5 +1,7 @@
 # Architecture source and current decisions
 
+**22 October engineering follow-up:** the [installation audit](installation-audit.md) qualifies the board's assembly assumptions. TP-3 is non-adhesive and cannot mount the Pi; the Hammond thermal bridge is undesigned. The OBO 2024940 has a blank insert requiring actual cable sizing. The RJ45 panel coupler requires an internal patch cable. Outdoor Ethernet model/diameter, microphone rain protection and condensation management remain unresolved. The newer UACC-ETH-SP-Pro is a replacement candidate, subject to the checks in the audit. Canva was read, not edited.
+
 Read against the [Canva board](https://www.canva.com/design/DAHYbV4yjds/edit), pages 1–4, on 21 October 2026; live pages 1 and 3 and their hardware links rechecked in signed-in Chrome on 22 October 2026. Page 1 contains the detailed physical connections; pages 2 and 3 simplify production and MVP. This record preserves their meaning locally so installation does not depend on Canva access. Prices were not imported because they change.
 
 ## MVP: a Pi and the Mac you already have

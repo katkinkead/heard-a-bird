@@ -1,0 +1,362 @@
+{
+  "date": "2026-10-22",
+  "method": "SimulationApp using real loopback HTTP ingestion; synthetic events; no SMTP or AI",
+  "scenarios": [
+    {
+      "scenario": "known-bird",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Qualifying observations",
+          "expected": 1,
+          "actual": 1,
+          "passed": true
+        },
+        {
+          "name": "Selected artwork",
+          "expected": "robin",
+          "actual": "robin",
+          "passed": true
+        },
+        {
+          "name": "Live display mode",
+          "expected": "live",
+          "actual": "live",
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "duplicate-retry",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Retry recognised",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "name": "Distinct observations",
+          "expected": 2,
+          "actual": 2,
+          "passed": true
+        },
+        {
+          "name": "Cooldown queue",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "missing-art",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Unknown-species observations",
+          "expected": 2,
+          "actual": 2,
+          "passed": true
+        },
+        {
+          "name": "Local notifications",
+          "expected": 1,
+          "actual": 1,
+          "passed": true
+        },
+        {
+          "name": "External email sent",
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "name": "Existing painting retained",
+          "expected": "qa-06591e71bce94177a0ce3033c201fc8f-20261022-1",
+          "actual": "qa-06591e71bce94177a0ce3033c201fc8f-20261022-1",
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "pi-disconnect",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Stale heartbeat connected",
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "name": "Listening after stale heartbeat",
+          "expected": "unknown",
+          "actual": "unknown",
+          "passed": true
+        },
+        {
+          "name": "Painting remains available",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "pi-reconnect",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Stale heartbeat connected",
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "name": "Listening after stale heartbeat",
+          "expected": "unknown",
+          "actual": "unknown",
+          "passed": true
+        },
+        {
+          "name": "Listening after reconnection",
+          "expected": "available",
+          "actual": "available",
+          "passed": true
+        },
+        {
+          "name": "Painting remains available",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "disconnect-reconnect",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Stale heartbeat connected",
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "name": "Listening after stale heartbeat",
+          "expected": "unknown",
+          "actual": "unknown",
+          "passed": true
+        },
+        {
+          "name": "Listening after reconnection",
+          "expected": "available",
+          "actual": "available",
+          "passed": true
+        },
+        {
+          "name": "Retried observation count",
+          "expected": 1,
+          "actual": 1,
+          "passed": true
+        },
+        {
+          "name": "Painting remains available",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "capture-failure",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Pi remains connected",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "name": "Listening availability",
+          "expected": "unavailable",
+          "actual": "unavailable",
+          "passed": true
+        },
+        {
+          "name": "Duplicate diagnostic recognised",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "name": "Unresolved fault",
+          "expected": 1,
+          "actual": 1,
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "inference-failure",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Pi remains connected",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "name": "Listening availability",
+          "expected": "unavailable",
+          "actual": "unavailable",
+          "passed": true
+        },
+        {
+          "name": "Duplicate diagnostic recognised",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "name": "Unresolved fault",
+          "expected": 1,
+          "actual": 1,
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "power-warning",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Reported warning",
+          "expected": "warning",
+          "actual": "warning",
+          "passed": true
+        },
+        {
+          "name": "Listening continues",
+          "expected": "available",
+          "actual": "available",
+          "passed": true
+        },
+        {
+          "name": "Historical flags",
+          "expected": [
+            "under_voltage"
+          ],
+          "actual": [
+            "under_voltage"
+          ],
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "thermal-warning",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Reported warning",
+          "expected": "warning",
+          "actual": "warning",
+          "passed": true
+        },
+        {
+          "name": "Listening continues",
+          "expected": "available",
+          "actual": "available",
+          "passed": true
+        },
+        {
+          "name": "Historical flags",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "recovery",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Listening restored",
+          "expected": "available",
+          "actual": "available",
+          "passed": true
+        },
+        {
+          "name": "Unresolved simulated faults",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "name": "Current power health",
+          "expected": "healthy",
+          "actual": "healthy",
+          "passed": true
+        },
+        {
+          "name": "Historical evidence retained",
+          "expected": [
+            "under_voltage"
+          ],
+          "actual": [
+            "under_voltage"
+          ],
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    },
+    {
+      "scenario": "burst-idle",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Qualifying unique observations",
+          "expected": 12,
+          "actual": 12,
+          "passed": true
+        },
+        {
+          "name": "Retry recognised",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "name": "Expired replay queue",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "name": "Idle repertoire mode",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "hardware_verified": false
+    }
+  ]
+}

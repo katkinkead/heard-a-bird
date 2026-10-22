@@ -32,6 +32,7 @@ Implemented software is not proof that the physical garden has been commissioned
 - [Architecture and access](docs/architecture.md) · [Feature map](docs/features.md) · [Verification](docs/verification.md)
 - [Artwork and animation system](docs/artwork.md) · [Portable visual style guide](artwork/style-guide.html)
 - [Dedicated host and migration](docs/production.md) · [Private remote viewing](docs/remote-viewing.md)
+- [Installation audit: enclosure, weather, cooling and outstanding software gaps](docs/installation-audit.md)
 
 The local control panel is `/setup`, the operator dashboard is `/dashboard`, and the painting is `/`. The default server port is 8765. Administrator actions accept localhost connections only; use the documented SSH tunnel for remote administration. Do not expose this port directly to the internet.
 

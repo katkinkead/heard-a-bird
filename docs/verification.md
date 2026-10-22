@@ -81,3 +81,12 @@ The actual pinned `20261014` ARM64 container ran on a separate local Linux VM wi
 This run found a real Python 3.9 incompatibility with Go's fractional timestamp precision; the parser fix is covered using the observed timestamp. Regression tests also cover settings rollback after restart, exact release identity, failed/uncertain lab writes and isolated delivery. A fresh managed-install test exposed the omitted Practice Garden launcher, which is now copied correctly.
 
 The final local regression checks pass: **242 application tests, eight artwork-sync tests and six JavaScript report tests**. Package preflight verifies all 220 artwork hashes; launcher-source and shell checks pass. The full application suite initially failed on the missing managed-copy launcher; it passed after that fix. No artwork was modified, no physical Pi was commissioned and no external email or paid AI request was made. The ordinary automated suite uses fixtures; the separately documented audio run uses real BirdNET. The lab does not certify hardware or the remaining release-validation matrix.
+
+
+## 22 October installation audit rerun
+
+All **242 application tests passed** with local socket access; the first sandboxed attempt had 40 socket-binding permission errors. Package preflight passed with **220 verified asset hashes**, 45 references, five approved live animations and forty review candidates.
+
+A separate temporary HTTP simulation server on port 8770 completed all **twelve scenarios**, including retries, duplicate delivery, missing art, disconnect/reconnect, diagnostic faults and recovery. [Sanitized evidence](qa-evidence/2026-10-22/system-audit-scenarios.json). This was an API/scenario run, not new visual browser QA. No real garden data, physical Pi, external SMTP or paid AI was used. The earlier real BirdNET VM run was not repeated.
+
+The [installation audit](installation-audit.md) records hardware findings and incomplete software requirements. Phone playback through the real relay still enters normal counts; automatic renderer-error upload is not implemented. Physical fit, sealing, heat and provider delivery remain unverified.

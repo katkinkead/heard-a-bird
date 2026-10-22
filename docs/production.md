@@ -1,5 +1,11 @@
 # Moving into a permanent home
 
+Before outdoor assembly, read the [22 October installation audit](installation-audit.md): cable/gland fit, microphone rain protection and the CPU-to-enclosure thermal path are not yet validated. A component IP rating is not certification of the modified station.
+
+**May need: `usb_max_current_enable=1`.** This is conditional, not an automatic setup step. The Pi 5 warning concerns whether a 5 V / 5 A supply is recognised; it is not a rejection of USB-C or third-party supplies. A lower recognised allowance can restrict USB peripherals and USB-storage boot. Our microSD installation with a low-power audio adapter may work within the default allowance. The override does not cure undervoltage or add supply capacity; use the guarded helper below only after checking the complete power budget. A recognised 5 A supply enables the higher USB allowance automatically.
+
+The newer UACC-ETH-SP-Pro is a replacement surge-protector candidate for the unavailable seller listing, with the remaining PoE-load and grounding checks recorded in the [audit](installation-audit.md#power-and-audio). The older board item below remains historical design evidence, not a purchase endorsement.
+
 The supported dedicated-host profile is Linux with systemd and Python3.9+ (Ubuntu/Debian-style). The project board names a **Beelink EQ14** for the indoor server; the actual unit, Linux installation and power-recovery behavior still need verification. A Windows installation is outside this release. Use the same code and artwork; do not start a second application fork.
 
 ## The garden Pi's production power profile
