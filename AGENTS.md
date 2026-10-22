@@ -36,6 +36,7 @@ Help the installer set up and maintain Songsketch. Read README.md first, then th
 
 ## Simulated QA
 
+- Read `docs/release-validation.md` for deeper pre-handover testing. It records actual coverage and unbuilt gaps, including real BirdNET audio inference, SMTP, browser fault uploads and restore. This is developer-owned QA; do not add its lab dependencies or procedures to Monty's plug-and-play setup. Do not claim a generic ARM64 VM is a fully emulated or commissioned Raspberry Pi.
 - For a rehearsal, use `scripts/simulate.py` and `docs/simulation.md`. Keep simulation state separate from the real application. Never pair it with a Pi or configure real email/AI services.
 - Reproduce bugs with the same scenario and seed, retain the run report, and distinguish programmatic checks from manual visual review. Passing scenarios do not verify microphone capture, species recognition, real SMTP or physical power/network behaviour.
 - Do not promote the animation review collection into live playback merely because it completes at 75 seconds. Compare final-frame clarity with the approved source and respect current feedback in its provenance.

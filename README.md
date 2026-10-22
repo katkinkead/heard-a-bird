@@ -49,6 +49,8 @@ Simulation tests the application; the final microphone, BirdNET recognition and 
 
 Read [AGENTS.md](AGENTS.md) before changing the application. [CLAUDE.md](CLAUDE.md) uses the same instructions. Operate or extend existing features before proposing replacements.
 
+The [release-validation plan](docs/release-validation.md) separates existing test coverage from the planned full server/SMTP/browser lab, real BirdNET audio recognition and virtual Linux installation tests. These are developer checks before handover, not extra steps in the illustrated setup journey.
+
 ```sh
 python3 scripts/check-install.py
 python3 -m songsketch.server
