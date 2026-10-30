@@ -1,0 +1,17 @@
+{
+  "id": "bullfinch",
+  "key": "7f29a28c87790947d0e3bd4355857dda9c50121a4d9c8ae0b1f098f77502afb4",
+  "scoreFile": "scores/bullfinch.js",
+  "config": {},
+  "refinementMarks": 271583,
+  "strokes": 390888,
+  "completed": 390888,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "4278b055ca4e348a371ddf674e3e3841ec282a9f8c606665684ade031228c2a9",
+  "finalHash": "adc5f4b6b2842edf616fa604bf9eba81f671bf1398059a3d68d07a782aae0249",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 11800
+}

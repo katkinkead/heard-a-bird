@@ -1,0 +1,17 @@
+{
+  "id": "buzzard",
+  "key": "049d3d086dad6ee5061f04162be17f268cb28e23662ce90961f93ac0a7c8a3da",
+  "scoreFile": "scores/buzzard.js",
+  "config": {},
+  "refinementMarks": 271643,
+  "strokes": 410942,
+  "completed": 410942,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "98f2e8bd702d005368d32d61f9b544fafd0740fdb1b6cf227be1a2cd6c75e1a6",
+  "finalHash": "c1f4cb5f17ff1557e4d86f109b5ddff4a27b13cb2b38876e348d76c12b0587cd",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 12798
+}
