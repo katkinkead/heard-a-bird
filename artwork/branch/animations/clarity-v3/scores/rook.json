@@ -1,0 +1,17 @@
+{
+  "id": "rook",
+  "key": "1165a05df69dd3ec73540d227470b24e96a91f96dc848a8fe761f2b2683ba111",
+  "scoreFile": "scores/rook.js",
+  "config": {},
+  "refinementMarks": 258824,
+  "strokes": 379303,
+  "completed": 379303,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "d2e4574189669c08983d08664bc04ff744351716bf40a9cc6408521a2d8f3d4a",
+  "finalHash": "475a55973ca8ee7d013c108e1c6ffa61e5f2b728d9b0f7c2eb4a90ef364fa2b4",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 10073
+}

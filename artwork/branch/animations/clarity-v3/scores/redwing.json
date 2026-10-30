@@ -1,0 +1,17 @@
+{
+  "id": "redwing",
+  "key": "ea68b9eb1ebae1a157db137b115888931dc983058d66a016e552540a18a3cc56",
+  "scoreFile": "scores/redwing.js",
+  "config": {},
+  "refinementMarks": 226628,
+  "strokes": 352091,
+  "completed": 352091,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "27a333456354c685fa35287f1bca92ae0a39d25fc168876b4f3f52ffa65168f0",
+  "finalHash": "eaa9d3a6ed3a7c6a9e8b09b9e2b87ff18d31ca425c82ba4fa04af97b5d3eb5c9",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 10945
+}

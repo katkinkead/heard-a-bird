@@ -1,0 +1,17 @@
+{
+  "id": "robin",
+  "key": "2fcac40a8e6504f6da70573d7ee2d19f114c4a3f06fa58d9f9e2ceb71f0e49a1",
+  "scoreFile": "scores/robin.js",
+  "config": {},
+  "refinementMarks": 152527,
+  "strokes": 237546,
+  "completed": 237546,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "1342ef682b3f978ed6e0ac3bc25d0450ef6b3f5cdfd46f6f192144590797c4cb",
+  "finalHash": "508d37ce75500536e22d56ad6b7ec0d7477712743ac018c436bec1c4ea394101",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 8611
+}
