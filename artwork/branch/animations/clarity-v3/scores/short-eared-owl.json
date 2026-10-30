@@ -1,0 +1,17 @@
+{
+  "id": "short-eared-owl",
+  "key": "db2a9785a7fa85fde83eaacbdb5474a081d469f1e490089111366fff3dd13cee",
+  "scoreFile": "scores/short-eared-owl.js",
+  "config": {},
+  "refinementMarks": 303438,
+  "strokes": 450189,
+  "completed": 450189,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "a8dd9a667631e65a44528fc0d53ddd5dbc3082232492e42fa1c990b13b26fb92",
+  "finalHash": "33948a80fbcb035d57265b9cc805b02f7299f5f85aeae81c0ce97ae68bf7cc77",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 13586
+}

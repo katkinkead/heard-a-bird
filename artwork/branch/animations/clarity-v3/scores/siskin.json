@@ -1,0 +1,17 @@
+{
+  "id": "siskin",
+  "key": "ddecdd174516bde317ace9fed7a3168311df3276e3883c68849950207efb0def",
+  "scoreFile": "scores/siskin.js",
+  "config": {},
+  "refinementMarks": 233945,
+  "strokes": 348993,
+  "completed": 348993,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "483fdd68ecf03fe0cc4fe8719e323e87b506ec83158a88f5f4b20975e77edd33",
+  "finalHash": "64bb53d0b3187b2a2c2c0fae5c23435df3f8b5bbbf8cdce8cdac79e94cff14fb",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9321
+}

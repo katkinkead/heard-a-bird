@@ -1,0 +1,17 @@
+{
+  "id": "song-thrush",
+  "key": "5d30fedf7c610ea3bc2943a2b4ffc51c39e481738c410eab8a617c80ef294679",
+  "scoreFile": "scores/song-thrush.js",
+  "config": {},
+  "refinementMarks": 205925,
+  "strokes": 310085,
+  "completed": 310085,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "2d7f2102bd22e57242153efcca87af95e4daac9f65ca6d90994f013ad4a8cc39",
+  "finalHash": "7c28ce2df92fcea850c9a83f0ba7e6e98b70e03ec4c9f0750946edfc4656bd1c",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 8471
+}
