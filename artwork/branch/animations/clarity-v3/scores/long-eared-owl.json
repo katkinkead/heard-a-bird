@@ -1,0 +1,17 @@
+{
+  "id": "long-eared-owl",
+  "key": "bf27f49af4599d7c7d1bc8f126f309757f82e198d09e37ba922ee62cb3b6c519",
+  "scoreFile": "scores/long-eared-owl.js",
+  "config": {},
+  "refinementMarks": 263568,
+  "strokes": 379362,
+  "completed": 379362,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "762582eaa85b818d3e7ba5c5813a2dc3d7f1809f00faf33dfafca9e06697c7a4",
+  "finalHash": "88c199f8a21d248fa803f3a5c23985ab9880df8e995831548a5ebe889a576531",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 10866
+}

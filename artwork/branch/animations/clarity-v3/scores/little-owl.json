@@ -1,0 +1,17 @@
+{
+  "id": "little-owl",
+  "key": "6db9de0b14bf8159929e0fc10228fd4e19738243ae4c452c349f5e890f1aba6b",
+  "scoreFile": "scores/little-owl.js",
+  "config": {},
+  "refinementMarks": 315395,
+  "strokes": 466880,
+  "completed": 466880,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "2d76a43366b85b413cd33621c52a901db2be850d3aafbb947fb6594488849ec7",
+  "finalHash": "c816a3e90c069eccca580dbd89c9cdbd05ba9767abb82ee7c44a468fabac151f",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 14039
+}

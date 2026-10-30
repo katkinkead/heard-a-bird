@@ -1,0 +1,17 @@
+{
+  "id": "jay",
+  "key": "646b5f5f6f241c7fdd107a7d8128ee4764507cd7112b0ba6f2ee0322fe1efe65",
+  "scoreFile": "scores/jay.js",
+  "config": {},
+  "refinementMarks": 219695,
+  "strokes": 342486,
+  "completed": 342486,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "26ab5953f1a21d42c30c43171f08f414fb830818a08446c38d2ec4e71ee52b76",
+  "finalHash": "80edfcad88cc6fbbfe301510af4727018b134813a7d893bdbd9df1e1ffc2d99d",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 11237
+}
