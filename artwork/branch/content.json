@@ -1,0 +1,2444 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-10-23",
+  "scope": "Short paraphrased species facts; provisional regional and seasonal curation. County evidence is dated, not a current population estimate.",
+  "birds": {
+    "robin": {
+      "name": "Robin",
+      "scientific_name": "Erithacus rubecula",
+      "facts": [
+        {
+          "text": "Young robins start out speckled gold and brown; the red breast comes later.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/robin.mp3",
+        "duration_seconds": 6.113,
+        "title": "Erithacus rubecula - European Robin XC441752.mp3",
+        "author": "Jan Cibulka",
+        "source": "https://commons.wikimedia.org/wiki/File:Erithacus_rubecula_-_European_Robin_XC441752.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Erithacus_rubecula_-_European_Robin_XC441752.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds, converted to mono MP3, loudness adjusted and fades added. Derivative retains the source licence.",
+        "description": ":Smaller passerine (size of great tit) with pale chest. Singing under light of city lamp (seen after dusk).\nbird-seen:yes\nplayback-used:no\nCommon name: European Robin\nType: song\nGenus: Erithacus\nSpecies: rubecula\nLocation: Prague, Hlavn\u00ed m\u011bsto Praha, Hlavn\u00ed m\u011bsto Praha\nCountry: Czech Republic\nElevation: 220 m",
+        "sha256": "80fb5a4093a37c1b4062921b364a1af13ab45c4bca6da15425a79ace0a63a822",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "goldfinch": {
+      "name": "Goldfinch",
+      "scientific_name": "Carduelis carduelis",
+      "facts": [
+        {
+          "text": "That slender bill can reach seeds tucked inside thistle heads and teasels.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/goldfinch",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/goldfinch",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/goldfinch.mp3",
+        "duration_seconds": 12.0,
+        "title": "Carduelis carduelis - European Goldfinch XC101463.mp3",
+        "author": "Sander Pieterse",
+        "source": "https://commons.wikimedia.org/wiki/File:Carduelis_carduelis_-_European_Goldfinch_XC101463.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Carduelis_carduelis_-_European_Goldfinch_XC101463.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds, converted to mono MP3, loudness adjusted and fades added. Derivative retains the source licence.",
+        "description": ":Resident pair in tree.\nCommon name: European Goldfinch\nType: song\nGenus: Carduelis\nSpecies: carduelis\nLocation: Hanenburglaan, Den Haag, Zuid-Holland\nCountry: Netherlands\nElevation: 0 m",
+        "sha256": "93d210eac9d834cda8b6754cc4fe149b037bb2ed0ca20e36eb00aa83aeeffb62",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "blue-tit": {
+      "name": "Blue tit",
+      "scientific_name": "Cyanistes caeruleus",
+      "facts": [
+        {
+          "text": "In winter, family groups join other tits to search for food together.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/blue-tit",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/blue-tit",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/blue-tit.mp3",
+        "duration_seconds": 3.736,
+        "title": "CyanistesCaeruleusSongSlovakiaOlympusDM550.ogg",
+        "author": "SanoAK: Alexander K\u00fcrthy",
+        "source": "https://commons.wikimedia.org/wiki/File:CyanistesCaeruleusSongSlovakiaOlympusDM550.ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/CyanistesCaeruleusSongSlovakiaOlympusDM550.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds, converted to mono MP3, loudness adjusted and fades added. Derivative retains the source licence.",
+        "description": "s\u00fdkorka belas\u00e1 (Cyanistes caeruleus), spev, 20. janu\u00e1ra 2015, lu\u017en\u00fd les, Mal\u00fd Dunaj, kataster obce Ture\u0148, v\u00fdber z dlhej nahr\u00e1vky, akustick\u00fd monitoring, taktie\u017e nahran\u00e9 na Xeno-Canto ako XC342260. Accessible at www.xeno-canto.org/342260",
+        "sha256": "db0c9aeadcb8e0870f2b4a3198cdadbb8c106babb9451b902b86b2ff61ab57e8",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "blackbird": {
+      "name": "Blackbird",
+      "scientific_name": "Turdus merula",
+      "facts": [
+        {
+          "text": "The name fits the male. Female blackbirds are brown, often with a streaked breast.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/blackbird",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/blackbird",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/blackbird.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 63.021,
+        "excerpt_start_seconds": 0.254,
+        "title": "Common Blackbird (Turdus merula) (W1CDR0001425 BD22).ogg",
+        "author": "Lawrence Shove / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Common_Blackbird_(Turdus_merula)_(W1CDR0001425_BD22).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Common_Blackbird_%28Turdus_merula%29_%28W1CDR0001425_BD22%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The song of a male Common Blackbird, recorded in woodland at Culver, near Exeter, Devon, England",
+        "sha256": "c33c2b7ad36ad6e8b10326ba05cae2d947a52726bf8a27df10d3bc3624d51530",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "wren": {
+      "name": "Wren",
+      "scientific_name": "Troglodytes troglodytes",
+      "facts": [
+        {
+          "text": "A tiny bird with a remarkably loud voice.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/wren",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/wren",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/wren.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 63.204,
+        "excerpt_start_seconds": 2.074,
+        "title": "Eurasian Wren (Troglodytes troglodytes) (W1CDR0001461 BD5).ogg",
+        "author": "Lawrence Shove / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Eurasian_Wren_(Troglodytes_troglodytes)_(W1CDR0001461_BD5).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Eurasian_Wren_%28Troglodytes_troglodytes%29_%28W1CDR0001461_BD5%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The song of a male Eurasian Wren, recorded at Loch Garten, Speyside, Scotland",
+        "sha256": "441174b0aa920f48dfc0b16514baba8082c9fa54a37eb2326d66a650fd4554e1",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "house-sparrow": {
+      "name": "House sparrow",
+      "scientific_name": "Passer domesticus",
+      "facts": [
+        {
+          "text": "A sociable neighbour that nests in building holes, hedges and nest boxes.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/house-sparrow",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/house-sparrow",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/house-sparrow.mp3",
+        "duration_seconds": 10.807,
+        "title": "Passer domesticus.ogg",
+        "author": "Oona R\u00e4is\u00e4nen (Mysid)",
+        "source": "https://commons.wikimedia.org/wiki/File:Passer_domesticus.ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Passer_domesticus.ogg",
+        "license": "Public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Passer_domesticus.ogg",
+        "changes": "Excerpt up to 12 seconds, converted to mono MP3, loudness adjusted and fades added. Derivative retains the source licence.",
+        "description": "Nesting House Sparrows (Passer domesticus) in a suburban environment in Southern Finland",
+        "sha256": "b537a17634aff7b0d49346bd48f8874dcce9e7d4602a27478d5f467d15bdc1a6",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "starling": {
+      "name": "Starling",
+      "scientific_name": "Sturnus vulgaris",
+      "facts": [
+        {
+          "text": "A versatile mimic: its repertoire includes whistles, clicks and borrowed sounds.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/starling",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/starling",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/starling.mp3",
+        "duration_seconds": 4.0,
+        "title": "\u041e\u0431\u044b\u043a\u043d\u043e\u0432\u0435\u043d\u043d\u044b\u0439 \u0441\u043a\u0432\u043e\u0440\u0435\u0446 \u0432 \u041b\u0430\u0437\u0434\u0438\u043d\u0430\u0435.ogg",
+        "author": "\u041a\u0430\u0448\u0435\u0435\u0434",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9E%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%B2_%D0%9B%D0%B0%D0%B7%D0%B4%D0%B8%D0%BD%D0%B0%D0%B5.ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/%D0%9E%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%B2_%D0%9B%D0%B0%D0%B7%D0%B4%D0%B8%D0%BD%D0%B0%D0%B5.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds, converted to mono MP3, loudness adjusted and fades added. Derivative retains the source licence.",
+        "description": "\u041e\u0431\u044b\u043a\u043d\u043e\u0432\u0435\u043d\u043d\u044b\u0439 \u0441\u043a\u0432\u043e\u0440\u0435\u0446 \u0432 \u041b\u0430\u0437\u0434\u0438\u043d\u0430\u0435 6:43 24 \u043c\u0430\u044f 2023",
+        "sha256": "003e55aa9a1610288d1d6ba08ad3f22537310a66b45c19c76c95c12af1465007",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "woodpigeon": {
+      "name": "Woodpigeon",
+      "scientific_name": "Columba palumbus",
+      "facts": [
+        {
+          "text": "White wing stripes flash into view when it takes flight.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/woodpigeon",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/woodpigeon",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/woodpigeon.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 60.035,
+        "excerpt_start_seconds": 0,
+        "title": "Columba palumbus - Common Wood Pigeon XC108354.mp3",
+        "author": "Alexander Kurthy",
+        "source": "https://commons.wikimedia.org/wiki/File:Columba_palumbus_-_Common_Wood_Pigeon_XC108354.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Columba_palumbus_-_Common_Wood_Pigeon_XC108354.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":2 series\nCommon name: Common Wood Pigeon\nType: song\nGenus: Columba\nSpecies: palumbus\nLocation: Skalisko\nCountry: Slovakia\nElevation: 1170 m",
+        "sha256": "4dcf28969864e7e4b03436549b4871eafbdcf04c7f0749f63c22181a0a599662",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "great-tit": {
+      "name": "Great tit",
+      "scientific_name": "Parus major",
+      "facts": [
+        {
+          "text": "Listen for a repeated two-note phrase: its familiar song has two syllables.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/great-tit",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/great-tit",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/great-tit.mp3",
+        "duration_seconds": 1.985,
+        "title": "Parus major - Great Tit XC165665.mp3",
+        "author": "Jos\u00e9 Carlos Sires",
+        "source": "https://commons.wikimedia.org/wiki/File:Parus_major_-_Great_Tit_XC165665.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Parus_major_-_Great_Tit_XC165665.mp3",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Excerpt up to 12 seconds, converted to mono MP3, loudness adjusted and fades added. Derivative retains the source licence.",
+        "description": ":calls. Great park with natural vegetation. Varios tipos de llamadas. Gran parque periurbano con abundante vegetaci\u00f3n aut\u00f3ptona de \u00e1rboles y arbustos.\nbird-seen:yes\nplayback-used:no\nCommon name: Great Tit\nType: call\nGenus: Parus\nSpecies: major\nLocation: parque del alamillo, sevilla, andaluc\u00eda\nCountry: Spain\nElevation:\u00a0? m",
+        "sha256": "659875acefc98445a1ad59c5a51e1ef919ac733eba82c8ddfbfcb8e4ddc65374",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "long-tailed-tit": {
+      "name": "Long-tailed tit",
+      "scientific_name": "Aegithalos caudatus",
+      "facts": [
+        {
+          "text": "The tail alone is longer than the rest of this little bird.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/long-tailed-tit",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/long-tailed-tit",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/long-tailed-tit.mp3",
+        "duration_seconds": 12.0,
+        "title": "Aegithalos caudatus - Long-tailed Tit - XC114614.ogg",
+        "author": "Jonathon Jongsma",
+        "source": "https://commons.wikimedia.org/wiki/File:Aegithalos_caudatus_-_Long-tailed_Tit_-_XC114614.ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Aegithalos_caudatus_-_Long-tailed_Tit_-_XC114614.ogg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Excerpt up to 12 seconds, converted to mono MP3, loudness adjusted and fades added. Derivative retains the source licence.",
+        "description": "Species Long-tailed Tit\u00a0(Aegithalos caudatus)\nRecordist Jonathon Jongsma\nBird seen no\nPlayback used no\nLocation Coe Fen, Cambridge, Cambridgeshire, England\nElevation 10 m\nCountry United Kingdom",
+        "sha256": "952da75f6394d78d57e62ff7977135eb1e99aec1cb3ac8ce163154145b9ff79d",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "magpie": {
+      "name": "Magpie",
+      "scientific_name": "Pica pica",
+      "facts": [
+        {
+          "text": "Look again at the black: its wings shine blue-purple and its tail gleams green.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/magpie",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/magpie",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/magpie.mp3",
+        "duration_seconds": 7.249,
+        "title": "Elsterrevierschrei.ogg",
+        "author": "PhilippConBe",
+        "source": "https://commons.wikimedia.org/wiki/File:Elsterrevierschrei.ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Elsterrevierschrei.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds, converted to mono MP3, loudness adjusted and fades added. Derivative retains the source licence.",
+        "description": "Eine in einem P\u00e4rchen befindliche Elster markiert ihr Revier, wobei sie auf einem der h\u00f6chsten B\u00e4ume der Umgebung sitzt.",
+        "sha256": "6d0d2a3c5e94b448b90db9d33652eb5304104fe080e23763a16917f8e9e0f8ee",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "chaffinch": {
+      "name": "Chaffinch",
+      "scientific_name": "Fringilla coelebs",
+      "facts": [
+        {
+          "text": "Often feeds on the ground beneath a feeder rather than on the feeder itself.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/chaffinch",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/chaffinch",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/chaffinch.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 74.437,
+        "excerpt_start_seconds": 1.872,
+        "title": "Chaffinch (Fringilla coelebs) (W1CDR0001527 BD14).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Chaffinch_(Fringilla_coelebs)_(W1CDR0001527_BD14).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Chaffinch_%28Fringilla_coelebs%29_%28W1CDR0001527_BD14%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The song of a Chaffinch recorded at Rye Grove, Surrey, England",
+        "sha256": "4a034b6b520bbb1af84c14463686c459ec21c08e91fb81738901ccff08590baa",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "dunnock": {
+      "name": "Dunnock",
+      "scientific_name": "Prunella modularis",
+      "facts": [
+        {
+          "text": "Competing males can advertise their presence with conspicuous wing-flicking.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/dunnock",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/dunnock",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/dunnock.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 86.035,
+        "excerpt_start_seconds": 0.516,
+        "title": "Dunnock (Prunella modularis) (W1CDR0001422 BD6).ogg",
+        "author": "Lawrence Shove / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Dunnock_(Prunella_modularis)_(W1CDR0001422_BD6).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Dunnock_%28Prunella_modularis%29_%28W1CDR0001422_BD6%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The song of a Dunnock, recorded on Dartmoor in Devon, England",
+        "sha256": "a00aa68f6650c052edd8dff8b08e06308d1eb103c5e91e5e3dc12d1cd6282ebb",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "coal-tit": {
+      "name": "Coal tit",
+      "scientific_name": "Periparus ater",
+      "facts": [
+        {
+          "text": "Takes food away to hide it for later.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/coal-tit",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/coal-tit",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/coal-tit.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 25.462,
+        "excerpt_start_seconds": 0,
+        "title": "Periparus ater - Coal Tit XC108345.mp3",
+        "author": "Alexander Kurthy",
+        "source": "https://commons.wikimedia.org/wiki/File:Periparus_ater_-_Coal_Tit_XC108345.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Periparus_ater_-_Coal_Tit_XC108345.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":None given\nCommon name: Coal Tit\nType: song\nGenus: Periparus\nSpecies: ater\nLocation: Pod gr\u00fane - Volovec\nCountry: Slovakia\nElevation: 1180 m",
+        "sha256": "a2012fb512df744d3e2e0580118193c0220baba642a0d857e63d65a3e64e16af",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "jackdaw": {
+      "name": "Jackdaw",
+      "scientific_name": "Corvus monedula",
+      "facts": [
+        {
+          "text": "Makes a home in cavities, including tree holes, rock crevices and chimneys.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/jackdaw",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/jackdaw",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/jackdaw.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 168.52,
+        "excerpt_start_seconds": 0.864,
+        "title": "Coloeus monedula - Western Jackdaw XC436939.mp3",
+        "author": "Joost van Bruggen",
+        "source": "https://commons.wikimedia.org/wiki/File:Coloeus_monedula_-_Western_Jackdaw_XC436939.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Coloeus_monedula_-_Western_Jackdaw_XC436939.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":bird-seen:no\nplayback-used:no\nCommon name: Western Jackdaw\nType: call\nGenus: Coloeus\nSpecies: monedula\nLocation: Nijmegen, Nijmegen, Gelderland\nCountry: Netherlands\nElevation: 30 m",
+        "sha256": "3f2fe7b03c27d1b6a8c76f0d60b79e8e3619bf604453312bcaf371d3ed54a7d1",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "carrion-crow": {
+      "name": "Carrion crow",
+      "scientific_name": "Corvus corone",
+      "facts": [
+        {
+          "text": "Quick to learn when it is safe to approach a new source of food.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/carrion-crow",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/carrion-crow",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/carrion-crow.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 24.935,
+        "excerpt_start_seconds": 0,
+        "title": "Carrion Crow (Corvus corone) (W1CDR0001425 BD18).ogg",
+        "author": "Lawrence Shove / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Carrion_Crow_(Corvus_corone)_(W1CDR0001425_BD18).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Carrion_Crow_%28Corvus_corone%29_%28W1CDR0001425_BD18%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The call of a Carrion Crow recorded in a garden at Culver, near Exeter, Devon, England",
+        "sha256": "238d9de4693c8f3db70f53ff5084c637a04c282f7944f309a9b8ebed65fc37b2",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "feral-pigeon": {
+      "name": "Feral pigeon",
+      "scientific_name": "Columba livia",
+      "facts": [
+        {
+          "text": "City pigeons descend from domesticated Rock Doves.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/rock-dove-feral-pigeon",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/rock-dove-feral-pigeon",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/feral-pigeon.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 38.682,
+        "excerpt_start_seconds": 0,
+        "title": "Columba livia - Rock Dove XC539061.mp3",
+        "author": "Marie-Lan Ta\u00ff Pamart",
+        "source": "https://commons.wikimedia.org/wiki/File:Columba_livia_-_Rock_Dove_XC539061.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Columba_livia_-_Rock_Dove_XC539061.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":Pedro the friendly feral pigeon waiting for their daily handful of seeds.\nBackground sounds: plic-ploc sounds from a nearby water point\nDistance: <50cm\nEquipment: Olympus LS-12 (internal mics)\nbird-seen:yes\nplayback-used:no\nCommon name: Rock Dove\nType: adult, call, sex uncertain\nGenus: Columba\nSpecies: livia\nLocation: Paris, Arrondissement de Paris, \u00cele-de-France\nCountry: France\nElevation: 50 m",
+        "sha256": "ba659e9885639c00feaff9b311e23d6af3ef11de2132ed41c438189dfb9aaf82",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "collared-dove": {
+      "name": "Collared dove",
+      "scientific_name": "Streptopelia decaocto",
+      "facts": [
+        {
+          "text": "Its pale plumage hides a small surprise: deep red eyes.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/collared-dove",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/collared-dove",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/collared-dove.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 13.972,
+        "excerpt_start_seconds": 0,
+        "title": "Streptopelia decaocto - Eurasian Collared Dove XC82758.mp3",
+        "author": "Jonathon Jongsma",
+        "source": "https://commons.wikimedia.org/wiki/File:Streptopelia_decaocto_-_Eurasian_Collared_Dove_XC82758.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Streptopelia_decaocto_-_Eurasian_Collared_Dove_XC82758.mp3",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":singing atop chapel building on college campus\nCommon name: Eurasian Collared Dove\nType: song\nGenus: Streptopelia\nSpecies: decaocto\nLocation: Dordt College Campus, Sioux, Iowa\nCountry: United States\nElevation: 425 m",
+        "sha256": "351ec5ff9580c35266008b7bc114a8b044a449cdc9ad4345af78d55c35e06e95",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "greenfinch": {
+      "name": "Greenfinch",
+      "scientific_name": "Chloris chloris",
+      "facts": [
+        {
+          "text": "Look for a bright yellow flash along the wing as it flies.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/greenfinch",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/greenfinch",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/greenfinch.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 129.833,
+        "excerpt_start_seconds": 0,
+        "title": "Chloris chloris - European Greenfinch XC183761.mp3",
+        "author": "Dan Stowell",
+        "source": "https://commons.wikimedia.org/wiki/File:Chloris_chloris_-_European_Greenfinch_XC183761.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Chloris_chloris_-_European_Greenfinch_XC183761.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":First time I have noticed a greenfinch here. Not seen, but heard clearly. Up in a tree maybe 18m. Sunny day.\nRecorded on Edirol R-09 direct to MP3, no editing.\nbird-seen:no\nplayback-used:no\nCommon name: European Greenfinch\nType: song\nGenus: Chloris\nSpecies: chloris\nLocation: Woodford, London\nCountry: United Kingdom\nElevation: 40 m",
+        "sha256": "37d324468bc8ee21056d56c482d136764317bf6a96b98fb0e6c773bc928cc77f",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "rook": {
+      "name": "Rook",
+      "scientific_name": "Corvus frugilegus",
+      "facts": [
+        {
+          "text": "Often feeds and roosts in flocks alongside Jackdaws.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/rook",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/rook",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/rook.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 104.628,
+        "excerpt_start_seconds": 0,
+        "title": "Rooks in rookery and nests sounds.wav",
+        "author": "Alwayswonder",
+        "source": "https://commons.wikimedia.org/wiki/File:Rooks_in_rookery_and_nests_sounds.wav",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Rooks_in_rookery_and_nests_sounds.wav",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Audio sounds of Rooks busy in Rookery , in a wood, in Northern England [UK] . Also other bird calls occasionally enter the scene partially. [April 2019]",
+        "sha256": "ccd9c87649e4cf22c830473581b07ebd43555734f2fb6fcea8bbfd7ba15ee8ed",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "note": "A natural rookery recording; other birds may be audible in the background."
+      }
+    },
+    "nuthatch": {
+      "name": "Nuthatch",
+      "scientific_name": "Sitta europaea",
+      "facts": [
+        {
+          "text": "Can climb down a tree trunk head first.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/nuthatch",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/nuthatch",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/nuthatch.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 76.579,
+        "excerpt_start_seconds": 0,
+        "title": "Eurasian Nuthatch (Sitta europaea) (W1CDR0001520 BD24).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Eurasian_Nuthatch_(Sitta_europaea)_(W1CDR0001520_BD24).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Eurasian_Nuthatch_%28Sitta_europaea%29_%28W1CDR0001520_BD24%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Song of an Eurasian Nuthatch, recorded at Frensham Great Pond, Surrey, England",
+        "sha256": "ac0657ed1f43f2f470e50cda5cebeae154138710e8e5e6022862037fcdbdfd54",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "herring-gull": {
+      "name": "Herring gull",
+      "scientific_name": "Larus argentatus",
+      "facts": [
+        {
+          "text": "Adults have pink legs and a red spot on the yellow bill.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/herring-gull",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/herring-gull",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/herring-gull.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 33.618,
+        "excerpt_start_seconds": 0,
+        "title": "Larus argentatus - European Herring Gull XC488995.mp3",
+        "author": "Marie-Lan Ta\u00ff Pamart",
+        "source": "https://commons.wikimedia.org/wiki/File:Larus_argentatus_-_European_Herring_Gull_XC488995.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Larus_argentatus_-_European_Herring_Gull_XC488995.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":Herring gulls from the local colony flying above their nesting ground.\nDistance: >20m\nEquipment: Tascam DR-100mkIII + Sennheiser ME66/K6 + Rycote Super Softie\nEdits: -6dB high-pass filter at 500Hz\nbird-seen:yes\nplayback-used:no\nCommon name: European Herring Gull\nType: flight call\nGenus: Larus\nSpecies: argentatus\nLocation: Jardin des Plantes (near  Paris), Arrondissement de Paris, \u00cele-de-France\nCountry: France\nElevation: 30 m",
+        "sha256": "c9e9a5cfc53843e0521eb29170c96c5b0ecd0aa233428d771d4bcb741b8b67c3",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "common-gull": {
+      "name": "Common gull",
+      "scientific_name": "Larus canus",
+      "facts": [
+        {
+          "text": "Despite its name, it is much less common inland than on the coast.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/common-gull",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/common-gull",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/common-gull.mp3",
+        "duration_seconds": 5.696,
+        "source_duration_seconds": 5.696,
+        "excerpt_start_seconds": 0,
+        "title": "Common Gull (Fiskem\u00e5ke) (Larus canus) - Troms\u00f8, Norway 2023-07-07 (08).mp3",
+        "author": "Ryan Hodnett",
+        "source": "https://commons.wikimedia.org/wiki/File:Common_Gull_(Fiskem%C3%A5ke)_(Larus_canus)_-_Troms%C3%B8,_Norway_2023-07-07_(08).mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Common_Gull_%28Fiskem%C3%A5ke%29_%28Larus_canus%29_-_Troms%C3%B8%2C_Norway_2023-07-07_%2808%29.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Common Gull (Fiskem\u00e5ke) (Larus canus) at Prestvatn Landskapsvernomr\u00e5de in Troms\u00f8, Norway.",
+        "sha256": "c416ee46f3753c5f105da6ca35ff5c402e5e3b85e94cba067836dffbd7973ce2",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "siskin": {
+      "name": "Siskin",
+      "scientific_name": "Spinus spinus",
+      "facts": [
+        {
+          "text": "Britain\u2019s resident birds are joined by winter arrivals from Europe.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/siskin",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/siskin",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/siskin.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 123.208,
+        "excerpt_start_seconds": 0,
+        "title": "Eurasian Siskin (Carduelis spinus) (W1CDR0001494 BD4).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Eurasian_Siskin_(Carduelis_spinus)_(W1CDR0001494_BD4).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Eurasian_Siskin_%28Carduelis_spinus%29_%28W1CDR0001494_BD4%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Calls and songs of Eurasian Siskins, recorded on Old Dean Common, Surrey, England",
+        "sha256": "b96905a6950a8dce3dcd7e18584b778393401b0121e515708f6276433fe3c89a",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "great-spotted-woodpecker": {
+      "name": "Great spotted woodpecker",
+      "scientific_name": "Dendrocopos major",
+      "facts": [
+        {
+          "text": "Spring drumming is a sound made with its bill, not its voice.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/great-spotted-woodpecker",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/great-spotted-woodpecker",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/great-spotted-woodpecker.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 31.805,
+        "excerpt_start_seconds": 0,
+        "title": "Great Spotted Woodpecker (Picoides major) (W1CDR0001405 BD15).ogg",
+        "author": "Lawrence Shove / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Great_Spotted_Woodpecker_(Picoides_major)_(W1CDR0001405_BD15).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Great_Spotted_Woodpecker_%28Picoides_major%29_%28W1CDR0001405_BD15%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The drumming of a Great Spotted Woodpecker, recorded in Yarmer Wood, Devon, England",
+        "sha256": "7e463a85c80c662fbeb721265c97596627c28844aa6853e0fb51ed01c4e3864e",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board",
+        "note": "Natural drumming with the bill, rather than a vocal song."
+      }
+    },
+    "blackcap": {
+      "name": "Blackcap",
+      "scientific_name": "Sylvia atricapilla",
+      "facts": [
+        {
+          "text": "The male wears a black cap; the female\u2019s is chestnut.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/blackcap",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/blackcap",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/blackcap.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 48.419,
+        "excerpt_start_seconds": 0.39,
+        "title": "Blackcap (Sylvia atricapilla) (W1CDR0001539 BD11).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Blackcap_(Sylvia_atricapilla)_(W1CDR0001539_BD11).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Blackcap_%28Sylvia_atricapilla%29_%28W1CDR0001539_BD11%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Song of a male Blackcap, recorded at Camberley, Surrey, England",
+        "sha256": "6de1b8ed2277439b9677f7afd879d3f05ed2ce18dae7f1e11802acfc5e3ba73b",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "song-thrush": {
+      "name": "Song thrush",
+      "scientific_name": "Turdus philomelos",
+      "facts": [
+        {
+          "text": "Uses a stone as an anvil to break open snail shells.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/song-thrush",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/song-thrush",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/song-thrush.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 68.397,
+        "excerpt_start_seconds": 0,
+        "title": "Turdus philomelos - Song Thrush XC464493.mp3",
+        "author": "Marie-Lan Ta\u00ff Pamart",
+        "source": "https://commons.wikimedia.org/wiki/File:Turdus_philomelos_-_Song_Thrush_XC464493.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Turdus_philomelos_-_Song_Thrush_XC464493.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":bird-seen:yes\nplayback-used:no\nCommon name: Song Thrush\nType: song\nGenus: Turdus\nSpecies: philomelos\nLocation: Champ-de-Mars, Paris, \u00cele-de-France\nCountry: France\nElevation: 40 m",
+        "sha256": "69f6fe1e66e704f6c6d6b29e2b735eca7d4c0ed7b74a2719bfe445b767816c4d",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "pheasant": {
+      "name": "Pheasant",
+      "scientific_name": "Phasianus colchicus",
+      "facts": [
+        {
+          "text": "Introduced to Britain long ago; the female\u2019s mottling helps her blend into cover.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/pheasant",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/pheasant",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/pheasant.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 17.197,
+        "excerpt_start_seconds": 0,
+        "title": "PhasianusColchicusSlovakia.ogg",
+        "author": "SanoAK: Alexander K\u00fcrthy",
+        "source": "https://commons.wikimedia.org/wiki/File:PhasianusColchicusSlovakia.ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/PhasianusColchicusSlovakia.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Common pheasant (Phasianus colchicus), flight call, Slovakia, at village Hrub\u00fd \u0160\u00far, farm \"Lesn\u00e1 z\u00e1hrada\"",
+        "sha256": "ba1b972e80d4a26326c3088b57a3e2f9788b84c470835297d7a40a763583cfcf",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "goldcrest": {
+      "name": "Goldcrest",
+      "scientific_name": "Regulus regulus",
+      "facts": [
+        {
+          "text": "Its fine bill picks tiny insects from between pine needles.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/goldcrest",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/goldcrest",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/goldcrest.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 38.075,
+        "excerpt_start_seconds": 0,
+        "title": "Goldcrest (Regulus regulus) (W1CDR0001500 BD19).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Goldcrest_(Regulus_regulus)_(W1CDR0001500_BD19).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Goldcrest_%28Regulus_regulus%29_%28W1CDR0001500_BD19%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The warbling song of a Goldcrest, recorded at Old Dean Commom, near Camberley in Surrey, England",
+        "sha256": "49bc36779b9f13337db7740679f7f982f3b4732f5542e217aa748fc7185bb74d",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "pied-wagtail": {
+      "name": "Pied wagtail",
+      "scientific_name": "Motacilla alba",
+      "facts": [
+        {
+          "text": "May gather with others at a communal town-centre roost at dusk.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/pied-wagtail",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/pied-wagtail",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/pied-wagtail.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 26.811,
+        "excerpt_start_seconds": 0,
+        "title": "Motacilla alba - White Wagtail XC466458.mp3",
+        "author": "Pascal Christe",
+        "source": "https://commons.wikimedia.org/wiki/File:Motacilla_alba_-_White_Wagtail_XC466458.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Motacilla_alba_-_White_Wagtail_XC466458.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":bird-seen:yes\nplayback-used:no\nCommon name: White Wagtail\nType: call, song\nGenus: Motacilla\nSpecies: alba\nLocation: Yverdon-les-Bains, Vaud\nCountry: Switzerland\nElevation: 440 m",
+        "sha256": "85b40c80dd169ed8ae8d71574af20d224ac19750d7c0e2afa56f0790974a7ab4",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "note": "White Wagtail (Motacilla alba), recorded in Switzerland. A species-level reference; the British Pied Wagtail subspecies is not confirmed in this recording."
+      }
+    },
+    "jay": {
+      "name": "Jay",
+      "scientific_name": "Garrulus glandarius",
+      "facts": [
+        {
+          "text": "Buries acorns in autumn and returns to these food stores in winter.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/jay",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/jay",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/jay.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 33.804,
+        "excerpt_start_seconds": 0,
+        "title": "Garrulus glandarius - Eurasian Jay XC493584.mp3",
+        "author": "Marie-Lan Ta\u00ff Pamart",
+        "source": "https://commons.wikimedia.org/wiki/File:Garrulus_glandarius_-_Eurasian_Jay_XC493584.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Garrulus_glandarius_-_Eurasian_Jay_XC493584.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":Bird calling from the underbrush in a small mixed deciduous-coniferous forest, several other jays in the area.\nDistance: >5m\nEquipment: Tascam DR-100mkIII + Sennheiser ME66/K6 + Rycote Super Softie\nEdits: -6dB high-pass filter at 500Hz\nbird-seen:no\nplayback-used:no\nCommon name: Eurasian Jay\nType: call\nGenus: Garrulus\nSpecies: glandarius\nLocation: Durmignat, Puy-de-D\u00f4me, Auvergne-Rh\u00f4ne-Alpes\nCountry: France\nElevation: 500 m",
+        "sha256": "9fdbd7e407db1d6c6570a2821aabaa24f394325f2671e2bdf0a00cb8e11afb79",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "redwing": {
+      "name": "Redwing",
+      "scientific_name": "Turdus iliacus",
+      "facts": [
+        {
+          "text": "Usually a winter visitor; cold weather can bring it into gardens.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/redwing",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/redwing",
+        "note": "Usual winter window, not an exclusion rule; occasional records outside it are retained.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/redwing.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 39.057,
+        "excerpt_start_seconds": 0,
+        "title": "Turdus iliacus - Redwing XC538936.mp3",
+        "author": "Beno\u00eet Van Hecke",
+        "source": "https://commons.wikimedia.org/wiki/File:Turdus_iliacus_-_Redwing_XC538936.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Turdus_iliacus_-_Redwing_XC538936.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":Zoom SGH-6 + Zoom F1\nCommon name: Redwing\nType: adult, song\nGenus: Turdus\nSpecies: iliacus\nLocation: Mar\u00e7ay, Vienne, Nouvelle-Aquitaine\nCountry: France\nElevation: 140 m",
+        "sha256": "19a96e50609f6213361345502066e4bc27977e7a6f9d1dd8551eb65309e23ed5",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "bullfinch": {
+      "name": "Bullfinch",
+      "scientific_name": "Pyrrhula pyrrhula",
+      "facts": [
+        {
+          "text": "Flower buds become part of its menu in spring.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/bullfinch",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/bullfinch",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/bullfinch.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 47.139,
+        "excerpt_start_seconds": 0,
+        "title": "Bullfinch (Pyrrhula pyrrhula) (W1CDR0001509 BD14).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Bullfinch_(Pyrrhula_pyrrhula)_(W1CDR0001509_BD14).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Bullfinch_%28Pyrrhula_pyrrhula%29_%28W1CDR0001509_BD14%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Song and calls of a Bullfinch, recorded on Old Dean Common, Surrey, England",
+        "sha256": "5145874ae591d0ec5f452e2a6c3ea3793edd4624e56f353d7ba2a97fc6c69d86",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "sparrowhawk": {
+      "name": "Sparrowhawk",
+      "scientific_name": "Accipiter nisus",
+      "facts": [
+        {
+          "text": "Females are larger than males; short wings help it hunt through woodland.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/sparrowhawk",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/sparrowhawk",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/sparrowhawk.mp3",
+        "duration_seconds": 10.117,
+        "source_duration_seconds": 10.117,
+        "excerpt_start_seconds": 0,
+        "title": "Accipiter nisus - Eurasian Sparrowhawk XC467097.mp3",
+        "author": "Alvaro Ortiz Troncoso",
+        "source": "https://commons.wikimedia.org/wiki/File:Accipiter_nisus_-_Eurasian_Sparrowhawk_XC467097.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Accipiter_nisus_-_Eurasian_Sparrowhawk_XC467097.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":Sparrowhawk. Occupied nest in a birch. Female sitting in the nest. Wailing call followed by series of kek-ke-kek, somewhat similar to goshawk calls, but softer. Male showed up at the nest seconds after. Both left the nest. Female perched on a nearby tree to eat prey. Male perched on another tree. This continued for 8 minutes. Female looked up when crows flew by. Saw same nest attacked by two crows on the previous day, defended by female.\nLocation obscured to protect nest. Urban area, traffic sounds. Recorded with an Olympus handheld recorder, from 35 m distance. Built-in mic. No filters.\nbird-seen:yes\nplayback-used:no\nCommon name: Eurasian Sparrowhawk\nType: call\nGenus: Accipiter\nSpecies: nisus\nLocation: Berlin\nCountry: Germany\nElevation: 40 m",
+        "sha256": "87bfd3b545747eaa0f6234642d8c7748cb4eccae15f9480f2f2bf5b7383cefb7",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "fieldfare": {
+      "name": "Fieldfare",
+      "scientific_name": "Turdus pilaris",
+      "facts": [
+        {
+          "text": "A winter visitor that often travels in flocks of tens or hundreds.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/fieldfare",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/fieldfare",
+        "note": "Usual winter window, not an exclusion rule; occasional records outside it are retained.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/fieldfare.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 24.472,
+        "excerpt_start_seconds": 0,
+        "title": "Turdus pilaris - Fieldfare XC403028.mp3",
+        "author": "Alexander K\u00fcrthy",
+        "source": "https://commons.wikimedia.org/wiki/File:Turdus_pilaris_-_Fieldfare_XC403028.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Turdus_pilaris_-_Fieldfare_XC403028.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":Part of long term accoustic monitoring, no modified.\nbird-seen:no\nplayback-used:no\nCommon name: Fieldfare\nType: call\nGenus: Turdus\nSpecies: pilaris\nLocation: SPA Abov, Hurbanovo, Kom\u00e1rno, Nitriansky kraj\nCountry: Slovakia\nElevation: 110 m",
+        "sha256": "dcafefcfa35221571211877bf6ccc9b2916b8b9f71991315b9f8395c64f67e9e",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "buzzard": {
+      "name": "Buzzard",
+      "scientific_name": "Buteo buteo",
+      "facts": [
+        {
+          "text": "Its high, mewing call can sound surprisingly cat-like.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/buzzard",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/buzzard",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/buzzard.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 61.807,
+        "excerpt_start_seconds": 0,
+        "title": "Buteo buteo - Common Buzzard XC538277.mp3",
+        "author": "Beno\u00eet Van Hecke",
+        "source": "https://commons.wikimedia.org/wiki/File:Buteo_buteo_-_Common_Buzzard_XC538277.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Buteo_buteo_-_Common_Buzzard_XC538277.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":Audiomoth\nCommon name: Common Buzzard\nType: adult, call\nGenus: Buteo\nSpecies: buteo\nLocation: B\u00e9ruges, Vienne, Nouvelle-Aquitaine\nCountry: France\nElevation: 140 m",
+        "sha256": "87085fd585662bce3ecc22d265eb483236da6f3175f3192d25b8841acc58a548",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "mallard": {
+      "name": "Mallard",
+      "scientific_name": "Anas platyrhynchos",
+      "facts": [
+        {
+          "text": "Resident birds are joined in winter by arrivals from Iceland and northern Europe.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/mallard.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 35.384,
+        "excerpt_start_seconds": 0,
+        "title": "Mallard (Anas platyrhynchos) (W1CDR0001518 BD17).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Mallard_(Anas_platyrhynchos)_(W1CDR0001518_BD17).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Mallard_%28Anas_platyrhynchos%29_%28W1CDR0001518_BD17%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The calls of a female Mallard, recorded at Rye Grove, Surrey, England",
+        "sha256": "4b3ef461aae759b784d2a3e5c8fecf0f4b280411df41b538ec4a6e7facb016ae",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "black-headed-gull": {
+      "name": "Black-headed gull",
+      "scientific_name": "Chroicocephalus ridibundus",
+      "facts": [
+        {
+          "text": "Its summer hood is chocolate brown; for much of the year its head is white.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/black-headed-gull",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/black-headed-gull",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/black-headed-gull.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 62.728,
+        "excerpt_start_seconds": 0,
+        "title": "Chroicocephalus ridibundus - Black-headed Gull XC143894.mp3",
+        "author": "Dan Stowell",
+        "source": "https://commons.wikimedia.org/wiki/File:Chroicocephalus_ridibundus_-_Black-headed_Gull_XC143894.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Chroicocephalus_ridibundus_-_Black-headed_Gull_XC143894.mp3",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":Black-headed gulls on the roof of a student accommodation building at Heriot-Watt University, getting a bit argumentative.\nRecorded with an Edirol R-09 direct to MP3, no postprocessing.\nbird-seen:yes\nplayback-used:no\nCommon name: Black-headed Gull\nType: song\nGenus: Chroicocephalus\nSpecies: ridibundus\nLocation: Heriot-Watt University (near  Currie), City of Edinburgh, Scotland\nCountry: United Kingdom\nElevation: 90 m",
+        "sha256": "cf375beb4fed93ebc4c3b5d4dc4a31c6550a16deeb77dc121b0e658b9704b49c",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "treecreeper": {
+      "name": "Treecreeper",
+      "scientific_name": "Certhia familiaris",
+      "facts": [
+        {
+          "text": "Searches beneath bark with a slender, curved bill.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/treecreeper",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/treecreeper",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/treecreeper.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 51.501,
+        "excerpt_start_seconds": 0.518,
+        "title": "Eurasian Treecreeper (Certhia familiaris) (W1CDR0001463 BD5).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Eurasian_Treecreeper_(Certhia_familiaris)_(W1CDR0001463_BD5).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Eurasian_Treecreeper_%28Certhia_familiaris%29_%28W1CDR0001463_BD5%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The calls of a Eurasian Treecreeper, recorded at Frensham Great Pond, Surrey, England",
+        "sha256": "fdf1b6ca3d24109bcb84b6ad09782e89ea5798fed7d3f9d9dea6e04fd03f1a99",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "green-woodpecker": {
+      "name": "Green woodpecker",
+      "scientific_name": "Picus viridis",
+      "facts": [
+        {
+          "text": "Its loud, laughing call can announce it before you see it.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/green-woodpecker",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/green-woodpecker",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/green-woodpecker.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 56.517,
+        "excerpt_start_seconds": 0.437,
+        "title": "Green Woodpecker (Picus viridis) (W1CDR0001497 BD6).ogg",
+        "author": "Aubrey John Williams / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Green_Woodpecker_(Picus_viridis)_(W1CDR0001497_BD6).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Green_Woodpecker_%28Picus_viridis%29_%28W1CDR0001497_BD6%29.ogg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "The yaffle song of the Green Woodpecker, recorded at Frensham Great Pond, Surrey, England",
+        "sha256": "63f6f2346be2eb742b472dd2678b6411f8aae30ba5e52c8c101407ed3cf214c9",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "tawny-owl": {
+      "name": "Tawny owl",
+      "scientific_name": "Strix aluco",
+      "facts": [
+        {
+          "text": "Established pairs usually stay in their territory throughout the year.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/tawny-owl",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/tawny-owl",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": false,
+        "label": "No regional scarcity badge assigned",
+        "reviewed_at": "2026-10-23"
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/tawny-owl.mp3",
+        "duration_seconds": 11.834,
+        "source_duration_seconds": 11.834,
+        "excerpt_start_seconds": 0,
+        "title": "Strix aluco - Tawny Owl XC404476.mp3",
+        "author": "Jacek Szczepanek",
+        "source": "https://commons.wikimedia.org/wiki/File:Strix_aluco_-_Tawny_Owl_XC404476.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Strix_aluco_-_Tawny_Owl_XC404476.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":bird-seen:no\nplayback-used:no\nCommon name: Tawny Owl\nType: song\nGenus: Strix\nSpecies: aluco\nLocation: Gmina So\u0144sk (near  Kosmy-Pruszki), ciechanowski, mazowieckie\nCountry: Poland\nElevation: 100 m",
+        "sha256": "dc1d4e94b1d8ca6a925e4a4e01ae620b28a6c06f8d9905db79c4be95163d4429",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "barn-owl": {
+      "name": "Barn owl",
+      "scientific_name": "Tyto alba",
+      "facts": [
+        {
+          "text": "Its ear openings sit at different heights, helping it pinpoint sounds.",
+          "source": "https://www.barnowltrust.org.uk/owl-facts-for-kids/barn-owl-hearing/",
+          "publisher": "Barn Owl Trust",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/barn-owl",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": true,
+        "label": "Regionally scarce",
+        "explanation": "A scarce breeding resident in the 2022 Dorset account.",
+        "source": "https://dorsetbirds.co.uk/wp-content/uploads/2025/11/Dorset-Bird-Report-2022-web-final.pdf#page=141",
+        "evidence_year": 2022,
+        "reviewed_at": "2026-10-23",
+        "provisional": true,
+        "note": "Dated county evidence; verify the newest county account before deployment. This badge is not a conservation-risk label."
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/barn-owl.mp3",
+        "duration_seconds": 11.943,
+        "source_duration_seconds": 12.387,
+        "excerpt_start_seconds": 0.444,
+        "title": "Barn Owl (Tyto alba) (W TYTO ALBA R1 C16).ogg",
+        "author": "Victor C. Lewis / The British Library Board",
+        "source": "https://commons.wikimedia.org/wiki/File:Barn_Owl_(Tyto_alba)_(W_TYTO_ALBA_R1_C16).ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Barn_Owl_%28Tyto_alba%29_%28W_TYTO_ALBA_R1_C16%29.ogg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Barn Owl screams, recorded in Cardiganshire, Wales",
+        "sha256": "7063a8a39c96d3b3d36e139af1bd4837a7bcd824cda7097ed18c5c949f114616",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "copyright_holder": "The British Library Board"
+      }
+    },
+    "little-owl": {
+      "name": "Little owl",
+      "scientific_name": "Athene noctua",
+      "facts": [
+        {
+          "text": "When alarmed, it may bob its head up and down.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/little-owl",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "source": "https://www.rspb.org.uk/birds-and-wildlife/little-owl",
+        "note": "UK resident presence; calling and local abundance vary through the year.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": true,
+        "label": "Regionally scarce",
+        "explanation": "A local, declining breeding resident in the 2022 Dorset account.",
+        "source": "https://dorsetbirds.co.uk/wp-content/uploads/2025/11/Dorset-Bird-Report-2022-web-final.pdf#page=141",
+        "evidence_year": 2022,
+        "reviewed_at": "2026-10-23",
+        "provisional": true,
+        "note": "Dated county evidence; verify the newest county account before deployment. This badge is not a conservation-risk label."
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/little-owl.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 65.57,
+        "excerpt_start_seconds": 0,
+        "title": "Steinkauz.OGG",
+        "author": "Rabe19 (Diskussion)",
+        "source": "https://commons.wikimedia.org/wiki/File:Steinkauz.OGG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Steinkauz.OGG",
+        "license": "Public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Steinkauz.OGG",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Rufe des Steinkauzes",
+        "sha256": "56329c99c59f9318cb608276f100d148f00cad5fea76a3d0665fac806190d208",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    },
+    "short-eared-owl": {
+      "name": "Short-eared owl",
+      "scientific_name": "Asio flammeus",
+      "facts": [
+        {
+          "text": "Often hunts in daylight, unlike many other owls.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/short-eared-owl",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          9,
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "source": "https://dorsetbirds.co.uk/wp-content/uploads/2025/11/Dorset-Bird-Report-2022-web-final.pdf",
+        "note": "Usual Dorset passage/winter window. Occasional summer breeding is possible; out-of-window detections are retained without an automatic unusual badge.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": true,
+        "label": "Regionally scarce",
+        "explanation": "An uncommon passage and winter visitor in the 2022 Dorset account.",
+        "source": "https://dorsetbirds.co.uk/wp-content/uploads/2025/11/Dorset-Bird-Report-2022-web-final.pdf#page=143",
+        "evidence_year": 2022,
+        "reviewed_at": "2026-10-23",
+        "provisional": true,
+        "note": "Dated county evidence; verify the newest county account before deployment. This badge is not a conservation-risk label."
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/short-eared-owl.mp3",
+        "duration_seconds": 3.619,
+        "source_duration_seconds": 3.619,
+        "excerpt_start_seconds": 0,
+        "title": "Short-eared Owl.ogg",
+        "author": "Jamescandless",
+        "source": "https://commons.wikimedia.org/wiki/File:Short-eared_Owl.ogg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Short-eared_Owl.ogg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": "Typical calls",
+        "sha256": "85d9a2f350758b31afae69c8acf2b145d1fc39100467788157d47b9e4780a1f8",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24",
+        "note": "A short call sample; recording location is not supplied by the contributor."
+      }
+    },
+    "long-eared-owl": {
+      "name": "Long-eared owl",
+      "scientific_name": "Asio otus",
+      "facts": [
+        {
+          "text": "Those apparent ears are feather tufts, not the openings it hears through.",
+          "source": "https://www.rspb.org.uk/birds-and-wildlife/long-eared-owl",
+          "publisher": "RSPB",
+          "reviewed_at": "2026-10-23"
+        }
+      ],
+      "season": {
+        "months": [
+          9,
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "source": "https://dorsetbirds.co.uk/wp-content/uploads/2025/05/Dorset-Bird-Report-2021-FINAL-FOR-SHARING-web-mid-res-20221129.pdf",
+        "note": "Usual Dorset passage/winter window. Occasional summer breeding is possible; out-of-window detections are retained without an automatic unusual badge.",
+        "provisional": true
+      },
+      "regional": {
+        "eligible": true,
+        "label": "Regionally scarce",
+        "explanation": "Scarce on passage and in winter; occasional breeding and under-recording noted in 2021.",
+        "source": "https://dorsetbirds.co.uk/wp-content/uploads/2025/05/Dorset-Bird-Report-2021-FINAL-FOR-SHARING-web-mid-res-20221129.pdf#page=134",
+        "evidence_year": 2021,
+        "reviewed_at": "2026-10-23",
+        "provisional": true,
+        "note": "Dated county evidence; verify the newest county account before deployment. This badge is not a conservation-risk label."
+      },
+      "audio": {
+        "available": true,
+        "url": "/artwork/branch/audio/long-eared-owl.mp3",
+        "duration_seconds": 12,
+        "source_duration_seconds": 60.29,
+        "excerpt_start_seconds": 0,
+        "title": "Asio otus - Long-eared Owl XC108293.mp3",
+        "author": "Alexander Kurthy",
+        "source": "https://commons.wikimedia.org/wiki/File:Asio_otus_-_Long-eared_Owl_XC108293.mp3",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Asio_otus_-_Long-eared_Owl_XC108293.mp3",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Excerpt up to 12 seconds; leading silence trimmed where detected; mono MP3, adjusted loudness and gentle fades. Natural pitch and speed retained. Source licence retained.",
+        "description": ":first part - male song, then wingflap and song, cut from long term acoustic monitoring, olympus DM550\nbird-seen:no\nplayback-used:no\nCommon name: Long-eared Owl\nType: song, wingflap\nGenus: Asio\nSpecies: otus\nLocation: Pod gr\u00fane - Volovec\nCountry: Slovakia\nElevation: 1180 m",
+        "sha256": "d68c0105f7658605d45a82d98af49d7f0a6dbc0eb4bb9dfece855363c7cc0d1c",
+        "review": "Source species/context, creator and reuse licence checked; MP3 decode, duration, checksum and non-silent signal verified. Speaker audition and microphone-feedback commissioning remain.",
+        "reviewed_at": "2026-10-24"
+      }
+    }
+  }
+}

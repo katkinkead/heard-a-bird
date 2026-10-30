@@ -1,0 +1,461 @@
+{
+  "version": 1,
+  "duration_seconds": 75,
+  "scope": "Revised local branch collection; legacy portrait catalogue preserved",
+  "birds": [
+    {
+      "id": "robin",
+      "common_name": "Robin",
+      "scientific_name": "Erithacus rubecula",
+      "aliases": [
+        "Robin",
+        "Erithacus rubecula",
+        "European Robin"
+      ]
+    },
+    {
+      "id": "goldfinch",
+      "common_name": "Goldfinch",
+      "scientific_name": "Carduelis carduelis",
+      "aliases": [
+        "Goldfinch",
+        "Carduelis carduelis",
+        "European Goldfinch"
+      ]
+    },
+    {
+      "id": "blue-tit",
+      "common_name": "Blue tit",
+      "scientific_name": "Cyanistes caeruleus",
+      "aliases": [
+        "Blue tit",
+        "Cyanistes caeruleus",
+        "Eurasian Blue Tit",
+        "Parus caeruleus"
+      ]
+    },
+    {
+      "id": "blackbird",
+      "common_name": "Blackbird",
+      "scientific_name": "Turdus merula",
+      "aliases": [
+        "Blackbird",
+        "Turdus merula",
+        "Common Blackbird",
+        "Eurasian Blackbird"
+      ]
+    },
+    {
+      "id": "wren",
+      "common_name": "Wren",
+      "scientific_name": "Troglodytes troglodytes",
+      "aliases": [
+        "Wren",
+        "Troglodytes troglodytes",
+        "Eurasian Wren"
+      ]
+    },
+    {
+      "id": "house-sparrow",
+      "common_name": "House sparrow",
+      "scientific_name": "Passer domesticus",
+      "aliases": [
+        "House sparrow",
+        "Passer domesticus",
+        "Passer domesticus_House Sparrow"
+      ]
+    },
+    {
+      "id": "starling",
+      "common_name": "Starling",
+      "scientific_name": "Sturnus vulgaris",
+      "aliases": [
+        "Starling",
+        "Sturnus vulgaris",
+        "Sturnus vulgaris_Common Starling"
+      ]
+    },
+    {
+      "id": "woodpigeon",
+      "common_name": "Woodpigeon",
+      "scientific_name": "Columba palumbus",
+      "aliases": [
+        "Woodpigeon",
+        "Columba palumbus",
+        "Columba palumbus_Common Woodpigeon"
+      ]
+    },
+    {
+      "id": "great-tit",
+      "common_name": "Great tit",
+      "scientific_name": "Parus major",
+      "aliases": [
+        "Great tit",
+        "Parus major",
+        "Parus major_Great Tit"
+      ]
+    },
+    {
+      "id": "long-tailed-tit",
+      "common_name": "Long-tailed tit",
+      "scientific_name": "Aegithalos caudatus",
+      "aliases": [
+        "Long-tailed tit",
+        "Aegithalos caudatus",
+        "Aegithalos caudatus_Long-tailed Tit"
+      ]
+    },
+    {
+      "id": "magpie",
+      "common_name": "Magpie",
+      "scientific_name": "Pica pica",
+      "aliases": [
+        "Magpie",
+        "Pica pica",
+        "Pica pica_Common Magpie"
+      ]
+    },
+    {
+      "id": "chaffinch",
+      "common_name": "Chaffinch",
+      "scientific_name": "Fringilla coelebs",
+      "aliases": [
+        "Chaffinch",
+        "Fringilla coelebs",
+        "Fringilla coelebs_Common Chaffinch"
+      ]
+    },
+    {
+      "id": "dunnock",
+      "common_name": "Dunnock",
+      "scientific_name": "Prunella modularis",
+      "aliases": [
+        "Dunnock",
+        "Prunella modularis",
+        "Prunella modularis_Dunnock"
+      ]
+    },
+    {
+      "id": "coal-tit",
+      "common_name": "Coal tit",
+      "scientific_name": "Periparus ater",
+      "aliases": [
+        "Coal tit",
+        "Periparus ater",
+        "Periparus ater_Coal Tit"
+      ]
+    },
+    {
+      "id": "jackdaw",
+      "common_name": "Jackdaw",
+      "scientific_name": "Corvus monedula",
+      "aliases": [
+        "Jackdaw",
+        "Corvus monedula",
+        "Corvus monedula_Eurasian Jackdaw",
+        "Coloeus monedula",
+        "Eurasian Jackdaw"
+      ]
+    },
+    {
+      "id": "carrion-crow",
+      "common_name": "Carrion crow",
+      "scientific_name": "Corvus corone",
+      "aliases": [
+        "Carrion crow",
+        "Corvus corone",
+        "Corvus corone_Carrion Crow"
+      ]
+    },
+    {
+      "id": "feral-pigeon",
+      "common_name": "Feral pigeon",
+      "scientific_name": "Columba livia",
+      "aliases": [
+        "Feral pigeon",
+        "Columba livia",
+        "Columba livia_Rock Dove"
+      ]
+    },
+    {
+      "id": "collared-dove",
+      "common_name": "Collared dove",
+      "scientific_name": "Streptopelia decaocto",
+      "aliases": [
+        "Collared dove",
+        "Streptopelia decaocto",
+        "Streptopelia decaocto_Collared Dove"
+      ]
+    },
+    {
+      "id": "greenfinch",
+      "common_name": "Greenfinch",
+      "scientific_name": "Chloris chloris",
+      "aliases": [
+        "Greenfinch",
+        "Chloris chloris",
+        "Chloris chloris_European Greenfinch"
+      ]
+    },
+    {
+      "id": "rook",
+      "common_name": "Rook",
+      "scientific_name": "Corvus frugilegus",
+      "aliases": [
+        "Rook",
+        "Corvus frugilegus",
+        "Corvus frugilegus_Rook"
+      ]
+    },
+    {
+      "id": "nuthatch",
+      "common_name": "Nuthatch",
+      "scientific_name": "Sitta europaea",
+      "aliases": [
+        "Nuthatch",
+        "Sitta europaea",
+        "Sitta europaea_Eurasian Nuthatch"
+      ]
+    },
+    {
+      "id": "herring-gull",
+      "common_name": "Herring gull",
+      "scientific_name": "Larus argentatus",
+      "aliases": [
+        "Herring gull",
+        "Larus argentatus",
+        "Larus argentatus_Herring Gull"
+      ]
+    },
+    {
+      "id": "common-gull",
+      "common_name": "Common gull",
+      "scientific_name": "Larus canus",
+      "aliases": [
+        "Common gull",
+        "Larus canus",
+        "Larus canus_Common Gull"
+      ]
+    },
+    {
+      "id": "siskin",
+      "common_name": "Siskin",
+      "scientific_name": "Spinus spinus",
+      "aliases": [
+        "Siskin",
+        "Spinus spinus",
+        "Spinus spinus_Eurasian Siskin"
+      ]
+    },
+    {
+      "id": "great-spotted-woodpecker",
+      "common_name": "Great spotted woodpecker",
+      "scientific_name": "Dendrocopos major",
+      "aliases": [
+        "Great spotted woodpecker",
+        "Dendrocopos major",
+        "Dendrocopos major_Great Spotted Woodpecker"
+      ]
+    },
+    {
+      "id": "blackcap",
+      "common_name": "Blackcap",
+      "scientific_name": "Sylvia atricapilla",
+      "aliases": [
+        "Blackcap",
+        "Sylvia atricapilla",
+        "Sylvia atricapilla_Eurasian Blackcap"
+      ]
+    },
+    {
+      "id": "song-thrush",
+      "common_name": "Song thrush",
+      "scientific_name": "Turdus philomelos",
+      "aliases": [
+        "Song thrush",
+        "Turdus philomelos",
+        "Turdus philomelos_Song Thrush"
+      ]
+    },
+    {
+      "id": "pheasant",
+      "common_name": "Pheasant",
+      "scientific_name": "Phasianus colchicus",
+      "aliases": [
+        "Pheasant",
+        "Phasianus colchicus",
+        "Phasianus colchicus_Common Pheasant"
+      ]
+    },
+    {
+      "id": "goldcrest",
+      "common_name": "Goldcrest",
+      "scientific_name": "Regulus regulus",
+      "aliases": [
+        "Goldcrest",
+        "Regulus regulus",
+        "Regulus regulus_Goldcrest"
+      ]
+    },
+    {
+      "id": "pied-wagtail",
+      "common_name": "Pied wagtail",
+      "scientific_name": "Motacilla alba",
+      "aliases": [
+        "Pied wagtail",
+        "Motacilla alba",
+        "Motacilla alba_Pied Wagtail/White Wagtail"
+      ]
+    },
+    {
+      "id": "jay",
+      "common_name": "Jay",
+      "scientific_name": "Garrulus glandarius",
+      "aliases": [
+        "Jay",
+        "Garrulus glandarius",
+        "Garrulus glandarius_Eurasian Jay"
+      ]
+    },
+    {
+      "id": "redwing",
+      "common_name": "Redwing",
+      "scientific_name": "Turdus iliacus",
+      "aliases": [
+        "Redwing",
+        "Turdus iliacus",
+        "Turdus iliacus_Redwing"
+      ]
+    },
+    {
+      "id": "bullfinch",
+      "common_name": "Bullfinch",
+      "scientific_name": "Pyrrhula pyrrhula",
+      "aliases": [
+        "Bullfinch",
+        "Pyrrhula pyrrhula",
+        "Pyrrhula pyrrhula_Eurasian Bullfinch"
+      ]
+    },
+    {
+      "id": "sparrowhawk",
+      "common_name": "Sparrowhawk",
+      "scientific_name": "Accipiter nisus",
+      "aliases": [
+        "Sparrowhawk",
+        "Accipiter nisus",
+        "Accipiter nisus_Eurasian Sparrowhawk"
+      ]
+    },
+    {
+      "id": "fieldfare",
+      "common_name": "Fieldfare",
+      "scientific_name": "Turdus pilaris",
+      "aliases": [
+        "Fieldfare",
+        "Turdus pilaris",
+        "Turdus pilaris_Fieldfare"
+      ]
+    },
+    {
+      "id": "buzzard",
+      "common_name": "Buzzard",
+      "scientific_name": "Buteo buteo",
+      "aliases": [
+        "Buzzard",
+        "Buteo buteo",
+        "Buteo buteo_Common Buzzard"
+      ]
+    },
+    {
+      "id": "mallard",
+      "common_name": "Mallard",
+      "scientific_name": "Anas platyrhynchos",
+      "aliases": [
+        "Mallard",
+        "Anas platyrhynchos",
+        "Anas platyrhynchos_Mallard"
+      ]
+    },
+    {
+      "id": "black-headed-gull",
+      "common_name": "Black-headed gull",
+      "scientific_name": "Chroicocephalus ridibundus",
+      "aliases": [
+        "Black-headed gull",
+        "Chroicocephalus ridibundus",
+        "Chroicocephalus ridibundus_Black-headed Gull"
+      ]
+    },
+    {
+      "id": "treecreeper",
+      "common_name": "Treecreeper",
+      "scientific_name": "Certhia familiaris",
+      "aliases": [
+        "Treecreeper",
+        "Certhia familiaris",
+        "Certhia familiaris_Eurasian Treecreeper"
+      ]
+    },
+    {
+      "id": "green-woodpecker",
+      "common_name": "Green woodpecker",
+      "scientific_name": "Picus viridis",
+      "aliases": [
+        "Green woodpecker",
+        "Picus viridis",
+        "Picus viridis_Eurasian Green Woodpecker"
+      ]
+    },
+    {
+      "id": "tawny-owl",
+      "common_name": "Tawny owl",
+      "scientific_name": "Strix aluco",
+      "aliases": [
+        "Tawny owl",
+        "Strix aluco",
+        "Strix aluco_Tawny Owl"
+      ]
+    },
+    {
+      "id": "barn-owl",
+      "common_name": "Barn owl",
+      "scientific_name": "Tyto alba",
+      "aliases": [
+        "Barn owl",
+        "Tyto alba",
+        "Tyto alba_Barn Owl"
+      ]
+    },
+    {
+      "id": "little-owl",
+      "common_name": "Little owl",
+      "scientific_name": "Athene noctua",
+      "aliases": [
+        "Little owl",
+        "Athene noctua",
+        "Athene noctua_Little Owl"
+      ]
+    },
+    {
+      "id": "short-eared-owl",
+      "common_name": "Short-eared owl",
+      "scientific_name": "Asio flammeus",
+      "aliases": [
+        "Short-eared owl",
+        "Asio flammeus",
+        "Asio flammeus_Short-eared Owl"
+      ]
+    },
+    {
+      "id": "long-eared-owl",
+      "common_name": "Long-eared owl",
+      "scientific_name": "Asio otus",
+      "aliases": [
+        "Long-eared owl",
+        "Asio otus",
+        "Asio otus_Long-eared Owl"
+      ]
+    }
+  ]
+}
