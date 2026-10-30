@@ -1,0 +1,17 @@
+{
+  "id": "great-spotted-woodpecker",
+  "key": "59e457899bf9aca9310bfa908f84c73af0bec2adf1d4a86f581877493255cdeb",
+  "scoreFile": "scores/great-spotted-woodpecker.js",
+  "config": {},
+  "refinementMarks": 162191,
+  "strokes": 250810,
+  "completed": 250810,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "23fc997057f339c7a49b1f6bd694aa561e448ff88d47769ff95b5da86f2d6304",
+  "finalHash": "6ebdd2fa4cee9e48f39f104af81bb697c3d9e4f52b17a48becd3f03f9cfd1c6e",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 6916
+}

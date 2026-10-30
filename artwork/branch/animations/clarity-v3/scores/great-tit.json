@@ -1,0 +1,17 @@
+{
+  "id": "great-tit",
+  "key": "da00685a425a4661fcfed94c8a6b365c4a26878dee1429eeee9a1633cca583eb",
+  "scoreFile": "scores/great-tit.js",
+  "config": {},
+  "refinementMarks": 208866,
+  "strokes": 315523,
+  "completed": 315523,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "16a17656ec9a3dcdb930053cf8638e2be4ef9051eba801a2364dcf24f778a6eb",
+  "finalHash": "1c92e1d5526f8bbd8fafd89037e9d405250dc9dcc9ca857e4306ca2209c48d09",
+  "reusedApprovedClarityScore": true,
+  "milliseconds": 8285
+}

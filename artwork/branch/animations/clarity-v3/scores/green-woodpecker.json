@@ -1,0 +1,17 @@
+{
+  "id": "green-woodpecker",
+  "key": "a06ce64c0451c8a9caa8a5769da37b501618767085b4149006f24c78f14acc51",
+  "scoreFile": "scores/green-woodpecker.js",
+  "config": {},
+  "refinementMarks": 218524,
+  "strokes": 328121,
+  "completed": 328121,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "83d9a0e432b43fb3ecaf89c0e124f8e151477c101683230427747522495532aa",
+  "finalHash": "3a80424de9da5f37f8c201fe27c4dab9f9ffdc81b59d54f04d3ebcbb0b28226d",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9966
+}

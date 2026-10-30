@@ -1,0 +1,17 @@
+{
+  "id": "greenfinch",
+  "key": "293c5a74b465cb96cc0f6f2dd0765e96213b3e1ec9701071515d99c89adaf781",
+  "scoreFile": "scores/greenfinch.js",
+  "config": {},
+  "refinementMarks": 286408,
+  "strokes": 403619,
+  "completed": 403619,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "231873ce79304dde15fae6dd78fb8979837ab2e4cf7f6f342c486ab7916bd28e",
+  "finalHash": "b1cfeb6956be35dae88d65819e5e9548372c29f8ca6b24a123886089aa423308",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9953
+}
