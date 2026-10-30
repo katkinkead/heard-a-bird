@@ -1,0 +1,461 @@
+{
+  "verified_at": "2026-10-24",
+  "species": 45,
+  "local_recordings": 45,
+  "speaker_audition": "pending on intended equipment",
+  "recordings": [
+    {
+      "id": "robin",
+      "duration_seconds": 6.112653,
+      "mean_dbfs": -17.8,
+      "peak_dbfs": -3.5,
+      "bytes": 74455,
+      "sha256": "80fb5a4093a37c1b4062921b364a1af13ab45c4bca6da15425a79ace0a63a822",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "goldfinch",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -27.0,
+      "peak_dbfs": -8.0,
+      "bytes": 145312,
+      "sha256": "93d210eac9d834cda8b6754cc4fe149b037bb2ed0ca20e36eb00aa83aeeffb62",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "blue-tit",
+      "duration_seconds": 3.73551,
+      "mean_dbfs": -33.6,
+      "peak_dbfs": -16.8,
+      "bytes": 45881,
+      "sha256": "db0c9aeadcb8e0870f2b4a3198cdadbb8c106babb9451b902b86b2ff61ab57e8",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "blackbird",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -31.2,
+      "peak_dbfs": -12.2,
+      "bytes": 145326,
+      "sha256": "c33c2b7ad36ad6e8b10326ba05cae2d947a52726bf8a27df10d3bc3624d51530",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "wren",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -34.4,
+      "peak_dbfs": -13.5,
+      "bytes": 145327,
+      "sha256": "441174b0aa920f48dfc0b16514baba8082c9fa54a37eb2326d66a650fd4554e1",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "house-sparrow",
+      "duration_seconds": 10.807347,
+      "mean_dbfs": -30.0,
+      "peak_dbfs": -3.9,
+      "bytes": 130825,
+      "sha256": "b537a17634aff7b0d49346bd48f8874dcce9e7d4602a27478d5f467d15bdc1a6",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "starling",
+      "duration_seconds": 4.0,
+      "mean_dbfs": -18.6,
+      "peak_dbfs": -3.4,
+      "bytes": 49445,
+      "sha256": "003e55aa9a1610288d1d6ba08ad3f22537310a66b45c19c76c95c12af1465007",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "woodpigeon",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -22.9,
+      "peak_dbfs": -8.7,
+      "bytes": 145357,
+      "sha256": "4dcf28969864e7e4b03436549b4871eafbdcf04c7f0749f63c22181a0a599662",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "great-tit",
+      "duration_seconds": 1.985306,
+      "mean_dbfs": -25.4,
+      "peak_dbfs": -4.9,
+      "bytes": 24921,
+      "sha256": "659875acefc98445a1ad59c5a51e1ef919ac733eba82c8ddfbfcb8e4ddc65374",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "long-tailed-tit",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -30.7,
+      "peak_dbfs": -1.9,
+      "bytes": 145254,
+      "sha256": "952da75f6394d78d57e62ff7977135eb1e99aec1cb3ac8ce163154145b9ff79d",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "magpie",
+      "duration_seconds": 7.24898,
+      "mean_dbfs": -24.1,
+      "peak_dbfs": -2.5,
+      "bytes": 88160,
+      "sha256": "6d0d2a3c5e94b448b90db9d33652eb5304104fe080e23763a16917f8e9e0f8ee",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "chaffinch",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -30.5,
+      "peak_dbfs": -8.1,
+      "bytes": 145329,
+      "sha256": "4a034b6b520bbb1af84c14463686c459ec21c08e91fb81738901ccff08590baa",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "dunnock",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -29.7,
+      "peak_dbfs": -14.1,
+      "bytes": 145319,
+      "sha256": "a00aa68f6650c052edd8dff8b08e06308d1eb103c5e91e5e3dc12d1cd6282ebb",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "coal-tit",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -29.3,
+      "peak_dbfs": -13.9,
+      "bytes": 145340,
+      "sha256": "a2012fb512df744d3e2e0580118193c0220baba642a0d857e63d65a3e64e16af",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "jackdaw",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -25.1,
+      "peak_dbfs": -4.4,
+      "bytes": 145350,
+      "sha256": "3f2fe7b03c27d1b6a8c76f0d60b79e8e3619bf604453312bcaf371d3ed54a7d1",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "carrion-crow",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -29.7,
+      "peak_dbfs": -6.1,
+      "bytes": 145325,
+      "sha256": "238d9de4693c8f3db70f53ff5084c637a04c282f7944f309a9b8ebed65fc37b2",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "feral-pigeon",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -23.2,
+      "peak_dbfs": -3.4,
+      "bytes": 145352,
+      "sha256": "ba659e9885639c00feaff9b311e23d6af3ef11de2132ed41c438189dfb9aaf82",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "collared-dove",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -23.1,
+      "peak_dbfs": -9.5,
+      "bytes": 145368,
+      "sha256": "351ec5ff9580c35266008b7bc114a8b044a449cdc9ad4345af78d55c35e06e95",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "greenfinch",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -20.6,
+      "peak_dbfs": -6.3,
+      "bytes": 145354,
+      "sha256": "37d324468bc8ee21056d56c482d136764317bf6a96b98fb0e6c773bc928cc77f",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "rook",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -28.2,
+      "peak_dbfs": -9.3,
+      "bytes": 145290,
+      "sha256": "ccd9c87649e4cf22c830473581b07ebd43555734f2fb6fcea8bbfd7ba15ee8ed",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "nuthatch",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -28.6,
+      "peak_dbfs": -8.9,
+      "bytes": 145333,
+      "sha256": "ac0657ed1f43f2f470e50cda5cebeae154138710e8e5e6022862037fcdbdfd54",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "herring-gull",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -24.4,
+      "peak_dbfs": -4.8,
+      "bytes": 145364,
+      "sha256": "c9e9a5cfc53843e0521eb29170c96c5b0ecd0aa233428d771d4bcb741b8b67c3",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "common-gull",
+      "duration_seconds": 5.696259,
+      "mean_dbfs": -28.0,
+      "peak_dbfs": -6.6,
+      "bytes": 69793,
+      "sha256": "c416ee46f3753c5f105da6ca35ff5c402e5e3b85e94cba067836dffbd7973ce2",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "siskin",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -27.6,
+      "peak_dbfs": -8.8,
+      "bytes": 145330,
+      "sha256": "b96905a6950a8dce3dcd7e18584b778393401b0121e515708f6276433fe3c89a",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "great-spotted-woodpecker",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -27.7,
+      "peak_dbfs": -3.5,
+      "bytes": 145350,
+      "sha256": "7e463a85c80c662fbeb721265c97596627c28844aa6853e0fb51ed01c4e3864e",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "blackcap",
+      "duration_seconds": 11.990204,
+      "mean_dbfs": -25.1,
+      "peak_dbfs": -7.4,
+      "bytes": 145015,
+      "sha256": "6de1b8ed2277439b9677f7afd879d3f05ed2ce18dae7f1e11802acfc5e3ba73b",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "song-thrush",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -28.8,
+      "peak_dbfs": -6.3,
+      "bytes": 145355,
+      "sha256": "69f6fe1e66e704f6c6d6b29e2b735eca7d4c0ed7b74a2719bfe445b767816c4d",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "pheasant",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -28.2,
+      "peak_dbfs": -6.9,
+      "bytes": 145282,
+      "sha256": "ba1b972e80d4a26326c3088b57a3e2f9788b84c470835297d7a40a763583cfcf",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "goldcrest",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -28.0,
+      "peak_dbfs": -10.9,
+      "bytes": 145327,
+      "sha256": "49bc36779b9f13337db7740679f7f982f3b4732f5542e217aa748fc7185bb74d",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "pied-wagtail",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -24.7,
+      "peak_dbfs": -9.3,
+      "bytes": 145352,
+      "sha256": "85b40c80dd169ed8ae8d71574af20d224ac19750d7c0e2afa56f0790974a7ab4",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "jay",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -26.6,
+      "peak_dbfs": -6.2,
+      "bytes": 145350,
+      "sha256": "9fdbd7e407db1d6c6570a2821aabaa24f394325f2671e2bdf0a00cb8e11afb79",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "redwing",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -26.8,
+      "peak_dbfs": -8.0,
+      "bytes": 145340,
+      "sha256": "19a96e50609f6213361345502066e4bc27977e7a6f9d1dd8551eb65309e23ed5",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "bullfinch",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -28.1,
+      "peak_dbfs": -8.8,
+      "bytes": 145329,
+      "sha256": "5145874ae591d0ec5f452e2a6c3ea3793edd4624e56f353d7ba2a97fc6c69d86",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "sparrowhawk",
+      "duration_seconds": 10.116757,
+      "mean_dbfs": -20.0,
+      "peak_dbfs": -3.0,
+      "bytes": 122797,
+      "sha256": "87bfd3b545747eaa0f6234642d8c7748cb4eccae15f9480f2f2bf5b7383cefb7",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "fieldfare",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -27.2,
+      "peak_dbfs": -1.3,
+      "bytes": 145344,
+      "sha256": "dcafefcfa35221571211877bf6ccc9b2916b8b9f71991315b9f8395c64f67e9e",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "buzzard",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -26.1,
+      "peak_dbfs": -3.5,
+      "bytes": 145348,
+      "sha256": "87085fd585662bce3ecc22d265eb483236da6f3175f3192d25b8841acc58a548",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "mallard",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -30.2,
+      "peak_dbfs": -4.1,
+      "bytes": 145326,
+      "sha256": "4b3ef461aae759b784d2a3e5c8fecf0f4b280411df41b538ec4a6e7facb016ae",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "black-headed-gull",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -19.2,
+      "peak_dbfs": -3.0,
+      "bytes": 145365,
+      "sha256": "cf375beb4fed93ebc4c3b5d4dc4a31c6550a16deeb77dc121b0e658b9704b49c",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "treecreeper",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -29.4,
+      "peak_dbfs": -11.8,
+      "bytes": 145342,
+      "sha256": "fdf1b6ca3d24109bcb84b6ad09782e89ea5798fed7d3f9d9dea6e04fd03f1a99",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "green-woodpecker",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -31.3,
+      "peak_dbfs": -10.2,
+      "bytes": 145338,
+      "sha256": "63f6f2346be2eb742b472dd2678b6411f8aae30ba5e52c8c101407ed3cf214c9",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "tawny-owl",
+      "duration_seconds": 11.834535,
+      "mean_dbfs": -23.2,
+      "peak_dbfs": -8.3,
+      "bytes": 143461,
+      "sha256": "dc1d4e94b1d8ca6a925e4a4e01ae620b28a6c06f8d9905db79c4be95163d4429",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "barn-owl",
+      "duration_seconds": 11.942902,
+      "mean_dbfs": -29.7,
+      "peak_dbfs": -10.1,
+      "bytes": 144682,
+      "sha256": "7063a8a39c96d3b3d36e139af1bd4837a7bcd824cda7097ed18c5c949f114616",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "little-owl",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -27.8,
+      "peak_dbfs": -8.1,
+      "bytes": 145269,
+      "sha256": "56329c99c59f9318cb608276f100d148f00cad5fea76a3d0665fac806190d208",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "short-eared-owl",
+      "duration_seconds": 3.61941,
+      "mean_dbfs": -23.5,
+      "peak_dbfs": -9.0,
+      "bytes": 44643,
+      "sha256": "85d9a2f350758b31afae69c8acf2b145d1fc39100467788157d47b9e4780a1f8",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    },
+    {
+      "id": "long-eared-owl",
+      "duration_seconds": 12.0,
+      "mean_dbfs": -26.9,
+      "peak_dbfs": -11.4,
+      "bytes": 145349,
+      "sha256": "d68c0105f7658605d45a82d98af49d7f0a6dbc0eb4bb9dfece855363c7cc0d1c",
+      "decode": "passed",
+      "source_and_license": "reviewed"
+    }
+  ],
+  "http_files_verified": 45,
+  "browser_library": "45 of 45 local recordings visibly listed with credits and audio controls",
+  "focused_tests": "21 Python content/audio/HTTP tests; JavaScript fresh-bout playback checks passed"
+}

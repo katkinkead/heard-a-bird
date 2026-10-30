@@ -20,7 +20,7 @@
   function post(path,body={}){return api(path,{method:'POST',body:JSON.stringify(body)});}
   function lock(){state.authenticated=false;$('lock-dashboard').hidden=true;$('unlock').hidden=false;$('application').hidden=true;$('connection-label').className='connection-label';$('connection-label').innerHTML='<i></i> Operator access required';}
   function unlock(){state.authenticated=true;$('lock-dashboard').hidden=false;$('unlock').hidden=true;$('application').hidden=false;}
-  function setView(){const requested=location.hash.slice(1)||'overview';state.view=['overview','birds','atelier','maintenance','settings'].includes(requested)?requested:'overview';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`view-${state.view}`);document.querySelectorAll('[data-view]').forEach(a=>{if(a.dataset.view===state.view)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});if(state.authenticated)refreshView();}
+  function setView(){const requested=location.hash.slice(1)||'overview';state.view=['overview','birds','evidence','atelier','maintenance','settings'].includes(requested)?requested:'overview';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`view-${state.view}`);document.querySelectorAll('[data-view]').forEach(a=>{if(a.dataset.view===state.view)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});if(state.authenticated)refreshView();}
   function badge(text,kind=''){return `<span class="soft-pill ${kind}">${escape(text)}</span>`;}
   function hardwareFacts(station){
     const h=station.hardware||{},age=(Date.now()-Date.parse(h.observed_at))/1000;
@@ -47,6 +47,7 @@
   }
   function renderOverview(){
     const s=state.status,c=s.current||{},counts=s.counts||{};
+    const capture=s.capture_test||{};$("capture-state").textContent=capture.active?`Test capture active until ${date(capture.until)}. These sounds will not enter garden history.`:"Normal garden counting is active.";$("capture-start").disabled=!!capture.active;$("capture-stop").disabled=!capture.active;
     renderHealth();$('month-count').textContent=num(counts.month_detections);$('species-count').textContent=num(counts.species);$('artwork-count').textContent=num(counts.artwork??state.catalogue.length);$('queue-count').textContent=num(s.queue_count??0);
     const art=state.catalogue.find(b=>b.id===c.artwork_id||b.scientific_name===c.scientific_name);
     if(art?.image_url&&safeUrl(art.image_url)){$('current-art').src=art.image_url;$('current-art').alt=`Approved ${art.common_name} painting preview`;}
@@ -132,11 +133,22 @@
           state.birds=birds.birds||[];state.birdsPeriod=period;state.detections=events.detections||[];state.birdsLoading=false;renderBirds();
         }finally{if(request===state.birdRequest){state.birdsLoading=false;$('diversity-card').setAttribute('aria-busy','false');}}
       }
+      else if(state.view==='evidence')await renderEvidence();
       else if(state.view==='atelier'){const jobs=await api('/api/admin/jobs');state.jobs=jobs.jobs||[];renderAtelier();}
       else if(state.view==='maintenance')renderMaintenance();
       else if(state.view==='settings'){loadSettings();settingsStatus();}
     }catch(e){if(state.authenticated)banner(e.message,true);}
   }
+  let evidenceRequest=0;
+  async function renderEvidence(){const request=++evidenceRequest,period=$('evidence-period').value;const data=await api('/api/admin/branch-evidence?period='+period);if(request!==evidenceRequest||state.view!=='evidence')return;
+    $('evidence-summary').textContent=`${data.species} species · ${data.bouts} bouts · ${data.observations} accepted classifier matches${data.simulation?' · Practice data':''}`;
+    $('evidence-coverage').textContent=`Confirmed listening: ${data.coverage.confirmed_hours} hours. Unconfirmed: ${data.coverage.unconfirmed_hours} hours. Missing coverage is not proof of a quiet garden.`;
+    const d=data.delivery;$('evidence-delivery').textContent=d.sample_size?`Delivery delay: median ${d.median_seconds}s · 95th percentile ${d.p95_seconds}s · ${d.sample_size} records.`:'No delivery-delay sample yet.';
+    $('evidence-solar').textContent=data.solar.available?`Today’s sunrise: ${date(data.solar.sunrise)} · sunset: ${date(data.solar.sunset)} · calculated locally in ${data.timezone}.`:'Solar times unavailable: '+data.solar.reason;
+    const l=data.library;$('evidence-library').textContent=`Local library: ${l.facts}/${l.species} species have sourced facts; ${l.recordings}/${l.species} have licensed recordings. ${l.note}`;
+    $('evidence-rows').innerHTML=data.birds.map(b=>{const a=b.assessment;return `<tr><td>${escape(b.name)}</td><td>${b.count_uncertain?'≥ ':''}${num(b.count)} / ${num(b.observations)}</td><td>${escape(a.unusual_reason)}<br><small>${num(a.baseline_days)} comparable covered days; heard on ${num(a.prior_detection_days)} earlier days. Minimum ${num(a.minimum_days)} days × ${num(a.minimum_daily_hours)} hours.</small></td><td>${escape(a.regional.explanation||'No regional badge assigned')}${a.rare?'<br><small>Dated county evidence; review before deployment.</small>':''}</td></tr>`;}).join('')||'<tr><td colspan="4">No accepted bird encounters in this period.</td></tr>';
+  }
+  $('evidence-period').onchange=()=>renderEvidence().catch(e=>banner(e.message,true));
   async function refresh(){
     if(state.busy)return;state.busy=true;
     try{
@@ -191,5 +203,6 @@
     if(localHost){for(const key of ['notification_email','smtp_host','smtp_user','smtp_from','ai_text_model','ai_image_model'])data[key]=form.elements[key].value.trim();for(const key of ['smtp_password','openai_api_key'])if(form.elements[key].value)data[key]=form.elements[key].value;if(form.elements.smtp_port.value)data.smtp_port=Number(form.elements.smtp_port.value);data.smtp_tls=form.elements.smtp_tls.checked;}
     button.disabled=true;try{await post('/api/admin/settings',data);form.elements.smtp_password.value='';form.elements.openai_api_key.value='';state.settingsLoaded=false;message('settings-message','Settings saved. Saved secrets stay hidden.');await refresh();}catch(error){message('settings-message',error.message,true);}finally{button.disabled=false;}
   });
+  for(const action of ["start","stop"])$("capture-"+action).onclick=async()=>{try{await post("/api/admin/capture-test",{action});await refresh();}catch(error){banner(error.message,true);}};
   setView();refresh();setInterval(()=>{if(!document.hidden&&state.authenticated)refresh();},5000);
 })();

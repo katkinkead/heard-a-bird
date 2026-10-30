@@ -1,0 +1,148 @@
+{
+  "started": "2026-10-24T10:18:52.249Z",
+  "finished": "2026-10-24T10:18:52.359Z",
+  "simulation": true,
+  "hardware_verified": false,
+  "real_birdnet_run": false,
+  "external_messages_sent": false,
+  "checks": [
+    {
+      "name": "fresh first species",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "retry deduplicated",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "continuous matches remain one bout",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "new bout after fixture quiet gap",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "overlapping species retained",
+      "actual": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "name": "delayed arrival is not singing now",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "microphone failed with Pi connected",
+      "actual": "unavailable",
+      "expected": "unavailable",
+      "passed": true
+    },
+    {
+      "name": "Pi heartbeat loss",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "Pi recovery",
+      "actual": "available",
+      "expected": "available",
+      "passed": true
+    },
+    {
+      "name": "test audio tagged",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "buffered test tagged after stop",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "test sounds excluded from counts",
+      "actual": 7,
+      "expected": 7,
+      "passed": true
+    },
+    {
+      "name": "test sounds do not queue missing-art mail",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "display retry deduplicated",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "display fault appears on Garden desk",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "station authentication required",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "all approved species available",
+      "actual": 45,
+      "expected": 45,
+      "passed": true
+    },
+    {
+      "name": "solar computation available",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "day view retains all species",
+      "actual": 45,
+      "expected": 45,
+      "passed": true
+    },
+    {
+      "name": "week view retains all species",
+      "actual": 45,
+      "expected": 45,
+      "passed": true
+    },
+    {
+      "name": "month view retains all species",
+      "actual": 45,
+      "expected": 45,
+      "passed": true
+    },
+    {
+      "name": "normal-speed visible sequence started",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limits": [
+    "Synthetic species IDs over authenticated HTTP.",
+    "Repeat-bout and heartbeat-loss scenarios use explicit clock-age fixtures.",
+    "Painting appearance is verified separately in the browser."
+  ]
+}

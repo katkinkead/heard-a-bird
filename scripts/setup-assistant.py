@@ -18,6 +18,8 @@ def main(argv=None):
     parser.add_argument("--port", type=int, default=8765)
     sub = parser.add_subparsers(dest="command",required=True)
     sub.add_parser("status"); sub.add_parser("open"); sub.add_parser("diagnose",help="Read a local recovery packet without changing the Pi")
+    prepare = sub.add_parser("prepare",help="Reuse saved details and discover the indoor network route; no SSH login")
+    prepare.add_argument("--hostname")
     probe = sub.add_parser("probe",help="Validate settings and obtain an SSH host-key challenge")
     for name in ("hostname","username","server-url"):
         probe.add_argument("--"+name,required=True)
@@ -40,7 +42,10 @@ def main(argv=None):
         parser.error("No existing Songsketch installation here. Run ai-bootstrap.py first; do not create new credentials for an existing server.")
     client = SetupClient(Config(directory),args.port)
     try:
-        if args.command == "open": result = client.open_guide()
+        if args.command == "prepare":
+            from songsketch.setup_prepare import prepare
+            result = prepare(directory,args.port,{"hostname":args.hostname} if args.hostname else {},client.request("/api/admin/setup-context"))
+        elif args.command == "open": result = client.open_guide()
         elif args.command == "status": result = client.request("/api/admin/setup")
         elif args.command == "diagnose": result = client.request("/api/admin/setup-context")
         else:

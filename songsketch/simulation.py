@@ -178,6 +178,8 @@ class LocalMaintenance(Maintenance):
                     if self.app.synthetic_health and time.monotonic() - self.app.last_heartbeat > 10:
                         self.app.send_heartbeat(self.app.synthetic_health)
                     self.store.tick()
+                    from .branch_lab import advance_flow
+                    advance_flow(self.app)
             except (OSError,ValueError,http.client.HTTPException):
                 if not self.stop.is_set():
                     self.store.issue("simulation-tick", "warning", "The simulated heartbeat could not refresh. Reopen the simulator and inspect its local report.")
@@ -199,6 +201,8 @@ class SimulationApp(App):
             self.maintenance.app = self
             self.jobs = DisabledJobs()
             self.commissioning = DisabledCommissioning()
+            from .display_reports import DisplayReports
+            self.display_reports = DisplayReports()
             self.sessions, self.setup_tickets, self.auth_attempts = {}, {}, {}
             self.auth_lock = threading.Lock()
             self.streams = threading.BoundedSemaphore(12)
@@ -210,6 +214,8 @@ class SimulationApp(App):
             self.runs_folder = directory / "simulation-runs"
             self.runs_folder.mkdir(exist_ok=True, mode=0o700)
             self.store.set_meta("simulation", True)
+            if self.store.meta("branch_flow",{}).get("running"):
+                self.store.set_meta("branch_flow", {"running":False,"reason":"Paused after server restart"})
             self.store.tick()
             self.thread = threading.Thread(target=self.maintenance.run, daemon=True)
         except Exception:
@@ -261,6 +267,7 @@ class SimulationApp(App):
         # A fixture clock jump, not a claim of having waited 151 seconds.
         with self.store.tx() as db:
             db.execute("UPDATE stations SET received_at=?", (iso(utcnow()-timedelta(seconds=151)),))
+            db.execute("UPDATE listening_windows SET open=0")
         self.maintenance.check()
 
     def saved_runs(self):
@@ -283,9 +290,10 @@ class SimulationApp(App):
     def reset_fixture(self):
         self.synthetic_health = None
         with self.store.tx() as db:
-            for table in ("detections","stations","queue","reports","issues","missing_art","email_outbox","jobs","meta"):
+            for table in ("detections","stations","queue","reports","issues","missing_art","email_outbox","jobs","meta","listening_windows"):
                 db.execute("DELETE FROM " + table)
         self.store.set_meta("simulation", True)
+        self.store.set_meta("branch_generation", uuid.uuid4().hex)
 
     def run_scenario(self, name, seed=20261022):
         if name not in {s["id"] for s in SCENARIOS}: raise ValueError("Choose a listed simulation scenario.")
@@ -457,10 +465,14 @@ class SimulationHandler(Handler):
 
     def do_POST(self):
         path=urlparse(self.path).path
-        allowed={"/api/session","/api/setup/session","/api/admin/setup-ticket","/api/admin/test-detection","/api/admin/diagnostics",
+        allowed={"/api/display/reports","/api/admin/capture-test","/api/session","/api/setup/session","/api/admin/setup-ticket","/api/admin/test-detection","/api/admin/diagnostics",
                  "/api/ingest/detections","/api/ingest/heartbeat","/api/ingest/reports","/detections","/heartbeat","/debug-reports"}
         try:
             self.check_origin()
+            if path == "/api/simulation/branch":
+                self.require_admin()
+                from .branch_lab import action
+                return self.send(action(self.app,self.body()))
             if path in ("/api/simulation/run","/api/simulation/report","/api/admin/logout"):
                 self.require_admin(); data=self.body()
                 if path=="/api/simulation/run":
@@ -514,6 +526,7 @@ def main(argv=None):
     parser.add_argument("--data-dir",type=Path,default=simulation_directory())
     parser.add_argument("--port",type=int,default=8766)
     parser.add_argument("--no-open",action="store_true")
+    parser.add_argument("--branch",action="store_true",help="Open the branch rehearsal controls using the same isolated simulator.")
     parser.add_argument("--candidate-catalogue",type=Path,help="Explicitly opt into a local candidate animation catalogue; does not change live playback.")
     parser.add_argument("--review-animations",action="store_true",help="Explicitly preview the bundled 45-bird review catalogue; live playback is unchanged.")
     args=parser.parse_args(argv)
@@ -544,14 +557,16 @@ def main(argv=None):
                 response=conn.getresponse(); result=json.loads(response.read())
                 if response.status!=200: raise ValueError("Could not reopen the existing simulator session.")
             finally: conn.close()
-            url="http://127.0.0.1:%s/simulation#ticket=%s"%(args.port,result["ticket"])
+            url="http://127.0.0.1:%s/%s#ticket=%s"%(args.port,"branch-lab" if args.branch else "simulation",result["ticket"])
             if not args.no_open: webbrowser.open(url)
             print("The existing simulated garden is running at http://127.0.0.1:%s/simulation"%args.port)
             return 0
         app=SimulationApp(directory,args.candidate_catalogue)
         server=SimulationServer(("127.0.0.1",args.port),app)
         app.start_ticks()
-        if not args.no_open: webbrowser.open(launch_url(app,args.port))
+        if not args.no_open:
+            url=launch_url(app,args.port)
+            webbrowser.open(url.replace("/simulation#","/branch-lab#") if args.branch else url)
         print("Simulated garden: http://127.0.0.1:%s/simulation"%args.port)
         print("Synthetic data only. No Pi, external email, paid AI or SSH. Keep this window open; Control-C stops the simulator.")
         server.serve_forever(poll_interval=.25)

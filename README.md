@@ -1,26 +1,24 @@
-# Songsketch
+# Heard a Bird
 
 **A listening garden. A slowly painted bird.**
+
+Heard a Birdy (originally Songsketch). Repository snapshot updated **30 October 2026**. The Python package, service names and existing data directories retain `songsketch` for installation compatibility.
 
 A garden Pi recognises birds with BirdNET-Go. An indoor computer remembers what it hears and sends a slowly painted bird to a browser. Start with a MacBook; move the same application and history to a dedicated Linux computer later.
 
 ## Start here
 
-Open the [illustrated setup guide](guide/index.html). It follows five stages:
+Open the [illustrated setup guide](guide/index.html). Its short path asks for **the Pi’s name**, then **Connect my AI & set up**. Account, location and network fields are optional upfront; the assistant reuses saved settings, discovers the indoor server address and asks only for information it cannot determine. The kit list and headless Pi-preparation steps remain available if needed.
 
-0. **What you need.** Start with the [MVP Amazon list](https://www.amazon.co.uk/hz/wishlist/ls/2631A1V48YH7R) and the separately ordered [Clippy EM272M mono TRS microphone](https://micbooster.com/product/clippy-em272-microphone/?attribute_pa_microphone=em272m&attribute_pa_single_2_4_matchedcapsules=single). The four Amazon items cover the CanaKit, USB sound card and two alternative windshields; choose one compatible windshield. Check the kit’s storage and power supply, plus a card reader, network and indoor computer.
-1. **Prepare the Pi.** Keep a usable supported installation. If the card needs preparing, the guide covers Raspberry Pi Imager and headless setup: account, Wi-Fi and SSH, without a monitor. Confirm the exact card before anything erases it.
-2. **Enter the garden details.** Supply the Pi hostname and account, the garden location and the indoor server address. Credentials stay in local private prompts.
-3. **Connect AI and install.** Use the guide’s **Connect my AI & install** button, unzip `Install Songsketch.zip`, then open the launcher inside once. Choose an installed Codex or Claude Code. It obtains the private GitHub project using existing access and opens the assistant in that repository. The assistant reads the current setup instructions, starts the local control panel and operates the existing installers.
-4. **Watch the garden come online.** Follow actual setup stages, evidence and errors. Confirm the Pi's identity when asked, then check a test painting and real listening separately.
+On first use, unzip the downloaded launcher and open it once. A supported local Codex or Claude Code installation, its normal sign-in, private project access and a prepared Pi are prerequisites. The assistant handles configuration and checks; the user supplies missing Pi credentials privately, confirms the Pi’s identity and handles physical connections. No API key is required for routine bird recognition or paintings.
 
-A standalone HTML page cannot launch an assistant or SSH into the Pi. The one-time local launcher, operating-system permission and provider sign-in are real first-launch steps. The launcher explains missing prerequisites; it does not pretend to install them. You need authorised access to the [private repository](https://github.com/katkinkead/songsketch), or an owner-supplied release ZIP with its local setup helpers. Running that ZIP does not require a GitHub account.
+A standalone HTML page cannot launch an assistant or SSH into the Pi. The one-time local launcher, operating-system permission and provider sign-in are real first-launch steps. The launcher explains missing prerequisites; it does not pretend to install them. You need authorised access to the [private repository](https://github.com/katkinkead/heard-a-bird), or an owner-supplied release ZIP with its local setup helpers. Running that ZIP does not require a GitHub account.
 
 The assistant handles routine computer work. Its instructions live in [AGENTS.md](AGENTS.md) and [the repository setup procedure](docs/ai-setup.md), rather than a long prompt copied into the guide. If you already have the project open in a local assistant, ask it to follow that procedure.
 
 ## What you get
 
-Robin, Goldfinch, Blue tit, Blackbird and Wren include their approved **75-second animations**, stored locally alongside a [45-bird finished-art reference library](artwork/index.html), the current style/animation guides and the retained status graphics. All 45 sequences are built in the art workspace. A separate review collection retains the new forty while final-frame clarity corrections are being reviewed; the five trusted animations remain the live default. The server provides detection history, a playback queue, an idle repertoire, a dashboard, backups and bounded recovery. Routine playback and maintenance need no AI API key. The local setup assistant uses your existing provider account. Optional dashboard AI diagnosis and artwork tools use separately configured API credentials; missing-art email needs SMTP settings. Saving a recipient alone does not send or verify email.
+Robin, Goldfinch, Blue tit, Blackbird and Wren include their approved **75-second animations**, stored locally alongside a [45-bird finished-art reference library](artwork/index.html), the current style/animation guides and the retained status graphics. All 45 sequences, including the clarity improvements, are packaged in the approved branch experience with branch, single-bird and infographic views. The original five-species portrait player remains available separately; its catalogue has not been silently replaced. The server provides detection history, a playback queue, an idle repertoire, a dashboard, backups and bounded recovery. Routine playback and maintenance need no AI API key. The local setup assistant uses your existing provider account. Optional dashboard AI diagnosis and artwork tools use separately configured API credentials; missing-art email needs SMTP settings. Saving a recipient alone does not send or verify email.
 
 The Mac MVP must stay awake, powered and connected. A dedicated Linux host uses the same application with a different service profile. A Windows mini PC is not supported by this release. See [deployment and migration](docs/production.md).
 
@@ -59,3 +57,13 @@ python3 -m unittest discover -s tests -v
 ```
 
 Python 3.9 or newer is required. Routine playback needs no npm install or Docker on the Mac. The normal test suite uses local or mocked services. Developer-only BirdNET lab scripts can check a real disposable recogniser; neither suite makes paid AI requests or sends external email. Guide, software and approved assets are versioned together.
+
+## Server-connected branch rehearsal
+
+Open **Open branch rehearsal.command** for the isolated 45-bird growing-branch test. It uses the existing server and real authenticated ingest route with synthetic observations. See [the morning walkthrough](docs/branch-rehearsal.md) for arrivals, repeats, periods, faults and known release work. The original portrait player remains available.
+
+## Branch content and remaining release work
+
+The branch rehearsal now includes sourced facts for all 45 birds, separate regional/garden visitor badges, menu audio controls, a complete 45-species locally saved sound library with recording credits and Garden desk activity evidence. See [content, audio and verification](docs/branch-content-and-audio.md) and the [ordered remaining-work list](docs/remaining-work.md). Physical commissioning and the expanded release gate remain pending.
+
+The complete branch experience is visually approved. The Garden desk now collects bounded browser fault reports and offers a ten-minute microphone-test exclusion window. [Recovery and rehearsal notes](docs/display-recovery.md) explain both, plus the reproducible simulated Pi sequence. Hardware commissioning and the longer release validation gates remain separate.

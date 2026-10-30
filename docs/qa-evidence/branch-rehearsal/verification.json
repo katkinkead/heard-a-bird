@@ -1,0 +1,52 @@
+{
+  "scope": "Isolated server-connected branch rehearsal",
+  "python_suite": {
+    "tests": 260,
+    "passed": 260
+  },
+  "display_controller": {
+    "passed": true,
+    "cases": [
+      "delayed preparation queue deduplication",
+      "75-second completion",
+      "repeat caption update without repaint",
+      "live expiry",
+      "fixture reset",
+      "delayed frames use elapsed wall time",
+      "period browsing does not repaint recent historical species"
+    ]
+  },
+  "geometry": {
+    "combinations": 405,
+    "silhouette_overlaps": 0,
+    "out_of_frame": 0
+  },
+  "browser_verified": [
+    "actual HTTP arrivals paint locally",
+    "repeat bout updates existing caption",
+    "server outage retains last canvas",
+    "reconnection restores state",
+    "all 45 local subjects",
+    "microphone-unavailable and Pi-lost corner symbols",
+    "count carousel",
+    "complete automatic five-species sequence: 25 observations, five bouts, no duplicate portraits",
+    "day/week/month navigation"
+  ],
+  "not_verified": [
+    "physical Pi and microphone",
+    "speaker feedback",
+    "installed screen performance",
+    "regional rarity eligibility",
+    "recording licensing and playback"
+  ],
+  "provisional_seconds": {
+    "live": 60,
+    "quiet_gap": 120
+  },
+  "external_messages_sent": false,
+  "package": {
+    "species": 45,
+    "missing_required_assets": 0,
+    "symlinks": 0
+  }
+}

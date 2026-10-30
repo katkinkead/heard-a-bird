@@ -1,0 +1,56 @@
+{
+  "simulation": true,
+  "hardware_verified": false,
+  "server_time": "2026-10-24T10:39:21.531Z",
+  "flow": {
+    "running": false,
+    "started_at": "2026-10-24T10:18:52.357Z",
+    "next": 25
+  },
+  "species": 5,
+  "observations": 25,
+  "bouts": 5,
+  "birds": [
+    {
+      "id": "tawny-owl",
+      "observations": 5,
+      "bouts": 1
+    },
+    {
+      "id": "robin",
+      "observations": 5,
+      "bouts": 1
+    },
+    {
+      "id": "goldfinch",
+      "observations": 5,
+      "bouts": 1
+    },
+    {
+      "id": "blue-tit",
+      "observations": 5,
+      "bouts": 1
+    },
+    {
+      "id": "wren",
+      "observations": 5,
+      "bouts": 1
+    }
+  ],
+  "browser_observations": [
+    "Early Tawny owl sketch seen before label.",
+    "Completed owl and Robin visible while Goldfinch started; Robin live symbol visible only after completion.",
+    "All five completed paintings visible on branched composition with names and counts.",
+    "Garden desk test-capture start and stop controls changed their active status correctly."
+  ],
+  "passed": true,
+  "restart_check": {
+    "actual_owned_server_restart": true,
+    "species": 5,
+    "observations": 25,
+    "bouts": 5,
+    "station_connected": true,
+    "browser_outage_status_seen": true,
+    "passed": true
+  }
+}

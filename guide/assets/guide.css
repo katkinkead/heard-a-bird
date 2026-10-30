@@ -110,3 +110,6 @@
 
 /* The welcome belongs only to first entry; display:grid must not override hidden. */
 #welcome[hidden]{display:none!important}
+
+/* Short setup path; hardware preparation and advanced inputs stay available. */
+#optional-details{margin:22px 0;border-block:1px solid var(--line);padding:15px 0}#optional-details>summary{cursor:pointer;font-size:13px;color:var(--teal)}#optional-details label{margin-top:16px}#quick-connect{margin-top:22px;width:100%}#quick-feedback{font-size:13px;line-height:1.65;color:var(--teal)}

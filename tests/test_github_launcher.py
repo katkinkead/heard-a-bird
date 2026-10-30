@@ -63,6 +63,15 @@ class LauncherTests(unittest.TestCase):
         directory = self.root / "setup-source"; directory.mkdir(mode=0o700); required_files(directory)
         return directory
 
+    def test_renamed_repository_accepts_existing_managed_origins(self):
+        for origin in g.LEGACY_ORIGINS:
+            with self.subTest(origin=origin):
+                directory = self.checkout()
+                self.fake.origin = origin
+                self.git.prepare(directory, g.HTTPS_URL)
+                self.assertTrue(self.fake.used("fetch"))
+                shutil.rmtree(directory)
+
     def test_nonsecret_details_allow_missing_location_and_reject_credentials(self):
         values = {"hostname": "garden.local", "username": "garden", "garden_location": "Dorset; $(not-a-command) 'garden'"}
         self.assertEqual(g.validate_details(values), values)
@@ -181,7 +190,7 @@ class LauncherTests(unittest.TestCase):
         self.assertEqual((self.root / "launcher-status.json").read_bytes(), before)
 
     def test_foreign_url_ref_and_symlink_are_not_accepted(self):
-        for url in ("https://github.com.evil/katkinkead/songsketch.git", "file:///tmp/repo", "https://token@github.com/katkinkead/songsketch.git", g.HTTPS_URL + "#other"):
+        for url in ("https://github.com.evil/katkinkead/heard-a-bird.git", "file:///tmp/repo", "https://token@github.com/katkinkead/heard-a-bird.git", g.HTTPS_URL + "#other"):
             with self.assertRaises(g.LaunchError): self.git.prepare(self.root / "checkout", url)
         target = self.root / "target"; target.mkdir(); link = self.root / "link"; link.symlink_to(target)
         with self.assertRaises(g.LaunchError): self.git.prepare(link, g.HTTPS_URL)

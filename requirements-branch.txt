@@ -1,0 +1,2 @@
+# Optional local sun/dawn/dusk calculations; no online weather dependency.
+astral==3.2

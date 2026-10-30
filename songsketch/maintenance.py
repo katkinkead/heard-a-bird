@@ -66,7 +66,11 @@ class Maintenance:
         with self.store.tx() as db:
             db.execute("DELETE FROM reports WHERE received_at<? OR report_id NOT IN (SELECT report_id FROM reports ORDER BY received_at DESC LIMIT 5000)", (iso(utcnow()-timedelta(days=30)),))
             db.execute("DELETE FROM issues WHERE resolved=1 AND last_seen<?", (iso(utcnow()-timedelta(days=30)),))
-            db.execute("DELETE FROM detections WHERE (test=1 AND received_at<?) OR observed_at<?", (iso(utcnow()-timedelta(days=7)),iso(utcnow()-timedelta(days=self.config.values["detection_retention_days"]))))
+            cutoff=iso(utcnow()-timedelta(days=self.config.values["detection_retention_days"]))
+            db.execute("DELETE FROM detections WHERE (test=1 AND received_at<?) OR observed_at<?", (iso(utcnow()-timedelta(days=7)),cutoff))
+            previous=self.store.meta('detection_history_floor')
+            self.store.set_meta('detection_history_floor',max(previous,cutoff) if previous else cutoff)
+            db.execute('DELETE FROM listening_windows WHERE last_at<?',(cutoff,))
         with self.store.lock:
             self.store.conn.execute("PRAGMA wal_checkpoint(PASSIVE)")
 

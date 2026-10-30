@@ -1,7 +1,7 @@
 /* Navigation describes the install journey; only observed evidence marks checks healthy. */
 const $ = id => document.getElementById(id);
 const project = window.SONGSKETCH_PROJECT || {};
-const repo = project.repository_url || 'https://github.com/katkinkead/songsketch';
+const repo = project.repository_url || 'https://github.com/katkinkead/heard-a-bird';
 const stages=['parts','prepare','details','install','progress'];
 let context=null, setup=null, unlocked=false, busy=false, currentStep='parts', populatedId=null, observedJob=null, refreshInFlight=false;
 const activeStates=new Set(['probing','running','cancelling']);
@@ -21,7 +21,7 @@ function showStep(step,focus=true){
   if(focus){const heading=document.querySelector(`[data-page="${step}"] h2`);heading.focus({preventScroll:true});$('setup').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
 }
 function detailValues(){
-  const values={};for(const [key,value] of new FormData($('pi-form'))){if(String(value).trim())values[key]=['latitude','longitude'].includes(key)?Number(value):String(value).trim();}return values;
+  const values={};for(const [key,value] of new FormData($('pi-form'))){if(String(value).trim())values[key]=['latitude','longitude'].includes(key)?Number(value):String(value).trim();}if(values.hostname&&/^[A-Za-z0-9][A-Za-z0-9-]*$/.test(values.hostname))values.hostname+='.local';return values;
 }
 function populateDetails(values){if(!values)return;for(const [key,value] of Object.entries(values)){const field=$('pi-form').elements.namedItem(key);if(field)field.value=value;}}
 async function api(path,data){
@@ -47,7 +47,7 @@ function render(){
   $('helper-state').textContent=unlocked?'Local helper connected':'Waiting for the local helper';
   $('helper-state').classList.toggle('connected',unlocked);
   $('legacy-unlock').hidden=unlocked;
-  $('launch-assistant').disabled=busy;
+  $('launch-assistant').disabled=busy;$('quick-connect').disabled=busy||running;
   $('launch-explanation').textContent=unlocked?'Opens your installed assistant in Terminal. GitHub sign-in and AI permissions appear there if needed.':'On first use, unzip the download and open the Mac launcher once. A browser can’t start local programs by itself.';
   const descriptions={probing:['Finding your garden Pi.','Checking its address and SSH identity.'],awaiting_trust:['A quick introduction.','Confirm the Pi’s identity below so the assistant can connect.'],ready:['Ready to connect.','The Pi’s SSH identity is recorded. Your assistant can start the installation.'],running:['The little team is getting to work.','These checks follow the real installation. Any problem appears beside the part that needs attention.'],cancelling:['Stopping this attempt.','Existing settings and history are kept.'],completed:['The software check is complete.','Check the live listening results below, then try a painting.'],failed:['A hiccup. We’ve kept the notes.','The location and failed check are below. Your AI can diagnose and resume from here.'],needs_input:['One thing needs your attention.','The helper has saved what it found. Follow the specific request below.'],interrupted:['Ready to pick up again.','The server restarted during setup. Your AI can read the saved checkpoint before resuming.'],cancelled:['Paused, with notes intact.','Your AI can inspect the checkpoint and continue.']};
   let description=descriptions[state]||['Waiting for your AI.','Once the assistant starts setup, each part here shows its current check.'];
@@ -104,7 +104,7 @@ function launcherZip(command){
   const e=localSize+centralSize;u32(e,0x06054b50);u16(e+8,1);u16(e+10,1);u32(e+12,centralSize);u32(e+16,localSize);return bytes;
 }
 async function launchAssistant(){
-  if(busy)return;
+  if(busy||activeStates.has(setup?.job?.state))return;
   if(!$('pi-form').checkValidity()){showStep('details');$('pi-form').reportValidity();return;}
   const details=detailValues(), assistant=$('assistant-choice').value;
   storedSet('songsketch-setup-details',details);busy=true;render();
@@ -116,14 +116,14 @@ async function launchAssistant(){
       download(launcherZip(command),'Install Songsketch.zip','application/zip');
       $('launch-feedback').textContent='Downloaded. Unzip “Install Songsketch.zip”, then open the launcher inside on your Mac. It fetches GitHub, then opens your AI. If macOS blocks the file, keep the warning and use the signed local tools described in the project instructions.';
     }
-  }catch(error){$('launch-feedback').textContent=error.message;message(error.message);}finally{busy=false;render();}
+  }catch(error){$('launch-feedback').textContent=error.message;message(error.message);}finally{$('quick-feedback').textContent=$('launch-feedback').textContent;busy=false;render();}
 }
 for(const button of document.querySelectorAll('[data-step]'))button.onclick=()=>{enterJourney();showStep(button.dataset.step);};
 for(const button of document.querySelectorAll('[data-go]'))button.onclick=()=>{enterJourney();showStep(button.dataset.go);};
-$('begin').onclick=()=>{enterJourney();showStep('parts');};
-$('pi-form').onsubmit=async event=>{event.preventDefault();const details=detailValues();storedSet('songsketch-setup-details',details);try{if(unlocked)await api('/api/admin/setup-details',{details});showStep('install');}catch(error){$('details-feedback').textContent=error.message;}};
+$('begin').onclick=()=>{enterJourney();showStep('details');};
+$('pi-form').onsubmit=async event=>{event.preventDefault();await launchAssistant();};
 $('clear-details').onclick=async()=>{try{if(unlocked)await api('/api/admin/setup-details',{details:{}});storedSet('songsketch-setup-details',{});$('pi-form').reset();$('details-feedback').textContent='Saved setup details cleared. Existing Pi configuration is unchanged.';}catch(error){$('details-feedback').textContent=error.message;}};
-$('pi-form').addEventListener('invalid',()=>{$('network-details').open=true;},true);
+$('pi-form').addEventListener('invalid',event=>{if($('optional-details').contains(event.target))$('optional-details').open=true;if($('network-details').contains(event.target))$('network-details').open=true;},true);
 $('launch-assistant').onclick=launchAssistant;$('resume-assistant').onclick=launchAssistant;
 $('trust-pi').onclick=()=>action('trust',{challenge_id:setup.job.challenge.challenge_id,fingerprint:setup.job.challenge.fingerprint,confirmed:true});
 $('install-pi').onclick=()=>action('install');$('retry-pi').onclick=()=>action('retry');$('diagnose-pi').onclick=()=>action('diagnose');$('cancel-job').onclick=()=>action('cancel');
@@ -132,7 +132,7 @@ $('download-diagnostics').onclick=async()=>{try{const packet=await api('/api/adm
 $('test-painting').onclick=async()=>{try{await api('/api/admin/test-detection',{scientific_name:'Erithacus rubecula'});$('test-result').textContent='A test robin is ready on the painting page. It does not count as a real detection.';}catch(error){$('test-result').textContent=error.message;}};
 $('repository-link').href=repo;$('release-link').href=project.release_url||repo+'/releases';$('install-repo').href=repo;
 populateDetails(storedGet('songsketch-setup-details'));
-showStep(stages.includes(location.hash.slice(1))?location.hash.slice(1):'parts',false);
+showStep(stages.includes(location.hash.slice(1))?location.hash.slice(1):'details',false);
 async function consumeOpeningTicket(){const fragment=new URLSearchParams(location.hash.slice(1)),ticket=fragment.get('ticket');if(ticket){history.replaceState(null,'',location.pathname+location.search);try{await api('/api/setup/session',{ticket});showStep('progress',false);}catch(error){message(error.message);}}await refresh();}
 window.addEventListener('hashchange',()=>{if(location.hash.includes('ticket='))consumeOpeningTicket();else if(stages.includes(location.hash.slice(1)))showStep(location.hash.slice(1),false);});
 consumeOpeningTicket();setInterval(refresh,3500);

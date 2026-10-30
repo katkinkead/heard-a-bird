@@ -61,7 +61,7 @@
     frame.setAttribute('sandbox','allow-scripts allow-same-origin');
     frame.src = url;
     pending = {frame, current:{...current}, timeout:setTimeout(() => {
-      if (pending?.frame === frame) { frame.remove(); pending = null; }
+      if (pending?.frame === frame) { window.displayReporter?.report('painting-timeout',current.artwork_id); frame.remove(); pending = null; }
     },65000)};
     stage.append(frame);
   }
@@ -86,6 +86,7 @@
         if (previous) setTimeout(() => previous.remove(),500);
         updateAnnotation();
       } else if (data.type === 'songsketch:error') {
+        window.displayReporter?.report('render-failed',pending.current.artwork_id);
         clearTimeout(pending.timeout); pending.frame.remove(); pending = null;
       }
     }

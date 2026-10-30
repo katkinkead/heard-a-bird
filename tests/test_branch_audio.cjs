@@ -1,0 +1,12 @@
+const assert=require('assert'),Audio=require('../static/branch-audio.js');
+(async()=>{let now=1000000,calls=[],finish,stops=0;const storage=new Map(),a=new Audio({clock:()=>now,storage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},stop:()=>stops++,play:async(url,volume,valid)=>{assert(valid());calls.push(url);await new Promise(r=>finish=r);}});
+const bird=(id,bout,age=0)=>({id,latest_bout:{id:bout,started_at:new Date(now-age).toISOString()},content:{audio:{available:true,url:id+'.mp3'}}});let state={server_now:new Date(now).toISOString(),generation:'a',station:{listening:'available'},birds:[bird('robin','r0')]};
+a.setEnabled(true);a.update(state,['robin']);assert.equal(calls.length,0,'reload/initial state is silent');
+state.birds=[bird('robin','r1')];a.update(state,['robin']);assert.equal(calls.length,1);a.update(state,['robin']);assert.equal(calls.length,1,'duplicate bout does not replay');
+state.birds.push(bird('wren','w1'));a.update(state,['wren']);assert.equal(calls.length,1,'no overlapping clips');finish();await new Promise(setImmediate);a.update(state,['wren']);assert.equal(calls.length,1,'no stale backlog');
+state.birds=[bird('robin','r2',61000)];a.update(state,['robin']);assert.equal(calls.length,1,'buffered delivery is silent');
+state.birds=[bird('blue-tit','b1')];a.update(state,[]);assert.equal(calls.length,1,'new portrait waits for painting start');a.begin('blue-tit');assert.equal(calls.length,2);a.setEnabled(false);assert(stops>0);finish();await new Promise(setImmediate);
+state.birds=[bird('robin','r3')];a.update(state,['robin']);a.setEnabled(true);a.update(state,['robin']);assert.equal(calls.length,2,'unmute does not replay muted history');
+state.birds=[bird('robin','r4')];a.update(state,[]);now+=7000;a.begin('robin');assert.equal(calls.length,2,'stale server health suppresses pending clip');
+state.server_now=new Date(now).toISOString();state.birds=[bird('robin','r5')];a.update(state,['robin']);assert.equal(calls.length,3,'new bout may play without cooldown');finish();await new Promise(setImmediate);
+console.log('PASS audio: refresh, dedup, no overlap/backlog, stale reports, painting start, mute, server freshness, repeat bouts');})().catch(e=>{console.error(e);process.exit(1)});

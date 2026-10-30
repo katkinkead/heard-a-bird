@@ -1,5 +1,7 @@
 # Release validation: the garden before the garden
 
+**24 October update:** The full branch design is approved. Browser fault reporting and commissioning-capture exclusion are implemented; 285 Python checks, JavaScript playback/report checks and 405 layout assertions pass. An actual 22-check synthetic HTTP rehearsal passes. Local SMTP and restore checks also now exist. Clean-VM installation, broader real-model coverage, the long soak and physical commissioning remain open. Historical audit notes below describe the state at their stated dates.
+
 **Installation audit follow-up, 22 October:** [the hardware/software audit](installation-audit.md) records a fresh 242-test pass and twelve passing isolated HTTP scenarios. It also identifies unimplemented commissioning-test tagging for real microphone detections and automatic browser painting-error upload. Those are handover gaps, not passing simulator features. Physical sealing/thermal acceptance, real SMTP transport, remote access and clean-host restore remain separate gates. The restore CLI currently checks port 8765 even for a separate target directory; an existing server can block an isolated rehearsal.
 
 This is developer-owned testing before handover. It is separate from the illustrated setup journey and the safe Practice Garden. Monty should receive a tested release, then complete only the unavoidable checks on his actual equipment. Do not add a VM, audio corpus, SMTP test server or this matrix to his installation prerequisites.
@@ -20,7 +22,7 @@ flowchart LR
     Server --> Mail[Actual SMTP sender → local test inbox]
     Fault[Injected audio / network / service fault] --> Relay
     Relay --> Reports[Server reports, issues and recovery evidence]
-    Display -. reporting gap to implement .-> Reports
+    Display --> Reports
 ```
 
 A species identity is different from a detection's unique record ID. Test both: the scientific species name selects art; the record ID prevents delivery retries from being counted twice. A species absent from our art library can still be a perfectly valid BirdNET detection.
@@ -29,7 +31,7 @@ Three paths need separate evidence:
 
 - **Operational fault reports:** Pi relay → durable outbox → server `/api/ingest/reports` → stored report and dashboard issue. Recovery resolves the issue while retaining its history.
 - **Missing-art email:** qualifying species without a final portrait → durable `email_outbox` → actual SMTP sender → captured email. A portrait awaiting animation must not produce a missing-portrait email.
-- **Browser/painting errors:** a failed asset, rendering exception or preparation timeout should reach server diagnostics, with offline retention. This upload path is not implemented yet; the current display keeps its previous painting but does not upload the failure. Downloadable QA JSON is not a replacement for it.
+- **Browser/painting errors:** a failed asset, rendering exception or preparation timeout should reach server diagnostics, with offline retention. Implemented on 24 October with scoped capabilities, fixed fields, durable bounded retry and real HTTP regression checks; see [display recovery](display-recovery.md). Downloadable QA JSON is not a replacement for it.
 
 ## Four test layers
 
@@ -105,7 +107,7 @@ This is a virtual Linux station with the Pi's software architecture, not a faith
 | D04 | Kill owned server during load → bounded recovery, no foreign process stopped, history persists | Existing real-process supervisor test; repeat with relay/browser load |
 | D05 | Sustained run → no unbounded queue/log/memory growth; repeated offline/recovery cycles reconcile all accepted records | Proposed minimum 24-hour pre-handover soak; 48-hour production rehearsal; run asynchronously with explicit resource/size caps |
 | V01 | Cold/warm painting, next bird mid-drawing, tab background/resume, reload and two clients → understandable state and correct final frame | Some manual evidence only; add repeatable browser checks and per-device performance measurements |
-| V02 | All 45 animations → final-art comparison, full duration, even progress and correct status geometry | Review gallery exists; forty remain pending artistic fidelity approval; completed mark count is not visual approval |
+| V02 | All 45 animations → final-art comparison, full duration, even progress and correct status geometry | Full branch collection visually approved on 24 October; final-screen performance and fidelity remain physical commissioning checks |
 | V03 | Cold preparation → measure lost opening time and final-frame completion in connected display | Known limitation: live clock can advance while preparing; resolve or explicitly accept before production promotion |
 | X01 | Public display contains no administrator/station secrets; cross-origin and unauthorised changes rejected | Existing HTTP tests; verify full browser/network/report/SMTP evidence |
 | X02 | Package from GitHub/offline ZIP → all dependencies local, no developer absolute paths, no runtime data or secrets included | Package/hash tests and extracted archive checks exist; repeat as a release gate |
@@ -153,3 +155,7 @@ There is deliberately no invented command for the unbuilt virtual-station harnes
 - [Lima Linux VM documentation](https://lima-vm.io/docs/) and [QEMU Raspberry Pi board/peripheral limits](https://www.qemu.org/docs/master/system/arm/raspi.html).
 - Existing Songsketch evidence: `tests/test_integration.py`, `tests/test_pi.py`, `tests/test_server.py`, `tests/test_reference_art_availability.py`, `tests/test_jobs.py`, `tests/test_setup_integration.py`, `tests/test_supervisor.py`, `tests/test_simulation.py` and [verification.md](verification.md).
 - Audited gaps: `pi/relay.py::Relay.deliver`, `static/display.js`, `scripts/restore.py`, `scripts/install-pi.sh` and `scripts/commission-pi.py`. Source review is not execution evidence.
+
+## Local extension — 23 October 2026
+
+`tests/test_smtp_capture.py` now exercises actual loopback SMTP delivery, duplicate suppression, recipient refusal/recovery and a lost DATA acknowledgement (uncertain, no automatic resend). External provider receipt and TLS/auth remain unverified. `tests/test_restore_roundtrip.py` runs the actual restore CLI with valid history/custom-art fixtures, restart, credential preservation, held runtime lock, hostile archive paths and injected-copy rollback. The restore helper now uses its target directory lock independently of port and validates before replacement. This narrows E01–E04 and D01–D02; it does not close the broader release gate. See [remaining-work.md](remaining-work.md).

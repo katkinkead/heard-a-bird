@@ -36,6 +36,8 @@ class App:
         self.maintenance = Maintenance(self.store)
         self.jobs = Jobs(self.store)
         self.commissioning = CommissioningManager(self.config)
+        from .display_reports import DisplayReports
+        self.display_reports = DisplayReports()
         self.sessions = {}
         self.setup_tickets = {}
         self.auth_attempts = {}
@@ -89,12 +91,13 @@ class App:
 
     def admin_status(self):
         s = self.store
+        from .capture_exclusion import status as capture_status
         month = s.summary()
         total = s.query("SELECT COUNT(*) detections,COUNT(DISTINCT scientific_name) species FROM detections WHERE test=0 AND qualifies=1")[0]
         all_birds = s.summary("all")
         artwork_species = {b["scientific_name"] for b in s.birds + s.reference_birds}
         total.update(month_detections=sum(b["count"] for b in month), artwork=len(artwork_species), animation_ready=sum(bool(b.get("animation_ready")) for b in s.birds))
-        return {**s.public_status(),"counts":total,"settings":self.config.public(),"issues":s.query("SELECT * FROM issues WHERE resolved=0 ORDER BY last_seen DESC LIMIT 50"),"jobs":self.jobs.list(),"missing_art":[b for b in all_birds if not b["has_artwork"]],"needs_animation":[b for b in all_birds if b["has_artwork"] and not b["has_animation"]],"last_backup":s.meta("last_backup"),"uptime_seconds":round(time.monotonic()-self.started),"notifications":s.query("SELECT id,kind,species,status,attempts,last_error,created_at,sent_at FROM email_outbox ORDER BY created_at DESC LIMIT 100"),"verification":{"real_pi":bool(s.query("SELECT 1 FROM detections WHERE test=0 AND qualifies=1 LIMIT 1")),"hardware_checked":False},"count_definition":"Qualifying BirdNET detection records, not individual birds. Retries and test birds are excluded."}
+        return {**s.public_status(),"capture_test":capture_status(s),"counts":total,"settings":self.config.public(),"issues":s.query("SELECT * FROM issues WHERE resolved=0 ORDER BY last_seen DESC LIMIT 50"),"jobs":self.jobs.list(),"missing_art":[b for b in all_birds if not b["has_artwork"]],"needs_animation":[b for b in all_birds if b["has_artwork"] and not b["has_animation"]],"last_backup":s.meta("last_backup"),"uptime_seconds":round(time.monotonic()-self.started),"notifications":s.query("SELECT id,kind,species,status,attempts,last_error,created_at,sent_at FROM email_outbox ORDER BY created_at DESC LIMIT 100"),"verification":{"real_pi":bool(s.query("SELECT 1 FROM detections WHERE test=0 AND qualifies=1 LIMIT 1")),"hardware_checked":False},"count_definition":"Qualifying BirdNET detection records, not individual birds. Retries and test birds are excluded."}
 
 class Server(ThreadingHTTPServer):
     daemon_threads = True
@@ -198,6 +201,20 @@ class Handler(BaseHTTPRequestHandler):
                 return self.send({"ok":True,"application":"songsketch","version":__version__,"uptime_seconds":round(time.monotonic()-self.app.started)})
             if path in ("/api/public/status", "/status"):
                 return self.send(self.app.store.public_status())
+            if path == "/api/display/session":
+                self.check_origin()
+                if self.headers.get("Sec-Fetch-Site") != "same-origin":
+                    raise PermissionError("Open the display on this server")
+                with self.app.auth_lock:
+                    token = self.app.display_reports.issue()
+                if token is None: return self.send({"error":"Reporting capacity reached"},429)
+                return self.send({"token":token})
+            if path == "/api/branch/state":
+                from .branch import snapshot
+                return self.send(snapshot(self.app.store,query.get("period",["day"])[0]))
+            if path == "/api/branch/catalogue":
+                from .branch import catalogue
+                return self.send({"birds":catalogue()})
             if path == "/api/catalogue":
                 return self.send({"version":1,"birds":self.app.store.birds,"style_guide_url":"/artwork/style-guide.html"})
             if path == "/events": return self.events()
@@ -206,6 +223,9 @@ class Handler(BaseHTTPRequestHandler):
                 return
             if path.startswith("/api/admin/") or path == "/debug":
                 self.require_admin()
+                if path == "/api/admin/branch-evidence":
+                    from .bird_content import evidence
+                    return self.send(evidence(self.app.store,query.get("period",["day"])[0]))
                 if path == "/api/admin/status": return self.send(self.app.admin_status())
                 if path == "/api/admin/setup": return self.send(self.app.commissioning.status())
                 if path == "/api/admin/setup-context": return self.send(self.app.setup_context())
@@ -224,7 +244,7 @@ class Handler(BaseHTTPRequestHandler):
                 return self.send({"error":"Not found"},404)
             if path.startswith("/approved-artwork/"):
                 return self.safe_file(self.app.config.directory / "approved",path[len("/approved-artwork/"):])
-            aliases = {"/":"static/display.html","/display":"static/display.html","/dashboard":"static/dashboard.html","/setup":"guide/index.html","/guide":"guide/index.html"}
+            aliases = {"/branch":"static/branch.html","/branch-lab":"static/branch-lab.html","/":"static/display.html","/display":"static/display.html","/dashboard":"static/dashboard.html","/setup":"guide/index.html","/guide":"guide/index.html"}
             if path in aliases: return self.file(ROOT / aliases[path])
             for prefix in ("static", "artwork", "guide", "docs", "scripts"):
                 if path.startswith("/"+prefix+"/"):
@@ -243,6 +263,13 @@ class Handler(BaseHTTPRequestHandler):
         try:
             path = urlparse(self.path).path
             self.check_origin()
+            if path == "/api/display/reports":
+                if self.headers.get("Sec-Fetch-Site") != "same-origin":
+                    raise PermissionError("Open the display on this server")
+                data = self.body()
+                with self.app.auth_lock:
+                    result = self.app.display_reports.receive(self.headers.get("X-Display-Token", ""),data,self.app.store)
+                return self.send(result or {"error":"Reporting capacity reached"},200 if result else 429)
             ingress = {"/api/ingest/detections":"detections","/detections":"detections","/api/ingest/heartbeat":"heartbeat","/heartbeat":"heartbeat","/api/ingest/reports":"reports","/debug-reports":"reports"}
             if path in ingress:
                 if not self.authorized(station=True): raise PermissionError("Station token required")
@@ -276,6 +303,9 @@ class Handler(BaseHTTPRequestHandler):
                 return self.start_session()
             self.require_admin()
             data = self.body()
+            if path == "/api/admin/capture-test":
+                from .capture_exclusion import action
+                return self.send(action(self.app.store,data))
             if path == "/api/admin/setup-details":
                 if set(data) != {"details"}: raise ValueError("Provide setup details only")
                 values = github_launcher.validate_details(data["details"])
@@ -355,7 +385,7 @@ class Handler(BaseHTTPRequestHandler):
     def file(self, file):
         if not file.is_file(): return self.send({"error":"Not found"},404)
         ext = file.suffix.lower()
-        if ext not in (".html",".js",".css",".png",".jpg",".jpeg",".webp",".svg",".json",".md",".txt",".sh",".py",".woff2"):
+        if ext not in (".html",".js",".css",".png",".jpg",".jpeg",".webp",".svg",".json",".md",".txt",".sh",".py",".woff2",".mp3"):
             return self.send({"error":"Not found"},404)
         content_type = {".md":"text/plain; charset=utf-8",".py":"text/plain; charset=utf-8",".sh":"text/plain; charset=utf-8"}.get(ext,mimetypes.guess_type(str(file))[0] or "application/octet-stream")
         self.headers_out(200,content_type,file.stat().st_size)

@@ -63,6 +63,7 @@ CREATE TABLE IF NOT EXISTS issues (id TEXT PRIMARY KEY,severity TEXT,message TEX
 CREATE TABLE IF NOT EXISTS missing_art (scientific_name TEXT PRIMARY KEY,common_name TEXT,first_seen TEXT,last_seen TEXT,resolved INTEGER DEFAULT 0);
 CREATE TABLE IF NOT EXISTS email_outbox (id TEXT PRIMARY KEY,kind TEXT,species TEXT,status TEXT,attempts INTEGER DEFAULT 0,next_attempt TEXT,last_error TEXT,created_at TEXT,sent_at TEXT);
 CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY,kind TEXT,scientific_name TEXT,status TEXT,message TEXT,created_at TEXT,updated_at TEXT,request TEXT,result TEXT);
+CREATE TABLE IF NOT EXISTS listening_windows (id INTEGER PRIMARY KEY,start_at TEXT NOT NULL,last_at TEXT NOT NULL,open INTEGER NOT NULL);
 PRAGMA user_version=1;
 """
 
@@ -269,6 +270,10 @@ class Store:
         now = iso()
         data = dict(event_id=event, station_id=station, scientific_name=scientific, common_name=common, confidence=confidence, observed_at=iso(when), test=bool(test))
         with self.tx() as db:
+            from .capture_exclusion import contains
+            captured_test = contains(self, when)
+            test = test or captured_test
+            data["test"] = bool(test)
             cur = db.execute("INSERT OR IGNORE INTO detections(event_id,station_id,scientific_name,common_name,confidence,observed_at,received_at,test,qualifies) VALUES (?,?,?,?,?,?,?,?,?)", (event, station, scientific, common, confidence, iso(when), now, int(test), int(qualifies)))
             if not cur.rowcount:
                 return {"ok":True,"id":event,"duplicate":True}
@@ -277,18 +282,18 @@ class Store:
                 notification_id = hashlib.sha256(("missing-art:" + scientific).encode()).hexdigest()
                 db.execute("INSERT OR IGNORE INTO email_outbox(id,kind,species,status,next_attempt,created_at) VALUES (?,'missing-art',?,'pending',?,?)", (notification_id, scientific, now, now))
             recent = (utcnow() - when).total_seconds() <= 120
-            if qualifies and bird and bird.get("animation_ready") and (recent or test):
+            if not captured_test and qualifies and bird and bird.get("animation_ready") and (recent or test):
                 last = self.meta("displayed:" + scientific)
                 cooling = last and (utcnow() - timestamp(last)).total_seconds() < self.config.values["display_cooldown_seconds"]
                 queued = db.execute("SELECT 1 FROM queue WHERE scientific_name=?", (scientific,)).fetchone()
                 if test or (not cooling and not queued):
                     db.execute("INSERT INTO queue(event_id,scientific_name,data,created_at) VALUES (?,?,?,?)", (event, scientific, json.dumps(data), now))
                     db.execute("DELETE FROM queue WHERE id NOT IN (SELECT id FROM queue ORDER BY id DESC LIMIT 20)")
-        if test and bird and bird.get("animation_ready"):
+        if test and not captured_test and bird and bird.get("animation_ready"):
             # The setup button previews immediately; a real song never interrupts a painting.
             self.set_meta("test_override", event)
             self.set_meta("current", None)
-        return {"ok":True,"id":event,"duplicate":False,"qualifies":bool(qualifies)}
+        return {"ok":True,"id":event,"duplicate":False,"qualifies":bool(qualifies),"test":bool(test),"commissioning_capture":captured_test}
 
     def heartbeat(self, data):
         station = short_text(data.get("station_id", "garden"), "station_id", 80)
@@ -299,7 +304,9 @@ class Store:
                 raise ValueError("Invalid " + key)
         safe = redact(data, self.config.secrets.values())
         safe["hardware"] = validate_hardware(data.get("hardware"))
+        from .branch import record_health
         with self.tx() as db:
+            record_health(db, safe, utcnow(), self.config.values["heartbeat_timeout_seconds"])
             db.execute("INSERT OR REPLACE INTO stations VALUES (?,?,?)", (station, iso(), json.dumps(safe)))
             db.execute("UPDATE issues SET resolved=1 WHERE id='pi-disconnected'")
         return {"ok":True,"id":station,"duplicate":False}
