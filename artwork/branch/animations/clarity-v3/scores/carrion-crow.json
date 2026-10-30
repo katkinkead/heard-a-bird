@@ -1,0 +1,17 @@
+{
+  "id": "carrion-crow",
+  "key": "4db683070146feb653281e39292a577c763b6ecb16c346ca80a5953270a4bb13",
+  "scoreFile": "scores/carrion-crow.js",
+  "config": {},
+  "refinementMarks": 231350,
+  "strokes": 359417,
+  "completed": 359417,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "17c4a1c5e7fd1ec5a34add3dd40761f0570c79cb57765811ffb3a8f9b9613a92",
+  "finalHash": "37c300c50970ec7a037efc5b231da171fdfbf30bf7ee413785586b59a3e17d8a",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 11436
+}

@@ -1,0 +1,17 @@
+{
+  "id": "chaffinch",
+  "key": "6ee522cc09ba0133a1674fa9574cf5a2d1dfb47d5acd208d04633e40dc0909ab",
+  "scoreFile": "scores/chaffinch.js",
+  "config": {},
+  "refinementMarks": 303643,
+  "strokes": 422411,
+  "completed": 422411,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "b3d29d3b4c757626eee7445910285a14562fdcdcc55ce1d6e53c8b9a68e022e6",
+  "finalHash": "4635ce6f4948a33735b944a9a2b5d3b7ef3aa848461da35b2b471e3b8e68352d",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 11053
+}

@@ -1,0 +1,17 @@
+{
+  "id": "coal-tit",
+  "key": "cad3f006cf1053db003680510706ca66ab6193ae96eb583510dbd0967e8d1170",
+  "scoreFile": "scores/coal-tit.js",
+  "config": {},
+  "refinementMarks": 241323,
+  "strokes": 362530,
+  "completed": 362530,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "a96c3538f97553ea9c2a115e241d153ee3d0f375aeaa6fe98719f9dfa494902f",
+  "finalHash": "767e583941ca290c6f23ce5d3304c1af0134354e295b5829a8e845c48a7245ad",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 10415
+}
