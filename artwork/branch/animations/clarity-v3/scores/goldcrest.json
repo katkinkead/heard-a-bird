@@ -1,0 +1,17 @@
+{
+  "id": "goldcrest",
+  "key": "6f5e3a0227bb9b3a21c652730218f73293167f8dcde460e75150cc514641be7d",
+  "scoreFile": "scores/goldcrest.js",
+  "config": {},
+  "refinementMarks": 213422,
+  "strokes": 313369,
+  "completed": 313369,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "8293f58a8e7281e5a06ff7c388e8a43316c3c4ca6f664c0b59b08273c978505e",
+  "finalHash": "88a319614af0e9cc6132d9907f34b78a781096ca05712ca9250c2d4237243593",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 10229
+}

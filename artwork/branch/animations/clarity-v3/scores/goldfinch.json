@@ -1,0 +1,62 @@
+{
+  "id": "goldfinch",
+  "key": "598e142db4655ba5c6065165925944bf4756a7b8807153826aefaebc66694faa",
+  "scoreFile": "scores/goldfinch.js",
+  "config": {
+    "head": {
+      "cx": 377,
+      "cy": 164,
+      "rx": 85,
+      "ry": 76,
+      "angle": 0.3
+    },
+    "body": {
+      "cx": 462,
+      "cy": 339,
+      "rx": 170,
+      "ry": 140,
+      "angle": 0.6
+    },
+    "wing": {
+      "cx": 568,
+      "cy": 355,
+      "rx": 170,
+      "ry": 65,
+      "angle": 0.65
+    },
+    "tail": {
+      "cx": 729,
+      "cy": 493,
+      "rx": 130,
+      "ry": 35,
+      "angle": 0.65
+    },
+    "perchBoxes": [
+      [
+        145,
+        543,
+        870,
+        662
+      ]
+    ],
+    "extrasBoxes": [
+      [
+        145,
+        543,
+        870,
+        662
+      ]
+    ]
+  },
+  "refinementMarks": 129238,
+  "strokes": 189814,
+  "completed": 189814,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "4748093b678406596b6631f9e9509a64cd305072dc78513c39f6633f0d4ef369",
+  "finalHash": "e7e6253712b2e7b37e882a46a0aae40b3128e956c4078879eff745b9e652bab3",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 5811
+}

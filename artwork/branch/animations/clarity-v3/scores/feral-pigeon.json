@@ -1,0 +1,17 @@
+{
+  "id": "feral-pigeon",
+  "key": "cff422991a4ca5ff53fd998c04603fe43b4ab987075a9b69b1eacfb0fa6b8077",
+  "scoreFile": "scores/feral-pigeon.js",
+  "config": {},
+  "refinementMarks": 308405,
+  "strokes": 434633,
+  "completed": 434633,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "c6e31be3cb02c2a8df4e02d73a27a664d946c9b3e56ed59434a9fb4e9bf38f49",
+  "finalHash": "c4887c25629765f2c0b0d460c78a66cc32d35897989159ce7cdb5bb3e1b160f1",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 12409
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fieldfare",
+  "key": "77fe47a96f69e5ad10f25be5ab2e2c903bcf22469729dec3a2867d8cd5570dac",
+  "scoreFile": "scores/fieldfare.js",
+  "config": {},
+  "refinementMarks": 255095,
+  "strokes": 380823,
+  "completed": 380823,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "492ad534cf7870c249470b3d1590e1eecf5ca671d80be7db752b86938b585e19",
+  "finalHash": "ec14d2c19bd1de1f2670baf7f04666da803130c914a875b38ba348108612fc1e",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 11233
+}
