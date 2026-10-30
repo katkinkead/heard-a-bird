@@ -1,0 +1,17 @@
+{
+  "id": "nuthatch",
+  "key": "8f0a645ca54a77d1fc43dfb453e94de790f147b6e4eaa30aa9e6e230e7794f94",
+  "scoreFile": "scores/nuthatch.js",
+  "config": {},
+  "refinementMarks": 245772,
+  "strokes": 364372,
+  "completed": 364372,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "e002ed4b3f067bcc627b31da7d0981b70a9ac72eba831d1ee092cc4f55dbb221",
+  "finalHash": "cfd21d54860c73cff00b47552505e1509df4ae63bcc4146d31e378e293bd2a0a",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9530
+}

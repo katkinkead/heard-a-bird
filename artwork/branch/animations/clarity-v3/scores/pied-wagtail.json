@@ -1,0 +1,17 @@
+{
+  "id": "pied-wagtail",
+  "key": "9cdedea226ff68a714b2fb09bd9a7c8918af309b42742c1feb97e4f0cff3b407",
+  "scoreFile": "scores/pied-wagtail.js",
+  "config": {},
+  "refinementMarks": 186380,
+  "strokes": 297412,
+  "completed": 297412,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "9cf017308d189f6d77d2997f82adf0c0a71b964cb71ca6e9ac28bb601d9fed80",
+  "finalHash": "48106e2b88e98745c81650844a0e07f20db99eb6eb30258ba2895b8693d965d9",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 10855
+}

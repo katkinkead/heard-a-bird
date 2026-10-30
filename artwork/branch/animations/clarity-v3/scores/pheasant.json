@@ -1,0 +1,17 @@
+{
+  "id": "pheasant",
+  "key": "7aa57b325f08d3b4c965ba902777ba935dfb53cbaed67ea5075840fb67bdd74d",
+  "scoreFile": "scores/pheasant.js",
+  "config": {},
+  "refinementMarks": 258680,
+  "strokes": 372411,
+  "completed": 372411,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "2b240873696743266c4f44dce6bb290b7cf1a867b61fe8726379c6eddd143757",
+  "finalHash": "20262fcc8a5f5cb8c271eee55bcbcf9200aa9629ce30cad627285ee08e4c84af",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 12060
+}
