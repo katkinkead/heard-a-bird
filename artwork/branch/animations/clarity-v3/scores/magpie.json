@@ -1,0 +1,17 @@
+{
+  "id": "magpie",
+  "key": "a06feb7175b0df242fdabd743f6518cacea751afcf382c8b8be50099b52ce46e",
+  "scoreFile": "scores/magpie.js",
+  "config": {},
+  "refinementMarks": 219009,
+  "strokes": 321852,
+  "completed": 321852,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "3a2ebb660324036ae9cba252ec4121493fb3ff8131dc8ca713e27bd47b15c044",
+  "finalHash": "3e5c791caed71737d947f46c4ec2c66ee90f703489b8b71c11adf736bf7c87c0",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 8553
+}

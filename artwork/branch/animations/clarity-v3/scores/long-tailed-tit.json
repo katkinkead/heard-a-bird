@@ -1,0 +1,17 @@
+{
+  "id": "long-tailed-tit",
+  "key": "237cbbec59fd6dbf31b80d8a16d339b8ec2166e77a400bc3c7e45a79270f8853",
+  "scoreFile": "scores/long-tailed-tit.js",
+  "config": {},
+  "refinementMarks": 184040,
+  "strokes": 288950,
+  "completed": 288950,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "f10677b07e64dcf338948846c8d90eb8cc0cebec0339bd772b686e9ec3a7e136",
+  "finalHash": "1be45a4ee050232fe0d3d3f10d23dbac499d0dae7657151471b6905dd43fe08b",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 7789
+}

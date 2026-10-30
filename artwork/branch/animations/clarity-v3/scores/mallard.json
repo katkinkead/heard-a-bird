@@ -1,0 +1,17 @@
+{
+  "id": "mallard",
+  "key": "12310cba79808591130a4f8107b4ef7e7a160c1321d54cecee5815265efe4fa8",
+  "scoreFile": "scores/mallard.js",
+  "config": {},
+  "refinementMarks": 358196,
+  "strokes": 506954,
+  "completed": 506954,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "40a8922d9c7114e6991f7f8c79998152e1212cda0764da45936257ec05c1cb38",
+  "finalHash": "88dc55878c7bacbdaa30de4ff55e83f4809aa1f4ed71d8d29ee560dd963a77f8",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 12539
+}
