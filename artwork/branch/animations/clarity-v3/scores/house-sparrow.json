@@ -1,0 +1,17 @@
+{
+  "id": "house-sparrow",
+  "key": "f28e5410c736f4ae66499a31c84d2abb3bc1cf34b486d0ebd48d70dab0ad2615",
+  "scoreFile": "scores/house-sparrow.js",
+  "config": {},
+  "refinementMarks": 196449,
+  "strokes": 290242,
+  "completed": 290242,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "e582b0ed896d6a943f4f2391584f715b0bb76fa1d89d55eae73dbd0ca385a9a1",
+  "finalHash": "cb6b7a49fcba6be88541eb3e1cd58155bc17d57a6a556f92d6d3fefcb8036ec9",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 7780
+}

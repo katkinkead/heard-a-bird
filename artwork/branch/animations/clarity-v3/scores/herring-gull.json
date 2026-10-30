@@ -1,0 +1,17 @@
+{
+  "id": "herring-gull",
+  "key": "61765874dbf0aab18da81f1268f28d4afab50f39cd922a85272f2a1a050728dc",
+  "scoreFile": "scores/herring-gull.js",
+  "config": {},
+  "refinementMarks": 201770,
+  "strokes": 310590,
+  "completed": 310590,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "34bc9d5c256e483e2b41d1c449cd92eeeffb9ef27be18cc19e4a50d124824c40",
+  "finalHash": "4e6427a34c651bb78813af8fcb57192383e209212902518b565fd3c419097467",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9072
+}

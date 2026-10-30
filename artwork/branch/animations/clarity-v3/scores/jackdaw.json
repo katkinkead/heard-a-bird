@@ -1,0 +1,17 @@
+{
+  "id": "jackdaw",
+  "key": "e72eed5b2a781eddc5ce6351aabbfcac28ea2a4f514d8958feaf511149aeefc3",
+  "scoreFile": "scores/jackdaw.js",
+  "config": {},
+  "refinementMarks": 291452,
+  "strokes": 410547,
+  "completed": 410547,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "9e7845bf71a7a11c6e4520d923b0923343b25075e044d732aab85082b81298f7",
+  "finalHash": "68cad83c72db5f1d228fb9357f32d8520a2d6a02de4a8f123c58789382a050c0",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 10144
+}
