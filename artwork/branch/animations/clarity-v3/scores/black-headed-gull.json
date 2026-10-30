@@ -1,0 +1,17 @@
+{
+  "id": "black-headed-gull",
+  "key": "ab2ecc66b0f25a87c95e4a9620cca270a03e5c3cf1bae1ad88412e07b0632bb6",
+  "scoreFile": "scores/black-headed-gull.js",
+  "config": {},
+  "refinementMarks": 178849,
+  "strokes": 284870,
+  "completed": 284870,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "b313c7f44a83da45710a207dbccf58785c331edf6ed78380ca186569d572ccf1",
+  "finalHash": "b876db909bbe5beb52360edbccffb961cf3f497c9002fcee94fcfef6218e7a7e",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9256
+}

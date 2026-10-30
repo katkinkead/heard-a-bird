@@ -1,0 +1,17 @@
+{
+  "id": "blackcap",
+  "key": "1201b3d3a8b9beeae637a1c4410b6230c52b79fd90de317cb766033c72e75a8d",
+  "scoreFile": "scores/blackcap.js",
+  "config": {},
+  "refinementMarks": 210388,
+  "strokes": 315399,
+  "completed": 315399,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "a224f545205a76f36b2abc0771d5e77aeb78714b8ee116e95bed5d2306d9da10",
+  "finalHash": "64e7e05a0e8f1fb569fb8760f1fde18a8b3503f9983ba93b0c1b5d178ec87e6e",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9211
+}

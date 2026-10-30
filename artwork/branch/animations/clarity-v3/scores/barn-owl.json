@@ -1,0 +1,17 @@
+{
+  "id": "barn-owl",
+  "key": "ab422c5de0ed2bbe4c987019b14fb70e4c4e197a41ca8945f90c6c124b94fa4e",
+  "scoreFile": "scores/barn-owl.js",
+  "config": {},
+  "refinementMarks": 245027,
+  "strokes": 364837,
+  "completed": 364837,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "4cb95a2c482e987be3b2d2b4e2f7d32df4643b0df0908f2203d6e3ccd0a1c1cd",
+  "finalHash": "ad2222cc62393f5ebcc234f0438484cf004954577d0057f5622d894072b1ef1b",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 11793
+}

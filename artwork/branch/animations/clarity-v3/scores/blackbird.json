@@ -1,0 +1,17 @@
+{
+  "id": "blackbird",
+  "key": "abf95eaa00ccfb3b4cc35069fa615b3f6e8f18dc8d059da029adaecef723c969",
+  "scoreFile": "scores/blackbird.js",
+  "config": {},
+  "refinementMarks": 130549,
+  "strokes": 235317,
+  "completed": 235317,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "29a7d6e70b0b6031059db2ec6a544475a05d630174ec92f2dacd76546ee09f3b",
+  "finalHash": "65d2bc431a4c0a31be9ee0ef37af8359990c05f1953d8bdf866f7006cfd758c5",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 7939
+}
