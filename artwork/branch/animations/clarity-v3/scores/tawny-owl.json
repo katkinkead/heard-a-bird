@@ -1,0 +1,17 @@
+{
+  "id": "tawny-owl",
+  "key": "a0ac922d82ce2f023c3cb9a721abd94773fbbd3e1b86b16873fa482ace7620ff",
+  "scoreFile": "scores/tawny-owl.js",
+  "config": {},
+  "refinementMarks": 362949,
+  "strokes": 503593,
+  "completed": 503593,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "ea336a640353b476b71cc945801929dca779240ec86740efd21ab4c642a03715",
+  "finalHash": "51bbf248e7d5cebac67649f9886ee114e80bfe11a95899eb5c5503fbfd307bce",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 12671
+}

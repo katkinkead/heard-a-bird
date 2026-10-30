@@ -1,0 +1,17 @@
+{
+  "id": "starling",
+  "key": "c3d65139f53778b2c4cc4f1735d9757dc538adc848519009169af540fd607ff7",
+  "scoreFile": "scores/starling.js",
+  "config": {},
+  "refinementMarks": 218982,
+  "strokes": 334409,
+  "completed": 334409,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "f62f30bd87dda4e372663636a1e971e37362b086c3baf927442c16b63f7d22c6",
+  "finalHash": "b74dccdd237279eb1e1985c3089c0737bc134a0092078ed1dbd85204ad0a7c16",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 8584
+}

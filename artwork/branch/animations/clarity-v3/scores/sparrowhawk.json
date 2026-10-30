@@ -1,0 +1,17 @@
+{
+  "id": "sparrowhawk",
+  "key": "ac551b139b1abe41f4268cadba3729ac61617ce026c63ce7f492d13abf311b40",
+  "scoreFile": "scores/sparrowhawk.js",
+  "config": {},
+  "refinementMarks": 307033,
+  "strokes": 450810,
+  "completed": 450810,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "aa49f534ba231e7e0ff2e8f443ea9f566422faa03663972b56b80820ae3469c0",
+  "finalHash": "a53166f5fde2540e3c3dc09b5c07be468ca6bbb1ff8cd48cc22192a339406910",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 13062
+}
