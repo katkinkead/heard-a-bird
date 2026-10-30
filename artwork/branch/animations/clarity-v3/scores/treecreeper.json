@@ -1,0 +1,17 @@
+{
+  "id": "treecreeper",
+  "key": "445367cf2c263aa2548f77c46c9c4e7c1dbe12e9cd13d3f83660dc9421c99793",
+  "scoreFile": "scores/treecreeper.js",
+  "config": {},
+  "refinementMarks": 218514,
+  "strokes": 330588,
+  "completed": 330588,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "dbf73dec1ea074e33cb3190aa7e4d4c1b38d4f600e638ea3f0d721f1f8c0e871",
+  "finalHash": "fc890bbe4b5fa10f37fc7891a01121664cc8f005592aa8a3757833ec4a39efb9",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 7721
+}

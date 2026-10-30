@@ -1,0 +1,17 @@
+{
+  "id": "woodpigeon",
+  "key": "47e141743f69cf4a538e26799e8b8c89343e9ff87ca6621ecd32ab4662c9a953",
+  "scoreFile": "scores/woodpigeon.js",
+  "config": {},
+  "refinementMarks": 228122,
+  "strokes": 339891,
+  "completed": 339891,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "7957d36b6da73737b4b4c2164ca46ade390a1076a8ea139428764082ce70eb6f",
+  "finalHash": "2d9a6e915406c5d156bfa99f8d48736e306560defdd532cff71f04a8a0588b06",
+  "reusedApprovedClarityScore": true,
+  "milliseconds": 9291
+}
