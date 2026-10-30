@@ -1,0 +1,17 @@
+{
+  "id": "common-gull",
+  "key": "fdbea0969dc1ac72bc23218a91b39473d1aa643140490ef4a8b2455240f7c8e1",
+  "scoreFile": "scores/common-gull.js",
+  "config": {},
+  "refinementMarks": 181080,
+  "strokes": 289378,
+  "completed": 289378,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "9566fc23d658e963f4b267498983ad4d4fb254ae158dd17f99b26044a52c0212",
+  "finalHash": "dbf6aa05efc22b73d6c814985dfec4fbc734ab18ea58c27b3f726b9a67893f03",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9322
+}

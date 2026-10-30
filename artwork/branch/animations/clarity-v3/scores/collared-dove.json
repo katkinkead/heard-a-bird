@@ -1,0 +1,17 @@
+{
+  "id": "collared-dove",
+  "key": "ec00d4ebdef7b92a7b1be36243dccb048bb15626f53120edd0f93f3f193b2492",
+  "scoreFile": "scores/collared-dove.js",
+  "config": {},
+  "refinementMarks": 189207,
+  "strokes": 290122,
+  "completed": 290122,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "f34afe7dbd8026893a3f4da5be3294e9de01e20a5507cc7d45476083cb172d70",
+  "finalHash": "f0e280bcff4fc9c16e91bcbacbad5f5302bb40d6074b87278d9d0a08136129e8",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 8572
+}

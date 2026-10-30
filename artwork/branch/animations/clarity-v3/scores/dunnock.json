@@ -1,0 +1,17 @@
+{
+  "id": "dunnock",
+  "key": "6cb4faf14e5c3257d4c8b2c5143f114e44b9502be2c1a0c7be76aee678c64e02",
+  "scoreFile": "scores/dunnock.js",
+  "config": {},
+  "refinementMarks": 256568,
+  "strokes": 380496,
+  "completed": 380496,
+  "invalidTiming": 0,
+  "replaySame": true,
+  "subjectExportVersion": 2,
+  "originalSourceUnchanged": true,
+  "sourceSamplingHash": "86ada5e05891bb814b55fd6eb9e190af1311a1fb41147ac7f084cba5e64dd236",
+  "finalHash": "01147c14e1e610c6427729192e48803e0efb80497fefeed85730d73d49941e52",
+  "reusedApprovedClarityScore": false,
+  "milliseconds": 9956
+}
