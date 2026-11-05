@@ -168,8 +168,20 @@ class BootstrapPreservationTests(unittest.TestCase):
                 if pid:
                     os.kill(pid,signal.SIGTERM)
                     deadline=time.monotonic()+30
-                    while time.monotonic()<deadline and bootstrap.port_is_open(port):time.sleep(.1)
+                    def supervisor_alive():
+                        try: os.kill(pid,0)
+                        except ProcessLookupError: return False
+                        # Orphaned children may briefly be zombies before init reaps them.
+                        stat=Path('/proc')/str(pid)/'stat'
+                        try:
+                            if stat.read_text().rsplit(') ',1)[1].split()[0]=='Z': return False
+                        except (OSError,IndexError): pass
+                        return True
+                    # Closing the listening socket precedes final status/log writes.
+                    # Do not race those writes with TemporaryDirectory cleanup.
+                    while time.monotonic()<deadline and (bootstrap.port_is_open(port) or supervisor_alive()):time.sleep(.1)
                     self.assertFalse(bootstrap.port_is_open(port),"Owned server should stop with its supervisor")
+                    self.assertFalse(supervisor_alive(),"Owned supervisor must exit before fixture cleanup")
 
     def test_existing_server_requires_matching_admin_credentials(self):
         with tempfile.TemporaryDirectory() as temporary:
