@@ -9,6 +9,12 @@ def write(path,value):
     temp=path.with_suffix('.tmp');temp.write_text(json.dumps(value,indent=2));os.replace(temp,path)
     if path.parent.name=="evidence":os.chmod(path,0o644)
 
+def cgroup_memory_bytes():
+    try:
+        group=next(line.split(':',2)[2] for line in Path('/proc/self/cgroup').read_text().splitlines() if line.startswith('0:'))
+        return int((Path('/sys/fs/cgroup')/group.lstrip('/')/'memory.current').read_text())
+    except (OSError,ValueError,StopIteration):return 0
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--run-dir',type=Path,required=True);p.add_argument('--port',type=int,default=8768)
@@ -35,11 +41,16 @@ def main():
     browser=None;context=None;page=None;repairs=0
     report.setdefault('videos',[])
     clips=evidence/'clips';clips.mkdir(exist_ok=True,mode=0o755);os.chmod(clips,0o755)
-    storage=None;recording=False;video_at=0;video_phase=None;last_video_phase=None
+    storage_path=folder/'browser-state.json'
+    storage=json.loads(storage_path.read_text()) if storage_path.exists() else None
+    recording=False;video_at=0;video_phase=None;last_video_phase=None
+    next_capture=0;last_memory_recycle=0
+    report.setdefault('recovery_actions',[])
     def close_context():
         nonlocal context,page,storage,recording
         if context is None:return
-        try:storage=context.storage_state()
+        try:
+            storage=context.storage_state();write(storage_path,storage);os.chmod(storage_path,0o600)
         except Exception:pass
         video=page.video if page and recording else None
         context.close()
@@ -58,6 +69,11 @@ def main():
                 now=time.time();elapsed=now-plan['started'];minute=int(max(0,elapsed)//60)%20
                 phase='offline' if 8<=minute<12 else 'capture-failed' if 5<=minute<7 else 'healthy'
                 try:
+                    memory=cgroup_memory_bytes()
+                    if browser and memory>850_000_000 and now-last_memory_recycle>300:
+                        close_context();browser.close();browser=None;last_memory_recycle=now
+                        report['recovery_actions'].append({'at':now,'action':'recycle-qa-browser','reason':'QA cgroup memory above 850 MB','observed_bytes':memory})
+                        report['recovery_actions']=report['recovery_actions'][-100:];write(reportpath,report)
                     if browser is None:
                         browser=pw.chromium.launch(headless=True,args=['--disable-dev-shm-usage'])
                     if context and recording and time.time()-video_at>=120:close_context()
@@ -73,7 +89,9 @@ def main():
                         context=browser.new_context(**opts)
                         page=context.new_page();page.on('pageerror',lambda error:finding('browser-error',str(error)[:300]))
                         page.on('response',lambda response:finding('http-asset-error',response.url.split('?')[0]+' '+str(response.status)) if response.status>=400 else None)
-                        page.goto(a.public_url+'/branch',wait_until='domcontentloaded')
+                        page.goto(a.public_url+'/branch',wait_until='domcontentloaded');next_capture=0
+                    if time.time()<next_capture:
+                        time.sleep(max(0,min(5,next_capture-time.time())));continue
                     app.maintenance.send_mail()
                     from songsketch.branch import snapshot
                     state=snapshot(app.store);station=state['station']
@@ -88,10 +106,12 @@ def main():
                     name='frame-%05d.jpg'%len(report['frames']);page.screenshot(path=str(evidence/name),type='jpeg',quality=70);os.chmod(evidence/name,0o644)
                     report['frames'].append({'file':name,'at':now,'phase':phase,'observations':state['observations'],'station':station})
                     report['mail']=app.store.meta('simulation_mail',[])
-                    report['status']='running';report['updated']=time.time();write(reportpath,report)
+                    report['status']='running';report['updated']=time.time();report['qa_memory_bytes']=memory;write(reportpath,report)
+                    storage=context.storage_state();write(storage_path,storage);os.chmod(storage_path,0o600)
                     print(json.dumps({'frame':len(report['frames']),'phase':phase,'observations':state['observations'],'findings':len(report['findings'])}),flush=True)
                     # Early faults at 5–12 minutes are captured every 30 s; later 5 min.
-                    time.sleep(min(15 if recording else 30 if elapsed<900 else 300,max(0,plan['started']+plan['duration_seconds']-time.time())))
+                    next_capture=time.time()+(15 if recording else 30 if elapsed<900 else 300)
+                    time.sleep(min(5,max(0,plan['started']+plan['duration_seconds']-time.time())))
                 except Exception as exc:
                     finding('observer-error',type(exc).__name__+': '+str(exc)[:300]);report['status']='recovering';write(reportpath,report)
                     if browser:
