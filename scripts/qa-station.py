@@ -36,7 +36,11 @@ def main():
         now=time.time(); elapsed=now-start
         if elapsed<0: time.sleep(min(5,-elapsed)); continue
         while state['next']*60 <= elapsed and state['next']*60<c['duration_seconds']:
-            i=state['next']; scientific,common=species[i%len(species)]
+            i=state['next']
+            catalogue=c.get('species',[])
+            if i>=20 and catalogue:
+                bird=catalogue[(i-20)%len(catalogue)];scientific,common=bird['scientific_name'],bird['common_name']
+            else:scientific,common=species[i%len(species)]
             event={'station_id':'garden','event_id':c['run_id']+'-'+str(i),'scientific_name':scientific,'common_name':common,'confidence':.4 if i%20==15 else .98,'observed_at':datetime.datetime.fromtimestamp(start+i*60,datetime.timezone.utc).isoformat(),'test':False}
             state['pending'].append(event)
             if i%20==1: state['pending'].append(dict(event))

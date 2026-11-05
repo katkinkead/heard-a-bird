@@ -25,7 +25,7 @@ Environment=PYTHONDONTWRITEBYTECODE=1
 ExecStart=/opt/heardabirdy-qa-venv/bin/python $ROOT/scripts/qa-cloud.py --run-dir $RUN_DIR --public-url https://$DOMAIN --duration-hours 24
 Restart=on-failure
 RestartSec=20
-MemoryMax=900M
+MemoryMax=1300M
 UMask=0077
 NoNewPrivileges=true
 PrivateTmp=true

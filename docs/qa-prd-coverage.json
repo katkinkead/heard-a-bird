@@ -1,0 +1,322 @@
+{
+  "source": {
+    "title": "Birdsong Shared Display PRD",
+    "file": "birdsong-art/product/shared-display-prd.md",
+    "sha256": "b6fa2feaa53c0d09bebeb95d7e09fb3f06fe444049ce0686a2e791c6675f8f7f",
+    "reviewed": "2026-11-06",
+    "additional": [
+      "dashboard-requirements.md",
+      "maintenance-requirements.md",
+      "docs/features.md (28 October live-marker correction)",
+      "docs/release-validation.md"
+    ]
+  },
+  "status_rule": "Mapped test files are coverage pointers, not a pass. Consult regression-results.json and the ongoing cloud report. Manual/provider/hardware limits remain even when all automated tests pass.",
+  "requirements": [
+    {
+      "id": "P01",
+      "requirement": "Large first bird; equal calibrated scale; no cropping/stretching/repainting",
+      "tests": [
+        "tests/test_branch_layout.cjs"
+      ],
+      "boundary": "Cloud frames plus final-screen visual review required",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P02",
+      "requirement": "London midnight; day/week/month history; dense all-visible first-heard order",
+      "tests": [
+        "tests/test_branch.py",
+        "tests/test_branch_display.js",
+        "tests/test_branch_layout.cjs"
+      ],
+      "boundary": "24-hour run and period fixtures; target-screen legibility review required",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P03",
+      "requirement": "Bout counts independent of repeated IDs, audio and painting; raw history retained",
+      "tests": [
+        "tests/test_branch.py",
+        "tests/test_branch_http.py",
+        "tests/test_pi.py"
+      ],
+      "boundary": "Physical Pi schedule and duplicate acknowledgements; full relay tested separately",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P04",
+      "requirement": "Solar dawn/day/dusk/night anchored to original arrivals; dated sunrise and retained history",
+      "tests": [
+        "tests/test_branch.py"
+      ],
+      "boundary": "Synthetic-coordinate fixtures; real Dorset coordinates still missing",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P05",
+      "requirement": "Branch/single/infographic, discreet menu, keyboard, remembered preferences; no progress UI",
+      "tests": [
+        "tests/test_branch_display.js"
+      ],
+      "boundary": "Browser interaction and keyboard review not yet completed for cloud run",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P06",
+      "requirement": "Fresh activity independent of painting/speaker; stale expiry; unfinished single painting completes",
+      "tests": [
+        "tests/test_branch_display.js",
+        "tests/test_branch_audio.cjs"
+      ],
+      "boundary": "28 October live-mark correction supersedes older completion gating",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P07",
+      "requirement": "Pi loss vs capture/inference vs display loss; retain art, expire stale marks, reconcile buffered history",
+      "tests": [
+        "tests/test_branch_display.js",
+        "tests/test_display_recovery.py",
+        "tests/test_pi.py"
+      ],
+      "boundary": "Pi deliberate silence runs; actual network cut and browser-offline phases still to exercise",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P08",
+      "requirement": "Dorset rarity distinct from seasonal garden unusualness; sufficient baseline; source provenance",
+      "tests": [
+        "tests/test_bird_content.py"
+      ],
+      "boundary": "Fixture rules tested; current county evidence and 30-day physical baseline not verified",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P09",
+      "requirement": "Missing art stores history and one notice; missing animation is distinct",
+      "tests": [
+        "tests/test_reference_art_availability.py",
+        "tests/test_smtp_capture.py"
+      ],
+      "boundary": "Local capture active; real email pending Pepper account credentials",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "P10",
+      "requirement": "All 45 clear portraits, alpha edges, support contact, night/day readability",
+      "tests": [
+        "tests/test_artwork.py",
+        "tests/test_review_artwork.py",
+        "tests/test_branch_layout.cjs"
+      ],
+      "boundary": "Catalogue rotation active; artistic/final-screen review remains separate",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "S01",
+      "requirement": "One local clip per fresh bout; no overlap/backlog; mute does not change counts; skip stale audio",
+      "tests": [
+        "tests/test_branch_audio.cjs"
+      ],
+      "boundary": "Automated controller checks; actual speakers and feedback need hardware",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "S02",
+      "requirement": "All bundled recordings have source/licence/credits; missing audio does not stop drawing",
+      "tests": [
+        "tests/test_bird_audio_library.py",
+        "tests/test_branch_audio.cjs"
+      ],
+      "boundary": "Speaker audition not verified",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D01",
+      "requirement": "Known-art detection updates history without missing-art email",
+      "tests": [
+        "tests/test_reference_art_availability.py"
+      ],
+      "boundary": "Cloud observation plus automated evidence",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D02",
+      "requirement": "Unknown-art detection creates dashboard entry and notification",
+      "tests": [
+        "tests/test_reference_art_availability.py",
+        "tests/test_smtp_capture.py"
+      ],
+      "boundary": "Cloud local inbox; external SMTP blocked until credentials",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D03",
+      "requirement": "Distinct observations retained; retry deduplication; no repeated notice",
+      "tests": [
+        "tests/test_integration.py",
+        "tests/test_smtp_capture.py"
+      ],
+      "boundary": "Physical sender duplicate ack and cloud capture",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D04",
+      "requirement": "Mail outage retains pending notification; retries after recovery; art continues",
+      "tests": [
+        "tests/test_smtp_capture.py"
+      ],
+      "boundary": "Actual loopback SMTP faults; external provider still unconfigured",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D05",
+      "requirement": "Approved new art resolves missing flag without losing history; animation readiness separate",
+      "tests": [
+        "tests/test_reference_art_availability.py",
+        "tests/test_jobs.py"
+      ],
+      "boundary": "Disposable fixtures only; no approved artwork changed",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D06",
+      "requirement": "No AI key: normal art/history/recovery work; no paid calls",
+      "tests": [
+        "tests/test_jobs.py",
+        "tests/test_simulation.py"
+      ],
+      "boundary": "Cloud practice mode has no external AI actions",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D07",
+      "requirement": "Only explicit AI jobs with server-side credentials and selected inputs",
+      "tests": [
+        "tests/test_jobs.py"
+      ],
+      "boundary": "Mocked provider; real paid request not authorized",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D08",
+      "requirement": "Generated drafts stay outside live catalogue; provenance and review retained",
+      "tests": [
+        "tests/test_jobs.py"
+      ],
+      "boundary": "Mocked job lifecycle; no artwork generation in soak",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D09",
+      "requirement": "Removed credentials/budget limits stop new paid calls without stopping display",
+      "tests": [
+        "tests/test_jobs.py"
+      ],
+      "boundary": "Mocked provider; no real billing claimed",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "D10",
+      "requirement": "Admin raw/accepted/bouts, coverage/delay, readiness, solar, rarity and audit explanations",
+      "tests": [
+        "tests/test_branch_http.py",
+        "tests/test_bird_content.py",
+        "tests/test_server.py"
+      ],
+      "boundary": "Authenticated evidence endpoints tested; full human dashboard review remains",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "M01",
+      "requirement": "Connected Pi fault report appears automatically, durably, with redaction",
+      "tests": [
+        "tests/test_pi.py",
+        "tests/test_integration.py",
+        "tests/test_hardware_telemetry.py"
+      ],
+      "boundary": "Production relay fixture tests; soak sender currently exercises detections and heartbeat",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "M02",
+      "requirement": "Offline reports survive process restart; download remains; upload once after recovery",
+      "tests": [
+        "tests/test_pi.py",
+        "tests/test_integration.py"
+      ],
+      "boundary": "Durable fixture tests; physical reboot acceptance pending",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "M03",
+      "requirement": "Application crash recovers under supervisor; reports/history reconcile without duplication",
+      "tests": [
+        "tests/test_supervisor.py"
+      ],
+      "boundary": "Owned isolated process crash test; cloud QA has bounded process recovery",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "M04",
+      "requirement": "Both devices reboot and resume history/pending delivery",
+      "tests": [
+        "tests/test_supervisor.py",
+        "tests/test_pi.py"
+      ],
+      "boundary": "Partial software evidence; physical Pi reboot not tested; detached sender needs relaunch after reboot",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "M05",
+      "requirement": "Persistent faults have bounded retries/backoff/reports; unresolved state visible",
+      "tests": [
+        "tests/test_pi.py",
+        "tests/test_supervisor.py",
+        "tests/test_display_recovery.py"
+      ],
+      "boundary": "Observer permits two browser repairs; full relay fault fixtures separately",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "M06",
+      "requirement": "Healthy listening with silence is not a failure",
+      "tests": [
+        "tests/test_branch.py",
+        "tests/test_server.py"
+      ],
+      "boundary": "Quiet-period fixture coverage; no microphone inference claim",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "M07",
+      "requirement": "Rotate/bound diagnostics, storage warnings, database backups and restore",
+      "tests": [
+        "tests/test_restore_roundtrip.py",
+        "tests/test_server.py",
+        "tests/test_display_recovery.py"
+      ],
+      "boundary": "500 MB capture limit; disk faults only in disposable fixtures",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "X01",
+      "requirement": "Public endpoints reject admin/unauthenticated ingress; tokens absent from exported evidence",
+      "tests": [
+        "tests/test_server.py",
+        "tests/test_simulation.py",
+        "tests/test_display_recovery.py"
+      ],
+      "boundary": "Live QA proxy route checks required alongside local tests",
+      "status": "pending-evidence"
+    },
+    {
+      "id": "H01",
+      "requirement": "Real microphone, BirdNET accuracy, cadence, power, Wi-Fi, enclosure and target display",
+      "tests": [],
+      "boundary": "Blocked on microphone and physical commissioning; synthetic IDs cannot pass this",
+      "status": "blocked-hardware"
+    }
+  ]
+}
