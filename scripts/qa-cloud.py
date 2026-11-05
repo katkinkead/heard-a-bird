@@ -104,7 +104,17 @@ def main():
                     if size>500_000_000 or shutil.disk_usage(folder).free<2_000_000_000:
                         finding('capture-storage-limit','Capture paused at configured storage threshold');report['status']='blocked-storage';write(reportpath,report);break
                     name='frame-%05d.jpg'%len(report['frames']);page.screenshot(path=str(evidence/name),type='jpeg',quality=70);os.chmod(evidence/name,0o644)
-                    report['frames'].append({'file':name,'at':now,'phase':phase,'observations':state['observations'],'station':station})
+                    browser_state=page.evaluate("""() => {
+                        const s=window.branchDisplay?.getState();
+                        const c=document.getElementById('garden');
+                        let ink=0,samples=0;
+                        if(c){const x=c.getContext('2d');for(let y=30;y<c.height;y+=60)for(let z=30;z<c.width;z+=80){const p=x.getImageData(z,y,1,1).data;samples++;if(Math.abs(p[0]-245)+Math.abs(p[1]-240)+Math.abs(p[2]-230)>18)ink++;}}
+                        return {ready:!!s,view:document.getElementById('view')?.value,period:document.getElementById('period')?.value,shown:s?.shown?.length,done:s?.done?.length,queued:s?.queue?.length,active:s?.active,error:s?.error,server_species:s?.snapshot?.species,connection:document.getElementById('connection')?.textContent,canvas_ink_samples:ink,canvas_samples:samples};
+                    }""")
+                    if browser_state.get('server_species',0) and browser_state.get('shown',0) and browser_state.get('canvas_ink_samples',0)<3:
+                        finding('blank-canvas-with-history','Canvas looks empty despite displayed history; inspect frame '+name+' and context reload timing. Product change requires review.')
+                    if browser_state.get('error'):finding('display-reported-error',browser_state['error'][:300])
+                    report['frames'].append({'file':name,'at':now,'phase':phase,'observations':state['observations'],'station':station,'browser':browser_state})
                     report['mail']=app.store.meta('simulation_mail',[])
                     report['status']='running';report['updated']=time.time();report['qa_memory_bytes']=memory;write(reportpath,report)
                     storage=context.storage_state();write(storage_path,storage);os.chmod(storage_path,0o600)
