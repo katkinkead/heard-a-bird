@@ -22,7 +22,10 @@ for name in songsketch static guide artwork scripts pi docs; do
 done
 cp "$PACKAGE_DIR/README.md" "$PACKAGE_DIR/AGENTS.md" "$PACKAGE_DIR/CLAUDE.md" /opt/songsketch-server/
 chown -R root:root /opt/songsketch-server
-chmod -R go-w /opt/songsketch-server
+# Application files are public code/assets; the private data directory stays 0700.
+# umask 077 makes cp-created directories unreadable to the service user otherwise.
+chmod -R u=rwX,go=rX /opt/songsketch-server
+(cd /opt/songsketch-server && runuser -u songsketch -- python3 -B -c "import songsketch.supervisor")
 cat > /etc/systemd/system/songsketch-server.service <<'SERVICE'
 [Unit]
 Description=Songsketch bird paintings and garden history

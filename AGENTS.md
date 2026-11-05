@@ -28,7 +28,7 @@ Help the installer set up and maintain Songsketch. Read README.md first, then th
 
 ## Preserve the project design
 
-- Keep one core application with MacBook MVP and mini PC deployment profiles. Do not fork the application merely to change hosts. Mini PC operating system selection remains pending.
+- Keep one core application with MacBook MVP, dedicated Linux and VPS deployment profiles. Do not fork the application merely to change hosts. The VPS profile keeps BirdNET on the Pi and serves the painting through HTTPS; see docs/vps-deployment.md.
 - Preserve approved artwork, the painting renderer and the Robin benchmark. Consult the art system before adapting an animation. Artwork approval and animation readiness are separate states.
 - Keep the live display, setup flow and operator dashboard distinct. Routine playback and recovery work without AI credentials; optional AI jobs are operator-triggered and produce reviewable results.
 - Keep detection history independent of display cooldowns and delivery retries. Quiet bird activity is not an equipment failure. Use real health evidence for status labels.

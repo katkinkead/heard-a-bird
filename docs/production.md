@@ -1,5 +1,7 @@
 # Moving into a permanent home
 
+For a dedicated cloud VPS replacing the indoor mini PC, use [VPS deployment](vps-deployment.md). It reuses this Linux service and data layout with HTTPS and private administration; BirdNET remains on the Pi.
+
 Before outdoor assembly, read the [22 October installation audit](installation-audit.md): cable/gland fit, microphone rain protection and the CPU-to-enclosure thermal path are not yet validated. A component IP rating is not certification of the modified station.
 
 **May need: `usb_max_current_enable=1`.** This is conditional, not an automatic setup step. The Pi 5 warning concerns whether a 5 V / 5 A supply is recognised; it is not a rejection of USB-C or third-party supplies. A lower recognised allowance can restrict USB peripherals and USB-storage boot. Our microSD installation with a low-power audio adapter may work within the default allowance. The override does not cure undervoltage or add supply capacity; use the guarded helper below only after checking the complete power budget. A recognised 5 A supply enables the higher USB allowance automatically.
