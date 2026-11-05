@@ -59,8 +59,8 @@
       "tests": [
         "tests/test_branch_display.js"
       ],
-      "boundary": "Browser interaction and keyboard review not yet completed for cloud run",
-      "status": "pending-evidence"
+      "boundary": "Real cloud browser: Enter, preferences and period state changes pass; Escape fails; infographic transition blanks canvas and branch remains blank. See interaction-checks.json and review-view images; product fixes await review.",
+      "status": "failed-browser-review"
     },
     {
       "id": "P06",
@@ -80,7 +80,7 @@
         "tests/test_display_recovery.py",
         "tests/test_pi.py"
       ],
-      "boundary": "Pi deliberate silence runs; actual network cut and browser-offline phases still to exercise",
+      "boundary": "Frames 00180/00188/00189 visually retain branch through simulated capture failure, heartbeat timeout and recovery. Actual network cut and browser-offline remain unverified; separate view-transition failure remains.",
       "status": "pending-evidence"
     },
     {
@@ -276,7 +276,7 @@
         "tests/test_supervisor.py",
         "tests/test_display_recovery.py"
       ],
-      "boundary": "Observer permits two browser repairs; full relay fault fixtures separately",
+      "boundary": "Browser DisplayReporter.later throws Illegal invocation with native setTimeout; mocked timer tests missed this. Proposed bound/wrapped timer and real-browser retry test await review. Relay fault fixtures remain separate.",
       "status": "pending-evidence"
     },
     {

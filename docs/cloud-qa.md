@@ -46,3 +46,12 @@ Evidence under the QA evidence URL: `interaction-checks.json`, `review-view-sing
 Reproduction: with populated history, open menu, select Single, then Infographic, then Growing branch. Proposed fixes for Kat's review: clamp infographic rotation index to a nonnegative value (RAF timestamp can precede the event-handler performance.now() used for featureStart), guard missing selected row, and ensure a rendering exception cannot permanently terminate the animation loop. Add Escape handling with focus restoration. The negative-index cause is a code-supported hypothesis, not yet isolated in a focused reproduction. Capture full error stacks on subsequent failures to investigate Illegal invocation independently. Product code remains unchanged. One bounded QA observer restart was performed after evidence was saved; its first frame is startup-only, so visual recovery still needs verification at the next capture. No data or artwork reset.
 
 Email notices remain captured only; physical microphone/BirdNET inference remain unverified.
+
+
+### Third overnight review: recovery and diagnostic timer (6 November 2026, India)
+
+The previous observer restart recovered the branch. Visually inspected frames 00180 (capture unavailable), 00188 (Pi signal lost) and 00189 (recovered): all retain the dense branch and correctly change the status symbol. Pi sender advanced to 197 scheduled entries, 207 accepted acknowledgements, 10 duplicate acknowledgements, empty pending queue; cumulative errors stayed at 33. Observer reached 190 frames and 12 bounded clips; software suites remain passed. No additional restart needed.
+
+New stack evidence isolates the separate Illegal invocation to `DisplayReporter.later`, static/display-reports.js:20, called from constructor line 9 when a persisted queue exists. The native setTimeout is stored as `this.schedule` and called with a DisplayReporter receiver. Proposed fix: wrap native timer default `(fn, ms) => setTimeout(fn, ms)` or explicitly bind the browser timer; add a real-browser test that reloads with a pending fixed-code report and verifies retry delivery. Existing test injects an arrow timer so it cannot catch this receiver failure. Product implementation unchanged pending Kat review. Diagnostic upload cannot be claimed healthy even though drawing and ingestion recover.
+
+Coverage matrix now marks P05 failed browser review and carries the P07 recovery evidence and M05 timer limitation. All 45 species qualification remains established; microphone, external SMTP and physical network/power acceptance remain open.
