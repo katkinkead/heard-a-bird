@@ -1,0 +1,27 @@
+# Cloud rehearsal with a physical Pi
+
+This is an implemented, bounded developer QA lane. `scripts/qa-cloud.py` runs the existing isolated Practice Garden plus a headless Chromium observer on the VPS. `scripts/qa-station.py` runs independently on the physical Pi, sending synthetic IDs through HTTPS. Neither requires the Mac to remain open. The normal garden database and credentials are separate.
+
+The current run is at https://qa.heardabirdy.157-180-70-10.sslip.io/evidence/ . Its public report and images contain synthetic data. Private tokens, configuration and SQLite files are outside the served directory. The QA display is at `/branch`; only display/ingress routes are exposed, with admin denied by the proxy. `/qa-marker.json` identifies the isolated run before the Pi will deliver.
+
+## What runs
+
+A 24-hour real elapsed-time run repeats a 20-minute schedule: known species, identical delivery retry, a fictional missing-art species, capture failure at minutes 5–7, no delivery/heartbeats at minutes 8–12, recovery and buffered observations, plus low-confidence records. The Pi does not disable Wi-Fi or fake BirdNET recognition. Heartbeat health is synthetic and belongs only to this isolated QA environment. The sender persists events before sending, checks acknowledgement IDs, and retries exact IDs after interruption.
+
+The observer captures 1440×900 JPEGs every 30 seconds for the first 15 minutes and every five minutes thereafter. The HTML timeline supports adjustable playback and scrubbing. This is a time-lapse, not continuous screen video or a full visual inspection of every brushstroke. Captures stop at 500 MB or below 2 GB free disk. The browser can be relaunched twice after errors; systemd separately bounds process restart attempts. Error records remain available for review. No automatic source-code changes, paid AI actions or production fault injection occur.
+
+The observer checks expected connected/disconnected and unavailable-capture states, browser exceptions and HTTP asset failures. These assertions do not certify artistic quality. The report can finish with findings; an unobserved run is not a pass. All prior observations remain when the observer restarts. A Pi reboot needs its detached sender relaunched; the queue remains durable. VPS service restart is automatic. The final report remains served after the bounded run ends.
+
+## Deploy and operate
+
+Prerequisites on the existing dedicated VPS: Python venv `/opt/heardabirdy-qa-venv` containing Playwright and its system dependencies; Chromium installed at `PLAYWRIGHT_BROWSERS_PATH=/opt/heardabirdy-qa-browsers`; existing `songsketch` service user and Caddy. Browser dependencies are QA tooling, not customer installation prerequisites.
+
+Run `sudo bash scripts/install-cloud-qa.sh QA_HOSTNAME /var/lib/heardabirdy-qa/run-UNIQUE_ID`. It creates a separate systemd unit and Caddy host, validates configuration, then starts a 24-hour observer. Review existing services before installing. It refuses an existing QA service or run directory. Credentials are in the private `station-config.json`; transfer this over verified SSH to a private folder on the Pi, along with `scripts/qa-station.py`. Launch there with `nohup python3 qa-station.py --config config.json >station.log 2>&1 </dev/null &`. Keep the whole command detached; no SSH tunnel is needed.
+
+Inspect `systemctl status heardabirdy-qa`, `journalctl -u heardabirdy-qa`, the public `report.json`, and the Pi's private `station-state.json`. Stop the observer with `systemctl stop heardabirdy-qa`. Stop the Pi sender by its verified process ID. Preserve run evidence; do not delete runtime folders as a repair. The schedule can be inspected via `phase()` in the station script. It is not an accelerated 24-hour clock: the timeline can be replayed quickly afterward, while the actual soak uses real time.
+
+## Email and remaining boundaries
+
+The existing Practice Garden's email capture remains intact; it cannot send external mail. Kat has separately authorized real test alerts to Monty and selected the sender name **Pepper from Heard a Birdy**, whimsical, a little cheeky and cute. The new Gmail account/SMTP credential is still being set up. Consequently the real SMTP lane is pending, not passed. Captured notices do not establish delivery to Monty's inbox. Once a sender is ready, exercise the production mail path in a separate explicitly authorized mail test without weakening Practice Garden's no-external-mail guarantee.
+
+Initial verification: three station regression tests cover outage timing, mismatched acknowledgements and lost-ack deduplication; eleven existing simulator tests pass. Real cloud screenshots and authenticated detections from the physical Pi were observed. Initial deployment found a Caddy reload crash (`context: internal error: missing cancel error`); restarting restored HTTPS, and the initial observer error remains in the evidence. The installer uses a validated restart for this host profile. The 24-hour run is still in progress; microphone/BirdNET, full real SMTP, continuous video and unattended visual interpretation are not claimed.

@@ -34,3 +34,5 @@ Verified on a fresh Hetzner CPX12 running Debian 13: the systemd application sta
 The Linux installer now normalizes public code permissions before checking import as the service user. This fixes deployment under a restrictive umask without changing the private runtime directory's permissions.
 
 These checks establish deployment and authenticated Pi delivery, not live recognition. No microphone was connected. Exact garden coordinates, microphone capture, BirdNET inference, persistent relay commissioning and physical reboot/reconnect tests remain pending. The webpage can therefore show a disconnected Pi after the one-off test heartbeat expires.
+
+For the separate physical-Pi/cloud-browser soak, see [cloud QA](cloud-qa.md).
