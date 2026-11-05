@@ -44,7 +44,7 @@ def main():
     storage_path=folder/'browser-state.json'
     storage=json.loads(storage_path.read_text()) if storage_path.exists() else None
     recording=False;video_at=0;video_phase=None;last_video_phase=None
-    next_capture=0;last_memory_recycle=0
+    next_capture=0;last_memory_recycle=0;observed_phase=None
     report.setdefault('recovery_actions',[])
     def close_context():
         nonlocal context,page,storage,recording
@@ -69,6 +69,8 @@ def main():
                 now=time.time();elapsed=now-plan['started'];minute=int(max(0,elapsed)//60)%20
                 phase='offline' if 8<=minute<12 else 'capture-failed' if 5<=minute<7 else 'healthy'
                 try:
+                    if phase!=observed_phase:
+                        next_capture=min(next_capture,now+45);observed_phase=phase
                     memory=cgroup_memory_bytes()
                     if browser and memory>850_000_000 and now-last_memory_recycle>300:
                         close_context();browser.close();browser=None;last_memory_recycle=now
@@ -87,7 +89,7 @@ def main():
                             opts.update(record_video_dir=str(clips),record_video_size={'width':960,'height':540})
                             video_at=time.time();video_phase=phase;last_video_phase=phase
                         context=browser.new_context(**opts)
-                        page=context.new_page();page.on('pageerror',lambda error:finding('browser-error',str(error)[:300]))
+                        page=context.new_page();page.on('pageerror',lambda error:finding('browser-error',str(getattr(error,'stack',None) or error)[:1600]))
                         page.on('response',lambda response:finding('http-asset-error',response.url.split('?')[0]+' '+str(response.status)) if response.status>=400 else None)
                         page.goto(a.public_url+'/branch',wait_until='domcontentloaded');next_capture=0
                     if time.time()<next_capture:
@@ -115,12 +117,42 @@ def main():
                         finding('blank-canvas-with-history','Canvas looks empty despite displayed history; inspect frame '+name+' and context reload timing. Product change requires review.')
                     if browser_state.get('error'):finding('display-reported-error',browser_state['error'][:300])
                     report['frames'].append({'file':name,'at':now,'phase':phase,'observations':state['observations'],'station':station,'browser':browser_state})
+                    if not report.get('menu_review_done') and phase=='healthy' and state['species']>=45:
+                        checks=[]
+                        def ui_check(name,passed):checks.append({'name':name,'passed':bool(passed)})
+                        try:
+                            page.locator('#menu-toggle').focus();page.keyboard.press('Enter')
+                            ui_check('Keyboard Enter opens menu',page.locator('#menu').is_visible())
+                            page.keyboard.press('Escape')
+                            ui_check('Keyboard Escape closes menu',not page.locator('#menu').is_visible())
+                            if not page.locator('#menu').is_visible():page.locator('#menu-toggle').click()
+                            for chosen in ['single','infographic','branch']:
+                                page.locator('#view').select_option(chosen)
+                                ui_check('View preference '+chosen,page.evaluate("localStorage.getItem('branch-view')")==chosen)
+                                page.locator('#close').click();page.wait_for_timeout(1200)
+                                shot=evidence/('review-view-'+chosen+'.jpg');page.screenshot(path=str(shot),type='jpeg',quality=75);os.chmod(shot,0o644)
+                                page.locator('#menu-toggle').click()
+                            for chosen in ['week','month','day']:
+                                page.locator('#period').select_option(chosen)
+                                page.wait_for_function("p=>window.branchDisplay?.getState()?.snapshot?.period===p",arg=chosen,timeout=15000)
+                                ui_check('Period updates to '+chosen,page.evaluate("localStorage.getItem('branch-period')")==chosen)
+                            page.locator('#close').click()
+                        except Exception as exc:checks.append({'name':'Menu review completed','passed':False,'error_type':type(exc).__name__})
+                        finally:
+                            try:
+                                if not page.locator('#menu').is_visible():page.locator('#menu-toggle').click()
+                                page.locator('#view').select_option('branch');page.locator('#period').select_option('day');page.locator('#close').click()
+                            except Exception:pass
+                        write(evidence/'interaction-checks.json',{'at':time.time(),'checks':checks,'scope':'Real QA browser menu, period switching and preference storage. Images need visual review. No product code changed.'})
+                        report['menu_review_done']=True
+                        for check in checks:
+                            if not check['passed']:finding('menu-acceptance',check['name']+' failed; see interaction-checks.json')
                     report['mail']=app.store.meta('simulation_mail',[])
                     report['status']='running';report['updated']=time.time();report['qa_memory_bytes']=memory;write(reportpath,report)
                     storage=context.storage_state();write(storage_path,storage);os.chmod(storage_path,0o600)
                     print(json.dumps({'frame':len(report['frames']),'phase':phase,'observations':state['observations'],'findings':len(report['findings'])}),flush=True)
-                    # Early faults at 5–12 minutes are captured every 30 s; later 5 min.
-                    next_capture=time.time()+(15 if recording else 30 if elapsed<900 else 300)
+                    # Capture fault phases every 30 s; healthy phases every 5 min after startup.
+                    next_capture=time.time()+(15 if recording else 30 if elapsed<900 or phase!='healthy' else 300)
                     time.sleep(min(5,max(0,plan['started']+plan['duration_seconds']-time.time())))
                 except Exception as exc:
                     finding('observer-error',type(exc).__name__+': '+str(exc)[:300]);report['status']='recovering';write(reportpath,report)
