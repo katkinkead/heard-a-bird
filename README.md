@@ -67,3 +67,6 @@ Open **Open branch rehearsal.command** for the isolated 45-bird growing-branch t
 The branch rehearsal now includes sourced facts for all 45 birds, separate regional/garden visitor badges, menu audio controls, a complete 45-species locally saved sound library with recording credits and Garden desk activity evidence. See [content, audio and verification](docs/branch-content-and-audio.md) and the [ordered remaining-work list](docs/remaining-work.md). Physical commissioning and the expanded release gate remain pending.
 
 The complete branch experience is visually approved. The Garden desk now collects bounded browser fault reports and offers a ten-minute microphone-test exclusion window. [Recovery and rehearsal notes](docs/display-recovery.md) explain both, plus the reproducible simulated Pi sequence. Hardware commissioning and the longer release validation gates remain separate.
+
+## Painted tree layout
+The garden menu now offers **Painted tree**, the approved 1–25 composition with original painted branch assets and watercolour transitions. The existing left-to-right display remains available. See [layout behaviour and verification](docs/painted-tree.md).

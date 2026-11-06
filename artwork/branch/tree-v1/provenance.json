@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "approved_scope": "1\u201325 painted-tree composition",
+  "source_chat": "01a1abe4-cd6d-72f1-a6c5-8e4bdd1babbf",
+  "date": "2026-11-06",
+  "approval": "Kat: perfect! then requested 1\u201325 production release and preservation of watercolor animations; 35 rejected.",
+  "assets": {
+    "open-crown-r4.png": "01f1ae06e057395084484476a8973013820c927405566100f6a9af101107baef",
+    "branch-stages.png": "5ceecd2a0292e2832c2f92e7a6b512cef5d297cedd5048ee46ae3ca4b4286dff",
+    "spreading-character-r3.png": "e26efa381d02fd060637995bba1ddd9bc46191d3622e48486cf62cea5cac9145"
+  },
+  "bird_artwork": "Unmodified existing clarity-v3 subjects and original 75-second renderer",
+  "generation": "Built-in image generation derivatives of the hero artwork; source paintings retained verbatim from reviewed local prototype. Not procedural branch replacements."
+}
