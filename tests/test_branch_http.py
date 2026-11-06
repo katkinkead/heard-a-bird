@@ -39,3 +39,14 @@ class BranchHTTPTests(unittest.TestCase):
   import http.client
   c=http.client.HTTPConnection('127.0.0.1',self.server.server_port,timeout=5)
   c.request('GET','/artwork/branch/audio/robin.mp3');r=c.getresponse();self.assertEqual(r.status,200);self.assertEqual(r.getheader('Content-Type'),'audio/mpeg');self.assertGreater(len(r.read()),1000);c.close()
+
+ def test_bundled_caption_font_is_served_with_font_mime(self):
+  import http.client, hashlib, json
+  from songsketch.config import ROOT
+  folder=ROOT/'static/fonts/caveat'
+  c=http.client.HTTPConnection('127.0.0.1',self.server.server_port,timeout=5)
+  try:
+   c.request('GET','/static/fonts/caveat/Caveat-variable.ttf');r=c.getresponse()
+   self.assertEqual(r.status,200);self.assertEqual(r.getheader('Content-Type'),'font/ttf')
+   self.assertEqual(hashlib.sha256(r.read()).hexdigest(),json.loads((folder/'provenance.json').read_text())['sha256'])
+  finally:c.close()

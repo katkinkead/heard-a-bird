@@ -1,0 +1,12 @@
+{
+  "family": "Caveat",
+  "css_alias": "Birdy Hand",
+  "source": "https://github.com/google/fonts/tree/main/ofl/caveat",
+  "download_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveat/Caveat%5Bwght%5D.ttf",
+  "retrieved": "2026-11-06",
+  "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+  "bytes": 403648,
+  "license": "SIL Open Font License 1.1; see OFL.txt",
+  "modified": false,
+  "selection": "Implementation candidate for consistent dynamic captions; original illustration lettering is embedded raster/traced artwork, not this font."
+}

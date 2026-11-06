@@ -385,9 +385,9 @@ class Handler(BaseHTTPRequestHandler):
     def file(self, file):
         if not file.is_file(): return self.send({"error":"Not found"},404)
         ext = file.suffix.lower()
-        if ext not in (".html",".js",".css",".png",".jpg",".jpeg",".webp",".svg",".json",".md",".txt",".sh",".py",".woff2",".mp3"):
+        if ext not in (".html",".js",".css",".png",".jpg",".jpeg",".webp",".svg",".json",".md",".txt",".sh",".py",".woff2",".ttf",".mp3"):
             return self.send({"error":"Not found"},404)
-        content_type = {".md":"text/plain; charset=utf-8",".py":"text/plain; charset=utf-8",".sh":"text/plain; charset=utf-8"}.get(ext,mimetypes.guess_type(str(file))[0] or "application/octet-stream")
+        content_type = {".ttf":"font/ttf",".md":"text/plain; charset=utf-8",".py":"text/plain; charset=utf-8",".sh":"text/plain; charset=utf-8"}.get(ext,mimetypes.guess_type(str(file))[0] or "application/octet-stream")
         self.headers_out(200,content_type,file.stat().st_size)
         if self.command == "HEAD": return
         with file.open("rb") as f:

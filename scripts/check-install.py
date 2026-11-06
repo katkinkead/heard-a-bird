@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 REQUIRED_FILES = (
+    "static/fonts/caveat/Caveat-variable.ttf", "static/fonts/caveat/OFL.txt",
     "README.md", "AGENTS.md", "CLAUDE.md", "guide/index.html", "guide/project.js",
     "guide/assets/guide.js", "guide/assets/installer-source.js",
     "static/display.html", "static/display.js", "static/dashboard.html", "pi/relay.py",

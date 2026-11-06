@@ -38,3 +38,10 @@ Validation: 5 setup-preparation tests, 21 launcher tests and 12 setup-integratio
 
 ## Live mark during painting, 28 October
 The branch and single-bird display now render the approved singing-now mark during an unfinished painting when the existing fresh-activity predicate is true. Previously all annotations were gated on completion, so a fresh detection could expire before its mark appeared. Names and counts retain their finished-painting timing. The controller regression test checks the mark before completion and its disappearance when activity ends. This is a local source change, not a deployed release.
+
+
+## Bundled branch lettering · 6 November 2026
+
+The branch, single-bird and infographic captions use the packaged Caveat variable font at weight 400, under the internal CSS family `Birdy Hand`. The font and SIL OFL licence live in `static/fonts/caveat/`; no external font service or locally installed face is required. Startup waits for the face before drawing and measuring canvas labels. Failed font delivery produces a menu explanation and browser fallback.
+
+The original Robin/Goldfinch names are embedded artwork, traced by the portrait renderer; they have no identified recoverable font file. Those references and their animations remain unchanged. Caveat is a reviewable handwriting approximation for dynamic labels, not a claim to reproduce the originals exactly. This local change has not been deployed to the VPS.
