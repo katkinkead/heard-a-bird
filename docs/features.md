@@ -59,3 +59,7 @@ A confirmed disconnected Pi replaces every view with only the original unplugged
 
 ## Menu refinement and sound BETA · 6 November 2026
 Kat rejected the long-form menu and existing recording quality. The local menu now uses three mutually exclusive native disclosure sections: View, Sound & settings, Garden data. Opening the menu returns to View. Recording controls retain a BETA label both enabled and muted, plus a persistent note that the current samples contain background noise and cleaner recordings are planned. No replacement recordings are claimed or installed. This is the actual app UI served with isolated local simulation data, not a separate mockup; no VPS deployment.
+
+
+## Garden menu visual treatment · 6 November 2026
+At Kat’s request, the next menu pass references Apple HIG menus/popovers (https://developer.apple.com/design/human-interface-guidelines/popovers/): one anchored nonmodal panel, grouped controls, persistent selections, outside-click and Escape dismissal. It is a custom web implementation, not a claim of Apple certification. Existing daytime watercolour gives the header its garden palette; readable system type, a restrained serif title, botanical ink colours, compact rows and consistent outline symbols replace the generic form treatment. Motion respects reduced-motion preferences. Sound remains BETA and no recordings changed. Local candidate only.

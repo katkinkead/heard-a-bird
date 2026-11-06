@@ -23,3 +23,23 @@ button:focus-visible,select:focus-visible,a:focus-visible,input:focus-visible{ou
 .sound-heading{display:flex;align-items:center;gap:10px;font-size:13px}.beta{font:10px system-ui;letter-spacing:1px;border:1px solid #c5cdb7;color:#586b4c;background:#e8ecdd;border-radius:4px;padding:3px 6px}
 #audio-toggle{width:100%;background:#e5ebdd;border:1px solid #c5d0bb;font-size:13px}#volume{width:100%;accent-color:#6a805f;min-height:32px}
 .menu-link{display:flex;justify-content:space-between;align-items:center;min-height:44px;text-decoration:none;border-bottom:1px solid #e0e3d8;font-size:12px}.garden-counts{font-size:14px;color:#29444b}#menu summary:focus-visible{outline:3px solid #245f65;outline-offset:3px;border-radius:4px}
+
+/* Garden paper popover: restrained pigment, grouped rows and native controls. */
+#menu{width:354px;padding:0 20px 9px;border:1px solid #deded0;border-radius:20px;background:#faf7ef;box-shadow:0 12px 50px #35493b20,0 2px 8px #35493b0b;isolation:isolate;animation:menu-arrive .16s ease-out;transform-origin:bottom right}
+.menu-heading{position:relative;margin:0 -20px 0;padding:23px 20px 21px;overflow:hidden;border-radius:20px 20px 0 0;min-height:108px}
+.menu-heading::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(to bottom,transparent 35%,#faf7ef),url('/artwork/branch/washes/daytime.png') center 45%/cover;opacity:.65}
+#menu .menu-brand{font:11px/1.3 system-ui;letter-spacing:1.5px;color:#546e64;margin:0 0 8px;text-transform:uppercase}.menu-heading h1{font:29px/1.15 Georgia,serif;color:#284b49;letter-spacing:-.65px}
+#close{align-self:flex-start;border-radius:50%;width:44px;min-width:44px;color:#536d62}#close:hover{background:#e3e8dc}
+#menu summary{display:flex;align-items:center;gap:11px;padding:16px 23px 16px 0;min-height:61px;font:16px/1.3 system-ui;font-weight:500;color:#294e4b}
+#menu summary svg{height:22px;width:22px;flex:none;fill:none;stroke:#648078;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+#menu summary .section-title{display:inline;font:inherit;color:inherit;margin:0;letter-spacing:0}
+#menu summary::after{content:'';width:6px;height:6px;border-right:1.3px solid #718273;border-bottom:1.3px solid #718273;transform:rotate(45deg);right:5px;top:24px}#menu details[open]>summary::after{content:'';transform:rotate(225deg);top:28px}
+#menu summary .summary-beta{font:9px/1.2 system-ui;margin:0 0 0 auto;letter-spacing:.7px;color:#66704f;display:inline-block}
+.menu-section{padding:0 0 14px}#menu .control-row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:54px;border-top:1px solid #e9e9dd}
+#menu .control-row label{font-size:13px;color:#405c54;margin:0;white-space:nowrap}#menu .control-row select{font-size:13px;font-weight:500;width:185px;margin:0;background:#eef1e7;border-color:transparent;border-radius:8px;color:#294e4b;padding:9px 10px;min-height:44px}
+#menu #view-help{margin:4px 0 11px;font-size:11px;color:#68766b}#menu .full-row{display:flex;align-items:center;justify-content:space-between;width:100%;margin:6px 0 0;padding:8px 0;border-top:1px solid #e9e9dd;font-size:13px;color:#405c54}
+#menu .menu-link:hover,#menu .quiet-action:hover{color:#173f3d;background:#edf1e6}#menu .menu-link{font-size:13px}#menu .small{font-size:12px;color:#5e7063;line-height:1.55}
+#menu #audio-toggle{background:#dfe8d9;border-color:#bdcfb9;color:#2b4d41;font-size:13px;font-weight:500}#menu #audio-toggle:hover{background:#d5e1cd}
+@keyframes menu-arrive{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){#menu{animation:none}}
+@media(max-width:400px){#menu{right:12px;max-width:calc(100vw - 24px);padding-left:16px;padding-right:16px}.menu-heading{margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px}#menu .control-row select{width:165px}}

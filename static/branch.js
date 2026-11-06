@@ -12,6 +12,8 @@ function describeView(){if(piScreen)return;canvas.setAttribute('aria-label',({si
 describeView();
 function showSettings(open){$('menu').hidden=!open;$('menu-toggle').setAttribute('aria-expanded',String(open));if(open){$('view-section').open=true;$('view').focus();}else $('menu-toggle').focus();}
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('menu').hidden){e.preventDefault();showSettings(false);}});
+// Nonmodal popover: outside interaction dismisses without changing saved choices.
+document.addEventListener('pointerdown',e=>{if(!$('menu').hidden&&!$('menu').contains(e.target)&&!$('menu-toggle').contains(e.target))showSettings(false);});
 let audioContext=null,audioSource=null,audioGain=null;
 const stopSound=()=>{try{audioSource?.stop();}catch{}audioSource=null;};
 const audio=window.BoutAudio?new BoutAudio({storage:localStorage,stop:stopSound,status:s=>{$('audio-status').textContent=s;},play:async(url,volume,valid)=>{if(!audioContext||audioContext.state!=='running')throw Error('Audio needs a user gesture');const response=await fetch(url);if(!response.ok)throw Error('Missing clip');const buffer=await audioContext.decodeAudioData(await response.arrayBuffer());if(!valid())return;await new Promise(resolve=>{const source=audioContext.createBufferSource(),gain=audioContext.createGain();source.buffer=buffer;gain.gain.value=audio.volume;source.connect(gain).connect(audioContext.destination);audioSource=source;audioGain=gain;source.onended=()=>{if(audioSource===source)audioSource=null;resolve();};source.start();});}}):null;
