@@ -11,6 +11,9 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 REQUIRED_FILES = (
+    "static/submission-fonts.css", "static/garden-insights.html", "static/garden-insights.css", "static/garden-insights.js",
+    "static/fonts/submission/InstrumentSerif-Regular.ttf", "static/fonts/submission/DMSans-variable.ttf",
+    "static/fonts/submission/InstrumentSerif-OFL.txt", "static/fonts/submission/DMSans-OFL.txt",
     "static/fonts/caveat/Caveat-variable.ttf", "static/fonts/caveat/OFL.txt",
     "README.md", "AGENTS.md", "CLAUDE.md", "guide/index.html", "guide/project.js",
     "guide/assets/guide.js", "guide/assets/installer-source.js",
