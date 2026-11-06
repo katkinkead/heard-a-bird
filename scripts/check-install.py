@@ -138,6 +138,10 @@ def check_package(root=ROOT):
 
     for relative in REQUIRED_FILES:
         local_path(root, relative, relative)
+    labels = read_object("artwork/branch/name-labels-v1/manifest.json")
+    local_path(root, "artwork/branch/name-labels-v1/manifest.js", "name label loader")
+    for bird_id in labels:
+        local_path(root, "artwork/branch/name-labels-v1/" + bird_id + ".svg", "original name " + bird_id)
     catalogue = read_object("artwork/catalogue.json")
     registry = read_object("artwork/registry.json")
     playable = entries(catalogue, "catalogue")

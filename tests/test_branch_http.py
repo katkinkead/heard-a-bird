@@ -50,3 +50,20 @@ class BranchHTTPTests(unittest.TestCase):
    self.assertEqual(r.status,200);self.assertEqual(r.getheader('Content-Type'),'font/ttf')
    self.assertEqual(hashlib.sha256(r.read()).hexdigest(),json.loads((folder/'provenance.json').read_text())['sha256'])
   finally:c.close()
+
+ def test_original_name_art_collection_is_served_and_matches_manifest(self):
+  import http.client, hashlib, json, xml.etree.ElementTree as ET
+  from songsketch.config import ROOT
+  folder=ROOT/'artwork/branch/name-labels-v1'
+  labels=json.loads((folder/'manifest.json').read_text())
+  ids={b['id'] for b in json.loads((ROOT/'artwork/branch/manifest.json').read_text())['birds']}
+  self.assertEqual(set(labels),ids)
+  c=http.client.HTTPConnection('127.0.0.1',self.server.server_port,timeout=5)
+  try:
+   for id,label in labels.items():
+    c.request('GET',f'/artwork/branch/name-labels-v1/{id}.svg');response=c.getresponse();body=response.read()
+    self.assertEqual(response.status,200,id);self.assertIn('image/svg+xml',response.getheader('Content-Type'))
+    self.assertEqual(hashlib.sha256(body).hexdigest(),label['svg_sha256'],id)
+    svg=ET.fromstring(body);self.assertEqual(len(svg.findall('{http://www.w3.org/2000/svg}path')),label['strokes'],id)
+    self.assertGreater(label['width'],0);self.assertGreater(label['height'],0)
+  finally:c.close()

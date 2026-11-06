@@ -1,0 +1,407 @@
+{
+  "robin": {
+    "name": "Robin",
+    "width": 115.0423385106601,
+    "height": 48.69848619314337,
+    "strokes": 267,
+    "source": "artwork/branch/animations/clarity-v3/scores/robin.js",
+    "source_sha256": "e44069b3f9a9504c35c768664879cdc9bd1c99b3078a5275237fa741882407a0",
+    "svg_sha256": "2019db4a6b87b67dc3e35cf4b615d564014795b0f1263b9ae99ad53bff423f35"
+  },
+  "goldfinch": {
+    "name": "Goldfinch",
+    "width": 184.15844178514163,
+    "height": 62.79616925533003,
+    "strokes": 507,
+    "source": "artwork/branch/animations/clarity-v3/scores/goldfinch.js",
+    "source_sha256": "cdf645b46cf3ef2bead9aaf0424ef55316869c1af81cf0075ab568d4eaf3c19b",
+    "svg_sha256": "c478300f0d3a3e7a63a7cee63736b5b46f2390874fa5b9a2050da5c3efd81748"
+  },
+  "blue-tit": {
+    "name": "Blue tit",
+    "width": 197.00805005935524,
+    "height": 54.77440006549534,
+    "strokes": 299,
+    "source": "artwork/branch/animations/clarity-v3/scores/blue-tit.js",
+    "source_sha256": "3d7615dfb68a1d32a3d2dd3f3c793ae3670f16e5d97ea3501a9f873c87a378c4",
+    "svg_sha256": "de98a8a097e398b8912085e000a16caeb57adbdcd2051809a87fd5fd1a22ede9"
+  },
+  "blackbird": {
+    "name": "Blackbird",
+    "width": 269.3987539034624,
+    "height": 58.21798467269298,
+    "strokes": 494,
+    "source": "artwork/branch/animations/clarity-v3/scores/blackbird.js",
+    "source_sha256": "ee13c4ac7d6c6bc1f879e2b88e1ee07b4fdcc9f0dc887f79389ec56edb5036a1",
+    "svg_sha256": "d9df719395ddcf412fbd289a0cae30d8a623315693f13c88308c878b924cd282"
+  },
+  "wren": {
+    "name": "Wren",
+    "width": 133.68462771195624,
+    "height": 57.36840225473145,
+    "strokes": 240,
+    "source": "artwork/branch/animations/clarity-v3/scores/wren.js",
+    "source_sha256": "0d749f992d57ba87e08e4772961b0067c81592c8b3e4ea7bfc59e2b4e25b913b",
+    "svg_sha256": "8e97da9538f96faf3ac6c8df2867c553a7acb3f3ccbe9d9503a5a588133e876a"
+  },
+  "house-sparrow": {
+    "name": "House sparrow",
+    "width": 281.3487539034623,
+    "height": 65.14349389773145,
+    "strokes": 603,
+    "source": "artwork/branch/animations/clarity-v3/scores/house-sparrow.js",
+    "source_sha256": "361e8547c825a4e28b319851b6c883c33df91f352d94e34265da79e88327a2fc",
+    "svg_sha256": "0e2222040a94dde29e6b4c1db89621b11554db0a3dba0eef6d408ad4f94bdd26"
+  },
+  "starling": {
+    "name": "Starling",
+    "width": 177.9730861685827,
+    "height": 78.49932311264786,
+    "strokes": 515,
+    "source": "artwork/branch/animations/clarity-v3/scores/starling.js",
+    "source_sha256": "59adc42ef00d0cc91de415a1b8c858317d709ca69881f3b423086d247a142f8c",
+    "svg_sha256": "9ddbe4377db7e937bdc4999832c66e26ee54db4ff8949bdb02d3f832aa2f5e6e"
+  },
+  "woodpigeon": {
+    "name": "Woodpigeon",
+    "width": 225.27214235067368,
+    "height": 73.67309233225319,
+    "strokes": 714,
+    "source": "artwork/branch/animations/clarity-v3/scores/woodpigeon.js",
+    "source_sha256": "9357cca95d4d95cea1f06e70ea28e336e546ef8e6f8e79ae0537e7a684a55e83",
+    "svg_sha256": "3cafac455301c0c93308b5c240c69f8f4a3d326ac8f54f4a92a743793e03f8c2"
+  },
+  "great-tit": {
+    "name": "Great tit",
+    "width": 197.9407795969422,
+    "height": 63.03271028506447,
+    "strokes": 371,
+    "source": "artwork/branch/animations/clarity-v3/scores/great-tit.js",
+    "source_sha256": "3512c17dfeaec8ae67e24492060441c5f06bbe0d5810f60c078d547bb401fcf0",
+    "svg_sha256": "7aa804cf9a1a7003f80b66eb5229c6cd599511872bd32c8084cbc22cb0faf18c"
+  },
+  "long-tailed-tit": {
+    "name": "Long-tailed tit",
+    "width": 282.5200308183523,
+    "height": 60.46732200082852,
+    "strokes": 469,
+    "source": "artwork/branch/animations/clarity-v3/scores/long-tailed-tit.js",
+    "source_sha256": "4381a333ae549dde5db4bef26f179cb99f7a9d9130487d52b28f2b429b9cc0db",
+    "svg_sha256": "f945f515623b2dc319f834a4662042e30b8d1748b4e62d91257730e5c5fc4822"
+  },
+  "magpie": {
+    "name": "Magpie",
+    "width": 152.34810003684112,
+    "height": 64.6923231014838,
+    "strokes": 311,
+    "source": "artwork/branch/animations/clarity-v3/scores/magpie.js",
+    "source_sha256": "07ae22a1d82b95a4263e8fa0ff9dcb6a2c30a5d4b7a5d5f704724de1f751fed2",
+    "svg_sha256": "125a963fac3d230934361160b87afb6617434e78b3a40eae6f392e36414e2a87"
+  },
+  "chaffinch": {
+    "name": "Chaffinch",
+    "width": 195.07927089929586,
+    "height": 57.395530797885044,
+    "strokes": 509,
+    "source": "artwork/branch/animations/clarity-v3/scores/chaffinch.js",
+    "source_sha256": "2e83f56e037f977f2df39dac740e56d184e3e92f71312383bf22dddcd6b11682",
+    "svg_sha256": "0a6d0eec94749c8163554bfcf456bfe4973d2c7625a7fedcac9cd8d9c2e3017c"
+  },
+  "dunnock": {
+    "name": "Dunnock",
+    "width": 179.09810003684123,
+    "height": 49.66540002456088,
+    "strokes": 402,
+    "source": "artwork/branch/animations/clarity-v3/scores/dunnock.js",
+    "source_sha256": "07e45e00a76a43a762770d6f47e282b310cbf6bb4cbbad6e4b19379bc3a1d556",
+    "svg_sha256": "1f06f87fa08b8325b8dbd838d5b22a0d802f60ee5f1f2e485f3857f1a4d7cd70"
+  },
+  "coal-tit": {
+    "name": "Coal tit",
+    "width": 183.76050491966572,
+    "height": 61.59260993396856,
+    "strokes": 310,
+    "source": "artwork/branch/animations/clarity-v3/scores/coal-tit.js",
+    "source_sha256": "db628c17fec9ad24043ca1dbdced5b644876782d03c1e0dc3648d1bd91aa9fda",
+    "svg_sha256": "4d68ed7fad19ff3f9cf679f8328d69de4be963d4047b5ea22a2476e5fe95913b"
+  },
+  "jackdaw": {
+    "name": "Jackdaw",
+    "width": 190.70097309534367,
+    "height": 62.62088792612269,
+    "strokes": 410,
+    "source": "artwork/branch/animations/clarity-v3/scores/jackdaw.js",
+    "source_sha256": "803bc69b227b164310af222654a242f7ef012f246fb2955d82d5d42148166882",
+    "svg_sha256": "510d54fa14b4aa9a83c6c57a0474beeb9a7f6a7c9f07e8d71282f076b472c2c2"
+  },
+  "carrion-crow": {
+    "name": "Carrion crow",
+    "width": 264.4397530383612,
+    "height": 57.390501138666195,
+    "strokes": 515,
+    "source": "artwork/branch/animations/clarity-v3/scores/carrion-crow.js",
+    "source_sha256": "70c087ea3e65aa8ed70be46b85caf92867d2bd6a3470696165b23e9ca6835a5f",
+    "svg_sha256": "ccf7a8cbad939269a1d9347a70584b90efea662ba316b5dae998d69837fc053e"
+  },
+  "feral-pigeon": {
+    "name": "Feral pigeon",
+    "width": 257.2864637631637,
+    "height": 68.87621931341391,
+    "strokes": 409,
+    "source": "artwork/branch/animations/clarity-v3/scores/feral-pigeon.js",
+    "source_sha256": "645e0ef1c03e81b70757630a672425dc0a9cd3752aa193988ff745bce3f324e5",
+    "svg_sha256": "bb60b02b4df8e0973575830a462e673a7df1378d25480a7c0cad9e3f4f8d02bf"
+  },
+  "collared-dove": {
+    "name": "Collared dove",
+    "width": 271.7071494610755,
+    "height": 53.29328629092856,
+    "strokes": 623,
+    "source": "artwork/branch/animations/clarity-v3/scores/collared-dove.js",
+    "source_sha256": "60f76e6591e2b77c400571647a2fe0856a1be6e0b9bdb01e953d160d10022323",
+    "svg_sha256": "afa0296fc9a2ebec6e74a2669a00e3f99c219e495c8f24f049456a1f567558f9"
+  },
+  "greenfinch": {
+    "name": "Greenfinch",
+    "width": 232.5107307955459,
+    "height": 60.557153863697295,
+    "strokes": 498,
+    "source": "artwork/branch/animations/clarity-v3/scores/greenfinch.js",
+    "source_sha256": "652a3980d566cc41d71ec9a330b9ba9a47d1ad64ea22076a98e7f1d6c9b54a69",
+    "svg_sha256": "18153035e6897f53285635869b5cc9be56aa1ae9eccc294b177c3faee78d1d70"
+  },
+  "rook": {
+    "name": "Rook",
+    "width": 97.35003081835237,
+    "height": 51.73911540508277,
+    "strokes": 289,
+    "source": "artwork/branch/animations/clarity-v3/scores/rook.js",
+    "source_sha256": "c09b82ebcc46d43a60f85f4132d045db5f931cc05ded6bc3a0fef7a1fd3a9821",
+    "svg_sha256": "3816c1e654a1e931103a18d8cab06a7fb387ec84b31101eb5a4c4e9569d54df5"
+  },
+  "nuthatch": {
+    "name": "Nuthatch",
+    "width": 206.0458577311955,
+    "height": 54.23142309739046,
+    "strokes": 386,
+    "source": "artwork/branch/animations/clarity-v3/scores/nuthatch.js",
+    "source_sha256": "ffc894be7217df1dcfed229766ab5e7597ba06771749a08fba5cc3a846fea79a",
+    "svg_sha256": "2683fc3726482225cd00441c2141e0993a66ddbde853a2950395eabacaa2202b"
+  },
+  "herring-gull": {
+    "name": "Herring gull",
+    "width": 244.27310774142927,
+    "height": 69.14586543578366,
+    "strokes": 439,
+    "source": "artwork/branch/animations/clarity-v3/scores/herring-gull.js",
+    "source_sha256": "08755218326449180784d37ddc4636c6405f7791812218e259a0d9aee49540c4",
+    "svg_sha256": "7342e5b09ce72ad569810c03fcfafad44a2727a41dcf21b0773f602cbbc68948"
+  },
+  "common-gull": {
+    "name": "Common gull",
+    "width": 226.60548082039907,
+    "height": 71.45963849837972,
+    "strokes": 418,
+    "source": "artwork/branch/animations/clarity-v3/scores/common-gull.js",
+    "source_sha256": "a554d673e8ccdbe082d4672dc7859ed78b01e9ae53d3d554edb7692b9f3cffad",
+    "svg_sha256": "a582d3a06af9dbb70c60917c4e153a88d33023688ba0e5d79d7088d6107d139b"
+  },
+  "siskin": {
+    "name": "Siskin",
+    "width": 130.97215005526175,
+    "height": 67.59328849223948,
+    "strokes": 287,
+    "source": "artwork/branch/animations/clarity-v3/scores/siskin.js",
+    "source_sha256": "51cae651a52234670c136a98094728b2851c47a3af343a91c33c2ffa683ba239",
+    "svg_sha256": "3fc1d1ab16c92256caf9f0a7099b6ff966186f02bd832e0b4c24fcd2f623eed7"
+  },
+  "great-spotted-woodpecker": {
+    "name": "Great spotted woodpecker",
+    "width": 438.5015646571379,
+    "height": 62.450013207865254,
+    "strokes": 1075,
+    "source": "artwork/branch/animations/clarity-v3/scores/great-spotted-woodpecker.js",
+    "source_sha256": "0cb235e0119f6f9aad553b61ab8c3d091fd2b0f8f784ac5c2fd59f4e8735cd0a",
+    "svg_sha256": "84f9453249f0245d5c19e1b04d553f04fbda46447a042c7cf39642ff66d86424"
+  },
+  "blackcap": {
+    "name": "Blackcap",
+    "width": 189.78454735251574,
+    "height": 71.20834617431353,
+    "strokes": 472,
+    "source": "artwork/branch/animations/clarity-v3/scores/blackcap.js",
+    "source_sha256": "a3a728bf4bc30a565467162c8fe724674031318b535815f6d81e36ebf96036e6",
+    "svg_sha256": "90795f2e425a4a369df8650fa62cf69022bd0f772898fbc0bc7d288fe0f9e6f7"
+  },
+  "song-thrush": {
+    "name": "Song thrush",
+    "width": 229.94233190672742,
+    "height": 67.94346924304966,
+    "strokes": 438,
+    "source": "artwork/branch/animations/clarity-v3/scores/song-thrush.js",
+    "source_sha256": "2a88da7524f07d800dc75e42a08dbdd1182d66185bbc4b47601cb163839344e9",
+    "svg_sha256": "9cb152b13aa44d297cf8c30f5c86217bcaebff24600958aaa64524a33f243888"
+  },
+  "pheasant": {
+    "name": "Pheasant",
+    "width": 191.19423076923073,
+    "height": 50.837823081016495,
+    "strokes": 343,
+    "source": "artwork/branch/animations/clarity-v3/scores/pheasant.js",
+    "source_sha256": "f0b45b2fff1910f9858ac4c9c186dfcad6c647a1ba798c5b911d068275e3008b",
+    "svg_sha256": "0d147387e16e7b8eff51dfeb07ffa1dd2145213c02fd9498344fe30d562a29c6"
+  },
+  "goldcrest": {
+    "name": "Goldcrest",
+    "width": 201.16218682488244,
+    "height": 70.49296155892887,
+    "strokes": 507,
+    "source": "artwork/branch/animations/clarity-v3/scores/goldcrest.js",
+    "source_sha256": "2b509d3f5478f8df3d86d38101fa01d06ef4d57ca8fd930b4d6ad1235e9922e4",
+    "svg_sha256": "065b26a2990d8c76dcfef21445eaaab40dcf1944ad281145e3a4911f1754567b"
+  },
+  "pied-wagtail": {
+    "name": "Pied wagtail",
+    "width": 244.3128513311728,
+    "height": 62.64671890599857,
+    "strokes": 527,
+    "source": "artwork/branch/animations/clarity-v3/scores/pied-wagtail.js",
+    "source_sha256": "b515f62555310bd3e255ce1d3b160ba239705803535bcf95531118dc328213ef",
+    "svg_sha256": "6c84a0bed6ed6f923fca27ef6b253e89f28c0cf52bba347dcdffc08f049fe8cc"
+  },
+  "jay": {
+    "name": "Jay",
+    "width": 82.22806380292872,
+    "height": 67.99889810864738,
+    "strokes": 188,
+    "source": "artwork/branch/animations/clarity-v3/scores/jay.js",
+    "source_sha256": "37714ad523eb44929f181c8b1ab644e6a494760b13ad8060a0d620fccf05f4c1",
+    "svg_sha256": "1b37e87b8711ae9b0e7e678b7b5b515e021b26bcb2d2d61323fc574e394e53fc"
+  },
+  "redwing": {
+    "name": "Redwing",
+    "width": 179.54040002456077,
+    "height": 78.73078904256704,
+    "strokes": 487,
+    "source": "artwork/branch/animations/clarity-v3/scores/redwing.js",
+    "source_sha256": "58b236109deb9596282732edf06acb2c06734368f390f60d41e66384de99791a",
+    "svg_sha256": "ad1f88706cc329094875a97376e72f60bf18b83712737106680e3bdbf38bf421"
+  },
+  "bullfinch": {
+    "name": "Bullfinch",
+    "width": 202.56605389118204,
+    "height": 60.07693848609938,
+    "strokes": 442,
+    "source": "artwork/branch/animations/clarity-v3/scores/bullfinch.js",
+    "source_sha256": "f01959a9bdf892a3fb30f3a4600458861714282f8da047bbb75ca7dc89dd7f31",
+    "svg_sha256": "e2339067d0bb2dcdf8547d2bc673cf7149803a4dc434c541e2bc42864be11747"
+  },
+  "sparrowhawk": {
+    "name": "Sparrowhawk",
+    "width": 297.10000385229404,
+    "height": 79.92885385843431,
+    "strokes": 625,
+    "source": "artwork/branch/animations/clarity-v3/scores/sparrowhawk.js",
+    "source_sha256": "9c4036cdfd63910e56160aff8601e164263fd72f76642ac9162fd31401a76392",
+    "svg_sha256": "1bd6cdec025efc9ecc6daf52ea1360262f2bd46de6096e7bd1bc5960b92a508c"
+  },
+  "fieldfare": {
+    "name": "Fieldfare",
+    "width": 193.29396264788858,
+    "height": 59.70708466859958,
+    "strokes": 446,
+    "source": "artwork/branch/animations/clarity-v3/scores/fieldfare.js",
+    "source_sha256": "0ee2bf1a0fea9d40c7b5f322f44a68d265eb8c1a9faeccdfc9703f5d28f7892d",
+    "svg_sha256": "dae37adc4b0ad70a812b1f61e1ae3dacad78a2a01e0fb58908704d91be3ee88f"
+  },
+  "buzzard": {
+    "name": "Buzzard",
+    "width": 162.48986047991036,
+    "height": 49.83847694763767,
+    "strokes": 379,
+    "source": "artwork/branch/animations/clarity-v3/scores/buzzard.js",
+    "source_sha256": "b67d6762ba72281a15048d0393967ebda2915a66b9537851a1437179698f000a",
+    "svg_sha256": "90a76eab80fbbdf36f343f76f34b63eab48e236dcdd0b27b3ff9a8203721689a"
+  },
+  "mallard": {
+    "name": "Mallard",
+    "width": 168.87184623571545,
+    "height": 55.306981631792496,
+    "strokes": 440,
+    "source": "artwork/branch/animations/clarity-v3/scores/mallard.js",
+    "source_sha256": "19d555fa307a764efa81057f91b0dd4a2f559031f476a3aee1567573b28a65dd",
+    "svg_sha256": "5cdd257eeea0becb37291d2d5045f8e07ea1bad77d0b47929048098e77bee270"
+  },
+  "black-headed-gull": {
+    "name": "Black-headed gull",
+    "width": 319.9801571890548,
+    "height": 58.10770111293573,
+    "strokes": 604,
+    "source": "artwork/branch/animations/clarity-v3/scores/black-headed-gull.js",
+    "source_sha256": "ada773268e061b9845d01a427018864a74db8bf762c1357c0ab2fb9dc35ca3b1",
+    "svg_sha256": "fdd21438606851f994e9f4428d39a1bcc348dc1f5945a45565776204f7e33dda"
+  },
+  "treecreeper": {
+    "name": "Treecreeper",
+    "width": 227.63976156711573,
+    "height": 55.588743968324366,
+    "strokes": 516,
+    "source": "artwork/branch/animations/clarity-v3/scores/treecreeper.js",
+    "source_sha256": "f86d0f3fb1f2a815c42b679f7243625ac08d613bad79427c30042d882dc656ec",
+    "svg_sha256": "d35694b2668cb169dd3983ab1af7ad8da675613279cc523fd891d31fbef1f402"
+  },
+  "green-woodpecker": {
+    "name": "Green woodpecker",
+    "width": 319.48427771826664,
+    "height": 62.61220186717344,
+    "strokes": 655,
+    "source": "artwork/branch/animations/clarity-v3/scores/green-woodpecker.js",
+    "source_sha256": "39436c624f2f972881f713ae50ee99994eb67d04baa311e4c64b54c422298243",
+    "svg_sha256": "855b87f5d104f7bc566c362331bea32a199c600c22101c2347073df8d6285c1a"
+  },
+  "tawny-owl": {
+    "name": "Tawny owl",
+    "width": 230.86667693945077,
+    "height": 74.23272102479336,
+    "strokes": 430,
+    "source": "artwork/branch/animations/clarity-v3/scores/tawny-owl.js",
+    "source_sha256": "6b5f991fd55d929c1eb55a75488e0be5e6db08c9d052b6c5a564330158cf3473",
+    "svg_sha256": "0b228e7a7a143cce11f155e2bbf17af3437d0b0bfe698ca87f9084dd997ea05d"
+  },
+  "barn-owl": {
+    "name": "Barn owl",
+    "width": 186.831661598499,
+    "height": 54.33260387549035,
+    "strokes": 391,
+    "source": "artwork/branch/animations/clarity-v3/scores/barn-owl.js",
+    "source_sha256": "0bbe65e96bc23d05a424a5fa6e33d939ab37eddea40ff87994973134cb59f6c1",
+    "svg_sha256": "fdd0318dbd2d8d44459ccc7beda88b563724f866c94257233eb9d2f540e0b9eb"
+  },
+  "little-owl": {
+    "name": "Little owl",
+    "width": 196.87749233927047,
+    "height": 48.28096296720571,
+    "strokes": 269,
+    "source": "artwork/branch/animations/clarity-v3/scores/little-owl.js",
+    "source_sha256": "99db1fdd625ca50a7f66dfe57ac08330841ba1eaedc04db1b4a31296e2169793",
+    "svg_sha256": "b3216f5f175db17e7441fd7fff14ecb51dd300e59cfd3eb63a439d4a818aa9d8"
+  },
+  "short-eared-owl": {
+    "name": "Short-eared owl",
+    "width": 290.10518596774926,
+    "height": 59.58461538461552,
+    "strokes": 500,
+    "source": "artwork/branch/animations/clarity-v3/scores/short-eared-owl.js",
+    "source_sha256": "8301c7449f8c097f7ed64ee3ba230d0a3510b940828d44616008f1c7281a9482",
+    "svg_sha256": "41ccd0e8fd5c1ca15e9f9526686a2239f4a2e020f127eb771af6e281014dbd8c"
+  },
+  "long-eared-owl": {
+    "name": "Long-eared owl",
+    "width": 266.2957058214224,
+    "height": 59.151946190687454,
+    "strokes": 558,
+    "source": "artwork/branch/animations/clarity-v3/scores/long-eared-owl.js",
+    "source_sha256": "27a2d965df07da455715a076301bcd6e1f7eba71e6d059241ede7fbf5d4348c0",
+    "svg_sha256": "346c16395e81eb40ba3c6bf1b84819d9990e5bcbb1d7ab6db72d244e85abd7c9"
+  }
+}
