@@ -15,3 +15,5 @@ Verification: `node tests/test_painted_tree.cjs` checks every 1–25 stage, boun
 The frozen approved rehearsal is `/static/tree-study.html`. It uses synthetic arrivals only, with no ingest calls or history changes. This is the reference study; the optional live layout is selected at `/branch?layout=tree`.
 
 Release checks: original branch layout 405 cases passed; installation asset checker passed 220 existing hashes; production-controller tests cover queue deduplication, finish persistence, repeat handling, period browsing, disconnect/reconnect, and holding the painter through a tree transition. The branch plates remain byte-identical to the approved study. The 35-bird derivative is excluded.
+
+Public smoke test exposed an existing timer-binding error in browser fault reporting; the timer callback is now wrapped to preserve native invocation. Optional lettering and wash downloads no longer delay initial garden polling behind all decorative assets. The tree plates load concurrently; bird rendering and approved pixels are unchanged.

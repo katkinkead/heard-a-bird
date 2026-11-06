@@ -3,7 +3,7 @@
   const KEY='songsketch-display-reports-v1',TTL=7*86400000;
   const codes=new Set(['artwork-load','painting-timeout','render-failed','decoration-load']);
   class DisplayReporter {
-    constructor({fetch:request,storage,now=Date.now,uuid=()=>crypto.randomUUID(),schedule=setTimeout,view='branch'}){
+    constructor({fetch:request,storage,now=Date.now,uuid=()=>crypto.randomUUID(),schedule=(callback,delay)=>setTimeout(callback,delay),view='branch'}){
       Object.assign(this,{request,storage,now,uuid,schedule,view});this.token=null;this.busy=false;this.timer=null;this.delay=2000;this.seen=new Map();this.queue=[];
       try{const raw=storage?.getItem(KEY)||'[]';const rows=raw.length<=32768?JSON.parse(raw):[];if(Array.isArray(rows))this.queue=rows.filter(r=>this.valid(r)).slice(-20);}catch{}
       if(this.queue.length)this.later();

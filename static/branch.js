@@ -22,6 +22,7 @@ $('audio-toggle').onclick=async()=>{if(!audio)return;if(audio.enabled){audio.set
 $('volume').oninput=e=>{const value=Math.max(0,Math.min(100,Number(e.target.value)));localStorage.setItem('branch-volume',value);if(audio)audio.volume=value/100;if(audioGain&&audioContext)audioGain.gain.setTargetAtTime(value/100,audioContext.currentTime,.08);};
 
 const tree=new PaintedTree(StaticBirds);let treeError='';
+const treeReady=tree.load().catch(e=>{treeError=e.message+'; showing left-to-right until artwork is available.';window.displayReporter?.report('artwork-load','painted-tree');});
 function treeEligible(){return shown.length<=25&&rows.filter(b=>shown.includes(key(b))).every(b=>tree.regs.has(b.id));}
 function syncTree(animate=false){tree.sync(rows.filter(b=>shown.includes(key(b))).map(b=>b.id||key(b)),animate);}
 function persist(){if(!storageKey)return;try{localStorage.setItem(storageKey,JSON.stringify({done:[...done],active:active?{key:active.key,elapsed:active.elapsed}:saved.active||null}));}catch{}}
@@ -85,10 +86,10 @@ window.branchDisplay={getState:()=>({snapshot,shown:[...shown],done:[...done],qu
 // No local() source: installed fonts must not change the intended caption face.
 try{const faces=await document.fonts.load('400 28px "Birdy Hand"');if(!faces.length)throw Error('Font unavailable');}catch{letteringError='The lettering could not load. Reload this display to try again.';}
 if(!window.BirdNameLabels)letteringError='Original bird lettering could not load. Reload this display to try again.';
-await Promise.all(Object.keys(window.BirdNameLabels||{}).map(async id=>{
+Promise.all(Object.keys(window.BirdNameLabels||{}).map(async id=>{
  try{nameImages.set(id,await decodeBirdsongImage(base+'name-labels-v1/'+id+'.svg'));}
  catch{letteringError='Some original bird lettering could not load. Reload this display to try again.';window.displayReporter?.report('artwork-load',id);}
 }));
-await Promise.all(['night','sunrise','daytime','sunset'].map(async id=>{textures[id]=await decodeBirdsongImage(base+'washes/'+id+'.png').catch(()=>{window.displayReporter?.report('decoration-load');return null;});}));await Promise.all(['pi-disconnected','listening-unavailable-v3','singing-now','rare-v2','unusual-visitor-v2'].map(async id=>{symbols[id]=await decodeBirdsongImage(base+'symbols/'+id+'.png').catch(()=>{window.displayReporter?.report('decoration-load');return null;});}));try{await tree.load();}catch(e){treeError=e.message+'; showing left-to-right until artwork is available.';window.displayReporter?.report('artwork-load','painted-tree');}
+Promise.all(['night','sunrise','daytime','sunset'].map(async id=>{textures[id]=await decodeBirdsongImage(base+'washes/'+id+'.png').catch(()=>{window.displayReporter?.report('decoration-load');return null;});}));Promise.all(['pi-disconnected','listening-unavailable-v3','singing-now','rare-v2','unusual-visitor-v2'].map(async id=>{symbols[id]=await decodeBirdsongImage(base+'symbols/'+id+'.png').catch(()=>{window.displayReporter?.report('decoration-load');return null;});}));await treeReady;
 poll();requestAnimationFrame(draw);
 })();
